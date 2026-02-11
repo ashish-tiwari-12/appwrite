@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Mock numbers for phone sign-in: Use cases and best practices"
 description: Dive deeper into use cases, best practices and examples of mock numbers in action.
@@ -9,7 +9,7 @@ author: ebenezer-don
 category: product
 featured: false
 ---
-If you've ever struggled with testing phone sign-in flows without incurring the cost of real SMS messages or waiting for delivery delays, you'll appreciate the convenience of mock numbers. In Appwrite, mock numbers are predefined phone numbers and verification codes that you can use to simulate phone sign-in scenarios during development and testing.
+If you've ever struggled with testing phone sign-in flows without incurring the cost of real SMS messages or waiting for delivery delays, you'll appreciate the convenience of mock numbers. In Indobase, mock numbers are predefined phone numbers and verification codes that you can use to simulate phone sign-in scenarios during development and testing.
 
 In this guide, we'll explore the use cases, setup, and best practices for using mock numbers in your development and testing processes.
 
@@ -33,19 +33,19 @@ Authentication flow testing might be required when submitting apps to platforms 
 
 Mock numbers simplify the demonstration of phone sign-in functionality during presentations. You can showcase the complete authentication flow without delays or interruptions caused by SMS delivery.
 
-# Setting up mock numbers in Appwrite
-To set up mock numbers in Appwrite, you need to follow a few simple steps.
+# Setting up mock numbers in Indobase
+To set up mock numbers in Indobase, you need to follow a few simple steps.
 
-## Step 1: Access the Appwrite console
+## Step 1: Access the Indobase console
 
-Log in to your Appwrite account and select the project you want to configure. Ensure phone authentication is enabled for your project.
+Log in to your Indobase account and select the project you want to configure. Ensure phone authentication is enabled for your project.
 
 ## Step 2: Configure mock numbers
 
 1. **Navigate to `Project > Auth > Security` :** Scroll to the **Mock phone numbers** section
 2. **Generate Mock Number**: Click the **generate number** button. This will generate a mock phone number and verification code that you can use to test user authentication.
 
-    ![Mock-numbers-Appwrite](/images/blog/mock-numbers-use-cases/1.png)
+    ![Mock-numbers-Indobase](/images/blog/mock-numbers-use-cases/1.png)
 
     You can regenerate the number and verification code by clicking the icon beside the input field or you can edit it directly. To generate another mock phone number and verification code, click the **Add number** button.
 
@@ -53,16 +53,16 @@ Log in to your Appwrite account and select the project you want to configure. En
 
 ## Step 3: Implement mock numbers in your application
 
-Use Appwrite’s SDK to integrate phone sign-in and test the authentication flow with mock numbers. Let's walk through an example using the Appwrite JavaScript SDK.
+Use Indobase’s SDK to integrate phone sign-in and test the authentication flow with mock numbers. Let's walk through an example using the Indobase JavaScript SDK.
 
-## Initialize Appwrite client and account
+## Initialize Indobase client and account
 
-First, you need to set up the Appwrite client and account objects:
+First, you need to set up the Indobase client and account objects:
 
 ```jsx
 import { Client, Account } from 'appwrite'
 
-// Initialize Appwrite client
+// Initialize Indobase client
 const client = new Client()
 client.setEndpoint('https://<REGION>.cloud.appwrite.io/v1').setProject('<PROJECT_ID>')
 
@@ -73,8 +73,8 @@ const account = new Account(client)
 
 In this code:
 
-- We import the necessary modules from the Appwrite SDK.
-- We create and configure a `Client` instance with the Appwrite endpoint and project ID.
+- We import the necessary modules from the Indobase SDK.
+- We create and configure a `Client` instance with the Indobase endpoint and project ID.
 - We create an `Account` instance associated with the client.
 
 ## Create a phone session using a mock number
@@ -159,12 +159,12 @@ Remove mock numbers that are not in use, or delete them once the tests are compl
 
 # Conclusion
 
-Mock numbers in Appwrite offer a practical solution for testing phone sign-in flows, facilitating development, QA testing, app reviews, and demonstrations. Mock numbers are available to Pro users (introduced in 1.6).
+Mock numbers in Indobase offer a practical solution for testing phone sign-in flows, facilitating development, QA testing, app reviews, and demonstrations. Mock numbers are available to Pro users (introduced in 1.6).
 
 By using mock numbers effectively and following best practices, you can streamline your testing processes and ensure a robust authentication experience for your users.
 
 Further reading and resources:
 
-- [Appwrite phone (SMS) auth docs](https://appwrite.io/docs/products/auth/phone-sms)
-- [Appwrite custom token docs](https://appwrite.io/docs/products/auth/custom-token)
+- [Indobase phone (SMS) auth docs](https://appwrite.io/docs/products/auth/phone-sms)
+- [Indobase custom token docs](https://appwrite.io/docs/products/auth/custom-token)
 - [Our Discord community](https://appwrite.io/discord)

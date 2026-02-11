@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Introducing Roles: Enhanced collaboration and security in Appwrite"
-description: Roles is a new addition to the Appwrite Console that has been anticipated for a long time by the community. This feature will make permission handling a whole lot easier.
+title: "Introducing Roles: Enhanced collaboration and security in Indobase"
+description: Roles is a new addition to the Indobase Console that has been anticipated for a long time by the community. This feature will make permission handling a whole lot easier.
 date: 2024-09-25
 cover: /images/blog/new-roles/cover.png
 timeToRead: 8
@@ -10,13 +10,13 @@ category: product, announcement
 featured: false
 ---
 
-We’re excited to announce a new feature available in the Pro and Scale plans: **Roles**. This enhancement is designed to bring granular permissions to the Appwrite Console, improving both team collaboration and security across your projects. 
+We’re excited to announce a new feature available in the Pro and Scale plans: **Roles**. This enhancement is designed to bring granular permissions to the Indobase Console, improving both team collaboration and security across your projects. 
 
 # The benefit of multiple roles
 
-Previously, you could only invite team members to your organization with one role that gave equal access to all members, regardless of their function. Needless to say, this is not an ideal situation, especially as your team expands, bringing more complexities in managing permissions. With Roles, you can now assign specific permissions to each member of your team, ensuring everyone has the right level of access to their responsibilities. This update provides more control over who can access, modify, and manage different parts of your organization’s projects, making it a key addition to growing teams and larger projects. Managing access to your Appwrite Console has never been easier. 
+Previously, you could only invite team members to your organization with one role that gave equal access to all members, regardless of their function. Needless to say, this is not an ideal situation, especially as your team expands, bringing more complexities in managing permissions. With Roles, you can now assign specific permissions to each member of your team, ensuring everyone has the right level of access to their responsibilities. This update provides more control over who can access, modify, and manage different parts of your organization’s projects, making it a key addition to growing teams and larger projects. Managing access to your Indobase Console has never been easier. 
 
-# Overview of the new Roles in Appwrite
+# Overview of the new Roles in Indobase
 
 Before this feature update, you only had one role:
 

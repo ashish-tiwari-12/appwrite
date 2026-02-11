@@ -1,13 +1,13 @@
----
+﻿---
 layout: changelog
-title: Announcing Appwrite Pro
+title: Announcing Indobase Pro
 date: 2023-12-20
 cover: /images/changelog/2023-12-20.png
 ---
 
-Appwrite Pro is now available for Appwrite Cloud developers.
+Indobase Pro is now available for Indobase Cloud developers.
 
-Previously, all Appwrite Cloud developers used the Free plan with unrestricted resources.
+Previously, all Indobase Cloud developers used the Free plan with unrestricted resources.
 With Pro, you can choose between two different plans for your organization(s):
 
 - Free: a free plan that provides an easy starting point for budding projects

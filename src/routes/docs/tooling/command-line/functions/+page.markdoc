@@ -1,12 +1,12 @@
----
+﻿---
 layout: article
 title: Functions
-description: Efficiently deploy your Appwrite functions using the Command-Line Tool (CLI).
+description: Efficiently deploy your Indobase functions using the Command-Line Tool (CLI).
 ---
 
 {% partial file="cli-disclaimer.md" /%}
 
-The CLI handles the creation, deployment, and execution of Appwrite Functions, as well as the configuration of the variables. You can also [develop your function locally](/docs/products/functions/develop-locally) using CLI commands.
+The CLI handles the creation, deployment, and execution of Indobase Functions, as well as the configuration of the variables. You can also [develop your function locally](/docs/products/functions/develop-locally) using CLI commands.
 
 # Initialize function {% #initialize-function %}
 
@@ -18,7 +18,7 @@ appwrite init functions
 
 # Pull function {% #pull-function %}
 
-You can also pull your existing Appwrite Functions from the Appwrite Console using the `pull` command in the folder containing your `appwrite.config.json` file.
+You can also pull your existing Indobase Functions from the Indobase Console using the `pull` command in the folder containing your `appwrite.config.json` file.
 
 ```sh
 appwrite pull functions
@@ -26,7 +26,7 @@ appwrite pull functions
 
 # appwrite.config.json {% #appwritejson %}
 
-After [initializing](/docs/tooling/command-line/installation#initialization) your Appwrite project and pulling your existing functions, your `appwrite.config.json` file should look similar to the following:
+After [initializing](/docs/tooling/command-line/installation#initialization) your Indobase project and pulling your existing functions, your `appwrite.config.json` file should look similar to the following:
 
 ```json
 {
@@ -111,7 +111,7 @@ appwrite push functions
 
 # Commands {% #commands %}
 
-The functions command lets you view, create, and manage your Appwrite Functions. Appwrite functions CLI commands generally follow the following syntax:
+The functions command lets you view, create, and manage your Indobase Functions. Indobase functions CLI commands generally follow the following syntax:
 
 ```sh
 appwrite functions [COMMAND] [OPTIONS]
@@ -143,7 +143,7 @@ appwrite functions [COMMAND] [OPTIONS]
 * Get a list of all the project's code deployments. You can use the query params to filter your results.
 ---
 * `create-deployment [options]`       
-* Create a new function code deployment. Use this endpoint to upload a new version of your code function. To execute your newly uploaded code, you'll need to update the function's deployment to use your new deployment UID. This endpoint accepts a tar.gz file compressed with your code. Make sure to include any dependencies your code has within the compressed file. You can learn more about code packaging in the [Appwrite Cloud Functions tutorial](https://appwrite.io/docs/functions). Use the "command" param to set the entrypoint used to execute your code.
+* Create a new function code deployment. Use this endpoint to upload a new version of your code function. To execute your newly uploaded code, you'll need to update the function's deployment to use your new deployment UID. This endpoint accepts a tar.gz file compressed with your code. Make sure to include any dependencies your code has within the compressed file. You can learn more about code packaging in the [Indobase Cloud Functions tutorial](https://appwrite.io/docs/functions). Use the "command" param to set the entrypoint used to execute your code.
 ---
 * `get-deployment [options]`          
 * Get a code deployment by its unique ID.

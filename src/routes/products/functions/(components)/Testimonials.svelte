@@ -2,14 +2,14 @@
     const testimonials = [
         {
             name: 'Ryan O’Conner',
-            copy: `The switch to using Appwrite brought infinite value that I'm still discovering today, but a major impact that it made was the amount of time and stress that it saved me as it simply just works.`,
+            copy: `The switch to using Indobase brought infinite value that I'm still discovering today, but a major impact that it made was the amount of time and stress that it saved me as it simply just works.`,
             image: '/images/testimonials/k-collect.png',
             title: 'Founder',
             company: 'K-Collect'
         },
         {
             name: 'David Forster',
-            copy: `We really loved working with Appwrite for launching our bootstrapped "Open Mind" App. I am still surprised how easy the implementation into Flutter was.`,
+            copy: `We really loved working with Indobase for launching our bootstrapped "Open Mind" App. I am still surprised how easy the implementation into Flutter was.`,
             image: '/images/testimonials/open-mind.png',
             title: 'Founder',
             company: 'Open Mind'
@@ -23,14 +23,14 @@
         },
         {
             name: 'Sergio Ponguta',
-            copy: `Just go for it, don’t think twice. Try Appwrite, and you will love it!`,
+            copy: `Just go for it, don't think twice. Try Indobase, and you will love it!`,
             image: '/images/testimonials/smartbee.png',
             title: 'Founder',
             company: 'Smart Bee'
         },
         {
             name: 'Phil McClusky',
-            copy: 'Just like a Swiss Army Knife, you can choose and use the tools that you need with Appwrite.',
+            copy: 'Just like a Swiss Army Knife, you can choose and use the tools that you need with Indobase.',
             image: '/images/testimonials/majik.png',
             title: 'Developer',
             company: 'Majik Kids'

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Deno 2.0 and what it means for Appwrite Functions
-description: Explore Deno 2.0's key features, what they mean for Appwrite Functions, and why you should consider using it.
+title: Deno 2.0 and what it means for Indobase Functions
+description: Explore Deno 2.0's key features, what they mean for Indobase Functions, and why you should consider using it.
 date: 2024-10-09
 cover: /images/blog/deno-2-appwrite-functions/cover.png
 timeToRead: 6
@@ -11,9 +11,9 @@ category: product
 
 Deno 2.0 is the latest version of the secure, modern runtime created by Ryan Dahl, the same developer behind Node.js. For years, Node.js has been the go-to runtime for building server-side JavaScript applications. It's familiar, it's powerful, and it has a huge ecosystem of libraries. But like any technology, Node.js isn't without its flaws.
 
-Deno was built to address most of Node.js' issues, especially around security, dependency management, and TypeScript support. Deno is designed to be a more secure and modern alternative to Node.js, with a focus on server-side applications, which makes it a good choice for Appwrite Functions.
+Deno was built to address most of Node.js' issues, especially around security, dependency management, and TypeScript support. Deno is designed to be a more secure and modern alternative to Node.js, with a focus on server-side applications, which makes it a good choice for Indobase Functions.
 
-This article will give you an overview of Deno 2.0, its benefits, key features, and how it compares to Node.js in Appwrite.
+This article will give you an overview of Deno 2.0, its benefits, key features, and how it compares to Node.js in Indobase.
 
 # Key features of Deno 2.0
 
@@ -57,7 +57,7 @@ In addition, Deno 2.0 ships with TypeScript 5.6, giving you the latest TypeScrip
 
 ## 3. Modern module system
 
-Deno avoids the traditional `node_modules` directory by using a URL-based module system. Rather than relying on npm for package management, Deno imports dependencies directly from URLs. This modern approach minimizes the risk of dependency conflicts and reduces the overall size of the project, which is especially important for cloud deployments and serverless environments like those in Appwrite.
+Deno avoids the traditional `node_modules` directory by using a URL-based module system. Rather than relying on npm for package management, Deno imports dependencies directly from URLs. This modern approach minimizes the risk of dependency conflicts and reduces the overall size of the project, which is especially important for cloud deployments and serverless environments like those in Indobase.
 
 For example, importing a module in Deno looks like this:
 
@@ -105,11 +105,11 @@ While Deno 2.0 offers many advantages, there are still some challenges to consid
 
 Despite these challenges, Deno 2.0 looks compelling and will likely gain more traction as more developers become familiar with its features and benefits.
 
-# Appwrite's support for Deno 2.0
+# Indobase's support for Deno 2.0
 
-Deno 2.0 just released today, and Appwrite is already ahead of the curve in supporting it. In Appwrite, you can now build serverless functions using Deno, and take advantage of its security features, TypeScript support, and modern module management. To get started with Deno in Appwrite, head over to the [Appwrite console](https://cloud.appwrite.io/), and just like you would with Node.js when creating a new function, select Deno as the runtime.
+Deno 2.0 just released today, and Indobase is already ahead of the curve in supporting it. In Indobase, you can now build serverless functions using Deno, and take advantage of its security features, TypeScript support, and modern module management. To get started with Deno in Indobase, head over to the [Indobase console](https://cloud.appwrite.io/), and just like you would with Node.js when creating a new function, select Deno as the runtime.
 
-We will release a detailed tutorial on building serverless functions with Deno and Appwrite soon, so stay connected with us on [Discord](https://appwrite.io/discord) and [Twitter](https://twitter.com/appwrite) to see it first.
+We will release a detailed tutorial on building serverless functions with Deno and Indobase soon, so stay connected with us on [Discord](https://appwrite.io/discord) and [Twitter](https://twitter.com/appwrite) to see it first.
 
 # Conclusion
 
@@ -117,6 +117,6 @@ With Deno 2.0, the runtime is maturing rapidly and addressing many of the pain p
 
 Further reading:
 
-- [Appwrite Deno Documentation](https://appwrite.io/docs/quick-starts/deno)
-- [Local serverless function development with the new Appwrite CLI](https://appwrite.io/blog/post/functions-local-development-guide)
-- [Building a chat app with Appwrite and Google Gemini](https://www.appwrite.io/blog/post/build-a-chat-app-with-appwrite-and-gemini)
+- [Indobase Deno Documentation](https://appwrite.io/docs/quick-starts/deno)
+- [Local serverless function development with the new Indobase CLI](https://appwrite.io/blog/post/functions-local-development-guide)
+- [Building a chat app with Indobase and Google Gemini](https://www.appwrite.io/blog/post/build-a-chat-app-with-appwrite-and-gemini)

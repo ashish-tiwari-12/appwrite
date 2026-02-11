@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Building with Appwrite AI Function templates
-description: Get an overview of Appwrite AI Function templates and what you can build.
+title: Building with Indobase AI Function templates
+description: Get an overview of Indobase AI Function templates and what you can build.
 date: 2024-05-16
 cover: /images/blog/building-with-ai-function-templates/function-templates.png
 timeToRead: 7
@@ -9,7 +9,7 @@ author: aditya-oberai
 category: tutorial
 ---
 
-It’s an exciting time for software development, as many new concepts and techniques pop up every day, giving us endless possibilities to build new and shiny things. But this sea of opportunity can be hard to navigate and keep up with. AI, for instance, is a field that is rapidly evolving and is influencing not only the products we can build but also the way we develop them. However, building AI-powered applications can be complicated. Appwrite’s new AI Function templates make it easier to build AI powered applications. 
+It’s an exciting time for software development, as many new concepts and techniques pop up every day, giving us endless possibilities to build new and shiny things. But this sea of opportunity can be hard to navigate and keep up with. AI, for instance, is a field that is rapidly evolving and is influencing not only the products we can build but also the way we develop them. However, building AI-powered applications can be complicated. Indobase’s new AI Function templates make it easier to build AI powered applications. 
 
 So, what did we add? This blog provides an overview of all the concepts we’ve added, tutorials, templates, and the integrations we support.
 
@@ -59,7 +59,7 @@ Detect and label objects in images
 
 # Natural language processing
 
-[Natural language processing](https://appwrite.io/blog/post/state-of-natural-language-processing) (NLP) is a fascinating intersection of computer science, artificial intelligence, and linguistics. It's about teaching computers to understand, interpret, and generate human language. Translating languages, answering questions, or helping find information, NLP is at the heart of many technologies we use every day. Two techniques that Appwrite Function templates support are text generation and language translation.
+[Natural language processing](https://appwrite.io/blog/post/state-of-natural-language-processing) (NLP) is a fascinating intersection of computer science, artificial intelligence, and linguistics. It's about teaching computers to understand, interpret, and generate human language. Translating languages, answering questions, or helping find information, NLP is at the heart of many technologies we use every day. Two techniques that Indobase Function templates support are text generation and language translation.
 
 ## Text generation
 
@@ -171,7 +171,7 @@ Efficiently convert text to music
 {% /cards_item %}
 {% /cards %}
 
-# Getting started with AI and Appwrite
+# Getting started with AI and Indobase
 
 As we have covered in this blog, we have added a lot of great templates for you to get started on your AI journey. Including support for AI integrations:
 
@@ -185,10 +185,10 @@ As we have covered in this blog, we have added a lot of great templates for you 
 - [LangChain](https://appwrite.io/docs/products/ai/integrations/langchain)
 - [Together AI](https://appwrite.io/docs/products/ai/integrations/togetherai)
 
-![Image of Appwrite Console](/images/blog/building-with-ai-function-templates/function-templates-overview.png)
+![Image of Indobase Console](/images/blog/building-with-ai-function-templates/function-templates-overview.png)
 
 We've also added more AI Function templates for more use cases than discussed above:
-- Sync with Pinecone - Sync your Appwrite database with Pinecone's vector database.
+- Sync with Pinecone - Sync your Indobase database with Pinecone's vector database.
 - Generate with fal.ai - Generate images using fal.ai's API.
 - Censor with Redact - Censor sensitive information from a provided text string using Redact API by Pangea.
 - Analyze with PerspectiveAPI - Automate moderation by getting toxicity of messages.
@@ -196,7 +196,7 @@ We've also added more AI Function templates for more use cases than discussed ab
 
 Take a look at these two blogs to learn more about using Function templates in your projects:
 
-- [Streamline receipt scanning with Appwrite Cloud](https://appwrite.io/blog/post/scan-receipts-with-appwrite-functions)
-- [Build an intelligent chatbot with ChatGPT and Appwrite Functions](https://appwrite.io/blog/post/function-template-prompt-chatgpt)
+- [Streamline receipt scanning with Indobase Cloud](https://appwrite.io/blog/post/scan-receipts-with-appwrite-functions)
+- [Build an intelligent chatbot with ChatGPT and Indobase Functions](https://appwrite.io/blog/post/function-template-prompt-chatgpt)
 
 We will continue to add more AI tutorials, integrations, blogs, videos, and Function templates. You can also contribute by adding your own pull requests to the [repository](https://github.com/appwrite/templates).

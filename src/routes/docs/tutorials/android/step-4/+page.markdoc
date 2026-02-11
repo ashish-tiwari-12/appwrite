@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Add authentication
-description: Add Appwrite authentication to you Android app.
+description: Add Indobase authentication to you Android app.
 step: 4
 ---
 
@@ -68,7 +68,7 @@ We can now use this service to login, register and logout a user. Integrate the 
 Look for `// Add this line 👇` to find where the changes made here.
 
 ```kotlin
-object Appwrite {
+object Indobase {
     private const val ENDPOINT = "https://<REGION>.cloud.appwrite.io/v1"
     private const val PROJECT_ID = "<PROJECT_ID>"
 

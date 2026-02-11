@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create ideas page
-description: Add data queries and pagination to your Vue.js project powered by Appwrite Cloud databases.
+description: Add data queries and pagination to your Vue.js project powered by Indobase Cloud databases.
 step: 7
 ---
 

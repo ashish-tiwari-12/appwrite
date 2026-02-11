@@ -15,7 +15,7 @@
     const text = [
         {
             timestamp: '18:31:21.320',
-            content: 'Appwrite Build'
+            content: 'Indobase Build'
         },
         {
             timestamp: '18:31:21.344',
@@ -36,11 +36,11 @@
         },
         {
             timestamp: '18:31:22.123',
-            content: 'Running "appwrite build"'
+            content: 'Running "Indobase build"'
         },
         {
             timestamp: '18:31:22.938',
-            content: 'Appwrite CLI 37.6.1'
+            content: 'Indobase CLI 37.6.1'
         }
     ];
 
@@ -118,7 +118,7 @@
         </div>
         <p class="text-sub-body text-primary max-w-lg font-medium">
             <span class="text-secondary">Host and maintain</span> your website domains and frontend code.
-            Integrated with all Appwrite products.
+            Integrated with all Indobase products.
         </p>
     </div>
     <div

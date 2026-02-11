@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "The top 6 Vector Databases to use for AI applications in 2025"
 description: "Find the best vector database for your 2025 AI stack. Compare performance, scalability, and integration across leading vector DBs."
@@ -146,5 +146,5 @@ At the end of the day, it’s less about which database is “best” and more a
 
 # More resources
 - [Choosing the right AI database for your application in 2025](/blog/post/choosing-the-right-ai-database)
-- [Announcing TanStack Start support in Appwrite Sites](/blog/post/tanstack-start-support-in-appwrite-sites)
-- [Appwrite Sites now offers unlimited sites on the free plan](/blog/post/unlimited-appwrite-sites-free-plan)
+- [Announcing TanStack Start support in Indobase Sites](/blog/post/tanstack-start-support-in-appwrite-sites)
+- [Indobase Sites now offers unlimited sites on the free plan](/blog/post/unlimited-appwrite-sites-free-plan)

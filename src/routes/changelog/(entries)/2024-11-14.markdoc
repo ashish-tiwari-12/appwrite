@@ -1,4 +1,4 @@
----
+﻿---
 layout: changelog
 title: "Expanded event support for users.create"
 date: 2024-11-14
@@ -11,5 +11,5 @@ To support this, we've updated the internal event architecture to handle more co
 This lays the foundation for even more flexible event handling in the future.
 
 {% arrow_link href="/docs/advanced/platform/events" %}
-Learn more about events in Appwrite
+Learn more about events in Indobase
 {% /arrow_link %}

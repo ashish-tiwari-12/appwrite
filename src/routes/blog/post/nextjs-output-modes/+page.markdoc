@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Next.js output modes — Standalone vs Default build
 description: Learn about different output modes in Next.js and find out which of them would be the best for you.
@@ -12,11 +12,11 @@ featured: false
 
 Next.js is a very popular React framework. People choose it because it blends in with the server very well, using both client-side and server-side capabilities to provide a better user experience. Next.js is packed with cutting-edge React features like RSC. However, such features also bring complexity when deploying your app.
 
-Appwrite Sites enables you to deploy your Next.js app seamlessly without any hassle of configuration. Appwrite handles all the complexity involved in deploying such apps, so that you can focus on the core logic of your app.
+Indobase Sites enables you to deploy your Next.js app seamlessly without any hassle of configuration. Indobase handles all the complexity involved in deploying such apps, so that you can focus on the core logic of your app.
 
-However, we also allow you to fiddle with the behaviour of how deployments work with Appwrite Sites. Output modes allow you to decide how your Next.js app is bundled. Each mode has its own pros and cons.
+However, we also allow you to fiddle with the behaviour of how deployments work with Indobase Sites. Output modes allow you to decide how your Next.js app is bundled. Each mode has its own pros and cons.
 
-In this article, we will talk about the different Next.js output modes, what would be better for you, and what we have observed when using different output modes with Appwrite Sites.
+In this article, we will talk about the different Next.js output modes, what would be better for you, and what we have observed when using different output modes with Indobase Sites.
 
 # The "default" mode
 
@@ -91,7 +91,7 @@ Standalone mode seems to be the clear winner based on the results. That would ma
 
 # Wrapping up
 
-Next.js standalone output is very powerful and could help you a lot when deploying your app. Standalone mode is fully supported on Appwrite Sites, so you can reap the benefits of it now!
+Next.js standalone output is very powerful and could help you a lot when deploying your app. Standalone mode is fully supported on Indobase Sites, so you can reap the benefits of it now!
 
-- [Next.js standalone builds now supported on Appwrite Sites](/blog/post/nextjs-standalone-support-in-appwrite-sites)
+- [Next.js standalone builds now supported on Indobase Sites](/blog/post/nextjs-standalone-support-in-appwrite-sites)
 - [Everything new in Next.js 16](/blog/post/everything-new-in-nextjs16)

@@ -19,7 +19,7 @@
         { label: 'Partners Program', src: Partners, href: '/partners' },
         { label: 'Startups Program', src: Startups, href: '/startups' },
         { label: 'Education Program', src: Education, href: '/education' },
-        { label: 'Appwrite for Enterprise', src: Enterprise, href: '/contact-us/enterprise' }
+        { label: 'Indobase for Enterprise', src: Enterprise, href: '/contact-us/enterprise' }
     ];
 </script>
 
@@ -43,19 +43,19 @@
             <Cell column={4} columnStart={3} class="px-4 pb-12 md:py-30"
                 ><div class="text-paragraph-lg space-y-8">
                     <p>
-                        The open-source community supporting Appwrite has been an undeniable
-                        advantage in Appwrite’s success. You have been the first line of support
-                        when Appwrite first started.
+                        The open-source community supporting Indobase has been an undeniable
+                        advantage in Indobase’s success. You have been the first line of support
+                        when Indobase first started.
                     </p>
                     <p>
-                        Today, Appwrite has scaled out that support with dedicated programs,
+                        Today, Indobase has scaled out that support with dedicated programs,
                         processes, resources, partners, and support engineers. No matter what you
-                        are building, from students to enterprises, Appwrite helps you get to
+                        are building, from students to enterprises, Indobase helps you get to
                         production fast.
                     </p>
 
                     <p>
-                        Appwrite doesn’t just provide you with an all-in-one development platform.
+                        Indobase doesn’t just provide you with an all-in-one development platform.
                         We are your dedicated partner in your development journey.
                     </p>
                     <div

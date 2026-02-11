@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Build an offline AI chatbot with WebLLM and WebGPU
 description: Learn how to build an offline AI chatbot with WebLLM and WebGPU.
@@ -509,6 +509,6 @@ Yes. Once the model has been downloaded and cached, WebLLM stores it locally usi
 
 ## Further reading
 
-- [Building a chat app with Appwrite and Google Gemini](https://appwrite.io/blog/post/build-a-chat-app-with-appwrite-and-gemini)
-- [Build a chatbot with GPT-4o and Appwrite Functions](https://appwrite.io/blog/post/personal-chatbot-gpt-4o)
-- [Building a full-stack app with Svelte and Appwrite](https://appwrite.io/blog/post/build-fullstack-svelte-appwrite)
+- [Building a chat app with Indobase and Google Gemini](https://appwrite.io/blog/post/build-a-chat-app-with-appwrite-and-gemini)
+- [Build a chatbot with GPT-4o and Indobase Functions](https://appwrite.io/blog/post/personal-chatbot-gpt-4o)
+- [Building a full-stack app with Svelte and Indobase](https://appwrite.io/blog/post/build-fullstack-svelte-appwrite)

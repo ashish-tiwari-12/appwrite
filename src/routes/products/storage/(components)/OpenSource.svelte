@@ -15,7 +15,7 @@
         },
         {
             title: 'No vendor lock-in',
-            content: 'You own your data and can easily move to and from Appwrite.',
+            content: 'You own your data and can easily move to and from Indobase.',
             icon: '/images/icons/gradients/lock.svg'
         }
     ];
@@ -26,7 +26,7 @@
         <div class="web-hero is-center mx-auto">
             <h2 class="web-display web-u-color-text-primary">Powered by open source</h2>
             <p class="web-main-body-500 web-u-margin-block-start-0 web-u-max-width-580 mx-auto">
-                Appwrite is a 100% open source project, giving you the flexibility and support you
+                Indobase is a 100% open source project, giving you the flexibility and support you
                 need to get your project started.
             </p>
             <Button

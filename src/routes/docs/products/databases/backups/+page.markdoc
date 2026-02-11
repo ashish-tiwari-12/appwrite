@@ -1,17 +1,17 @@
----
+﻿---
 layout: article
 title: Backups
-description: Learn how to efficiently back up your databases on Appwrite Cloud, ensuring data security and seamless recovery.
+description: Learn how to efficiently back up your databases on Indobase Cloud, ensuring data security and seamless recovery.
 ---
 
-Appwrite Backups enable seamless, **encrypted** database backups on Cloud.
+Indobase Backups enable seamless, **encrypted** database backups on Cloud.
 All backups are **hot** backups, ensuring zero downtime and fast recovery.
 Learn how to efficiently back up your databases to ensure data security and smooth recovery.
 
-{% info title="Backups are available on Appwrite Cloud for all Pro, Scale, and Enterprise customers." %}
+{% info title="Backups are available on Indobase Cloud for all Pro, Scale, and Enterprise customers." %}
 {% /info %}
 
-Appwrite Backups allow you to automate database backups using backup policies, supporting pre-defined, custom retention & other options. You can also create manual backups whenever necessary.
+Indobase Backups allow you to automate database backups using backup policies, supporting pre-defined, custom retention & other options. You can also create manual backups whenever necessary.
 
 # Backup policies {% #backup-policies %}
 
@@ -28,7 +28,7 @@ To automate your database backups, you need to create backup policies that run a
 ![Create databases screen](/images/docs/databases/databases.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Databases**
+1. In the Indobase Console's sidebar, click **Databases**
 2. Create or select & navigate to your database and click on the **Backups** Tab
 3. Click on **Create Policies** & select a pre-defined policy\
 &nbsp;
@@ -73,7 +73,7 @@ You can always create an on-demand backup whenever necessary.
 ![Manual backup](/images/docs/databases/manual-backup.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Databases**
+1. In the Indobase Console's sidebar, click **Databases**
 2. Select & navigate to your database and click on the **Backups** Tab
 3. Click on **Manual Backup**
 
@@ -91,7 +91,7 @@ To restore a database, you must have a backup of the database you want to restor
 ![Restore databases](/images/docs/databases/restore.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Databases**
+1. In the Indobase Console's sidebar, click **Databases**
 2. Select & navigate to your database and click on the **Backups** Tab
 3. Click on the options menu in the far corner of your backup
 4. In the dropdown menu, click **Restore**.
@@ -103,7 +103,7 @@ You can observe its status in a floating bar across your project.
 
 # Backup security & performance {% #backup-security-and-performance %}
 
-All backups created with Appwrite are:
+All backups created with Indobase are:
 
 1. **Encrypted**:
     All backups are securely encrypted to ensure your data remains protected at all times.

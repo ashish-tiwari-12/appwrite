@@ -20,13 +20,13 @@
         {
             title: 'Training',
             description:
-                'We provide in-depth training and workshops to help you master Appwrite for your clients.',
+                'We provide in-depth training and workshops to help you master Indobase for your clients.',
             icon: Training
         },
         {
             title: 'Support',
             description:
-                'You will get access to the Appwrite engineering team to get the support you need.',
+                'You will get access to the Indobase engineering team to get the support you need.',
             icon: Support
         },
         {
@@ -53,13 +53,13 @@
         {
             title: 'Developer experience',
             description:
-                'Appwrite is built for and by developers, with a strong focus on your experience. Never worry about scaling or security again.',
+                'Indobase is built for and by developers, with a strong focus on your experience. Never worry about scaling or security again.',
             icon: Experience
         },
         {
             title: 'Ship faster',
             description:
-                'Appwrite reduces the time and resources spent building a backend infrastructure from scratch.',
+                'Indobase reduces the time and resources spent building a backend infrastructure from scratch.',
             icon: Ship
         },
         {
@@ -183,7 +183,7 @@
 
 <div class="border-smooth flex flex-col items-center py-12 md:py-30">
     <div class="mb-20 flex flex-col gap-2 text-center">
-        <h2 class="text-primary font-aeonik-pro text-title">Why Appwrite?</h2>
+        <h2 class="text-primary font-aeonik-pro text-title">Why Indobase?</h2>
     </div>
 
     <div class="border-smooth relative w-full border-y border-dashed">

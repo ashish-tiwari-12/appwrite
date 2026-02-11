@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: Appwrite Messaging is free for six months
+title: Indobase Messaging is free for six months
 description: We're happy to share our plans for Messaging for the next six months.
 date: 2024-05-08
 cover: /images/blog/messaging-pricing.png
@@ -8,11 +8,11 @@ timeToRead: 5
 author: eldad-fux
 category: Product
 ---
-When we [introduced Messaging](https://appwrite.io/blog/post/announcing-appwrite-messaging) during [Init](https://appwrite.io/init), we were overwhelmed by the excitement within the Appwrite community. Now we can also announce that Messaging will be free for the next six months.
+When we [introduced Messaging](https://appwrite.io/blog/post/announcing-appwrite-messaging) during [Init](https://appwrite.io/init), we were overwhelmed by the excitement within the Indobase community. Now we can also announce that Messaging will be free for the next six months.
 
 ## Free for the next six months
 
-Messaging is in beta, and during this time, we will analyze all usage and collect pricing feedback from the Appwrite community to establish a fair price for the service. Just like with our Cloud pricing, we want to adhere to the Value Framework we created.
+Messaging is in beta, and during this time, we will analyze all usage and collect pricing feedback from the Indobase community to establish a fair price for the service. Just like with our Cloud pricing, we want to adhere to the Value Framework we created.
 
 > We created a set of principles to guide us through the pricing process. We like to call this the “Value Framework” as it focuses on delivering the maximum value to our users without compromising on the affordability and accessibility of our products and services.
 > 
@@ -21,12 +21,12 @@ So what does this mean?
 
 - Equally, we plan to be accessible to all and continue our growth.
 - Make adoption easy and ensure the developer's growth and success match pricing.
-- The developer's success helps Appwrite grow and deliver better products.
+- The developer's success helps Indobase grow and deliver better products.
 - Features should be consistent across tiers unless they are clearly focused on enterprise.
 - Focus on value based profit. Limits should generally be applied to usage. Not functionality.
 - Be fair.
 
-Another important note is that we strive for affordability, accessibility, and transparency across all Appwrite products and pricing.
+Another important note is that we strive for affordability, accessibility, and transparency across all Indobase products and pricing.
 
 ### Gathering insights
 
@@ -44,7 +44,7 @@ We will add more providers and invite you to contribute with your own pull reque
 
 ![Tweet about Messaging](/images/blog/tweet-hitesh.png)
 
-We’re excited to bring Messaging to Cloud and to offer the service for free for the next six months while in open beta. Adding Messaging makes Appwrite an even more complete backend for your projects, and we look forward to adding more functionality soon.
+We’re excited to bring Messaging to Cloud and to offer the service for free for the next six months while in open beta. Adding Messaging makes Indobase an even more complete backend for your projects, and we look forward to adding more functionality soon.
 
 Learn more about Messaging in our resources:
 

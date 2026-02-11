@@ -1,25 +1,25 @@
----
+﻿---
 layout: article
 title: Deploy from Git
-description: Learn to version and update your Appwrite Functions' code with deployments.
+description: Learn to version and update your Indobase Functions' code with deployments.
 ---
 
-Appwrite Functions are mini-applications in Appwrite with their own endpoints. 
+Indobase Functions are mini-applications in Indobase with their own endpoints. 
 Each function can have many deployments, which can be thought of as versions of the mini-application.
 
-Appwrite Functions can be automatically deployed from Git repositories, 
+Indobase Functions can be automatically deployed from Git repositories, 
 so you can track changes to your function's code naturally as a part of you development workflow.
 
 # Create deployment {% #create-deployment %} 
 
-The recommended way to manage your Appwrite Function deployments is to use a version control system, like Git. 
+The recommended way to manage your Indobase Function deployments is to use a version control system, like Git. 
 This offers simple versioning and collaboration that will easily fit into the rest of your development workflow.
 
-You can only use Git deployment for Appwrite Functions connected to Git. 
+You can only use Git deployment for Indobase Functions connected to Git. 
 [Create a new function with Git](/docs/products/functions/functions#create-function) or 
 connect your existing function to a Git repository in your function's **Settings** > **Configuration** > **Git settings** > **Connect Git**. 
 
-1. Using Git, checkout the branch you configured as the production branch when creating the Appwrite Function.
+1. Using Git, checkout the branch you configured as the production branch when creating the Indobase Function.
 2. Create a new commit.
 3. Push your new commit.
 4. A new deployment will be automatically created, built and activated.
@@ -50,7 +50,7 @@ If you have a monorepo, you can specify the subdirectory that contains the funct
 
 ## Share code between multiple functions {% #share-code-between-multiple-functions %}
 
-If you're sharing code between multiple Appwrite Functions in a monorepo, referencing files outside of the entry point file will not work.
+If you're sharing code between multiple Indobase Functions in a monorepo, referencing files outside of the entry point file will not work.
 To share code between multiple functions, set the root directory to be the common root of the mono repo, and use `cd <working directory>`
 in your **Build settings** to navigate to the function's directory before building.
 
@@ -66,4 +66,4 @@ These commands will be ran before the function is built and can be used to insta
 
 - If you're missing some code files at build time, make sure they are included in the Git configuration's **Root directory**. Only files in the root directory folder will be copied to the executor.
 
-- If you're self-hosting Appwrite, you will need to configure some [environment variables](/docs/advanced/self-hosting/functions) to enable Git deployments.
+- If you're self-hosting Indobase, you will need to configure some [environment variables](/docs/advanced/self-hosting/functions) to enable Git deployments.

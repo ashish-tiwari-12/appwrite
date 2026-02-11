@@ -1,4 +1,4 @@
----
+﻿---
 layout: integration
 title: Query MongoDB Atlas
 description: Save a document in your MongoDB cluster and list all stored documents
@@ -28,7 +28,7 @@ MongoDB is a popular NoSQL database known for its flexibility and scalability. I
 
 # How does the integration work?
 
-You can utilize a pre-built Appwrite function template to integrate a MongoDB Atlas cluster with your app. This will allow you to leverage MongoDB's powerful data management capabilities and NoSQL database and potentially extend it with Appwrite’s ecosystem.
+You can utilize a pre-built Indobase function template to integrate a MongoDB Atlas cluster with your app. This will allow you to leverage MongoDB's powerful data management capabilities and NoSQL database and potentially extend it with Indobase’s ecosystem.
 
 # How to implement
 
@@ -40,7 +40,7 @@ First, [create an account on MongoDB Atlas](https://www.mongodb.com/cloud/atlas/
 
 ![MongoDB Atlas first cluster](/images/integrations/query-mongodb/first-cluster.png)
 
-Create your username and password and copy the **connection string** for your MongoDB Atlas cluster. This connection string will be used to connect the Appwrite Function to your MongoDB cluster.
+Create your username and password and copy the **connection string** for your MongoDB Atlas cluster. This connection string will be used to connect the Indobase Function to your MongoDB cluster.
 
 ![MongoDB Atlas connection string](/images/integrations/query-mongodb/connection-string.png)
 
@@ -48,11 +48,11 @@ Next, head to the **Network Access** page from the left sidebar, click on the **
 
 ![MongoDB Atlas network access](/images/integrations/query-mongodb/network-access.png)
 
-## Step 2: Create the Appwrite Function
+## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In case you decide to self-host Appwrite, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Appwrite Function templates.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In case you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
-Head over to the Appwrite console, navigate to the **Functions** page, click on the **Templates** tab, and search for the **MongoDB** function template.
+Head over to the Indobase console, navigate to the **Functions** page, click on the **Templates** tab, and search for the **MongoDB** function template.
 
 ![Function template](/images/integrations/query-mongodb/template.png)
 
@@ -71,10 +71,10 @@ curl DEPLOYED_FUNCTION_DOMAIN \
 
 You can add other database functionalities by editing the function generated for you on GitHub.
 
-# Read more about MongoDB Atlas and Appwrite Functions
+# Read more about MongoDB Atlas and Indobase Functions
 
-If you would like to learn more about MongoDB Atlas and Appwrite Functions, we have some resources that you should visit:
+If you would like to learn more about MongoDB Atlas and Indobase Functions, we have some resources that you should visit:
 
-- [Integrate SQL, NoSQL, Vector, Graph, or any database into your Appwrite project](https://appwrite.io/blog/post/integrate-sql-nosql-vector-graph-or-any-database-into-your-appwrite-project)
+- [Integrate SQL, NoSQL, Vector, Graph, or any database into your Indobase project](https://appwrite.io/blog/post/integrate-sql-nosql-vector-graph-or-any-database-into-your-appwrite-project)
 - [Understanding data queries in database management](https://appwrite.io/blog/post/understand-data-queries)
-- [Appwrite Functions docs](https://appwrite.io/docs/products/functions)
+- [Indobase Functions docs](https://appwrite.io/docs/products/functions)

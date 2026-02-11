@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Build an idea tracker with Next.js
-description: Learn to build an idea tracker app with Appwrite and Next.js with authentication, databases and tables, queries, pagination, and file storage.
+description: Learn to build an idea tracker app with Indobase and Next.js with authentication, databases and tables, queries, pagination, and file storage.
 step: 1
 difficulty: beginner
 readtime: 25
@@ -11,7 +11,7 @@ back: /docs/tutorials
 ---
 
 **Idea Tracker**: an app to track all the side project ideas that you'll start, but probably never finish.
-In this tutorial, you will build an Idea Tracker with Appwrite and Next.js.
+In this tutorial, you will build an Idea Tracker with Indobase and Next.js.
 
 {% only_dark %}
 ![Create project screen](/images/docs/tutorials/dark/idea-tracker.png)

@@ -1,27 +1,27 @@
----
+﻿---
 layout: article
 title: Start with Apple
-description: Build iOS apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+description: Build iOS apps with Indobase and learn how to use our powerful backend to add authentication, user management, file storage, and more.
 difficulty: beginner
 readtime: 10
 back: /docs/quick-starts
 ---
 
-Learn how to setup your first Apple project powered by Appwrite and the [Appwrite Apple SDK](https://github.com/appwrite/sdk-for-apple).
+Learn how to setup your first Apple project powered by Indobase and the [Indobase Apple SDK](https://github.com/appwrite/sdk-for-apple).
 
 {% section #step-1 step=1 title="Create Apple project" %}
 Open Xcode and click **Create a new Xcode project**.
 
 Choose your desired project template, for example **iOS App**,  and click **Next**.
 
-Now enter your app **product name** and **bundle identifier** and click **Next**. You will need both of these values later when you create your project in the Appwrite console.
+Now enter your app **product name** and **bundle identifier** and click **Next**. You will need both of these values later when you create your project in the Indobase console.
 
 Choose a directory for your project in and click **Create** to create your project.
 
 {% /section %}
 
-{% section #step-2 step=2 title="Create Appwrite project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+{% section #step-2 step=2 title="Create Indobase project" %}
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -30,7 +30,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console).
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 Then, under **Add a platform**, add an **Apple app**. Choose any of **iOS**, **macOS**, **watchOS** or **tvOS** as your Apple platform. If you are creating a multi-platform app, you can add more platforms later.
 
@@ -47,8 +47,8 @@ You can skip optional steps.
 
 {% /section %}
 
-{% section #step-3 step=3 title="Add the Appwrite SDK" %}
-To add the Appwrite SDK for Apple as a dependency, open the **File** menu and click **Add Packages**.
+{% section #step-3 step=3 title="Add the Indobase SDK" %}
+To add the Indobase SDK for Apple as a dependency, open the **File** menu and click **Add Packages**.
 
 In the **Package URL** search box, enter https://github.com/appwrite/sdk-for-apple. 
 
@@ -88,7 +88,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 ```
 {% /section %}
 
-{% section #step-4 step=4 title="Create Appwrite Singleton" %}
+{% section #step-4 step=4 title="Create Indobase Singleton" %}
 Find your project's ID in the **Settings** page. 
 
 {% only_dark %}
@@ -101,10 +101,10 @@ Create a new file `Appwrite.swift` and add the following code to it, replacing `
 
 ```swift
 import Foundation
-import Appwrite
+import Indobase
 import JSONCodable
 
-class Appwrite {
+class Indobase {
     var client: Client
     var account: Account
     
@@ -160,7 +160,7 @@ class ViewModel: ObservableObject {
 
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
-    let appwrite = Appwrite()
+    let appwrite = Indobase()
 
     var body: some View {
         VStack {
@@ -205,7 +205,7 @@ struct ContentView: View {
 For enhanced type safety, you can use custom model structs with the `nestedType` parameter:
 
 ```swift
-import Appwrite
+import Indobase
 struct User: Codable {
     let name: String
     let email: String
@@ -213,7 +213,7 @@ struct User: Codable {
 }
 
 // Usage with type safety
-let appwrite = Appwrite()
+let appwrite = Indobase()
 let tablesDB = TablesDB(appwrite.client)
 
 do {
@@ -232,7 +232,7 @@ do {
 ```
 
 {% info title="Generate types automatically" %}
-Use the [Appwrite CLI](/docs/products/databases/type-generation) to generate model structs automatically: `appwrite types collection`
+Use the [Indobase CLI](/docs/products/databases/type-generation) to generate model structs automatically: `appwrite types collection`
 {% /info %}
 
 {% /section %}

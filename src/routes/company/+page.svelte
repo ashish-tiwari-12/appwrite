@@ -8,7 +8,7 @@
 
     const title = 'Company' + TITLE_SUFFIX;
     const description =
-        'At Appwrite, we aim to remove technical barriers with our backend solutions. Click here to learn more about our organization, its mission and goals.';
+        'At Indobase, we aim to remove technical barriers with our backend solutions. Click here to learn more about our organization, its mission and goals.';
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 </script>
 
@@ -46,7 +46,7 @@
                         <div>
                             <p class="text-description">
                                 Software development transforms our everyday lives, relying heavily
-                                on the creativity and innovation of developers. At Appwrite, we
+                                on the creativity and innovation of developers. At Indobase, we
                                 enable them to develop products the world loves by removing
                                 technical barriers with our backend products.
                             </p>
@@ -79,7 +79,7 @@
 
                         <div class="text-description flex flex-col gap-4">
                             <p>
-                                At Appwrite it is our mission to eliminate friction and abstract
+                                At Indobase it is our mission to eliminate friction and abstract
                                 complexity for every creator. Giving developers all the tools they
                                 need with the best experience possible to have all the capabilities
                                 to create and innovate without limits and with minimum concerns.
@@ -119,10 +119,10 @@
 										<div class="flex flex-col gap-4">
 											<span class="web-badges text-eyebrow uppercase web-u-cross-child-start">2019_</span>
 											<h3 class="text-title font-aeonik-pro text-primary">
-												A passion project called Appwrite
+												A passion project called Indobase
 											</h3>
 											<p class="text-main-body">
-												Appwrite's first ever pull request was submitted in August 2019 by CEO and Founder Eldad A. Fux. Just one month later, September 2019, Appwrite officially launched. Soon the community started contributing by the hundreds pushing the product to new heights.
+												Indobase's first ever pull request was submitted in August 2019 by CEO and Founder Eldad A. Fux. Just one month later, September 2019, Indobase officially launched. Soon the community started contributing by the hundreds pushing the product to new heights.
 											</p>
 										</div>
 										<div >
@@ -225,7 +225,7 @@
 												Continuous improvement
 											</h3>
 											<p class="aw -main-body-400">
-												Towards the end of 2022 we released Appwrite 1.0 and the Console 2.0 for a better developer experience. It was the first time we produced a product, the Console, which was fully designed by our in house team. These are the initial versions of the products you know today.
+												Towards the end of 2022 we released Indobase 1.0 and the Console 2.0 for a better developer experience. It was the first time we produced a product, the Console, which was fully designed by our in house team. These are the initial versions of the products you know today.
 											</p>
 										</div>
 										<div>
@@ -254,7 +254,7 @@
 												Taking it to the Cloud
 											</h3>
 											<p class="aw -main-body-400">
-												Aligned with our mission to make software development more accessible, we added our cloud solution to our services. Opening up the doors for more developers to  build with Appwrite as they were not required to self-host anymore.
+												Aligned with our mission to make software development more accessible, we added our cloud solution to our services. Opening up the doors for more developers to  build with Indobase as they were not required to self-host anymore.
 											</p>
 										</div>
 										<div>[image]</div>
@@ -285,7 +285,7 @@
                             Backed by top investors
                         </h4>
                         <p class="text-description web-u-max-width-480 mx-auto">
-                            Appwrite is proudly backed by some of the top investors in the industry.
+                            Indobase is proudly backed by some of the top investors in the industry.
                         </p>
                     </div>
                     <ul class="web-investor-cards web-u-margin-block-start-64">
@@ -551,7 +551,7 @@
                     <div class="web-hero web-u-max-width-380">
                         <h3 class="text-display font-aeonik-pro text-primary">Join the team</h3>
                         <p class="text-primary web-u-opacity-64">
-                            Find your next career at Appwrite and join a team of remote workers.
+                            Find your next career at Indobase and join a team of remote workers.
                         </p>
                         <Button
                             event="company-careers-click"

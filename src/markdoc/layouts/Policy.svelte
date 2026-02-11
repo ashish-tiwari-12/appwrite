@@ -40,7 +40,7 @@
         description: description,
         ogImage: DEFAULT_HOST + '/images/open-graph/website.png',
 
-        APP_NAME: 'Appwrite'
+        APP_NAME: 'Indobase'
     };
 
     let showToc = false;

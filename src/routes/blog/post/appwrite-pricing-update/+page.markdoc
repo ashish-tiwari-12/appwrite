@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Announcing Appwrite's new pricing plans"
-description: Starting September 1st, Appwrite's new pricing will go into effect. Learn more about the changes made and why.
+title: "Announcing Indobase's new pricing plans"
+description: Starting September 1st, Indobase's new pricing will go into effect. Learn more about the changes made and why.
 cover: /images/blog/appwrite-pricing-update/cover-pricing.png
 timeToRead: 7
 date: 2025-08-08
@@ -11,11 +11,11 @@ category: announcement
 lastUpdated: 2025-10-29
 ---
 
-We are updating Appwrite’s pricing as part of Appwrite Cloud’s move from beta to General Availability. For an extended period, Appwrite Cloud beta remained free for all users. As of January 2024, we introduced pricing for beta. Today, we are introducing a new base price and an updated pricing model that aligns with developer needs and industry standards. This will include pricing for Appwrite Sites and Messaging.
+We are updating Indobase’s pricing as part of Indobase Cloud’s move from beta to General Availability. For an extended period, Indobase Cloud beta remained free for all users. As of January 2024, we introduced pricing for beta. Today, we are introducing a new base price and an updated pricing model that aligns with developer needs and industry standards. This will include pricing for Indobase Sites and Messaging.
 
-# Appwrite’s new pricing
+# Indobase’s new pricing
 
-This new structure and pricing are designed to be more predictable and better aligned with how teams *actually* use Appwrite. Below is a brief overview of the pricing changes, which we will elaborate on later in this post.
+This new structure and pricing are designed to be more predictable and better aligned with how teams *actually* use Indobase. Below is a brief overview of the pricing changes, which we will elaborate on later in this post.
 
 Starting September 1st, 2025, the following pricing changes will go into effect:
 
@@ -26,13 +26,13 @@ Starting September 1st, 2025, the following pricing changes will go into effect:
 - The additional bandwidth price has decreased by 62%, from $40 per 100GB to $15 per 100GB
 - The price for GB hours has decreased by 33%, from $0.09 per GB hour to $0.06 per GB hour
 - The additional storage price has decreased by 6.7%, from $3 per 100GB to $2.8 per 100GB
-- Appwrite Messaging and Sites now have resource limits on Free, Pro, and Scale plans
+- Indobase Messaging and Sites now have resource limits on Free, Pro, and Scale plans
 
 # Why are we making these changes
 
-Since launching Appwrite Cloud, we’ve introduced significant improvements that benefit every project in over 900 version releases. These include more global regions, the new Appwrite Edge network, built-in CDN and DDoS protection, and new products like Appwrite Messaging and Appwrite Sites. These have all been included at no additional cost during the beta period.
+Since launching Indobase Cloud, we’ve introduced significant improvements that benefit every project in over 900 version releases. These include more global regions, the new Indobase Edge network, built-in CDN and DDoS protection, and new products like Indobase Messaging and Indobase Sites. These have all been included at no additional cost during the beta period.
 
-## More Appwrite, new price
+## More Indobase, new price
 
 The updated base pricing from $15 to $25 helps us sustainably support this growing feature set and scale our infrastructure. Every paid project will now come with its dedicated pool of resources, giving you better performance, more transparency, and a more apparent connection between what you pay and what you get.
 
@@ -46,17 +46,17 @@ For larger projects, the reduced bandwidth price has an even more significant im
 
 ## More products more capabilities
 
-It’s important to mention the release of Appwrite Messaging and Sites. These two products allow you to reduce the number of vendors and ensure you get a complete development platform in one subscription, at no additional cost. With the addition of the Appwrite Network, DDoS, and global CDN, we aim to guarantee excellent global performance for all products.
+It’s important to mention the release of Indobase Messaging and Sites. These two products allow you to reduce the number of vendors and ensure you get a complete development platform in one subscription, at no additional cost. With the addition of the Indobase Network, DDoS, and global CDN, we aim to guarantee excellent global performance for all products.
 
 ## Pay per project, not per seat
 
 When we introduced pricing, we did so with a per-seat model. Since then, we have learned a lot. We have received much feedback that this model limits adoption and gets in the way of collaboration. Although having unlimited projects seemed like the right move, it has not been shown to deliver the expected value. Developers are forced to share accounts, making collaboration clunky and even unpleasant.
 
-Talking to developers, one thing became clear: the real value of Appwrite is how fast it helps you go from idea to launch. New projects are where momentum starts, learning happens, and the platform delivers the most impact. We’ve structured the new pricing around this point of highest impact, right where Appwrite delivers the most value.
+Talking to developers, one thing became clear: the real value of Indobase is how fast it helps you go from idea to launch. New projects are where momentum starts, learning happens, and the platform delivers the most impact. We’ve structured the new pricing around this point of highest impact, right where Indobase delivers the most value.
 
 ## Pricing and resource changes
 
-Another important factor we considered is valuing output, not input. This means pricing the resources you use, not the team building with Appwrite. To ensure we always give you the best possible resource price, we have made optimizations that directly affect the price of GB hours, additional storage, and bandwidth.
+Another important factor we considered is valuing output, not input. This means pricing the resources you use, not the team building with Indobase. To ensure we always give you the best possible resource price, we have made optimizations that directly affect the price of GB hours, additional storage, and bandwidth.
 
 | **Item** | **Before** | **New** | **$ Change** | **% Change** |
 | --- | --- | --- | --- | --- |
@@ -76,7 +76,7 @@ We have created graph overviews to show how costs evolve per project with the ne
 
 *Showing the starting point of $15 and showing the growth rate of pricing based on the new additional resource prices.
 
-This chart shows that each project, even with a $15 starting price per project, will be more cost-effective in the long run due to lower costs for additional resources. Resource prices will become cheaper as we continue to optimize Appwrite.
+This chart shows that each project, even with a $15 starting price per project, will be more cost-effective in the long run due to lower costs for additional resources. Resource prices will become cheaper as we continue to optimize Indobase.
 
 ![More resources](/images/blog/appwrite-pricing-update/bandwidth-project.png)
 
@@ -88,25 +88,25 @@ With $50 add-ons, you now get more compute, storage, and bandwidth.
 
 # Sites and Messaging pricing
 
-Appwrite Sites and Messaging will have the same pricing structure as other Appwrite products. This means that both products will be available on Appwrite’s Free plan with limits that are widened on the paid plans and additional pricing for extra resources.
+Indobase Sites and Messaging will have the same pricing structure as other Indobase products. This means that both products will be available on Indobase’s Free plan with limits that are widened on the paid plans and additional pricing for extra resources.
 
 ## Sites resource limits and pricing
 
-To keep things simple, we are not adding separate resource pricing for Sites! Appwrite already has pricing for storage, bandwidth, compute, and function executions. Sites usage will be part of this to ensure your billing is simple and transparent. As we evolve Sites, we only add limits and pricing for features unique to this product.
+To keep things simple, we are not adding separate resource pricing for Sites! Indobase already has pricing for storage, bandwidth, compute, and function executions. Sites usage will be part of this to ensure your billing is simple and transparent. As we evolve Sites, we only add limits and pricing for features unique to this product.
 
-Below you will find an overview of what is included for Appwrite Sites in the base pricing of the Free, Pro, and Scale plans, and the price for additional resources.
+Below you will find an overview of what is included for Indobase Sites in the base pricing of the Free, Pro, and Scale plans, and the price for additional resources.
 
 | **Item** | **Free** | **Pro** | **Scale** |
 | --- | --- | --- | --- |
 | **Sites** | Unlimited* | Unlimited | Unlimited |
 
-* Per the 29th of October 2025. [See announcement Appwrite Sites Free plan.](/blog/post/unlimited-appwrite-sites-free-plan)
+* Per the 29th of October 2025. [See announcement Indobase Sites Free plan.](/blog/post/unlimited-appwrite-sites-free-plan)
 
-Learn more about Appwrite’s resources on the [pricing page](/pricing).
+Learn more about Indobase’s resources on the [pricing page](/pricing).
 
 ## Messaging resource limits and pricing
 
-Below is an overview of the resources included for Appwrite Messaging in the base pricing of the Free, Pro, and Scale plans and the price for additional resources.
+Below is an overview of the resources included for Indobase Messaging in the base pricing of the Free, Pro, and Scale plans and the price for additional resources.
 
 | **Item** | **Free** | **Pro** | **Scale** |
 | --- | --- | --- | --- |
@@ -130,9 +130,9 @@ Each time an end user is sent a message per channel, a message is counted. This 
 
 # One subscription to replace them all
 
-With the introduction of Messaging and Sites, Appwrite became an all-in-one development platform. Eliminating the need to juggle multiple vendors. With these two products, we drastically improve the developer experience by removing friction between integrating vendors and managing multiple API keys, but most of all, we give you more oversight of your costs. Now you can use one vendor for all your development needs and also see all costs for your backend infrastructure, messaging, and hosting in one place. As mentioned, this is reflected in Appwrite’s base price.
+With the introduction of Messaging and Sites, Indobase became an all-in-one development platform. Eliminating the need to juggle multiple vendors. With these two products, we drastically improve the developer experience by removing friction between integrating vendors and managing multiple API keys, but most of all, we give you more oversight of your costs. Now you can use one vendor for all your development needs and also see all costs for your backend infrastructure, messaging, and hosting in one place. As mentioned, this is reflected in Indobase’s base price.
 
-| **Vendor** | **Appwrite** | **Supabase** | **Firebase** | **Vercel** | **Netlify** | **Novu** |
+| **Vendor** | **Indobase** | **Supabase** | **Firebase** | **Vercel** | **Netlify** | **Novu** |
 | --- | --- | --- | --- | --- | --- | --- |
 | **BaaS** | Yes | Yes | Yes | No | No | No |
 | **Hosting** | Yes | No | Yes | Yes | Yes | No |
@@ -146,7 +146,7 @@ With the introduction of Messaging and Sites, Appwrite became an all-in-one deve
 
 We’re excited to provide you with the most complete development platform and will continue to add more functionality, integrations, and optimize the pricing to give you more bang for your buck.
 
-The Appwrite team’s commitment to your developer experience will continue to drive these important updates to help you get to production faster. Thank you for your support and we look forward to what you build next.
+The Indobase team’s commitment to your developer experience will continue to drive these important updates to help you get to production faster. Thank you for your support and we look forward to what you build next.
 
 Build like a team of hundreds.
 
@@ -166,10 +166,10 @@ On both the Pro and Scale plans, you will have unlimited seats. This is part of 
 
 ## Why the change to per-project vs per-seat?
 
-With the recent features, improvements, and going GA, it’s time to re-align our pricing with the value that Appwrite provides.
-Customers experience Appwrite’s value at the project level (Databases, Auth, Storage, etc.), not by individual seats. Charging where we deliver the most value is industry best practice.
+With the recent features, improvements, and going GA, it’s time to re-align our pricing with the value that Indobase provides.
+Customers experience Indobase’s value at the project level (Databases, Auth, Storage, etc.), not by individual seats. Charging where we deliver the most value is industry best practice.
 We’ve also noticed people share accounts, indicating they don’t find value in paying for the seat.
-This change puts Appwrite on a more sustainable revenue model, ensuring longevity and growth for all.
+This change puts Indobase on a more sustainable revenue model, ensuring longevity and growth for all.
 
 ## How much will I pay for my projects after September 1st?
 

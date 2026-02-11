@@ -128,7 +128,7 @@
 
     const title = 'Blog' + TITLE_SUFFIX;
     const description =
-        'Stay updated with the latest product news, insights, and tutorials from the Appwrite team. Our blog covers everything for hassle-free backend development.';
+        'Stay updated with the latest product news, insights, and tutorials from the Indobase team. Our blog covers everything for hassle-free backend development.';
     const ogImage = DEFAULT_HOST + '/images/open-graph/blog.png';
 </script>
 

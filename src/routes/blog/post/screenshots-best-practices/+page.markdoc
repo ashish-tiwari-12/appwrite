@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Best practices for handling screenshots in your app
 description: Learn how to efficiently capture, store, and serve webpage screenshots without wasting resources or slowing down your app.
@@ -23,7 +23,7 @@ The most common mistake is treating screenshot generation as a real-time operati
 
 The fix is simple: **store screenshots in persistent storage and serve them from there**.
 
-Here is how this looks with Appwrite. Wrap the capture and store logic in a reusable function:
+Here is how this looks with Indobase. Wrap the capture and store logic in a reusable function:
 
 ```js
 import { Client, Avatars, Storage, ID } from "appwrite";
@@ -201,7 +201,7 @@ const fullPage = avatars.getScreenshot({
 });
 ```
 
-If you need multiple sizes, consider generating at the largest size and using Appwrite Storage's image transformation to serve smaller versions:
+If you need multiple sizes, consider generating at the largest size and using Indobase Storage's image transformation to serve smaller versions:
 
 ```js
 // Get a resized version from storage
@@ -275,5 +275,5 @@ To get started, check out the [Screenshots API documentation](/docs/products/ava
 
 - [Screenshots API documentation](/docs/products/avatars/screenshots)
 - [Announcing Screenshots API](/blog/post/announcing-screenshots-api)
-- [Image transformation with Appwrite Storage](/blog/post/image-transformation-with-appwrite-storage)
-- [Appwrite Storage quick start](/docs/products/storage/quick-start)
+- [Image transformation with Indobase Storage](/blog/post/image-transformation-with-appwrite-storage)
+- [Indobase Storage quick start](/docs/products/storage/quick-start)

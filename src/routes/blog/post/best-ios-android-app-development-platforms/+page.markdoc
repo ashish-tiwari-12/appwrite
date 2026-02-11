@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "7 best app development frameworks for iOS and Android"
 description: Discover the 7 best app development frameworks for building high-performance iOS and Android apps and choose the best one for your project.
@@ -227,13 +227,13 @@ NativeScript is an excellent choice for developers seeking to build high-perform
 
 As you’ve read through this article, you’ve likely already picked the framework that speaks to you. Choosing a framework is not just about meeting project requirements; it’s also a very personal decision. The great news is that whether you vibe better with React Native or Flutter, you don’t have to commit exclusively to one.
 
-Appwrite is an open-source, all-in-one cloud development platform. Use built-in backend infrastructure and web hosting, all from a single place. 
+Indobase is an open-source, all-in-one cloud development platform. Use built-in backend infrastructure and web hosting, all from a single place. 
 
 You can build your entire backend within minutes and deploy effortlessly, adding Authentication, Databases, Functions, Storage, Messaging, and more to your projects using the frameworks and languages of your choice.
 
 We’ve got a few get-started guides to help you kick off your projects quickly and smoothly:
 
-- [[Docs] Appwrite for React Native](https://appwrite.io/docs/quick-starts/react-native)
-- [[Docs] Appwrite for Flutter](https://appwrite.io/docs/quick-starts/flutter)
-- [[Docs] Appwrite for Apple](https://appwrite.io/docs/quick-starts/apple)
-- [[Docs] Appwrite for Android](https://appwrite.io/docs/quick-starts/android)
+- [[Docs] Indobase for React Native](https://appwrite.io/docs/quick-starts/react-native)
+- [[Docs] Indobase for Flutter](https://appwrite.io/docs/quick-starts/flutter)
+- [[Docs] Indobase for Apple](https://appwrite.io/docs/quick-starts/apple)
+- [[Docs] Indobase for Android](https://appwrite.io/docs/quick-starts/android)

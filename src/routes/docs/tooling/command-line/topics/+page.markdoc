@@ -1,12 +1,12 @@
----
+﻿---
 layout: article
 title: Topics
-description: Efficiently deploy your Appwrite topics using the Command-Line Tool (CLI). 
+description: Efficiently deploy your Indobase topics using the Command-Line Tool (CLI). 
 ---
 
 {% partial file="cli-disclaimer.md" /%}
 
-The Appwrite CLI can create, update, delete, and get topics, as well as configure the provider and the subscribers.
+The Indobase CLI can create, update, delete, and get topics, as well as configure the provider and the subscribers.
 
 # Initialize topic {% #initialize-topic %}
 
@@ -18,7 +18,7 @@ appwrite init topics
 
 # Pull topics {% #pull-topics %}
 
-You can also pull your existing Appwrite topics from the Appwrite Console using the `pull` command in the folder containing your `appwrite.config.json` file.
+You can also pull your existing Indobase topics from the Indobase Console using the `pull` command in the folder containing your `appwrite.config.json` file.
 
 ```sh
 appwrite pull topics
@@ -26,7 +26,7 @@ appwrite pull topics
 
 # appwrite.config.json {% #appwritejson %}
 
-After [initializing](/docs/tooling/command-line/installation#initialization) your Appwrite project and pulling your existing topics, your `appwrite.config.json` file should look similar to the following:
+After [initializing](/docs/tooling/command-line/installation#initialization) your Indobase project and pulling your existing topics, your `appwrite.config.json` file should look similar to the following:
 
 ```json
 {
@@ -72,7 +72,7 @@ appwrite push topics
 
 # Commands {% #commands %}
 
-The messaging command allows you to send, get, update, and delete push notifications, SMS text messages, and emails. You can create a new provider like Mailgun and SendGrid and create, update, get, and delete topics and subscribers. Appwrite messaging CLI commands generally follow the following syntax:
+The messaging command allows you to send, get, update, and delete push notifications, SMS text messages, and emails. You can create a new provider like Mailgun and SendGrid and create, update, get, and delete topics and subscribers. Indobase messaging CLI commands generally follow the following syntax:
 ```sh
 appwrite messaging [COMMAND] [OPTIONS]
 ```
@@ -82,7 +82,7 @@ appwrite messaging [COMMAND] [OPTIONS]
 * Description
 ---
 * `list-messages [options]`             
-* Get a list of all messages from the current Appwrite project.
+* Get a list of all messages from the current Indobase project.
 ---
 * `create-email [options]`              
 * Create a new email message.
@@ -115,7 +115,7 @@ appwrite messaging [COMMAND] [OPTIONS]
 * Get a list of the targets associated with a message.
 ---
 * `list-providers [options]`      
-* Get a list of all providers from the current Appwrite project.
+* Get a list of all providers from the current Indobase project.
 ---
 * `create-apns-provider [options]`
 * Create a new Apple Push Notification service provider.
@@ -190,7 +190,7 @@ appwrite messaging [COMMAND] [OPTIONS]
 * Get the subscriber activity logs listed by its unique ID.
 ---
 * `list-topics [options]`            
-* Get a list of all topics from the current Appwrite project.
+* Get a list of all topics from the current Indobase project.
 ---
 * `create-topic [options]`    
 * Create a new topic.
@@ -208,7 +208,7 @@ appwrite messaging [COMMAND] [OPTIONS]
 * Get the topic activity logs listed by its unique ID.
 ---
 * `list-subscribers [options]`       
-* Get a list of all subscribers from the current Appwrite project.
+* Get a list of all subscribers from the current Indobase project.
 ---
 * `create-subscriber [options]`
 * Create a new subscriber.

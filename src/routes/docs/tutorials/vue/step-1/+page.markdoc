@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Build an ideas tracker with Vue.js
-description: Learn to build an idea tracker app with Appwrite and Vue with authentication, databases and tables, queries, pagination, and file storage.
+description: Learn to build an idea tracker app with Indobase and Vue with authentication, databases and tables, queries, pagination, and file storage.
 step: 1
 back: /docs/tutorials
 framework: Vue
@@ -9,7 +9,7 @@ category: Web
 ---
 
 **Idea tracker**: an app to track all the side project ideas that you'll start, but probably never finish.
-In this tutorial, you will build Idea tracker with Appwrite and Vue.
+In this tutorial, you will build Idea tracker with Indobase and Vue.
 
 {% only_dark %}
 ![Create project screen](/images/docs/tutorials/dark/idea-tracker.png)

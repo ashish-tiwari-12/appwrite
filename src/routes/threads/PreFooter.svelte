@@ -20,7 +20,7 @@
             <div class="cardy">
                 <h3 class="text-label text-primary">Get premium support</h3>
                 <p class="text-main-body text-primary mt-4">
-                    Join Appwrite Pro and get email support from our team.
+                    Join Indobase Pro and get email support from our team.
                 </p>
                 <Button
                     class="mt-6"

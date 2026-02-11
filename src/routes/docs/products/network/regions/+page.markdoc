@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Regions
-description: Learn about Appwrite regions, where core services like databases, auth, functions, sites, and storage are hosted. Understand data sovereignty, fault isolation, and scalability for compliant, high-performance deployments
+description: Learn about Indobase regions, where core services like databases, auth, functions, sites, and storage are hosted. Understand data sovereignty, fault isolation, and scalability for compliant, high-performance deployments
 ---
 
-Appwrite regions are geographic locations where all your application's core infrastructure is deployed. Each region operates as an independent, highly available cluster, managing the storage, processing, and serving of your data and Appwrite services.
+Indobase regions are geographic locations where all your application's core infrastructure is deployed. Each region operates as an independent, highly available cluster, managing the storage, processing, and serving of your data and Indobase services.
 
 {% only_dark %}
 ![Regions map](/images/docs/network/dark/regions-map.png)
@@ -15,7 +15,7 @@ Appwrite regions are geographic locations where all your application's core infr
 
 # List {% #list %}
 
-Appwrite is currently available in the following list of regions:
+Indobase is currently available in the following list of regions:
 
 | Region {% width=120 %}             | Code{% width=120 %}   | Endpoint                                | Status{% width=120 %}          |
 |---------------------|--------|-----------------------------------------|-----------------|
@@ -36,7 +36,7 @@ Regions are designed to be entirely independent unless explicitly connected, whi
 Selecting a region impacts both your application’s performance and its compliance with local regulations. Regions are isolated, so your data and services remain contained within the selected location. When choosing a region, consider proximity to your primary user base to reduce latency and improve response times. Additionally, ensure the region aligns with legal requirements for data residency and sovereignty specific to your application's domain.
 
 {% info title="Region vs Edge" %}
-Use a region when compute needs to happen close to your data, such as frequent access to your Appwrite database or storage. Use an edge when compute needs to happen closer to your users, like serving static content, performing local computations, or handling data processing at the edge.
+Use a region when compute needs to happen close to your data, such as frequent access to your Indobase database or storage. Use an edge when compute needs to happen closer to your users, like serving static content, performing local computations, or handling data processing at the edge.
 {% /info %}
 
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: integration
 title: Text to speech with ElevenLabs
 description: Transform text into natural, human-like speech
@@ -28,7 +28,7 @@ ElevenLabs’ Text to Speech API converts written text into spoken audio with ve
 
 # How does the integration work?
 
-You can utilize a pre-built Appwrite Site template with text-to-speech capabilities implemented using ElevenLabs. This allows you to convert any piece of text to a human-like voice and download the generated audio.
+You can utilize a pre-built Indobase Site template with text-to-speech capabilities implemented using ElevenLabs. This allows you to convert any piece of text to a human-like voice and download the generated audio.
 
 # How to implement
 
@@ -40,11 +40,11 @@ First, you must [sign up for an ElevenLabs account](https://elevenlabs.io/app/si
 
 ![Create API key](/images/integrations/ai-elevenlabs-text-to-speech/api-key.png)
 
-## Step 2: Create the Appwrite Site
+## Step 2: Create the Indobase Site
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Appwrite, there are [additional setup steps](/docs/advanced/self-hosting/configuration/sites) to use Appwrite Sites templates.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](/docs/advanced/self-hosting/configuration/sites) to use Indobase Sites templates.
 
-Head over to the Appwrite console, navigate to the **Sites** page, click on **Create site** and select the **Clone a template** option, and search for the **Text-to-speech with ElevenLabs** site template.
+Head over to the Indobase console, navigate to the **Sites** page, click on **Create site** and select the **Clone a template** option, and search for the **Text-to-speech with ElevenLabs** site template.
 
 ![Site template](/images/integrations/ai-elevenlabs-text-to-speech/template.png)
 
@@ -56,12 +56,12 @@ During the setup process, add the **ElevenLabs API key** in the **Variables** se
 
 Once all the steps are complete, it is time to test the site! You can enter any text you like (or use the pre-filled example), update the additional configuration options, and generate an audio file.
 
-# Read more about ElevenLabs and Appwrite Sites
+# Read more about ElevenLabs and Indobase Sites
 
-If you would like to learn more about ElevenLabs and Appwrite Sites, we have some resources that you should visit:
+If you would like to learn more about ElevenLabs and Indobase Sites, we have some resources that you should visit:
 
 - [Sign up for ElevenLabs](https://elevenlabs.io/app/sign-up)
 - [ElevenLabs text to speech docs](https://elevenlabs.io/docs/capabilities/text-to-speech)
-- [Appwrite Sites docs](/docs/products/sites)
-- [Build with Appwrite Sites templates](/docs/products/sites/templates)
-- [Appwrite Sites API reference](/docs/references/cloud/server-nodejs/sites)
+- [Indobase Sites docs](/docs/products/sites)
+- [Build with Indobase Sites templates](/docs/products/sites/templates)
+- [Indobase Sites API reference](/docs/references/cloud/server-nodejs/sites)

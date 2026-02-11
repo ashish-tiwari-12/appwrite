@@ -1,23 +1,23 @@
----
+﻿---
 layout: article
 title: Integrating Together AI
-description: Learn how to integrate Together AI into your Appwrite project.
+description: Learn how to integrate Together AI into your Indobase project.
 difficulty: intermediate
 readtime: 15
 ---
 
 Together AI is an AI as a Service provider that's powered by an industry-leading inference engine providing fast and cheap inference. The platform can generate text and images using leading open-source models such as LLaMA 3 and Stable Diffusion.
 
-Integrating Together AI into your Appwrite project is simple. This tutorial will guide you through setting up the Together AI API and integrating it into your Appwrite project.
+Integrating Together AI into your Indobase project is simple. This tutorial will guide you through setting up the Together AI API and integrating it into your Indobase project.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite Project
-- An Appwrite Bucket
+- An Indobase Project
+- An Indobase Bucket
 - A [Together AI API Key](https://docs.together.ai/reference/authentication-1)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console), click, on **Functions** in the left sidebar, and click, the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console), click, on **Functions** in the left sidebar, and click, the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -27,7 +27,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console), click, on **F
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -188,11 +188,11 @@ And after the `</head>` tag add a `<body>` which will contain the actual form:
 </body>
 ```
 
-Together, this will render a form to submit a query to the Appwrite Function through a `POST` request. The Appwrite Function invokes Together AI's API and returns the response, which will be displayed on the page using different conditional statements depending on the output media type.
+Together, this will render a form to submit a query to the Indobase Function through a `POST` request. The Indobase Function invokes Together AI's API and returns the response, which will be displayed on the page using different conditional statements depending on the output media type.
 {% /section %}
 
 {% section #step-6 step=6 title="Handle POST Request" %}
-Now that you're serving a basic HTML page add methods necessary to integrate with Together AI's API. Import `fetch` from `undici` and the Appwrite SDK at the top of `src/main.js`.
+Now that you're serving a basic HTML page add methods necessary to integrate with Together AI's API. Import `fetch` from `undici` and the Indobase SDK at the top of `src/main.js`.
 
 ```js
 import { fetch } from 'undici'
@@ -284,7 +284,7 @@ try {
 
 let resJson = await response.json();
 
-// Upload image to Appwrite Storage and return URL
+// Upload image to Indobase Storage and return URL
 if (req.body.type === 'image') {
   const endpoint = process.env.APPWRITE_ENDPOINT || 'https://<REGION>.cloud.appwrite.io/v1'
 
@@ -317,7 +317,7 @@ This code sends the prompt to the Together AI API and returns the response to th
 The function also uploads any images generated to a bucket and returns the URL to the user.
 Any errors encountered during the process are caught and reported for easy debugging.
 
-The function can now be deployed to Appwrite by pushing the changes to your repository.
+The function can now be deployed to Indobase by pushing the changes to your repository.
 {% /section %}
 
 {% section #step-7 step=7 title="Test the function" %}

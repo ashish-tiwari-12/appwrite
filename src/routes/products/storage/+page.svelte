@@ -19,7 +19,7 @@
 
     const title = 'Storage' + TITLE_SUFFIX;
     const description =
-        'Get to know Appwrite Storage - our robust infrastructure allows you to store, optimize and encrypt all of your project files in one place.';
+        'Get to know Indobase Storage - our robust infrastructure allows you to store, optimize and encrypt all of your project files in one place.';
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 </script>
 
@@ -172,7 +172,7 @@
                                 What you can do with Storage APIs
                             </h2>
                             <p class="text-main-body font-medium">
-                                Appwrite's Storage APIs allow you to create and update your files,
+                                Indobase's Storage APIs allow you to create and update your files,
                                 apply image transformations, and more.
                             </p>
                             <Button

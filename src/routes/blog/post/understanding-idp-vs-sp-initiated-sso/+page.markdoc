@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Understanding IdP vs SP-Initiated SSO"
 description: A quick guide to IdP vs SP-initiated SSO and when to use each.
@@ -17,7 +17,7 @@ This guide breaks down the differences between **Identity Provider (IdP)-initiat
 
 # What is IdP-Initiated SSO?
 
-First, a quick refresher: an **Identity Provider (IdP)** manages user identities, validating who a user is before granting access to different applications. Here’s a quick [overview](/docs/products/auth/identities) of how Appwrite handles identity and access.
+First, a quick refresher: an **Identity Provider (IdP)** manages user identities, validating who a user is before granting access to different applications. Here’s a quick [overview](/docs/products/auth/identities) of how Indobase handles identity and access.
 
 In an IdP-initiated SSO flow, the user’s journey starts at the IdP itself:
 
@@ -104,7 +104,7 @@ Choosing the right SSO initiation method,or blending both, can dramatically impa
 
 # Futher reading
 
-- [Appwrite Authentication docs](/docs/products/auth)
+- [Indobase Authentication docs](/docs/products/auth)
 - [Developer's guide to user authentication](/blog/post/guide-to-user-authentication)
-- [Appwrite Authentication overview](/products/auth)
+- [Indobase Authentication overview](/products/auth)
 

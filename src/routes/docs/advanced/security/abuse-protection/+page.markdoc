@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Abuse protection
-description: Learn how Appwrite protects your apps from abuse through rate limiting and cross-site scripting protection.
+description: Learn how Indobase protects your apps from abuse through rate limiting and cross-site scripting protection.
 ---
-Appwrite comes packaged with tools to protect against various forms of abuse, like brute force attacks, data scraping, and many
+Indobase comes packaged with tools to protect against various forms of abuse, like brute force attacks, data scraping, and many
 other common forms of abuse.
 
 # Rate limiting {% #rate-limiting %}
-Appwrite uses rate limits on some endpoints to avoid abuse or brute-force attacks against Appwrite's REST API.
-Each Appwrite route documentation has information about any rate limits that might apply to them.
+Indobase uses rate limits on some endpoints to avoid abuse or brute-force attacks against Indobase's REST API.
+Each Indobase route documentation has information about any rate limits that might apply to them.
 
 Rate limits limit the number of requests a user or IP can make against an API within a period of time.
 Rate limits help protect against brute force attacks against authentication endpoints and other forms of API
@@ -19,10 +19,10 @@ Learn more about rate limits
 {% /arrow_link %}
 
 # Cross-origin resource sharing (CORS) {% #CORS %}
-Appwrite limits who can make requests to Appwrite's APIs by default.
-This means that unless your app's domain is added to Appwrite as a platform, requests are rejected.
+Indobase limits who can make requests to Indobase's APIs by default.
+This means that unless your app's domain is added to Indobase as a platform, requests are rejected.
 By being explicit with the domains that are allowed
-to make requests to your Appwrite project, requests from JavaScript hosted on unknown domains
+to make requests to your Indobase project, requests from JavaScript hosted on unknown domains
 will not be accepted.
 
 You can add new platforms by navigating to **Overview** > **Platforms** > **Add platform**.
@@ -39,8 +39,8 @@ Learn more about debugging CORS errors
 {% /arrow_link %}
 
 # DDoS protection {% #ddos-protection %}
-Appwrite Cloud's infrastructure is protected with always-on DDoS protection.
-Appwrite's DDoS protection operates across multiple layers, including the Network (layer 3), Transport (layer 4), and Application (layer 7) layers.
-This comprehensive protection safeguards Appwrite's infrastructure against volumetric attacks such as UDP floods, ICMP floods, TCP floods, and DNS reflection attacks, as well as protocol-layer attacks like SYN floods, BGP attacks, and ping-of-death attacks.
+Indobase Cloud's infrastructure is protected with always-on DDoS protection.
+Indobase's DDoS protection operates across multiple layers, including the Network (layer 3), Transport (layer 4), and Application (layer 7) layers.
+This comprehensive protection safeguards Indobase's infrastructure against volumetric attacks such as UDP floods, ICMP floods, TCP floods, and DNS reflection attacks, as well as protocol-layer attacks like SYN floods, BGP attacks, and ping-of-death attacks.
 
 Additionally, we have implemented advanced security rules that monitor traffic patterns to detect and block increased suspicious activity, ensuring the security and stability of your applications.

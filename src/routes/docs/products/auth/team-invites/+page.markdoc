@@ -1,21 +1,21 @@
----
+﻿---
 layout: article
 title: Team invites
-description: Learn how to manage team invites in Appwrite. Implement both client-side email invites and server-side custom flows for team memberships.
+description: Learn how to manage team invites in Indobase. Implement both client-side email invites and server-side custom flows for team memberships.
 ---
 
-Appwrite provides two approaches for adding members to teams: client-side email invites and server-side custom flows. Each approach serves different use cases and offers unique benefits.
+Indobase provides two approaches for adding members to teams: client-side email invites and server-side custom flows. Each approach serves different use cases and offers unique benefits.
 
 # Invite client-side
 
-Client-side email invites are perfect for implementing user-to-user invitations, allowing your users to invite others to join their teams, organizations, or shared resources. When creating a membership, Appwrite:
+Client-side email invites are perfect for implementing user-to-user invitations, allowing your users to invite others to join their teams, organizations, or shared resources. When creating a membership, Indobase:
 1. Creates a new user account if one doesn't exist for the email address
 2. Sends an automated email invitation to the user
 3. Creates a pending membership
 4. Activates the membership when the user accepts
 
 Client-side invites are ideal when you want a simple, automated process that lets your users manage their own team invitations.
-Appwrite handles the email delivery with built-in templates and localization support, making it easy to implement a standard invite acceptance flow with email verification.
+Indobase handles the email delivery with built-in templates and localization support, making it easy to implement a standard invite acceptance flow with email verification.
 
 {% multicode %}
 ```client-web
@@ -55,7 +55,7 @@ final membership = await teams.createMembership(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1") // Your API Endpoint
@@ -135,7 +135,7 @@ final response = await teams.updateMembershipStatus(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1")
@@ -220,7 +220,7 @@ membership = teams.create_membership(
 )
 ```
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1") // Your API Endpoint
@@ -326,7 +326,7 @@ if (userMembership != null) {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1")
@@ -443,7 +443,7 @@ for team in teams_list['teams']:
         print(f"Roles: {user_membership['roles']}")
 ```
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1")
@@ -535,7 +535,7 @@ await teams.deleteMembership(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1")
@@ -567,7 +567,7 @@ teams.deleteMembership(
 
 # Manage team permissions
 
-Teams in Appwrite use a role-based access control (RBAC) system. Each team member can be assigned one or more roles that define their permissions within the team.
+Teams in Indobase use a role-based access control (RBAC) system. Each team member can be assigned one or more roles that define their permissions within the team.
 
 ## Update roles
 
@@ -607,7 +607,7 @@ await teams.updateMembership(
 )
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1")
@@ -686,7 +686,7 @@ final membership = response.memberships.firstWhere(
 final isAdmin = membership?.roles.contains('admin') ?? false
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1")

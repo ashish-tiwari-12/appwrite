@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Announcing Bulk API: Handle heavy data workloads with ease"
 description: Perform multiple database operations in a single API call. Enjoy faster writes and better performance for heavy server-side workloads.
@@ -10,11 +10,11 @@ category: announcement
 featured: false
 ---
 
-We're excited to introduce another Appwrite Databases feature, **Bulk API**. Explicitly designed to handle heavy write workloads, Bulk API dramatically improves performance by allowing multiple database operations in a single API call.
+We're excited to introduce another Indobase Databases feature, **Bulk API**. Explicitly designed to handle heavy write workloads, Bulk API dramatically improves performance by allowing multiple database operations in a single API call.
 
 # Faster development with bulk actions
 
-Previously, writing or modifying large amounts of data in Appwrite Databases required sending one request per document. This method was inefficient, slow, and resource-intensive, especially when dealing with thousands of records.
+Previously, writing or modifying large amounts of data in Indobase Databases required sending one request per document. This method was inefficient, slow, and resource-intensive, especially when dealing with thousands of records.
 
 With the new Bulk API, you can create, update, or delete multiple documents in one go, vastly speeding up your workflows and reducing network overhead.
 
@@ -26,7 +26,7 @@ This will have immediate and impactful benefits such as:
 
 - **Speed improvements**: Rapidly handle thousands of operations simultaneously.
 - **Lower network overhead**: Significantly fewer API requests needed, making your application faster and more efficient.
-- **Seamless integration**: Works effortlessly using Appwrite Cloud or hosting yourself.
+- **Seamless integration**: Works effortlessly using Indobase Cloud or hosting yourself.
 
 {% info title="Please Note" %}
 Bulk operations can only be performed via the server-side SDKs. The client-side SDKs do not support bulk operations.
@@ -73,7 +73,7 @@ const result = await databases.createDocuments(
 
 # Built for intensive data tasks
 
-Bulk API was designed to move large volumes of data in and out of Appwrite. By simplifying and speeding up these tasks, Bulk API unlocks previously challenging use-cases, expanding what's possible with Appwrite.
+Bulk API was designed to move large volumes of data in and out of Indobase. By simplifying and speeding up these tasks, Bulk API unlocks previously challenging use-cases, expanding what's possible with Indobase.
 
 With Bulk API, your high-performance data operations are faster, simpler, and more efficient.
 

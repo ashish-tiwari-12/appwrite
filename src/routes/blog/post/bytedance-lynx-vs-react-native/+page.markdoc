@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Lynx by ByteDance vs React Native
 description: Lynx is a new cross-platform UI framework from ByteDance. Let's explore what it offers and how it compares to React Native.
@@ -163,4 +163,4 @@ It's early days, but Lynx could quickly become an influential player in cross-pl
 
 - [Flutter vs React Native: Which framework is best for your app in 2024?](https://appwrite.io/blog/post/flutter-vs-react-native?doFollow=true)
 - [Setting up route protection in React Native](https://appwrite.io/blog/post/setting-up-route-protection-in-react-native?doFollow=true)
-- [Building a full-stack app with Svelte and Appwrite](https://appwrite.io/blog/post/build-fullstack-svelte-appwrite?doFollow=true)
+- [Building a full-stack app with Svelte and Indobase](https://appwrite.io/blog/post/build-fullstack-svelte-appwrite?doFollow=true)

@@ -71,7 +71,7 @@
     <div class="p-4">
         <span class="text-primary">Logging</span>
         <p class="text-secondary">
-            Monitor function execution with detailed logging from Appwrite.
+            Monitor function execution with detailed logging from Indobase.
         </p>
     </div>
 </div>

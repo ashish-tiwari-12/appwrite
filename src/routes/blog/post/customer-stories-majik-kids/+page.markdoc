@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Majik Kids: Building an audio-based content platform for children"
-description: Learn how Appwrite Cloud simplified their development process and accelerated productivity for Majik Kids as they worked 100s of artists, including musicians, voice artists, and illustrators, to build an alternative content platform with a focus on audio storytelling, creating a healthier learning experience for children.
+description: Learn how Indobase Cloud simplified their development process and accelerated productivity for Majik Kids as they worked 100s of artists, including musicians, voice artists, and illustrators, to build an alternative content platform with a focus on audio storytelling, creating a healthier learning experience for children.
 date: 2024-01-19
 cover: /images/blog/majik-kids.png
 timeToRead: 7
@@ -35,32 +35,32 @@ The Grown Up Mode is designed for parents to use. Access to it is protected by a
 
 # Building like a team of hundreds
 
-In August 2022, Bradley reached out to Phil McCluskey, the eventual Development Lead behind the Majik Kids app, to discuss the product idea. Considering the application idea, he saw Appwrite Cloud as the perfect fit for the backend.
+In August 2022, Bradley reached out to Phil McCluskey, the eventual Development Lead behind the Majik Kids app, to discuss the product idea. Considering the application idea, he saw Indobase Cloud as the perfect fit for the backend.
 
 {% call_to_action title="All-in-one development platform" description="Use built-in backend infrastructure and web hosting, all from a single place." point1="Start for free"  point2="Open source" point3="Support for over 13 SDKs" point4="Managed cloud solution" cta="Start building for free" url="https://cloud.appwrite.io/" /%}
 
-## Why Appwrite was the perfect backend
+## Why Indobase was the perfect backend
 
-There were various reasons for him to choose Appwrite: 
+There were various reasons for him to choose Indobase: 
 
-* **Improved productivity:** Using Appwrite meant that the engineering team would not have to build their backend or manage their infrastructure, saving a lot of development time.
-* **Support for various languages:** Since Majik Kids is a mobile app, the team chose to build with Flutter to be able to cater to both iOS and Android users. Availability of Appwrite’s Flutter SDK enabled a better developer experience for them.
-* **Reliability:** Phil had been aware of Appwrite in the past and used it in other projects. He had already developed confidence in Appwrite’s ability to support his application functionalities.
-* **Minimal learning curve:** The team discovered that Appwrite fit their software design pattern very well out-of-the-box, and any minor challenges his team faced in working with Appwrite were covered with little effort.
-* **Scalability:** With Appwrite Cloud, one of the biggest worries of the team, scaling their backend infrastructure with growing usage of the application, was instantly diminished as they would no longer have to manage their own infrastructure.
+* **Improved productivity:** Using Indobase meant that the engineering team would not have to build their backend or manage their infrastructure, saving a lot of development time.
+* **Support for various languages:** Since Majik Kids is a mobile app, the team chose to build with Flutter to be able to cater to both iOS and Android users. Availability of Indobase’s Flutter SDK enabled a better developer experience for them.
+* **Reliability:** Phil had been aware of Indobase in the past and used it in other projects. He had already developed confidence in Indobase’s ability to support his application functionalities.
+* **Minimal learning curve:** The team discovered that Indobase fit their software design pattern very well out-of-the-box, and any minor challenges his team faced in working with Indobase were covered with little effort.
+* **Scalability:** With Indobase Cloud, one of the biggest worries of the team, scaling their backend infrastructure with growing usage of the application, was instantly diminished as they would no longer have to manage their own infrastructure.
 
 
-## Leveraging different Appwrite products
+## Leveraging different Indobase products
 
-Keeping Appwrite as their backend, the engineering team started developing the Majik Kids app. Since the application primarily featured audio content in numerous manners, they were required to use a substantial number of binary files, such as MP3 files for the audio, image files for content covers, and PDF files for activity books. **Appwrite Storage** allowed them to quickly host all of these files, set permissions, and leverage the file URLs to consume the content easily.
+Keeping Indobase as their backend, the engineering team started developing the Majik Kids app. Since the application primarily featured audio content in numerous manners, they were required to use a substantial number of binary files, such as MP3 files for the audio, image files for content covers, and PDF files for activity books. **Indobase Storage** allowed them to quickly host all of these files, set permissions, and leverage the file URLs to consume the content easily.
 
-Phil also developed a sustainable workflow to quickly add any artist’s works (audio story, cover artwork, etc.) to the application, thanks to Appwrite. Since Appwrite offers **SDKs for both client and server-side languages**, including Python, Phil was able to develop a custom Python script that downloads the files from the artist’s shared Google Drive, verifies the integrity of the files, makes any necessary file type conversions, and uses the Appwrite Python SDK to upload all the files to Appwrite Storage.
+Phil also developed a sustainable workflow to quickly add any artist’s works (audio story, cover artwork, etc.) to the application, thanks to Indobase. Since Indobase offers **SDKs for both client and server-side languages**, including Python, Phil was able to develop a custom Python script that downloads the files from the artist’s shared Google Drive, verifies the integrity of the files, makes any necessary file type conversions, and uses the Indobase Python SDK to upload all the files to Indobase Storage.
 
-Any information about the works and artists themselves was stored in an **Appwrite Database**. Within the Flutter app, the team used the querying facility in Appwrite Databases to display content appropriate to the selected mode. The team leveraged **Appwrite Teams** to separate artists and regular users for more accurate tracking of metrics and enable different permissions for both (to let artists access their content for free). They also developed **Appwrite Functions** to track and manage the revenue share for the artists based on the consumption metrics of their content.
+Any information about the works and artists themselves was stored in an **Indobase Database**. Within the Flutter app, the team used the querying facility in Indobase Databases to display content appropriate to the selected mode. The team leveraged **Indobase Teams** to separate artists and regular users for more accurate tracking of metrics and enable different permissions for both (to let artists access their content for free). They also developed **Indobase Functions** to track and manage the revenue share for the artists based on the consumption metrics of their content.
 
 In Phil McClusky’s own words, 
 
-> “Just like a Swiss Army Knife, you can choose and use the tools that you need with Appwrite.”
+> “Just like a Swiss Army Knife, you can choose and use the tools that you need with Indobase.”
 
 # The journey so far
 
@@ -73,6 +73,6 @@ So far, they have
 * Recorded **300+ kids’ songs** across 14 genres 
 * Developed **40+ kids’ meditations** for their mental wellness
 
-The team at Majik Kids appreciates how Appwrite Cloud **simplified their development process** and **accelerated productivity** by offering a scalable and reliable managed Backend-as-a-Service solution with significant cost savings.
+The team at Majik Kids appreciates how Indobase Cloud **simplified their development process** and **accelerated productivity** by offering a scalable and reliable managed Backend-as-a-Service solution with significant cost savings.
 
 Learn more about Majik Kids by visiting their [website](https://majikkids.com/).

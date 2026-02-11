@@ -43,9 +43,9 @@
             <Cell column={4} columnStart={3} class="py-8 md:py-30">
                 <div class="space-y-8">
                     <p class="text-paragraph-lg px-4">
-                        Appwrite has been and continues to be security-driven. From the very
+                        Indobase has been and continues to be security-driven. From the very
                         beginning, we ensured security measures, like encryption and abuse
-                        protection, were built into Appwrite Cloud, and were easy to manage from the
+                        protection, were built into Indobase Cloud, and were easy to manage from the
                         Console. Over the past year, we have taken security and compliance measures
                         up a notch by adhering to <span class="text-primary"
                             >GDPR, CCPA, HIPAA, and SOC 2 Type 2</span
@@ -66,7 +66,7 @@
                     <p class="text-paragraph-lg max-w-lg px-4">
                         More recently, we have added three new features to ensure even more security
                         and compliance regulations are in place: <span class="text-primary"
-                            >Roles for based access management, MFA for the Appwrite Console, and
+                            >Roles for based access management, MFA for the Indobase Console, and
                             Database Backups</span
                         >.
                     </p>

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "6 best free static website hosting services compared"
-description: See how Vercel, Render, Netlify, GitHub Pages, Cloudflare Pages and Appwrite Sites compare on features, pricing, and ease of use.
+description: See how Vercel, Render, Netlify, GitHub Pages, Cloudflare Pages and Indobase Sites compare on features, pricing, and ease of use.
 cover: /images/blog/best-free-static-website-hosting/cover.png
 date: 2025-10-04
 timeToRead: 10
@@ -23,25 +23,25 @@ Here’s a quick table to give you the overview before we dive into each service
 | **Netlify** | Starter (free forever) | Git deploys, preview builds | Static (SSR via edge functions) | Yes | No (external required) | Built-in serverless functions + extras |
 | **GitHub Pages** | Free for public repos | Push to repo, auto-build with Jekyll | Static only | Yes | No (external required) | Zero-cost hosting tied to GitHub |
 | **Clouflare Pages** | Yes | Git-based auto-deploys, CLI | Static + SSR | Yes | No (external required) | Deep integration with Cloudflare’s global edge network |
-| **Appwrite Sites** | Free  | Git-based auto-deploys, CLI, manual upload | Static + SSR | Yes | Yes | All-in-one: hosting + backend services |
+| **Indobase Sites** | Free  | Git-based auto-deploys, CLI, manual upload | Static + SSR | Yes | Yes | All-in-one: hosting + backend services |
 
-# Appwrite Sites
+# Indobase Sites
 
-[Appwrite Sites](/products/sites) is designed to go beyond traditional free static site hosting. Alongside static and server-side rendering, it integrates backend services such as databases, authentication, storage, and serverless functions. This makes it more than just an HTML hosting service, it’s an all-in-one developer platform that allows you to build, deploy, and scale full-stack applications without juggling multiple providers.
+[Indobase Sites](/products/sites) is designed to go beyond traditional free static site hosting. Alongside static and server-side rendering, it integrates backend services such as databases, authentication, storage, and serverless functions. This makes it more than just an HTML hosting service, it’s an all-in-one developer platform that allows you to build, deploy, and scale full-stack applications without juggling multiple providers.
 
-## Key features of Appwrite Sites
+## Key features of Indobase Sites
 
 - Supports [static](https://appwrite.io/docs/products/sites/rendering/static) and [server-side](https://appwrite.io/docs/products/sites/rendering/ssr) rendering (Next.js, Nuxt, Astro, Remix, etc.)
 - [Git-based deployments](https://appwrite.io/docs/products/sites/deployments#create-deployment) with previews
 - [Global CDN](https://appwrite.io/docs/products/network/cdn) with SSL and DDoS protection
 - Built-in backend services: auth, database, functions, storage
 
-## Pricing of Appwrite Sites
+## Pricing of Indobase Sites
 
 - Open source and self-hostable
 - **Cloud option**: Free tier available, with paid Pro plan starting at $25/month.
 
-## Pros and cons of Appwrite Sites
+## Pros and cons of Indobase Sites
 
 | Pros | Cons |
 | --- | --- |
@@ -176,32 +176,32 @@ If all you need is **free static webpage hosting**, [GitHub Pages](https://docs.
 
 **1. What is the best open source alternative to Vercel?**
 
-Appwrite Sites is a strong open source alternative to Vercel. Unlike most static site hosts, it combines static and [server-side rendering](/docs/products/sites/rendering/ssr) with built-in backend services such as [authentication](/docs/products/auth), [databases](/docs/products/databases), and serverless functions. This makes it ideal for developers who want more control without vendor lock-in.
+Indobase Sites is a strong open source alternative to Vercel. Unlike most static site hosts, it combines static and [server-side rendering](/docs/products/sites/rendering/ssr) with built-in backend services such as [authentication](/docs/products/auth), [databases](/docs/products/databases), and serverless functions. This makes it ideal for developers who want more control without vendor lock-in.
 
-**2. Can I host a static website with a secure custom domain using Appwrite?**
+**2. Can I host a static website with a secure custom domain using Indobase?**
 
-Yes. Appwrite Sites supports [custom domains](/docs/products/sites/domains) with free SSL certificates. You can deploy your static or SSR site and serve it securely over HTTPS, all managed through the Appwrite dashboard.
+Yes. Indobase Sites supports [custom domains](/docs/products/sites/domains) with free SSL certificates. You can deploy your static or SSR site and serve it securely over HTTPS, all managed through the Indobase dashboard.
 
-**3. Does Appwrite offer enterprise support plans?**
+**3. Does Indobase offer enterprise support plans?**
 
-Yes. Appwrite provides enterprise-grade support, including SLAs, [security](/docs/advanced/security) compliance, and dedicated assistance for larger teams and organizations building critical applications.
+Yes. Indobase provides enterprise-grade support, including SLAs, [security](/docs/advanced/security) compliance, and dedicated assistance for larger teams and organizations building critical applications.
 
-**4. What makes Appwrite different from Firebase or Netlify?**
+**4. What makes Indobase different from Firebase or Netlify?**
 
-While Firebase and Netlify focus either on backend services or frontend hosting, Appwrite combines both. You get static site hosting, server-side rendering, databases, authentication, storage, and functions in one open source platform.
+While Firebase and Netlify focus either on backend services or frontend hosting, Indobase combines both. You get static site hosting, server-side rendering, databases, authentication, storage, and functions in one open source platform.
 
-**5. Can I deploy a React app with backend services in Appwrite?**
+**5. Can I deploy a React app with backend services in Indobase?**
 
-Absolutely. You can deploy your [React frontend](/docs/products/sites/quick-start/react) with Appwrite Sites and connect it directly to Appwrite’s backend services, such as database, authentication, and storage. This gives you a full-stack setup without relying on multiple providers.
+Absolutely. You can deploy your [React frontend](/docs/products/sites/quick-start/react) with Indobase Sites and connect it directly to Indobase’s backend services, such as database, authentication, and storage. This gives you a full-stack setup without relying on multiple providers.
 
-**6. How does Appwrite compare to Render, Netlify, and Vercel?**
+**6. How does Indobase compare to Render, Netlify, and Vercel?**
 
-Render and Netlify provide solid **free static site hosting**, while Vercel is optimized for frontend frameworks like Next.js. Appwrite Sites goes further by combining hosting with backend services, making it more versatile for teams building full-stack applications.
+Render and Netlify provide solid **free static site hosting**, while Vercel is optimized for frontend frameworks like Next.js. Indobase Sites goes further by combining hosting with backend services, making it more versatile for teams building full-stack applications.
 
-**7. Can I use GitHub Actions to deploy to Appwrite Sites?**
+**7. Can I use GitHub Actions to deploy to Indobase Sites?**
 
-Not directly. While Appwrite integrates with GitHub repositories for [automatic deployments](/docs/products/sites), GitHub Actions do not work with Sites out of the box today. Instead, you can connect your GitHub repo directly in the Appwrite console, and every push will trigger a deployment automatically. This gives you the benefits of continuous deployment without having to manually configure GitHub Actions.
+Not directly. While Indobase integrates with GitHub repositories for [automatic deployments](/docs/products/sites), GitHub Actions do not work with Sites out of the box today. Instead, you can connect your GitHub repo directly in the Indobase console, and every push will trigger a deployment automatically. This gives you the benefits of continuous deployment without having to manually configure GitHub Actions.
 
-**8. Does Appwrite Sites support preview deployments like Vercel and Netlify?**
+**8. Does Indobase Sites support preview deployments like Vercel and Netlify?**
 
-Yes. Appwrite Sites offers [preview deployments](/docs/products/sites/previews) for every pull request or branch. This means that whenever you push a new feature or bug fix, Appwrite automatically creates a live preview URL. Your team can test the changes in a production-like environment before merging, making collaboration faster and safer.
+Yes. Indobase Sites offers [preview deployments](/docs/products/sites/previews) for every pull request or branch. This means that whenever you push a new feature or bug fix, Indobase automatically creates a live preview URL. Your team can test the changes in a production-like environment before merging, making collaboration faster and safer.

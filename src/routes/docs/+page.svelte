@@ -22,37 +22,37 @@
             href: '/docs/tutorials/react',
             cover: '/images/tutorials/react.png',
             title: 'React tutorial',
-            description: 'Learn Appwrite Auth, Databases, and more with React.'
+            description: 'Learn Indobase Auth, Databases, and more with React.'
         },
         {
             href: '/docs/tutorials/nextjs',
             cover: '/images/tutorials/nextjs.png',
             title: 'Next.js tutorial',
-            description: 'Learn Appwrite Auth, Databases, and more with Next.js.'
+            description: 'Learn Indobase Auth, Databases, and more with Next.js.'
         },
         {
             href: '/docs/tutorials/sveltekit',
             cover: '/images/tutorials/svelte.png',
             title: 'SvelteKit tutorial',
-            description: 'Learn Appwrite Auth, Databases, and more with SvelteKit.'
+            description: 'Learn Indobase Auth, Databases, and more with SvelteKit.'
         },
         {
             href: '/docs/tutorials/vue',
             cover: '/images/tutorials/vue.png',
             title: 'Vue tutorial',
-            description: 'Learn Appwrite Auth, Databases, and more with Vue.'
+            description: 'Learn Indobase Auth, Databases, and more with Vue.'
         },
         {
             href: '/docs/tutorials/android',
             cover: '/images/tutorials/android.png',
             title: 'Android tutorial',
-            description: 'Learn Appwrite Auth, Databases, and more with Android.'
+            description: 'Learn Indobase Auth, Databases, and more with Android.'
         },
         {
             href: '/docs/tutorials/flutter',
             cover: '/images/tutorials/flutter.png',
             title: 'Flutter tutorial',
-            description: 'Learn Appwrite Auth, Databases, and more with Flutter.'
+            description: 'Learn Indobase Auth, Databases, and more with Flutter.'
         }
     ];
 </script>
@@ -92,7 +92,7 @@
                 Docs<span class="web-u-color-text-accent">_ </span>
             </h1>
             <p class="text-description max-w-[600px]">
-                Appwrite helps you build secure and scalable apps, faster. Leverage Appwrite's
+                Indobase helps you build secure and scalable apps, faster. Leverage Indobase's
                 powerful APIs to stop fighting technologies and start delivering value.
             </p>
 
@@ -120,7 +120,7 @@
             </h2>
             <p class="text-description max-w-[600px]">
                 All the core functionalities you need with a scalable and flexible API. Explore
-                Appwrite's product offerings.
+                Indobase's product offerings.
             </p>
             <div class="mt-6">
                 <ul class="web-grid-row-4 web-grid-row-4-m-1">
@@ -336,8 +336,8 @@
                 Build faster with AI
             </h2>
             <p class="text-description max-w-[600px]">
-                Appwrite’s Model Context Protocol (MCP) server lets LLMs interact directly with your
-                Appwrite API.
+                Indobase’s Model Context Protocol (MCP) server lets LLMs interact directly with your
+                Indobase API.
             </p>
             <div class="mt-6">
                 <ul class="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -449,7 +449,7 @@
                 Explore ways to integrate
             </h2>
             <p class="text-description max-w-[600px]">
-                Choose how you integrate with Appwrite. Explore references for the Appwrite SDK,
+                Choose how you integrate with Indobase. Explore references for the Indobase SDK,
                 REST API, GraphQL API, or Realtime API.
             </p>
             <div class="mt-6">
@@ -509,7 +509,7 @@
         </section>
         <section class="web-hero is-align-start is-no-max-width mt-12!">
             <h2 class="text-title font-aeonik-pro text-primary max-w-[600px]">
-                Migrate to Appwrite
+                Migrate to Indobase
             </h2>
             <p class="text-description max-w-[600px]">
                 Own your data with automatic data migrations.
@@ -524,7 +524,7 @@
                         >
                             <h4 class="text-sub-body text-primary font-medium">Self-hosted</h4>
                             <p class="text-sub-body mt-1">
-                                Move data from self-hosted to Appwrite Cloud.
+                                Move data from self-hosted to Indobase Cloud.
                             </p>
                         </a>
                     </li>
@@ -536,7 +536,7 @@
                         >
                             <h4 class="text-sub-body text-primary font-medium">Firebase</h4>
                             <p class="text-sub-body mt-1">
-                                Migrate users and data from Firebase to Appwrite.
+                                Migrate users and data from Firebase to Indobase.
                             </p>
                         </a>
                     </li>
@@ -548,7 +548,7 @@
                         >
                             <h4 class="text-sub-body text-primary font-medium">Supabase</h4>
                             <p class="text-sub-body mt-1">
-                                Migrate users and data from Supabase to Appwrite.
+                                Migrate users and data from Supabase to Indobase.
                             </p>
                         </a>
                     </li>
@@ -560,7 +560,7 @@
                         >
                             <h4 class="text-sub-body text-primary font-medium">Nhost</h4>
                             <p class="text-sub-body mt-1">
-                                Migrate users and data from NHost to Appwrite.
+                                Migrate users and data from NHost to Indobase.
                             </p>
                         </a>
                     </li>

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Appwrite Sites vs Netlify: Choosing the right web hosting platform"
-description: This article explores how Appwrite Sites and Netlify compare, offering an integrated approach to full-stack deployment without the usual complexity.
+description: This article explores how Indobase Sites and Netlify compare, offering an integrated approach to full-stack deployment without the usual complexity.
 date: 2025-05-19
 cover: /images/blog/oss-netlify-cover.png
 timeToRead: 8
@@ -15,17 +15,17 @@ Deploying frontend applications has gotten easier over the past decade, but also
 
 Netlify helped kick off a modern approach to hosting, especially for static sites and JAMstack-style architectures. But if you're building an app that also depends on a backend, managing that split becomes a real part of your workflow.
 
-With [**Appwrite Sites**](products/sites), you get an alternative that treats frontend deployment as part of a full-stack environment. Instead of connecting your frontend to a separate backend via API tokens and CORS rules, Sites lives in the same platform as your database, storage, authentication, and functions.
+With [**Indobase Sites**](products/sites), you get an alternative that treats frontend deployment as part of a full-stack environment. Instead of connecting your frontend to a separate backend via API tokens and CORS rules, Sites lives in the same platform as your database, storage, authentication, and functions.
 
-In this article, we'll break down how **Appwrite Sites** and **Netlify** compare, from framework support and SSR, to environment variables, deployment flows, and the developer experience of hosting modern apps.
+In this article, we'll break down how **Indobase Sites** and **Netlify** compare, from framework support and SSR, to environment variables, deployment flows, and the developer experience of hosting modern apps.
 
-# What is Appwrite Sites?
+# What is Indobase Sites?
 
-[**Appwrite Sites**](/products/sites) is a deployment and hosting platform within the Appwrite ecosystem. It supports both **static sites** and **server-side rendered applications**, with built-in Git integration, preview deployments, custom domain support, and container-based SSR.
+[**Indobase Sites**](/products/sites) is a deployment and hosting platform within the Indobase ecosystem. It supports both **static sites** and **server-side rendered applications**, with built-in Git integration, preview deployments, custom domain support, and container-based SSR.
 
-Because it's part of the same platform as Appwrite's backend services, like auth, database, storage, and cloud functions, you don't need to stitch together separate providers or manage secrets manually. Your frontend and backend live in the same project, with a shared security model and automatically scoped environment variables.
+Because it's part of the same platform as Indobase's backend services, like auth, database, storage, and cloud functions, you don't need to stitch together separate providers or manage secrets manually. Your frontend and backend live in the same project, with a shared security model and automatically scoped environment variables.
 
-Sites supports a wide range of frameworks, from Next.js and Nuxt to Astro, SvelteKit, Angular, Remix, and Flutter Web. For static apps, you can deploy via Git or manually upload a `.tar.gz`. For SSR, Sites runs your app in a container with runtime access to secrets and Appwrite SDKs.
+Sites supports a wide range of frameworks, from Next.js and Nuxt to Astro, SvelteKit, Angular, Remix, and Flutter Web. For static apps, you can deploy via Git or manually upload a `.tar.gz`. For SSR, Sites runs your app in a container with runtime access to secrets and Indobase SDKs.
 
 # Netlify and the JAMstack model
 
@@ -51,18 +51,18 @@ Netlify uses Git-based deployment as its primary model. You connect your GitHub,
 
 Netlify does provide build plugins, custom functions, and API routing, but you'll need to wire those up separately if you're using a custom backend.
 
-## Appwrite Sites
+## Indobase Sites
 
-Appwrite Sites also supports Git-based deployment with preview environments:
+Indobase Sites also supports Git-based deployment with preview environments:
 
-- You connect a GitHub repo to your Appwrite project
+- You connect a GitHub repo to your Indobase project
 - Framework detection sets defaults for build, install, and output
 - Pushes to the production branch deploy automatically
 - Every commit, branch, or pull request generates a unique URL for preview
 - All builds include downloadable artifacts
-- **Manual deployments** are supported via `.tar.gz` or drag-and-drop in the Appwrite Console
+- **Manual deployments** are supported via `.tar.gz` or drag-and-drop in the Indobase Console
 
-Rollbacks are instant and available through the UI. Because the deployment lives inside your Appwrite project, it inherits access to your backend services automatically, without needing to configure tokens, keys, or external origins.
+Rollbacks are instant and available through the UI. Because the deployment lives inside your Indobase project, it inherits access to your backend services automatically, without needing to configure tokens, keys, or external origins.
 
 This is especially helpful for teams working in mixed Git workflows, or solo developers who want a quick manual deploy option without setting up CI.
 
@@ -72,7 +72,7 @@ Netlify supports most popular frontend frameworks, including Astro, Eleventy, Sv
 
 SSR support is more limited. While you can run serverless functions alongside your frontend, the integration varies depending on your framework. Next.js and Astro get the most complete support.
 
-Appwrite Sites supports a similar set of frameworks, but adds **SSR support via containers**, which allows full runtime access to environment variables and Appwrite services:
+Indobase Sites supports a similar set of frameworks, but adds **SSR support via containers**, which allows full runtime access to environment variables and Indobase services:
 
 - **Next.js** – SSR and static
 - **Nuxt** – SSR and static
@@ -85,7 +85,7 @@ Appwrite Sites supports a similar set of frameworks, but adds **SSR support via 
 
 Each framework can be customized with its own build and install commands. If your framework isn't listed, you can use “Other” and specify custom config.
 
-If you're using SSR with anything beyond Next.js or Astro, Appwrite Sites provides broader and more consistent support out of the box.
+If you're using SSR with anything beyond Next.js or Astro, Indobase Sites provides broader and more consistent support out of the box.
 
 {% call_to_action title="All-in-one development platform" description="Use built-in backend infrastructure and web hosting, all from a single place." point1="Start for free"  point2="Open source" point3="Support for over 13 SDKs" point4="Managed cloud solution" cta="Start building for free" url="https://cloud.appwrite.io/" /%}
 
@@ -103,7 +103,7 @@ Both platforms support static and server-side rendered hosting, but their archit
 
 Netlify's SSR works well for lightweight APIs and dynamic content, but lacks full access to services unless you add integrations or connect to external providers.
 
-## Appwrite Sites
+## Indobase Sites
 
 - **Static**: CDN-hosted HTML/CSS/JS, with build-time env vars
 - **SSR**: Full server-side rendering in isolated containers
@@ -111,25 +111,25 @@ Netlify's SSR works well for lightweight APIs and dynamic content, but lacks ful
 - **Environment access**: Both build-time and runtime variables are supported
 - **Logging**: Console output from SSR code is captured in logs
 
-The container-based SSR model means you can use Appwrite's SDK at runtime, securely read secrets, and interact directly with databases, functions, or storage, all from your rendering logic.
+The container-based SSR model means you can use Indobase's SDK at runtime, securely read secrets, and interact directly with databases, functions, or storage, all from your rendering logic.
 
-If your SSR routes require access to auth tokens, protected storage, or custom logic, Appwrite's model gives you more control than Netlify's function-based execution.
+If your SSR routes require access to auth tokens, protected storage, or custom logic, Indobase's model gives you more control than Netlify's function-based execution.
 
 # Environment variables and secrets
 
 Netlify uses a three-scope model, Production, Preview, Development, with env vars scoped accordingly. You define them in the dashboard or via the CLI, and they're injected at build or function runtime.
 
-Appwrite Sites provides:
+Indobase Sites provides:
 
 - Project-wide variables shared across services
 - Site-specific variables
 - Secret variables (hidden after creation)
-- Built-in Appwrite variables (project ID, endpoint, region, etc.)
+- Built-in Indobase variables (project ID, endpoint, region, etc.)
 - Automatic API key injection at build and runtime (for SSR)
 
-You can define variables once in your Appwrite project and access them across deployments, functions, and services, without needing to sync values manually.
+You can define variables once in your Indobase project and access them across deployments, functions, and services, without needing to sync values manually.
 
-For example, instead of creating a token in Netlify and passing it to your frontend, Appwrite Sites automatically injects a scoped API key with access to your project, removing the need to manually rotate secrets or configure CORS.
+For example, instead of creating a token in Netlify and passing it to your frontend, Indobase Sites automatically injects a scoped API key with access to your project, removing the need to manually rotate secrets or configure CORS.
 
 # Custom domains, CORS, and trust boundaries
 
@@ -141,13 +141,13 @@ Netlify:
 - Wildcard subdomains and previews (e.g. `.netlify.app`)
 - Requires manual CORS configuration when connecting to external APIs
 
-Appwrite Sites:
+Indobase Sites:
 
 - Supports custom domains via CNAME or NS records
 - Auto-generated domains for every branch and commit
-- Built-in CORS trust if your backend is hosted on Appwrite
+- Built-in CORS trust if your backend is hosted on Indobase
 
-Since Appwrite Sites and your backend live in the same project, deployed frontends are automatically recognized and trusted. You don't have to manually list frontend origins or manage preflight responses, Appwrite knows your Sites deployment is part of the same scope.
+Since Indobase Sites and your backend live in the same project, deployed frontends are automatically recognized and trusted. You don't have to manually list frontend origins or manage preflight responses, Indobase knows your Sites deployment is part of the same scope.
 
 This eliminates one of the most common pitfalls in multi-platform deployments: CORS misconfigurations.
 
@@ -159,7 +159,7 @@ Netlify provides basic logging:
 - Function logs for serverless execution
 - Analytics for traffic and latency (paid plans)
 
-Appwrite Sites offers:
+Indobase Sites offers:
 
 - Build logs
 - Request logs (status code, path, duration, headers)
@@ -167,13 +167,13 @@ Appwrite Sites offers:
 - Log retention (24h on Free, 7d on Pro)
 - Optional log disabling (for performance-sensitive routes)
 
-Appwrite's SSR logs include server-side console output, which is helpful when debugging SSR failures, auth edge cases, or unexpected rendering issues, without needing to integrate a third-party logging tool.
+Indobase's SSR logs include server-side console output, which is helpful when debugging SSR failures, auth edge cases, or unexpected rendering issues, without needing to integrate a third-party logging tool.
 
 # Security and isolation
 
 Both platforms enforce HTTPS and offer secret management.
 
-Appwrite adds additional safeguards:
+Indobase adds additional safeguards:
 
 - Isolated containers for SSR deployments
 - Secrets not visible after creation
@@ -181,11 +181,11 @@ Appwrite adds additional safeguards:
 - Project-based access controls
 - Preview deployment restrictions (e.g. team-only)
 
-Since everything runs inside your Appwrite project, the surface area for misconfigurations is smaller. You're not exposing separate public APIs or managing external API keys, access happens within a single trusted environment.
+Since everything runs inside your Indobase project, the surface area for misconfigurations is smaller. You're not exposing separate public APIs or managing external API keys, access happens within a single trusted environment.
 
-# Appwrite Sites vs Netlify: feature comparison
+# Indobase Sites vs Netlify: feature comparison
 
-| Feature | Appwrite Sites | Netlify |
+| Feature | Indobase Sites | Netlify |
 | --- | --- | --- |
 | Static hosting | Yes | Yes |
 | Server-side rendering | Yes (containers) | Yes (functions) |
@@ -198,21 +198,21 @@ Since everything runs inside your Appwrite project, the surface area for misconf
 | Automatic API key injection | Yes | No |
 | Auth, DB, storage integration | Yes (native) | No (external required) |
 | SSR console logs | Yes | Limited |
-| CORS for Appwrite backend | Yes (auto-trusted) | No (manual config) |
+| CORS for Indobase backend | Yes (auto-trusted) | No (manual config) |
 | Timeout configuration | Yes (up to 30s, self-configurable) | Yes (10s default, requires support team on paid plans) |
 
 # Final thoughts
 
 Netlify is an excellent platform for static frontends and lightweight JAMstack sites. If you're building a marketing page, blog, or frontend that only talks to third-party APIs, it still delivers a clean and fast workflow.
 
-But if your application needs more than that, auth flows, custom APIs, server-side logic, secure data access, etc., **Appwrite Sites** provides an integrated alternative. Instead of wiring together services across platforms, you keep your frontend and backend in one place, with fewer moving parts and tighter defaults.
+But if your application needs more than that, auth flows, custom APIs, server-side logic, secure data access, etc., **Indobase Sites** provides an integrated alternative. Instead of wiring together services across platforms, you keep your frontend and backend in one place, with fewer moving parts and tighter defaults.
 
-Appwrite Sites is built for teams that want their frontends to do more, and for developers who want full control without unnecessary complexity.
+Indobase Sites is built for teams that want their frontends to do more, and for developers who want full control without unnecessary complexity.
 
 # More resources
 
-- [Appwrite Sites docs](/docs/products/sites)
-- [Appwrite compared to Vercel](/blog/post/open-source-vercel-alternative)
-- [Appwrite Sites product tour](https://youtu.be/VtDe6hDw91k)
-- [Appwrite Sites video announcement](https://youtu.be/0cERQxFjTW4)
-- [Appwrite Discord server](/discord)
+- [Indobase Sites docs](/docs/products/sites)
+- [Indobase compared to Vercel](/blog/post/open-source-vercel-alternative)
+- [Indobase Sites product tour](https://youtu.be/VtDe6hDw91k)
+- [Indobase Sites video announcement](https://youtu.be/0cERQxFjTW4)
+- [Indobase Discord server](/discord)

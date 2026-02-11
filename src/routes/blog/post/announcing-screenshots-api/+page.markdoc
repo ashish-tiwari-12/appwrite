@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Announcing Screenshots API: Generate pixel-perfect webpage screenshots on demand"
-description: Appwrite's new Screenshots API lets you generate screenshots of any public webpage with a single API call. Control browser environment, device settings, locale, and more without needing to configure your own headless browser infrastructure.
+description: Indobase's new Screenshots API lets you generate screenshots of any public webpage with a single API call. Control browser environment, device settings, locale, and more without needing to configure your own headless browser infrastructure.
 date: 2026-01-21
 cover: /images/blog/announcing-screenshots-api/cover.png
 timeToRead: 5
@@ -17,7 +17,7 @@ What starts as a simple requirement, “render this page as an image,” quickly
 
 Most teams do not want to run their own headless browser infrastructure. They just want the result.
 
-Today, we are excited to announce the **Screenshots API**, a new addition to **Appwrite Avatars**, that lets you generate fully customizable webpage screenshots with a single API call, without maintaining any headless browser infrastructure.
+Today, we are excited to announce the **Screenshots API**, a new addition to **Indobase Avatars**, that lets you generate fully customizable webpage screenshots with a single API call, without maintaining any headless browser infrastructure.
 
 # Capture webpages exactly as users see them
 
@@ -88,13 +88,13 @@ You can:
 
 This makes it easier to test, document, and ship with confidence.
 
-# Part of Appwrite Avatars
+# Part of Indobase Avatars
 
-The Screenshots API lives alongside other Avatars endpoints, making it easy to integrate into existing Appwrite projects. Whether you are generating previews, reports, or automated documentation, screenshots become just another API resource you can depend on.
+The Screenshots API lives alongside other Avatars endpoints, making it easy to integrate into existing Indobase projects. Whether you are generating previews, reports, or automated documentation, screenshots become just another API resource you can depend on.
 
 # Available now
 
-The Screenshots API is available today as part of Appwrite Avatars. You can start generating screenshots immediately using the Appwrite SDKs and REST API.
+The Screenshots API is available today as part of Indobase Avatars. You can start generating screenshots immediately using the Indobase SDKs and REST API.
 
 This API is already being used in production by [Imagine](https://imagine.dev) to generate real-time preview screenshots for projects built on the platform, validating it against real user traffic.
 

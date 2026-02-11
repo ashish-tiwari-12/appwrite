@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Start with .NET
-description: Learn to get started with server integrations with Appwrite .NET SDK.
+description: Learn to get started with server integrations with Indobase .NET SDK.
 difficulty: beginner
 readtime: 5
 back: /docs/quick-starts
 ---
-Learn how to setup your first .NET project powered by Appwrite.
+Learn how to setup your first .NET project powered by Indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -54,15 +54,15 @@ cd MyApp
 ```
 
 {% /section %}
-{% section #step-3 step=3 title="Install Appwrite" %}
+{% section #step-3 step=3 title="Install Indobase" %}
 
-Install the .NET Appwrite SDK.
+Install the .NET Indobase SDK.
 
 ```sh
-dotnet add package Appwrite --version 0.13.0
+dotnet add package Indobase --version 0.13.0
 ```
 {% /section %}
-{% section #step-4 step=4 title="Import Appwrite" %}
+{% section #step-4 step=4 title="Import Indobase" %}
 
 Find your project ID in the **Settings** page. Also, click on the **View API Keys** button to find the API key that was created earlier. 
 
@@ -73,12 +73,12 @@ Find your project ID in the **Settings** page. Also, click on the **View API Key
 ![Project settings screen](/images/docs/quick-starts/project-id.png)
 {% /only_light %}
 
-Open the file `Program.cs` and initialize the Appwrite Client. Replace `<PROJECT_ID>` with your project ID and `<YOUR_API_KEY>` with your API key.
+Open the file `Program.cs` and initialize the Indobase Client. Replace `<PROJECT_ID>` with your project ID and `<YOUR_API_KEY>` with your API key.
 
 ```csharp
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 var client = new Client();
 
@@ -91,7 +91,7 @@ client
 {% /section %}
 {% section #step-5 step=5 title="Initialize database" %}
 
-Once the Appwrite Client is initialized, create a function to configure a todo table.
+Once the Indobase Client is initialized, create a function to configure a todo table.
 
 ```csharp
 var tablesDB = new TablesDB(client);

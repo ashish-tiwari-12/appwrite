@@ -77,7 +77,7 @@
             <h3 class="font-aeonik-pro text-label text-primary">Realtime</h3>
         </div>
         <p class="text-sub-body text-primary max-w-lg font-medium">
-            <span class="text-secondary">Subscribe and react</span> to any Appwrite event using the Realtime
+            <span class="text-secondary">Subscribe and react</span> to any Indobase event using the Realtime
             API.
         </p>
     </div>

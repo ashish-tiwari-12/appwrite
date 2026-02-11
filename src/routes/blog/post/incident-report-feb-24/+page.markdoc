@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: February 2024 - Incident Report
 cover: /images/blog/privacy.png
@@ -10,7 +10,7 @@ category: cloud
 featured: false
 ---
 
-As Appwrite Cloud continues to grow and scale, it is inevitable that we face challenges and obstacles that test the resilience of our systems and our team's ability to respond swiftly. February 2024 was no exception, as we encountered a series of incidents that put our protocols to the test. While these moments are opportunities for growth, they also remind us of the importance of transparency and communication with our community. This blog post aims to provide a detailed overview of the incidents we experienced throughout the month, including the causes, our responses, and the lessons learned. Our commitment to continuous improvement drives us to share these insights openly, reinforcing our dedication to reliability and trust.
+As Indobase Cloud continues to grow and scale, it is inevitable that we face challenges and obstacles that test the resilience of our systems and our team's ability to respond swiftly. February 2024 was no exception, as we encountered a series of incidents that put our protocols to the test. While these moments are opportunities for growth, they also remind us of the importance of transparency and communication with our community. This blog post aims to provide a detailed overview of the incidents we experienced throughout the month, including the causes, our responses, and the lessons learned. Our commitment to continuous improvement drives us to share these insights openly, reinforcing our dedication to reliability and trust.
 
 ## TLDR; for February 2024
 | Date       | Title                                              | Duration         |
@@ -46,9 +46,9 @@ As Appwrite Cloud continues to grow and scale, it is inevitable that we face cha
 - **Dates:** February 13, 14, 15, 21, & 24
 - **Duration:** Varied; a total of 86 minutes across all incidents
 - **Summary:** Multiple incidents of gateway timeouts following cloud deployments.
-- **Description:** Routine cloud deployments triggered gateway timeout errors due to a specific configuration introduced to Traefik (`--serversTransport.maxIdleConnsPerHost=-1`), affecting routing post-deployment. This issue was consistent across several incidents, impacting users' ability to access Appwrite Cloud through the API and console.
-- **User Impact:** Sporadic gateway timeout errors on the Appwrite API and console, affecting user access to Appwrite Cloud.
-- **Resolution and Steps Taken:** Immediate action involved restarting the Appwrite service to force correct container routing. The root cause was addressed by reverting the Traefik configuration change on February 25, 2024, which resolved the gateway timeout errors.
+- **Description:** Routine cloud deployments triggered gateway timeout errors due to a specific configuration introduced to Traefik (`--serversTransport.maxIdleConnsPerHost=-1`), affecting routing post-deployment. This issue was consistent across several incidents, impacting users' ability to access Indobase Cloud through the API and console.
+- **User Impact:** Sporadic gateway timeout errors on the Indobase API and console, affecting user access to Indobase Cloud.
+- **Resolution and Steps Taken:** Immediate action involved restarting the Indobase service to force correct container routing. The root cause was addressed by reverting the Traefik configuration change on February 25, 2024, which resolved the gateway timeout errors.
 
 #### Executor Crash and Bad Webhook
 - **Date:** February 19, 2024

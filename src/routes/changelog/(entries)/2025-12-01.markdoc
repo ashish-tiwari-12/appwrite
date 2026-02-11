@@ -1,4 +1,4 @@
----
+﻿---
 layout: changelog
 title: "Fixed file token URL consistency for non-expiring tokens"
 date: 2025-12-01
@@ -17,7 +17,7 @@ With this fix:
 - URLs remain valid indefinitely as intended.
 - Improved reliability for long-term file sharing and caching strategies.
 
-This update is now live on Appwrite Cloud.
+This update is now live on Indobase Cloud.
 
 {% arrow_link href="https://appwrite.io/discord" %}
 Join the conversation on Discord

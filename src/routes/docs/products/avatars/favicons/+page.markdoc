@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Favicons
 description: Fetch favicons from remote websites for link previews and bookmark displays.
@@ -49,7 +49,7 @@ Future result = avatars.getFavicon(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

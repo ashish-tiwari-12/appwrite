@@ -1,4 +1,4 @@
----
+﻿---
 layout: integration
 title: Prompt ChatGPT
 description: Send text prompts to OpenAI GPT-3.5 and receive text generations
@@ -29,7 +29,7 @@ The API is designed to be user-friendly, providing endpoints that can be easily 
 
 # How does the integration work?
 
-Appwrite integrates OpenAI’s API to provide you with access to powerful text generation out-of-the-box with prospects to implement other features such as image creation and language translations.
+Indobase integrates OpenAI’s API to provide you with access to powerful text generation out-of-the-box with prospects to implement other features such as image creation and language translations.
 
 # How to implement
 
@@ -41,11 +41,11 @@ First, [create an account on the OpenAI platform](https://platform.openai.com/) 
 
 ![API key](/images/integrations/ai-openai/api-key.png)
 
-## Step 2: Create the Appwrite Function
+## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In case you decide to self-host Appwrite, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Appwrite Function templates.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In case you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
-Head over to the Appwrite console, navigate to the **Functions** page, click on the **Templates** tab, and search for the **ChatGPT** function template.
+Head over to the Indobase console, navigate to the **Functions** page, click on the **Templates** tab, and search for the **ChatGPT** function template.
 
 ![Function template](/images/integrations/ai-openai/template.png)
 
@@ -64,14 +64,14 @@ You can also use tools like Postman, cURL, or your favorite programming language
 ```bash
 curl -X POST http://DEPLOYED_FUNCTION_DOMAIN \
 -H "Content-Type: application/json" \
--d '{"prompt": "What is Appwrite?"}' 
+-d '{"prompt": "What is Indobase?"}' 
 ```
 
-# Read more about OpenAI and Appwrite Functions
+# Read more about OpenAI and Indobase Functions
 
 If you would like to learn more about Open AI, visit these resources:
 
 - [Create an OpenAI developer account](https://platform.openai.com/docs/quickstart)
-- [Build an intelligent chatbot with ChatGPT and Appwrite Functions](https://appwrite.io/blog/post/function-template-prompt-chatgpt)
-- [Integrating OpenAI - Appwrite Docs](https://appwrite.io/docs/products/ai/integrations/openai)
-- [Appwrite Functions docs](https://appwrite.io/docs/products/functions)
+- [Build an intelligent chatbot with ChatGPT and Indobase Functions](https://appwrite.io/blog/post/function-template-prompt-chatgpt)
+- [Integrating OpenAI - Indobase Docs](https://appwrite.io/docs/products/ai/integrations/openai)
+- [Indobase Functions docs](https://appwrite.io/docs/products/functions)

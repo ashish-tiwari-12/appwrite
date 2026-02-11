@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create app
-description: Create a Android app project using Appwrite.
+description: Create a Android app project using Indobase.
 step: 2
 ---
 
@@ -11,7 +11,7 @@ Create a Android app with the Android Studio **New Project** wizard. Select **Em
 
 ## Add dependencies {% #add-dependencies %}
 
-Install the Android Appwrite SDK.
+Install the Android Indobase SDK.
 
 Add the following to your dependencies in the `app/build.gradle` file:
 
@@ -20,8 +20,8 @@ implementation("io.appwrite:sdk-for-android:8.1.0")
 ```
 
 In case you need to create OAuth 2 sessions in the future, the following activity needs to be added inside the `<application>` tag, along side the existing `<activity>` tags in your [AndroidManifest.xml](https://developer.android.com/guide/topics/manifest/manifest-intro). 
-Be sure to replace the **<PROJECT_ID>** string with your actual Appwrite project ID. 
-You can find your Appwrite project ID in you project settings screen in your Appwrite Console.
+Be sure to replace the **<PROJECT_ID>** string with your actual Indobase project ID. 
+You can find your Indobase project ID in you project settings screen in your Indobase Console.
 
 ```xml
 <manifest ...>

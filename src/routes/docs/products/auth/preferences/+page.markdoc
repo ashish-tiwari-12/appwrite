@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Preferences
-description: Store and manage user preferences in Appwrite using Account API and Teams API for individual and shared settings.
+description: Store and manage user preferences in Indobase using Account API and Teams API for individual and shared settings.
 ---
 
 Preferences allow you to store settings like theme choice, language selection, or notification preferences that are specific to individual users or shared across teams.
 
 # User preferences {% #user-preferences %}
 
-You can store user preferences on a user's account using Appwrite's [Update Preferences](/docs/references/cloud/client-web/account#updatePrefs) endpoint.
+You can store user preferences on a user's account using Indobase's [Update Preferences](/docs/references/cloud/client-web/account#updatePrefs) endpoint.
 
 Preferences are stored as a key-value JSON object. The maximum allowed size for preferences is 64kB, and an error will be thrown if this limit is exceeded.
 
@@ -51,7 +51,7 @@ final user = await account.updatePrefs(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -144,7 +144,7 @@ val account = Account(client)
 val prefs = account.getPrefs()
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -170,7 +170,7 @@ Team preferences let you store settings that apply to an entire team of users. T
 Team preferences are stored as a JSON object in the team row and are limited to 64kB of data. All team members can access these shared preferences.
 
 {% arrow_link href="/docs/products/auth/teams" %}
-Learn more about Appwrite Teams
+Learn more about Indobase Teams
 {% /arrow_link %}
 
 ## Update team preferences
@@ -221,7 +221,7 @@ final team = await teams.updatePrefs(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -295,7 +295,7 @@ final prefs = await teams.getPrefs(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -341,5 +341,5 @@ const darkMode = localStorage.getItem('darkMode');
 ```
 
 {% info title="Storing larger data" %}
-For complex preference structures or when storing larger amounts of data, Appwrite Databases offer a flexible solution. [Learn more about Appwrite Databases](/docs/products/databases).
+For complex preference structures or when storing larger amounts of data, Indobase Databases offer a flexible solution. [Learn more about Indobase Databases](/docs/products/databases).
 {% /info %}

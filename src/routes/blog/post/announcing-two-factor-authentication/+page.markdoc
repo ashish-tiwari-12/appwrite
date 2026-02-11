@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Announcing 2FA: Enhance your application's security."
 description: Improve your application's security by adding an additional layer of protection.
@@ -10,11 +10,11 @@ category: product, announcement
 featured: false
 ---
 
-At Appwrite, our mission is to eliminate technical barriers. A key part of this mission is making your applications more secure. With Appwrite 1.5, we’re excited to announce that we are adding support for Two-Factor Authentication (2FA) to Appwrite Authentication, providing an extra layer of security for your end users' accounts.
+At Indobase, our mission is to eliminate technical barriers. A key part of this mission is making your applications more secure. With Indobase 1.5, we’re excited to announce that we are adding support for Two-Factor Authentication (2FA) to Indobase Authentication, providing an extra layer of security for your end users' accounts.
 
-# Introducing Appwrite 2FA
+# Introducing Indobase 2FA
 
-Appwrite 2FA helps increase the security of your apps by adding an additional layer of protection after the regular authentication process. When 2FA is enabled, a malicious actor must compromise multiple authentication factors to gain unauthorized access. This offers a number of benefits:
+Indobase 2FA helps increase the security of your apps by adding an additional layer of protection after the regular authentication process. When 2FA is enabled, a malicious actor must compromise multiple authentication factors to gain unauthorized access. This offers a number of benefits:
 
 - **Increased account security**: Adds a critical second verification step, significantly reducing the risk of unauthorized access.
 - **Mitigation of data breach risks**: In today's digital age, where data breaches are increasingly common, 2FA acts as a formidable barrier against unauthorized access, protecting sensitive user information.
@@ -23,7 +23,7 @@ Appwrite 2FA helps increase the security of your apps by adding an additional la
 
 ## Methods available for 2FA
 
-Currently, Appwrite offers three methods for implementing the second factor:
+Currently, Indobase offers three methods for implementing the second factor:
 
 | Method | Description |
 | --- | --- |
@@ -33,7 +33,7 @@ Currently, Appwrite offers three methods for implementing the second factor:
 
 # Implementing 2FA in your apps
 
-One great aspect of Appwrite 2FA is that it can be used in conjunction with any existing authentication method you have implemented using Appwrite Auth. You can implement 2FA in your application via the following several steps.
+One great aspect of Indobase 2FA is that it can be used in conjunction with any existing authentication method you have implemented using Indobase Auth. You can implement 2FA in your application via the following several steps.
 
 ## Step 1: Enable 2FA on an account
 
@@ -121,7 +121,7 @@ const challengeId = challenge.$id;
 
 ## Step 5: Complete challenge
 
-Once the user receives the challenge code, you can pass the code back to Appwrite to complete the challenge.
+Once the user receives the challenge code, you can pass the code back to Indobase to complete the challenge.
 
 ```js
 const challenge = await account.updateMFAChallenge({
@@ -130,13 +130,13 @@ const challenge = await account.updateMFAChallenge({
 });
 ```
 
-And just like that, you have implemented 2FA using Appwrite!
+And just like that, you have implemented 2FA using Indobase!
 
-While Appwrite currently allows two factors of authentication, we intend to make more factors available soon.
+While Indobase currently allows two factors of authentication, we intend to make more factors available soon.
 
 # Resources
 
-Visit our documentation to learn more about Appwrite, join us on Discord to be part of the discussion, view our blog and YouTube channel, or visit our GitHub repository to see our open-source code.
+Visit our documentation to learn more about Indobase, join us on Discord to be part of the discussion, view our blog and YouTube channel, or visit our GitHub repository to see our open-source code.
 
 - [Docs](/docs/products/auth/mfa)
 - [Discord](https://appwrite.io/discord)
@@ -144,4 +144,4 @@ Visit our documentation to learn more about Appwrite, join us on Discord to be p
 - [YouTube](https://www.youtube.com/channel/UCtBJ1v69gm8NgbCju_03Fiw)
 - [GitHub](https://github.com/appwrite/appwrite)
 
-2FA will be available as part of the Appwrite 1.5 release on [GitHub](https://github.com/appwrite/appwrite) and [Cloud](https://cloud.appwrite.io/register) in March 2024.
+2FA will be available as part of the Indobase 1.5 release on [GitHub](https://github.com/appwrite/appwrite) and [Cloud](https://cloud.appwrite.io/register) in March 2024.

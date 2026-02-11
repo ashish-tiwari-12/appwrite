@@ -1,13 +1,13 @@
----
+﻿---
 layout: article
 title: Storage permissions
-description: Enhance data security and control with Appwrite Storage Permissions. Learn how to set access rules, permissions, and restrictions for your stored files.
+description: Enhance data security and control with Indobase Storage Permissions. Learn how to set access rules, permissions, and restrictions for your stored files.
 ---
 
 Permissions define who can access files within a bucket. By default **no permissions** are granted to any users, so no user can access any files.
 Permissions exist at two levels, bucket level and file level permissions. 
 
-In Appwrite, permissions are **granted**, meaning a user has no access by default and receive access when granted. 
+In Indobase, permissions are **granted**, meaning a user has no access by default and receive access when granted. 
 A user with access granted at either bucket level or file level will be able to access a file.
 Users **don't need access at both levels** to access files.
 

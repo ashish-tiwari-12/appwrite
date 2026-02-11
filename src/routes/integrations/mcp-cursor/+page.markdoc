@@ -1,7 +1,7 @@
----
+﻿---
 layout: integration
 title: MCP with Cursor
-description: Connect to Appwrite project with the MCP within Cursor.
+description: Connect to Indobase project with the MCP within Cursor.
 date: 2025-07-01
 featured: true
 isPartner: true
@@ -25,19 +25,19 @@ Cursor is an AI-powered code editor built on VS Code, designed to enhance develo
 
 # How does the integration work?
 
-The Appwrite MCP server integrates with Cursor Agent using the Model Context Protocol (MCP), allowing you to connect your Appwrite project to Cursor. 
+The Indobase MCP server integrates with Cursor Agent using the Model Context Protocol (MCP), allowing you to connect your Indobase project to Cursor. 
 
-This integration enables you to perform various operations on your Appwrite resources, such as creating users, managing databases, and more, directly from the Cursor editor using natural language commands.
+This integration enables you to perform various operations on your Indobase resources, such as creating users, managing databases, and more, directly from the Cursor editor using natural language commands.
 
 # How to implement
 
 To implement the MCP with Cursor integration, there are several steps you must complete:
 
-## Step 1: Create an Appwrite API key
+## Step 1: Create an Indobase API key
 
-First, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven't already.
+First, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven't already.
 
-Select your project (or create a new one), and head to the **Overview** page from the left sidebar. Under the **Integrations** section, click on the **API Keys** tab, and then click on **Create API Key**. Select the scopes for whichever Appwrite services you want to work with, set the duration, and create the API key. You must then copy it for future usage.
+Select your project (or create a new one), and head to the **Overview** page from the left sidebar. Under the **Integrations** section, click on the **API Keys** tab, and then click on **Create API Key**. Select the scopes for whichever Indobase services you want to work with, set the duration, and create the API key. You must then copy it for future usage.
 
 ![Create API Key](/images/integrations/mcp-cursor/appwrite-api-key.png)
 
@@ -72,15 +72,15 @@ To configure the MCP server on Cursor, head to the **Cursor Settings** page, nav
 }
 ```
 
-This configuration will set up the MCP server to connect to your Appwrite project using the API key, project ID, and endpoint, which you must update before saving and exiting the file.
+This configuration will set up the MCP server to connect to your Indobase project using the API key, project ID, and endpoint, which you must update before saving and exiting the file.
 
-You may have noticed the `--users` argument, which enables Cursor to interact with the Appwrite Users API. To enable other Appwrite services, you can add their respective [command-line arguments](/docs/tooling/mcp#command-line-arguments).
+You may have noticed the `--users` argument, which enables Cursor to interact with the Indobase Users API. To enable other Indobase services, you can add their respective [command-line arguments](/docs/tooling/mcp#command-line-arguments).
 
-Once you have updated and saved the `mcp.json` file, Cursor will connect with the Appwrite MCP server and load all available tools. You may need to restart Cursor if it is unable to start the MCP server.
+Once you have updated and saved the `mcp.json` file, Cursor will connect with the Indobase MCP server and load all available tools. You may need to restart Cursor if it is unable to start the MCP server.
 
 ### Skip this step, directly add the server to Cursor
 
-Once you have understood how the Appwrite MCP server is configured in Cursor, you can skip this step by directly adding the MCP server using the following link.
+Once you have understood how the Indobase MCP server is configured in Cursor, you can skip this step by directly adding the MCP server using the following link.
 
 {% only_light %}
 {% cards %}
@@ -96,11 +96,11 @@ Once you have understood how the Appwrite MCP server is configured in Cursor, yo
 {% /cards %}
 {% /only_dark %}
 
-This will automatically configure the MCP server, and you will only need to update your Appwrite API key, project ID, and endpoint.
+This will automatically configure the MCP server, and you will only need to update your Indobase API key, project ID, and endpoint.
 
 ## Step 3: Test the integration
 
-Finally, you can test the integration by asking Cursor Agent to create a new user in your Appwrite project.
+Finally, you can test the integration by asking Cursor Agent to create a new user in your Indobase project.
 
 ![Cursor Agent](/images/docs/mcp/cursor/cursor-create-user.png)
 
@@ -108,6 +108,6 @@ Finally, you can test the integration by asking Cursor Agent to create a new use
 
 If you would like to learn more about MCP with Cursor, we have some resources that you should visit:
 
-- [Appwrite MCP documentation](/docs/tooling/mcp)
+- [Indobase MCP documentation](/docs/tooling/mcp)
 - [What exactly is MCP, and why is it trending?](/blog/post/what-is-mcp)
 - [Download Cursor](https://www.cursor.com/)

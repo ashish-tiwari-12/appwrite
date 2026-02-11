@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Endpoints
-description: Understand the differences between Appwrite's endpoints, including geo-balanced edges, region-specific services, and custom domains for compute processes.
+description: Understand the differences between Indobase's endpoints, including geo-balanced edges, region-specific services, and custom domains for compute processes.
 ---
 
-Appwrite offers multiple endpoints to access its services, each designed to optimize specific aspects of performance, routing, and compute. Understanding these endpoints helps you determine the most efficient way to interact with your Appwrite project.
+Indobase offers multiple endpoints to access its services, each designed to optimize specific aspects of performance, routing, and compute. Understanding these endpoints helps you determine the most efficient way to interact with your Indobase project.
 
 # Edge {% #edge %}
 
@@ -25,7 +25,7 @@ Use this endpoint when optimizing for low-latency and global availability is cri
 
 # Region {% #region %}
 
-The **`<REGION>.cloud.appwrite.io`** domain directs traffic specifically to the region hosting your Appwrite project's services. This endpoint ensures that requests are processed close to your core data and infrastructure, making it ideal for:
+The **`<REGION>.cloud.appwrite.io`** domain directs traffic specifically to the region hosting your Indobase project's services. This endpoint ensures that requests are processed close to your core data and infrastructure, making it ideal for:
 
 - **Data-intensive operations**: Frequent access to databases, storage, authentication, and other region-hosted services.
 - **Regulatory compliance**: Ensuring data residency requirements are met by targeting specific regions.
@@ -34,7 +34,7 @@ Example:
 - `https://fra.cloud.appwrite.io`
 - `https://nyc.cloud.appwrite.io`
 
-Use this endpoint when direct access to region-specific infrastructure is required, this is the endpoint you will use to access your Appwrite API or if you want to execute functions directly from your Appwrite SDK.
+Use this endpoint when direct access to region-specific infrastructure is required, this is the endpoint you will use to access your Indobase API or if you want to execute functions directly from your Indobase SDK.
 
 # Compute {% #compute %}
 

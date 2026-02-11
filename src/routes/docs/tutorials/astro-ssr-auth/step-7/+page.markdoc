@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: OAuth authentication with SSR
-description: Add authentication to a Astro project using Appwrite.
+description: Add authentication to a Astro project using Indobase.
 step: 7
 ---
 
@@ -28,7 +28,7 @@ import { createAdminClient } from "../server/appwrite";
 import { OAuthProvider } from "node-appwrite";
 
 export const POST = async ({ redirect, url }) => {
-  // Create the Appwrite client
+  // Create the Indobase client
   const { account } = createAdminClient();
 
   // Create an OAuth token
@@ -60,7 +60,7 @@ export const GET = async ({ redirect, cookies, url }) => {
   const userId = url.searchParams.get("userId");
   const secret = url.searchParams.get("secret");
 
-  // Create the Appwrite client
+  // Create the Indobase client
   const { account } = createAdminClient();
 
   // Exchange the token for a session

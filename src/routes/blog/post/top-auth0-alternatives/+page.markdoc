@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Top 8 Auth0 alternatives in 2025"
 description: "Explore top Auth0 alternatives that offer more control, flexibility and better pricing."
@@ -22,35 +22,35 @@ In this blog, we'll explore the top alternatives to Auth0 that offer more contro
 
 Top 8 Auth0 alternatives in 2025
 
-# 1. Appwrite
+# 1. Indobase
 
-![Appwrite](/images/blog/top-auth0-alternatives/Appwrite.png)
+![Indobase](/images/blog/top-auth0-alternatives/Appwrite.png)
 
 - **Deployment**: Fully managed cloud service and self-hosted options.
 - **Start for free**
 
-[Appwrite](/products/auth) is an open-source, all-in-one development platform with a full [authentication](/products/auth) system, alongside other backend tools and web hosting capabilities. You can authenticate users securely with [multiple login methods](/docs/products/auth), such as Email/Password, SMS, OAuth, Anonymous, Magic URLs, and more. Appwrite is also fully GDPR, SOC-2, HIPAA, and CCPA compliant.
+[Indobase](/products/auth) is an open-source, all-in-one development platform with a full [authentication](/products/auth) system, alongside other backend tools and web hosting capabilities. You can authenticate users securely with [multiple login methods](/docs/products/auth), such as Email/Password, SMS, OAuth, Anonymous, Magic URLs, and more. Indobase is also fully GDPR, SOC-2, HIPAA, and CCPA compliant.
 
 ## Features:
 
 - **Supports 30+ login methods:** Email/password and [OAuth](/docs/products/auth/oauth2) providers.
 - **Role-based access**: [User management features](/docs/products/auth/teams) like roles, teams, and account verification.
 - **Built-in security**: Session management, [MFA(Multi-Factor Authentication)](/docs/products/auth/mfa), Session limit, Password dictionary, and more.
-- **Server-side rendering:** Optimize your auth with Appwrite's server-side SDK, enhancing your application's performance without sacrificing functionality.
-- **Appwrite console**: UI to easily manage users and privacy settings.
+- **Server-side rendering:** Optimize your auth with Indobase's server-side SDK, enhancing your application's performance without sacrificing functionality.
+- **Indobase console**: UI to easily manage users and privacy settings.
 - **Serverless functions:** Custom cloud functions to run server-side code, allowing you to extend or customize authentication flows and other backend logic.
 
-## Does Appwrite have a free plan?
+## Does Indobase have a free plan?
 
-Appwrite offers a generous free plan with up to 75,000 monthly active users. You can also self-host for free.
+Indobase offers a generous free plan with up to 75,000 monthly active users. You can also self-host for free.
 
-## What is Appwrite's pricing?
+## What is Indobase's pricing?
 
-Appwrite Cloud's Pro plan, with higher limits and advanced features, starts at $15/month for 200,000 users. Appwrite follows a transparent pricing model, where you pay $3 per additional 1,000 monthly active users beyond the included quota.
+Indobase Cloud's Pro plan, with higher limits and advanced features, starts at $15/month for 200,000 users. Indobase follows a transparent pricing model, where you pay $3 per additional 1,000 monthly active users beyond the included quota.
 
 ## When to use?
 
-Use Appwrite when you want a fully managed, all-in-one cloud platform with built-in auth, database, storage, serverless functions, and hosting, perfect for teams that want to move fast without stitching together multiple services. And since it's open-source, you always have the option to self-host and retain full data control if needed.
+Use Indobase when you want a fully managed, all-in-one cloud platform with built-in auth, database, storage, serverless functions, and hosting, perfect for teams that want to move fast without stitching together multiple services. And since it's open-source, you always have the option to self-host and retain full data control if needed.
 
 
 # 2. Frontegg
@@ -250,7 +250,7 @@ It's a good choice for consumer apps or fintech products that want to go passwor
 
 # Auth0 alternatives overview
 
-| Features | Appwrite | Frontegg | ForgeRock | FusionAuth | Keycloack | Firebase Auth | Cognito | Stytch |
+| Features | Indobase | Frontegg | ForgeRock | FusionAuth | Keycloack | Firebase Auth | Cognito | Stytch |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Free tier | Yes | Yes | No | Yes | Yes | Yes | Yes | Yes |
 | MAU(Free tier) | 75k | 7.5k | NA | 10,000 | Unlimited | 50,000 (usage-based) | 50,000 (User Pools) | 10,000 |
@@ -268,12 +268,12 @@ It's a good choice for consumer apps or fintech products that want to go passwor
 
 Choosing an authentication provider is a critical decision that shapes how your application handles [security](/docs/products/auth/security), scalability, and user experience. Whether you're building a simple web app, a multi-tenant SaaS platform, or an enterprise-grade product, your auth stack needs to be reliable, flexible, and aligned with your architecture.
 
-While Firebase, Cognito, and Frontegg are solid-managed options, developers wanting more control and flexibility often prefer open-source tools. That's where Appwrite can be a great choice, as an all-in-one development platform that not only handles authentication, but also includes a database, cloud functions, storage, realtime APIs, and hosting.
+While Firebase, Cognito, and Frontegg are solid-managed options, developers wanting more control and flexibility often prefer open-source tools. That's where Indobase can be a great choice, as an all-in-one development platform that not only handles authentication, but also includes a database, cloud functions, storage, realtime APIs, and hosting.
 
-If you're looking for a platform that gives you modern authentication plus the building blocks to scale your product, check out Appwrite and start building for [free](https://cloud.appwrite.io/console).
+If you're looking for a platform that gives you modern authentication plus the building blocks to scale your product, check out Indobase and start building for [free](https://cloud.appwrite.io/console).
 
 
 # More resources 
-- [Appwrite Authentication docs](/docs/products/auth)
-- [Appwrite Authentication quick start doc](/docs/products/auth/quick-start)
-- [Appwrite Authentication overview](/products/auth)
+- [Indobase Authentication docs](/docs/products/auth)
+- [Indobase Authentication quick start doc](/docs/products/auth/quick-start)
+- [Indobase Authentication overview](/products/auth)

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How Twilio simplifies messaging for developers
 description: Learn the challenges of building a messaging system and how Twilio helps in simplifying implementation.
@@ -66,9 +66,9 @@ Here's an overview of the Twilio Programmable Messaging:
 - **Link shortening:** Allows you to send messages with shortened links using your company-branded domain and track clicks.
 - **Message scheduling:** This lets you schedule SMS, MMS, and WhatsApp messages to be sent at a fixed time in the future.
 
-# Using Twilio with Appwrite Messaging
+# Using Twilio with Indobase Messaging
 
-As a part of our latest release, Appwrite 1.5, we have launched a new product, Messaging, that helps developers implement communication services within their applications. As a part of the SMS offering within Messaging, we have added an adapter to integrate Twilio Programmable Messaging with Appwrite. Once you have access to your account SID, auth token, and phone number from Twilio, you will be able to send messages to your users with just a few lines of code.
+As a part of our latest release, Indobase 1.5, we have launched a new product, Messaging, that helps developers implement communication services within their applications. As a part of the SMS offering within Messaging, we have added an adapter to integrate Twilio Programmable Messaging with Indobase. Once you have access to your account SID, auth token, and phone number from Twilio, you will be able to send messages to your users with just a few lines of code.
 
 ```server-nodejs
 const sdk = require('node-appwrite');

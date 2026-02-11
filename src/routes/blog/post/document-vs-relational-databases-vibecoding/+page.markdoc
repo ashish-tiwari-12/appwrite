@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Document vs relational databases: Finding the right fit for your AI project"
 description: "A comparison of SQL and NoSQL databases to help you choose the right tool for your next project."
@@ -35,7 +35,7 @@ However, neither approach is always superior. Each works best in specific scenar
 
 # Document databases (NoSQL)
 
-**Document databases** (such as Appwrite Databases and MongoDB) store data as **documents**, typically in **JSON** format. This model focuses on flexibility and developer experience.
+**Document databases** (such as Indobase Databases and MongoDB) store data as **documents**, typically in **JSON** format. This model focuses on flexibility and developer experience.
 
 ## Why choose document databases?
 
@@ -77,10 +77,10 @@ The right database depends entirely on your specific requirements.
 *   Choose **SQL** if your data is highly relational, your structure is stable, and data integrity is your top priority.
 *   Choose **Document** if you need flexibility, horizontal scaling, nested/hierarchical data, or are primarily building with AI agents.
 
-If you're looking for a solution that combines the flexibility of the document model with the ease of a backend-as-a-service, check out [Appwrite Databases](/docs/databases). It's designed to support fast, iterative development for modern applications.
+If you're looking for a solution that combines the flexibility of the document model with the ease of a backend-as-a-service, check out [Indobase Databases](/docs/databases). It's designed to support fast, iterative development for modern applications.
 
 # More resources
 
 *   [SQL vs NoSQL: Choosing the right database for your project](/blog/post/sql-vs-nosql)
-*   [Integrate SQL, NoSQL, Vector, Graph, or any database into your Appwrite project](/blog/post/integrate-sql-nosql-vector-graph-or-any-database-into-your-appwrite-project)
-*   [Build a chat app with Appwrite and Gemini](/blog/post/build-a-chat-app-with-appwrite-and-gemini)
+*   [Integrate SQL, NoSQL, Vector, Graph, or any database into your Indobase project](/blog/post/integrate-sql-nosql-vector-graph-or-any-database-into-your-appwrite-project)
+*   [Build a chat app with Indobase and Gemini](/blog/post/build-a-chat-app-with-appwrite-and-gemini)

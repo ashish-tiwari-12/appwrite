@@ -1,13 +1,13 @@
----
+﻿---
 layout: article
 title: Send email messages
-description: Send email messages to your users using Appwrite Messaging.
+description: Send email messages to your users using Indobase Messaging.
 ---
-You can send custom email messages to your app's users using Appwrite Messaging and a connected SMTP service.
+You can send custom email messages to your app's users using Indobase Messaging and a connected SMTP service.
 This guide takes you through the implementation path of adding email messaging to your app.
 
 # Add a provider {% #add-a-provider %}
-Appwrite supports [Mailgun](/docs/products/messaging/mailgun/) and [Sendgrid](/docs/products/messaging/sendgrid/) as
+Indobase supports [Mailgun](/docs/products/messaging/mailgun/) and [Sendgrid](/docs/products/messaging/sendgrid/) as
 SMTP providers. You must configure one of them as a provider.
 {% only_dark %}
 ![Add a SMTP provider](/images/docs/messaging/providers/mailgun/dark/add-mailgun.png)
@@ -20,7 +20,7 @@ and follow the wizard. You can find more details about configuring in the provid
 [Mailgun](/docs/products/messaging/mailgun#configure-provider) and [Sendgrid](/docs/products/messaging/sendgrid#configure-provider).
 
 # Add targets {% #add-targets %}
-In Appwrite Messaging, each user has **targets** like their email, phone number, and devices with your app installed.
+In Indobase Messaging, each user has **targets** like their email, phone number, and devices with your app installed.
 You can deliver messages to users through their **targets**.
 
 {% only_dark %}
@@ -82,9 +82,9 @@ const target = await users.createTarget(
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Users;
-use Appwrite\Enums\MessagingProviderType;
+use Indobase\Client;
+use Indobase\Services\Users;
+use Indobase\Enums\MessagingProviderType;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')  // Your API Endpoint
@@ -125,8 +125,8 @@ target = users.create_target(
 ```ruby
 require 'appwrite'
 
-include Appwrite
-include Appwrite::Enums
+include Indobase
+include Indobase::Enums
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')   # Your API Endpoint
@@ -147,10 +147,10 @@ target = users.create_target(
 puts target.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
-using Appwrite.Enums;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
+using Indobase.Enums;
 
 Client client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1")  // Your API Endpoint
@@ -244,7 +244,7 @@ users.createTarget(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 import AppwriteEnums
 
 let client = Client()
@@ -268,7 +268,7 @@ let target = try await users.createTarget(
 You can use topics to organize targets that should receive the same messages, so you can send emails to groups of targets instead of one at time.
 This step is optional if you plan to only send emails to individual targets.
 
-To create a topic in the Appwrite Console, navigate to **Messaging** > **Topics** > {% icon icon="plus" size="m" /%} **Create topic**.
+To create a topic in the Indobase Console, navigate to **Messaging** > **Topics** > {% icon icon="plus" size="m" /%} **Create topic**.
 {% only_dark %}
 ![Add a target](/images/docs/messaging/topics/dark/create-topics.png)
 {% /only_dark %}
@@ -276,7 +276,7 @@ To create a topic in the Appwrite Console, navigate to **Messaging** > **Topics*
 ![Add a target](/images/docs/messaging/topics/create-topics.png)
 {% /only_light %}
 
-You can also create topics programmatically using an [Appwrite Server SDK](/docs/references/cloud/server-nodejs/messaging#createTopic).
+You can also create topics programmatically using an [Indobase Server SDK](/docs/references/cloud/server-nodejs/messaging#createTopic).
 {% multicode %}
 ```server-nodejs
 const sdk = require('node-appwrite');
@@ -319,8 +319,8 @@ const topic = await messaging.createTopic(
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Messaging;
+use Indobase\Client;
+use Indobase\Services\Messaging;
 
 $client = new Client();
 
@@ -359,7 +359,7 @@ result = messaging.create_topic(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -376,9 +376,9 @@ response = messaging.create_topic(
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -470,7 +470,7 @@ messaging.createTopic(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -551,8 +551,8 @@ const message = await messaging.createEmail(
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Messaging;
+use Indobase\Client;
+use Indobase\Services\Messaging;
 
 $client = new Client();
 
@@ -609,7 +609,7 @@ result = messaging.create_email(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -635,9 +635,9 @@ response = messaging.create_email(
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -765,7 +765,7 @@ messaging.createEmail(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -853,8 +853,8 @@ const message - await messaging.createEmail(
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Messaging;
+use Indobase\Client;
+use Indobase\Services\Messaging;
 
 $client = new Client();
 
@@ -911,7 +911,7 @@ result = messaging.create_email(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -937,9 +937,9 @@ response = messaging.create_email(
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -1067,7 +1067,7 @@ messaging.createEmail(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint

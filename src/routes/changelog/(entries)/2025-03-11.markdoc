@@ -1,17 +1,17 @@
----
+﻿---
 layout: changelog
-title: "Introducing Appwrite MCP: A new way to manage your Appwrite project with AI"
+title: "Introducing Indobase MCP: A new way to manage your Indobase project with AI"
 date: 2025-03-11
 ---
 
-Appwrite now supports AI-driven project interactions with the introduction of **Appwrite MCP**. This server enables AI assistants to query databases and trigger actions within Appwrite projects.
+Indobase now supports AI-driven project interactions with the introduction of **Indobase MCP**. This server enables AI assistants to query databases and trigger actions within Indobase projects.
 
-With Appwrite MCP, AI assistants can:
+With Indobase MCP, AI assistants can:
 - Retrieve and analyze database records.
 - Access the User API
-- Perform actions directly on your Appwrite project.
+- Perform actions directly on your Indobase project.
 
-This feature opens up new possibilities for automation and AI workflows, making it easier to interact with your Appwrite projects.
+This feature opens up new possibilities for automation and AI workflows, making it easier to interact with your Indobase projects.
 
 {% arrow_link href="/docs/tooling/mcp?doFollow=true" %}  
 Learn more in the documentation

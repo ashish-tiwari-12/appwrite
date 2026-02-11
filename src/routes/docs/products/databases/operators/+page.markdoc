@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Operators
 description: Update multiple fields atomically without fetching the full row. Perform numeric, array, string, and date updates in a single, consistent workflow.
@@ -92,7 +92,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -172,9 +172,9 @@ func main() {
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\TablesDB;
-use Appwrite\Operator;
+use Indobase\Client;
+use Indobase\Services\TablesDB;
+use Indobase\Operator;
 
 $client = (new Client())
   ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -211,8 +211,8 @@ result = tablesDB.update_row(
 )
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
   .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -234,7 +234,7 @@ await tablesDB.UpdateRow(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
@@ -1130,7 +1130,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -1210,9 +1210,9 @@ func main() {
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\TablesDB;
-use Appwrite\Operator;
+use Indobase\Client;
+use Indobase\Services\TablesDB;
+use Indobase\Operator;
 
 $client = (new Client())
   ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -1249,8 +1249,8 @@ result = tablesDB.update_row(
 )
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
   .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -1272,7 +1272,7 @@ await tablesDB.UpdateRow(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
@@ -1388,7 +1388,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -1468,9 +1468,9 @@ func main() {
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\TablesDB;
-use Appwrite\Operator;
+use Indobase\Client;
+use Indobase\Services\TablesDB;
+use Indobase\Operator;
 
 $client = (new Client())
   ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -1507,8 +1507,8 @@ result = tablesDB.update_row(
 )
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
   .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -1530,7 +1530,7 @@ await tablesDB.UpdateRow(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
@@ -1646,7 +1646,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -1726,9 +1726,9 @@ func main() {
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\TablesDB;
-use Appwrite\Operator;
+use Indobase\Client;
+use Indobase\Services\TablesDB;
+use Indobase\Operator;
 
 $client = (new Client())
   ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -1765,8 +1765,8 @@ result = tablesDB.update_row(
 )
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
   .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -1788,7 +1788,7 @@ await tablesDB.UpdateRow(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
@@ -1931,7 +1931,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -2047,9 +2047,9 @@ func main() {
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\TablesDB;
-use Appwrite\Operator;
+use Indobase\Client;
+use Indobase\Services\TablesDB;
+use Indobase\Operator;
 
 $client = (new Client())
   ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -2108,8 +2108,8 @@ result = tablesDB.update_row(
 tablesDB.update_transaction(tx['$id'], 'commit')
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
   .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -2140,7 +2140,7 @@ await tablesDB.UpdateTransaction(tx.Id, "commit");
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 
@@ -2361,7 +2361,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -2519,9 +2519,9 @@ func main() {
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\TablesDB;
-use Appwrite\Operator;
+use Indobase\Client;
+use Indobase\Services\TablesDB;
+use Indobase\Operator;
 
 $client = (new Client())
   ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -2608,8 +2608,8 @@ tablesDB.create_operations(
 tablesDB.update_transaction(tx['$id'], 'commit')
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
   .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -2660,7 +2660,7 @@ await tablesDB.UpdateTransaction(tx.Id, "commit");
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new()
 

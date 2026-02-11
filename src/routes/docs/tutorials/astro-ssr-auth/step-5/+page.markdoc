@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create sign up page
-description: Add authentication to a Astro project using Appwrite.
+description: Add authentication to a Astro project using Indobase.
 step: 5
 ---
 
@@ -24,7 +24,7 @@ if (user) {
 ```
 
 This is an HTML form with an email and password input.
-When the form is submitted, we want to send the email and password to Appwrite to authenticate the user.
+When the form is submitted, we want to send the email and password to Indobase to authenticate the user.
 To use Astro form actions, add an `if (Astro.request.method === "POST")` statement to the server-side javascript.
 
 In the same file, implement the following.

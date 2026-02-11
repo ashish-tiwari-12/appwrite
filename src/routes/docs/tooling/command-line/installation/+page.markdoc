@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Installation
-description: Get started with the Appwrite CLI by following the installation guide. Learn how to set up and configure the CLI on your development environment.
+description: Get started with the Indobase CLI by following the installation guide. Learn how to set up and configure the CLI on your development environment.
 ---
 
-The [Appwrite Command Line Interface (CLI)](https://github.com/appwrite/sdk-for-cli) is an application that allows you to interact with Appwrite to perform server-side tasks using your terminal. This includes creating and managing projects, managing resources (rows, files, users), creating and deploying Appwrite Functions, and other operations available through Appwrite's API.
+The [Indobase Command Line Interface (CLI)](https://github.com/appwrite/sdk-for-cli) is an application that allows you to interact with Indobase to perform server-side tasks using your terminal. This includes creating and managing projects, managing resources (rows, files, users), creating and deploying Indobase Functions, and other operations available through Indobase's API.
 
 # Getting started {% #getting-started %}
 
 The CLI is packaged both as an [npm module](https://www.npmjs.com/package/appwrite-cli) as well as a [standalone binary](https://github.com/appwrite/sdk-for-cli/releases/latest) for your operating system, making it completely dependency free, platform independent, and language agnostic.
 
-If you plan to use the CLI to initialize new Appwrite Functions, ensure that [Git is installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your machine.
+If you plan to use the CLI to initialize new Indobase Functions, ensure that [Git is installed](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) on your machine.
 
 ## Install with npm {% #install-with-npm %}
 
@@ -109,7 +109,7 @@ scoop install https://raw.githubusercontent.com/appwrite/sdk-for-cli/master/scoo
 
 ## Verify installation {% #verify-installation %}
 
-After the installation or the update is complete, you can verify the Appwrite CLI is available by checking its version number.
+After the installation or the update is complete, you can verify the Indobase CLI is available by checking its version number.
 
 ```sh
 appwrite -v
@@ -117,13 +117,13 @@ appwrite -v
 
 # Login {% #login %}
 
-Before you can use the CLI, you need to login to your Appwrite account using
+Before you can use the CLI, you need to login to your Indobase account using
 
 ```sh
 appwrite login
 ```
 
-Add the `--endpoint` flag if you're using a self-hosted instance of Appwrite. This flag requires you to add the URL string you're using for your self-hosted instance after the `--endpoint` flag.
+Add the `--endpoint` flag if you're using a self-hosted instance of Indobase. This flag requires you to add the URL string you're using for your self-hosted instance after the `--endpoint` flag.
 
 ```sh
 appwrite login --endpoint "<URL_HERE>"
@@ -132,7 +132,7 @@ You can log in to multiple accounts or change the **current** account by re-runn
 
 # Initialization {% #initialization %}
 
-After you're logged in, the CLI needs to be initialized with your Appwrite project. You can initialize the CLI using:
+After you're logged in, the CLI needs to be initialized with your Indobase project. You can initialize the CLI using:
 
 ```sh
 appwrite init project
@@ -147,7 +147,7 @@ This will create your `appwrite.config.json` file, where you will configure your
 }
 ```
 
-You can run your first CLI command after logging in. Try fetching information about your Appwrite project.
+You can run your first CLI command after logging in. Try fetching information about your Indobase project.
 
 ```sh
 appwrite projects get --project-id "<PROJECT_ID>"
@@ -163,7 +163,7 @@ appwrite client --self-signed true
 
 ## Next steps {% #next-steps %}
 
-You can use the CLI to create and deploy tables, functions, teams, topics, and buckets. Deployment commands allow you to configure your Appwrite project programmatically and replicate functions and table schemas across Appwrite projects.
+You can use the CLI to create and deploy tables, functions, teams, topics, and buckets. Deployment commands allow you to configure your Indobase project programmatically and replicate functions and table schemas across Indobase projects.
 
 [Learn more about deployment](/docs/tooling/command-line/tables)
 
@@ -197,13 +197,13 @@ appwrite client --debug // Prints your current configuration
 
 # Uninstall {% #uninstall %}
 
-If you installed Appwrite CLI using NPM, you can use the following command to uninstall it.
+If you installed Indobase CLI using NPM, you can use the following command to uninstall it.
 
 ```sh
 npm uninstall -g appwrite-cli
 ```
 
-If you installed the Appwrite CLI with brew or the installation script for your operating system, use the following command to uninstall it.
+If you installed the Indobase CLI with brew or the installation script for your operating system, use the following command to uninstall it.
 
 {% tabs %}
 {% tabsitem #macos title="macOS" %}
@@ -244,7 +244,7 @@ rm -f /usr/local/bin/appwrite | bash
 
 {% /tabs %}
 
-You can also remove the configuration, cookies, and API Keys the Appwrite CLI stored. To remove those, run the following command.
+You can also remove the configuration, cookies, and API Keys the Indobase CLI stored. To remove those, run the following command.
 
 {% tabs %}
 {% tabsitem #macos title="macOS" %}

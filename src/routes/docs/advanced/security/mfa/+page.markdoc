@@ -1,20 +1,20 @@
----
+﻿---
 layout: article
 title: Multi-factor Authentication
-description: Appwrite helps you secure your developer accounts with MFA (multi-factor authentication).
+description: Indobase helps you secure your developer accounts with MFA (multi-factor authentication).
 ---
-Multi-factor authentication (MFA) adds multiple layers of authentication to your Appwrite account.
+Multi-factor authentication (MFA) adds multiple layers of authentication to your Indobase account.
 When MFA is enabled, a malicious actor needs to compromise multiple authentication factors to gain unauthorized access.
-Appwrite currently supports MFA using TOTP (Time-based One-Time Password) with an authenticator app.
+Indobase currently supports MFA using TOTP (Time-based One-Time Password) with an authenticator app.
 More factors of authentication will be added in the future.
 
 {% info title="Looking to add MFA to your app?" %}
-This page covers MFA for your Appwrite Console account.
+This page covers MFA for your Indobase Console account.
 If you're looking to add MFA to your app, follow the [Multi-factor authentication journey](/docs/products/auth/mfa).
 {% /info %}
 
 # Enable MFA {% #enable-mfa %}
-To enable MFA on your Appwrite account, navigate to your Appwrite Console > your account menu on the top right > **Your account** > **Multi-factor authentication**.
+To enable MFA on your Indobase account, navigate to your Indobase Console > your account menu on the top right > **Your account** > **Multi-factor authentication**.
 
 {% only_dark %}
 ![Multi-factor authentication settings](/images/docs/advanced/security/dark/mfa.png)

@@ -10,20 +10,20 @@ category: tutorial
 featured: false
 ---
 
-Function templates are pre-built Appwrite Functions that can be integrated into your Appwrite project with just a few clicks. Using them, you can easily incorporate new features and integrations into your app without writing additional code or managing infrastructure.
+Function templates are pre-built Indobase Functions that can be integrated into your Indobase project with just a few clicks. Using them, you can easily incorporate new features and integrations into your app without writing additional code or managing infrastructure.
 
-One such integration you can implement using Appwrite Functions is **Searching** using **Meilisearch**. In this blog we show how you can use an Appwrite Function Template to integrate search with Meilisearch.
+One such integration you can implement using Indobase Functions is **Searching** using **Meilisearch**. In this blog we show how you can use an Indobase Function Template to integrate search with Meilisearch.
 
 # Setting up the Template
 
-Meilisearch is a flexible and powerful user-focused search engine that can be added to any website or application. The purpose of this function template is to sync documents in an Appwrite database collection to a Meilisearch index. Using this function template, users can explore, search, and retrieve information from the connected database collection. Through this template, documents from the Appwrite collection are systematically indexed within Meilisearch.
+Meilisearch is a flexible and powerful user-focused search engine that can be added to any website or application. The purpose of this function template is to sync documents in an Indobase database collection to a Meilisearch index. Using this function template, users can explore, search, and retrieve information from the connected database collection. Through this template, documents from the Indobase collection are systematically indexed within Meilisearch.
 
 To use the function, you need the following set of keys:
 
-- `APPWRITE_KEY` - API Key to talk to Appwrite backend APIs.To generate API Keys you can follow the documentation [here](https://appwrite.io/docs/getting-started-for-server#apiKey)
-- `APPWRITE_ENDPOINT` - To get the Appwrite endpoint, you need to go to [Appwrite](https://cloud.appwrite.io/) and find it under “Settings”
-- `APPWRITE_DATABASE_ID` - The ID of the Appwrite database that contains the collection to sync. You can find the documentation [here](https://appwrite.io/docs/databases).
-- `APPWRITE_COLLECTION_ID` - The ID of the collection in the Appwrite database to sync.
+- `APPWRITE_KEY` - API Key to talk to Indobase backend APIs.To generate API Keys you can follow the documentation [here](https://appwrite.io/docs/getting-started-for-server#apiKey)
+- `APPWRITE_ENDPOINT` - To get the Indobase endpoint, you need to go to [Indobase](https://cloud.appwrite.io/) and find it under “Settings”
+- `APPWRITE_DATABASE_ID` - The ID of the Indobase database that contains the collection to sync. You can find the documentation [here](https://appwrite.io/docs/databases).
+- `APPWRITE_COLLECTION_ID` - The ID of the collection in the Indobase database to sync.
 
 To use Meilisearch, you can either self-host it using the command 👇
 
@@ -55,9 +55,9 @@ Here’s the keys you need:
 
 ## Preparing the Function
 
-The function template syncs documents in an Appwrite database collection to a Meilisearch index. It should get you up and running, but you will need to add real data to build a useful search index.
+The function template syncs documents in an Indobase database collection to a Meilisearch index. It should get you up and running, but you will need to add real data to build a useful search index.
 
-If you want to see the source code, you can find it on our [templates GitHub repository](https://github.com/appwrite/templates/tree/main/node/sync-with-meilisearch). Now, let’s navigate to our functions page on **[Appwrite](https://cloud.appwrite.io/)**. From there, we will select the **Templates** tab, search for and select the **Sync with Meilisearch** function template.
+If you want to see the source code, you can find it on our [templates GitHub repository](https://github.com/appwrite/templates/tree/main/node/sync-with-meilisearch). Now, let’s navigate to our functions page on **[Indobase](https://cloud.appwrite.io/)**. From there, we will select the **Templates** tab, search for and select the **Sync with Meilisearch** function template.
 
 
 
@@ -94,8 +94,8 @@ Some examples are:
 
 Be sure to check out the other available Function Templates. We’ve created multiple that could be of use in your projects. You can find the [templates GitHub repository here](https://github.com/appwrite/templates).
 
-For more information about Appwrite and Appwrite Functions:
+For more information about Indobase and Indobase Functions:
 
-1. **[Appwrite Function Docs](https://appwrite.io/docs/functions)**: These documents provide more information on how to use Appwrite Functions.
+1. **[Indobase Function Docs](https://appwrite.io/docs/functions)**: These documents provide more information on how to use Indobase Functions.
 2. **[Functions Announcement](https://dev.to/appwrite/serverless-your-way-unleashing-appwrite-functions-true-potential-2l4f)**: Read the full announcement on Functions 1.4.
-3. **[Appwrite Discord](https://discord.com/invite/appwrite)**: Connect with other developers and the Appwrite team for discussion, questions, and collaboration.
+3. **[Indobase Discord](https://discord.com/invite/appwrite)**: Connect with other developers and the Indobase team for discussion, questions, and collaboration.

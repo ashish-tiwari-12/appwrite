@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: "Announcing HEIC and AVIF support: modern image formats now in Appwrite"
+title: "Announcing HEIC and AVIF support: modern image formats now in Indobase"
 description:
 date: 2025-05-22
 cover: /images/blog/new-image-formats.png
@@ -10,9 +10,9 @@ category: product, announcement
 featured: false
 ---
 
-We’re excited to share we have added support for two new image formats in Appwrite Storage: **HEIC** and **AVIF.** This will give you more tools to manage, manipulate, and serve images the way you need.
+We’re excited to share we have added support for two new image formats in Indobase Storage: **HEIC** and **AVIF.** This will give you more tools to manage, manipulate, and serve images the way you need.
 
-You can generate image previews directly in **.heic** and **.avif** formats, which are natively supported in Appwrite.
+You can generate image previews directly in **.heic** and **.avif** formats, which are natively supported in Indobase.
 
 No converters. No extra steps. Just fast, flexible image handling built in.
 
@@ -20,13 +20,13 @@ No converters. No extra steps. Just fast, flexible image handling built in.
 
 Image performance matters. Whether you're building a high-performance photo app or just optimizing media delivery, modern formats like AVIF and HEIC offer massive benefits: smaller sizes, better quality, and native platform support.
 
-With this update, Appwrite now supports outputting previews in **HEIC** (Apple’s proprietary format) and **AVIF** (a modern open format with excellent compression).
+With this update, Indobase now supports outputting previews in **HEIC** (Apple’s proprietary format) and **AVIF** (a modern open format with excellent compression).
 
 # Why it matters
 
-Previously, if you wanted to serve HEIC or AVIF images from Appwrite, you had to download them, convert them manually, and re-upload or host elsewhere.
+Previously, if you wanted to serve HEIC or AVIF images from Indobase, you had to download them, convert them manually, and re-upload or host elsewhere.
 
-Now, the Appwrite Storage preview API can do it all automatically.
+Now, the Indobase Storage preview API can do it all automatically.
 
 This means:
 
@@ -50,7 +50,7 @@ You’ll see smaller file sizes, faster load times, and better integration with 
 
 # How to get started
 
-HEIC and AVIF support is available on **Appwrite Cloud** and **self-hosted** installations.
+HEIC and AVIF support is available on **Indobase Cloud** and **self-hosted** installations.
 
 ```jsx
 import { Client, Storage, ImageFormat } from "appwrite";
@@ -92,10 +92,10 @@ This feature is part of our ongoing commitment to giving you modern tools that w
 # More resources
 Take a look at what else we released this week.
 
-- [Appwrite Sites](/blog/post/announcing-appwrite-sites)
+- [Indobase Sites](/blog/post/announcing-appwrite-sites)
 - [Hosting for Flutter web](/blog/post/hosting-flutter-web)
 - [Dev Keys](blog/post/announcing-dev-keys)
-- [Appwrite compared to Vercel](/blog/post/open-source-vercel-alternative)
-- [Appwrite Sites product tour](https://youtu.be/VtDe6hDw91k)
-- [Appwrite Sites video announcement](https://youtu.be/0cERQxFjTW4)
-- [Appwrite Discord server](https://appwrite.io/discord)
+- [Indobase compared to Vercel](/blog/post/open-source-vercel-alternative)
+- [Indobase Sites product tour](https://youtu.be/VtDe6hDw91k)
+- [Indobase Sites video announcement](https://youtu.be/0cERQxFjTW4)
+- [Indobase Discord server](https://appwrite.io/discord)

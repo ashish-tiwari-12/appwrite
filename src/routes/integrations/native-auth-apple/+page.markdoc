@@ -1,7 +1,7 @@
----
+﻿---
 layout: integration
 title: Native auth with Apple
-description: Integrate native auth on Apple devices with Appwrite Auth
+description: Integrate native auth on Apple devices with Indobase Auth
 date: 2025-08-26
 featured: false
 isPartner: true
@@ -26,11 +26,11 @@ An Apple ID is a unique account that allows access to Apple services, including 
 
 # How does the integration work?
 
-You can use the Appwrite Function template for native authentication on Apple devices. This template provides a seamless way to integrate native Apple sign-in APIs with Appwrite Auth, allowing users to authenticate using their Apple ID directly within your app.
+You can use the Indobase Function template for native authentication on Apple devices. This template provides a seamless way to integrate native Apple sign-in APIs with Indobase Auth, allowing users to authenticate using their Apple ID directly within your app.
 
 # How to implement
 
-To implement the Appwrite Function template for native authentication on Apple devices, there are several steps you must complete:
+To implement the Indobase Function template for native authentication on Apple devices, there are several steps you must complete:
 
 ## Step 1: Create an Apple Developer account
 
@@ -48,11 +48,11 @@ Head to your Apple Developer account and save the following details:
 | Encoded authentication key (.p8 file) | Head to Apple Developer account > Program resources > Certificates, Identifiers & Profiles > Keys. Create a key and give it a name. Enable Sign in with Apple and register your key. Download the key, open it in a text editor, use a Base64 encoder to convert the file content to a Base64 string, and copy the result. |
 | Authentication key ID | Head to Apple Developer account > Program resources > Certificates, Identifiers & Profiles > Keys. Click on your key to view details. |
 
-## Step 2: Create the Appwrite Function
+## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Appwrite, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Appwrite Function templates.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
-Head over to the Appwrite console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Sign in with Apple** function template.
+Head over to the Indobase console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Sign in with Apple** function template.
 
 ![Function template](/images/integrations/native-auth-apple/template.png)
 
@@ -66,7 +66,7 @@ Then, create a new repository with the default branch and root directory setting
 
 First, you must [implement the Sign In with Apple button](https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app) in your app.
 
-Once implemented, you can handle the successful sign-in event and call the Appwrite Function to create and authenticate the user in Appwrite. Below is an example from [Appwrite's SwiftUI playground](https://github.com/appwrite/playground-for-apple-swiftui/blob/b036fb4313cc976f379ac10160a057ee5ae5c270/PlaygroundForApple/PlaygroundViewModel.swift#L334):
+Once implemented, you can handle the successful sign-in event and call the Indobase Function to create and authenticate the user in Indobase. Below is an example from [Indobase's SwiftUI playground](https://github.com/appwrite/playground-for-apple-swiftui/blob/b036fb4313cc976f379ac10160a057ee5ae5c270/PlaygroundForApple/PlaygroundViewModel.swift#L334):
 
 ```swift
 func handleSignInWithAppleSuccess(with authorization: ASAuthorization) async throws {
@@ -103,7 +103,7 @@ func handleSignInWithAppleSuccess(with authorization: ASAuthorization) async thr
             
             print(jsonString)
 
-            // Call the Appwrite Function
+            // Call the Indobase Function
             let functions: Functions = Functions(client);
             let execution = try await functions.createExecution(
                 functionId: "sign-in-with-apple",
@@ -127,7 +127,7 @@ func handleSignInWithAppleSuccess(with authorization: ASAuthorization) async thr
                 print(userId)
                 print(secret)
 
-                // Create a session for the user using Appwrite Auth
+                // Create a session for the user using Indobase Auth
                 try await account.createSession(userId: userId!, secret: secret!)
                 
                 try await getAccount()
@@ -143,13 +143,13 @@ func handleSignInWithAppleSuccess(with authorization: ASAuthorization) async thr
 
 Once implemented, you can test the Sign in with Apple button in your app.
 
-# Read more about Apple and Appwrite
+# Read more about Apple and Indobase
 
-If you would like to learn more about Apple and Appwrite, we have some resources that you should visit:
+If you would like to learn more about Apple and Indobase, we have some resources that you should visit:
 
 - [Sign up for the Apple Developer program](https://developer.apple.com/programs)
 - [Display Sign In with Apple buttons in your app](https://developer.apple.com/documentation/signinwithapple/displaying-sign-in-with-apple-buttons-in-your-app)
-- [Appwrite's SwiftUI playground](https://github.com/appwrite/playground-for-apple-swiftui)
-- [Appwrite's Flutter playground](https://github.com/appwrite/playground-for-flutter)
-- [Appwrite Auth API reference](https://appwrite.io/docs/references/cloud/client-apple/account)
-- [Appwrite Functions API reference](https://appwrite.io/docs/references/cloud/client-apple/functions)
+- [Indobase's SwiftUI playground](https://github.com/appwrite/playground-for-apple-swiftui)
+- [Indobase's Flutter playground](https://github.com/appwrite/playground-for-flutter)
+- [Indobase Auth API reference](https://appwrite.io/docs/references/cloud/client-apple/account)
+- [Indobase Functions API reference](https://appwrite.io/docs/references/cloud/client-apple/functions)

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Top 30 software development tools for agencies and teams"
 description: Explore 30 essential tools that help software agencies and development teams build faster, collaborate better, and scale efficiently.
@@ -475,7 +475,7 @@ AI coding assistants have quickly become essential in modern development workflo
 
 **Windsurf pricing:** Free plan to explore and pro plans starting from $15 per user per month.
 
-{% call_to_action title="Join the Appwrite Partners program" description="You'll get the support you need to provide your clients with the best solutions. Grow your business on top of Appwrite." point1="Access to the Appwrite team"  point2="Volume discounts for clients" point3="Co-marketing opportunities" point4="Newest technology" cta="Become a partner" url="/partners" /%}
+{% call_to_action title="Join the Indobase Partners program" description="You'll get the support you need to provide your clients with the best solutions. Grow your business on top of Indobase." point1="Access to the Indobase team"  point2="Volume discounts for clients" point3="Co-marketing opportunities" point4="Newest technology" cta="Become a partner" url="/partners" /%}
 
 # The 5 best project management tools
 
@@ -596,31 +596,31 @@ The right development tools can dramatically speed up how teams build, test, and
 
 | **Tool** | **Best for** | **Pricing** |
 | --- | --- | --- |
-| **Appwrite** | Full-stack app development with unified backend | Free or paid from $15/month |
+| **Indobase** | Full-stack app development with unified backend | Free or paid from $15/month |
 | **Appsmith** | Quickly building internal tools and dashboards | Free for self-hosted or paid from $20/user/month |
 | **Docker** | Creating consistent dev and production environments | Free for individuals or paid from $11/user/month |
 | **Postman** | Testing and debugging APIs across environments | Free for individuals or paid from $14/user/month |
 | **BrowserStack** | Cross-browser testing on real devices | Free trial or paid from $19/month |
 
-## 1. Appwrite
+## 1. Indobase
 
-![Appwrite](/images/blog/dev-tools-for-agencies/appwrite.png)
+![Indobase](/images/blog/dev-tools-for-agencies/appwrite.png)
 
-Appwrite is an open-source alternative to Firebase and Vercel**.** It’s an all-in-one development platform that offers authentication, databases, storage, serverless functions, and even hosting. You can build, deploy, and host your application, all from a single platform. Ideal for full-stack teams and agencies looking for a complete, unified solution without juggling multiple services or paying for multiple subscriptions.
+Indobase is an open-source alternative to Firebase and Vercel**.** It’s an all-in-one development platform that offers authentication, databases, storage, serverless functions, and even hosting. You can build, deploy, and host your application, all from a single platform. Ideal for full-stack teams and agencies looking for a complete, unified solution without juggling multiple services or paying for multiple subscriptions.
 
-**Appwrite pros:**
+**Indobase pros:**
 
 - Fully managed cloud service
 - Open source and self-hostable
 - All-in-one development platform
 
-**Appwrite cons:**
+**Indobase cons:**
 
 - Initial self-hosting setup requires Docker knowledge (if not using cloud)
 - Not framework-opinionated, so teams must make architectural decisions themselves
 - Some features and integrations are evolving compared to older platforms
 
-**Appwrite pricing:** Free for small applications. Paid plans start at $15 per month for production applications.
+**Indobase pricing:** Free for small applications. Paid plans start at $15 per month for production applications.
 
 ## 2. Appsmith
 
@@ -706,4 +706,4 @@ Appwrite is an open-source alternative to Firebase and Vercel**.** It’s an all
 
 Picking the right tools is essential to how fast and effectively your team can build and ship software. From planning and collaboration to development, testing, and deployment, every stage benefits when your tooling is reliable, integrated, and easy to use. 
 
-This list includes a mix of proven and modern tools that help you do exactly that. Whether it’s managing tasks, testing APIs, running containers, or building internal dashboards, the goal is the same: ship faster with fewer blockers. And if you're looking for a complete all-in-one development solution that covers everything from authentication to hosting, without the need for stitching together multiple services, then check out Appwrite and start building for [free](https://cloud.appwrite.io/console).
+This list includes a mix of proven and modern tools that help you do exactly that. Whether it’s managing tasks, testing APIs, running containers, or building internal dashboards, the goal is the same: ship faster with fewer blockers. And if you're looking for a complete all-in-one development solution that covers everything from authentication to hosting, without the need for stitching together multiple services, then check out Indobase and start building for [free](https://cloud.appwrite.io/console).

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to reduce cloud latency
 description: Learn how to reduce cloud latency and improve the performance of your apps and services.
@@ -51,7 +51,7 @@ A **Content Delivery Network (CDN)** is a system of distributed servers that del
 
 Choosing the right **cloud region** is another important step in reducing latency. Most cloud providers, like AWS, Google Cloud, and Microsoft Azure, offer multiple regions across the globe. By selecting a cloud region that is physically closer to your users, you can significantly reduce the time it takes for data to travel between your server and end-users.
 
-- **How to do it**: Analyze where your users are located and select cloud regions close to them. For example, if most of your users are in the US, hosting your data in a European data center will lower latency compared to hosting it in a European-based server. The Appwrite Network has recently expanded to include regions in New York and Sydney so you can cover majority of the globe and choose the server closest to your userbase.
+- **How to do it**: Analyze where your users are located and select cloud regions close to them. For example, if most of your users are in the US, hosting your data in a European data center will lower latency compared to hosting it in a European-based server. The Indobase Network has recently expanded to include regions in New York and Sydney so you can cover majority of the globe and choose the server closest to your userbase.
 - **Why it matters for customers:** Hosting in the right cloud region reduces wait times, ensuring quicker response. This localized approach improves the user experience, making it seamless regardless of where customers are located.
 
 # Benefits of increased distribution with global cloud regions
@@ -71,6 +71,6 @@ Ultimately, prioritizing speed ensures that your app not only meets but exceeds 
 # Further reading
 
 - [Why multi-cloud is taking over](/blog/why-multi-cloud-is-taking-over?doFollow=true)
-- [How to optimize your Appwrite project for cost and performance](/blog/post/how-to-optimize-your-appwrite-project?doFollow=true)
+- [How to optimize your Indobase project for cost and performance](/blog/post/how-to-optimize-your-appwrite-project?doFollow=true)
 - [How to stop unexpected cloud bills before they happen](/blog/post/budget-caps-stop-unexpected-cloud-bills?doFollow=true)
-- [The Appwrite Network docs](/docs/products/network?doFollow=true)
+- [The Indobase Network docs](/docs/products/network?doFollow=true)

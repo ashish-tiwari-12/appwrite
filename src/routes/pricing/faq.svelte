@@ -9,16 +9,16 @@
         answer: string;
     }[] = [
         {
-            question: 'Can I self-host Appwrite for free?',
-            answer: 'Yes! Appwrite Self Hosted will always be Open Source and free for you to use, without any limits. You can find the latest version of Appwrite in our <a rel="noopener noreferrer" class="web-link underline" href="https://github.com/appwrite/appwrite">GitHub repository</a>, and you can follow <a class="web-link underline" href="/docs/advanced/self-hosting/">Self Hosting docs</a> to learn how to install Appwrite on your server.'
+            question: 'Can I self-host Indobase for free?',
+            answer: 'Yes! Indobase Self Hosted will always be Open Source and free for you to use, without any limits. You can find the latest version of Indobase in our <a rel="noopener noreferrer" class="web-link underline" href="https://github.com/appwrite/appwrite">GitHub repository</a>, and you can follow <a class="web-link underline" href="/docs/advanced/self-hosting/">Self Hosting docs</a> to learn how to install Indobase on your server.'
         },
         // {
-        //     question: 'Does Appwrite have a trial period?',
+        //     question: 'Does  have a trial period?',
         //     answer: 'Yes, we offer a 14-day trial period for you to explore Appwrite Pro. After the 14-day trial, you can either continue using Pro plan or downgrade to a Free plan.'
         // },
         {
-            question: 'What payment methods does Appwrite support?',
-            answer: 'Appwrite currently supports <a class="web-link underline" href="/docs/advanced/platform/billing#payment-methods">credit and debit card payments</a>. We are actively working on adding support for more methods. Please <a class="web-link underline" href="/contact-us">contact us</a> in case this is an issue for you.'
+            question: 'What payment methods does Indobase support?',
+            answer: 'Indobase currently supports <a class="web-link underline" href="/docs/advanced/platform/billing#payment-methods">credit and debit card payments</a>. We are actively working on adding support for more methods. Please <a class="web-link underline" href="/contact-us">contact us</a> in case this is an issue for you.'
         },
         {
             question: 'What happens if I reach a resource limit in my Pro plan?',
@@ -26,41 +26,41 @@
         },
         {
             question: 'What happens if I reach a resource limit in my Free plan?',
-            answer: 'Your project will freeze, and Appwrite Console will continue running in read-only mode. You need to upgrade to Pro, remove resources that exceed their limit, or wait for the next billing cycle, which resets usage limits. <a class="web-link underline" href="/docs/advanced/platform/pro#reaching-resource-limits">Learn more in our docs</a>.'
+            answer: 'Your project will freeze, and Indobase Console will continue running in read-only mode. You need to upgrade to Pro, remove resources that exceed their limit, or wait for the next billing cycle, which resets usage limits. <a class="web-link underline" href="/docs/advanced/platform/pro#reaching-resource-limits">Learn more in our docs</a>.'
         },
         {
-            question: 'Why does Appwrite ask for payment verification for up to $150?',
+            question: 'Why does Indobase ask for payment verification for up to $150?',
             answer: 'The Reserve Bank of India (RBI) mandates additional security measures for recurring payments on Indian cards. Appwrite is obligated to ask for verification before billing your card. Appwrite asks for verification for up to $150 in case you use add-ons, but will not charge more than the actual amount used or your budget cap. If you need higher limits, <a class="web-link underline" href="mailto:billing@appwrite.io">contact us</a>.'
         },
         {
             question: 'How can I join the OSS program?',
-            answer: `The OSS program is exclusively for active open-source maintainers using Appwrite Cloud. You can find more information on how to join the program in our <a class="web-link underline" href="/blog/post/announcing-the-appwrite-oss-program">announcement blog</a>.`
+            answer: `The OSS program is exclusively for active open-source maintainers using Indobase Cloud. You can find more information on how to join the program in our <a class="web-link underline" href="/blog/post/announcing-the-appwrite-oss-program">announcement blog</a>.`
         },
         {
             question: 'How can I join the Startups program?',
-            answer: `Are you a founder looking to build with Appwrite? Learn more about our Startups program on our Startups <a class="web-link underline" href="/startups">landing page.</a>.`
+            answer: `Are you a founder looking to build with Indobase? Learn more about our Startups program on our Startups <a class="web-link underline" href="/startups">landing page.</a>.`
         },
         {
             question: 'I have a Free plan account. How do I upgrade to a paid plan?',
-            answer: 'If you want to upgrade to a paid plan, you can do so in your Appwrite dashboard, select your organization, and change your plan in the <b>Billing</b> section.'
+            answer: 'If you want to upgrade to a paid plan, you can do so in your Indobase dashboard, select your organization, and change your plan in the <b>Billing</b> section.'
         },
         {
             question: 'How can I apply credits to my organization?',
-            answer: 'Go to the Appwrite Console and select the organization you wish to add credits to. In your organization overview, you can switch to the billing tab. Here, you need to go to the bottom of the page, where you will find the ability to add credits, as well as see the status of your credits. Credits are only relevant to Pro organizations since Free organizations are 100% free.'
+            answer: 'Go to the Indobase Console and select the organization you wish to add credits to. In your organization overview, you can switch to the billing tab. Here, you need to go to the bottom of the page, where you will find the ability to add credits, as well as see the status of your credits. Credits are only relevant to Pro organizations since Free organizations are 100% free.'
         },
         {
             question: 'Where can I find an overview of my organization usage stats?',
-            answer: "Go to the Appwrite Console and select the organization you wish to view. Here, you will find a usage tab with an overview of all your project's usage stats."
+            answer: 'Go to the Indobase Console and select the organization you wish to view. Here, you will find a usage tab with an overview of all your project\'s usage stats.'
         },
         {
             question:
                 'Where can I find information about my invoices and other billing information?',
-            answer: 'Go to the Appwrite Console and use the drop-down menu in the top right corner to navigate to your organization overview by clicking on your organization. This will bring you to your overview, where you can select the billing tab. Here you will find your overview, payment history and methods, billing address, set a budget cap, and add your credits.'
+            answer: 'Go to the Indobase Console and use the drop-down menu in the top right corner to navigate to your organization overview by clicking on your organization. This will bring you to your overview, where you can select the billing tab. Here you will find your overview, payment history and methods, billing address, set a budget cap, and add your credits.'
         },
         {
             question:
-                'I work with sensitive data and need to sign a BAA. Does Appwrite provide this?',
-            answer: 'Yes, you can sign a BAA with Appwrite. Learn more about our security and compliance in our <a class="web-link underline" href="/docs/advanced/security">documentation</a>.'
+                'I work with sensitive data and need to sign a BAA. Does Indobase provide this?',
+            answer: 'Yes, you can sign a BAA with Indobase. Learn more about our security and compliance in our <a class="web-link underline" href="/docs/advanced/security">documentation</a>.'
         }
     ];
 

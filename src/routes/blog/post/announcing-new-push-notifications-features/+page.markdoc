@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Announcing new features for Push Notifications
 description: 'Appwrite Messaging now supports background updates, critical alerts, and priority controls for push notifications.'
@@ -10,7 +10,7 @@ category: product
 callToAction: true
 ---
 
-We're excited to introduce new additions to Appwrite Messaging that give you greater control over how you send and handle push notifications in your app.
+We're excited to introduce new additions to Indobase Messaging that give you greater control over how you send and handle push notifications in your app.
 The push notification API now affords you finer control over both how and when your notifications are delivered.
 You can run background updates silently, send critical alerts that bypass Do Not Disturb, and manage delivery priorities.
 These changes enable you to handle common scenarios - such as data syncs, urgent alerts, and battery-conscious updates more effectively.

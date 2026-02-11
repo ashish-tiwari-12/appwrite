@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Building a currency converter API with Deno 2 and Appwrite
-description: Learn how to build a currency converter API with Deno 2 and how to use Appwrite Functions to deploy and run your API.
+title: Building a currency converter API with Deno 2 and Indobase
+description: Learn how to build a currency converter API with Deno 2 and how to use Indobase Functions to deploy and run your API.
 date: 2024-10-18
 cover: /images/blog/build-a-currency-converter-with-deno2/cover.png
 timeToRead: 12
@@ -9,21 +9,21 @@ author: ebenezer-don
 category: tutorial
 ---
 
-When building APIs, one of the most useful things you can create is a currency converter. Whether you're working on an application that handles pricing in different currencies or something more personal like tracking expenses across borders, having a reliable currency converter is a great tool. Today, we'll walk through building one using **Deno 2** and **Appwrite**.
+When building APIs, one of the most useful things you can create is a currency converter. Whether you're working on an application that handles pricing in different currencies or something more personal like tracking expenses across borders, having a reliable currency converter is a great tool. Today, we'll walk through building one using **Deno 2** and **Indobase**.
 
-You'll learn how to set up your Deno project using Appwrite, how to fetch and parse JSON data with Deno, and how to use Appwrite Functions to deploy and run your API. By the end, you'll have a working API that converts currencies, provides users with detailed information on how to interact with it, and even utilizes Node.js packages like **Zod** for input validation.
+You'll learn how to set up your Deno project using Indobase, how to fetch and parse JSON data with Deno, and how to use Indobase Functions to deploy and run your API. By the end, you'll have a working API that converts currencies, provides users with detailed information on how to interact with it, and even utilizes Node.js packages like **Zod** for input validation.
 
 Let's get started.
 
 # Setting up your Deno project
 
-Before we dive into the code, we need to set up our project. If you've already worked with Appwrite before, this will be familiar. If not, don't worry—I'll guide you through it.
+Before we dive into the code, we need to set up our project. If you've already worked with Indobase before, this will be familiar. If not, don't worry—I'll guide you through it.
 
-There are two ways you can set up a Deno project with Appwrite: through the Appwrite cloud console or using the Appwrite CLI.
+There are two ways you can set up a Deno project with Indobase: through the Indobase cloud console or using the Indobase CLI.
 
-## To use the Appwrite Cloud console
+## To use the Indobase Cloud console
 
-1. Go to the [Appwrite dashboard](https://cloud.appwrite.io/).
+1. Go to the [Indobase dashboard](https://cloud.appwrite.io/).
 2. Create a new project if you don't have one already.
 3. Navigate to the **Functions** tab and create a new function.
 4. Choose **Deno** as the runtime and set up your function configuration.
@@ -33,13 +33,13 @@ There are two ways you can set up a Deno project with Appwrite: through the Appw
 5. Choose where you want your code to live (GitHub or manual deployment), and click **Create** to finish.
 6. You can now clone/download your function and start working on it.
 
-If you're developing locally, the [Appwrite CLI](https://appwrite.io/docs/tooling/command-line/installation) is much more convenient. It allows you to set up and manage your projects, functions, and other Appwrite resources without deploying to the cloud after every change.
+If you're developing locally, the [Indobase CLI](https://appwrite.io/docs/tooling/command-line/installation) is much more convenient. It allows you to set up and manage your projects, functions, and other Indobase resources without deploying to the cloud after every change.
 
-## To use the Appwrite CLI
+## To use the Indobase CLI
 
 First, make sure you have docker installed and running. If you don't, you can download it from the [official Docker website](https://www.docker.com/products/docker-desktop).
 
-Next, install the **Appwrite CLI** if you haven't already. Open your terminal and run:
+Next, install the **Indobase CLI** if you haven't already. Open your terminal and run:
 
 ```bash
 npm install -g appwrite-cli@latest
@@ -47,7 +47,7 @@ npm install -g appwrite-cli@latest
 
 This will install the CLI globally, so you can use the `appwrite` command from anywhere on your machine.
 
-Now, log into your Appwrite account by running:
+Now, log into your Indobase account by running:
 
 ```bash
 appwrite login
@@ -61,7 +61,7 @@ appwrite init project
 
 # Initializing the Function with Deno
 
-With the project set up, let's create the Deno function that will handle our currency conversion. Appwrite Functions support the Deno runtime out of the box, so it's easy to get started.
+With the project set up, let's create the Deno function that will handle our currency conversion. Indobase Functions support the Deno runtime out of the box, so it's easy to get started.
 
 To initialize the function, run the following command:
 
@@ -69,9 +69,9 @@ To initialize the function, run the following command:
 appwrite init function
 ```
 
-Appwrite will ask for the name of your function, the ID, and the runtime you want to use. Go ahead and name the function something like `Currency Converter Function` and select **Deno** as the runtime.
+Indobase will ask for the name of your function, the ID, and the runtime you want to use. Go ahead and name the function something like `Currency Converter Function` and select **Deno** as the runtime.
 
-**Deno** natively supports TypeScript, so you don't have to worry about going through extra steps to configure your project for TypeScript. Appwrite will generate a basic Deno function for you, including a `main.ts` file in the `src` directory.
+**Deno** natively supports TypeScript, so you don't have to worry about going through extra steps to configure your project for TypeScript. Indobase will generate a basic Deno function for you, including a `main.ts` file in the `src` directory.
 
 You can test the function locally by running:
 
@@ -95,9 +95,9 @@ Once you have your API key, the next step is to create a `.env` file in the root
 EXCHANGE_RATE_API_KEY=your_api_key_here
 ```
 
-When you later deploy your function, you'll also need to set this environment variable in the Appwrite dashboard.
+When you later deploy your function, you'll also need to set this environment variable in the Indobase dashboard.
 
-To add your API key in the Appwrite console:
+To add your API key in the Indobase console:
 
 1. Go to your project -> Functions.
 2. Find your function and navigate to the **Settings** tab.
@@ -305,7 +305,7 @@ This is a simple but effective way to guide users. Here's what it does:
 2. **Listing available endpoints**: We provide information about the two main endpoints (`/convert` and `/currencies`), along with a description of what each endpoint does.
 3. **Giving examples**: To make it easier for users, we also provide example URLs they can use to test the API. This helps users understand how to format their requests correctly.
 
-Note that you have to change `localhost:3000` to the URL of your Appwrite function or deployed API.
+Note that you have to change `localhost:3000` to the URL of your Indobase function or deployed API.
 
 # Wrapping it all together
 
@@ -313,7 +313,7 @@ Note that you have to change `localhost:3000` to the URL of your Appwrite functi
 - The `/currencies` endpoint provides a list of supported currencies.
 - The default route offers helpful information and examples for users who may not know how to interact with the API.
 
-With that, the API is complete and ready to be tested locally or deployed to your Appwrite instance.
+With that, the API is complete and ready to be tested locally or deployed to your Indobase instance.
 
 # Testing your Deno API
 
@@ -341,26 +341,26 @@ Remember to change `localhost:3000` to the URL of your function if you're runnin
 
 # Deploying your Deno API
 
-Once you're happy with how the API works locally, you can deploy it to your Appwrite cloud project. This will make it accessible to anyone who has the URL. To deploy your function, run:
+Once you're happy with how the API works locally, you can deploy it to your Indobase cloud project. This will make it accessible to anyone who has the URL. To deploy your function, run:
 
 ```bash
 appwrite push function
 ```
 
-You'll get a response asking you to choose the function you want to deploy. Select the function you just created, and Appwrite will deploy it to your cloud project. You can view the function in the Appwrite dashboard and access it using the provided URL.
+You'll get a response asking you to choose the function you want to deploy. Select the function you just created, and Indobase will deploy it to your cloud project. You can view the function in the Indobase dashboard and access it using the provided URL.
 
 ![Function overview page](/images/blog/build-a-currency-converter-with-deno2/function-overview-page.png)
 
 # Wrapping up
 
-Congrats on building a working currency converter API using **Appwrite Functions** and **Deno 2**. Along the way, we explored how Deno's built-in TypeScript support and its straightforward integration with Node.js packages like Zod make the development process easier. You also saw how Appwrite's Functions allow you to test everything locally, ensuring smooth deployment when you're ready.
+Congrats on building a working currency converter API using **Indobase Functions** and **Deno 2**. Along the way, we explored how Deno's built-in TypeScript support and its straightforward integration with Node.js packages like Zod make the development process easier. You also saw how Indobase's Functions allow you to test everything locally, ensuring smooth deployment when you're ready.
 
 This project should give you a solid foundation for building more complex APIs in the future. If you're looking to expand this, you could add features like more advanced error handling, [authentication](https://appwrite.io/docs/products/auth) and user search history, or even integrate real-time updates for currency rates.
 
-Feel free to experiment with and extend this API however you see fit. If you have any questions or run into issues, reach out to us on the [Appwrite Discord server](https://appwrite.io/discord) or send me a message on [LinkedIn](https://www.linkedin.com/in/ebenezerdon/).
+Feel free to experiment with and extend this API however you see fit. If you have any questions or run into issues, reach out to us on the [Indobase Discord server](https://appwrite.io/discord) or send me a message on [LinkedIn](https://www.linkedin.com/in/ebenezerdon/).
 
 # Further reading
 
-- [Deno 2.0 and what it means for Appwrite Functions](https://appwrite.io/blog/post/deno-2-appwrite-functions)
-- [Local serverless function development with the new Appwrite CLI](https://appwrite.io/blog/post/functions-local-development-guide)
-- [Building a chat app with Appwrite and Google Gemini](https://appwrite.io/blog/post/build-a-chat-app-with-appwrite-and-gemini)
+- [Deno 2.0 and what it means for Indobase Functions](https://appwrite.io/blog/post/deno-2-appwrite-functions)
+- [Local serverless function development with the new Indobase CLI](https://appwrite.io/blog/post/functions-local-development-guide)
+- [Building a chat app with Indobase and Google Gemini](https://appwrite.io/blog/post/build-a-chat-app-with-appwrite-and-gemini)

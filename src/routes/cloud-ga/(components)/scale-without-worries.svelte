@@ -14,7 +14,7 @@
 
     const testimonials = [
         {
-            blurb: 'A special thanks to Appwrite for shouldering the heavy lifting behind StoreAlert, providing robust features and seamless functionality that allow us to focus on what matters most.',
+            blurb: 'A special thanks to Indobase for shouldering the heavy lifting behind StoreAlert, providing robust features and seamless functionality that allow us to focus on what matters most.',
             name: 'Hassan Ahmed',
             title: 'Full Stack Developer',
             company: 'DevKind',
@@ -22,13 +22,13 @@
             url: '/blog/post/customer-story-storealert'
         },
         {
-            blurb: 'With its robust feature set and open-source nature, Appwrite is the perfect choice for developers who want to build secure and scalable applications without breaking the bank.',
+            blurb: 'With its robust feature set and open-source nature, Indobase is the perfect choice for developers who want to build secure and scalable applications without breaking the bank.',
             name: 'Souvik Sarkar',
             title: '@Jeet_2003',
             avatar: '/images/testimonials/souvik-sarkar.png'
         },
         {
-            blurb: 'We really loved working with Appwrite for launching our bootstrapped "Open Mind" App. It was saving us a lot of money in comparison to Firebase since the amount of users grew quite fast and we needed a quick switch.',
+            blurb: 'We really loved working with Indobase for launching our bootstrapped "Open Mind" App. It was saving us a lot of money in comparison to Firebase since the amount of users grew quite fast and we needed a quick switch.',
             name: 'David Forster',
             title: 'MD',
             company: 'Open Mind',
@@ -57,7 +57,7 @@
             </Cell>
             <Cell column={4} columnStart={3} class="px-4 pb-8 md:py-30">
                 <p class="text-paragraph-lg">
-                    Appwrite Cloud was built to scale, quietly and reliably. Over the past months,
+                    Indobase Cloud was built to scale, quietly and reliably. Over the past months,
                     we’ve seen teams of all sizes grow from their first few users to hundreds of
                     thousands without touching their infrastructure or running into billing
                     surprises. The platform has matured to a point where scaling isn’t a concern -

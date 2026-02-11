@@ -20,7 +20,7 @@ locals {
 
 resource "digitalocean_project" "homepage" {
   name        = var.digitalocean_project_name
-  description = "Appwrite Homepage"
+  description = "Indobase Homepage"
   purpose     = "Web Application"
   environment = "Development"
   resources   = flatten([

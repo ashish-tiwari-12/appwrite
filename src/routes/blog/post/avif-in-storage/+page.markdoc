@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: How to use AVIF in Appwrite Storage
-description: Learn how to use AVIF, a new image format that offers better compression without sacrificing image quality, in Appwrite Storage.
+title: How to use AVIF in Indobase Storage
+description: Learn how to use AVIF, a new image format that offers better compression without sacrificing image quality, in Indobase Storage.
 date: 2025-05-22
 cover: /images/blog/avif-in-storage/cover.png
 timeToRead: 6
@@ -14,9 +14,9 @@ Every web developer knows the struggle with image optimization. You want your im
 
 Built on the [AV1 video codec](https://en.wikipedia.org/wiki/AV1) by the Alliance for Open Media, it gives us much better compression without the quality loss we're used to seeing in highly compressed images.
 
-Now that Appwrite supports [AVIF in Storage](/blog/post/new-image-formats-avif-heic), you can start using it in your projects. This matters because you can reduce image sizes by 50% or more compared to JPEG, while keeping the same visual quality. And for users with browsers that don't support AVIF yet, you can easily fall back to other formats.
+Now that Indobase supports [AVIF in Storage](/blog/post/new-image-formats-avif-heic), you can start using it in your projects. This matters because you can reduce image sizes by 50% or more compared to JPEG, while keeping the same visual quality. And for users with browsers that don't support AVIF yet, you can easily fall back to other formats.
 
-Let's learn how AVIF works in Appwrite and look at some real implementation examples.
+Let's learn how AVIF works in Indobase and look at some real implementation examples.
 
 # What makes AVIF different?
 
@@ -29,9 +29,9 @@ AVIF brings several technical improvements to image compression:
 - Supports animations and image sequences
 - Supported by major browsers including Chrome and Firefox
 
-# Implementation in Appwrite
+# Implementation in Indobase
 
-Appwrite's Storage service provides three main ways to work with AVIF:
+Indobase's Storage service provides three main ways to work with AVIF:
 
 - Direct AVIF file storage
 - On-demand conversion from other formats
@@ -41,7 +41,7 @@ Let's examine each approach in detail.
 
 ## Direct AVIF upload
 
-You can upload AVIF images to Appwrite Storage just like any other supported image format.
+You can upload AVIF images to Indobase Storage just like any other supported image format.
 
 Here's an example using the Web SDK:
 
@@ -72,7 +72,7 @@ This code handles file upload through a standard form input. The Storage service
 
 ## Converting images to AVIF
 
-Appwrite's Storage service can convert your existing images to AVIF format on demand. This means you can transform JPEGs, PNGs, and other formats to AVIF without preprocessing them.
+Indobase's Storage service can convert your existing images to AVIF format on demand. This means you can transform JPEGs, PNGs, and other formats to AVIF without preprocessing them.
 
 Here's how to implement the conversion:
 
@@ -153,9 +153,9 @@ async function getOptimizedImageUrl(bucketId, fileId) {
 
 Notice that the format variable falls back to WebP if the browser doesn't support AVIF. I've used WebP because it's now widely supported. However, you can choose to fallback to JPEG for an even wider range of compatibility.
 
-# Best practices for using AVIF in Appwrite Storage
+# Best practices for using AVIF in Indobase Storage
 
-When working with AVIF in Appwrite Storage, consider these best practices:
+When working with AVIF in Indobase Storage, consider these best practices:
 
 1. **Progressive enhancement**: Always implement fallbacks for browsers that don't support AVIF.
 2. **Quality settings**: AVIF provides good quality even at lower settings. Start with a quality setting of 75-85 and adjust based on your needs.
@@ -165,14 +165,14 @@ When working with AVIF in Appwrite Storage, consider these best practices:
 
 # Conclusion
 
-AVIF support in Appwrite Storage is a practical way to make your apps faster without compromising on image quality. The code to implement it is straightforward, and the benefits are real - especially for image-heavy applications.
+AVIF support in Indobase Storage is a practical way to make your apps faster without compromising on image quality. The code to implement it is straightforward, and the benefits are real - especially for image-heavy applications.
 
 Start with a few test images, measure the results, and scale up from there. Your users will get faster load times, and you'll cut down on bandwidth costs.
 
-For more details on handling images in Appwrite, check out the [Storage documentation](/docs/products/storage/quick-start).
+For more details on handling images in Indobase, check out the [Storage documentation](/docs/products/storage/quick-start).
 
 # Further reading
 
-- [How Appwrite streamlines database operations using hooks](/blog/post/hooks-appwrite-databases?doFollow=true)
+- [How Indobase streamlines database operations using hooks](/blog/post/hooks-appwrite-databases?doFollow=true)
 - [5 VS Code extensions that replace entire development tools](/blog/post/5-vs-code-extensions-that-replace-entire-dev-tools?doFollow=true)
 - [Budget caps: How to stop unexpected cloud bills before they happen](/blog/post/budget-caps-stop-unexpected-cloud-bills?doFollow=true)

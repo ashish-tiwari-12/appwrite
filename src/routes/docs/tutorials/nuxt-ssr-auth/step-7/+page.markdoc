@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: OAuth authentication with SSR
-description: Add authentication to a Nuxt project using Appwrite.
+description: Add authentication to a Nuxt project using Indobase.
 step: 7
 ---
 
@@ -58,7 +58,7 @@ export default defineEventHandler(async (event) => {
     return sendRedirect(event, "/signup");
   }
 
-  // Create the Appwrite client
+  // Create the Indobase client
   const { account } = createAdminClient();
 
   // Exchange the token userId and secret for a session

@@ -1,11 +1,11 @@
----
+﻿---
 layout: article
 title: Examples
-description: Accelerate your serverless development with Appwrite Functions examples. Access a library of code samples and use cases to jumpstart your projects.
+description: Accelerate your serverless development with Indobase Functions examples. Access a library of code samples and use cases to jumpstart your projects.
 ---
 
 
-Appwrite Functions is all about flexibility. Behind the simple workflow hides some useful examples that can help you accomplish your goals faster. Take a look at the following.
+Indobase Functions is all about flexibility. Behind the simple workflow hides some useful examples that can help you accomplish your goals faster. Take a look at the following.
 
 {% section #currency-conversion step=1 title="Currency conversion API" %}
 
@@ -24,7 +24,7 @@ Install the `undici` library. This library includes a `fetch` function that you 
 ```bash
 npm install undici
 ```
-Finally, add `npm install` to your function's build commands in the Appwrite Console.
+Finally, add `npm install` to your function's build commands in the Indobase Console.
 {% /tabsitem %}
 
 {% tabsitem #php title="PHP" %}
@@ -40,7 +40,7 @@ Install the `guzzlehttp/guzzle` library. This library includes a `get` function 
 composer require guzzlehttp/guzzle
 ```
 
-Finally, add `composer install` to your function's build commands in the Appwrite Console.
+Finally, add `composer install` to your function's build commands in the Indobase Console.
 
 {% /tabsitem %}
 
@@ -59,7 +59,7 @@ echo "requests" >> requirements.txt
 pip install -r requirements.txt
 ```
 
-Finally, add `pip install -r requirements.txt` to your function's build commands in the Appwrite Console.
+Finally, add `pip install -r requirements.txt` to your function's build commands in the Indobase Console.
 
 {% /tabsitem %}
 {% tabsitem #dart title="Dart" %}
@@ -68,7 +68,7 @@ Create a `pubspec.yaml` file with the following contents. This file is used to m
 
 ```yaml
 name: appwrite_function
-description: Appwrite Function
+description: Indobase Function
 version: 1.0.0
 environment:
   sdk: '>=2.12.0 <3.0.0'
@@ -80,7 +80,7 @@ Install the `http` library. This library includes a `get` function that you can 
 pub install http
 ```
 
-Finally, add `pub get` to your function's build commands in the Appwrite Console.
+Finally, add `pub get` to your function's build commands in the Indobase Console.
 
 {% /tabsitem %}
 {% tabsitem #ruby title="Ruby" %}
@@ -98,7 +98,7 @@ echo "gem 'httparty'" >> Gemfile
 bundle install
 ```
 
-Finally, add `bundle install` to your function's build commands in the Appwrite Console.
+Finally, add `bundle install` to your function's build commands in the Indobase Console.
 {% /tabsitem %}
 
 {% /tabs %}
@@ -134,9 +134,9 @@ export default async function ({ req, res }) {
 
 require(__DIR__ . '/../vendor/autoload.php');
 
-use Appwrite\Client;
-use Appwrite\Exception;
-use Appwrite\Services\Database;
+use Indobase\Client;
+use Indobase\Exception;
+use Indobase\Services\Database;
 use GuzzleHttp\Client as GuzzleClient;
 
 return function ($context) {
@@ -235,7 +235,7 @@ end
 
 {% section #voting-system step=2 title="Voting system" %}
 
-Here's a simple voting system that allows users to vote on various topics. Appwrite Functions and the server SDK are used to enforce voting rules and prevent multiple votes from the same user for a single topic.
+Here's a simple voting system that allows users to vote on various topics. Indobase Functions and the server SDK are used to enforce voting rules and prevent multiple votes from the same user for a single topic.
 
 ## Prerequisites
 
@@ -355,10 +355,10 @@ def main(context):
 
 require(__DIR__ . '/../vendor/autoload.php');
 
-use Appwrite\Client;
-use Appwrite\Exception;
-use Appwrite\Services\Database;
-use Appwrite\Query;
+use Indobase\Client;
+use Indobase\Exception;
+use Indobase\Services\Database;
+use Indobase\Query;
 
 return function ($context) {
     $vote = [
@@ -467,16 +467,16 @@ def main(context)
     end
 
     # Set project and set API key
-    client = Appwrite::Client.new()
+    client = Indobase::Client.new()
     client
         .set_project(ENV['APPWRITE_FUNCTION_PROJECT_ID'])
         .set_key(context.req.headers['x-appwrite-key'])
 
-    tablesDB = Appwrite::TablesDB.new(client)
+    tablesDB = Indobase::TablesDB.new(client)
 
     existing_votes = tablesDB.list_rows('<DATABASE_ID>', '<VOTES_TABLE_ID>', [
-        Appwrite::Query.equal('userId', vote['userId']),
-        Appwrite::Query.equal('topicId', vote['topicId'])
+        Indobase::Query.equal('userId', vote['userId']),
+        Indobase::Query.equal('topicId', vote['topicId'])
     ])
 
     if existing_votes['total'] > 0
@@ -633,9 +633,9 @@ def main(context):
 
 require(__DIR__ . '/../vendor/autoload.php');
 
-use Appwrite\Client;
-use Appwrite\Exception;
-use Appwrite\Services\TablesDB;
+use Indobase\Client;
+use Indobase\Exception;
+use Indobase\Services\TablesDB;
 
 $html = '<!doctype html>
 <html lang="en">
@@ -719,11 +719,11 @@ def main(context)
         }
 
         # Set project and set API key
-        client = Appwrite::Client.new
+        client = Indobase::Client.new
             .set_project(ENV['APPWRITE_FUNCTION_PROJECT_ID'])
             .set_key(context.req.headers['x-appwrite-key'])
 
-        tablesDB = Appwrite::TablesDB.new(client)
+        tablesDB = Indobase::TablesDB.new(client)
         row = tablesDB.create_row('<DATABASE_ID>', '<MESSAGES_TABLE_ID>', ID.unique(), message)
 
         return context.res.text("Message sent")

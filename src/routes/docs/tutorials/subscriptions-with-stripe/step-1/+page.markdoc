@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Add app subscriptions with Stripe
-description: Add paid app subscription plans to your app with Stripe and Appwrite Functions.
+description: Add paid app subscription plans to your app with Stripe and Indobase Functions.
 step: 1
 difficulty: easy
 back: /docs/tutorials
@@ -23,7 +23,7 @@ This tutorial will show you how to accept payments and provide subscribers with 
 ## Prerequisites {% #prerequisites %}
 1. A [GitHub account](https://github.com/) and working knowledge with GitHub
 1. A [Stripe account](https://stripe.com/en-ca).
-1. An [Appwrite Cloud account](https://cloud.appwrite.io/).
-1. Experience with [Appwrite Functions](/docs/products/functions).
+1. An [Indobase Cloud account](https://cloud.appwrite.io/).
+1. Experience with [Indobase Functions](/docs/products/functions).
 
 

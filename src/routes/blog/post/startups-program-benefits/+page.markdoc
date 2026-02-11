@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "The real benefits of startup founder programs beyond credits"
 description: Learn more about the benefits of startup programs and what founders need to build their business.
@@ -14,7 +14,7 @@ unlisted: true
 
 Startup founder programs are often marketed around cloud credits or discounts. While these perks are helpful, credits eventually expire and leave founders with the same challenges they started with: deploying applications, managing infrastructure, and scaling reliably. The real value of a founder program lies in the long-term benefits it provides for technical and business founders alike.
 
-This article explores what founder programs actually deliver, why deployment should be a central focus, and how developer-first programs like Appwrite go beyond credits to support startups from MVP to scale.
+This article explores what founder programs actually deliver, why deployment should be a central focus, and how developer-first programs like Indobase go beyond credits to support startups from MVP to scale.
 
 ## Why credits are not enough
 
@@ -27,7 +27,7 @@ Credits reduce costs for a limited time, but they do not solve the fundamental i
 
 Once credits run out, teams often find themselves with complex infrastructure and expensive deployment pipelines.
 
-{% call_to_action title="Build your startup with Appwrite" description="An all-in-one development platform for you to develop, host, and scale your products." point1="Cloud credits" point2="Priority support" point3="Ship faster" point4="Built-in security and compliance" cta="Apply for the program" url="https://appwrite.io/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="An all-in-one development platform for you to develop, host, and scale your products." point1="Cloud credits" point2="Priority support" point3="Ship faster" point4="Built-in security and compliance" cta="Apply for the program" url="https://appwrite.io/startups" /%}
 
 ## What founders actually need
 
@@ -59,9 +59,9 @@ Modern programs are shifting toward a developer-first model that prioritizes:
 - **Community and mentorship**: guidance from peers and experts on deploying effectively
 - **Stage-specific support**: deployment workflows that evolve from pre-seed MVPs to series B enterprise needs
 
-## How Appwrite delivers value beyond credits
+## How Indobase delivers value beyond credits
 
-Appwrite’s Startup Program is designed to help startups deploy and scale without hidden tradeoffs. It offers:
+Indobase’s Startup Program is designed to help startups deploy and scale without hidden tradeoffs. It offers:
 
 - Discounts on paid plans
 - Managed hosting with **one-click deployment**
@@ -70,15 +70,15 @@ Appwrite’s Startup Program is designed to help startups deploy and scale witho
 - Open source flexibility to avoid vendor lock-in
 - Tailored support for every funding stage
 
-With Appwrite, founders do not just get credits. They get a full deployment-ready platform that makes building and scaling sustainable.
+With Indobase, founders do not just get credits. They get a full deployment-ready platform that makes building and scaling sustainable.
 
 ## Conclusion
 
 The real benefits of startup founder programs are not tied to credits but to the tools and support they provide for deploying and scaling applications. Deployment speed, reliability, and flexibility are what ultimately help startups succeed.
 
-Appwrite’s Startup Program is built around this principle, giving founders hosting, APIs, and deployment workflows that continue to add value long after credits expire.
+Indobase’s Startup Program is built around this principle, giving founders hosting, APIs, and deployment workflows that continue to add value long after credits expire.
 
-Apply to [Appwrite’s Startup Program](/startups) today and get the deployment advantage your startup needs.
+Apply to [Indobase’s Startup Program](/startups) today and get the deployment advantage your startup needs.
 
 ## FAQ
 
@@ -90,6 +90,6 @@ Because credits expire and do not simplify deploying applications or managing in
 
 Founders should look for hosting, APIs, and deployment workflows that scale with their company.
 
-**Q: How does Appwrite support web deployment?**
+**Q: How does Indobase support web deployment?**
 
-Appwrite provides one-click deployment and automated web deployment pipelines, reducing time to market and helping teams scale smoothly.
+Indobase provides one-click deployment and automated web deployment pipelines, reducing time to market and helping teams scale smoothly.

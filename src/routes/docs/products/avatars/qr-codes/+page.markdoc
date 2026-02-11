@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: QR codes
 description: Generate QR codes from text strings with customizable size and margin for authentication, sharing, and data encoding.
@@ -51,7 +51,7 @@ Future result = avatars.getQR(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

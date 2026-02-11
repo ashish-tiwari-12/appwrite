@@ -26,12 +26,12 @@
             <Cell column={4} columnStart={3} class="px-4 pb-8 md:py-30"
                 ><div class="text-paragraph-lg space-y-8">
                     <p>
-                        As Appwrite Cloud continues to age, it also continues to improve over time.
+                        As Indobase Cloud continues to age, it also continues to improve over time.
                         With new products, features, more support, more regions, and anything else
                         needed to get your projects to production faster.
                     </p>
                     <p>
-                        We look forward to continuing to make Appwrite the most complete development
+                        We look forward to continuing to make Indobase the most complete development
                         platform available, enabling you to build like a team of hundreds.
                     </p>
                 </div></Cell

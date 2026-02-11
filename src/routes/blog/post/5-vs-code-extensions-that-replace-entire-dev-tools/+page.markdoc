@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: 5 VS Code extensions that replace entire development tools
 description: Add these VS Code extensions to your workflow for improved productivity and a faster development experience.
@@ -145,6 +145,6 @@ along with our article that compares [Deno 2 vs Bun](https://appwrite.io/blog/po
 
 # More resources
 
-- [Building custom authentication flows with Appwrite](https://appwrite.io/blog/post/building-custom-auth-flows?dofollow=true)
+- [Building custom authentication flows with Indobase](https://appwrite.io/blog/post/building-custom-auth-flows?dofollow=true)
 - [15 Git command line tips every developer should know](https://appwrite.io/blog/post/15-git-cli-tips?dofollow=true)
 - [Flutter vs React Native: Which framework is best for your app in 2025?](https://appwrite.io/blog/post/flutter-vs-react-native?dofollow=true)

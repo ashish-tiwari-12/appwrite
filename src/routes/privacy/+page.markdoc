@@ -1,10 +1,10 @@
 ---
 layout: policy
 title: Privacy Policy
-description: Appwrite's privacy policy outlines the purpose and scope of data collection necessary to operate our business and its impact on users.
+description: Indobase's privacy policy outlines the purpose and scope of data collection necessary to operate our business and its impact on users.
 
 ---
-This privacy policy (“Privacy Policy”) governs how we, Appwrite Code Ltd. (together, “Appwrite” “we”, “our” or “us”) use, collect and store Personal Data we collect or receive from or about you (“you”) such as in the following use cases:
+This privacy policy ("Privacy Policy") governs how we, Indobase Code Ltd. (together, "Indobase" "we", "our" or "us") use, collect and store Personal Data we collect or receive from or about you ("you") such as in the following use cases:
 
 1. When you make use of, or interact with, our Website (https://appwrite.io/)
     - When you create an account and when you log in
@@ -122,12 +122,12 @@ What personal data we collect, why we collect it, and how it is used
   - And any other information that you decide to provide us with
 ---
 * The purpose of data collection
-* - To allow you to purchase Appwrite's products from our Swag Store.
+* - To allow you to purchase Indobase's products from our Swag Store.
   - To customize your experience
 ---
 * Legal basis (GDPR only, if applicable)
 * - Processing is necessary for the performance of a contract to which the data subject is party or in order to take steps at the request of the data subject prior to entering into a contract
-  - Legitimate interest (e.g. to allow you to purchase Appwrite's swag products)
+  - Legitimate interest (e.g. to allow you to purchase Indobase's swag products)
 ---
 * Third parties with whom we share your personal data
 * 3rd party platforms such as:
@@ -156,7 +156,7 @@ What personal data we collect, why we collect it, and how it is used
 ---
 * Legal basis (GDPR only, if applicable)
 * - Consent
-  - Legitimate interest (e.g. send you more information about Appwrite)
+  - Legitimate interest (e.g. send you more information about Indobase)
 ---
 * Third parties with whom we share your personal data
 * 3rd party platforms such as:
@@ -237,7 +237,7 @@ What personal data we collect, why we collect it, and how it is used
   - Cannot customize your experience
 {% /table %}
 
-#### When you apply for our fund / Appwrite programs
+#### When you apply for our fund / Indobase programs
 
 {% table %}
 ---
@@ -250,7 +250,7 @@ What personal data we collect, why we collect it, and how it is used
 ---
 * The purpose of data collection
 * - To process your application 
-  - To communicate with you about Appwrite programs
+  - To communicate with you about Indobase programs
   - To send you funds and / or project-related communications
 ---
 * Legal basis (GDPR only, if applicable)
@@ -266,7 +266,7 @@ What personal data we collect, why we collect it, and how it is used
 ---
 * Consequences of not providing the personal data
 * - Cannot process your fund application
-  - Cannot communicate with you about Appwrite programs
+  - Cannot communicate with you about Indobase programs
   - Cannot send you fund and project related communications
 {% /table %}
 
@@ -359,7 +359,7 @@ Where you have provided your consent to us sharing or transferring your Personal
 # Transfers of personal data
 
 {% count_title title="External transfers" / %}
-Where we transfer your Personal Data outside of EU/EEA (for example to third parties who provide us with services), we will generally obtain contractual commitments from them to protect your Personal Data. When Appwrite engages in such transfers of Personal Data, it relies on i) Adequacy Decisions as adopted by European Commission on the basis of Article 45 of Regulation (EU) 2016/679 (GDPR) (for example, when we access from Israel), or ii) Standard Contractual Clauses issued by the European Commission. Appwrite also continually monitors the circumstances surrounding such transfers in order to ensure that these maintain, in practice, a level of protection that is essentially equivalent to the one guaranteed by the GDPR.
+Where we transfer your Personal Data outside of EU/EEA (for example to third parties who provide us with services), we will generally obtain contractual commitments from them to protect your Personal Data. When Indobase engages in such transfers of Personal Data, it relies on i) Adequacy Decisions as adopted by European Commission on the basis of Article 45 of Regulation (EU) 2016/679 (GDPR) (for example, when we access from Israel), or ii) Standard Contractual Clauses issued by the European Commission. Indobase also continually monitors the circumstances surrounding such transfers in order to ensure that these maintain, in practice, a level of protection that is essentially equivalent to the one guaranteed by the GDPR.
 {% /count_section %}
 
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Next.js standalone builds now supported on Appwrite Sites
-description: Deploy Next.js apps in standalone mode on Appwrite Sites with full Next.js 16 support, smaller builds, faster cold starts, and lighter deployments.
+title: Next.js standalone builds now supported on Indobase Sites
+description: Deploy Next.js apps in standalone mode on Indobase Sites with full Next.js 16 support, smaller builds, faster cold starts, and lighter deployments.
 date: 2025-11-12
 cover: /images/blog/nextjs-standalone-builds/cover.png
 timeToRead: 4
@@ -9,13 +9,13 @@ author: ebenezer-don
 category: announcement
 ---
 
-You can now deploy Next.js apps built in [standalone mode](https://nextjs.org/docs/app/api-reference/config/next-config-js/output) on Appwrite Sites, with full support for Next.js 16. In standalone mode, the build process creates a smaller package that includes only the files your app needs to run in production, leaving out development tools and unused parts of the framework.
+You can now deploy Next.js apps built in [standalone mode](https://nextjs.org/docs/app/api-reference/config/next-config-js/output) on Indobase Sites, with full support for Next.js 16. In standalone mode, the build process creates a smaller package that includes only the files your app needs to run in production, leaving out development tools and unused parts of the framework.
 
 # Why standalone mode?
 
 In our benchmarks, build size dropped by about six times on average, and cold start times were 2x faster. Deployments are lighter with faster build times, and sites start responding more quickly after going live.
 
-This work began with a report by a community member, [Warfin](https://github.com/WarFiN123), about build issues in Next.js 16. Those discussions led to deeper improvements in how Appwrite handles builds, which made standalone support possible.
+This work began with a report by a community member, [Warfin](https://github.com/WarFiN123), about build issues in Next.js 16. Those discussions led to deeper improvements in how Indobase handles builds, which made standalone support possible.
 
 # How to enable Next.js standalone mode
 
@@ -28,7 +28,7 @@ module.exports = {
 };
 ```
 
-Then build your project as usual. Appwrite Sites now recognizes that output automatically, so you can deploy it directly with no further changes.
+Then build your project as usual. Indobase Sites now recognizes that output automatically, so you can deploy it directly with no further changes.
 
 This update also lays the groundwork for broader improvements as we better understand how we can apply the same benefits to all Next.js builds, and eventually to all SSR builds.
 

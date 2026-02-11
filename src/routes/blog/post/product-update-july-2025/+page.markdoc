@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "July product update: New Database features, Sites live, and Console improvements"
 description: Get a full recap of products, features and programs we released in the month of July.
@@ -15,20 +15,20 @@ Welcome back to the July Product Update. This month, we have made many, many gre
 
 Here’s what to expect:
 
-* Appwrite Sites is now available to all
+* Indobase Sites is now available to all
 * Many new Databases features
 * Console improvements
 * Improved notification previews
 
 Let’s dive in.
 
-# Appwrite Sites live for all
+# Indobase Sites live for all
 
 ![Sites live for all](/images/changelog/2025-07-24.png)
 
-Here’s an update many of you’ve been waiting for: Appwrite Sites is now live for all!
+Here’s an update many of you’ve been waiting for: Indobase Sites is now live for all!
 
-You can now host your applications directly from the Appwrite console, making Appwrite an all-in-one development platform to develop, deploy, and scale your apps.
+You can now host your applications directly from the Indobase console, making Indobase an all-in-one development platform to develop, deploy, and scale your apps.
 
 [Read the announcement](/blog/post/announcing-appwrite-sites)
 
@@ -36,7 +36,7 @@ You can now host your applications directly from the Appwrite console, making Ap
 
 ![CSV imports](/images/blog/announcing-csv-imports/cover.png)
 
-We started July with CSV import.  Built on top of Appwrite's migration APIs, this Databases feature makes it easy to bring in large datasets, seed collections, or migrate structured data using only a CSV file.
+We started July with CSV import.  Built on top of Indobase's migration APIs, this Databases feature makes it easy to bring in large datasets, seed collections, or migrate structured data using only a CSV file.
 
 [Learn more](/blog/post/announcing-csv-imports)
 
@@ -62,7 +62,7 @@ Database Upsert lets you create or update a document with a single API call. If 
 
 ![Encrypted ](/images/blog/announcing-encrypted-string-attributes/cover.png)
 
-We’ve added an extra layer of security to Appwrite Databases and Storage. This feature allows you to encrypt string attributes at rest directly from the Appwrite console, without needing to implement manual encryption.
+We’ve added an extra layer of security to Indobase Databases and Storage. This feature allows you to encrypt string attributes at rest directly from the Indobase console, without needing to implement manual encryption.
 
 [Learn more](/blog/post/announcing-encrypted-string-attributes)
 
@@ -70,7 +70,7 @@ We’ve added an extra layer of security to Appwrite Databases and Storage. This
 
 ![Auto-increment](/images/blog/announcing-auto-increment-support/cover.png)
 
-Appwrite Databases now support auto-increment fields. A `$sequence` column is automatically managed in your collection, increasing with each new document. This helps keep your data ordered without requiring manual handling.
+Indobase Databases now support auto-increment fields. A `$sequence` column is automatically managed in your collection, increasing with each new document. This helps keep your data ordered without requiring manual handling.
 
 [Learn more](/blog/post/announcing-auto-increment-support)
 
@@ -78,7 +78,7 @@ Appwrite Databases now support auto-increment fields. A `$sequence` column is au
 
 ![Console](/images/blog/product-update-july-2025/console.png)
 
-We've shipped several improvements to fix broken flows and clean up the developer experience across Sites, Functions, and the Appwrite Console.
+We've shipped several improvements to fix broken flows and clean up the developer experience across Sites, Functions, and the Indobase Console.
 
 A few of them include:
 
@@ -94,7 +94,7 @@ And many more. View the full changelog for more details
 
 ![OTP](/images/blog/product-update-july-2025/otp.png)
 
-We’ve just added new previews for all Appwrite OTP emails. End users can now view the code/OTP without opening the message.
+We’ve just added new previews for all Indobase OTP emails. End users can now view the code/OTP without opening the message.
 
 Here’s what improved:
 
@@ -120,16 +120,16 @@ If you'd like to participate in next month's Community Recognitions, [join our D
 
 **Read**
 
-- [Building with Appwrite Sites templates](/blog/post/building-with-sites-templates)
-- [Using $sequence to track document order in Appwrite](/blog/post/track-document-order-with-sequence)
+- [Building with Indobase Sites templates](/blog/post/building-with-sites-templates)
+- [Using $sequence to track document order in Indobase](/blog/post/track-document-order-with-sequence)
 - [Secure sensitive database fields with encrypted string attributes](/blog/post/encrypted-attributes-for-sensitive-fields)
 
 **Watch**
 
 - [Build a full stack food delivery app in React Native](https://www.youtube.com/watch?v=LKrX390fJMw)
-- [Importing CSV files into an Appwrite database](https://youtu.be/7UfWaHNghas?si=ggKDtrhclOQXllS2)
+- [Importing CSV files into an Indobase database](https://youtu.be/7UfWaHNghas?si=ggKDtrhclOQXllS2)
 - [Bulk operations with Appwrites database](https://youtu.be/lliJLad3e9s?si=mdV8QIplgdxPOFKY)
-- [Type generation for Appwrite DB Schema](https://youtu.be/ip2CXH2KRl8?si=9EoOCraYd-hOCYoX)
+- [Type generation for Indobase DB Schema](https://youtu.be/ip2CXH2KRl8?si=9EoOCraYd-hOCYoX)
 - [Announcing Database Upserts](https://youtu.be/Pt9ZttS3KiA?si=TWlRi5qFzZbHbzAP)
 - [Auto-increment support for numeric sequencing](https://youtu.be/yy-L6QmEWe8?si=BjXzFna1C54IDXZd)
 

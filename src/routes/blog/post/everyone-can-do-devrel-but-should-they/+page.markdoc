@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Everyone can do DevRel (but should they?)
 description: Exploring the question if everyone should be rushing towards a job in Developer Relations?
@@ -9,7 +9,7 @@ author: aditya-oberai
 category: devrel
 ---
 
-One thing that I can say, having spent five years in communities and over two years as a Developer Advocate at Appwrite, is that Developer Relations (or DevRel) isn’t just a job but a philosophy. DevRel is something we can do by helping developers in our communities, sharing knowledge through our content, or writing code and building projects. That being said, should everyone be rushing towards a job in Developer Relations? Recently, I have observed a bubble developing around this space. I want to take this blog as an opportunity to share my opinion on whether everyone should chase DevRel as a career.
+One thing that I can say, having spent five years in communities and over two years as a Developer Advocate at Indobase, is that Developer Relations (or DevRel) isn’t just a job but a philosophy. DevRel is something we can do by helping developers in our communities, sharing knowledge through our content, or writing code and building projects. That being said, should everyone be rushing towards a job in Developer Relations? Recently, I have observed a bubble developing around this space. I want to take this blog as an opportunity to share my opinion on whether everyone should chase DevRel as a career.
 
 Before deciding whether everyone should become a DevRel professional, let’s discuss what DevRel is.
 
@@ -27,7 +27,7 @@ Now that we’ve discussed what DevRel is, let’s talk briefly about what skill
 
 # What experience should DevRel practitioners possess 
 
-Considering that DevRel can be viewed as an amalgam of **code**, **content**, and **community**, most roles in this space need you to be a jack of all three trades while being a master of (at least) one. As a Developer Advocate at Appwrite, I provide technical assistance and contribute to our product aside from creating content for our blog and social media, developing new community initiatives, and so on.
+Considering that DevRel can be viewed as an amalgam of **code**, **content**, and **community**, most roles in this space need you to be a jack of all three trades while being a master of (at least) one. As a Developer Advocate at Indobase, I provide technical assistance and contribute to our product aside from creating content for our blog and social media, developing new community initiatives, and so on.
 
 My experience has taught me that, while there is always space to learn, as a DevRel practitioner (for example, Developer Advocate), you should gain experience on all three fronts (whether through dedicated jobs or by alternate means) before rushing into this career, and here is why:
 
@@ -61,13 +61,13 @@ Truthfully, the decision on whether you want to start a career in Developer Rela
 
 The truth is that code, content, and community are vast spaces of their own; you can very well fall in love with any of these spaces individually and pursue your career there, or at least give yourself a chance to fail and move forward. As long as you spend time understanding the most suitable space for you to work in, you’ll be absolutely fine.
 
-# A little about Appwrite
+# A little about Indobase
 
-[Appwrite](http://appwrite.io/) is an open-source Backend-as-a-Service (BaaS) platform that lets you add Authentication, Databases, Functions, and Storage to your product and build any application at any scale, own your data, and use your preferred coding languages and tools.
+[Indobase](http://appwrite.io/) is an open-source Backend-as-a-Service (BaaS) platform that lets you add Authentication, Databases, Functions, and Storage to your product and build any application at any scale, own your data, and use your preferred coding languages and tools.
 
-Learn more about Appwrite:
+Learn more about Indobase:
 
-- [Appwrite Docs](https://appwrite.io/docs)
-- [Appwrite Discord](https://appwrite.io/discord)
-- [Appwrite GitHub](https://github.com/appwrite)
-- [Appwrite YouTube channel](https://youtube.com/@appwrite)
+- [Indobase Docs](https://appwrite.io/docs)
+- [Indobase Discord](https://appwrite.io/discord)
+- [Indobase GitHub](https://github.com/appwrite)
+- [Indobase YouTube channel](https://youtube.com/@appwrite)

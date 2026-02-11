@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Solving CORS errors with Appwrite
-description: Understanding why you are getting CORS error when sending a request to an Appwrite backend and how to debug.
+title: Solving CORS errors with Indobase
+description: Understanding why you are getting CORS error when sending a request to an Indobase backend and how to debug.
 date: 2024-01-16
 cover: /images/blog/cors-error/cors_cover.png
 timeToRead: 3
@@ -11,9 +11,9 @@ featured: false
 callToAction: true
 ---
 
-I want to address an issue I've seen popping up on Stack Overflow and the Appwrite Discord server and address some of the reasons you may be getting this error, then walk you through some of the steps you can take to try and resolve it as well.
+I want to address an issue I've seen popping up on Stack Overflow and the Indobase Discord server and address some of the reasons you may be getting this error, then walk you through some of the steps you can take to try and resolve it as well.
 
-The error message you'll see in your console when trying to make a request to an Appwrite backend will look something like this: `Access blocked by CORS policy.`
+The error message you'll see in your console when trying to make a request to an Indobase backend will look something like this: `Access blocked by CORS policy.`
 
 # Understanding CORS
 
@@ -35,7 +35,7 @@ Imagine a malicious third party making a website `myfr0nt3nd.com` that key logs 
 
 # Why you are getting a CORS error
 
-Now let's try to figure this all out in the context of Appwrite and why you may be getting this error.
+Now let's try to figure this all out in the context of Indobase and why you may be getting this error.
 I have listed four main reasons. If more arise, I will update the article to include them.
 
 1. Origin not set in Console
@@ -45,8 +45,8 @@ I have listed four main reasons. If more arise, I will update the article to inc
 
 ## 1 - Origin not set in Console
 
-First, you'll want to check your Appwrite Console to make sure you have added a hostname and are making a request from the correct hostname.
-Make sure you have added a platform in your Appwrite console by going to the **Overview** tab, select your platform or adding one if you have none, and then ensure you have added a hostname.
+First, you'll want to check your Indobase Console to make sure you have added a hostname and are making a request from the correct hostname.
+Make sure you have added a platform in your Indobase console by going to the **Overview** tab, select your platform or adding one if you have none, and then ensure you have added a hostname.
 
 A hostname is simply the domain you will be making the request from. In development, this will most likely be `localhost`. No need to add a port number or protocol here.
 
@@ -75,7 +75,7 @@ A common issue that can cause CORS errors is using the wrong endpoint for your p
 For example, if your project is in the NYC region but you're using `fra.cloud.appwrite.io` or `cloud.appwrite.io`, the server will respond with "Project is not accessible in this region." However, you won't see this error message because CORS blocks the communication before you can read the response.
 
 **To fix this:**
-- Check your project's region in the Appwrite Console
+- Check your project's region in the Indobase Console
 - Use the correct regional endpoint (e.g., `nyc.cloud.appwrite.io` for NYC projects)
 - Update your client configuration to use the right endpoint
 
@@ -93,7 +93,7 @@ Visit our documentation, Discord server, YouTube channel, or Threads page to fin
 Learn more in our documentation
 {% /arrow_link %}
 {% arrow_link href="https://appwrite.io/discord" %}
-Join the Appwrite Discord server
+Join the Indobase Discord server
 {% /arrow_link %}
 {% arrow_link href="https://www.youtube.com/watch?v=oEpRh9H5l5g" %}
 Follow the tutorial on YouTube

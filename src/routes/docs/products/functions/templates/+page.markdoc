@@ -1,13 +1,13 @@
----
+﻿---
 layout: article
 title: Templates
-description: "Learn about Appwrite Functions' templates that let you jump start function development to extend your Appwrite APIs."
+description: "Learn about Indobase Functions' templates that let you jump start function development to extend your Indobase APIs."
 ---
-Appwrite provides a variety of Function Templates to help you jump start your function development.
-You can use Appwrite Function Templates as examples or boilerplates to add new functionality to your Appwrite project.
+Indobase provides a variety of Function Templates to help you jump start your function development.
+You can use Indobase Function Templates as examples or boilerplates to add new functionality to your Indobase project.
 
 # Find templates {% #find-templates %}
-You can find all available templates by navigating to the Appwrite Console, under your project > **Functions** > **Templates**.
+You can find all available templates by navigating to the Indobase Console, under your project > **Functions** > **Templates**.
 
 {% only_dark %}
 ![Templates screen](/images/docs/functions/templates/dark/templates.png)
@@ -28,9 +28,9 @@ Pick a display name for your function and an ID. You will later use the ID to pr
 Pick the runtime language you wish the function to be created in, not all runtimes are available for all templates.
 
 ## Variables {% #variables %}
-Appwrite Functions uses [environment variables](/docs/products/functions/develop#environment-variables)
-to pass constants and secrets to your Appwrite Functions. You'll provide information like API keys and other
-secrets to integrations in this step. If you need an Appwrite API key, you'll be propted to generate one.
+Indobase Functions uses [environment variables](/docs/products/functions/develop#environment-variables)
+to pass constants and secrets to your Indobase Functions. You'll provide information like API keys and other
+secrets to integrations in this step. If you need an Indobase API key, you'll be propted to generate one.
 
 ## Connect {% #connect %}
 You can choose to clone a new repository to your GitHub profile or organization, or to connect to an existing repository.
@@ -39,12 +39,12 @@ If you choose connect to an existing repository, the function's code will be clo
 you specify under the **Branch** step.
 
 ## Repository {% #repository %}
-Configure the connected respository for your Appwrite Function. This will be the repository
+Configure the connected respository for your Indobase Function. This will be the repository
 holding the source code for your function. When the code in this repository is updated, new 
 deployments will be created.
 
 ## Branch {% #branch %}
-Production branch specifies the branch connected to your Appwrite Function. When new commits are made to
+Production branch specifies the branch connected to your Indobase Function. When new commits are made to
 this branch, a new deployment is automatically created and deployed.
 
 The root directory specifies the folder holding your function template's code.
@@ -63,7 +63,7 @@ A comment is made to your PR about the build, unless you enable **Silent mode**.
 * Node.js, Python, PHP, Dart, Node.js (TypeScript), Bun, Deno, Ruby, Kotlin, C++, .NET, Java, Swift, Go
 ---
 * Sync with Meilisearch
-* Syncs rows in an Appwrite database table to a Meilisearch index to add search-as-you-type search boxes to your app.
+* Syncs rows in an Indobase database table to a Meilisearch index to add search-as-you-type search boxes to your app.
 * Node.js, Python, PHP, Node.js (TypeScript), Bun, Deno, Ruby, Kotlin
 ---
 * WhatsApp with Vonage
@@ -83,7 +83,7 @@ A comment is made to your PR about the build, unless you enable **Silent mode**.
 * Node.js, Python, PHP
 ---
 * Sync with Algolia
-* Intuitive search bar for any data in Appwrite Databases.
+* Intuitive search bar for any data in Indobase Databases.
 * Node.js, Python, PHP
 ---
 * Discord Command Bot
@@ -99,7 +99,7 @@ A comment is made to your PR about the build, unless you enable **Silent mode**.
 * Node.js
 ---
 * Generate PDF
-* Generate PDFs programmatically with Appwrite Functions.
+* Generate PDFs programmatically with Indobase Functions.
 * Node.js
 ---
 * Payments with Stripe

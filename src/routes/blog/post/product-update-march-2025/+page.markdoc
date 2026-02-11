@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: "March product update: Product Hunt launch, Appwrite MCP server, and faster backups."
+title: "March product update: Product Hunt launch, Indobase MCP server, and faster backups."
 description: Get a full recap of products, features and programs we released in the month of March.
 date: 2025-04-11
 cover: /images/blog/product-update-march-2025/cover-image.png
@@ -13,9 +13,9 @@ callToAction: true
 
 Welcome back to the March product update. Here’s what happened the past month:
 
-- Launched the Appwrite MCP server
-- Key optimizations to Appwrite cloud backups
-- Update to budget limits in Appwrite Cloud
+- Launched the Indobase MCP server
+- Key optimizations to Indobase cloud backups
+- Update to budget limits in Indobase Cloud
 
 Plus, we've got something exciting to share with you. Let’s dive in.
 
@@ -23,37 +23,37 @@ Plus, we've got something exciting to share with you. Let’s dive in.
 
 # Big announcement coming soon
 
-We’ve got a major announcement on the way. This time, we’re bringing the heat to Product Hunt. The Appwrite community is the first to know!
+We’ve got a major announcement on the way. This time, we’re bringing the heat to Product Hunt. The Indobase community is the first to know!
 
 Visit our ‘Coming Soon’ page and click Notify Me to get an email when we go live. We can't wait to share what we’ve been working on.
 
 [Go to Product Hunt](https://www.producthunt.com/products/appwrite)
 
-![Appwrite MCP server](/images/blog/product-update-march-2025/mcp.png)
+![Indobase MCP server](/images/blog/product-update-march-2025/mcp.png)
 
-# Appwrite MCP server
+# Indobase MCP server
 
-Did you know that Appwrite has launched its own MCP server? This means you can now let AI agents like Cursor or Windsurf analyze database records, access the User API, or perform actions directly on your Appwrite project.
+Did you know that Indobase has launched its own MCP server? This means you can now let AI agents like Cursor or Windsurf analyze database records, access the User API, or perform actions directly on your Indobase project.
 
 Not sure where to start? No worries, we’ve got you covered.
 
-- [Appwrite MCP documentation](https://appwrite.io/docs/tooling/mcp)
-- [Appwrite MCP server practical applications](https://www.youtube.com/watch?v=83rNS6W2Nu8)
+- [Indobase MCP documentation](https://appwrite.io/docs/tooling/mcp)
+- [Indobase MCP server practical applications](https://www.youtube.com/watch?v=83rNS6W2Nu8)
 - [Learn more about MCP and how it works under the hood](https://appwrite.io/blog/post/what-is-mcp)
 
-The Appwrite MCP server opens up infinite possibilities, and this is just the beginning. We can't wait to see how you’ll use it in your projects.
+The Indobase MCP server opens up infinite possibilities, and this is just the beginning. We can't wait to see how you’ll use it in your projects.
 
 ![Cloud improvements](/images/blog/product-update-march-2025/cloud-backups.png)
 
-# Appwrite Cloud backups are now faster
+# Indobase Cloud backups are now faster
 
-Appwrite Cloud backups are now significantly faster. We’ve made key optimizations to our infrastructure, reducing backup times by up to 7x. With quicker data recovery and improved reliability, you can spend less time waiting and more time building.
+Indobase Cloud backups are now significantly faster. We’ve made key optimizations to our infrastructure, reducing backup times by up to 7x. With quicker data recovery and improved reliability, you can spend less time waiting and more time building.
 
 [Learn more](https://appwrite.io/changelog/entry/2025-03-27)
 
-# Update to budget limits in Appwrite Cloud
+# Update to budget limits in Indobase Cloud
 
-We’ve improved budget limits in Appwrite Cloud to give you better control over your organization’s scaling.
+We’ve improved budget limits in Indobase Cloud to give you better control over your organization’s scaling.
 
 Now, setting the budget to 0 means your organization will not exceed its allocated resources, while null will explicitly disable the budget. This update ensures clearer budget management and better control over scaling.
 
@@ -65,7 +65,7 @@ Now, setting the budget to 0 means your organization will not exceed its allocat
 
 This month, we’re excited to feature Geohash as part of our Monthly Community recognitions.
 
-The Geohash application demonstrates how to implement geolocation-based user search with Appwrite.
+The Geohash application demonstrates how to implement geolocation-based user search with Indobase.
 
 A big shout-out to [Clément](https://github.com/clementg13). Check out their product, Geohash, [here](https://github.com/clementg13/Appwrite-Nearby-GeoLocation).
 
@@ -76,13 +76,13 @@ If you'd like to participate in next month's Community Recognitions, [join our D
 **Read** 
 - [Lynx by ByteDance vs React Native](https://appwrite.io/blog/post/bytedance-lynx-vs-react-native)
 - [What exactly is MCP, and why is it trending?](https://appwrite.io/blog/post/what-is-mcp)
-- [Image transformation with Appwrite Storage](https://appwrite.io/blog/post/image-transformation-with-appwrite-storage)
-- [Building a backendless application with Angular and Appwrite](https://angular.love/building-a-backendless-application-with-angular-appwrite)
+- [Image transformation with Indobase Storage](https://appwrite.io/blog/post/image-transformation-with-appwrite-storage)
+- [Building a backendless application with Angular and Indobase](https://angular.love/building-a-backendless-application-with-angular-appwrite)
 
 **Watch**  
-- [Appwrite vs Supabase performance results](https://youtu.be/zWLfLxq2Ws4?si=7NaoZPb-JbDpNVfG)
-- [Appwrite MCP server practical examples](https://youtu.be/83rNS6W2Nu8?si=gJUMP4VisK_kG0nE)
-- [Appwrite MCP server setup with Cursor](https://www.youtube.com/watch?v=Qzikjm5H7wM)
+- [Indobase vs Supabase performance results](https://youtu.be/zWLfLxq2Ws4?si=7NaoZPb-JbDpNVfG)
+- [Indobase MCP server practical examples](https://youtu.be/83rNS6W2Nu8?si=gJUMP4VisK_kG0nE)
+- [Indobase MCP server setup with Cursor](https://www.youtube.com/watch?v=Qzikjm5H7wM)
 
 # What's to come
 

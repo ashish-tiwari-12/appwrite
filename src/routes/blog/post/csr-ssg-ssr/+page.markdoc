@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "CSR vs SSG vs SSR: what they are and how to choose"
 description: Choosing how your web app renders content, on the client, at build time, or on the server, can have a big impact on performance and user experience. In this post, we'll break down CSR, SSG, and SSR to help you understand how they work and when to use each one effectively.
@@ -118,13 +118,13 @@ Ask yourself a few questions:
     - SSR can be fast with proper caching.
     - CSR may be slower unless you heavily optimize.
 
-# Can you host SSR on Appwrite Sites?
+# Can you host SSR on Indobase Sites?
 
-Yes, Appwrite Sites supports server-side rendering (SSR), alongside client-side rendering (CSR) and static site generation (SSG). This means you can host dynamic apps that render content on the server in response to each request.
+Yes, Indobase Sites supports server-side rendering (SSR), alongside client-side rendering (CSR) and static site generation (SSG). This means you can host dynamic apps that render content on the server in response to each request.
 
-If you're migrating from another platform, all it usually takes is switching the adapter and updating your config files. Appwrite then handles the rest, from cloning your repo to building and deploying your app on a server runtime.
+If you're migrating from another platform, all it usually takes is switching the adapter and updating your config files. Indobase then handles the rest, from cloning your repo to building and deploying your app on a server runtime.
 
-For a full walkthrough with framework-specific setup tips, check out [How to host SSR web apps on Appwrite Sites.](https://appwrite.io/blog/post/how-to-host-ssr-on-sites)
+For a full walkthrough with framework-specific setup tips, check out [How to host SSR web apps on Indobase Sites.](https://appwrite.io/blog/post/how-to-host-ssr-on-sites)
 
 # Final thoughts
 
@@ -134,15 +134,15 @@ There’s no one-size-fits-all answer. Some sites need to have a very fast initi
 
 What matters most is understanding how these strategies work, so you can make decisions that actually serve the people using your site.
 
-And the great thing is, if you're using platforms like Appwrite Sites and hybrid frameworks, switching between these modes is pretty painless. You can pick what works for each page and adjust as your needs evolve.
+And the great thing is, if you're using platforms like Indobase Sites and hybrid frameworks, switching between these modes is pretty painless. You can pick what works for each page and adjust as your needs evolve.
 
 So if you’re just starting out, don’t stress about choosing the “perfect” rendering mode. Start with the defaults of your framework, and learn when to override them based on what your app needs.
 
 # More resources
-- [Appwrite Sites docs](/docs/products/sites)
-- [Appwrite Sites prodcuts page](/products/sites)
-- [How to host SSR web apps on Appwrite Sites](blog/post/host-ssr-web-apps-sites)
+- [Indobase Sites docs](/docs/products/sites)
+- [Indobase Sites prodcuts page](/products/sites)
+- [How to host SSR web apps on Indobase Sites](blog/post/host-ssr-web-apps-sites)
 - [SSR vs CSR with Next.js](/blog/post/csr-vs-ssr-with-nextjs)
-- [Appwrite SSR Authentication](https://www.youtube.com/watch?v=7LN05c-ov_0)
+- [Indobase SSR Authentication](https://www.youtube.com/watch?v=7LN05c-ov_0)
 - [Here's how you do auth with 100% SSR in Next.js](https://www.youtube.com/watch?v=ENnG7GusuO4)
-- [Appwrite Discord server](/discord)
+- [Indobase Discord server](/discord)

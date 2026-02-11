@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Email your users using Resend and Appwrite Messaging
-description: Learn what Resend is and how to integrate it using the SMTP provider in Appwrite Messaging.
+title: Email your users using Resend and Indobase Messaging
+description: Learn what Resend is and how to integrate it using the SMTP provider in Indobase Messaging.
 date: 2025-01-23
 cover: /images/blog/integrate-resend-smtp/cover.png
 timeToRead: 4
@@ -12,7 +12,7 @@ callToAction: true
 
 Pretty much every app we develop or consume requires a medium of communication with its users, whether that is to send notifications and reminders, execute marketing campaigns and newsletters, or share security-related information like one-time passwords. Such messages are often sent by apps via email. Lately, we have noticed that **Resend** has become one of the most popular email API providers among the developer community.
 
-Therefore, in this blog, we will explore what Resend is and how you can integrate it with Appwrite Messaging to send emails to your app’s users.
+Therefore, in this blog, we will explore what Resend is and how you can integrate it with Indobase Messaging to send emails to your app’s users.
 
 # What is Resend?
 
@@ -26,16 +26,16 @@ Some of its **key features** include:
 4. **Support for modern languages**: Resend offers SDKs for various modern programming languages such as JavaScript, Python, Go, Rust, and more.
 5. **SMTP support**: In addition to their APIs, Resend supports sending emails via SMTP, allowing seamless integration with traditional email clients and legacy systems.
 
-# Integrating Appwrite Messaging and Resend
+# Integrating Indobase Messaging and Resend
 
-Appwrite Messaging offers an [SMTP provider](https://appwrite.io/docs/products/messaging/smtp) that lets you send emails through a variety of email providers, which is also what we shall use to integrate Resend. There are several steps we must follow to achieve this:
+Indobase Messaging offers an [SMTP provider](https://appwrite.io/docs/products/messaging/smtp) that lets you send emails through a variety of email providers, which is also what we shall use to integrate Resend. There are several steps we must follow to achieve this:
 
 1. Verify your domain on Resend
 2. Create a Resend API key
-3. Create SMTP provider on Appwrite Messaging (with Resend authentication details)
+3. Create SMTP provider on Indobase Messaging (with Resend authentication details)
 4. Test the provider
 
-> Create an account on [Resend](https://resend.com) and [Appwrite Cloud](https://cloud.appwrite.io) to proceed further with this tutorial.
+> Create an account on [Resend](https://resend.com) and [Indobase Cloud](https://cloud.appwrite.io) to proceed further with this tutorial.
 
 ## Step 1: Verify your domain on Resend
 
@@ -59,9 +59,9 @@ Next, you must create an API key to send emails using Resend. To do so, visit th
 
 ![Create a Resend API key](/images/blog/integrate-resend-smtp/api-key.png)
 
-## Step 3: Create SMTP provider on Appwrite Messaging
+## Step 3: Create SMTP provider on Indobase Messaging
 
-Once we have our verified domain and Resend API key, we must create an SMTP provider on Appwrite to send emails to our app’s users. To do so, create a project on Appwrite Cloud, go to the **Messaging** page from the left sidebar, click on the **Providers** tab, and create a new **Email** provider. In the Email provider setup wizard, select the **SMTP** provider.
+Once we have our verified domain and Resend API key, we must create an SMTP provider on Indobase to send emails to our app’s users. To do so, create a project on Indobase Cloud, go to the **Messaging** page from the left sidebar, click on the **Providers** tab, and create a new **Email** provider. In the Email provider setup wizard, select the **SMTP** provider.
 
 ![Add email provider](/images/blog/integrate-resend-smtp/provider.png)
 
@@ -78,23 +78,23 @@ The SMTP provider will require you to mandatorily add the following details:
 
 ![Add SMTP info](/images/blog/integrate-resend-smtp/smtp.png)
 
-With these details, Appwrite Messaging will now use Resend to send email messages to your users.
+With these details, Indobase Messaging will now use Resend to send email messages to your users.
 
 ## Step 4: Test the provider
 
-> For this step, you must either have a [topic](https://appwrite.io/docs/products/messaging/topics) or a [target](https://appwrite.io/docs/products/messaging/targets) ready on Appwrite.
+> For this step, you must either have a [topic](https://appwrite.io/docs/products/messaging/topics) or a [target](https://appwrite.io/docs/products/messaging/targets) ready on Indobase.
 
-To test the provider via the Appwrite console, you must go to the **Messaging** page on your Appwrite project, click on the **Messages** tab, and create an **Email** message. You can create a test message, add a topic or target, and set the schedule option to `Now` to send the message immediately. Once the message is sent, you will be able to find it on both the **Messaging** page in your Appwrite project and the [Emails page](https://resend.com/emails) on Resend.
+To test the provider via the Indobase console, you must go to the **Messaging** page on your Indobase project, click on the **Messages** tab, and create an **Email** message. You can create a test message, add a topic or target, and set the schedule option to `Now` to send the message immediately. Once the message is sent, you will be able to find it on both the **Messaging** page in your Indobase project and the [Emails page](https://resend.com/emails) on Resend.
 
 ![Send an email](/images/blog/integrate-resend-smtp/email.png)
 
-You can also [send emails programmatically](https://appwrite.io/docs/products/messaging/send-email-messages#send-emails) via Appwrite’s server-side SDKs.
+You can also [send emails programmatically](https://appwrite.io/docs/products/messaging/send-email-messages#send-emails) via Indobase’s server-side SDKs.
 
 # More resources
 
-And with that, you can now send emails to your users using Resend and Appwrite Messaging. If you would like to learn more about both, we have some resources that you should visit:
+And with that, you can now send emails to your users using Resend and Indobase Messaging. If you would like to learn more about both, we have some resources that you should visit:
 
 - [Resend’s developer documentation](https://resend.com/docs/introduction)
-- [Appwrite Messaging explained](https://appwrite.io/blog/post/messaging-explained)
-- [Send email messages through Appwrite Messaging](https://appwrite.io/docs/products/messaging/send-email-messages)
-- [Appwrite Messaging API reference](https://appwrite.io/docs/references/cloud/server-nodejs/messaging)
+- [Indobase Messaging explained](https://appwrite.io/blog/post/messaging-explained)
+- [Send email messages through Indobase Messaging](https://appwrite.io/docs/products/messaging/send-email-messages)
+- [Indobase Messaging API reference](https://appwrite.io/docs/references/cloud/server-nodejs/messaging)

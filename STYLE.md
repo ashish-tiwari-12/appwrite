@@ -1,13 +1,13 @@
 # Documentation contributing guide
 
-Read this document carefully before making PRs to the Appwrite Website repo.
+Read this document carefully before making PRs to the Indobase Website repo.
 
 ## What goes in docs?
 
-The Appwrite documentation is meant to provide general guidance that's:
+The Indobase documentation is meant to provide general guidance that's:
 
 - Unopinionated
-- Focused on the correct use of Appwrite product
+- Focused on the correct use of Indobase product
 - Includes examples for all relevant and applicable SDKs
 - Agnostic to the user's implementation and stack.
 
@@ -15,16 +15,16 @@ Examples of things not fit for docs, and better as a blog or video:
 
 - General programming advice
 - Opinionated implementation patterns like MVVM, factory methods, etc.
-- Examples that only include a select subset of Appwrite SDKs.
-- Examples that do not work for all developers using Appwrite, but specific to Appwrite + technology.
+- Examples that only include a select subset of Indobase SDKs.
+- Examples that do not work for all developers using Indobase, but specific to Indobase + technology.
 
-Note that the tutorials and blogs available on the Appwrite blog and docs are meant for these types of information.
+Note that the tutorials and blogs available on the Indobase blog and docs are meant for these types of information.
 
 ## Documentation structure
 
-The Appwrite docs is split into sections, each with its intended purpose and content.
+The Indobase docs is split into sections, each with its intended purpose and content.
 
-Appwrite's navigation increases in complexity from top down. We expect users to view links later in navigation later in their development journey.
+Indobase's navigation increases in complexity from top down. We expect users to view links later in navigation later in their development journey.
 
 Introduction Section:
 

@@ -1,15 +1,15 @@
----
+﻿---
 layout: article
 title: Domains
-description: Execute Appwrite Functions through domains using standard HTTP GET, POST, or other request methods to serve static, JSON, HTML, or other content.
+description: Execute Indobase Functions through domains using standard HTTP GET, POST, or other request methods to serve static, JSON, HTML, or other content.
 ---
 
 Each deployed function can have its own domain, generated or developer defined.
-You can use this domain to execute Appwrite Functions through HTTP methods. 
+You can use this domain to execute Indobase Functions through HTTP methods. 
 You can use common practices like using paths, query parameters, headers, HTTP methods, formdata, 
-and all the typical HTTP concepts to implement Appwrite Functions.
+and all the typical HTTP concepts to implement Indobase Functions.
 
-Appwrite generates TLS certificates to enforce HTTPS on all Appwrite Functions domains, generated or custom.
+Indobase generates TLS certificates to enforce HTTPS on all Indobase Functions domains, generated or custom.
 These domains are safe to use and access in production.
 
 {% arrow_link href="/docs/products/functions/develop" %}
@@ -18,8 +18,8 @@ Learn about Function development
 
 # Generated domains {% #generated-domains %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
-1. Under the **Domains** tab, you'll find the generated domain from Appwrite.
+1. In the Indobase Console's sidebar, click **Functions**.
+1. Under the **Domains** tab, you'll find the generated domain from Indobase.
 
 The domain usually has this format.
 ```bash
@@ -28,7 +28,7 @@ https://64d4d22db370ae41a32e.appwrite.global
 
 # Add a custom domain {% #add-a-custom-domain %}
 
-1. Navigate to the Appwrite Console's **Functions** page.
+1. Navigate to the Indobase Console's **Functions** page.
 2. Navigate to the **Domains** tab.
 3. Click on **Create domain**.
 4. Input your domain and click **Next**.

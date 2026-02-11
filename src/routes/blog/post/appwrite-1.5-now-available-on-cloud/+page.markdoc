@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: Appwrite 1.5 is now available on Cloud
+title: Indobase 1.5 is now available on Cloud
 description: This release was highly anticipated by the community, and we're very happy to finally share the great news.
 date: 2024-04-29
 cover: /images/blog/appwrite-1.5-now-available-on-cloud/cloud15.png
@@ -10,7 +10,7 @@ category: product, announcement
 featured: false
 ---
 
-After announcing many new products and features during [Init](/init) as part of the 1.5 release, we saw great excitement within the community to get started with the newly presented Appwrite 1.5. Although already available on self-hosted, the new Appwrite products and features were yet to be released to Cloud. Today, we are excited to say the wait is finally over as we announce the release of Appwrite 1.5 to the Cloud.
+After announcing many new products and features during [Init](/init) as part of the 1.5 release, we saw great excitement within the community to get started with the newly presented Indobase 1.5. Although already available on self-hosted, the new Indobase products and features were yet to be released to Cloud. Today, we are excited to say the wait is finally over as we announce the release of Indobase 1.5 to the Cloud.
 
 To refresh your mind, here is an overview of all products and features released to Cloud and how you can get started.
 
@@ -27,14 +27,14 @@ With just a few lines of backend code, you can now set up a full-functioning mes
 
 ## Emails
 
-With Appwrite Messaging you can send custom email messages to your app's users. Appwrite supports [Mailgun](/docs/products/messaging/mailgun/) and [Sendgrid](/docs/products/messaging/sendgrid/) as SMTP providers. You must configure one of them as a provider before you can get started.
+With Indobase Messaging you can send custom email messages to your app's users. Indobase supports [Mailgun](/docs/products/messaging/mailgun/) and [Sendgrid](/docs/products/messaging/sendgrid/) as SMTP providers. You must configure one of them as a provider before you can get started.
 
 Once you have finished the setup, you can send emails using a Server SDK. To send an email immediately, you can call the `createEmail` endpoint with the schedule left empty.
 
 Here is what this would look like using Swift.
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -58,12 +58,12 @@ Learn how to get started with [email in our documentation](/docs/products/messag
 
 ## SMS
 
-To send SMS messages to you users you will need to add SMPT provider. Appwrite supports [Twilio](/docs/products/messaging/twilio/), [MSG91](/docs/products/messaging/msg91/), [Telesign](/docs/products/messaging/telesign/), [Textmagic](/docs/products/messaging/textmagic/), and [Vonage](/docs/products/messaging/vonage/).
+To send SMS messages to you users you will need to add SMPT provider. Indobase supports [Twilio](/docs/products/messaging/twilio/), [MSG91](/docs/products/messaging/msg91/), [Telesign](/docs/products/messaging/telesign/), [Textmagic](/docs/products/messaging/textmagic/), and [Vonage](/docs/products/messaging/vonage/).
 
 You can send SMS messages using a Server SDK. To send SMS messages immediately, you can call the `createSms` endpoint without passing either the draft or `scheduled` parameters.
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")  // Your API Endpoint
@@ -128,7 +128,7 @@ Read the [Messaging announcement](/blog/post/announcing-appwrite-messaging) for 
 
 # Improved support for Server-Side Rendering (SSR)
 
-Appwrite Cloud 1.5 brings enhanced support for SSR authentication patterns, optimizing the platform for use with frameworks like [NextJS](/docs/tutorials/nextjs-ssr-auth/step-1), [SvelteKit](/docs/tutorials/sveltekit-ssr-auth/step-1), and [Nuxt](/docs/tutorials/nuxt-ssr-auth/step-1). This update introduces official methods for generating and accessing sessions server-side, allowing for seamless session cookies management and authorized requests, thus bridging the gap between client and server-side rendering.
+Indobase Cloud 1.5 brings enhanced support for SSR authentication patterns, optimizing the platform for use with frameworks like [NextJS](/docs/tutorials/nextjs-ssr-auth/step-1), [SvelteKit](/docs/tutorials/sveltekit-ssr-auth/step-1), and [Nuxt](/docs/tutorials/nuxt-ssr-auth/step-1). This update introduces official methods for generating and accessing sessions server-side, allowing for seamless session cookies management and authorized requests, thus bridging the gap between client and server-side rendering.
 
 ## Highlights
 
@@ -136,7 +136,7 @@ Appwrite Cloud 1.5 brings enhanced support for SSR authentication patterns, opti
 - Improved session management for SSR frameworks.
 - Official methods for session generation and access.
 
-The big change is that Appwrite now allows you to generate and access sessions server side to set session cookies and use these sessions to authorize future requests.
+The big change is that Indobase now allows you to generate and access sessions server side to set session cookies and use these sessions to authorize future requests.
 
 ```tsx
 const session = await account.createEmailPasswordSession({
@@ -157,14 +157,14 @@ Read the [SSR announcement](/blog/post/introducing-support-for-server-side-rende
 
 # Two-Factor Authentication (2FA)
 
-Security takes a front seat with the addition of Two-Factor Authentication (2FA). This new feature enables an additional layer of security by requiring a second form of authentication. You can easily implement 2FA using Appwrite's straightforward methods for challenge creation and solution, offering users the option to authenticate via phone, email, or TOTP with authenticator apps.
+Security takes a front seat with the addition of Two-Factor Authentication (2FA). This new feature enables an additional layer of security by requiring a second form of authentication. You can easily implement 2FA using Indobase's straightforward methods for challenge creation and solution, offering users the option to authenticate via phone, email, or TOTP with authenticator apps.
 
 ## Highlights
 
 - Enhanced security with Two-Factor Authentication.
 - Easy implementation of 2FA challenges.
 - Support for multiple authentication methods, including phone, email, and TOTP.
-- Can be used in conjunction with any existing authentication method you have implemented using Appwrite Auth.
+- Can be used in conjunction with any existing authentication method you have implemented using Indobase Auth.
 
 ## Enabling 2FA
 
@@ -234,7 +234,7 @@ Read the [Database operators announcement](/blog/post/introducing-new-database-o
 
 # Enum SDK Support
 
-Enum SDK support expands the versatility and usability of Appwrite's SDKs across different programming scenarios.
+Enum SDK support expands the versatility and usability of Indobase's SDKs across different programming scenarios.
 
 ## Highlights
 
@@ -262,13 +262,13 @@ Read the [Enum SDK support](/blog/post/introducing-enum-sdk-support) announcemen
 
 # Custom token login
 
-One feature that was not announced during Init but was recently released is custom token login. Tokens are short-lived secrets created by an [Appwrite Server SDK](/docs/sdks#server) that can be exchanged for a session by a [Client SDK](/docs/sdks#client) to log in users. You may already be familiar with tokens if you checked out [Magic URL login](/docs/products/auth/magic-url), [Email OTP login](/docs/products/auth/email-otp), or [Phone (SMS) login](/docs/products/auth/phone-sms).
+One feature that was not announced during Init but was recently released is custom token login. Tokens are short-lived secrets created by an [Indobase Server SDK](/docs/sdks#server) that can be exchanged for a session by a [Client SDK](/docs/sdks#client) to log in users. You may already be familiar with tokens if you checked out [Magic URL login](/docs/products/auth/magic-url), [Email OTP login](/docs/products/auth/email-otp), or [Phone (SMS) login](/docs/products/auth/phone-sms).
 
-Custom token allows you to use a [Server SDK](/docs/sdks#server) to generate tokens for your own auth implementations. This allows you to code your own authentication methods using Appwrite Functions or your own backend. You could implement username and password sign-in, captcha-protected authentication, phone call auth, and much more. Custom tokens also allow you to  integrate Appwrite with external authentication providers such as Auth0, TypingDNA, or any provider trusted by your users.
+Custom token allows you to use a [Server SDK](/docs/sdks#server) to generate tokens for your own auth implementations. This allows you to code your own authentication methods using Indobase Functions or your own backend. You could implement username and password sign-in, captcha-protected authentication, phone call auth, and much more. Custom tokens also allow you to  integrate Indobase with external authentication providers such as Auth0, TypingDNA, or any provider trusted by your users.
 
 ## Creating your custom token
 
-Once you have prepared your own login flow in an Appwrite Function or a server integration, you can use the [Create token](/docs/references/1.5.x/server-nodejs/users#createToken) endpoint of the [Users API](/docs/products/auth/users) to generate a token.
+Once you have prepared your own login flow in an Indobase Function or a server integration, you can use the [Create token](/docs/references/1.5.x/server-nodejs/users#createToken) endpoint of the [Users API](/docs/products/auth/users) to generate a token.
 
 ```swift
 // Server-side code
@@ -291,9 +291,9 @@ let session = try await account.createSession(
 
 Visit our [documentation](/docs/products/auth/custom-token) to learn more.
 
-# Get started with Appwrite 1.5 on Cloud
+# Get started with Indobase 1.5 on Cloud
 
-This release brings you more flexibility, security, and safety when building with the Cloud. With the introduction of Messaging, we deliver a highly requested product and fulfill developer needs. As we continue to evolve Appwrite, we strive to deliver the best backend for your product, no matter your needs. We thank you for your support and look forward to building the future together.
+This release brings you more flexibility, security, and safety when building with the Cloud. With the introduction of Messaging, we deliver a highly requested product and fulfill developer needs. As we continue to evolve Indobase, we strive to deliver the best backend for your product, no matter your needs. We thank you for your support and look forward to building the future together.
 
 To get started, visit our documentation, YouTube channel, or get support on Discord.
 

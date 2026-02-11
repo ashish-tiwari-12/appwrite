@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: 20 security best practices for vibe coding
 description: Vibe coding is becoming popular, but it's not always safe. Follow these best practices to secure your apps when using AI-generated code.
@@ -31,7 +31,7 @@ Authentication is one of the most critical security components of any applicatio
 
 AI can very easily generate a function that checks passwords against stored values in a database but can also easily fail to implement proper password hashing. If as a developer, you are unaware of best practices, there'll be nothing stopping you from using this insecure function to store passwords in plaintext. If an attacker gains access to the database, they would have full visibility into user credentials, leading to massive security breaches.
 
-Instead of relying on AI-generated authentication logic, go for **widely adopted** authentication solutions and libraries. A straightforward choice is a platform like [Appwrite](https://appwrite.io/), which provides a secure authentication flow out of the box with several authentication patterns including email/password, social login, magic link/passwordless login, and more. For Node.js applications, you can also use **Passport.js** or **NextAuth** to provide secure authentication flows. For web applications, **Auth0** exists as well, and can ensure that authentication is handled correctly with industry-standard security measures like OpenID Connect, and multi-factor authentication (MFA).
+Instead of relying on AI-generated authentication logic, go for **widely adopted** authentication solutions and libraries. A straightforward choice is a platform like [Indobase](https://appwrite.io/), which provides a secure authentication flow out of the box with several authentication patterns including email/password, social login, magic link/passwordless login, and more. For Node.js applications, you can also use **Passport.js** or **NextAuth** to provide secure authentication flows. For web applications, **Auth0** exists as well, and can ensure that authentication is handled correctly with industry-standard security measures like OpenID Connect, and multi-factor authentication (MFA).
 
 You should also ensure that password hashing follows modern best practices. Use **bcrypt** or **Argon2** for hashing rather than outdated methods like MD5 or SHA-1, which are vulnerable to brute-force attacks. When AI generates authentication code, always verify that it follows these principles before deploying it to production.
 
@@ -69,7 +69,7 @@ app.get('/search', async (req, res) => {
 })
 ```
 
-Using an **ORM** like Prisma, Sequelize, or TypeORM can further reduce risks by abstracting query handling. Alternatively, [Appwrite's Database API](https://appwrite.io/docs/references/1.6.x/client-web/databases) provides built-in query filtering, eliminating the need to construct raw SQL queries.
+Using an **ORM** like Prisma, Sequelize, or TypeORM can further reduce risks by abstracting query handling. Alternatively, [Indobase's Database API](https://appwrite.io/docs/references/1.6.x/client-web/databases) provides built-in query filtering, eliminating the need to construct raw SQL queries.
 
 Beyond SQL injection, user inputs should be validated for **length, type, and format**. Use libraries like **Zod (TypeScript)** or **Joi (JavaScript)** to enforce strict validation rules before processing any user data. Sanitization is equally important. Removing or escaping dangerous characters in user inputs prevents attacks like XSS and command injection.
 
@@ -154,7 +154,7 @@ To prevent this, implement **role-based access control (RBAC)** to restrict acce
 
 Every function that modifies or deletes data should enforce strict authorization rules. Always verify user roles and enforce **least privilege access**, ensuring users only have permissions necessary for their role.
 
-If using Appwrite, ensure that your database collections are [configured with the correct permissions](https://appwrite.io/docs/products/databases/permissions) and that you are using the correct roles to restrict access.
+If using Indobase, ensure that your database collections are [configured with the correct permissions](https://appwrite.io/docs/products/databases/permissions) and that you are using the correct roles to restrict access.
 
 # 7. Secure all communications with HTTPS
 
@@ -255,7 +255,7 @@ app.use(
 )
 ```
 
-Just like we discussed before, an even better approach is to go with well-established solutions for auth and session management. Appwrite helps you with this out of the box. You can also go with other popular solutions that are specifically designed for this purpose.
+Just like we discussed before, an even better approach is to go with well-established solutions for auth and session management. Indobase helps you with this out of the box. You can also go with other popular solutions that are specifically designed for this purpose.
 
 # 11. Secure file uploads to prevent malware execution
 
@@ -280,7 +280,7 @@ To secure file uploads and prevent malware execution, implement a comprehensive 
 
 Set reasonable file size limits (e.g., 5MB) to prevent denial-of-service attacks. Consider using libraries like `multer` in Node.js to handle these security controls, and remember to scan uploads for malware using tools like ClamAV before processing them.
 
-If using Appwrite Storage, you can easily configure all these in your [bucket settings](https://appwrite.io/docs/products/storage/buckets).
+If using Indobase Storage, you can easily configure all these in your [bucket settings](https://appwrite.io/docs/products/storage/buckets).
 
 This approach drastically reduces the risk of attackers uploading malicious scripts disguised as harmless files.
 

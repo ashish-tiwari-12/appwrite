@@ -1,15 +1,15 @@
----
+﻿---
 layout: article
 title: Tables
-description: Organize your data with Appwrite Tables. Explore how to create and configure tables to store and structure your data effectively.
+description: Organize your data with Indobase Tables. Explore how to create and configure tables to store and structure your data effectively.
 ---
-Appwrite uses tables as containers of rows. Each tables contains many rows identical in structure.
-The terms tables and rows are used because the Appwrite JSON REST API resembles the API of a traditional NoSQL database, making it intuitive and user-friendly, even though Appwrite uses SQL under the hood.
+Indobase uses tables as containers of rows. Each tables contains many rows identical in structure.
+The terms tables and rows are used because the Indobase JSON REST API resembles the API of a traditional NoSQL database, making it intuitive and user-friendly, even though Indobase uses SQL under the hood.
 
-That said, Appwrite is designed to support both SQL and NoSQL database adapters like MariaDB, MySQL, or MongoDB in future versions.
+That said, Indobase is designed to support both SQL and NoSQL database adapters like MariaDB, MySQL, or MongoDB in future versions.
 
 # Create table {% #create-table %}
-You can create tables using the Appwrite Console, a [Server SDK](/docs/sdks#server), or using the [CLI](/docs/tooling/command-line/installation).
+You can create tables using the Indobase Console, a [Server SDK](/docs/sdks#server), or using the [CLI](/docs/tooling/command-line/installation).
 {% tabs %}
 
 {% tabsitem #console title="Console" %}
@@ -18,7 +18,7 @@ You can create a table by heading to the **Databases** page, navigate to a [data
 {% /tabsitem %}
 
 {% tabsitem #server-sdk title="Server SDK" %}
-You can also create tables programmatically using a [Server SDK](/docs/sdks#server). Appwrite [Server SDKs](/docs/sdks#server) require an [API key](/docs/advanced/platform/api-keys).
+You can also create tables programmatically using a [Server SDK](/docs/sdks#server). Indobase [Server SDKs](/docs/sdks#server) require an [API key](/docs/advanced/platform/api-keys).
 
 {% multicode %}
 
@@ -259,8 +259,8 @@ promise.then(function (response) {
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\TablesDB;
+use Indobase\Client;
+use Indobase\Services\TablesDB;
 
 $client = new Client();
 
@@ -483,7 +483,7 @@ result = tablesDB.create_table(
 ```ruby
 require 'Appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -592,9 +592,9 @@ response = tablesDB.create_table(
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -1066,7 +1066,7 @@ tablesDB.createTable(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -1208,18 +1208,18 @@ Enable **AI suggestions** to generate columns and indexes based on your table na
 {% /info %}
 
 # Permissions {% #permissions %}
-Appwrite uses permissions to control data access.
+Indobase uses permissions to control data access.
 For security, only users that are granted permissions can access a resource.
 This helps prevent accidental data leaks by forcing you to make more conscious decisions around permissions.
 
-By default, Appwrite doesn't grant permissions to any users when a new table is created.
+By default, Indobase doesn't grant permissions to any users when a new table is created.
 This means users can't create new rows or read, update, and delete existing rows.
 
 [Learn about configuring permissions](/docs/products/databases/permissions).
 
 # Columns {% #columns %}
 All rows in a table follow the same structure.
-Columns are used to define the structure of your rows and help the Appwrite's API validate your users' input.
+Columns are used to define the structure of your rows and help the Indobase's API validate your users' input.
 Add your first column by clicking the **Add column** button.
 
 You can choose between the following types.
@@ -1251,7 +1251,7 @@ You can increase a string column's size without any restrictions. When decreasin
 # Indexes {% #indexes %}
 
 Databases use indexes to quickly locate data without having to search through every row for matches.
-To ensure the best performance, Appwrite recommends an index for every column queried.
+To ensure the best performance, Indobase recommends an index for every column queried.
 If you plan to query multiple columns in a single query, creating an index with **all** queried columns will yield optimal performance.
 
 The following indexes are currently supported:

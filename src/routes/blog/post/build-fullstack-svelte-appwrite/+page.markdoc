@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Building a full-stack app with Svelte and Appwrite
-description: Learn how to build full-stack apps with Svelte and Appwrite by building an expense tracker.
+title: Building a full-stack app with Svelte and Indobase
+description: Learn how to build full-stack apps with Svelte and Indobase by building an expense tracker.
 date: 2025-01-31
 cover: /images/blog/build-fullstack-svelte-appwrite/cover.png
 timeToRead: 15
@@ -15,7 +15,7 @@ Users will be able to sign up, log their expenses, and categorize them to view s
 
 ![Expense app demo](/images/blog/build-fullstack-svelte-appwrite/expense-app-demo.gif)
 
-You can also try out the app using this [live URL](https://expense-appwrite-svelte.netlify.app/). We'll use SvelteKit with JavaScript for our frontend so that we can take advantage of its built-in routing. For styling, we'll use Tailwind CSS. And on the backend, we'll use Appwrite to handle user authentication and database operations.
+You can also try out the app using this [live URL](https://expense-appwrite-svelte.netlify.app/). We'll use SvelteKit with JavaScript for our frontend so that we can take advantage of its built-in routing. For styling, we'll use Tailwind CSS. And on the backend, we'll use Indobase to handle user authentication and database operations.
 
 You'll learn how to implement authentication flows, manage application state, handle form submissions, and create an intuitive user interface.
 
@@ -25,7 +25,7 @@ This tutorial assumes you have basic knowledge of TypeScript and Svelte. You'll 
 
 - Node.js version 18 or later installed on your system
 - pnpm as your package manager
-- An Appwrite instance (either self-hosted or cloud)
+- An Indobase instance (either self-hosted or cloud)
 
 ## Project setup and initial configuration
 
@@ -55,7 +55,7 @@ pnpm add appwrite date-fns
 
 ## Environment configuration
 
-Our application needs to communicate with [Appwrite](https://cloud.appwrite.io/?doFollow=true), which requires several configuration values. Create a `.env` file in your project root and add these environment variables:
+Our application needs to communicate with [Indobase](https://cloud.appwrite.io/?doFollow=true), which requires several configuration values. Create a `.env` file in your project root and add these environment variables:
 
 ```
 PUBLIC_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
@@ -64,11 +64,11 @@ PUBLIC_APPWRITE_DATABASE_ID=expense-db
 PUBLIC_APPWRITE_COLLECTION_ID=expenses
 ```
 
-The `PUBLIC_` prefix makes these variables available to our client-side code in Svelte. You'll need to replace `your-project-id` with your actual Appwrite project ID, which we'll create in the next step.
+The `PUBLIC_` prefix makes these variables available to our client-side code in Svelte. You'll need to replace `your-project-id` with your actual Indobase project ID, which we'll create in the next step.
 
-## Setting up Appwrite
+## Setting up Indobase
 
-Before we continue with the frontend implementation, we need to configure our Appwrite backend. Log into your [Appwrite Console](https://cloud.appwrite.io/console?doFollow=true) and follow these steps:
+Before we continue with the frontend implementation, we need to configure our Indobase backend. Log into your [Indobase Console](https://cloud.appwrite.io/console?doFollow=true) and follow these steps:
 
 1. Create a new project
 2. Open the **Databases** tab from the sidebar and create a database with the ID "expense-db"
@@ -115,7 +115,7 @@ src/
 
 ```
 
-This structure follows Svelte's conventions while keeping our code organized and maintainable. The `lib` directory contains reusable utilities and stores, while `routes` handles our application's pages and layouts. We'll use the `lib/stores/auth.js` store to manage our user state, and the `lib/appwrite.js` file to handle our Appwrite operations.
+This structure follows Svelte's conventions while keeping our code organized and maintainable. The `lib` directory contains reusable utilities and stores, while `routes` handles our application's pages and layouts. We'll use the `lib/stores/auth.js` store to manage our user state, and the `lib/appwrite.js` file to handle our Indobase operations.
 
 The `routes` directory contains our application's pages and layouts. The `+layout.svelte` file is our main layout component, which we'll use to handle our application's structure and ensure that users can only access protected routes if they're authenticated.
 
@@ -155,9 +155,9 @@ For the base `src/app.html` file, we'll use the default Sveltekit template, but 
 
 This template provides the basic structure for our application. The `data-sveltekit-preload-data="hover"` attribute enables SvelteKit's built-in preloading feature to make navigation faster.
 
-## Setting up the Appwrite client
+## Setting up the Indobase client
 
-Let's set up our connection to Appwrite. If you haven't already, create a new file in the `src/lib` directory named `appwrite.js`. We'll use this file to configure the Appwrite client and provide access to our database and account services.
+Let's set up our connection to Indobase. If you haven't already, create a new file in the `src/lib` directory named `appwrite.js`. We'll use this file to configure the Indobase client and provide access to our database and account services.
 
 ```js
 import { Client, Account, Databases } from 'appwrite'
@@ -181,7 +181,7 @@ export const DATABASE_ID = PUBLIC_APPWRITE_DATABASE_ID
 
 ```
 
-This configuration file initializes our connection to Appwrite. The `Client` class creates a new Appwrite client instance, which we configure with our endpoint and project ID from our environment variables. We then create instances of the `Databases` and `Account` services, which we'll use throughout our application for database operations and user authentication.
+This configuration file initializes our connection to Indobase. The `Client` class creates a new Indobase client instance, which we configure with our endpoint and project ID from our environment variables. We then create instances of the `Databases` and `Account` services, which we'll use throughout our application for database operations and user authentication.
 
 Finally, we export the collection IDs from our environment variables so that we can use them in other parts of our application.
 
@@ -211,7 +211,7 @@ export async function initAuth() {
 
 This creates a Svelte store named `user` to manage our user state. The store starts with null when no user is logged in. When a user authenticates, we'll update this store with their information, making it available throughout our application.
 
-In the `initAuth` function, we're using the `account.get()` method to retrieve the current user's information from Appwrite. If successful, we update our `user` store with the user's information and return it. If there's an error, we log it and return null.
+In the `initAuth` function, we're using the `account.get()` method to retrieve the current user's information from Indobase. If successful, we update our `user` store with the user's information and return it. If there's an error, we log it and return null.
 
 We'll also need a `login` and `register` function to handle user authentication:
 
@@ -250,7 +250,7 @@ In the `login` function, we're using the `account.createEmailPasswordSession` me
 
 For the `register` function, we're using the `account.create` method to create a new user account. We then call the `login` function to log the user in after creating their account.
 
-Appwrite also provides other authentication methods, such as OAuth, Google, and Apple. You can learn more about them in our [docs](https://appwrite.io/docs/products/auth?doFollow=true).
+Indobase also provides other authentication methods, such as OAuth, Google, and Apple. You can learn more about them in our [docs](https://appwrite.io/docs/products/auth?doFollow=true).
 
 Finally, we'll add a `logout` function to the `auth.js` file to handle user logout:
 
@@ -266,7 +266,7 @@ export async function logout() {
 
 ```
 
-The `logout` function uses the `account.deleteSession('current')` method to delete the current user's session from Appwrite. This effectively logs the user out and updates our `user` store to null.
+The `logout` function uses the `account.deleteSession('current')` method to delete the current user's session from Indobase. This effectively logs the user out and updates our `user` store to null.
 
 With this setup, we're ready to implement our authentication flow.
 
@@ -628,7 +628,7 @@ function calculateStats() {
 }
 ```
 
-The `fetchExpenses` function retrieves our expenses from Appwrite and sorts them by creation date, but you might want to sort instead by the date of the expense, depending on how you want to display expenses. After fetching, we calculate statistics including total expenses, this month's expenses, and this week's expenses.
+The `fetchExpenses` function retrieves our expenses from Indobase and sorts them by creation date, but you might want to sort instead by the date of the expense, depending on how you want to display expenses. After fetching, we calculate statistics including total expenses, this month's expenses, and this week's expenses.
 
 Let's add the functionality for creating and updating expenses:
 
@@ -946,7 +946,7 @@ Data export would let users analyze their expenses in external tools. Custom cat
 
 ## Conclusion
 
-In this tutorial, we built an expense tracking application using SvelteKit and Appwrite. We implemented core features including user authentication, database storage, and a responsive interface that works on different devices.
+In this tutorial, we built an expense tracking application using SvelteKit and Indobase. We implemented core features including user authentication, database storage, and a responsive interface that works on different devices.
 
 The component-based structure we used makes the code easier to maintain and update. We covered practical aspects like securing user data, managing state, and handling form submissions - skills that apply to many web applications.
 
@@ -957,5 +957,5 @@ If you have any questions or feedback, you can reach out to me on [LinkedIn](htt
 ## Further reading
 
 - [Start with SvelteKit](https://appwrite.io/docs/quick-starts/sveltekit)
-- [Building a chat app with Appwrite and Google Gemini](https://appwrite.io/blog/post/build-a-chat-app-with-appwrite-and-gemini)
-- [Building a currency converter API with Deno 2 and Appwrite](https://appwrite.io/blog/post/build-a-currency-converter-with-deno2)
+- [Building a chat app with Indobase and Google Gemini](https://appwrite.io/blog/post/build-a-chat-app-with-appwrite-and-gemini)
+- [Building a currency converter API with Deno 2 and Indobase](https://appwrite.io/blog/post/build-a-currency-converter-with-deno2)

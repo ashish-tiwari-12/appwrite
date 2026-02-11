@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Build an ideas tracker with SvelteKit
-description: Build a SvelteKit project using Appwrite.
+description: Build a SvelteKit project using Indobase.
 step: 1
 difficulty: beginner
 back: /docs/tutorials
@@ -11,7 +11,7 @@ category: Web
 ---
 
 **Idea tracker**: an app to track all the side project ideas that you'll start, but probably never finish.
-In this tutorial, you will build Idea tracker with Appwrite and SvelteKit.
+In this tutorial, you will build Idea tracker with Indobase and SvelteKit.
 
 {% only_dark %}
 ![Create project screen](/images/docs/tutorials/dark/idea-tracker.png)

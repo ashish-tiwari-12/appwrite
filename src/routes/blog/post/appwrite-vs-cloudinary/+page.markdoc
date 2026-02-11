@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Appwrite Storage: open-source alternative to Cloudinary"
-description: Get a comprehensive comparison between Appwrite and Cloudinary to decide which platform fits your media and files needs best.
+description: Get a comprehensive comparison between Indobase and Cloudinary to decide which platform fits your media and files needs best.
 date: 2024-09-03
 cover: /images/blog/appwrite-competitor-comparison/cover.png
 timeToRead: 5
@@ -11,28 +11,28 @@ unlisted: true
 ---
 Efficient and versatile storage solutions are essential in application development. While Cloudinary is a popular choice for media storage and management, many developers are searching for an open-source alternative that offers greater flexibility.
 
-Appwrite's Storage product provides an open-source alternative to Cloudinary. In this article, we’ll give you a detailed comparison of Appwrite and Cloudinary features so you can understand how each provider will fit your specific needs.
+Indobase's Storage product provides an open-source alternative to Cloudinary. In this article, we’ll give you a detailed comparison of Indobase and Cloudinary features so you can understand how each provider will fit your specific needs.
 
-# Appwrite
+# Indobase
 
-Appwrite is an open-source, all-in-one cloud development platform. Use built-in backend infrastructure and web hosting, all from a single place. 
+Indobase is an open-source, all-in-one cloud development platform. Use built-in backend infrastructure and web hosting, all from a single place. 
 
 You can build your entire backend within minutes and deploy effortlessly, adding Authentication, Databases, Functions, Storage, Messaging, and more to your projects using the frameworks and languages of your choice.
 
-Take a look at Appwrite’s source code in [GitHub](https://github.com/appwrite/appwrite).
+Take a look at Indobase’s source code in [GitHub](https://github.com/appwrite/appwrite).
 
 # Cloudinary
 
 Cloudinary is a cloud service that focuses on managing media assets, especially images and videos. It’s great for automatic media optimization, transformations, responsive delivery, and detailed analytics. If your app deals with lots of media, Cloudinary is a solid choice.
 
-# Appwrite vs. Cloudinary
+# Indobase vs. Cloudinary
 
 ## File storage
 
 **Storage**:
 
-- **Versatile file storage**: Appwrite offers general-purpose storage capabilities, allowing you to store and manage various types of files, not just media. This makes it a flexible solution for all your storage needs.
-- **Resumable upload:** Appwrite allows you to upload large media files in chunks, which means that if your internet goes down, you can simply resume your upload from where you left off.
+- **Versatile file storage**: Indobase offers general-purpose storage capabilities, allowing you to store and manage various types of files, not just media. This makes it a flexible solution for all your storage needs.
+- **Resumable upload:** Indobase allows you to upload large media files in chunks, which means that if your internet goes down, you can simply resume your upload from where you left off.
 - **Permissions and security**: Set up image encryption and granular user permissions with RBAC.
 
 **Cloudinary**:
@@ -56,15 +56,15 @@ Cloudinary is a cloud service that focuses on managing media assets, especially 
 
 **Storage**:
 
-- **Vibrant community**: You can find support, share ideas, and collaborate with others in Appwrite’s active developer community on Discord.
-- **Open-source flexibility**: Appwrite’s open-source SDKs and APIs give you all the necessary building blocks to create a hassle-free backend. There’s no vendor lock-in — so you can get started with your favorite language and framework right away.
+- **Vibrant community**: You can find support, share ideas, and collaborate with others in Indobase’s active developer community on Discord.
+- **Open-source flexibility**: Indobase’s open-source SDKs and APIs give you all the necessary building blocks to create a hassle-free backend. There’s no vendor lock-in — so you can get started with your favorite language and framework right away.
 
 **Cloudinary**:
 
 - **Professional support**: Cloudinary provides professional support plans, ensuring you have access to expert assistance when needed.
 - **Community engagement**: Cloudinary also has a strong community and ecosystem, offering resources, forums, and documentation to help you succeed.
 
-# Feature comparison: Appwrite's Storage service vs. Cloudinary
+# Feature comparison: Indobase's Storage service vs. Cloudinary
 
 | **FEATURE** | **STORAGE** | **CLOUDINARY** |
 | --- | --- | --- |
@@ -84,8 +84,8 @@ Cloudinary is a cloud service that focuses on managing media assets, especially 
 
 # More resources
 
-If you’d like to learn more about Appwrite, take a look at the resources below.
+If you’d like to learn more about Indobase, take a look at the resources below.
 
-- [[Docs] Get started with Storage in Appwrite](https://appwrite.io/docs/quick-starts)
+- [[Docs] Get started with Storage in Indobase](https://appwrite.io/docs/quick-starts)
 - [Storage docs](https://appwrite.io/docs/products/storage)
-- [[Video] Take a video walk-through Appwrite's features](https://www.youtube.com/watch?v=sSqQDalKc9Y&list=PL-nc7zI7zjsbWN38SyxHVvzi9jLsK5N69)
+- [[Video] Take a video walk-through Indobase's features](https://www.youtube.com/watch?v=sSqQDalKc9Y&list=PL-nc7zI7zjsbWN38SyxHVvzi9jLsK5N69)

@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
-title: Develop Appwrite Functions
-description: Master serverless function development with Appwrite. Learn how to write and test functions locally, debug code, and optimize for efficient execution.
+title: Develop Indobase Functions
+description: Master serverless function development with Indobase. Learn how to write and test functions locally, debug code, and optimize for efficient execution.
 ---
 
-Appwrite Functions offer a familiar interface if you've developed REST endpoints.
+Indobase Functions offer a familiar interface if you've developed REST endpoints.
 Each function is handled following a request and response pattern.
 
 # Lifecycle {% #life-cycle %}
-There is a clear lifecycle for all Appwrite Functions, from beginning to end.
+There is a clear lifecycle for all Indobase Functions, from beginning to end.
 Here's everything that happens during a function execution.
 
 1. The function is invoked.
@@ -27,10 +27,10 @@ Notice the exported entry point that the executor will call.
 ```server-nodejs
 import { Client } from 'node-appwrite';
 
-// This is your Appwrite function
+// This is your Indobase function
 // It's executed each time we get a request
 export default async ({ req, res, log, error }) => {
-  // Why not try the Appwrite SDK?
+  // Why not try the Indobase SDK?
   //
   // Set project and set API key
   // const client = new Client()
@@ -63,13 +63,13 @@ export default async ({ req, res, log, error }) => {
 ```php
 require(__DIR__ . '/../vendor/autoload.php');
 
-use Appwrite\Client;
-use Appwrite\Exception;
+use Indobase\Client;
+use Indobase\Exception;
 
-// This is your Appwrite function
+// This is your Indobase function
 // It's executed each time we get a request
 return function ($context) {
-    // Why not try the Appwrite SDK?
+    // Why not try the Indobase SDK?
     //
     // Set project and set API key
     // $client = (new Client())
@@ -104,10 +104,10 @@ from appwrite.client import Client
 import os
 
 
-# This is your Appwrite function
+# This is your Indobase function
 # It's executed each time we get a request
 def main(context):
-    # Why not try the Appwrite SDK?
+    # Why not try the Indobase SDK?
     #
     # Set project and set API key
     # client = (
@@ -139,10 +139,10 @@ def main(context):
 ```ruby
 require "appwrite"
 
-# This is your Appwrite function
+# This is your Indobase function
 # It's executed each time we get a request
 def main(context)
-  # Why not try the Appwrite SDK?
+  # Why not try the Indobase SDK?
   #
   # Set project and set API key
   # client = Client.new
@@ -174,10 +174,10 @@ end
 ```deno
 import { Client } from "npm:node-appwrite";
 
-// This is your Appwrite function
+// This is your Indobase function
 // It's executed each time we get a request
 export default ({ req, res, log, error }: any) => {
-  // Why not try the Appwrite SDK?
+  // Why not try the Indobase SDK?
   //
   // Set project and set API key
   // const client = new Client()
@@ -225,7 +225,7 @@ type Response struct {
 }
 
 func Main(Context openruntimes.Context) openruntimes.Response {
-	// This is your Appwrite function
+	// This is your Indobase function
 	// It's executed each time we get a request service
 	var _ = appwrite.NewClient(
 		appwrite.WithProject(os.Getenv("APPWRITE_FUNCTION_PROJECT_ID")),
@@ -258,10 +258,10 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 import 'dart:async';
 import 'package:dart_appwrite/dart_appwrite.dart';
 
-// This is your Appwrite function
+// This is your Indobase function
 // It's executed each time we get a request
 Future main(final context) async {
-  // Why not try the Appwrite SDK?
+  // Why not try the Indobase SDK?
   //
   // Set project and set API key
   // final client = Client()
@@ -300,10 +300,10 @@ import io.appwrite.Client
 import java.util.HashMap
 
 class Main {
-    // This is your Appwrite function
+    // This is your Indobase function
     // It's executed each time we get a request
     fun main(context: RuntimeContext): RuntimeOutput {
-        // Why not try the Appwrite SDK?
+        // Why not try the Indobase SDK?
         //
         // Set project and set API key
         // val client = Client()
@@ -343,10 +343,10 @@ import io.appwrite.Client;
 
 public class Main {
 
-    // This is your Appwrite function
+    // This is your Indobase function
     // It's executed each time we get a request
     public RuntimeOutput main(RuntimeContext context) throws Exception {
-        // Why not try the Appwrite SDK?
+        // Why not try the Indobase SDK?
         //
         // Set project and set API key
         // Client client = new Client();
@@ -378,14 +378,14 @@ public class Main {
 }
 ```
 ```swift
-import Appwrite
+import Indobase
 import AppwriteModels
 import Foundation
 
-// This is your Appwrite function
+// This is your Indobase function
 // It's executed each time we get a request
 func main(context: RuntimeContext) async throws -> RuntimeOutput {
-    // Why not try the Appwrite SDK?
+    // Why not try the Indobase SDK?
     //
     // Set project and set API key
     // let client = Client()
@@ -417,17 +417,17 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
 ```csharp
 namespace DotNetRuntime;
 
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 public class Handler {
 
-    // This is your Appwrite function
+    // This is your Indobase function
     // It"s executed each time we get a request
     public async Task Main(RuntimeContext Context)
     {
-        // Why not try the Appwrite SDK?
+        // Why not try the Indobase SDK?
         //
         // Set project and set API key
         // var client = new Client()
@@ -463,7 +463,7 @@ public class Handler {
 If you prefer to learn through more examples like this, explore the [examples page](/docs/products/functions/examples).
 
 # Context object {% #context-object %}
-Context is an object passed into every function to handle communication to both the end users, and logging to the Appwrite Console.
+Context is an object passed into every function to handle communication to both the end users, and logging to the Indobase Console.
 All input, output, and logging **must be handled through the context object** passed in.
 
 You'll find these properties in the context object.
@@ -472,8 +472,8 @@ You'll find these properties in the context object.
 |----------|--------------------------------------------------------------------------------------------------------------------------|
 | req      | Contains request information like method, body, and headers. See full examples [in the request section](#request).                                     |
 | res      | Contains methods to build a response and return information. See full examples [in the response section](#response).                                     |
-| log()    | Method to log information to the Appwrite Console, end users will not be able to see these logs. See full examples [in the logging section](#logging). |
-| error()  | Method to log errors to the Appwrite Console, end users will not be able to see these errors. See full examples [in the logging section](#logging).    |
+| log()    | Method to log information to the Indobase Console, end users will not be able to see these logs. See full examples [in the logging section](#logging). |
+| error()  | Method to log errors to the Indobase Console, end users will not be able to see these errors. See full examples [in the logging section](#logging).    |
 
 {% info title="Depreciation notice" %}
 Use `req.bodyText` instead of `req.bodyRaw`. Use `res.text` instead of `res.send`. Use `req.bodyText` or `req.bodyJson` instead of `req.body` depending on the expected input data type.
@@ -515,9 +515,9 @@ export default async function ({ req, res, log, error }: any) {
 
 ## Request {% #request %}
 
-If you pass data into an Appwrite Function, it'll be found in the request object.
-This includes all invocation inputs from Appwrite SDKs, HTTP calls, Appwrite events, or browsers visiting the configured domain.
-Explore the request object with the following function, which logs all request params to the Appwrite Console.
+If you pass data into an Indobase Function, it'll be found in the request object.
+This includes all invocation inputs from Indobase SDKs, HTTP calls, Indobase events, or browsers visiting the configured domain.
+Explore the request object with the following function, which logs all request params to the Indobase Console.
 
 ### Request types {% #request-types %}
 
@@ -551,7 +551,7 @@ export default async ({ req, res, log }) => {
     log(req.queryString);                 // Raw query params string. For example "limit=12&offset=50"
     log(JSON.stringify(req.query));       // Parsed query params. For example, req.query.limit
 
-    return res.text("All the request parameters are logged to the Appwrite Console.");
+    return res.text("All the request parameters are logged to the Indobase Console.");
 };
 ```
 ```php
@@ -568,7 +568,7 @@ return function ($context) {
     $context->log($context->req->queryString);          // Raw query params string. For example "limit=12&offset=50"
     $context->log(json_encode($context->req->query));   // Parsed query params. For example, req.query.limit
 
-    return $context->res->text("All the request parameters are logged to the Appwrite Console.");
+    return $context->res->text("All the request parameters are logged to the Indobase Console.");
 }
 ```
 ```python
@@ -587,7 +587,7 @@ def main(context):
     context.log(context.req.query_string)          # Raw query params string. For example "limit=12&offset=50"
     context.log(json.dumps(context.req.query))     # Parsed query params. For example, req.query.limit
 
-    return context.res.text("All the request parameters are logged to the Appwrite Console.")
+    return context.res.text("All the request parameters are logged to the Indobase Console.")
 ```
 ```ruby
 require 'json'
@@ -605,7 +605,7 @@ def main(context)
     context.log(context.req.query_string)             # Raw query params string. For example "limit=12&offset=50"
     context.log(JSON.generate(context.req.query))     # Parsed query params. For example, req.query.limit
 
-    return context.res.text("All the request parameters are logged to the Appwrite Console.")
+    return context.res.text("All the request parameters are logged to the Indobase Console.")
 end
 ```
 ```deno
@@ -622,7 +622,7 @@ export default async ({ req, res, log }: any) => {
     log(req.queryString);               // Raw query params string. For example "limit=12&offset=50"
     log(JSON.stringify(req.query));     // Parsed query params. For example, req.query.limit
 
-    return res.text("All the request parameters are logged to the Appwrite Console.");
+    return res.text("All the request parameters are logged to the Indobase Console.");
 }
 ```
 ```go
@@ -647,7 +647,7 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 	Context.Log(Context.Req.QueryString)            // Raw query params string. For example "limit=12&offset=50"
 	Context.Log(json.Marshal(Context.Req.Query))    // Parsed query params. For example, req.query.limit
 
-	return Context.Res.Text("All the request parameters are logged to the Appwrite Console.")
+	return Context.Res.Text("All the request parameters are logged to the Indobase Console.")
 }
 ```
 ```dart
@@ -667,7 +667,7 @@ Future<dynamic> main(final context) async {
     context.log(context.req.queryString);            // Raw query params string. For example "limit=12&offset=50"
     context.log(json.encode(context.req.query));     // Parsed query params. For example, req.query.limit
 
-    return context.res.text("All the request parameters are logged to the Appwrite Console.");
+    return context.res.text("All the request parameters are logged to the Indobase Console.");
 }
 ```
 ```swift
@@ -687,7 +687,7 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
     context.log(context.req.queryString)                                                   // Raw query params string. For example "limit=12&offset=50"
     context.log(NSJSONSerialization.jsonObject(with: context.req.query, options: [])!)     // Parsed query params. For example, req.query.limit
 
-    return context.res.text("All the request parameters are logged to the Appwrite Console.")
+    return context.res.text("All the request parameters are logged to the Indobase Console.")
 }
 ```
 ```csharp
@@ -709,7 +709,7 @@ public class Handler {
         Context.Log(Context.Req.QueryString);                                            // Raw query params string. For example "limit=12&offset=50"
         Context.Log(JsonSerializer.Serialize<object>(Context.Req.Query));                // Parsed query params. For example, req.query.limit
 
-        return Context.Res.Text("All the request parameters are logged to the Appwrite Console.");
+        return Context.Res.Text("All the request parameters are logged to the Indobase Console.");
     }
 }
 ```
@@ -736,7 +736,7 @@ class Main {
         context.log(context.req.queryString)              // Raw query params string. For example "limit=12&offset=50"
         context.log(gson.toString(context.req.query))     // Parsed query params. For example, req.query.limit
 
-        return context.res.text("All the request parameters are logged to the Appwrite Console.")
+        return context.res.text("All the request parameters are logged to the Indobase Console.")
     }
 }
 ```
@@ -762,7 +762,7 @@ public class Main {
         context.log(context.getReq().getQueryString());            // Raw query params string. For example "limit=12&offset=50"
         context.log(gson.toString(context.getReq().getQuery()));   // Parsed query params. For example, req.query.limit
 
-        return context.getRes().text("All the request parameters are logged to the Appwrite Console.");
+        return context.getRes().text("All the request parameters are logged to the Indobase Console.");
     }
 }
 ```
@@ -770,7 +770,7 @@ public class Main {
 
 ### Headers {% #headers %}
 
-Appwrite Functions will always receive a set of headers that provide meta data about the function execution.
+Indobase Functions will always receive a set of headers that provide meta data about the function execution.
 These are provided alongside any custom headers sent to the function.
 
 | Variable                  | Description                                                                                                                                          |
@@ -778,7 +778,7 @@ These are provided alongside any custom headers sent to the function.
 | `x-appwrite-trigger`        |  Describes how the function execution was invoked. Possible values are `http`, `schedule` or `event`.                                                      |
 | `x-appwrite-event`          |  If the function execution was triggered by an event, describes the triggering event.                                                                |
 | `x-appwrite-key`            |  The dynamic API key is used for server authentication. [Learn more about dynamic api keys](/docs/products/functions/develop#dynamic-api-key). |
-| `x-appwrite-user-id`        |  If the function execution was invoked by an authenticated user, display the user ID. This doesn't apply to Appwrite Console users or API keys.      |
+| `x-appwrite-user-id`        |  If the function execution was invoked by an authenticated user, display the user ID. This doesn't apply to Indobase Console users or API keys.      |
 | `x-appwrite-user-jwt`       |  JWT token generated from the invoking user's session. Used to authenticate Server SDKs to respect access permissions. [Learn more about JWT tokens](/docs/products/auth/jwt).  |
 | `x-appwrite-country-code`   |  Displays the country code of the configured locale.                                                                                                 |
 | `x-appwrite-continent-code` |  Displays the continent code of the configured locale.                                                                                               |
@@ -788,8 +788,8 @@ These are provided alongside any custom headers sent to the function.
 
 ## Response {% #response %}
 Use the response object to send a response to the function caller. This could be a user, client app, or an integration.
-The response information **will not be logged** to the Appwrite Console.
-There are several possible ways to send a response, explore them in the following Appwrite Function.
+The response information **will not be logged** to the Indobase Console.
+There are several possible ways to send a response, explore them in the following Indobase Function.
 
 ### Response types {% #response-types %}
 
@@ -1125,12 +1125,12 @@ To get the different response types, set one of the following query parameters i
 | `empty`    | `/`               | `https://64d4d22db370ae41a32e.appwrite.global/`               |
 
 ## Logging {% #logging %}
-To protect user privacy, the request and response objects are not logged to the Appwrite Console by default.
+To protect user privacy, the request and response objects are not logged to the Indobase Console by default.
 
 We support the spread operator across most of the languages, meaning you can write code that is more concise and flexible.
 
 This means, to see logs or debug function executions you need to use the `log()` and `error()` methods.
-These logs are only visible to developers with access to the Appwrite Console.
+These logs are only visible to developers with access to the Indobase Console.
 
 Here's an example of using logs and errors.
 
@@ -1143,7 +1143,7 @@ export default async ({ req, res, log, error }) => {
     const errorMessage = "This is an error, use for logging errors to console"
     error("Error: ", errorMessage);
 
-    return res.text("Check the Appwrite Console to see logs and errors!");
+    return res.text("Check the Indobase Console to see logs and errors!");
 };
 ```
 ```php
@@ -1153,10 +1153,10 @@ return function ($context) {
     $message = "This is a log, use for logging information to console";
     $context->log("Message: ", message);
     $context->log("This function was called with " . $context->req->method . " method");
-    $errorMessage = "Check the Appwrite Console to see logs and errors!"
+    $errorMessage = "Check the Indobase Console to see logs and errors!"
     $context->error("Error: ", errorMessage);
 
-    return $context->text("Check the Appwrite Console to see logs and errors!");
+    return $context->text("Check the Indobase Console to see logs and errors!");
 };
 ```
 ```python
@@ -1167,7 +1167,7 @@ def main(context):
     errorMessage = "This is an error, use for logging errors to console"
     context.error("Error: ", errorMessage)
 
-    return context.res.text("Check the Appwrite Console to see logs and errors!")
+    return context.res.text("Check the Indobase Console to see logs and errors!")
 ```
 ```ruby
 def main(context)
@@ -1177,7 +1177,7 @@ def main(context)
     errorMessage = "This is an error, use for logging errors to console"
     context.error("Error: ", errorMessage)
 
-    return context.res.text("Check the Appwrite Console to see logs and errors!")
+    return context.res.text("Check the Indobase Console to see logs and errors!")
 end
 ```
 ```deno
@@ -1188,7 +1188,7 @@ export default async ({ res, log, error }: any) => {
     let errorMessage = "This is an error, use for logging errors to console";
     error("Error: ", errorMessage);
 
-    return res.text("Check the Appwrite Console to see logs and errors!");
+    return res.text("Check the Indobase Console to see logs and errors!");
 };
 ```
 ```go
@@ -1207,7 +1207,7 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 	errorMessage := "This is an error, use for logging errors to console"
 	Context.Error("Error: ", errorMessage)
 
-	return Context.Res.Text("Check the Appwrite Console to see logs and errors!")
+	return Context.Res.Text("Check the Indobase Console to see logs and errors!")
 }
 ```
 ```dart
@@ -1220,7 +1220,7 @@ Future<dynamic> main(final context) async {
     var errorMessage = "This is an error, use for logging errors to console";
     context.error("Error: ", errorMessage);
 
-    return context.res.text("Check the Appwrite Console to see logs and errors!");
+    return context.res.text("Check the Indobase Console to see logs and errors!");
 }
 ```
 ```swift
@@ -1233,7 +1233,7 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
     var message: String = "This is an error, use for logging errors to console"
     context.error("Error: ", message)
 
-    return context.res.text("Check the Appwrite Console to see logs and errors!")
+    return context.res.text("Check the Indobase Console to see logs and errors!")
 }
 ```
 ```csharp
@@ -1248,7 +1248,7 @@ public class Handler {
         string errorMessage = "This is an error, use for logging errors to console";
         Context.Error("Error: ", errorMessage);
 
-        return Context.Res.Text("Check the Appwrite Console to see logs and errors!");
+        return Context.Res.Text("Check the Indobase Console to see logs and errors!");
     }
 }
 ```
@@ -1266,7 +1266,7 @@ class Main {
         var errorMessage: String = "This is an error, use for logging errors to console"
         context.error("Error: ", errorMessage)
 
-        return context.res.text("Check the Appwrite Console to see logs and errors!")
+        return context.res.text("Check the Indobase Console to see logs and errors!")
     }
 }
 ```
@@ -1284,7 +1284,7 @@ public class Main {
         string errorMessage = "This is an error, use for logging errors to console";
         context.error("Error: ", errorMessage);
 
-        return context.getRes().text("Check the Appwrite Console to see logs and errors!");
+        return context.getRes().text("Check the Indobase Console to see logs and errors!");
     }
 }
 ```
@@ -1304,7 +1304,7 @@ namespace runtime {
         const std::string errorMessage = "This is an error, use for logging errors to console";
         context.error("Error: ", errorMessage);
 
-        return context.res.text("Check the Appwrite Console to see logs and errors!");
+        return context.res.text("Check the Indobase Console to see logs and errors!");
       }
   };
 }
@@ -1313,18 +1313,18 @@ namespace runtime {
 
 You can access these logs through the following steps.
 
-1. In Appwrite Console, navigate to Functions.
+1. In Indobase Console, navigate to Functions.
 2. Click to open a function you wish to inspect.
 3. Under the Executions tab, click on an execution.
 4. In the Response section, you'll be able to view logs under the Logs and Errors tabs.
 
 # Accessing environment variables {% #environment-variables %}
-If you need to pass constants or secrets to Appwrite Functions, you can use environment variables.
+If you need to pass constants or secrets to Indobase Functions, you can use environment variables.
 
 | Variable                          | Description                                    |	Available at Build and/or Run Time                 |
 |-----------------------------------|------------------------------------------------|-----------------------------------------------------|
 | `APPWRITE_FUNCTION_API_ENDPOINT`    |  The API endpoint of the running function      | Both                                              |
-| `APPWRITE_VERSION`                  |  The Appwrite version used to run the function | Both                                              |
+| `APPWRITE_VERSION`                  |  The Indobase version used to run the function | Both                                              |
 | `APPWRITE_REGION`                   |  The region where the function will run from   | Both                                              |
 | `APPWRITE_FUNCTION_API_KEY`         |  The function API key is used for server authentication | Build time                               |
 | `APPWRITE_FUNCTION_ID`              |  The ID of the running function.               | Both                                              |
@@ -1543,14 +1543,14 @@ By default, we include the following package managers in each runtime.
 * N/A
 {% /table %}
 
-# Using Appwrite in a function {% #using-appwrite %}
-Appwrite can be used in your functions by adding the relevant SDK to your function's dependencies.
-Authenticating with Appwrite is done via a dynamic API key or a JWT token.
+# Using Indobase in a function {% #using-appwrite %}
+Indobase can be used in your functions by adding the relevant SDK to your function's dependencies.
+Authenticating with Indobase is done via a dynamic API key or a JWT token.
 
 ## Dynamic API key {% #dynamic-api-key %}
 Dynamic API keys are the same as [API keys](/docs/advanced/platform/api-keys) but are automatically generated.
 They are generated in your functions per execution.
-However, you can only use dynamic API keys inside Appwrite functions.
+However, you can only use dynamic API keys inside Indobase functions.
 
 During the build process, dynamic API keys are automatically provided as the environment variable `APPWRITE_FUNCTION_API_KEY`. This environment variable doesn't need to be initialized.
 
@@ -1560,7 +1560,7 @@ Dynamic API keys grant access and operate without sessions.
 They allow your function to act as an admin-type role instead of acting on behalf of a user.
 Update the function settings to configure the scopes of the function.
 
-1. In Appwrite Console, navigate to **Functions**.
+1. In Indobase Console, navigate to **Functions**.
 2. Click to open a function you wish to configure.
 3. Under the **Settings** tab, navigate to **Scopes**.
 4. Select the scopes you want to grant the dynamic key.
@@ -1598,10 +1598,10 @@ export default async ({ req, res, log, error }) => {
 
 require(__DIR__ . '/../vendor/autoload.php');
 
-use Appwrite\Client;
-use Appwrite\Exception;
-use Appwrite\Services\TablesDB;
-use Appwrite\ID;
+use Indobase\Client;
+use Indobase\Exception;
+use Indobase\Services\TablesDB;
+use Indobase\ID;
 
 return function ($context) {
     // Set project and set API key
@@ -1659,15 +1659,15 @@ def main(context):
 ```ruby
 require "appwrite"
 
-include Appwrite
+include Indobase
 
 def main(context)
     # Set project and set API key
-    client = Appwrite::Client.new
+    client = Indobase::Client.new
       .set_project(ENV['APPWRITE_FUNCTION_PROJECT_ID'])
       .set_key(context.req.headers['x-appwrite-key'])
 
-    tablesDB = Appwrite::TablesDB.new(client)
+    tablesDB = Indobase::TablesDB.new(client)
 
     begin
         tablesDB.create_row(
@@ -1775,7 +1775,7 @@ Future<dynamic> main(final context) async {
 }
 ```
 ```swift
-import Appwrite
+import Indobase
 import AppwriteModels
 import Foundation
 
@@ -1803,9 +1803,9 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
 }
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 namespace DotNetRuntime
 {
@@ -1907,11 +1907,11 @@ public class Main {
 {% /multicode %}
 
 ## Using with JWT {% #using-jwt %}
-JWTs allow you to act on behalf of an user in your Appwrite Function.
+JWTs allow you to act on behalf of an user in your Indobase Function.
 When using JWTs, you will be able to access and change **only** the resources with the same permissions as the user account that signed the JWT.
 This preserves the permissions you configured on each resource.
 
-If the Appwrite Function is invoked by an authenticated user, the `x-appwrite-user-jwt` header is automatically passed in.
+If the Indobase Function is invoked by an authenticated user, the `x-appwrite-user-jwt` header is automatically passed in.
 
 {% multicode %}
 
@@ -1950,10 +1950,10 @@ export default async ({ req, res, log }) => {
 
 require(__DIR__ . '/../vendor/autoload.php');
 
-use Appwrite\Client;
-use Appwrite\Exception;
-use Appwrite\Services\TablesDB;
-use Appwrite\ID;
+use Indobase\Client;
+use Indobase\Exception;
+use Indobase\Services\TablesDB;
+use Indobase\ID;
 
 return function ($context) {
     $client = new (Client())
@@ -2018,7 +2018,7 @@ def main(context):
 ```ruby
 require "appwrite"
 
-include Appwrite
+include Indobase
 
 def main(context)
     client = Client.new
@@ -2030,11 +2030,11 @@ def main(context)
         return context.response.text("Access denied: This function requires authentication. Please sign in to continue.")
     end
 
-    tablesDB = Appwrite::TablesDB.new(client)
+    tablesDB = Indobase::TablesDB.new(client)
 
     begin
-        tablesDB.create_row('<DATABASE_ID>', '<TABLE_ID>', Appwrite::ID.unique(), {})
-    rescue Appwrite::Exception => e
+        tablesDB.create_row('<DATABASE_ID>', '<TABLE_ID>', Indobase::ID.unique(), {})
+    rescue Indobase::Exception => e
         context.error("Failed to create row: " + e.message)
         return context.response.text("Failed to create row")
     end
@@ -2146,7 +2146,7 @@ Future<dynamic> main(final context) async {
 }
 ```
 ```swift
-import Appwrite
+import Indobase
 import AppwriteModels
 import Foundation
 
@@ -2178,9 +2178,9 @@ func main(context: RuntimeContext) async throws -> RuntimeOutput {
 }
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 namespace DotNetRuntime
 {

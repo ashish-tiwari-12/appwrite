@@ -32,7 +32,7 @@
     <div class="relative z-10 flex w-full max-w-lg flex-col items-center justify-center gap-8">
         <div class="text flex flex-col gap-4 [animation-delay:0.75s]">
             <p class="text-description text-secondary block max-w-lg text-center">
-                Join us at Appwrite for another week of exciting new announcements and events.
+                Join us at Indobase for another week of exciting new announcements and events.
             </p>
 
             <nav class="mt-4 flex w-full flex-col items-center justify-center gap-4 md:flex-row">

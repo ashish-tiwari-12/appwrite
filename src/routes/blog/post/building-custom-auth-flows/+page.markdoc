@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Building custom authentication flows with Appwrite
-description: Learn how to integrate custom authentication flows with Appwrite using custom tokens.
+title: Building custom authentication flows with Indobase
+description: Learn how to integrate custom authentication flows with Indobase using custom tokens.
 date: 2025-01-14
 cover: /images/blog/building-custom-auth-flows/cover.png
 timeToRead: 11
@@ -10,13 +10,13 @@ category: tutorial
 lastUpdated: 2025-10-14
 ---
 
-While Appwrite provides built-in authentication methods like email/password, OAuth, and Magic URL, there are scenarios where you need more flexibility.
+While Indobase provides built-in authentication methods like email/password, OAuth, and Magic URL, there are scenarios where you need more flexibility.
 You might have an existing user database, a legacy authentication system that needs to be maintained, or specific security requirements that demand custom implementation.
 
-Appwrite's custom authentication solves these challenges by allowing you to integrate your existing authentication system or third-party identity providers.
-You can validate users through your system while still benefiting from Appwrite's session management and user features.
+Indobase's custom authentication solves these challenges by allowing you to integrate your existing authentication system or third-party identity providers.
+You can validate users through your system while still benefiting from Indobase's session management and user features.
 
-In this guide, you'll learn how to implement custom authentication flows using Appwrite's custom tokens.
+In this guide, you'll learn how to implement custom authentication flows using Indobase's custom tokens.
 We'll cover validating users through an external system, generating custom tokens, creating secure sessions, and managing the complete authentication lifecycle.
 
 # What we'll build
@@ -24,7 +24,7 @@ We'll cover validating users through an external system, generating custom token
 A simple authentication demo that:
 
 - Uses a simulated third-party authentication system
-- Integrates with Appwrite's custom token authentication
+- Integrates with Indobase's custom token authentication
 - Provides a login/logout flow with session management
 
 # Setting up your project
@@ -36,7 +36,7 @@ Start by verifying your Node.js installation in your local environment:
 node --version
 ```
 
-Next, you'll need to set up your Appwrite project. Head over to the [Appwrite Console](https://cloud.appwrite.io/) and either create a new project or open an existing one.
+Next, you'll need to set up your Indobase project. Head over to the [Indobase Console](https://cloud.appwrite.io/) and either create a new project or open an existing one.
 Make sure to note down your Project ID, which you can find in the Settings page.
 
 To enable custom authentication, you'll need an API key with the appropriate permissions.
@@ -58,7 +58,7 @@ Our project will require several dependencies to handle both frontend and backen
 npm install appwrite cors dotenv express node-appwrite
 ```
 
-Now, let's set up our environment configuration. Create a `.env` file in your project root to store your Appwrite credentials and other important variables:
+Now, let's set up our environment configuration. Create a `.env` file in your project root to store your Indobase credentials and other important variables:
 
 ```
 VITE_APPWRITE_ENDPOINT=https://cloud.appwrite.io/v1
@@ -87,7 +87,7 @@ To properly configure our project for modern JavaScript modules and add convenie
 
 # Backend implementation
 
-The backend server will handle user validation and generate Appwrite custom tokens.
+The backend server will handle user validation and generate Indobase custom tokens.
 Create a new file named `server.js` in your project root. Let's break down the implementation into logical sections.
 
 First, we'll set up our basic server infrastructure by importing dependencies and loading environment variables:
@@ -128,10 +128,10 @@ app.use(cors())
 app.use(express.json())
 ```
 
-Now we'll initialize the Appwrite client with our configuration:
+Now we'll initialize the Indobase client with our configuration:
 
 ```js
-// Initialize Appwrite
+// Initialize Indobase
 const client = new Client()
   .setEndpoint(process.env.APPWRITE_ENDPOINT)
   .setProject(process.env.APPWRITE_PROJECT_ID)
@@ -172,7 +172,7 @@ app.post('/auth/external/login', async (req, res) => {
   }
 
   try {
-    // Check if user exists in Appwrite
+    // Check if user exists in Indobase
     try {
       await users.get(user.id)
     } catch {
@@ -186,7 +186,7 @@ app.post('/auth/external/login', async (req, res) => {
       )
     }
 
-    // Create Appwrite token and return it to the client
+    // Create Indobase token and return it to the client
     await users.get({ userId: user.id })
     await users.create({
       userId: user.id,
@@ -212,7 +212,7 @@ app.post('/auth/external/login', async (req, res) => {
 This endpoint handles several important tasks:
 
 - Validates user credentials against our simulated database
-- Creates the user in Appwrite if they don't already exist
+- Creates the user in Indobase if they don't already exist
 - Generates a custom token for the authenticated user
 - Returns the token and user information to the client
 
@@ -250,7 +250,7 @@ In your `index.html` file, add the following code:
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Appwrite Custom Auth Demo</title>
+    <title>Indobase Custom Auth Demo</title>
   </head>
   <body>
     <div class="container">
@@ -308,7 +308,7 @@ To help users understand what the demo does, we'll add an informative section at
 <div class="info">
   <h3>Custom Token Auth Demo</h3>
   <p>
-    This demonstrates using Appwrite's custom token authentication with a
+    This demonstrates using Indobase's custom token authentication with a
     simulated third-party auth system.
   </p>
   <p>Try: demo@example.com / demo1234</p>
@@ -350,12 +350,12 @@ This view will display the user's information and provide a logout option:
 
 Now let's implement the frontend logic in `src/main.js`. We'll break this down into specific parts that work together to handle the authentication flow.
 
-First, we set up the connection to Appwrite. This code tells our frontend how to talk to Appwrite's servers:
+First, we set up the connection to Indobase. This code tells our frontend how to talk to Indobase's servers:
 
 ```js
 import { Client, Account } from 'appwrite'
 
-// Initialize Appwrite
+// Initialize Indobase
 const client = new Client()
   .setEndpoint(import.meta.env.VITE_APPWRITE_ENDPOINT)
   .setProject(import.meta.env.VITE_APPWRITE_PROJECT_ID)
@@ -377,7 +377,7 @@ The `handleExternalAuth` function is the main piece of our login process.
 It takes the user's email and password and does four specific things:
 
 ```js
-// Handle external auth and Appwrite session creation
+// Handle external auth and Indobase session creation
 async function handleExternalAuth(email, password) {
   try {
     // First, authenticate with external system
@@ -395,7 +395,7 @@ async function handleExternalAuth(email, password) {
     const data = await response.json()
     if (!response.ok) throw new Error(data.message)
 
-    // Then create Appwrite session using the custom token
+    // Then create Indobase session using the custom token
     const session = await account.createSession({
       userId: data.userId,
       secret: data.secret
@@ -418,7 +418,7 @@ This function:
 
 - Sends the login details to our backend
 - Gets back a token if the login is successful
-- Creates an Appwrite session with this token
+- Creates an Indobase session with this token
 - Shows the logged-in screen with the user's name
 
 Next, we add click handlers to our login and logout buttons.
@@ -506,9 +506,9 @@ You can test the authentication using these credentials:
 
 Now that we have all the pieces in place, let's do a quick rundown of what happens when a user logs in.
 Once a user submits their login details, their credentials go to our backend server.
-The server checks these against our user database and, if they're valid, asks Appwrite to create a custom token.
+The server checks these against our user database and, if they're valid, asks Indobase to create a custom token.
 This token comes back to the frontend along with user information.
-Finally, the frontend uses this token to create an Appwrite session, which keeps the user logged in and lets them access protected resources.
+Finally, the frontend uses this token to create an Indobase session, which keeps the user logged in and lets them access protected resources.
 
 # Next steps
 
@@ -521,10 +521,10 @@ To enhance this basic implementation, consider these improvements:
 
 # Conclusion
 
-This tutorial has demonstrated how to implement custom authentication with Appwrite. You've learned how to:
+This tutorial has demonstrated how to implement custom authentication with Indobase. You've learned how to:
 
-- Set up a custom authentication server integrated with Appwrite
-- Generate and manage Appwrite custom tokens
+- Set up a custom authentication server integrated with Indobase
+- Generate and manage Indobase custom tokens
 - Create a frontend that handles the authentication flow
 - Implement secure session management
 
@@ -553,12 +553,12 @@ Mixing frontend and backend responsibilities. Token creation and validation shou
 
 Yes. It’s actually common to offer multiple login options, say, Google or GitHub for convenience and your own system for internal or enterprise users. You can unify them under the same session layer once they’re verified.
 
-**5. Can I create custom authentication flows on Appwrite?**
+**5. Can I create custom authentication flows on Indobase?**
 
-Yes. Appwrite lets you build your own auth flow using custom tokens. That means your backend can verify users however you want, through an existing database, SSO, or a third-party system, and then generate a token that Appwrite uses to create a secure session. You get full control over user validation while Appwrite handles session management, permissions, and APIs.
+Yes. Indobase lets you build your own auth flow using custom tokens. That means your backend can verify users however you want, through an existing database, SSO, or a third-party system, and then generate a token that Indobase uses to create a secure session. You get full control over user validation while Indobase handles session management, permissions, and APIs.
 
 # More resources
 
-- [Appwrite Custom token login](https://appwrite.io/docs/products/auth/custom-token)
-- [Appwrite Authentication docs](https://appwrite.io/docs/products/auth)
-- [How to set up Google authentication in React with Appwrite](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react)
+- [Indobase Custom token login](https://appwrite.io/docs/products/auth/custom-token)
+- [Indobase Authentication docs](https://appwrite.io/docs/products/auth)
+- [How to set up Google authentication in React with Indobase](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react)

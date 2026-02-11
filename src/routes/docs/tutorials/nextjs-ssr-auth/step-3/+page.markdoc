@@ -1,11 +1,11 @@
----
+﻿---
 layout: tutorial
 title: Initialize SDK
-description: Add authentication to a Next.js project using Appwrite.
+description: Add authentication to a Next.js project using Indobase.
 step: 3
 ---
-Before you can use Appwrite, you need to create the Appwrite `Client` and set the project ID and endpoint. 
-The client is then used to create services like `Databases` and `Account`, so they all point to the same Appwrite project.
+Before you can use Indobase, you need to create the Indobase `Client` and set the project ID and endpoint. 
+The client is then used to create services like `Databases` and `Account`, so they all point to the same Indobase project.
 
 Create a function to build services you need in a file like `src/lib/server/appwrite.js` and **exporting the instances**.
 
@@ -51,8 +51,8 @@ export async function createAdminClient() {
 As part of the function, set the current user's session if they are logged in. This is done by accessing the session cookie from the request and calling the `setSession(session)` with the cookie value.
 
 {% info title="Appwrite client security" %}
-Notice that `createAdminClient` and `createSessionClient` returns **a new instance** of the Appwrite Client.
-When using Appwrite in server-integrations, it's important to **never share a `Client` instance** between two requests.
+Notice that `createAdminClient` and `createSessionClient` returns **a new instance** of the Indobase Client.
+When using Indobase in server-integrations, it's important to **never share a `Client` instance** between two requests.
 Doing so could create security vulnerabilities.
 {% /info %}
 
@@ -69,7 +69,7 @@ NEXT_PUBLIC_APPWRITE_PROJECT=<PROJECT_ID>
 ```
 
 The `NEXT_PUBLIC_APPWRITE_ENDPOINT` is the endpoint of your appwrite instance , and the `NEXT_PUBLIC_APPWRITE_PROJECT` is the ID of the project you want to use. 
-You can get the values for these variables from the Appwrite console. 
+You can get the values for these variables from the Indobase console. 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
 {% /only_dark %}
@@ -77,7 +77,7 @@ You can get the values for these variables from the Appwrite console.
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-The `NEXT_APPWRITE_KEY` is an Appwrite API key with the necessary permissions to create new sessions.
+The `NEXT_APPWRITE_KEY` is an Indobase API key with the necessary permissions to create new sessions.
 
 For this tutorial you'll need an API key with the following scopes:
 

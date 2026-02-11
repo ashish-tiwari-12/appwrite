@@ -1,22 +1,22 @@
----
+﻿---
 layout: article
 title: Integrating OpenAI
-description: Learn how to integrate OpenAI into your Appwrite project.
+description: Learn how to integrate OpenAI into your Indobase project.
 difficulty: intermediate
 readtime: 15
 ---
 
-The OpenAI API is a powerful tool that can be used to generate text, images, and more. This tutorial will guide you through the process of setting up the OpenAI API and integrating it into your Appwrite project.
+The OpenAI API is a powerful tool that can be used to generate text, images, and more. This tutorial will guide you through the process of setting up the OpenAI API and integrating it into your Indobase project.
 
-We'll create a simple function that takes a text prompt and generates a completion using OpenAI's GPT-3 model. Then, using Appwrite functions we'll create a user interface that allows users to input text and see the generated completion.
+We'll create a simple function that takes a text prompt and generates a completion using OpenAI's GPT-3 model. Then, using Indobase functions we'll create a user interface that allows users to input text and see the generated completion.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite Project
+- An Indobase Project
 - An [OpenAI API Key](https://platform.openai.com/account/api-keys)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -26,7 +26,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -189,7 +189,7 @@ After the `</head>` tag add a `<body>` containing the visible form:
 </body>
 ```
 
-The form will allows users to submit your text to the Appwrite function through a POST request. The Appwrite function will call the OpenAI API, and return the response to the user.
+The form will allows users to submit your text to the Indobase function through a POST request. The Indobase function will call the OpenAI API, and return the response to the user.
 {% /section %}
 
 {% section #step-6 step=6 title="Handle POST request" %}
@@ -201,7 +201,7 @@ Import `openai` at the top of the `main.js` file.
 import { OpenAIApi, Configuration } from 'openai';
 ```
 
-Add code to validate the body of the request and initialize the Appwrite SDK:
+Add code to validate the body of the request and initialize the Indobase SDK:
 
 ```js
 const client = new Client()

@@ -144,7 +144,7 @@
     <div class="container flex flex-col items-center justify-center gap-8 text-center">
         <h2 class="text-display text-primary font-aeonik-pro">Optimize performance</h2>
         <p class="text-description text-secondary max-w-xl font-medium">
-            Leverage the Appwrite Network for seamless auto-scaling. Explore regions for optimal
+            Leverage the Indobase Network for seamless auto-scaling. Explore regions for optimal
             performance.
         </p>
     </div>

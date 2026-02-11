@@ -1,10 +1,10 @@
----
+﻿---
 layout: changelog
-title: Fixes and improvements to Appwrite Cloud
+title: Fixes and improvements to Indobase Cloud
 date: 2024-11-29
 ---
 
-We've shipped several updates and improvements to Appwrite Cloud for a smoother experience:
+We've shipped several updates and improvements to Indobase Cloud for a smoother experience:
 
 - The backups feature popup modal now appears only on Cloud environments, avoiding confusion for self-hosted users.
 - Improved database screen UI for self-hosted users by removing an unnecessary column.
@@ -18,7 +18,7 @@ We've shipped several updates and improvements to Appwrite Cloud for a smoother 
 - Improved API performance under load.
 - Improved Functions performance for more stable and consistent function executions.
 
-These updates are aimed at improving the overall usability and performance of Appwrite Cloud. Let us know if you encounter any issues!
+These updates are aimed at improving the overall usability and performance of Indobase Cloud. Let us know if you encounter any issues!
 
 {% arrow_link href="https://cloud.appwrite.io/console" %}
 Explore the Console to see the updates

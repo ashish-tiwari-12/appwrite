@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: OAuth 2 login
-description: Integrate OAuth2 authentication seamlessly with Appwrite. Learn how to connect your application with third-party OAuth2 providers for secure user login and access.
+description: Integrate OAuth2 authentication seamlessly with Indobase. Learn how to connect your application with third-party OAuth2 providers for secure user login and access.
 ---
 
 OAuth authentication allows users to log in using accounts from other popular services. This can be convenient for users because they can start using your app without creating a new account. It can also be more secure, because the user has one less password that could become vulnerable.
@@ -9,20 +9,20 @@ OAuth authentication allows users to log in using accounts from other popular se
 When using OAuth to authenticate, the authentication request is initiated from the client application. The user is then redirected to an OAuth 2 provider to complete the authentication step, and finally, the user is redirected back to the client application.
 
 {% info title="Identities and OAuth2" %}
-OAuth2 login creates an **identity** in Appwrite, allowing users to connect multiple providers to a single account. Learn more in [Identities](/docs/products/auth/identities).
+OAuth2 login creates an **identity** in Indobase, allowing users to connect multiple providers to a single account. Learn more in [Identities](/docs/products/auth/identities).
 {% /info %}
 
 # Configure OAuth 2 login {% #configure %}
 
 Before using OAuth 2 login, you need to enable and configure an OAuth 2 login provider.
 
-1. Navigate to your Appwrite project.
+1. Navigate to your Indobase project.
 2. Navigate to **Auth** > **Settings**.
 3. Find and open the OAuth provider.
 4. In the OAuth 2 settings modal, use the toggle to enable the provider.
 5. Create and OAuth 2 app on the provider's developer platform.
-6. Copy information from your OAuth2 provider's developer platform to fill the **OAuth2 Settings** modal in the Appwrite Console.
-7. Configure redirect URL in your OAuth 2 provider's developer platform. Set it to URL provided to you by **OAuth2 Settings** modal in Appwrite Console.
+6. Copy information from your OAuth2 provider's developer platform to fill the **OAuth2 Settings** modal in the Indobase Console.
+7. Configure redirect URL in your OAuth 2 provider's developer platform. Set it to URL provided to you by **OAuth2 Settings** modal in Indobase Console.
 
 # Initialize OAuth 2 login {% #init %}
 
@@ -57,7 +57,7 @@ account.createOAuth2Session({
 
 {% tabsitem #flutter title="Flutter" %}
 
-For Android, add the following activity inside the `<application>` tag in your `AndroidManifest.xml`. Replace `<PROJECT_ID>` with your actual Appwrite project ID.
+For Android, add the following activity inside the `<application>` tag in your `AndroidManifest.xml`. Replace `<PROJECT_ID>` with your actual Indobase project ID.
 
 ```xml
 <!-- Add this inside the <application> tag, along side the existing <activity> tags -->
@@ -122,7 +122,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteEnums
 
 let client = Client()
@@ -141,7 +141,7 @@ try await account.createOAuth2Session(
 
 {% tabsitem #android title="Android" %}
 For Android, add the following activity inside the `<application>` tag in your `AndroidManifest.xml`.
-Replace `<PROJECT_ID>` with your actual Appwrite project ID.
+Replace `<PROJECT_ID>` with your actual Indobase project ID.
 
 ```xml
 <!-- Add this inside the `<application>` tag, along side the existing `<activity>` tags -->
@@ -278,7 +278,7 @@ print(session.providerUid);
 print(session.providerAccessToken);
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -331,7 +331,7 @@ You can use the `providerAccessToken` to make requests to your OAuth 2 provider.
 # Refresh tokens {% #refresh-tokens %}
 
 OAuth 2 sessions expire to protect from security risks.
-This means the OAuth 2 session with a provider may expire, even when an Appwrite session remains active.
+This means the OAuth 2 session with a provider may expire, even when an Indobase session remains active.
 OAuth 2 sessions should be refreshed periodically so access tokens don't expire.
 
 Check the value of `providerAccessTokenExpiry` to know if the token is expired or is about to expire.
@@ -364,7 +364,7 @@ final result = await account.updateSession(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint

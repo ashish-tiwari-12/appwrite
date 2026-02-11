@@ -26,11 +26,11 @@
             {/each}
         </ul>
         <div class="mt-1 grid grid-cols-1 gap-y-4 md:grid-cols-3">
-            <div>Copyright © {year} Appwrite</div>
+            <div>Copyright © {year} Indobase</div>
 
             <iframe
                 class="w-full md:w-fit md:max-w-[230px]"
-                title="Appwrite Status"
+                title="Status"
                 src="https://status.appwrite.online/badge?theme=dark"
                 height="35"
                 frameborder="0"
@@ -107,7 +107,7 @@
 				</li> -->
             </ul>
             <div class="web-main-footer-grid-1-column-4 web-main-footer-copyright">
-                Copyright © {year} Appwrite
+                Copyright © {year} Indobase
             </div>
         </div>
     </footer>

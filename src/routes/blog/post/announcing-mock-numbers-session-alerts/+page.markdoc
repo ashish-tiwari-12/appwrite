@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Introducing mock numbers and session alerts in Auth"
-description: In response to popular demand, we're thrilled to announce two significant improvements to Appwrite Auth.
+description: In response to popular demand, we're thrilled to announce two significant improvements to Indobase Auth.
 date: 2024-08-23
 cover: /images/blog/init-day4/cover.png
 timeToRead: 4
@@ -21,7 +21,7 @@ Mock numbers allow you to configure a list of phone numbers that can sign in wit
 
 Ready to implement mock numbers in your project? Here's how to get started:
 
-First, configure your mock numbers. You can do it with the Appwrite console (go to your project, and then **Auth > Security**)
+First, configure your mock numbers. You can do it with the Indobase console (go to your project, and then **Auth > Security**)
 
 ![Mock-numbers](/images/blog/init-day4/1.png)
 
@@ -54,13 +54,13 @@ The mock numbers feature will be available for Pro users in 1.6.
 
 # Session alerts
 
-When you sign into your Appwrite Cloud account, you will receive an email telling you about the sign-in, including details about the session. 
+When you sign into your Indobase Cloud account, you will receive an email telling you about the sign-in, including details about the session. 
 
 End-users won't receive an email if it's their first time signing in, or if they haven't set up an email address.
 
 ![Email-session-alert](/images/blog/init-day4/2.png)
 
-This is a security feature that allows you to quickly secure your account if compromised. It's enabled by default for Cloud, and you can enable it for your Appwrite project in the **Auth > Security** menu:
+This is a security feature that allows you to quickly secure your account if compromised. It's enabled by default for Cloud, and you can enable it for your Indobase project in the **Auth > Security** menu:
 
 ![Session-alert](/images/blog/init-day4/3.png)
 
@@ -74,4 +74,4 @@ If you'd like to try these features out in your application, here are a few reso
 
 - [Read the mock numbers documentation](/docs/products/auth/phone-sms)
 - [Join our Discord community](https://discord.gg/appwrite)
-- [Learn about Appwrite Init](https://www.appwrite.io/init)
+- [Learn about Indobase Init](https://www.appwrite.io/init)

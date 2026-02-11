@@ -1,7 +1,7 @@
----
+﻿---
 layout: integration
 title: Logging with Sentry
-description: Connect Sentry to your self-hosted Appwrite instance for improved error-tracking, logging, and overall reliability of your application.
+description: Connect Sentry to your self-hosted Indobase instance for improved error-tracking, logging, and overall reliability of your application.
 date: 2024-07-30
 featured: false
 isPartner: true
@@ -25,7 +25,7 @@ Sentry is an open-source error-tracking and performance-monitoring tool designed
 
 # How does the integration work?
 
-If you are using self-hosting Appwrite, you can use the Sentry provider for error-tracking and logging for your Appwrite instance.
+If you are using self-hosting Indobase, you can use the Sentry provider for error-tracking and logging for your Indobase instance.
 
 # How to implement
 
@@ -39,19 +39,19 @@ First, [sign up on Sentry](https://sentry.io/signup/) and create a new project.
 
 Head to **Settings** > **Projects** > Select your Sentry project > **Client Keys (DSN)**. Save the DSN for further usage.
 
-## Step 2: Add Sentry provider to your Appwrite instance
+## Step 2: Add Sentry provider to your Indobase instance
 
-For this step, you must [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven't already.
+For this step, you must [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven't already.
 
-The Appwrite logging configuration uses a DSN format that follows the pattern `sentry://PROJECT_ID:SENTRY_API_KEY@SENTRY_HOST/`. For example, if your Sentry DSN is `https://abcdef@sentry.example.com/1`, then the Appwrite logging configuration will be `sentry://1:abcdef@sentry.example.com/`.
+The Indobase logging configuration uses a DSN format that follows the pattern `sentry://PROJECT_ID:SENTRY_API_KEY@SENTRY_HOST/`. For example, if your Sentry DSN is `https://abcdef@sentry.example.com/1`, then the Indobase logging configuration will be `sentry://1:abcdef@sentry.example.com/`.
 
-Visit the `.env` file created for your Appwrite instance and update the following environment variable:
+Visit the `.env` file created for your Indobase instance and update the following environment variable:
 
 ```bash
 _APP_LOGGING_CONFIG=sentry://PROJECT_ID:SENTRY_API_KEY@SENTRY_HOST/
 ```
 
-{% info title="Using Appwrite < 1.5.6?" %}
+{% info title="Using Indobase < 1.5.6?" %}
 For versions prior to 1.5.6, use the old syntax format:
 ```bash
 _APP_LOGGING_PROVIDER=sentry
@@ -59,7 +59,7 @@ _APP_LOGGING_CONFIG=SENTRY_PROJECT_ID;SENTRY_PUBLIC_KEY@SENTRY_HOST
 ```
 {% /info %}
 
-After that, run the following Docker Compose commands in your terminal to restart your Appwrite containers and verify if the changes have been successfully applied:
+After that, run the following Docker Compose commands in your terminal to restart your Indobase containers and verify if the changes have been successfully applied:
 
 ```bash
 docker compose up -d --force-recreate
@@ -82,9 +82,9 @@ You can also view the error details for more information.
 
 ![Issue details](/images/integrations/logging-sentry/issue-details.png)
 
-# Read more about Sentry and Appwrite
+# Read more about Sentry and Indobase
 
-If you would like to learn more about Sentry and Appwrite, we have some resources that you should visit:
+If you would like to learn more about Sentry and Indobase, we have some resources that you should visit:
 
 - [Sign up for Sentry](https://sentry.io/signup/)
-- [Handling errors in Appwrite self-hosted instances](https://appwrite.io/docs/advanced/self-hosting/production#errors)
+- [Handling errors in Indobase self-hosted instances](https://appwrite.io/docs/advanced/self-hosting/production#errors)

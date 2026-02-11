@@ -1,28 +1,28 @@
----
+﻿---
 layout: article
 title: SSR login
-description: How to implement SSR authentication with Appwrite
+description: How to implement SSR authentication with Indobase
 ---
-Server-side rendering (SSR) is fully supported with Appwrite. You can use Appwrite with many SSR-oriented frameworks, such as Next.js, SvelteKit, Nuxt, Gatsby, Remix, and more.
+Server-side rendering (SSR) is fully supported with Indobase. You can use Indobase with many SSR-oriented frameworks, such as Next.js, SvelteKit, Nuxt, Gatsby, Remix, and more.
 
 SSR is a technique where the server renders a web page and sending the fully rendered page to the client's web browser. This is in contrast to client-side rendering (CSR), where the client's web browser renders the page using JavaScript.
 
-This guide will walk you through the process of implementing an SSR application with Appwrite.
+This guide will walk you through the process of implementing an SSR application with Indobase.
 
 # SSR authentication flow {% #ssr-auth-flow %}
 
 In client-side rendered web apps, a [Client SDK](/docs/sdks#client) is used to perform authentication directly from the client's web browser.
 
-With server-side rendered web apps, a [Server SDK](/docs/sdks#server) is used to handle authentication against Appwrite. Authentication data is passed from the client's web browser to your server, and then your server makes requests to Appwrite on behalf of the client.
+With server-side rendered web apps, a [Server SDK](/docs/sdks#server) is used to handle authentication against Indobase. Authentication data is passed from the client's web browser to your server, and then your server makes requests to Indobase on behalf of the client.
 
 Here's a high-level overview of the authentication flow:
 
 1. The user enters their credentials in their web browser.
 2. The browser sends the credentials to your server.
-3. Your server uses the Server SDK to authenticate the user with Appwrite.
+3. Your server uses the Server SDK to authenticate the user with Indobase.
 4. If the authentication is successful, your server sends a session cookie to the client's web browser.
 5. The client's web browser sends the session cookie to your server with subsequent request.
-6. Your server uses the session cookie to make authenticated requests to Appwrite on behalf of the client.
+6. Your server uses the session cookie to make authenticated requests to Indobase on behalf of the client.
 
 {% only_dark %}
 ![CSR vs SSR flow diagram](/images/docs/auth/ssr/dark/ssr.png)
@@ -35,9 +35,9 @@ Here's a high-level overview of the authentication flow:
 {% info title="Server SDK required" %}
 Server-side rendering requires a [Server SDK](/docs/sdks#server) instead of a Client SDK.
 {% /info %}
-In SSR, your server-side application will be making authentication requests to Appwrite and passing session cookies to your client-side app on the browser.
+In SSR, your server-side application will be making authentication requests to Indobase and passing session cookies to your client-side app on the browser.
 
-We'll need to initialize two Appwrite clients, one for admin requests and one for session-based requests.
+We'll need to initialize two Indobase clients, one for admin requests and one for session-based requests.
 
 ## Admin client {% #admin-client %}
 
@@ -63,8 +63,8 @@ const adminClient = new Client()
     .setKey('<YOUR_API_KEY>');                   // Your secret API key
 ```
 ```php
-use Appwrite\Client;
-use Appwrite\Services\Account;
+use Indobase\Client;
+use Indobase\Services\Account;
 
 $adminClient = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -90,12 +90,12 @@ It is important to use an API key, as this will allow your server requests to by
 
 ## Session client {% #session-client %}
 
-The session client will be used to make requests to Appwrite on behalf of the end-user.
+The session client will be used to make requests to Indobase on behalf of the end-user.
 It will be initialized with the session, usually stored within a cookie.
 
 You should create a new client for each request and **never** share the client between requests.
 
-Use `a_session_<PROJECT_ID>` as the [cookie name](/docs/apis/rest#client-integration) and a [custom domain](/docs/advanced/platform/custom-domains) for your Appwrite endpoint if you want the session to work client-side as well.
+Use `a_session_<PROJECT_ID>` as the [cookie name](/docs/apis/rest#client-integration) and a [custom domain](/docs/advanced/platform/custom-domains) for your Indobase endpoint if you want the session to work client-side as well.
 
 {% multicode %}
 ```server-nodejs
@@ -140,8 +140,8 @@ if session:
 
 The most straightforward type of session to integrate is email/password.
 
-Create an endpoint using your server's framework of choice that accepts a username and password, and then makes a request to Appwrite to create a session.
-Once you have a session object, you can store it in a cookie. This will allow your users make authenticated requests to the Appwrite API from your server.
+Create an endpoint using your server's framework of choice that accepts a username and password, and then makes a request to Indobase to create a session.
+Once you have a session object, you can store it in a cookie. This will allow your users make authenticated requests to the Indobase API from your server.
 
 Use the `secret` property of the session object as the cookie value. The `expire` property of the session object should be used as the cookie's max age.
 Here's an example with Express and PHP, but the same concepts apply to most frameworks.
@@ -159,7 +159,7 @@ app.post('/login', async (req, res) => {
     const account = new Account(adminClient);
 
     try {
-        // Create the session using the Appwrite client
+        // Create the session using the Indobase client
         const session = await account.createEmailPasswordSession({
             email,
             password
@@ -193,7 +193,7 @@ $password = $_POST['password'];
 try {
     $account = new Account($adminClient);
 
-    // Create the session using the Appwrite client
+    // Create the session using the Indobase client
     $session = $account->createEmailPasswordSession($email, $password);
 
     // Set the session cookie
@@ -226,7 +226,7 @@ def login():
     try:
         account = Account(admin_client)
 
-        # Create the session using the Appwrite client
+        # Create the session using the Indobase client
         session = account.create_email_password_session(email, password)
         resp = make_response(jsonify({'success': True}))
 
@@ -252,7 +252,7 @@ and is not accessible to JavaScript. This will prevent XSS attacks.
 
 Once a user has a session cookie, which will be set by the browser when it receives the `/login` endpoint's response, they can use it to make authenticated requests to your server.
 
-To enable this, you will need to read the cookie value from the request, and then pass it to the Appwrite client, using the `setSession` helper.
+To enable this, you will need to read the cookie value from the request, and then pass it to the Indobase client, using the `setSession` helper.
 When the browser makes a request to your domain's endpoints, it will automatically include session cookies.
 
 {% multicode %}
@@ -269,10 +269,10 @@ app.get('/user', async (req, res) => {
         return res.status(401).json({ success: false, error: 'Unauthorized' });
     }
 
-    // Pass the session cookie to the Appwrite client
+    // Pass the session cookie to the Indobase client
     sessionClient.setSession(session);
 
-    // Now, you can make authenticated requests to the Appwrite API
+    // Now, you can make authenticated requests to the Indobase API
     const account = new Account(sessionClient);
     try {
         const user = await account.get();
@@ -295,11 +295,11 @@ if (!$session) {
     return http_response_code(401);
 }
 
-// Pass the session cookie to the Appwrite client
+// Pass the session cookie to the Indobase client
 $sessionClient->setSession($session);
 $account = new Account($sessionClient);
 
-// Now, you can make authenticated requests to the Appwrite API
+// Now, you can make authenticated requests to the Indobase API
 try {
     $user = $account->get();
 
@@ -320,11 +320,11 @@ def get_user():
     if not session:
         return jsonify({'success': False, 'error': 'Unauthorized'}), 401
 
-    # pass the session cookie to the Appwrite client
+    # pass the session cookie to the Indobase client
     session_client.set_session(session)
     account = Account(session_client)
 
-    # Now, you can make authenticated requests to the Appwrite API
+    # Now, you can make authenticated requests to the Indobase API
     try:
         user = account.get()
         return jsonify({'success': True, 'user': user})
@@ -340,7 +340,7 @@ Normally, rate limits are applied by an abuse key, which is usually a combinatio
 When you make unauthenticated requests from your server, however, all requests originate from the same IP and no user ID is provided.
 This means that all unauthenticated requests from your server will be **subject to the same rate limits**.
 
-These rate limits protect your Appwrite server from abuse, if you need to make unauthenticated requests from your server,
+These rate limits protect your Indobase server from abuse, if you need to make unauthenticated requests from your server,
 there are ways to bypass rate limits.
 
 # Making unauthenticated requests {% #making-unauthenticated-requests %}
@@ -394,8 +394,8 @@ promise.then(function (response) {
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Account;
+use Indobase\Client;
+use Indobase\Services\Account;
 
 $client = new Client();
 
@@ -425,7 +425,7 @@ result = account.create_anonymous_session()
 
 # Forwarding user agent {% #forwarding-user-agent %}
 
-Appwrite sessions record some information about the client. To set this information in a server-side context use the `setForwardedUserAgent` to set the end-user's user agent. While optional, these can be useful for debugging and security purposes.
+Indobase sessions record some information about the client. To set this information in a server-side context use the `setForwardedUserAgent` to set the end-user's user agent. While optional, these can be useful for debugging and security purposes.
 
 {% multicode %}
 ```server-nodejs
@@ -444,7 +444,7 @@ client.set_forwarded_user_agent(request.headers.get('user-agent'))
 
 Server-side OAuth2 authentication requires two server endpoints:
 
-Create an initial endpoint that redirects the user to the OAuth2 provider's authentication page using Appwrite's `createOAuth2Token` method. After authenticating with the provider, the user will be redirected to the `success` URL with `userId` and `secret` URL parameters.
+Create an initial endpoint that redirects the user to the OAuth2 provider's authentication page using Indobase's `createOAuth2Token` method. After authenticating with the provider, the user will be redirected to the `success` URL with `userId` and `secret` URL parameters.
 
 {% multicode %}
 ```server-nodejs
@@ -469,9 +469,9 @@ app.get('/oauth', async (req, res) => {
 ```
 ```php
 <?php
-use Appwrite\Client;
-use Appwrite\Services\Account;
-use Appwrite\Enums\OAuthProvider;
+use Indobase\Client;
+use Indobase\Services\Account;
+use Indobase\Enums\OAuthProvider;
 
 $adminClient = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -524,7 +524,7 @@ app.get('/oauth/success', async (req, res) => {
     const { userId, secret } = req.query;
 
     try {
-        // Create the session using the Appwrite client
+        // Create the session using the Indobase client
         const session = await account.createSession({
             userId,
             secret
@@ -547,8 +547,8 @@ app.get('/oauth/success', async (req, res) => {
 ```
 ```php
 <?php
-use Appwrite\Client;
-use Appwrite\Services\Account;
+use Indobase\Client;
+use Indobase\Services\Account;
 
 $adminClient = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -562,7 +562,7 @@ $userId = $_GET['userId'];
 $secret = $_GET['secret'];
 
 try {
-    // Create the session using the Appwrite client
+    // Create the session using the Indobase client
     $session = $account->createSession($userId, $secret);
 
     // Set the session cookie
@@ -589,7 +589,7 @@ def oauth_success():
     secret = request.args.get('secret')
 
     try:
-        # Create the session using the Appwrite client
+        # Create the session using the Indobase client
         session = account.create_session(user_id, secret)
 
         # Set the session cookie
@@ -613,7 +613,7 @@ def oauth_success():
 ```
 {% /multicode %}
 
-Now the cookie is set, it will be passed to the server with subsequent requests, and you can use it to make authenticated requests to the Appwrite API on behalf of the end-user.
+Now the cookie is set, it will be passed to the server with subsequent requests, and you can use it to make authenticated requests to the Indobase API on behalf of the end-user.
 
 # Tutorials {% #tutorials %}
 If you'd like to see SSR authentication implemented in a full auth example, see these tutorials.

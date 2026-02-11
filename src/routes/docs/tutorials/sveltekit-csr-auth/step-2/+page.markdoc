@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create project
-description: Add Authentication to a SvelteKit project using Appwrite.
+description: Add Authentication to a SvelteKit project using Indobase.
 step: 2
 ---
 
@@ -43,9 +43,9 @@ cd my-svelte-project
 npm install
 ```
 
-## Adding Appwrite to your Svelte app {% #adding-appwrite-to-your-svelte-app %}
+## Adding Indobase to your Svelte app {% #adding-appwrite-to-your-svelte-app %}
 
-Appwrite provides a Web SDK that can be used in your Svelte apps. You can use Appwrite by installing the Web SDK as an NPM package.
+Indobase provides a Web SDK that can be used in your Svelte apps. You can use Indobase by installing the Web SDK as an NPM package.
 
 ```sh
 npm install appwrite

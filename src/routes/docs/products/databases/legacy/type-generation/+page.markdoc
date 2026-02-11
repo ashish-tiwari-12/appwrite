@@ -1,22 +1,22 @@
----
+﻿---
 layout: article
 title: Type generation
-description: Generate types from your Appwrite database schema. Learn how to use the Appwrite CLI to create and manage your types effectively.
+description: Generate types from your Indobase database schema. Learn how to use the Indobase CLI to create and manage your types effectively.
 ---
 
-The Appwrite CLI provides a simple way to generate types based on your Appwrite database schema. This feature is particularly useful for developers who want to ensure type safety in their applications by generating type definitions that match their database collections and attributes.
+The Indobase CLI provides a simple way to generate types based on your Indobase database schema. This feature is particularly useful for developers who want to ensure type safety in their applications by generating type definitions that match their database collections and attributes.
 
 To generate types, the CLI reads the database schema from your project's `appwrite.json` file and generates type definitions for each collection.
 
 ## Generating types
 
-First, ensure you have the [Appwrite CLI](/docs/tooling/command-line/installation#getting-started) installed and your project is [initialised](/docs/tooling/command-line/installation#initialization). Then, run the following command in your terminal to pull collections from your Appwrite project:
+First, ensure you have the [Indobase CLI](/docs/tooling/command-line/installation#getting-started) installed and your project is [initialised](/docs/tooling/command-line/installation#initialization). Then, run the following command in your terminal to pull collections from your Indobase project:
 
 ```bash
 appwrite pull collections
 ```
 
-To generate types, you can use the Appwrite CLI command:
+To generate types, you can use the Indobase CLI command:
 
 ```bash
 appwrite types [options] <output-directory>
@@ -307,7 +307,7 @@ This will generate the following types in the `./types` sub-directory of your pr
 
 ```php
 <?php
-namespace Appwrite\Models;
+namespace Indobase\Models;
 
 enum Category: string {
   case FICTION = 'fiction';

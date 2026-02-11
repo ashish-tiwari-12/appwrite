@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: Build a “delivery store locator” using Spatial Columns in Appwrite Databases
+title: Build a “delivery store locator” using Spatial Columns in Indobase Databases
 description: Learn how to use spatial columns in a real-world application.
 date: 2025-09-18
 cover: /images/blog/build-delivery-store-locator-spatial-columns/cover.png
@@ -9,7 +9,7 @@ author: atharva
 category: tutorial
 ---
 
-We just launched spatial columns for Appwrite databases which allows you to perform queries on real, spatial data like locations, areas, and routes. This unlocks a lot of possibilities where you can tap into real-world geo data and query the information you need. This saves you from performing your own calculations on longitudes and latitudes and instead relying on Appwrite's database to query the data you need.
+We just launched spatial columns for Indobase databases which allows you to perform queries on real, spatial data like locations, areas, and routes. This unlocks a lot of possibilities where you can tap into real-world geo data and query the information you need. This saves you from performing your own calculations on longitudes and latitudes and instead relying on Indobase's database to query the data you need.
 
 In this article, we will look at an example delivery store locator and how it uses spatial columns to find the nearest stores.
 
@@ -29,9 +29,9 @@ You can access the [delivery store locator](https://delivery-store-locator.appwr
 
 # Setting up spatial columns
 
-Head to [Appwrite Cloud](https://cloud.appwrite.io) and choose your project. Go to **Databases** section from the sidebar and create/choose your database. Here, we will create a new table called `stores`. In the columns tab for your new table, let’s create two columns that will be needed.
+Head to [Indobase Cloud](https://cloud.appwrite.io) and choose your project. Go to **Databases** section from the sidebar and create/choose your database. Here, we will create a new table called `stores`. In the columns tab for your new table, let’s create two columns that will be needed.
 
-![Adding spatial columns in Appwrite console](/images/blog/build-delivery-store-locator-spatial-columns/required-columns.png)
+![Adding spatial columns in Indobase console](/images/blog/build-delivery-store-locator-spatial-columns/required-columns.png)
 
 - `name`: name of the store, this should be a column of type **String**.
 - `location`: exact location coordinates of the store, this should be a column of type **Point**.
@@ -46,7 +46,7 @@ In the application, we have a hamburger on the top right to manage stores we hav
 
 This modal will accept a store name, and you can select a location on the map where you want to set to have the store at. Once you click **Add store**, it gets added to the database, and the updated stores appear on the sidebar.
 
-However, there's something important to know here — it's the way we're storing the location information in the database. We're not just storing this information as a string, we're using the special **Point** column we made in Appwrite console earlier. When you click on **Add store**, we're making an API call, which then adds to database using the following call:
+However, there's something important to know here — it's the way we're storing the location information in the database. We're not just storing this information as a string, we're using the special **Point** column we made in Indobase console earlier. When you click on **Add store**, we're making an API call, which then adds to database using the following call:
 
 ```js
 const store = await tablesdb.createRow({
@@ -65,7 +65,7 @@ After you add a store, if you choose a location very close to the store on the m
 
 ![Finding nearby stores](/images/blog/build-delivery-store-locator-spatial-columns/finding-nearby-store.png)
 
-To make this work, we are not using some highly logical geometrical calculations, we are simply running a query on our Appwrite database mentioning the distance limit we want to limit our store search to.
+To make this work, we are not using some highly logical geometrical calculations, we are simply running a query on our Indobase database mentioning the distance limit we want to limit our store search to.
 
 ```js
 const serviceableStores = await tablesdb.listRows({

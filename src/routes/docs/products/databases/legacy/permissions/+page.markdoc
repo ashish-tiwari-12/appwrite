@@ -1,13 +1,13 @@
----
+﻿---
 layout: article
 title: Database permissions
-description: Enhance data security and access control with Appwrite Database Permissions. Learn how to set permissions and access rules for your database collections
+description: Enhance data security and access control with Indobase Database Permissions. Learn how to set permissions and access rules for your database collections
 ---
 
 Permissions define who can access documents in a collection. By default **no permissions** are granted to any users, so no user can access any documents.
 Permissions exist at two levels, collection level and document level permissions.
 
-In Appwrite, permissions are **granted**, meaning a user has no access by default and receive access when granted.
+In Indobase, permissions are **granted**, meaning a user has no access by default and receive access when granted.
 A user with access granted at either collection level or document level will be able to access a document.
 Users **don't need access at both levels** to access documents.
 

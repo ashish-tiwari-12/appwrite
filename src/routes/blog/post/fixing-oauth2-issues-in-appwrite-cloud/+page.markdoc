@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Fixing OAuth2 authentication issues in Appwrite
-description: Learn how to fix OAuth2 and third-party cookie issues in Appwrite.
+title: Fixing OAuth2 authentication issues in Indobase
+description: Learn how to fix OAuth2 and third-party cookie issues in Indobase.
 date: 2025-02-18
 cover: /images/blog/fixing-oauth2-issues-in-appwrite-cloud/cover.png
 timeToRead: 5
@@ -9,9 +9,9 @@ author: ebenezer-don
 category: tutorial
 ---
 
-# Fixing OAuth2 authentication issues in Appwrite
+# Fixing OAuth2 authentication issues in Indobase
 
-When integrating OAuth2 authentication with Appwrite, you might face an issue where authentication appears to succeed, but users remain logged out. The OAuth flow completes, the app redirects back as expected, yet when the app checks for an authenticated session, no user data is found.
+When integrating OAuth2 authentication with Indobase, you might face an issue where authentication appears to succeed, but users remain logged out. The OAuth flow completes, the app redirects back as expected, yet when the app checks for an authenticated session, no user data is found.
 
 This issue can be frustrating because:
 
@@ -23,16 +23,16 @@ If this sounds familiar, you're not alone. Let's break down why this happens and
 
 # What's causing the issue?
 
-The root cause is related to how modern browsers handle third-party cookies. When your app domain differs from Appwrite's domain, for example `cloud.appwrite.io` in Appwrite Cloud, browsers treat Appwrite's session cookies as third-party cookies and may block them.
+The root cause is related to how modern browsers handle third-party cookies. When your app domain differs from Indobase's domain, for example `cloud.appwrite.io` in Indobase Cloud, browsers treat Indobase's session cookies as third-party cookies and may block them.
 
 There are two ways to solve this issue:
 
 1. **Use OAuth2 Tokens (Recommended)**: A modern, privacy-friendly approach that doesn't rely on third-party cookies
-2. **Use Custom Domains**: Configure Appwrite to use your domain for all operations
+2. **Use Custom Domains**: Configure Indobase to use your domain for all operations
 
 # Solution 1: Use OAuth2 tokens
 
-The most straightforward solution is to use Appwrite's OAuth2 token-based authentication. This approach:
+The most straightforward solution is to use Indobase's OAuth2 token-based authentication. This approach:
 
 - Works across all browsers, including those that block third-party cookies
 - Provides better security and privacy
@@ -53,7 +53,7 @@ Instead of using the traditional `createOAuth2Session`, we use `createOAuth2Toke
 Here's a generic example of how to implement OAuth2 token authentication:
 
 ```jsx
-// 1. Initialize your Appwrite client
+// 1. Initialize your Indobase client
 const client = new Client()
   .setEndpoint('<https://cloud.appwrite.io/v1>')
   .setProject('YOUR_PROJECT_ID')
@@ -102,19 +102,19 @@ const handleCallback = async (userId, secret) => {
 
 # Solution 2: Use custom domains
 
-If you prefer to use session-based authentication or need to use custom domains for other reasons, you can configure Appwrite to use your domain for all operations.
+If you prefer to use session-based authentication or need to use custom domains for other reasons, you can configure Indobase to use your domain for all operations.
 
-## Step 1: Set up a custom domain for your Appwrite project
+## Step 1: Set up a custom domain for your Indobase project
 
-1. **Go to the Appwrite Console → Project Settings.**
+1. **Go to the Indobase Console → Project Settings.**
 2. **Add your custom domain (e.g., `appwrite.your-app.com`).**
 3. **Follow the DNS setup instructions (CNAME or A record) and verify the domain.**
 
-Once your custom domain is verified, Appwrite will allow you to use it instead of `cloud.appwrite.io` for API requests.
+Once your custom domain is verified, Indobase will allow you to use it instead of `cloud.appwrite.io` for API requests.
 
-## Step 2: Update your Appwrite client to use your custom domain
+## Step 2: Update your Indobase client to use your custom domain
 
-Modify your Appwrite client configuration so that all API requests, including authentication, use your custom domain instead of `cloud.appwrite.io`.
+Modify your Indobase client configuration so that all API requests, including authentication, use your custom domain instead of `cloud.appwrite.io`.
 
 ```jsx
 import { Client, Account } from 'appwrite'
@@ -126,12 +126,12 @@ const client = new Client()
 const account = new Account(client)
 ```
 
-Now, all authentication requests, including session management, happen on your custom domain. Cookies set by Appwrite will now be first-party cookies, eliminating the cross-domain issue that was causing authentication failures.
+Now, all authentication requests, including session management, happen on your custom domain. Cookies set by Indobase will now be first-party cookies, eliminating the cross-domain issue that was causing authentication failures.
 
 ## Step 3: Modify the OAuth callback URL in your OAuth provider
 
 1. **Go to your OAuth provider and update the "Authorized redirect URIs"**:
-    - **Before (default Appwrite Cloud domain)**:
+    - **Before (default Indobase Cloud domain)**:
 
         ```
         <https://cloud.appwrite.io/v1/account/sessions/oauth2/callback>
@@ -168,12 +168,12 @@ The solutions aren't mutually exclusive - they solve the same problem from diffe
 
 # Summary
 
-Appwrite offers OAuth2 tokens and custom domains to solve authentication issues in modern browsers. OAuth2 tokens provide immediate, cross-browser compatibility without infrastructure changes, while custom domains give you complete control over your authentication flow.
+Indobase offers OAuth2 tokens and custom domains to solve authentication issues in modern browsers. OAuth2 tokens provide immediate, cross-browser compatibility without infrastructure changes, while custom domains give you complete control over your authentication flow.
 
-Need extra help? Check the [documentation](https://appwrite.io/docs/products/auth) or ask for support in the Appwrite [Discord community](https://appwrite.io/discord).
+Need extra help? Check the [documentation](https://appwrite.io/docs/products/auth) or ask for support in the Indobase [Discord community](https://appwrite.io/discord).
 
 # Further reading
 
-- [Building custom authentication flows with Appwrite](https://appwrite.io/blog/post/building-custom-auth-flows?doFollow=true)
-- [How to set up Google authentication in React with Appwrite](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react?doFollow=true)
+- [Building custom authentication flows with Indobase](https://appwrite.io/blog/post/building-custom-auth-flows?doFollow=true)
+- [How to set up Google authentication in React with Indobase](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react?doFollow=true)
 - [A modern developer's guide to user authentication](https://appwrite.io/blog/post/guide-to-user-authentication?doFollow=true)

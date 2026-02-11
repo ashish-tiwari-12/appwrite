@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Sound null-safety for your Dart functions
 description: Learn to reduce null related runtime errors with Dart 3.
@@ -10,11 +10,11 @@ category: product
 featured: false
 ---
 
-Dart 3 runtimes are now available on Appwrite Cloud. Among the many cool features introduced in Dart 3, sound null safety stands out as an important change for Appwrite Functions.
+Dart 3 runtimes are now available on Indobase Cloud. Among the many cool features introduced in Dart 3, sound null safety stands out as an important change for Indobase Functions.
 
 Sound null safety means you can expect to know when a variable is not null. More importantly, it helps you make sure you properly handle potential null values by warning you at compile time.
 
-When you build with Appwrite Functions, you’ll often build integrations that interface with external services and user input directly. In these cases, you have no control over what’s sent over the request.
+When you build with Indobase Functions, you’ll often build integrations that interface with external services and user input directly. In these cases, you have no control over what’s sent over the request.
 
 This helps prevent all types of errors at run time, which can be difficult to catch and debug otherwise.
 
@@ -88,7 +88,7 @@ class Profile {
   }
 }
 
-// This is your Appwrite function
+// This is your Indobase function
 // It's executed each time we get a request
 Future<dynamic> main(final context) async {
   context.log("Here are the people that showed up!");
@@ -131,7 +131,7 @@ In Dart 2, without null safety, this code will happily compile and run. Well, un
 }
 ```
 
-This will give you an unexpected runtime error. If you’re building integrations or new APIs with Appwrite functions, you’d want to gracefully handle the null values instead of seeing this error in your logs.
+This will give you an unexpected runtime error. If you’re building integrations or new APIs with Indobase functions, you’d want to gracefully handle the null values instead of seeing this error in your logs.
 
 ```dart
 The getter 'age' was called on null.
@@ -216,7 +216,7 @@ context.log("Left at: ${profile.stay?.leftAt?.split('T')[0] ?? 'unknown'}");
 
 # The new function
 
-Here’s the new Appwrite with all the null handling in place.
+Here’s the new Indobase with all the null handling in place.
 
 ```dart
 import 'dart:async';
@@ -251,7 +251,7 @@ class Profile {
   }
 }
 
-// This is your Appwrite function
+// This is your Indobase function
 // It's executed each time we get a request
 Future<dynamic> main(final context) async {
   context.log("Here are the people that showed up!");

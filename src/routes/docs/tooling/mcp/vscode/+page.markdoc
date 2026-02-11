@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
-title: Appwrite MCP and VS Code
-description: Learn how to add the Appwrite MCP servers to GitHub Copilot Chat in VS Code to interact with both the Appwrite API and documentation.
+title: Indobase MCP and VS Code
+description: Learn how to add the Indobase MCP servers to GitHub Copilot Chat in VS Code to interact with both the Indobase API and documentation.
 ---
 
-Learn how you can add the Appwrite MCP servers to GitHub Copilot Chat in VS Code to interact with both the Appwrite API and documentation.
+Learn how you can add the Indobase MCP servers to GitHub Copilot Chat in VS Code to interact with both the Indobase API and documentation.
 
 Before you begin, ensure you have the following **pre-requisites** installed on your system:
 
@@ -53,9 +53,9 @@ Update the `mcp.json` file to include the API server:
 ```
 
 **Configuration:**
-- Replace `your-project-id` with your actual Appwrite project ID
-- Replace `your-api-key` with your Appwrite API key
-- Replace `<REGION>` with your Appwrite Cloud region (e.g., `nyc`, `fra`)
+- Replace `your-project-id` with your actual Indobase project ID
+- Replace `your-api-key` with your Indobase API key
+- Replace `<REGION>` with your Indobase Cloud region (e.g., `nyc`, `fra`)
 
 {% /tabsitem %}
 
@@ -95,7 +95,7 @@ Open **Copilot Chat** in VS Code and switch to **Agent Mode** to test your MCP i
 {% tabsitem #test-api title="API server" %}
 
 **Example prompts:**
-- `Create a new user in my Appwrite project`
+- `Create a new user in my Indobase project`
 - `List all databases in my project`
 - `Show me the collections in my database`
 - `Create a new document in my collection`
@@ -106,16 +106,16 @@ Open **Copilot Chat** in VS Code and switch to **Agent Mode** to test your MCP i
 {% tabsitem #test-docs title="Docs server" %}
 
 **Example prompts:**
-- `How do I set up real-time subscriptions in Appwrite?`
+- `How do I set up real-time subscriptions in Indobase?`
 - `Show me how to authenticate users with OAuth`
 - `What are the best practices for database queries?`
-- `How do I implement file uploads with Appwrite Storage?`
-- `Show me an example of using Appwrite Functions`
+- `How do I implement file uploads with Indobase Storage?`
+- `Show me an example of using Indobase Functions`
 
 {% /tabsitem %}
 
 {% /tabs %}
 
-![Search for portfolio site in Appwrite project](/images/docs/mcp/vscode/copilot-chat.png)
+![Search for portfolio site in Indobase project](/images/docs/mcp/vscode/copilot-chat.png)
 
 {% /section %}

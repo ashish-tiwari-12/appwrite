@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "What is an Incubator? A guide for tech startups"
 description: Explore what startup incubators really offer, their pros and cons, and a list of top programs to consider.
@@ -49,7 +49,7 @@ Now it's time to build. You start developing your [MVP](/blog/post/how-can-you-r
 
 Once the program ends, many incubators offer ongoing support through alumni networks, investor connections, or optional follow-on programs. Some provide co-investment opportunities or introductions to accelerators and VCs.
 
-{% call_to_action title="Build your startup with Appwrite" description="Join the Startups program and benefit from Appwrite’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="Join the Startups program and benefit from Indobase’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="/startups" /%}
 
 # Benefits of a startup incubator
 
@@ -133,7 +133,7 @@ A nonprofit incubator named after Chicago's rebirth after the 1871 fire, it has 
 
 ![1871](/images/blog/startup-incubator-guide/1871.png)
 
-{% call_to_action title="Build your startup with Appwrite" description="Join the Startups program and benefit from Appwrite’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="Join the Startups program and benefit from Indobase’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="/startups" /%}
 
 ## 6. [MaRS Discovery District](https://www.marsdd.com/)
 
@@ -229,4 +229,4 @@ When evaluating startup incubators, it's important to ask the right questions to
 
 Joining a startup incubator can be a great decision, but only if it aligns with your startup's unique needs, goals, and stage of growth. The right incubator can accelerate and take your startup to the next level. But the wrong one can cost you time, equity, and focus.
 
-Did you know Appwrite has a special program for startups? You can leverage Appwrite's all-in-one cloud platform to build your products. Plus, you will receive Cloud credits and a discount for Appwrite's paid plans. [Apply now](/startups)
+Did you know Indobase has a special program for startups? You can leverage Indobase's all-in-one cloud platform to build your products. Plus, you will receive Cloud credits and a discount for Indobase's paid plans. [Apply now](/startups)

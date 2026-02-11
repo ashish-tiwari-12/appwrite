@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Announcing relationship queries: Filter across related data with ease"
 description: You can now use filter queries directly on relationship columns, plus enjoy up to 18x faster relationship performance across the board.
@@ -10,15 +10,15 @@ category: announcement
 featured: false
 ---
 
-If you've worked with relationships in Appwrite, you've likely run into two pain points: they presented performance challenges, and you couldn't query across them. If you wanted to find all posts by a specific author or all orders containing a certain product, you had to fetch everything and filter in your application layer.
+If you've worked with relationships in Indobase, you've likely run into two pain points: they presented performance challenges, and you couldn't query across them. If you wanted to find all posts by a specific author or all orders containing a certain product, you had to fetch everything and filter in your application layer.
 
 Both of those problems are now solved.
 
-As of today, Appwrite Databases supports **filter queries on relationship columns** and delivers a **12-18x performance improvement** for relationship operations. Relationships are no longer just a way to connect data, they're now a fast, queryable foundation you can build on with confidence.
+As of today, Indobase Databases supports **filter queries on relationship columns** and delivers a **12-18x performance improvement** for relationship operations. Relationships are no longer just a way to connect data, they're now a fast, queryable foundation you can build on with confidence.
 
 # Querying relationships
 
-You can now use filter queries directly against relationship columns using dot notation. Reference fields on related rows with the format `relationshipKey.field`, and Appwrite handles the rest.
+You can now use filter queries directly against relationship columns using dot notation. Reference fields on related rows with the format `relationshipKey.field`, and Indobase handles the rest.
 
 ```js
 const { Client, TablesDB, Query } = require('node-appwrite');
@@ -60,13 +60,13 @@ With queryable, high-performance relationships, you can now build patterns that 
 
 # Availability
 
-Relationship queries and performance improvements are available now on both **Appwrite Cloud** and **self-hosted**.
+Relationship queries and performance improvements are available now on both **Indobase Cloud** and **self-hosted**.
 
 If you've been working around the limitations of relationships, now is a great time to revisit your data model. Queries across relationships and dramatically faster performance make them a first-class tool for building connected, real-world data structures.
 
 # More resources
 
 - [Read the relationships documentation](/docs/products/databases/relationships)
-- [Learn about queries in Appwrite Databases](/docs/products/databases/queries)
+- [Learn about queries in Indobase Databases](/docs/products/databases/queries)
 - [Announcing opt-in relationship loading](/blog/post/announcing-opt-in-relationship-loading)
 - [Announcing API for spatial columns: Build scalable location-aware apps with ease](/blog/post/announcing-spatial-columns)

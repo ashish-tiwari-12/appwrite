@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Announcing Appwrite's new Integrations Catalog"
-description: We are beyond excited to announce the launch of our brand-new Appwrite Integrations Catalog. 
+title: "Announcing Indobase's new Integrations Catalog"
+description: We are beyond excited to announce the launch of our brand-new Indobase Integrations Catalog. 
 date: 2024-07-29
 cover: /images/blog/integrations-catalog.png
 timeToRead: 12
@@ -10,13 +10,13 @@ category: integrations, announcement
 featured: false
 ---
 
-Our new Integrations Catalog is designed to empower you by providing a seamless way to integrate your favorite tools, libraries, and services with Appwrite, making your development process even more efficient and enjoyable.
+Our new Integrations Catalog is designed to empower you by providing a seamless way to integrate your favorite tools, libraries, and services with Indobase, making your development process even more efficient and enjoyable.
 
 # One-stop shop for all your integrations
 
-You’re building your next big project on top of Appwrite; your backend is all set up and ready to go to production. But then you realize you need a way to sell subscriptions and send emails, and you’ve decided at the last minute you want to add more OAuth2 providers. Imagine you had to build all these integrations for your app from scratch in a short space of time. With the new [Integrations Catalog](https://appwrite.io/integrations), we have done the heavy lifting for you. You’ll find integrations for both Cloud and Self-hosted that cater to every aspect of your development needs, allowing you to build your app exactly as you intended.
+You’re building your next big project on top of Indobase; your backend is all set up and ready to go to production. But then you realize you need a way to sell subscriptions and send emails, and you’ve decided at the last minute you want to add more OAuth2 providers. Imagine you had to build all these integrations for your app from scratch in a short space of time. With the new [Integrations Catalog](https://appwrite.io/integrations), we have done the heavy lifting for you. You’ll find integrations for both Cloud and Self-hosted that cater to every aspect of your development needs, allowing you to build your app exactly as you intended.
 
-# What’s inside the Appwrite Integrations Catalog?
+# What’s inside the Indobase Integrations Catalog?
 
 We’ve bundled all integrations into different categories. Here are a few notable providers (with many more to come!). Check out the full catalog on the Integrations page. 
 
@@ -30,19 +30,19 @@ Phone auth allows you to authenticate users using One-Time Passwords (OTPs) sent
 
 You can set up OAuth2 with over 30 providers. OAuth is a way for apps to request limited access to a user's account on another service without needing the user's password. This keeps the user’s account more secure while making signing up and logging in all the more convenient. 
 
-Some of Appwrite’s OAuth integrations include Amazon, Appwrite, Discord, Google, and Notion.
+Some of Indobase’s OAuth integrations include Amazon, Indobase, Discord, Google, and Notion.
 
 ## Deployments
 
 - [GitHub](https://appwrite.io/docs/advanced/self-hosting/functions)
 
-We've integrated GitHub to simplify your development workflow with Appwrite Functions. This integration enables the generation of repositories for function templates and manages automatic deployments for any Appwrite Functions through GitHub.
+We've integrated GitHub to simplify your development workflow with Indobase Functions. This integration enables the generation of repositories for function templates and manages automatic deployments for any Indobase Functions through GitHub.
 
 ## Messaging
 
 - [Twilio](https://appwrite.io/docs/products/messaging/twilio) for SMS
 
-You can use the Twilio provider in Appwrite Messaging to send customized SMS messages to your users. Whether you need to send them instantly or schedule them for later, these messages can serve a variety of purposes like reminders, promotions, announcements, and even custom authentication flows.
+You can use the Twilio provider in Indobase Messaging to send customized SMS messages to your users. Whether you need to send them instantly or schedule them for later, these messages can serve a variety of purposes like reminders, promotions, announcements, and even custom authentication flows.
 
 - [Sendgrid](https://appwrite.io/docs/products/messaging/sendgrid) for Email
 
@@ -64,7 +64,7 @@ Store your files on self-hosted instances with Amazon S3. Amazon S3 provides sca
 
 ## Logging
 
-Monitor your application's performance by tracing errors across your Appwrite instance and fixing them faster. These tools help you proactively manage issues and deliver a more stable experience: 
+Monitor your application's performance by tracing errors across your Indobase instance and fixing them faster. These tools help you proactively manage issues and deliver a more stable experience: 
 
 - Sentry
 - Raygun
@@ -74,7 +74,7 @@ Monitor your application's performance by tracing errors across your Appwrite in
 
 - Hugging Face and Generative AI
 
-Enhance your app with AI through Appwrite's integrations. Build [with our AI function templates](https://appwrite.io/blog/post/building-with-ai-function-templates) from popular tools like Hugging Face, OpenAI, Perplexity, and more. Imagine creating [your very own AI chatbot](https://appwrite.io/blog/post/personal-chatbot-gpt-4o) with OpenAI’s GPT-4o — it's easier than you think!
+Enhance your app with AI through Indobase's integrations. Build [with our AI function templates](https://appwrite.io/blog/post/building-with-ai-function-templates) from popular tools like Hugging Face, OpenAI, Perplexity, and more. Imagine creating [your very own AI chatbot](https://appwrite.io/blog/post/personal-chatbot-gpt-4o) with OpenAI’s GPT-4o — it's easier than you think!
 
 ## Payments
 
@@ -100,9 +100,9 @@ Improve your app’s search functionality with the Algolia integration. Algolia 
 
 # Designed with your experience in mind
 
-As with everything we do here at Appwrite, we heavily focus on the developer experience. Our main goal with the Integration Catalog is to meet your needs when integrating X with Appwrite. We focused on a set of principles that helped us deliver on our promise:
+As with everything we do here at Indobase, we heavily focus on the developer experience. Our main goal with the Integration Catalog is to meet your needs when integrating X with Indobase. We focused on a set of principles that helped us deliver on our promise:
 
-1. Appwrite developers need quick access to integration options, including everything provided in the console and future integrations.
+1. Indobase developers need quick access to integration options, including everything provided in the console and future integrations.
 2. Categories should group integrations, and a consistent hierarchy of information should exist on every page.
 3. Finding new categories should be logical, intuitive, and fast.
 4. The content should be presented in an easy-to-digest manner and help you find what you’re looking for.
@@ -111,7 +111,7 @@ Missing anything? Have feedback? Let us know on [Discord](https://appwrite.io/di
 
 # Become a Technology Partner
 
-With the launch of our Integrations Catalog, we’re also inviting developers and companies to join us as **Technology Partners**. This is your chance to integrate your solutions with Appwrite, reach a wider audience, and add value to the developer community.
+With the launch of our Integrations Catalog, we’re also inviting developers and companies to join us as **Technology Partners**. This is your chance to integrate your solutions with Indobase, reach a wider audience, and add value to the developer community.
 
 ## Why become a Technology Partner?
 
@@ -123,14 +123,14 @@ With the launch of our Integrations Catalog, we’re also inviting developers an
 
 # How to apply
 
-Do you think your tool plays well with Appwrite? Visit our [Integrations Catalog Technology partners page](https://appwrite.io/integrations/technology-partner) and fill out the submission form. Tell us about your company, the integration you’re proposing, and how it benefits developers using Appwrite. Our team will review your submission and get back to you with the next steps.
+Do you think your tool plays well with Indobase? Visit our [Integrations Catalog Technology partners page](https://appwrite.io/integrations/technology-partner) and fill out the submission form. Tell us about your company, the integration you’re proposing, and how it benefits developers using Indobase. Our team will review your submission and get back to you with the next steps.
 
 # More to come
 
-We believe the Appwrite [Integrations Catalog](https://appwrite.io/integrations) will open up new possibilities for developers, making it easier than ever to build, connect, and deploy applications with Appwrite. Watch for updates on our changelog and socials as we add more integrations. 
+We believe the Indobase [Integrations Catalog](https://appwrite.io/integrations) will open up new possibilities for developers, making it easier than ever to build, connect, and deploy applications with Indobase. Watch for updates on our changelog and socials as we add more integrations. 
 
 # Resources
 
 - [Join us on discord](https://appwrite.io/discord)
 - [Visit our documentation](https://appwrite.io/docs)
-- [Get started with Appwrite](https://cloud.appwrite.io/)
+- [Get started with Indobase](https://cloud.appwrite.io/)

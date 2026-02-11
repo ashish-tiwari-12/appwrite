@@ -22,11 +22,11 @@
         {/each}
     </ul>
     <div class="flex items-center gap-3">
-        <div>Copyright © {year} Appwrite</div>
+        <div>Copyright © {year} Indobase</div>
 
         <iframe
             class="status w-fit max-w-[230px]"
-            title="Appwrite Status"
+            title="Indobase Status"
             src="https://status.appwrite.online/badge?theme=dark"
             height="35"
             frameborder="0"

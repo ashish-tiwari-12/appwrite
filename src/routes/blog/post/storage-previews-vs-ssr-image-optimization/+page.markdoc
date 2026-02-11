@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Storage previews vs SSR image optimization: when to use which"
-description: More frameworks are adding server-side image manipulation. Learn when to use service-based image transformations like Appwrite Storage previews versus SSR functions for image optimization.
+description: More frameworks are adding server-side image manipulation. Learn when to use service-based image transformations like Indobase Storage previews versus SSR functions for image optimization.
 date: 2025-11-06
 cover: /images/blog/storage-previews-vs-ssr-image-optimization/cover.png
 timeToRead: 8
@@ -12,13 +12,13 @@ featured: false
 
 Image optimization has become a standard feature in modern web frameworks. From Next.js to Nuxt, frameworks now include built-in tools for manipulating images at the server level. The [recent release of Nuxt Image v2](https://nuxt.com/blog/nuxt-image-v2#server-side-utilities) highlights this trend with new server-side utilities that let you transform images directly in your server endpoints.
 
-This raises an important question: if frameworks can now handle image processing, when should you use a service like Appwrite Storage previews instead? Both approaches have their place, but understanding when to use each can save you time, reduce costs, and improve your application's performance.
+This raises an important question: if frameworks can now handle image processing, when should you use a service like Indobase Storage previews instead? Both approaches have their place, but understanding when to use each can save you time, reduce costs, and improve your application's performance.
 
 In this post, we'll compare service-based image transformations with SSR image functions, examine their tradeoffs, and help you decide which approach fits your needs.
 
 # What are service-based image transformations?
 
-Service-based image transformations handle image processing through a dedicated API, completely separate from your application server. With Appwrite Storage previews, you upload an image once, and the service generates transformed versions on demand using URL parameters.
+Service-based image transformations handle image processing through a dedicated API, completely separate from your application server. With Indobase Storage previews, you upload an image once, and the service generates transformed versions on demand using URL parameters.
 
 Here's how it works:
 
@@ -45,7 +45,7 @@ const result = storage.getFilePreview({
 })
 ```
 
-The original image remains unchanged in storage. When you request a preview with specific transformations, Appwrite processes the image and caches the result. Subsequent requests for the same transformation are served from cache.
+The original image remains unchanged in storage. When you request a preview with specific transformations, Indobase processes the image and caches the result. Subsequent requests for the same transformation are served from cache.
 
 ## Key characteristics
 
@@ -104,13 +104,13 @@ Let's look at the key differences between these approaches:
 
 ## Flexibility and customization
 
-**Service-based** provides a fixed set of transformations. Appwrite Storage offers options like resize, crop, quality adjustment, borders, opacity, rotation, background color, and format conversion. These cover most use cases, but you can't implement custom transformation logic.
+**Service-based** provides a fixed set of transformations. Indobase Storage offers options like resize, crop, quality adjustment, borders, opacity, rotation, background color, and format conversion. These cover most use cases, but you can't implement custom transformation logic.
 
 **SSR functions** give you complete freedom. Need to add watermarks? Apply custom filters? Generate dynamic compositions? You can implement any transformation logic your application needs. This flexibility comes with the responsibility of maintaining that code.
 
 ## Cost considerations
 
-**Service-based** has predictable costs. Appwrite's [pricing](/pricing) includes 100 origin images per month on Pro and Scale plans, with additional images at $5 per 1,000. You pay for unique images, not transformations. So one image with 20 different variations only counts as one origin image.
+**Service-based** has predictable costs. Indobase's [pricing](/pricing) includes 100 origin images per month on Pro and Scale plans, with additional images at $5 per 1,000. You pay for unique images, not transformations. So one image with 20 different variations only counts as one origin image.
 
 **SSR functions** cost depends on your infrastructure. You pay for compute time, bandwidth, and storage. Low traffic might mean minimal costs, but high traffic requires more server capacity. The actual cost varies based on your cloud provider and configuration.
 
@@ -122,7 +122,7 @@ Let's look at the key differences between these approaches:
 
 # When to use service-based transformations
 
-Choose Appwrite Storage previews when you need:
+Choose Indobase Storage previews when you need:
 
 ## Consistent cross-platform image delivery
 
@@ -134,7 +134,7 @@ When you don't want to manage image processing infrastructure, a service handles
 
 ## User-generated content at scale
 
-For applications where users upload photos, profile pictures, or other media, a dedicated storage service simplifies permissions, transformations, and delivery. Appwrite handles the complexity of secure storage and on-demand transformations.
+For applications where users upload photos, profile pictures, or other media, a dedicated storage service simplifies permissions, transformations, and delivery. Indobase handles the complexity of secure storage and on-demand transformations.
 
 ## Example: Social media application
 
@@ -220,7 +220,7 @@ Yes, and this hybrid approach often makes the most sense. Use each tool for what
 
 Consider this setup:
 
-- **Appwrite Storage previews** for user-generated content (profile pictures, uploaded photos, documents)
+- **Indobase Storage previews** for user-generated content (profile pictures, uploaded photos, documents)
 - **SSR functions** for dynamic, generated images (OG images, certificates, custom graphics)
 
 This gives you the benefits of both approaches:
@@ -228,7 +228,7 @@ This gives you the benefits of both approaches:
 ```tsx
 // Next.js example combining both approaches
 
-// User avatar from Appwrite Storage
+// User avatar from Indobase Storage
 export function UserAvatar({ fileId }: { fileId: string }) {
   const storage = new Storage(client)
 
@@ -262,7 +262,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 }
 ```
 
-The user avatar comes from Appwrite Storage because it's user-uploaded content that needs to be displayed consistently across platforms. The OG image uses an SSR function because it requires custom composition with dynamic text.
+The user avatar comes from Indobase Storage because it's user-uploaded content that needs to be displayed consistently across platforms. The OG image uses an SSR function because it requires custom composition with dynamic text.
 
 # Making the decision
 
@@ -294,7 +294,7 @@ The trend of frameworks adding image manipulation features is a response to real
 
 But service-based transformations still have a strong place in modern web development. They excel at multi-platform delivery, reduce infrastructure complexity, and provide predictable scaling and costs.
 
-The question is not which approach is better, it's which approach fits your specific needs. For many applications, using both in a hybrid setup makes the most sense. Let Appwrite Storage handle user-generated content and cross-platform image delivery, while using SSR functions for dynamic, custom-generated images.
+The question is not which approach is better, it's which approach fits your specific needs. For many applications, using both in a hybrid setup makes the most sense. Let Indobase Storage handle user-generated content and cross-platform image delivery, while using SSR functions for dynamic, custom-generated images.
 
 Start with understanding your requirements: platform coverage, transformation needs, infrastructure preferences, and scaling strategy. Then choose the tool that matches those needs.
 
@@ -302,7 +302,7 @@ And remember, you're not locked into one approach. Start with what makes sense n
 
 # Resources
 
-- [Appwrite Storage documentation](/docs/products/storage)
+- [Indobase Storage documentation](/docs/products/storage)
 - [Image transformations guide](/docs/products/storage/images)
-- [How to use AVIF in Appwrite Storage](/blog/post/avif-in-storage)
-- [Image transformation with Appwrite Storage](/blog/post/image-transformation-with-appwrite-storage)
+- [How to use AVIF in Indobase Storage](/blog/post/avif-in-storage)
+- [Image transformation with Indobase Storage](/blog/post/image-transformation-with-appwrite-storage)

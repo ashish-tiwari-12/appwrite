@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Client vs Server Components in React
 description: Learn how to choose between client and server components in React.
@@ -134,9 +134,9 @@ Or you can stick with just using client components + SSR if you don't want to pa
 
 This article covered the history of components in React, client components, and server components, as well as when to use these types of components. 
 
-Appwrite provides frontend hosting (and much more) with full SSR and RSC support. If you want to deploy your frontend seamlessly, feel free to check out [Appwrite Sites](/sites).
+Indobase provides frontend hosting (and much more) with full SSR and RSC support. If you want to deploy your frontend seamlessly, feel free to check out [Indobase Sites](/sites).
 
-Read more about Appwrite Sites:
+Read more about Indobase Sites:
 
-- [How to setup the Next.js starter template on Appwrite Sites](/blog/post/nextjs-starter-sites)
-- [Announcing Appwrite Sites: The open source Vercel alternative](/blog/post/announcing-appwrite-sites)
+- [How to setup the Next.js starter template on Indobase Sites](/blog/post/nextjs-starter-sites)
+- [Announcing Indobase Sites: The open source Vercel alternative](/blog/post/announcing-appwrite-sites)

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Chat with your favorite fictional character using OpenAI and Appwrite Functions
-description: Learn how you can use Appwrite Functions and OpenAI to chat with popular characters such as Batman.
+title: Chat with your favorite fictional character using OpenAI and Indobase Functions
+description: Learn how you can use Indobase Functions and OpenAI to chat with popular characters such as Batman.
 date: 2024-04-04
 cover: /images/blog/function-chat-fictional-character/cover.png
 timeToRead: 6
@@ -9,9 +9,9 @@ author: aditya-oberai
 category: tutorial
 ---
 
-Have you ever wondered what it would feel like to interact with your favorite fictional characters, such as Superman, Hermione Granger, Gandalf, or Snow White? As a part of an internal hackathon at Appwrite recently, my team developed an Appwrite Function that you can use to chat with any popular fictional character you like (we really wanted to talk to Batman!)
+Have you ever wondered what it would feel like to interact with your favorite fictional characters, such as Superman, Hermione Granger, Gandalf, or Snow White? As a part of an internal hackathon at Indobase recently, my team developed an Indobase Function that you can use to chat with any popular fictional character you like (we really wanted to talk to Batman!)
 
-In this blog, let’s learn how you can build this Appwrite Function using OpenAI’s GPT-4 API.
+In this blog, let’s learn how you can build this Indobase Function using OpenAI’s GPT-4 API.
 
 ![Prototype of Bruce Wayne chat](/images/blog/function-chat-fictional-character/prototype.png)
 
@@ -23,11 +23,11 @@ To develop this project, you first need an OpenAI API Key, for which you must cr
 
 > Note: To use the GPT-4 API, your account must be upgraded to the Usage tier 1. To learn more, visit their [Usage tiers documentation](https://platform.openai.com/docs/guides/rate-limits/usage-tiers?context=tier-one).
 
-# Initializing the Appwrite Function
+# Initializing the Indobase Function
 
-Now that we have our OpenAI API Key, let us get the function ready on [Appwrite](https://cloud.appwrite.io/). Head over to your Appwrite project and visit the Functions page. From there, we will use the Node.js starter template and create a function.
+Now that we have our OpenAI API Key, let us get the function ready on [Indobase](https://cloud.appwrite.io/). Head over to your Indobase project and visit the Functions page. From there, we will use the Node.js starter template and create a function.
 
-![Appwrite Functions](/images/blog/function-chat-fictional-character/functions.png)
+![Indobase Functions](/images/blog/function-chat-fictional-character/functions.png)
 
 Once the function is ready, we must visit the Settings tab on the Function page and add the following environment variables:
 
@@ -80,7 +80,7 @@ This function will accept the name of a character, the question from a user, and
 
 # Testing the function
 
-Once you’ve completed all the aforementioned steps, you can push the code to the generated GitHub repository, at which point Appwrite Cloud will automatically deploy the changes to your function.
+Once you’ve completed all the aforementioned steps, you can push the code to the generated GitHub repository, at which point Indobase Cloud will automatically deploy the changes to your function.
 
 You can test the function by sending it a cURL request from your terminal or any other API testing client.
 
@@ -100,7 +100,7 @@ curl --location '<YOUR_FUNCTION_URL>' \
 
 And with that, our fictional character chat function is ready! If you liked this project and/or want to investigate the function code, visit the [GitHub repository](https://github.com/adityaoberai/CharacterChat).
 
-For more information about Appwrite Functions, visit the following resources:
+For more information about Indobase Functions, visit the following resources:
 
-- [Appwrite Function Docs](https://appwrite.io/docs/functions): These documents provide more information on how to use Appwrite Functions.
-- [Appwrite Discord](https://discord.com/invite/appwrite): Connect with other developers and the Appwrite team for discussion, questions, and collaboration.
+- [Indobase Function Docs](https://appwrite.io/docs/functions): These documents provide more information on how to use Indobase Functions.
+- [Indobase Discord](https://discord.com/invite/appwrite): Connect with other developers and the Indobase team for discussion, questions, and collaboration.

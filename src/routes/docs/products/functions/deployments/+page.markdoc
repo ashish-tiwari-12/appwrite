@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Deployments
-description: Efficiently deploy your serverless functions with Appwrite. Explore deployment options, strategies, and best practices for seamless function execution.
+description: Efficiently deploy your serverless functions with Indobase. Explore deployment options, strategies, and best practices for seamless function execution.
 ---
 
 Each function can have many deployments, which can be thought of as versions of the mini-application.
@@ -54,7 +54,7 @@ After updating the configuration, redeploy your function for changes to take eff
 Redeployment behavior varies depending on how the initial deployment was created.
 
 {% info title="Benefits for Pro+ users" %}
-Users subscribed to the Appwrite Pro plan or above receive certain special benefits:
+Users subscribed to the Indobase Pro plan or above receive certain special benefits:
 
 - [Express builds](/changelog/entry/2024-08-10) for quicker deployments, resulting in reduced wait times and smoother workflows
 - Customizable [runtime specifications](/blog/post/introducing-new-compute-capabilities-appwrite-functions), allowing for tailored performance and resource allocation

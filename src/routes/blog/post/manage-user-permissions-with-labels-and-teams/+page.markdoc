@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: How to use Appwrite Labels and Team to manage user permissions
+title: How to use Indobase Labels and Team to manage user permissions
 description: Understanding the difference between Teams and Labels and how to use them for managing users and permissions.
 date: 2024-01-16
 cover: /images/blog/manage-user-permissions-with-labels-and-teams/labels_cover.png

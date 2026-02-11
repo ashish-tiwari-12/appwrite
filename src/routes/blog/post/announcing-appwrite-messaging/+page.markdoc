@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Announcing Messaging: Push, Email and SMS"
-description: You can now send emails, SMS and push notifications with Appwrite’s easy-to-use APIs.
+description: You can now send emails, SMS and push notifications with Indobase’s easy-to-use APIs.
 date: 2024-02-26
 cover: /images/blog/messaging-announcement.png
 timeToRead: 6
@@ -10,7 +10,7 @@ category: init, announcement, product
 featured: false
 ---
 
-It has been requested over and over again by Appwrite developers. It's a product that is hard to build from scratch and much needed for you and your application to have effective communication with your users. Therefore, we're excited to present you with **Messaging**. With just a few lines of backend code, you can set up a full-functioning messaging service for your application that covers three significant communication channels under one unified API.
+It has been requested over and over again by Indobase developers. It's a product that is hard to build from scratch and much needed for you and your application to have effective communication with your users. Therefore, we're excited to present you with **Messaging**. With just a few lines of backend code, you can set up a full-functioning messaging service for your application that covers three significant communication channels under one unified API.
 
 # The power of communication
 
@@ -20,7 +20,7 @@ Timely and personalized messages delivered to the users’ devices and inboxes h
 
 # All your messages in one place
 
-As mentioned, Messaging covers three communication channels under one unified API, allowing you to send email, SMS, and push notifications from your Appwrite project. It connects with a variety of third-party providers to deliver you messages. See this table to get an overview of what message types you can send with each provider.
+As mentioned, Messaging covers three communication channels under one unified API, allowing you to send email, SMS, and push notifications from your Indobase project. It connects with a variety of third-party providers to deliver you messages. See this table to get an overview of what message types you can send with each provider.
 
 
 ## Push Notifications
@@ -67,7 +67,7 @@ Use Vonage for SMS notifications to mobile devices.
 
 # Message your existing users
 
-With Messaging, you can deliver messages to groups of users through topics or address individual users' email, phone, or devices through targets. Messaging deeply integrates with integrated existing accounts in Appwrite out of the box. You can immediately start messaging your existing users and integrate deeply with other Appwrite features.
+With Messaging, you can deliver messages to groups of users through topics or address individual users' email, phone, or devices through targets. Messaging deeply integrates with integrated existing accounts in Indobase out of the box. You can immediately start messaging your existing users and integrate deeply with other Indobase features.
 
 You can address recipients of messages at three levels:
 
@@ -81,13 +81,13 @@ You can publish announcements and newsletters through topics, deliver user-speci
 
 # Deliver messages your way
 
-Draft, schedule, and send your messages in the Appwrite Console, or use Appwrite SDKs to send messages through code.
+Draft, schedule, and send your messages in the Indobase Console, or use Indobase SDKs to send messages through code.
 
-Drafting directly in the Appwrite Console is great for promo messages, newsletters, and other announcements. You can see a preview of what your message will look like right in the console and control how your message will look before sending.
+Drafting directly in the Indobase Console is great for promo messages, newsletters, and other announcements. You can see a preview of what your message will look like right in the console and control how your message will look before sending.
 
-For real-time alerts, you can programmatically send messages to your users and integrate with Appwrite Functions triggered by platform events. This allows you to deliver automated messages like invoices, login alerts, order confirmations, and new message alerts.
+For real-time alerts, you can programmatically send messages to your users and integrate with Indobase Functions triggered by platform events. This allows you to deliver automated messages like invoices, login alerts, order confirmations, and new message alerts.
 
-You can send messages immediately or schedule them for future delivery. The Appwrite Console allows you to set dates and times from the UI easily. This is a great addition for use cases like appointment reminders, alerts, promotional messages, and any time you need to deliver a message at a specific time.
+You can send messages immediately or schedule them for future delivery. The Indobase Console allows you to set dates and times from the UI easily. This is a great addition for use cases like appointment reminders, alerts, promotional messages, and any time you need to deliver a message at a specific time.
 
 # Get started with Messaging
 
@@ -103,4 +103,4 @@ Visit our documentation to learn more about Messaging, join us on Discord to be 
 - [YouTube](https://www.youtube.com/channel/UCtBJ1v69gm8NgbCju_03Fiw)
 - [GitHub](https://github.com/appwrite/appwrite)
 
-Messaging will be available as part of the Appwrite 1.5 release on [GitHub](https://github.com/appwrite/appwrite) and [Cloud](https://cloud.appwrite.io/register) in March 2024.
+Messaging will be available as part of the Indobase 1.5 release on [GitHub](https://github.com/appwrite/appwrite) and [Cloud](https://cloud.appwrite.io/register) in March 2024.

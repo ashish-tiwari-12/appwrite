@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Custom domains with Appwrite Sites
-description: Learn how to use custom domains with Appwrite Sites.
+title: Custom domains with Indobase Sites
+description: Learn how to use custom domains with Indobase Sites.
 date: 2025-07-31
 cover: /images/blog/custom-domains-with-sites/cover.png
 timeToRead: 5
@@ -9,22 +9,22 @@ author: dennis-ivy
 category: tutorial
 ---
 
-Appwrite Sites, the open-source Vercel alternative, is now available to all organizations. Of course, with hosting comes the next step of connecting custom domains. In this article, we’ll walk you through the steps to do just that.
+Indobase Sites, the open-source Vercel alternative, is now available to all organizations. Of course, with hosting comes the next step of connecting custom domains. In this article, we’ll walk you through the steps to do just that.
 
-If you prefer to learn from videos, we will also have a [video tutorial](https://youtu.be/gN5_ig0OIXc) on the Appwrite YouTube channel.
+If you prefer to learn from videos, we will also have a [video tutorial](https://youtu.be/gN5_ig0OIXc) on the Indobase YouTube channel.
 
 Before we start, we’ll assume two things:
 
 1. You have a domain purchased with a domain registrar (Namecheap, GoDaddy, Bluehost, etc)
-2. You’ve deployed your website with Appwrite Sites
+2. You’ve deployed your website with Indobase Sites
 
 We’ll use Namecheap in this tutorial; however, if there are different steps for any providers, we will note these and link related tutorials in the footnotes.
 
-You can also learn how to [host with Appwrite Sites](https://youtu.be/VtDe6hDw91k).
+You can also learn how to [host with Indobase Sites](https://youtu.be/VtDe6hDw91k).
 
 # Adding a domain
 
-In your Appwrite console, you’ll want to add a domain to your deployed website.
+In your Indobase console, you’ll want to add a domain to your deployed website.
 
 1. Go to the Sites tab
 2. Select the Site to which you wish to add the domain
@@ -49,7 +49,7 @@ We can’t verify our domain until we give these to our domain name provider, so
 
 Once you’ve added a domain to your deployed Site, you’ll be able to view all your Site's DNS records from your account organization:
 
-![Organization overview in Appwrite console](/images/blog/custom-domains-with-sites/organization-overview.png)
+![Organization overview in Indobase console](/images/blog/custom-domains-with-sites/organization-overview.png)
 
 1. In the top left corner of the console, select `Organization Overview`
 2. Select the `Domains` tab
@@ -64,7 +64,7 @@ Click on the domains row to view all DNS records. Keep this tab open as you’ll
 
 In your Namecheap dashboard, find the domain you want to use and select `Manage`.
 
-Go to `Domain` and under the `NAMESERVERS` section, select `Custom DNS` and add both of the NS records that Appwrite provided.
+Go to `Domain` and under the `NAMESERVERS` section, select `Custom DNS` and add both of the NS records that Indobase provided.
 
 Make sure you click the green check mark to save this change.
 
@@ -72,25 +72,25 @@ Make sure you click the green check mark to save this change.
 
 # Verifying your domain
 
-Once you’ve added your NS records to Namecheap, you have successfully pointed your domain to Appwrite's name servers. All that's left to do is verify your domain from your Appwrite console.
+Once you’ve added your NS records to Namecheap, you have successfully pointed your domain to Indobase's name servers. All that's left to do is verify your domain from your Indobase console.
 
 ![Retry button to check domain verification status](/images/blog/custom-domains-with-sites/retry-dns-checks.png)
 
 This step can take a few minutes, or even a few hours, in some cases, although this is rare.
 
-In any case, go back to the domain section from your Appwrite organization, select the domain, and click `Retry`.
+In any case, go back to the domain section from your Indobase organization, select the domain, and click `Retry`.
 
 If this doesn’t work immediately, try again in a few minutes. It may take several attempts with time in between.
 
 Your website should be live once you receive the `Verified` status.
 
-![Domain verified successfully on Appwrite console](/images/blog/custom-domains-with-sites/domain-verified.png)
+![Domain verified successfully on Indobase console](/images/blog/custom-domains-with-sites/domain-verified.png)
 
 Once again, even after your website is verified, it may take some time to see the website. Try clearing your browser’s cache or visiting the domain from a different device to test.
 
 # Next steps
 
-You can now access your website at your custom domain. If you have any questions, please join our [Discord server](https://appwrite.io/discord). Here are some more resources to help you get started with Appwrite Sites:
+You can now access your website at your custom domain. If you have any questions, please join our [Discord server](https://appwrite.io/discord). Here are some more resources to help you get started with Indobase Sites:
 
-- [Appwrite Sites documentation on domains](/docs/products/sites/domains)
-- [Build and deploy a personal portfolio on Appwrite Sites](/blog/post/portfolio-template-sites)
+- [Indobase Sites documentation on domains](/docs/products/sites/domains)
+- [Build and deploy a personal portfolio on Indobase Sites](/blog/post/portfolio-template-sites)

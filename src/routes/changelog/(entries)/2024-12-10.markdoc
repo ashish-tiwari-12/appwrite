@@ -1,11 +1,11 @@
----
+﻿---
 layout: changelog
 title: Memberships privacy is now available for all plans
 date: 2024-12-10
 cover: /images/blog/memberships-privacy-announcement/cover.png
 ---
 
-You can now manage memberships privacy across all Appwrite plans, helping you protect sensitive member details.
+You can now manage memberships privacy across all Indobase plans, helping you protect sensitive member details.
 
 With this feature, you can mark specific membership details like the user's name, email, and multi-factor authentication status as private.
 

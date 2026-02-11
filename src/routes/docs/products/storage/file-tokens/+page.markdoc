@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: File tokens
 description: Easily share files with external users using file tokens.
@@ -8,9 +8,9 @@ File tokens are a type of secret that allow you to share files publicly with any
 
 # File tokens vs secure cookies
 
-Currently, Appwrite uses secure cookies to manage sessions for users, which are essential for any Appwrite products with permissions configured. However, because the cookies sent to the users of apps consuming the Appwrite API are considered third-party cookies, certain browsers tend to block them due to their default privacy settings, creating a bad user experience.
+Currently, Indobase uses secure cookies to manage sessions for users, which are essential for any Indobase products with permissions configured. However, because the cookies sent to the users of apps consuming the Indobase API are considered third-party cookies, certain browsers tend to block them due to their default privacy settings, creating a bad user experience.
 
-One way to circumvent this issue in the past was to connect a custom domain to your Appwrite project, as browsers don't inherently block any cookies returned by subdomains of your app. File tokens offer an alternative, simpler path for file sharing in Appwrite Storage, as they don't depend on the session for authorization to share data.
+One way to circumvent this issue in the past was to connect a custom domain to your Indobase project, as browsers don't inherently block any cookies returned by subdomains of your app. File tokens offer an alternative, simpler path for file sharing in Indobase Storage, as they don't depend on the session for authorization to share data.
 
 # Create file tokens
 
@@ -41,7 +41,7 @@ You can then click on the three-dots menu, click on **Copy URL** and get the tok
 
 {% tabsitem #server-sdk title="Server SDK" %}
 
-You can create file tokens programmatically using a [Server SDK](/docs/references/cloud/server-nodejs/tokens#createFileToken). Appwrite's Server SDKs require an [API key](/docs/advanced/platform/api-keys) with the `tokens.write` scope enabled.
+You can create file tokens programmatically using a [Server SDK](/docs/references/cloud/server-nodejs/tokens#createFileToken). Indobase's Server SDKs require an [API key](/docs/advanced/platform/api-keys) with the `tokens.write` scope enabled.
 
 {% multicode %}
 ```server-nodejs
@@ -99,8 +99,8 @@ ResourceToken result = await tokens.createFileToken(
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Tokens;
+use Indobase\Client;
+use Indobase\Services\Tokens;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -119,7 +119,7 @@ $result = $tokens->createFileToken(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -136,9 +136,9 @@ result = tokens.create_file_token(
 ```
 
 ```server-dotnet
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 Client client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -203,7 +203,7 @@ func main() {
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -287,9 +287,9 @@ mutation {
 POST /v1/tokens/buckets/{bucketId}/files/{fileId} HTTP/1.1
 Host: cloud.appwrite.io
 Content-Type: application/json
-X-Appwrite-Response-Format: 1.7.0
-X-Appwrite-Project: <YOUR_PROJECT_ID>
-X-Appwrite-Key: <YOUR_API_KEY>
+X-Indobase-Response-Format: 1.7.0
+X-Indobase-Project: <YOUR_PROJECT_ID>
+X-Indobase-Key: <YOUR_API_KEY>
 
 {
   "expire": 
@@ -297,13 +297,13 @@ X-Appwrite-Key: <YOUR_API_KEY>
 ```
 {% /multicode %}
 
-The created token can then be used along with Appwrite Storage's [view](/docs/references/cloud/server-nodejs/storage#getFileView), [preview](/docs/references/cloud/server-nodejs/storage#getFilePreview), and [download](/docs/references/cloud/server-nodejs/storage#getFileDownload) endpoints.
+The created token can then be used along with Indobase Storage's [view](/docs/references/cloud/server-nodejs/storage#getFileView), [preview](/docs/references/cloud/server-nodejs/storage#getFilePreview), and [download](/docs/references/cloud/server-nodejs/storage#getFileDownload) endpoints.
 {% /tabsitem %}
 {% /tabs %}
 
 # List all file tokens
 
-You can use the Appwrite Console or one of the Server SDKs to view all created file tokens, their expiry dates and the time each token was last accessed at.
+You can use the Indobase Console or one of the Server SDKs to view all created file tokens, their expiry dates and the time each token was last accessed at.
 
 {% tabs %}
 {% tabsitem #console title="Console" %}
@@ -321,7 +321,7 @@ Head to the **Storage** page, open a file inside a bucket, and scroll down to th
 
 {% tabsitem #server-sdk title="Server SDK" %}
 
-You can list all file tokens programmatically using a [Server SDK](/docs/references/cloud/server-nodejs/tokens#list). Appwrite's Server SDKs require an [API key](/docs/advanced/platform/api-keys) with the `tokens.read` scope enabled.
+You can list all file tokens programmatically using a [Server SDK](/docs/references/cloud/server-nodejs/tokens#list). Indobase's Server SDKs require an [API key](/docs/advanced/platform/api-keys) with the `tokens.read` scope enabled.
 
 {% multicode %}
 ```server-nodejs
@@ -379,8 +379,8 @@ ResourceTokenList result = await tokens.list(
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Tokens;
+use Indobase\Client;
+use Indobase\Services\Tokens;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -399,7 +399,7 @@ $result = $tokens->list(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -416,9 +416,9 @@ result = tokens.list(
 ```
 
 ```server-dotnet
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 Client client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -483,7 +483,7 @@ func main() {
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -548,9 +548,9 @@ tokens.list(
 ```server-rest
 GET /v1/tokens/buckets/{bucketId}/files/{fileId} HTTP/1.1
 Host: cloud.appwrite.io
-X-Appwrite-Response-Format: 1.7.0
-X-Appwrite-Project: <YOUR_PROJECT_ID>
-X-Appwrite-Key: <YOUR_API_KEY>
+X-Indobase-Response-Format: 1.7.0
+X-Indobase-Project: <YOUR_PROJECT_ID>
+X-Indobase-Key: <YOUR_API_KEY>
 ```
 {% /multicode %}
 
@@ -638,9 +638,9 @@ tokens.get(
 ```server-rest
 GET /v1/tokens/{tokenId} HTTP/1.1
 Host: cloud.appwrite.io
-X-Appwrite-Response-Format: 1.7.0
-X-Appwrite-Project: <YOUR_PROJECT_ID>
-X-Appwrite-Key: <YOUR_API_KEY>
+X-Indobase-Response-Format: 1.7.0
+X-Indobase-Project: <YOUR_PROJECT_ID>
+X-Indobase-Key: <YOUR_API_KEY>
 ```
 {% /multicode %}
 
@@ -669,7 +669,7 @@ Head to the **Storage** page, open a file inside a bucket, and scroll down to th
 
 {% tabsitem #server-sdk title="Server SDK" %}
 
-You can update file token expiry programmatically using a [Server SDK](/docs/references/cloud/server-nodejs/tokens#update). Appwrite's Server SDKs require an [API key](/docs/advanced/platform/api-keys) with the `tokens.write` scope enabled.
+You can update file token expiry programmatically using a [Server SDK](/docs/references/cloud/server-nodejs/tokens#update). Indobase's Server SDKs require an [API key](/docs/advanced/platform/api-keys) with the `tokens.write` scope enabled.
 
 {% multicode %}
 ```server-nodejs
@@ -724,8 +724,8 @@ ResourceToken result = await tokens.update(
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Tokens;
+use Indobase\Client;
+use Indobase\Services\Tokens;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -743,7 +743,7 @@ $result = $tokens->update(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -759,9 +759,9 @@ result = tokens.update(
 ```
 
 ```server-dotnet
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 Client client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -823,7 +823,7 @@ func main() {
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -903,9 +903,9 @@ mutation {
 PATCH /v1/tokens/{tokenId} HTTP/1.1
 Host: cloud.appwrite.io
 Content-Type: application/json
-X-Appwrite-Response-Format: 1.7.0
-X-Appwrite-Project: <YOUR_PROJECT_ID>
-X-Appwrite-Key: <YOUR_API_KEY>
+X-Indobase-Response-Format: 1.7.0
+X-Indobase-Project: <YOUR_PROJECT_ID>
+X-Indobase-Key: <YOUR_API_KEY>
 
 {
   "expire": 
@@ -918,7 +918,7 @@ X-Appwrite-Key: <YOUR_API_KEY>
 
 # Delete file tokens
 
-You can use the Appwrite Console or one of the Server SDKs to delete a file token.
+You can use the Indobase Console or one of the Server SDKs to delete a file token.
 
 {% tabs %}
 {% tabsitem #console title="Console" %}
@@ -936,7 +936,7 @@ Head to the **Storage** page, open a file inside a bucket, and scroll down to th
 
 {% tabsitem #server-sdk title="Server SDK" %}
 
-You can delete a file token programmatically using a [Server SDK](/docs/references/cloud/server-nodejs/tokens#delete). Appwrite's Server SDKs require an [API key](/docs/advanced/platform/api-keys) with the `tokens.write` scope enabled.
+You can delete a file token programmatically using a [Server SDK](/docs/references/cloud/server-nodejs/tokens#delete). Indobase's Server SDKs require an [API key](/docs/advanced/platform/api-keys) with the `tokens.write` scope enabled.
 
 {% multicode %}
 ```server-nodejs
@@ -988,8 +988,8 @@ await tokens.delete(
 ```server-php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Tokens;
+use Indobase\Client;
+use Indobase\Services\Tokens;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -1006,7 +1006,7 @@ $result = $tokens->delete(
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -1021,9 +1021,9 @@ result = tokens.delete(
 ```
 
 ```server-dotnet
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 Client client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -1082,7 +1082,7 @@ func main() {
 ```
 
 ```server-swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -1152,9 +1152,9 @@ mutation {
 DELETE /v1/tokens/{tokenId} HTTP/1.1
 Host: cloud.appwrite.io
 Content-Type: application/json
-X-Appwrite-Response-Format: 1.7.0
-X-Appwrite-Project: <YOUR_PROJECT_ID>
-X-Appwrite-Key: <YOUR_API_KEY>
+X-Indobase-Response-Format: 1.7.0
+X-Indobase-Project: <YOUR_PROJECT_ID>
+X-Indobase-Key: <YOUR_API_KEY>
 ```
 {% /multicode %}
 

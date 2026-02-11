@@ -1,12 +1,12 @@
----
+﻿---
 la`yout: article
 title: Sites
-description: Efficiently deploy your Appwrite Sites using the Command-Line Tool (CLI).
+description: Efficiently deploy your Indobase Sites using the Command-Line Tool (CLI).
 ---
 
 {% partial file="cli-disclaimer.md" /%}
 
-The CLI handles the creation, deployment, and execution of Appwrite Sites, as well as the configuration of the variables.
+The CLI handles the creation, deployment, and execution of Indobase Sites, as well as the configuration of the variables.
 
 # Initialize site {% #initialize-site %}
 
@@ -18,7 +18,7 @@ appwrite init sites
 
 # Pull site {% #pull-site %}
 
-You can also pull your existing Appwrite Sites from the Appwrite Console using the `pull` command in the folder containing your `appwrite.config.json` file.
+You can also pull your existing Indobase Sites from the Indobase Console using the `pull` command in the folder containing your `appwrite.config.json` file.
 
 ```sh
 appwrite pull sites
@@ -26,7 +26,7 @@ appwrite pull sites
 
 # appwrite.config.json {% #appwritejson %}
 
-After [initializing](/docs/tooling/command-line/installation#initialization) your Appwrite project and pulling your existing sites, your `appwrite.config.json` file should look similar to the following:
+After [initializing](/docs/tooling/command-line/installation#initialization) your Indobase project and pulling your existing sites, your `appwrite.config.json` file should look similar to the following:
 
 ```json
 {
@@ -63,7 +63,7 @@ appwrite push sites
 
 # Commands {% #commands %}
 
-The functions command lets you view, create, and manage your Appwrite Sites. Appwrite Sites CLI commands generally follow the following syntax:
+The functions command lets you view, create, and manage your Indobase Sites. Indobase Sites CLI commands generally follow the following syntax:
 
 ```sh
 appwrite sites [COMMAND] [OPTIONS]

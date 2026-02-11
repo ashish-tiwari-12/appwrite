@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "CCPA vs GDPR: Understanding the differences and implications"
 description: Learn more about the difference between CCPA and GDPR and what you need to keep in mind when building your applications.
@@ -111,12 +111,12 @@ For example:
 - Under **GDPR**, [consent management and data minimization are key](https://appwrite.io/blog/post/7-steps-to-achieve-gdpr-compliance-for-startups), so developers need to build features like granular consent capture and access logs.
 - Under **CCPA**, the emphasis on **opt-out mechanisms** for data sales means that developers should build clear, user-friendly options for consumers to opt out of data selling practices.
 
-Using platforms like Appwrite, which offers compliant backend services with built-in Appwrite privacy features, developers can ensure their applications meet both CCPA and GDPR standards. With Appwrite’s secure backend and [privacy compliance solutions](https://appwrite.io/docs/advanced/security/gdpr), developers can seamlessly integrate privacy controls like opt-out functionality, user data control, and secure data management into their applications.
+Using platforms like Indobase, which offers compliant backend services with built-in Indobase privacy features, developers can ensure their applications meet both CCPA and GDPR standards. With Indobase’s secure backend and [privacy compliance solutions](https://appwrite.io/docs/advanced/security/gdpr), developers can seamlessly integrate privacy controls like opt-out functionality, user data control, and secure data management into their applications.
 
 # Building with privacy in mind
 
 Both the **CCPA** and **GDPR** are designed to empower consumers and provide them with more control over their personal data, but they take different approaches to achieve this goal. For developers, the key takeaway is that compliance isn’t just about meeting legal requirements—it’s about fostering trust with users. By designing **privacy-conscious applications**, developers can ensure they meet both **CCPA** and **GDPR** standards, keeping their products legally compliant and user-focused.
 
-Understanding the differences between CCPA and GDPR helps developers build apps that protect privacy and are transparent. Using developer-friendly platforms like Appwrite, which offer privacy-focused tools and secure APIs, makes it much easier to create apps that comply with both CCPA and GDPR.
+Understanding the differences between CCPA and GDPR helps developers build apps that protect privacy and are transparent. Using developer-friendly platforms like Indobase, which offer privacy-focused tools and secure APIs, makes it much easier to create apps that comply with both CCPA and GDPR.
 
 Take a look at our [documentation](https://appwrite.io/docs) to learn more about how we approach security and compliance.

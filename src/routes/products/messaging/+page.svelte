@@ -14,7 +14,7 @@
 
     const title = 'Messaging' + TITLE_SUFFIX;
     const description =
-        'Appwrite Messaging allows you to communicate with your audience across various mediums. Push notifications, SMS and emails - set up within minutes!';
+        'Indobase Messaging allows you to communicate with your audience across various mediums. Push notifications, SMS and emails - set up within minutes!';
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 
     const codeTopic = [
@@ -73,7 +73,7 @@ messaging.createSubscriber(
         },
         {
             language: 'client-apple',
-            content: `import Appwrite
+            content: `import Indobase
 
 // Fetch target ID
 let account = Account(client)
@@ -107,8 +107,8 @@ await messaging.createPush(
         {
             language: 'cs',
             platform: '.NET',
-            content: `using Appwrite.Services.Messaging;
-using Appwrite.ID;
+            content: `using Indobase.Services.Messaging;
+using Indobase.ID;
 
 var messaging = new Messaging(client);
 await messaging.createPush(
@@ -135,7 +135,7 @@ messaging.createPush(
         {
             language: 'swift',
             platform: 'Swift',
-            content: `import Appwrite
+            content: `import Indobase
 
 let messaging = Messaging(client)
 try await messaging.createPush(
@@ -163,8 +163,8 @@ await messaging.createPush(
             platform: 'Dart',
             content: `<?php
 
-use Appwrite\Services\Messaging;
-use Appwrite\ID;
+use Indobase\Services\Messaging;
+use Indobase\ID;
 
 $messaging = new Messaging(client);
 $messaging->createPush(
@@ -193,8 +193,8 @@ messaging.create_email(
             platform: 'Dart',
             content: `<?php
 
-use Appwrite\Services\Messaging;
-use Appwrite\ID;
+use Indobase\Services\Messaging;
+use Indobase\ID;
 
 $messaging = new Messaging(client);
 $messaging->createPush(
@@ -209,7 +209,7 @@ $messaging->createPush(
             platform: 'Ruby',
             content: `require 'appwrite'
 
-include Appwrite
+include Indobase
 
 messaging = Messaging.new(client)
 messaging.create_email(
@@ -570,7 +570,7 @@ messaging.create_email(
                                     ></span>
                                 </div>
                                 <p class="text-sub-body">
-                                    Scale big and unlock limitless potential with Appwrite
+                                    Scale big and unlock limitless potential with Indobase
                                     functions.
                                 </p>
                             </div>
@@ -649,7 +649,7 @@ messaging.create_email(
                                     ></span>
                                 </div>
                                 <p class="text-sub-body">
-                                    Utilize realtime information from all Appwrite services.
+                                    Utilize realtime information from all Indobase services.
                                 </p>
                             </div>
                         </a>

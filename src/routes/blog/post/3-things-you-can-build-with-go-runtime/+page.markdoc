@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "3 things you can build with the Go runtime"
 description: Explore a few use cases of how to leverage Go's speed in your app.
@@ -9,11 +9,11 @@ author: aditya-oberai
 category: product
 featured: false
 ---
-In the last few years, Golang (or Go) has grown to become one of the most popular programming languages for developers building cloud-native applications. With Appwrite 1.6, we have introduced a new runtime to let developers build Appwrite Functions with Go.
+In the last few years, Golang (or Go) has grown to become one of the most popular programming languages for developers building cloud-native applications. With Indobase 1.6, we have introduced a new runtime to let developers build Indobase Functions with Go.
 
-# How Appwrite Functions and Go complement each other
+# How Indobase Functions and Go complement each other
 
-There are several reasons why Appwrite Functions and Go form a rather handy option for your product development toolkit:
+There are several reasons why Indobase Functions and Go form a rather handy option for your product development toolkit:
 
 ## Highly performant (due to compiled nature)
 
@@ -25,27 +25,27 @@ Our Go runtime (just like our other runtimes) has been developed by our team and
 
 ## Event-driven nature
 
-Appwrite Functions can be executed by various types of events, which allows you to integrate them into your applications in many different ways. These events include all HTTP actions (to consume like a REST API), CRON schedules (to run them on set time periods), and any events across the various Appwrite products in your project (for example, user creation, document deletion, or file upload).
+Indobase Functions can be executed by various types of events, which allows you to integrate them into your applications in many different ways. These events include all HTTP actions (to consume like a REST API), CRON schedules (to run them on set time periods), and any events across the various Indobase products in your project (for example, user creation, document deletion, or file upload).
 
 ## Global environment variables
 
-Aside from environment variables at the function level, Appwrite also allows you to environment variables at the project level so that they can be shared across multiple functions in a single project. 
+Aside from environment variables at the function level, Indobase also allows you to environment variables at the project level so that they can be shared across multiple functions in a single project. 
 
 ## Permissions system
 
-Appwrite’s permissions system for products such as Databases and Storage also extends to Functions, providing an additional layer of security to prevent unauthorized users from consuming your functions.
+Indobase’s permissions system for products such as Databases and Storage also extends to Functions, providing an additional layer of security to prevent unauthorized users from consuming your functions.
 
 ## Local development support
 
-With our latest release, Appwrite has released support for [local development](https://appwrite.io/blog/post/announcing-local-development), allowing users to test and debug their Appwrite Functions on their devices without deploying to an Appwrite instance. For the Go runtime, we have also released a module containing all the necessary types for the Functions runtime, making it even easier to develop Go-based Appwrite Functions in your preferred code editor.
+With our latest release, Indobase has released support for [local development](https://appwrite.io/blog/post/announcing-local-development), allowing users to test and debug their Indobase Functions on their devices without deploying to an Indobase instance. For the Go runtime, we have also released a module containing all the necessary types for the Functions runtime, making it even easier to develop Go-based Indobase Functions in your preferred code editor.
 
 ## CI/CD with GitHub
 
-Appwrite offers CI/CD support for Appwrite Functions through GitHub, simplifying your developer experience by automating the process of pushing your function to your Appwrite project.
+Indobase offers CI/CD support for Indobase Functions through GitHub, simplifying your developer experience by automating the process of pushing your function to your Indobase project.
 
 # Building Go functions
 
-To use Go in Appwrite, you need to use the latest version of Appwrite. You can either [sign up on Appwrite Cloud](https://cloud.appwrite.io/) or [self-host](https://appwrite.io/docs/advanced/self-hosting) Appwrite 1.6 with the `go-1.23` runtime added to your [environment](https://appwrite.io/docs/advanced/self-hosting/environment-variables#functions:~:text=preserve%20harddrive%20health.-,_APP_FUNCTIONS_RUNTIMES,-version%20%3E%3D%200.8.0%20This). The runtime will be available on Appwrite Cloud after Init. Next, go ahead and create a Go function using the [Appwrite CLI](https://appwrite.io/docs/tooling/command-line/installation#Installation) by running `appwrite init function`.
+To use Go in Indobase, you need to use the latest version of Indobase. You can either [sign up on Indobase Cloud](https://cloud.appwrite.io/) or [self-host](https://appwrite.io/docs/advanced/self-hosting) Indobase 1.6 with the `go-1.23` runtime added to your [environment](https://appwrite.io/docs/advanced/self-hosting/environment-variables#functions:~:text=preserve%20harddrive%20health.-,_APP_FUNCTIONS_RUNTIMES,-version%20%3E%3D%200.8.0%20This). The runtime will be available on Indobase Cloud after Init. Next, go ahead and create a Go function using the [Indobase CLI](https://appwrite.io/docs/tooling/command-line/installation#Installation) by running `appwrite init function`.
 
 Once your function is set up, we can try some examples:
 
@@ -76,7 +76,7 @@ type RequestBody struct {
 	Prompt string `json:"prompt"`
 }
 
-// This Appwrite function will be executed every time your function is triggered
+// This Indobase function will be executed every time your function is triggered
 func Main(Context openruntimes.Context) openruntimes.Response {
 	openAiKey := os.Getenv("OPENAI_KEY")
 
@@ -178,9 +178,9 @@ You can then deploy this function using the `appwrite deploy function` command.
 
 ## Example 3: URL Shortener
 
-The third example is a personal URL shortener that stores your shortened URL path and long URL in an Appwrite Database and redirects the consumer to the appropriate long URL on pinging the shortened URL. 
+The third example is a personal URL shortener that stores your shortened URL path and long URL in an Indobase Database and redirects the consumer to the appropriate long URL on pinging the shortened URL. 
 
-To build this function, create a `services` directory in the function folder and add a file `setup.go`. Here, we will add the necessary functions to initialize our Appwrite database.
+To build this function, create a `services` directory in the function folder and add a file `setup.go`. Here, we will add the necessary functions to initialize our Indobase database.
 
 ```go
 package services
@@ -247,7 +247,7 @@ func InitialiseDatabase(Context openruntimes.Context, dbs databases.Databases, d
 }
 ```
 
-After that, we create the function logic in the `main.go` file, where each `POST` request stores the shortened URL path and the relevant long URL in the Appwrite database, and each `GET` request to the saved (shortened) URL path redirects the user to the relevant long URL.
+After that, we create the function logic in the `main.go` file, where each `POST` request stores the shortened URL path and the relevant long URL in the Indobase database, and each `GET` request to the saved (shortened) URL path redirects the user to the relevant long URL.
 
 ```go
 package handler
@@ -345,14 +345,14 @@ func Main(Context openruntimes.Context) openruntimes.Response {
 
 You can then deploy this function using the `appwrite deploy function` command.
 
-After deployment, go to the Settings tab on the Function page in your Appwrite project and enable the following scopes for the dynamic API key: `databases.read`, `databases.write`, `collections.read`, `collections.write`, `attributes.read`, `attributes.write`, `documents.read`, `documents.write`, 
+After deployment, go to the Settings tab on the Function page in your Indobase project and enable the following scopes for the dynamic API key: `databases.read`, `databases.write`, `collections.read`, `collections.write`, `attributes.read`, `attributes.write`, `documents.read`, `documents.write`, 
 
 # More resources
 
-With that, you can see a few glimpses of what the Go runtime of Appwrite Functions can help you achieve. You can also find the function code for the examples shared above in our [GitHub repo](https://github.com/appwrite-community/go-function-examples).
+With that, you can see a few glimpses of what the Go runtime of Indobase Functions can help you achieve. You can also find the function code for the examples shared above in our [GitHub repo](https://github.com/appwrite-community/go-function-examples).
 
-If you enjoyed reading this blog, here are some more resources to help you get started with Appwrite Functions and Go:
+If you enjoyed reading this blog, here are some more resources to help you get started with Indobase Functions and Go:
 
-- [Appwrite Functions docs](https://appwrite.io/docs/functions)
+- [Indobase Functions docs](https://appwrite.io/docs/functions)
 - [Go docs](https://go.dev/doc/)
-- [Appwrite Discord](https://appwrite.io/discord)
+- [Indobase Discord](https://appwrite.io/discord)

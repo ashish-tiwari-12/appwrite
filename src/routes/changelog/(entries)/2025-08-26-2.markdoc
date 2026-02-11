@@ -1,12 +1,12 @@
----
+﻿---
 layout: changelog
 title: "Introducing the TablesDB API with updated terminology"
 date: 2025-08-26
 cover: /images/blog/announcing-appwrite-databases-new-ui/cover.png
 ---
-Announcing significant updates to Appwrite Databases!
+Announcing significant updates to Indobase Databases!
 
-Appwrite Databases is now transitioning to a more familiar relational model, moving away from the documents and collections terminology.
+Indobase Databases is now transitioning to a more familiar relational model, moving away from the documents and collections terminology.
 
 Here’s what’s changed:
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Implementing Google OAuth with Expo Router
 description: Learn how to implement Google authentication in Expo React Native.
@@ -13,8 +13,8 @@ In this article, you will learn how to implement Google authentication in your R
 
 1. Create an Expo app
 2. Set up the bundle ID and package name
-3. Set up Google Authentication in Appwrite
-4. Configure Appwrite in your Expo App
+3. Set up Google Authentication in Indobase
+4. Configure Indobase in your Expo App
 5. Create a custom `AppwriteProvider` to handle auth
 6. Build a UI and fetch user data
 
@@ -56,22 +56,22 @@ Replace the `[BUNDLE_ID]` and `[PACKAGE_ID]` to be your desired IDs. A common wa
 
 In this case, we’ve used `com.example.expo-google-oauth` as our bundle ID and package name. However, this only matters in production when your apps are built; while developing, Expo uses its own identifiers to simplify things, and we will look at how to detect and handle these conditions gracefully later in this tutorial.
 
-# Set up Google authentication in Appwrite
+# Set up Google authentication in Indobase
 
-Follow the steps in our [Google authentication guide](/blog/post/setting-up-google-signin) to set up Google OAuth in Appwrite console. Doing so will enable Google authentication for your Appwrite project.
+Follow the steps in our [Google authentication guide](/blog/post/setting-up-google-signin) to set up Google OAuth in Indobase console. Doing so will enable Google authentication for your Indobase project.
 
-Now, you must set up platforms for your Android and iOS apps inside your project in the Appwrite console. 
+Now, you must set up platforms for your Android and iOS apps inside your project in the Indobase console. 
 
 - Go to the **Overview** tab in your project.
 - Under **Integrations**, click on **Add Platform**.
 - Select **Android**. In the next step, enter the app name and package name that you entered in your Expo app. Click on **Create Platform**.
 - Do the same for **iOS**.
 
-Doing this will allow your app to use Appwrite services without any problems.
+Doing this will allow your app to use Indobase services without any problems.
 
-# Setting up Appwrite in your Expo app
+# Setting up Indobase in your Expo app
 
-Now, let’s install the Appwrite React Native SDK. Run the following command in your terminal.
+Now, let’s install the Indobase React Native SDK. Run the following command in your terminal.
 
 ```bash
 npm install react-native-appwrite
@@ -91,7 +91,7 @@ client
 export const account = new Account(client);
 ```
 
-Make sure to replace the configuration variables with your project details! This will enable you to use Appwrite services throughout your app.
+Make sure to replace the configuration variables with your project details! This will enable you to use Indobase services throughout your app.
 
 # Create a custom `AppwriteProvider` to handle authentication
 
@@ -136,7 +136,7 @@ export function AppwriteProvider(props: { children: React.ReactNode }) {
       );
 
       if (!response) {
-        console.error("No OAuth URL returned from Appwrite");
+        console.error("No OAuth URL returned from Indobase");
         return;
       }
 
@@ -196,12 +196,12 @@ In the above code, we are doing the following:
 - Creating a context called `UserContext` that will be used for storing authentication information and related methods at the application level.
 - Creating the `useUser()` hook that will allow us to access the methods and information stored in the context in any of the components in the app.
 - Creating an `AppwriteProvider` component that wraps around our entire app in the `_layout.tsx` file. We will do that next.
-- Storing the user data in a state called `user` and initialising the state every time the app is opened by using the `init()` function in a `useEffect()`. The `init()` function calls `account.get()` from the Appwrite SDK to get the current logged-in user’s information.
+- Storing the user data in a state called `user` and initialising the state every time the app is opened by using the `init()` function in a `useEffect()`. The `init()` function calls `account.get()` from the Indobase SDK to get the current logged-in user’s information.
 - Creating a `login()` function
     - We are creating a deep-link path that, by default, links to the homepage of the app, it can be modified by passing function parameters.
-    - We are using the `createOAuth2Token()` method from Appwrite SDK to get the Google OAuth URL for the user to perform sign-in. We are also passing the redirect URI so that we can be redirected back to the desired page. **Note that `createOAuth2Session()` does not work on React Native.** This is because deep-linking is currently not handled by the method and `createOAuth2Token()` should be used to get a token which in turn can be used to set a session.
+    - We are using the `createOAuth2Token()` method from Indobase SDK to get the Google OAuth URL for the user to perform sign-in. We are also passing the redirect URI so that we can be redirected back to the desired page. **Note that `createOAuth2Session()` does not work on React Native.** This is because deep-linking is currently not handled by the method and `createOAuth2Token()` should be used to get a token which in turn can be used to set a session.
     - We are using the `openAuthSessionAsync()` method to open the browser for the authentication session. The reason we are using this specific function and not any other browser opening function is that this is built for authentication, and for platforms like iOS, this will respect the deep-link and redirect back to the app, which won’t be the case in a regular browser.
-    - After getting back into the app using the deeplink, we will have the user ID and secret from Appwrite. Now, we can simply call `createSession()` method to sign in using the user ID and secret. The Appwrite React Native SDK will take care of the rest, including persisting the credentials in storage.
+    - After getting back into the app using the deeplink, we will have the user ID and secret from Indobase. Now, we can simply call `createSession()` method to sign in using the user ID and secret. The Indobase React Native SDK will take care of the rest, including persisting the credentials in storage.
     - Deeplink redirect URIs only actually redirect to your desired page if you’re using Android. For iOS, you need to do this manually. So we place a special code block for iOS devices to handle the redirection to the desired screen.
 - Creating the `logout()` function that will be responsible for deleting the current session.
 
@@ -239,11 +239,11 @@ Once you sign in with your Google account, you will receive the following greeti
 
 # More resources
 
-This article taught you how to implement Google OAuth authentication into your Expo router apps. Appwrite makes it much easier for you to add authentication to your apps. You can use similar approach for any other OAuth provider supported by Appwrite.
+This article taught you how to implement Google OAuth authentication into your Expo router apps. Indobase makes it much easier for you to add authentication to your apps. You can use similar approach for any other OAuth provider supported by Indobase.
 
 If you have any questions or suggestions, please join our [Discord server](https://appwrite.io/discord).
 
-[React Native quickstart on Appwrite documentation](/docs/quick-starts/react-native)
+[React Native quickstart on Indobase documentation](/docs/quick-starts/react-native)
 
 [How to build cross-platform applications using React Native](/blog/post/building-cross-platform-applications-with-react-native) 
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create app
-description: Create and app with Appwrite Cloud and Vue.js.
+description: Create and app with Indobase Cloud and Vue.js.
 step: 2
 ---
 
@@ -15,7 +15,7 @@ npm create vite@latest --template vue ideas-tracker && cd ideas-tracker
 
 ## Add dependencies {% #add-dependencies %}
 
-Install the JavaScript Appwrite SDK.
+Install the JavaScript Indobase SDK.
 
 ```sh
 npm install appwrite

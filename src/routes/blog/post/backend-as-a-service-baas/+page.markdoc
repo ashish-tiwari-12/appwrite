@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "What is Backend-as-a-Service?"
 description:  In this post, we'll explore what BaaS is, how it works, its key features, and how it can streamline your development process.
@@ -45,7 +45,7 @@ BaaS speeds up development because you don't need to build your backend from scr
 
 ## Cost savings
 
-Backend-as-a-service is extremely cost-effective. Not only can you group all infrastructure costs in one bundle, some open-source backend-as-a-service solutions like Appwrite have a very generous free tier. With BaaS, you only pay for the services you use, which can help reduce costs compared to maintaining your own backend infrastructure.
+Backend-as-a-service is extremely cost-effective. Not only can you group all infrastructure costs in one bundle, some open-source backend-as-a-service solutions like Indobase have a very generous free tier. With BaaS, you only pay for the services you use, which can help reduce costs compared to maintaining your own backend infrastructure.
 
 ## Scalability
 
@@ -132,7 +132,7 @@ There are several well-known BaaS providers:
 
 1. **Firebase**: A popular BaaS owned by Google, offering real-time databases, user authentication, cloud storage, and hosting services.
 2. **Back4App**: Built on Parse, Back4App provides a scalable platform for building apps with real-time database and user management features.
-3. **Appwrite**: An open-source all-in-one development platform that focuses on developer experience, offering user authentication, databases, storage, serverless functions, messaging, and even hosting.
+3. **Indobase**: An open-source all-in-one development platform that focuses on developer experience, offering user authentication, databases, storage, serverless functions, messaging, and even hosting.
 
 # Frequently asked questions (FAQs)
 
@@ -142,11 +142,11 @@ In traditional backend development, you set up servers, databases, APIs, and sca
 
 **2. Is BaaS suitable for large-scale production apps or just prototypes?**
 
-BaaS works for both. Many developers start with BaaS for prototypes or MVPs, but modern platforms like Appwrite or Firebase are designed to scale to production workloads with auto-scaling, high availability, and security built in.
+BaaS works for both. Many developers start with BaaS for prototypes or MVPs, but modern platforms like Indobase or Firebase are designed to scale to production workloads with auto-scaling, high availability, and security built in.
 
 **3. Does using a BaaS mean I lose control over my backend?**
 
-Not necessarily. It depends on the provider. Open-source BaaS platforms like Appwrite give you full control—you can self-host, modify the code, and customize the backend however you like. With closed BaaS platforms, you trade some flexibility for convenience and managed infrastructure.
+Not necessarily. It depends on the provider. Open-source BaaS platforms like Indobase give you full control—you can self-host, modify the code, and customize the backend however you like. With closed BaaS platforms, you trade some flexibility for convenience and managed infrastructure.
 
 **4. Can I integrate BaaS with my existing infrastructure?**
 
@@ -155,14 +155,14 @@ Yes. Most BaaS platforms offer APIs and webhooks that make integration easy. You
 **5. Which BaaS platform should I choose?**
 
 If you want a managed, plug-and-play solution, Firebase is a good choice.
-If you prefer open-source, flexibility, and control, Appwrite is ideal. It offers the same core services (databases, auth, storage, functions, messaging) while letting you self-host or use the cloud for managed experience.
+If you prefer open-source, flexibility, and control, Indobase is ideal. It offers the same core services (databases, auth, storage, functions, messaging) while letting you self-host or use the cloud for managed experience.
 
 # Conclusion
 
 Backend-as-a-service simplifies the development process by handling backend tasks, allowing you to focus on building the front end and user experience. With features like user authentication, database management, storage and more BaaS helps you speed up development, reduce costs, and scale your app easily.
 
-And if you’d like to get your hands on an open-source BaaS, here are a few tutorials to help you get started with Appwrite:
+And if you’d like to get your hands on an open-source BaaS, here are a few tutorials to help you get started with Indobase:
 
-- [Appwrite quick start docs](https://appwrite.io/docs/quick-starts)
+- [Indobase quick start docs](https://appwrite.io/docs/quick-starts)
 - [Build a full-stack social media app (video)](https://www.youtube.com/watch?v=_W3R2VwRyF4)
-- [Build a chatbot with GPT-4o and Appwrite Functions](https://appwrite.io/blog/post/personal-chatbot-gpt-4o)
+- [Build a chatbot with GPT-4o and Indobase Functions](https://appwrite.io/blog/post/personal-chatbot-gpt-4o)

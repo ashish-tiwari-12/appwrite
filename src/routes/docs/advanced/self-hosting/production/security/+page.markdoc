@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Security
-description: Implement essential security practices for your self-hosted Appwrite instance to protect your data and infrastructure.
+description: Implement essential security practices for your self-hosted Indobase instance to protect your data and infrastructure.
 ---
 
-Securing your self-hosted Appwrite instance is crucial to protect your data and infrastructure. This guide covers the essential security configurations and requirements for production Appwrite deployments.
+Securing your self-hosted Indobase instance is crucial to protect your data and infrastructure. This guide covers the essential security configurations and requirements for production Indobase deployments.
 
 # Encryption {% #encryption %}
 
-Appwrite does not generate a unique encryption key during a default setup. This key encrypts your files and sensitive data like webhook passwords or API keys to keep them secure. To take advantage of this feature, you must generate a unique key and set it as the value of the `_APP_OPENSSL_KEY_V1` environment variable.
+Indobase does not generate a unique encryption key during a default setup. This key encrypts your files and sensitive data like webhook passwords or API keys to keep them secure. To take advantage of this feature, you must generate a unique key and set it as the value of the `_APP_OPENSSL_KEY_V1` environment variable.
 
-You **must** set `_APP_OPENSSL_KEY_V1` immediately after installation of a production Appwrite instance. Changing the `_APP_OPENSSL_KEY_V1` variable will cause the loss of existing passwords, OAuth secrets, and API keys.
+You **must** set `_APP_OPENSSL_KEY_V1` immediately after installation of a production Indobase instance. Changing the `_APP_OPENSSL_KEY_V1` variable will cause the loss of existing passwords, OAuth secrets, and API keys.
 
 Make sure to keep this key in a safe place and never make it publicly accessible.
 
@@ -22,13 +22,13 @@ You can force the use of HTTPS with the [_APP_OPTIONS_FORCE_HTTPS](/docs/advance
 
 # Console access {% #console-access %}
 
-Appwrite provides three different methods to limit access to your Appwrite Console.
+Indobase provides three different methods to limit access to your Indobase Console.
 
 1. Whitelist a group of developers by IP using the `_APP_CONSOLE_WHITELIST_IPS` environment variable.
 2. Whitelist a group of developers by email using the `_APP_CONSOLE_WHITELIST_EMAILS` environment variable.
 3. Only the root user can signup. All other developers must be added through invitations. This is configured using the `_APP_CONSOLE_WHITELIST_ROOT` environment variable.
 
-By default, only the first user can sign up on the Appwrite instance's dashboard. All other users must be added to the dashboard through invitation.
+By default, only the first user can sign up on the Indobase instance's dashboard. All other users must be added to the dashboard through invitation.
 
 {% arrow_link href="/docs/advanced/self-hosting/environment-variables" %}
 Learn more about environment variables

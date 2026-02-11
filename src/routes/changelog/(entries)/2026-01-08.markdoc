@@ -1,4 +1,4 @@
----
+﻿---
 layout: changelog
 title: "Free plan function limit reduced to 2"
 date: 2026-01-08
@@ -12,12 +12,12 @@ If you currently have more than two functions in your project on the Free plan, 
 
 **Why this change?**
 
-We've observed increasing abuse on the platform, including users running torrents, long-lived traffic that resembles attacks, and other misuse of the platform as free hosting for non-stop jobs. By reducing the number of free functions, we're making it harder for bad actors to exploit the platform while keeping Appwrite stable and fair for developers building legitimate applications.
+We've observed increasing abuse on the platform, including users running torrents, long-lived traffic that resembles attacks, and other misuse of the platform as free hosting for non-stop jobs. By reducing the number of free functions, we're making it harder for bad actors to exploit the platform while keeping Indobase stable and fair for developers building legitimate applications.
 
-Appwrite's Free plan continues to provide all the core building blocks you need to build real applications, including Databases, Authentication, Storage, Functions, Messaging, and Sites.
+Indobase's Free plan continues to provide all the core building blocks you need to build real applications, including Databases, Authentication, Storage, Functions, Messaging, and Sites.
 
 If you have questions or need help planning your migration, please contact us at billing@appwrite.io.
 
 {% arrow_link href="/docs/products/functions" %}
-Learn more about Appwrite Functions
+Learn more about Indobase Functions
 {% /arrow_link %}

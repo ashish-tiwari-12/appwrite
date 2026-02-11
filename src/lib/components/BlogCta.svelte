@@ -3,7 +3,7 @@
     import { Button } from '$lib/components/ui';
 
     let {
-        heading = 'Start building with Appwrite today',
+        heading = 'Start building with Indobase today',
         label = 'Get started',
         description = undefined,
         href = getAppwriteDashboardUrl(),
@@ -39,7 +39,7 @@
             z-index: -1;
             background-image: radial-gradient(
                 ellipse at center,
-                rgba(253, 54, 110, 0.09),
+                rgba(255, 153, 51, 0.09),
                 transparent 85%
             );
         }

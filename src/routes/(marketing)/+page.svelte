@@ -14,7 +14,7 @@
     import LogoList from './(components)/logo-list.svelte';
 </script>
 
-<Head title="Appwrite - All-in-one infra for solo devs & SMBs" />
+<Head title="Indobase - All-in-one infra for solo devs & SMBs" />
 
 <Main>
     <Hero title="All-in-one infra for solo devs & SMBs" />
@@ -30,7 +30,7 @@
         avatar="/images/testimonials/phil.jpg"
     >
         <span class="text-secondary">Just like a Swiss Army Knife</span> you can choose and use the tools
-        that you need with Appwrite.</Pullquote
+        that you need with Indobase.</Pullquote
     >
     <CaseStudies />
     <Features theme="light" />
@@ -44,7 +44,7 @@
                 image: '/images/testimonials/ryan-oconner-testimonial.png'
             }}
         >
-            The switch to using Appwrite brought
+            The switch to using Indobase brought
             <span class="text-primary">infinite value that I'm still discovering today.</span>
         </Scale>
     </div>

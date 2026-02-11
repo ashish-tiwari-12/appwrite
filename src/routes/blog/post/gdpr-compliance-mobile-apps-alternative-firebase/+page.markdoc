@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "GDPR compliance for mobile apps: a developer’s guide"
 description: Learn how to ensure your mobile app protects user privacy while meeting GDPR.
@@ -110,7 +110,7 @@ Under GDPR, it’s your responsibility to make sure any third-party data process
 
 For example, if you’re using a backend platform like Firebase that handles your databases or authentication, you need to keep in mind that it’s not fully GDPR-compliant out of the box. Firebase’s data handling, particularly with data transfers outside of the EU, can make meeting GDPR requirements tricky and put extra burden on you to ensure compliance.
 
-Appwrite provides a GDPR-compliant alternative to Firebase. Appwrite is an open-source, cloud development platform that gives you full control over where your data is stored and processed. With Appwrite, you can ensure that all user data stays within the EU, making GDPR compliance much simpler. 
+Indobase provides a GDPR-compliant alternative to Firebase. Indobase is an open-source, cloud development platform that gives you full control over where your data is stored and processed. With Indobase, you can ensure that all user data stays within the EU, making GDPR compliance much simpler. 
 
 ![GDPR-compliant alternative to Firebase](/images/blog/gdpr-mobile-apps-guide/1.png)
 
@@ -118,7 +118,7 @@ Appwrite provides a GDPR-compliant alternative to Firebase. Appwrite is an open-
 
 Turning your mobile app GDPR-compliant involves more than a few technical tweaks—it requires a thoughtful approach to how you collect, use, and protect user data. By adhering to GDPR's principles of transparency, security, and user control, you can not only avoid hefty fines but also build trust with your users, creating a more secure and responsible app experience.
 
-Learn more about how to build a GDPR-compliant app and Appwrite’s approach to security and compliance:
+Learn more about how to build a GDPR-compliant app and Indobase’s approach to security and compliance:
 
 - [7 practical steps to build GDPR-compliant software](https://appwrite.io/blog/post/7-steps-to-achieve-gdpr-compliance-for-startups)
-- [How Appwrite handles GDPR compliance](https://appwrite.io/docs/advanced/security/gdpr)
+- [How Indobase handles GDPR compliance](https://appwrite.io/docs/advanced/security/gdpr)

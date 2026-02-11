@@ -1,23 +1,23 @@
----
+﻿---
 layout: article
 title: Integrating LMNT
-description: Learn how to integrate LMNT into your Appwrite project.
+description: Learn how to integrate LMNT into your Indobase project.
 difficulty: intermediate
 readtime: 15
 ---
 
 LMNT is a text-to-speech tool that can generate natural-sounding audio from text. It's an excellent tool for dubbing content, creating audiobooks, or even for accessibility.
 
-Integrating LMNT into your Appwrite project is simple. This tutorial will guide you through setting up the LMNT API and incorporating it into your Appwrite project.
+Integrating LMNT into your Indobase project is simple. This tutorial will guide you through setting up the LMNT API and incorporating it into your Indobase project.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite Project
-- An Appwrite Bucket
+- An Indobase Project
+- An Indobase Bucket
 - An [LMNT API Key](https://app.lmnt.com/account)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console), click on **Functions** in the left sidebar and click the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console), click on **Functions** in the left sidebar and click the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -27,7 +27,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console), click on **Fu
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 2. Click **Create function**.
 3. Under **Connect Git repository**, select your provider.
 4. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -38,7 +38,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console), click on **Fu
 {% section #step-2 step=2 title="Add dependencies" %}
 Once the Function is created, please navigate to the freshly created repository and clone it to your local machine.
 
-Install the `lmnt-node` package to make requests to the LMNT API and `node-appwrite` package to upload the generated audio files to Appwrite Storage.
+Install the `lmnt-node` package to make requests to the LMNT API and `node-appwrite` package to upload the generated audio files to Indobase Storage.
 
 ```bash
 npm install lmnt-node node-appwrite
@@ -200,13 +200,13 @@ And after the `</head>` tag add this `<body>` which will contain the actual form
 </body>
 ```
 
-All of this together will render a form that will submit your text to the Appwrite Function through a `POST` request. The Appwrite function will then call LMNT's API, upload the audio to Appwrite Storage and return the URL, which will be displayed on your page.
+All of this together will render a form that will submit your text to the Indobase Function through a `POST` request. The Indobase function will then call LMNT's API, upload the audio to Indobase Storage and return the URL, which will be displayed on your page.
 {% /section %}
 
 {% section #step-6 step=6 title="Handle POST Request" %}
 Next, you'll add the methods necessary to integrate with the LMNT API.
 
-Import the `Speech` class from `lmnt-node`, and the required features from the Appwrite Node.js SDK at the top of the `main.js` file.
+Import the `Speech` class from `lmnt-node`, and the required features from the Indobase Node.js SDK at the top of the `main.js` file.
 
 ```js
 import { Client, Storage, ID, Permission, Role } from "node-appwrite";
@@ -214,7 +214,7 @@ import { InputFile } from "node-appwrite/file";
 import Speech from 'lmnt-node';
 ```
 
-Next, add code to validate the body of the request and initialize the Appwrite SDK also within `main.js` following the previously added GET handler:
+Next, add code to validate the body of the request and initialize the Indobase SDK also within `main.js` following the previously added GET handler:
 
 ```js
 const endpoint = process.env.APPWRITE_ENDPOINT ?? "https://<REGION>.cloud.appwrite.io/v1";
@@ -240,8 +240,8 @@ This code will send the prompt to the LMNT API and return the audio as a blob. A
 
 {% /section %}
 
-{% section #step-7 step=7 title="Store Audio in Appwrite Storage" %}
-Store the audio file in Appwrite Storage for easy retrieval later:
+{% section #step-7 step=7 title="Store Audio in Indobase Storage" %}
+Store the audio file in Indobase Storage for easy retrieval later:
 
 ```js
 const storage = new Storage(client);
@@ -254,7 +254,7 @@ const file = await storage.createFile({
 });
 ```
 
-To show it to the user, parse the download URL from Appwrite and return it in the response:
+To show it to the user, parse the download URL from Indobase and return it in the response:
 
 ```js
 const url = `${endpoint}/storage/buckets/${process.env.APPWRITE_BUCKET_ID}/files/${file.$id}/view?project=${process.env.APPWRITE_FUNCTION_PROJECT_ID}`;
@@ -262,7 +262,7 @@ const url = `${endpoint}/storage/buckets/${process.env.APPWRITE_BUCKET_ID}/files
 return res.json({ ok: true, response: url });
 ```
 
-This should finish up the Function. Deploy it to Appwrite by pushing it to the git repository created earlier.
+This should finish up the Function. Deploy it to Indobase by pushing it to the git repository created earlier.
 {% /section %}
 
 {% section #step-8 step=8 title="Test the function" %}

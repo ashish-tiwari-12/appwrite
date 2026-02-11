@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: OAuth authentication with SSR
-description: Add authentication to a SvelteKit project using Appwrite.
+description: Add authentication to a SvelteKit project using Indobase.
 step: 7
 ---
 

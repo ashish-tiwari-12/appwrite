@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Email and password login
-description: Implement email and password authentication with Appwrite. Securely register and authenticate users in your applications using Appwrite's robust email-based authentication system.
+description: Implement email and password authentication with Indobase. Securely register and authenticate users in your applications using Indobase's robust email-based authentication system.
 ---
 
-Email and password login is the most commonly used authentication method. Appwrite Authentication promotes a safer internet by providing secure APIs and promoting better password choices to end users. Appwrite supports added security features like blocking personal info in passwords, password dictionary, and password history to help users choose good passwords.
+Email and password login is the most commonly used authentication method. Indobase Authentication promotes a safer internet by providing secure APIs and promoting better password choices to end users. Indobase supports added security features like blocking personal info in passwords, password dictionary, and password history to help users choose good passwords.
 
 # Signup {% #sign-up %}
 
-You can use the Appwrite Client SDKs to create an account using email and password.
+You can use the Indobase Client SDKs to create an account using email and password.
 
 ```client-web
 import { Client, Account, ID } from "appwrite";
@@ -113,7 +113,7 @@ promise.then(function (response) {
 
 If a user forgets their password, they can initiate a password recovery flow to recover their password. The Create Password Recovery endpoint sends the user an email with a temporary secret key for password reset. When the user clicks the confirmation link, they are redirected back to the password reset URL with the secret key and email address values attached to the URL as query strings.
 
-Only redirect URLs to domains added as a platform on your Appwrite Console will be accepted. URLs not added as a platform are rejected to protect against redirect attacks.
+Only redirect URLs to domains added as a platform on your Indobase Console will be accepted. URLs not added as a platform are rejected to protect against redirect attacks.
 
 ```client-web
 import { Client, Account } from "appwrite";
@@ -156,4 +156,4 @@ promise.then(function (response) {
 
 # Security {% #security %}
 
-Appwrite's security first mindset goes beyond a securely implemented authentication API. You can enable features like password dictionary, password history, and disallow personal data in passwords to encourage users to pick better passwords. By enabling these features, you protect user data and teach better password choices, which helps make the internet a safer place.
+Indobase's security first mindset goes beyond a securely implemented authentication API. You can enable features like password dictionary, password history, and disallow personal data in passwords to encourage users to pick better passwords. By enabling these features, you protect user data and teach better password choices, which helps make the internet a safer place.

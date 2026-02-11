@@ -26,7 +26,7 @@
             label="Password"
             type="password"
             disabled
-            value="appwriter"
+            value="Indobase"
             class="text-primary text-[20px] tracking-tighter"
         />
         <div class="flex flex-wrap gap-2 py-2">

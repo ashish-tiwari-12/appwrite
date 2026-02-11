@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Image proxy
 description: Transform remote images with resizing, cropping, and quality adjustments for optimal display and performance.
@@ -51,7 +51,7 @@ Future result = avatars.getImage(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -426,5 +426,5 @@ Image proxy is commonly used for:
 - **Format optimization**: Convert images to modern formats like WebP or AVIF for better compression
 - **Performance optimization**: Reduce image file sizes while maintaining acceptable quality
 - **Content delivery**: Transform images on-the-fly for CDN delivery and caching
-- **Secure content serving**: Serve untrusted user content securely through Appwrite's trusted proxy with proper SSL certification, protecting your application from mixed content warnings and security vulnerabilities
+- **Secure content serving**: Serve untrusted user content securely through Indobase's trusted proxy with proper SSL certification, protecting your application from mixed content warnings and security vulnerabilities
 

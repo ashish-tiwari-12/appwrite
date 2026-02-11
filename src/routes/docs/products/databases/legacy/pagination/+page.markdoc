@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Pagination
-description: Implement pagination for large data sets in Appwrite Databases. Explore techniques for splitting and displaying data across multiple pages.
+description: Implement pagination for large data sets in Indobase Databases. Explore techniques for splitting and displaying data across multiple pages.
 ---
 
 As your database grows in size, you'll need to paginate results returned.
@@ -79,7 +79,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -219,7 +219,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {

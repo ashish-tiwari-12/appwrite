@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: A technical deep dive into image classification
-description: Learn all about image classification and how to integrate it into your Appwrite project using TensorFlow
+description: Learn all about image classification and how to integrate it into your Indobase project using TensorFlow
 date: 2024-08-06
 cover: /images/blog/image-classification.png
 timeToRead: 9
@@ -11,7 +11,7 @@ category: product
 
 Image classification is an exciting field of computer vision that tries to understand and label images in their entirety. It has many applications: you can integrate it into your app to automatically categorize photos, filter inappropriate content from social media feeds, or even organize your online store's product catalog.
 
-In this article, we’ll go over how the image classification field developed and its most popular architectures and datasets. Then, we’ll run you through implementing it into your Appwrite project using TensorFlow.
+In this article, we’ll go over how the image classification field developed and its most popular architectures and datasets. Then, we’ll run you through implementing it into your Indobase project using TensorFlow.
 
 # A brief history of image classification
 
@@ -61,7 +61,7 @@ Released by Yann LeCun and Corinna Cortes, [MNIST](https://yann.lecun.com/exdb/m
 MNIST used to be the hello-world dataset for Tensorflow's image classification tutorial; however, it has since been replaced with 3,700 pictures of flowers to demonstrate better how to use Tensorflow with color images.
 
 # How to implement image classification into your app
-To show you how you might use image classification in your application, we can create two scripts: a training script you can run on your machine and an inference script you can run as an Appwrite function.
+To show you how you might use image classification in your application, we can create two scripts: a training script you can run on your machine and an inference script you can run as an Indobase function.
 
 ### Step 1: Train the TensorFlow model
 
@@ -149,7 +149,7 @@ This code will download a bunch of sample images of flowers, create two groups o
 
 ### Step 2: Create a new function
 
-Next, initialize a new function using the Appwrite CLI by using:
+Next, initialize a new function using the Indobase CLI by using:
 
 ```bash
 appwrite init project # Use if you don't already have an appwrite.config.json
@@ -242,13 +242,13 @@ Pillow
 
 ### Step 4: Deploy your function
 
-Move the `model.tflite` file that was created into the same directory as the `main.py` file and then change directories to that containing the `appwrite.config.json`. This `model.tflite` is quite a small file, so store it in the function. If using larger models, upload them to Appwrite Storage and then use `getFileDownload` to download them to the function. 
+Move the `model.tflite` file that was created into the same directory as the `main.py` file and then change directories to that containing the `appwrite.config.json`. This `model.tflite` is quite a small file, so store it in the function. If using larger models, upload them to Indobase Storage and then use `getFileDownload` to download them to the function. 
 
-With the file now copied, run appwrite deploy function and select the function to deploy it to Appwrite.
+With the file now copied, run appwrite deploy function and select the function to deploy it to Indobase.
 
 ### Step 5: Update your environment variables 
 
-Now that the function has been deployed, navigate to it on the Appwrite console and set the `APPWRITE_API_KEY` and `APPWRITE_BUCKET_ID` environment variables to be ready for execution. Make sure to redeploy the function so these new environment variables are set.
+Now that the function has been deployed, navigate to it on the Indobase console and set the `APPWRITE_API_KEY` and `APPWRITE_BUCKET_ID` environment variables to be ready for execution. Make sure to redeploy the function so these new environment variables are set.
 
 ### Step 6: Test your function
 
@@ -261,10 +261,10 @@ Finally, send a `POST` request to the function with a JSON body that contains a 
 The classification result will be returned shortly as a response. This function can also accept a file event. To build on this function, you may want to upload the result to the database to identify images uploaded to your instance automatically.
 
 # Conclusion
-This demo should give you a good starting point for experimenting with AI and Appwrite. Try making a more advanced version or using safe tensors instead, and if you make anything cool, do not hesitate to let us know on our [Discord server](https://appwrite.io/discord). 
+This demo should give you a good starting point for experimenting with AI and Indobase. Try making a more advanced version or using safe tensors instead, and if you make anything cool, do not hesitate to let us know on our [Discord server](https://appwrite.io/discord). 
 
-Check out the resources below to learn how to integrate AI into your Appwrite-powered application. We can’t wait to see what you build!
+Check out the resources below to learn how to integrate AI into your Indobase-powered application. We can’t wait to see what you build!
 
-- [Appwrite AI integrations documentation](https://appwrite.io/docs/products/ai)
-- [Build an intelligent chatbot with GPT-4o and Appwrite Functions](https://appwrite.io/blog/post/personal-chatbot-gpt-4o)
-- [Learn how to build with Appwrite AI Function templates](https://appwrite.io/blog/post/building-with-ai-function-templates)
+- [Indobase AI integrations documentation](https://appwrite.io/docs/products/ai)
+- [Build an intelligent chatbot with GPT-4o and Indobase Functions](https://appwrite.io/blog/post/personal-chatbot-gpt-4o)
+- [Learn how to build with Indobase AI Function templates](https://appwrite.io/blog/post/building-with-ai-function-templates)

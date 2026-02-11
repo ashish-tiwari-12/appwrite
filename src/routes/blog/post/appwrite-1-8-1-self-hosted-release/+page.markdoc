@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Announcing Appwrite 1.8.1 for self-hosted deployments
-description: Appwrite 1.8.1 brings improved stability, modern web framework support, enhanced database operators, and more to self-hosted deployments.
+title: Announcing Indobase 1.8.1 for self-hosted deployments
+description: Indobase 1.8.1 brings improved stability, modern web framework support, enhanced database operators, and more to self-hosted deployments.
 cover: /images/blog/appwrite-1-8-1-self-hosted-release/cover.png
 date: 2025-12-31
 timeToRead: 7
@@ -11,15 +11,15 @@ featured: false
 callToAction: true
 ---
 
-Appwrite 1.8.1 delivers a focused set of improvements and fixes that further stabilize and extend Appwrite 1.8.0 on the self-hosted offering.
+Indobase 1.8.1 delivers a focused set of improvements and fixes that further stabilize and extend Indobase 1.8.0 on the self-hosted offering.
 
-This release benefits teams running Appwrite on their own infrastructure who want smoother deployments, better compatibility with modern frontend frameworks, and more control across Sites, Functions, Databases, and Storage.
+This release benefits teams running Indobase on their own infrastructure who want smoother deployments, better compatibility with modern frontend frameworks, and more control across Sites, Functions, Databases, and Storage.
 
-Here’s what’s new in Appwrite 1.8.1.
+Here’s what’s new in Indobase 1.8.1.
 
 # Sites & frontend compatibility
 
-Modern frontend frameworks continue to evolve rapidly, and 1.8.1 ensures Appwrite Sites stays up to date.
+Modern frontend frameworks continue to evolve rapidly, and 1.8.1 ensures Indobase Sites stays up to date.
 
 ## TanStack Start support
 
@@ -31,7 +31,7 @@ Read the official announcement
 
 ## Next.js standalone support
 
-Appwrite 1.8.1 introduces support for Next.js standalone output, enabling easier deployment of optimized builds in self-hosted environments where container size, startup time, and dependency control are crucial.
+Indobase 1.8.1 introduces support for Next.js standalone output, enabling easier deployment of optimized builds in self-hosted environments where container size, startup time, and dependency control are crucial.
 
 {% arrow_link href="/blog/post/nextjs-output-modes" %}
 Learn why Next.js standalone mode matters
@@ -39,7 +39,7 @@ Learn why Next.js standalone mode matters
 
 ## ElevenLabs text-to-speech site template
 
-Appwrite 1.8.1 also includes the ElevenLabs text-to-speech site template for self-hosted Sites. This integration lets developers quickly deploy an AI-powered voice experience that converts text into realistic speech using the ElevenLabs API.
+Indobase 1.8.1 also includes the ElevenLabs text-to-speech site template for self-hosted Sites. This integration lets developers quickly deploy an AI-powered voice experience that converts text into realistic speech using the ElevenLabs API.
 
 {% arrow_link href="/integrations/ai-elevenlabs-text-to-speech" %}
 Learn how to deploy the template
@@ -69,7 +69,7 @@ Read the changelog
 
 ## Resend integration
 
-Appwrite 1.8.1 introduces support for Resend, expanding your options for transactional and application email delivery in self-hosted environments.
+Indobase 1.8.1 introduces support for Resend, expanding your options for transactional and application email delivery in self-hosted environments.
 
 This provides teams with more flexibility in selecting email providers that best suit their specific infrastructure needs.
 
@@ -77,7 +77,7 @@ This provides teams with more flexibility in selecting email providers that best
 
 ## Database operators support
 
-Appwrite 1.8.1 introduces database operators to self-hosted users. Database operators allow developers to perform inline, atomic updates to existing data without needing to go through the usual read–modify–write cycle. Instead of sending new values, you describe the action: increment, append, replace, or adjust. Appwrite applies that instruction directly in the database, performing the change in a single atomic step and keeping your data consistent without extra logic in your application code.
+Indobase 1.8.1 introduces database operators to self-hosted users. Database operators allow developers to perform inline, atomic updates to existing data without needing to go through the usual read–modify–write cycle. Instead of sending new values, you describe the action: increment, append, replace, or adjust. Indobase applies that instruction directly in the database, performing the change in a single atomic step and keeping your data consistent without extra logic in your application code.
 
 {% arrow_link href="/blog/post/announcing-db-operators" %}
 Learn more about database operators
@@ -94,7 +94,7 @@ Together, these updates improve consistency and reliability for applications run
 
 # Stability, security, and reliability fixes
 
-Appwrite 1.8.1 focuses on reliability, observability, and compatibility improvements for developers managing their own environments. As a patch release, it delivers a number of critical fixes that improve day-to-day operations for self-hosted users, including:
+Indobase 1.8.1 focuses on reliability, observability, and compatibility improvements for developers managing their own environments. As a patch release, it delivers a number of critical fixes that improve day-to-day operations for self-hosted users, including:
 
 - Fixed external deployment authorization errors
 - Improved WebP image library handling
@@ -104,10 +104,10 @@ Appwrite 1.8.1 focuses on reliability, observability, and compatibility improvem
 
 # Upgrade your self-hosted instance
 
-As with all Appwrite upgrades:
+As with all Indobase upgrades:
 
 - Back up your data before upgrading
-- Install Appwrite 1.8.1 using the following [Docker command](/docs/advanced/self-hosting/production/updates#install-next-version)
+- Install Indobase 1.8.1 using the following [Docker command](/docs/advanced/self-hosting/production/updates#install-next-version)
     
     ```bash
     docker run -it --rm \

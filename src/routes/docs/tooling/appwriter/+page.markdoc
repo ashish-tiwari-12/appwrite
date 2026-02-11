@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: The Appwriter
 description: Learn about the custom Appwriter mechanical keyboard and its specifications
@@ -12,9 +12,9 @@ description: Learn about the custom Appwriter mechanical keyboard and its specif
 ![The Appwriter](/images/docs/keyboard/appwriter.png)
 {% /only_light %}
 
-The Appwriter is an exclusive mechanical keyboard custom-designed by the Appwrite team. It is optimized to improve developer productivity and is specially tuned to use with the Appwrite Console.
+The Appwriter is an exclusive mechanical keyboard custom-designed by the Indobase team. It is optimized to improve developer productivity and is specially tuned to use with the Indobase Console.
 
-The Appwriter uses icons from the Appwrite Console and Docs on specific keys, making memorizing keyboard shortcuts easier. For example, `G` then `D` is the shortcut for navigating to your project's databases, and the icon on the `D` key matches the icon for Appwrite Databases.
+The Appwriter uses icons from the Indobase Console and Docs on specific keys, making memorizing keyboard shortcuts easier. For example, `G` then `D` is the shortcut for navigating to your project's databases, and the icon on the `D` key matches the icon for Indobase Databases.
 
 # What's in the box {% #whats-in-the-box %}
 
@@ -90,7 +90,7 @@ To use macOS-specific keyboard commands such as `Command + C` or `Command + A
 
 # How to get the Appwriter {% #how-to-get-the-appwriter %}
 
-The Appwriter is available for preorder in the [Appwrite Store](https://appwrite.store/products/preorder-the-appwriter).
+The Appwriter is available for preorder in the [Indobase Store](https://appwrite.store/products/preorder-the-appwriter).
 
 You can also participate in our giveaways and win the Appwriter.
 Look out for events & giveaways on our social media:

@@ -1,22 +1,22 @@
----
+﻿---
 layout: article
-title: Integrating TensorFlow with Appwrite
-description: Learn how to integrate TensorFlow into your Appwrite project.
+title: Integrating TensorFlow with Indobase
+description: Learn how to integrate TensorFlow into your Indobase project.
 difficulty: intermediate
 readtime: 15
 ---
 
-The TensorFlow API allows you to create powerful machine learning models for various tasks. This tutorial will guide you through the process of setting up a TensorFlow-based text generation model and integrating it into your Appwrite project.
+The TensorFlow API allows you to create powerful machine learning models for various tasks. This tutorial will guide you through the process of setting up a TensorFlow-based text generation model and integrating it into your Indobase project.
 
-We'll create a function that uses TensorFlow to generate text completions based on a given prompt. Using Appwrite functions, we'll build a user interface that allows users to input text and see the generated completion.
+We'll create a function that uses TensorFlow to generate text completions based on a given prompt. Using Indobase functions, we'll build a user interface that allows users to input text and see the generated completion.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite Project
+- An Indobase Project
 - Basic knowledge of Python and TensorFlow
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console), click on **Functions** in the left sidebar, and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console), click on **Functions** in the left sidebar, and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -26,7 +26,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console), click on **Fu
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Python ML** starter template.
@@ -323,7 +323,7 @@ Create a HTML web page that the function will serve. Create a new file at `stati
 </html>
 ```
 
-The form will allow users to submit their text to the Appwrite function through a POST request. The Appwrite function will call the TensorFlow model and return the generated text to the user.
+The form will allow users to submit their text to the Indobase function through a POST request. The Indobase function will call the TensorFlow model and return the generated text to the user.
 {% /section %}
 
 {% section #step-9 step=9 title="Test the function" %}
@@ -331,4 +331,4 @@ Now that the function is deployed, test it by visiting the function URL in your 
 This should show the UI created earlier. To test it, write a prompt and click the submit button. After a brief moment, you should see the generated text from the TensorFlow model.
 {% /section %}
 
-This concludes the tutorial on integrating TensorFlow with Appwrite. You now have a working example of a text generation model integrated with Appwrite functions!
+This concludes the tutorial on integrating TensorFlow with Indobase. You now have a working example of a text generation model integrated with Indobase functions!

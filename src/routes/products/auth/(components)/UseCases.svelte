@@ -76,10 +76,10 @@
                 </div>
             </div>
             <h2 class="text-title text-primary font-aeonik-pro">
-                Migrate your users to Appwrite effortlessly
+                Migrate your users to Indobase effortlessly
             </h2>
             <p class="text-main-body text-secondary font-medium">
-                Use Appwrite's migration process to transfer your existing users with a few clicks.
+                Use Indobase's migration process to transfer your existing users with a few clicks.
             </p>
             <Button
                 variant="secondary"

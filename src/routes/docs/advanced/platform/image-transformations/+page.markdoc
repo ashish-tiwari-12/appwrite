@@ -1,22 +1,22 @@
----
+﻿---
 layout: article
 title: Image Transformations
-description: Learn how to transform images using Appwrite's storage API.
+description: Learn how to transform images using Indobase's storage API.
 ---
 
 {% info title="Note" %} 
 Changes will take effect on April 1st, 2025. Check out this [blog post](/blog/post/announcing-image-transformations-pricing) for more information.
 {% /info %}
 
-Appwrite enables the transformation of images before retrieval using the [getFilePreview](/docs/references/cloud/client-web/storage#getFilePreview) endpoint. This functionality supports resizing images by width and height, adjusting quality, and applying filters such as opacity, border colour, border radius, and more.
+Indobase enables the transformation of images before retrieval using the [getFilePreview](/docs/references/cloud/client-web/storage#getFilePreview) endpoint. This functionality supports resizing images by width and height, adjusting quality, and applying filters such as opacity, border colour, border radius, and more.
 
 ### Origin Image
 
-An "origin image" represents the original, unmodified image file in Appwrite Storage. Each origin image serves as the base for unlimited transformations, allowing the creation of multiple variants without incurring additional origin image charges.
+An "origin image" represents the original, unmodified image file in Indobase Storage. Each origin image serves as the base for unlimited transformations, allowing the creation of multiple variants without incurring additional origin image charges.
 
 How it works:
 
-1. Upload an image to Appwrite Storage
+1. Upload an image to Indobase Storage
 2. Use the `getFilePreview` method to apply transformations to the image
 3. Retrieve transformed images through the preview endpoint
 4. Pay only for unique origin images, regardless of transformation count

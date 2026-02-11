@@ -1,15 +1,15 @@
----
+﻿---
 layout: article
 title: Start with React
-description: Build React apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+description: Build React apps with Indobase and learn how to use our powerful backend to add authentication, user management, file storage, and more.
 difficulty: beginner
 readtime: 3
 back: /docs/quick-starts
 ---
 
-Learn how to setup your first React project powered by Appwrite.
+Learn how to setup your first React project powered by Indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -18,7 +18,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console).
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 Then, under **Add a platform**, add a **Web app**. The **Hostname** should be `localhost`.
 
@@ -41,15 +41,15 @@ Create a Vite project.
 npm create vite@latest my-app -- --template react && cd my-app
 ```
 {% /section %}
-{% section #step-3 step=3 title="Install Appwrite" %}
+{% section #step-3 step=3 title="Install Indobase" %}
 
-Install the JavaScript Appwrite SDK.
+Install the JavaScript Indobase SDK.
 
 ```sh
 npm install appwrite
 ```
 {% /section %}
-{% section #step-4 step=4 title="Import Appwrite" %}
+{% section #step-4 step=4 title="Import Indobase" %}
 Find your project's ID in the **Settings** page.
 
 {% only_dark %}

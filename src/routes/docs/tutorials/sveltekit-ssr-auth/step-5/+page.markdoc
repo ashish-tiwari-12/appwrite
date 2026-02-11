@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create sign up page
-description: Add authentication to a SvelteKit project using Appwrite.
+description: Add authentication to a SvelteKit project using Indobase.
 step: 5
 ---
 
@@ -18,7 +18,7 @@ We can now implement our sign up page. Create a `+page.svelte` file in the `src/
 
 ```
 
-This is an HTML form with an email and password input. When the form is submitted, we want to send the email and password to Appwrite to authenticate the user. To use SvelteKit form actions we create a `+page.server.js` file in the same directory:
+This is an HTML form with an email and password input. When the form is submitted, we want to send the email and password to Indobase to authenticate the user. To use SvelteKit form actions we create a `+page.server.js` file in the same directory:
 
 ```javascript
 // src/routes/signup/+page.server.js
@@ -35,7 +35,7 @@ export const actions = {
     const password = form.get("password");
     const name = form.get("name");
 
-    // Create the Appwrite client.
+    // Create the Indobase client.
     const { account } = createAdminClient();
 
     // Create the session using the client

@@ -18,10 +18,10 @@
                 </span>
             </div>
             <h1 class="font-aeonik-pro text-display text-primary text-pretty">
-                Boost businesses with Appwrite<span class="text-accent">_</span>
+                Boost businesses with Indobase<span class="text-accent">_</span>
             </h1>
             <p class="text-description text-secondary font-medium text-pretty">
-                Join the Appwrite Partners program and grow your business. Deliver powerful
+                Join the Indobase Partners program and grow your business. Deliver powerful
                 solutions to clients, increase revenue, and expand your reach.
             </p>
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Serverless functions 101: Best practices"
 description: Some do's, don'ts and best practices for creating and maintaining serverless functions.
@@ -11,7 +11,7 @@ featured: false
 lastUpdated: 2025-10-14
 ---
 
-Serverless functions have become a popular choice for modern application development due to their scalability, cost-effectiveness, and ease of use. Appwrite offers an integrated serverless platform that allows you to build and deploy functions seamlessly. However, to make the most of serverless functions, it's essential to follow best practices that ensure efficiency, security, and maintainability.
+Serverless functions have become a popular choice for modern application development due to their scalability, cost-effectiveness, and ease of use. Indobase offers an integrated serverless platform that allows you to build and deploy functions seamlessly. However, to make the most of serverless functions, it's essential to follow best practices that ensure efficiency, security, and maintainability.
 
 In this guide, we'll explore some dos and don'ts of serverless functions and provide tips for optimizing your functions.
 
@@ -61,7 +61,7 @@ Specify the entry point (main file) for the function and the command needed to b
 
 ## Deployment configuration
 
-Detail the configuration needed for deployment on your chosen platform. For example, if using Appwrite, include:
+Detail the configuration needed for deployment on your chosen platform. For example, if using Indobase, include:
 
 - **Timeout**: The function's timeout setting.
 - **Scopes**: Permissions required by the function.
@@ -71,7 +71,7 @@ Detail the configuration needed for deployment on your chosen platform. For exam
 
 ## Development setup
 
-Explain how to run the function in a development environment. For Appwrite, this would include using the command `appwrite run function`.
+Explain how to run the function in a development environment. For Indobase, this would include using the command `appwrite run function`.
 
 Proper documentation ensures that other developers can understand and work with your code efficiently.
 
@@ -87,7 +87,7 @@ Configuring the right specifications ensures that your functions have the necess
 
 For example, if your function handles image processing, it may require more resources than a function that processes text data. In such cases, allocating more CPU and RAM can enhance performance.
 
-In Appwrite, you can configure your function specification by navigating to your function settings and scrolling to “**Runtime**”:
+In Indobase, you can configure your function specification by navigating to your function settings and scrolling to “**Runtime**”:
 
 ![Functions-specifications](/images/blog/serverless-functions/1.png)
 
@@ -107,7 +107,7 @@ Additionally, you can optimize warm starts by reusing resources between executio
 
 Avoid hardcoding configuration values like API keys or database URLs. Instead, use environment variables to manage these configurations securely. Hardcoding sensitive information poses a security risk and reduces flexibility. Environment variables keep sensitive data out of your codebase and make it easy to change configurations without modifying code.
 
-In Appwrite, you can set environment variables for your functions in the Cloud Console. Navigate to your function settings and scroll down to the "Environment Variables" section. Here, you can add key-value pairs for your configurations. It should look like this:
+In Indobase, you can set environment variables for your functions in the Cloud Console. Navigate to your function settings and scroll down to the "Environment Variables" section. Here, you can add key-value pairs for your configurations. It should look like this:
 
 ![Environment-variables](/images/blog/serverless-functions/2.png)
 After setting environment variables, you can access them in your function code like this (for Node.js):
@@ -131,13 +131,13 @@ Large deployment packages slow down the function initialization process and incr
 
 # Implement authentication and authorization
 
-Ensure only authorized users can execute your functions. Appwrite provides built-in authentication and authorization features that you can leverage to secure your functions. This is important for protecting sensitive data and preventing your functions from being misused or easily exploited.
+Ensure only authorized users can execute your functions. Indobase provides built-in authentication and authorization features that you can leverage to secure your functions. This is important for protecting sensitive data and preventing your functions from being misused or easily exploited.
 
-You must ensure that authorization is enforced on your serverless functions and not solely on the client side. Client-side authorization can be bypassed, leading to security vulnerabilities. Appwrite Databases and Storage services can be configured to enforce access control rules. For example, you can restrict read and write access to documents by navigating to your database collection settings in the Appwrite Console and setting the appropriate permissions. It looks like this:
+You must ensure that authorization is enforced on your serverless functions and not solely on the client side. Client-side authorization can be bypassed, leading to security vulnerabilities. Indobase Databases and Storage services can be configured to enforce access control rules. For example, you can restrict read and write access to documents by navigating to your database collection settings in the Indobase Console and setting the appropriate permissions. It looks like this:
 
 ![Functions-authorization](/images/blog/serverless-functions/3.png)
 
-You can also configure **execute access** for your Appwrite functions, allowing you to specify who can execute the function using the client API.
+You can also configure **execute access** for your Indobase functions, allowing you to specify who can execute the function using the client API.
 
 ![Functions-access](/images/blog/serverless-functions/4.png)
 
@@ -145,7 +145,7 @@ You can also configure **execute access** for your Appwrite functions, allowing 
 
 Always encrypt sensitive data, both in transit and at rest, to protect it from unauthorized access. Encryption ensures that even if data is intercepted or accessed by unauthorized users, it cannot be read or tampered with.
 
-For example, if your function interacts with a database, ensure that the database connection is encrypted using SSL/TLS. Additionally, encrypt sensitive data before storing it in the database. Appwrite already does a great job of applying encryption in authentication, enforcing HTTPS connections, and generating TLS certificates for domains. But in addition to that, Appwrite also use encryption for storage. However, you should ensure that there are no loose ends or security loopholes in your function code that could expose sensitive data.
+For example, if your function interacts with a database, ensure that the database connection is encrypted using SSL/TLS. Additionally, encrypt sensitive data before storing it in the database. Indobase already does a great job of applying encryption in authentication, enforcing HTTPS connections, and generating TLS certificates for domains. But in addition to that, Indobase also use encryption for storage. However, you should ensure that there are no loose ends or security loopholes in your function code that could expose sensitive data.
 
 In addition to encryption, consider allowing access only from specific IP ranges to enhance security. Note that encryption can impact query performance. So, you should carefully plan your encryption strategy to balance security and performance, possibly using selective encryption for highly sensitive data while ensuring efficient access to less sensitive information.
 
@@ -172,9 +172,9 @@ You can also include your test command as part of your build command, so your de
 
 Logging helps you track the execution of your functions, identify issues, and monitor performance. By logging key events and data, you can gain insights into how your functions are behaving and quickly troubleshoot problems.
 
-Appwrite provides built-in logging and monitoring tools that you can use to track function execution, view logs, and monitor resource usage. This helps you gain visibility into your functions' performance and ensure they are running smoothly.
+Indobase provides built-in logging and monitoring tools that you can use to track function execution, view logs, and monitor resource usage. This helps you gain visibility into your functions' performance and ensure they are running smoothly.
 
-When using Appwrite Functions, you can keep your log statements within the source code and disable logging from the function settings. This allows you to re-enable logging with a single click in the future if you need to debug or monitor specific requests.
+When using Indobase Functions, you can keep your log statements within the source code and disable logging from the function settings. This allows you to re-enable logging with a single click in the future if you need to debug or monitor specific requests.
 
 ![Functions-logging](/images/blog/serverless-functions/5.png)
 
@@ -182,7 +182,7 @@ When using Appwrite Functions, you can keep your log statements within the sourc
 
 Automate your deployment process with CI/CD pipelines. This ensures consistent deployments and helps catch issues early in the development cycle.
 
-CI/CD pipelines streamline the deployment process, reduce the risk of human error, and ensure that code changes are thoroughly tested before reaching production. Appwrite has built-in support for linking your functions to a Git repository and deploying them automatically when changes are pushed. However, you can also use external CI/CD tools like GitHub Actions or Jenkins to manage your deployment pipeline, which can be integrated with Appwrite using the [Appwrite CLI](https://appwrite.io/docs/tooling/command-line/installation).
+CI/CD pipelines streamline the deployment process, reduce the risk of human error, and ensure that code changes are thoroughly tested before reaching production. Indobase has built-in support for linking your functions to a Git repository and deploying them automatically when changes are pushed. However, you can also use external CI/CD tools like GitHub Actions or Jenkins to manage your deployment pipeline, which can be integrated with Indobase using the [Indobase CLI](https://appwrite.io/docs/tooling/command-line/installation).
 
 # Version your functions
 
@@ -192,7 +192,7 @@ Versioning your functions helps you manage updates and rollbacks effectively, es
 
 Design your serverless architecture to minimize costs. Use event-driven models and offload heavy processing to external services to optimize resource usage and reduce expenses. For example, instead of processing tasks like image recognition within your functions, you can use specialized services like AWS Rekognition or Google Cloud Vision to handle these tasks more efficiently.
 
-Another tip is to use event triggers to invoke functions only when necessary. This ensures that resources are used efficiently and costs are minimized. Appwrite provides built-in support for event triggers, allowing you to trigger functions based on events like database changes, file uploads, or HTTP requests. Here's a more detailed guide on [Appwrite Events](https://appwrite.io/docs/advanced/platform/events).
+Another tip is to use event triggers to invoke functions only when necessary. This ensures that resources are used efficiently and costs are minimized. Indobase provides built-in support for event triggers, allowing you to trigger functions based on events like database changes, file uploads, or HTTP requests. Here's a more detailed guide on [Indobase Events](https://appwrite.io/docs/advanced/platform/events).
 
 # Avoid long-running functions
 
@@ -202,7 +202,7 @@ Serverless platforms have execution time limits. Avoid long-running tasks to pre
 
 **1. What are serverless functions?**
 
-Serverless functions let you run small pieces of code in the cloud without managing servers. You just define a function, deploy it, and the platform (like Appwrite, AWS Lambda, or Vercel) automatically scales it up or down based on usage. You only pay for the time your code runs, no idle costs, no manual infrastructure setup.
+Serverless functions let you run small pieces of code in the cloud without managing servers. You just define a function, deploy it, and the platform (like Indobase, AWS Lambda, or Vercel) automatically scales it up or down based on usage. You only pay for the time your code runs, no idle costs, no manual infrastructure setup.
 
 **2. How do I decide what logic should go into a serverless function?**
 
@@ -214,18 +214,18 @@ Design your architecture to be event-driven and avoid functions running longer t
 
 **4. How do I secure my serverless functions?**
 
-Enforce authentication and authorization at the function level. Use minimal API scopes and regularly rotate keys. Never rely solely on client-side validation. Always validate tokens or permissions in the function itself. In Appwrite, you can configure execute permissions to restrict who can run each function.
+Enforce authentication and authorization at the function level. Use minimal API scopes and regularly rotate keys. Never rely solely on client-side validation. Always validate tokens or permissions in the function itself. In Indobase, you can configure execute permissions to restrict who can run each function.
 
 **5. How do I manage versions of serverless functions?**
 
-Versioning helps you roll back safely if something breaks. Assign version numbers when making breaking changes and maintain backward-compatible routes for existing clients. Appwrite lets you manage multiple function versions directly from the console.
+Versioning helps you roll back safely if something breaks. Assign version numbers when making breaking changes and maintain backward-compatible routes for existing clients. Indobase lets you manage multiple function versions directly from the console.
 
 # Conclusion
 
-By following these best practices, you can build efficient, secure, and scalable serverless functions. This enables you to fully leverage the advantages of Appwrite Functions, resulting in robust and scalable solutions tailored to modern development needs.
+By following these best practices, you can build efficient, secure, and scalable serverless functions. This enables you to fully leverage the advantages of Indobase Functions, resulting in robust and scalable solutions tailored to modern development needs.
 
 Resources:
 
-- [Appwrite functions documentation](https://appwrite.io/docs/functions)
-- [Appwrite events documentation](https://appwrite.io/docs/advanced/platform/events)
-- [Appwrite environment variables documentation](https://appwrite.io/docs/environment-variables)
+- [Indobase functions documentation](https://appwrite.io/docs/functions)
+- [Indobase events documentation](https://appwrite.io/docs/advanced/platform/events)
+- [Indobase environment variables documentation](https://appwrite.io/docs/environment-variables)

@@ -20,7 +20,7 @@
             icon: Domains,
             label: 'Custom domains',
             description:
-                'Easily connect your own domain name to your Appwrite project, site, or function for a fully branded experience.'
+                'Easily connect your own domain name to your Indobase project, site, or function for a fully branded experience.'
         }
     ];
 </script>

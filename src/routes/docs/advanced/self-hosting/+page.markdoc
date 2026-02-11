@@ -1,20 +1,20 @@
----
+﻿---
 layout: article
 title: Self-hosting
-description: Set up your self-hosted Appwrite instance easily. Read the installation guide to configure and deploy Appwrite on your infrastructure for complete control.
+description: Set up your self-hosted Indobase instance easily. Read the installation guide to configure and deploy Indobase on your infrastructure for complete control.
 ---
 
-Appwrite was designed from the ground up with self-hosting in mind. You can install and run Appwrite on any operating system that can run a [Docker CLI](https://www.docker.com/products/docker-desktop). Self-hosted Appwrite instances can be configured flexibly with access to the same features found on Appwrite Cloud.
+Indobase was designed from the ground up with self-hosting in mind. You can install and run Indobase on any operating system that can run a [Docker CLI](https://www.docker.com/products/docker-desktop). Self-hosted Indobase instances can be configured flexibly with access to the same features found on Indobase Cloud.
 
 {% info title="Upgrading from older versions" %}
-If you are migrating from an older version of Appwrite, you need to follow the [migration instructions](/docs/advanced/self-hosting/production/updates)
+If you are migrating from an older version of Indobase, you need to follow the [migration instructions](/docs/advanced/self-hosting/production/updates)
 {% /info %}
 
 # Cloud vs Self-hosting {% #cloud-vs-self-hosting %}
 
 Choose the deployment method that fits your needs.
 
-| Feature | Appwrite Cloud | Self-hosting |
+| Feature | Indobase Cloud | Self-hosting |
 |---------|---------------|--------------|
 | Setup | Zero setup | Manual setup required |
 | Maintenance | Fully managed | You manage updates and scaling |
@@ -28,10 +28,10 @@ Self-hosting is ideal when you need data control or have specific compliance req
 
 **Consider self-hosting if:**
 - You want to manage your own infrastructure
-- You're a hobbyist or want to experiment with Appwrite in a playground environment
-- You need to develop against a local instance of Appwrite
+- You're a hobbyist or want to experiment with Indobase in a playground environment
+- You need to develop against a local instance of Indobase
 
-**Appwrite Cloud is recommended if:**
+**Indobase Cloud is recommended if:**
 - You want to focus on building features, not managing infrastructure
 - Your team lacks extensive DevOps experience
 - You expect self-hosting to save costs (it often costs more when factoring in time and expertise)
@@ -41,7 +41,7 @@ For compliance features and dedicated support, explore [enterprise self-hosting 
 
 # Quick start {% #quick-start %}
 
-The fastest way to get started with Appwrite self-hosting:
+The fastest way to get started with Indobase self-hosting:
 
 1. **Use a one-click deployment** - Choose from [marketplace installations](#one-click-deployments) for instant setup
 2. **Or follow the manual installation** - Use our [Docker installation guide](/docs/advanced/self-hosting/installation) for custom setups
@@ -105,7 +105,7 @@ Deploy using Container Apps, Virtual Machines, or other Azure services.
 
 ## Platform-as-a-Service (PaaS) {% #paas-platforms %}
 
-Deploy Appwrite on modern PaaS platforms for simplified management:
+Deploy Indobase on modern PaaS platforms for simplified management:
 
 {% cards %}
 {% cards_item href="/docs/advanced/self-hosting/platforms/coolify" title="Coolify" %}
@@ -115,7 +115,7 @@ Open-source platform for easy self-hosting with one-click deployments.
 
 # Configuration {% #configuration %}
 
-After deployment, configure Appwrite to enable additional features:
+After deployment, configure Indobase to enable additional features:
 
 {% cards %}
 {% cards_item href="/docs/advanced/self-hosting/configuration/email" title="Email delivery" %}
@@ -137,7 +137,7 @@ Enable serverless functions with custom runtimes and execution environments.
 
 # Production readiness {% #production-readiness %}
 
-Ensure your Appwrite deployment is production-ready:
+Ensure your Indobase deployment is production-ready:
 
 ## Security considerations {% #security %}
 
@@ -158,11 +158,11 @@ Ensure your Appwrite deployment is production-ready:
 - **Health Checks** - Set up monitoring for service availability and performance
 - **Log Management** - Centralize and analyze application logs
 - **Backup Strategy** - Implement regular database and file backups
-- **Update Management** - Keep Appwrite updated with the latest releases
+- **Update Management** - Keep Indobase updated with the latest releases
 
 # Get started {% #get-started %}
 
-Ready to self-host Appwrite? Choose your preferred path:
+Ready to self-host Indobase? Choose your preferred path:
 
 **One-Click Deploy** - Use a [marketplace installation](#one-click-deployments) for instant setup (recommended)
 

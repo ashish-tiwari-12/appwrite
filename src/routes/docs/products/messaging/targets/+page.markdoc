@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Targets 
 description: Manage avenues of communication by targetting user's device, email, or phone number in your notification and messages.
@@ -49,7 +49,7 @@ Verified emails for users that signed up with [email password](/docs/products/au
 Verified phone numbers for users that signed up with [Phone OTP](/docs/products/auth/phone-sms) login will already have a phone target.
 
 ## Add push notification target {% #add-push-notification-target%}
-Push notifications require configuration on both the Appwrite platform and your client app's code.
+Push notifications require configuration on both the Indobase platform and your client app's code.
 
 
 {% tabs %}

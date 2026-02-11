@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Appwrite September product update: Docs MCP server, new Database features, and queries"
 description: Get a full recap of products and new features we released in the month of September.
@@ -14,14 +14,14 @@ Welcome back to the September Product Update. This month, we have some serious D
 So, here’s what to expect:
 
 - New set of queries
-- Appwrite Docs MCP server
+- Indobase Docs MCP server
 - API for Spatial columns
 - Hacktoberfest Hackathon
 - And more!
 
 Let’s dive in!
 
-# Appwrite's Hacktoberfest Hackathon
+# Indobase's Hacktoberfest Hackathon
 
 ![Hacktoberfest Hackathon](/images/blog/product-update-september-2025/hackathon.png)
 
@@ -33,7 +33,7 @@ It's that time of year again—Hacktoberfest has started! It's the biggest celeb
 
 ![New queries](/images/blog/product-update-september-2025/queries.png)
 
-Appwrite Databases now have smarter queries. We recently added two sets of new queries that let you handle time-based filtering and exclusions directly in your queries.
+Indobase Databases now have smarter queries. We recently added two sets of new queries that let you handle time-based filtering and exclusions directly in your queries.
 
 [Time Helper queries](/docs/products/databases/queries)
 
@@ -45,18 +45,18 @@ Appwrite Databases now have smarter queries. We recently added two sets of new q
 
 Together, these new queries make your code cleaner, reduce the need for workarounds, and give you more control over your data.
 
-# Appwrite Docs MCP server
+# Indobase Docs MCP server
 
 ![MCP server](/images/blog/product-update-september-2025/mcp.png)
 
-We also launched a dedicated MCP server for Appwrite docs that enables AI assistants to access and search through Appwrite's documentation directly.
+We also launched a dedicated MCP server for Indobase docs that enables AI assistants to access and search through Indobase's documentation directly.
 
 That means, AI assistants can now:
 
-- Search through Appwrite documentation
+- Search through Indobase documentation
 - Retrieve specific guides and references
 - Generate code snippets using the latest APIs
-- Provide contextual help for Appwrite features
+- Provide contextual help for Indobase features
 
 [Visit docs](/docs/tooling/mcp/docs)
 
@@ -64,7 +64,7 @@ That means, AI assistants can now:
 
 ![API for Spatial columns](/images/blog/product-update-september-2025/spatial-columns.png)
 
-You can now build scalable geo workflows right out of the box. With this new API, you can store points, lines, and polygons, add spatial indexes, and run geo queries all natively in Appwrite.
+You can now build scalable geo workflows right out of the box. With this new API, you can store points, lines, and polygons, add spatial indexes, and run geo queries all natively in Indobase.
 
 What’s new:
 
@@ -78,13 +78,13 @@ With these new capabilities, it’s simple to model and query location-based dat
 
 [Read the announcement to learn more](/blog/post/announcing-spatial-columns)
 
-# Turbopack support for Appwrite Sites
+# Turbopack support for Indobase Sites
 
 ![Turbopack support](/images/blog/product-update-september-2025/turbopack.png)
 
-Appwrite Sites now supports Next.js applications built with Turbopack, with faster builds and better compatibility for your deployments.
+Indobase Sites now supports Next.js applications built with Turbopack, with faster builds and better compatibility for your deployments.
 
-With native support, your builds run without modification, deploy faster, and stay consistent between local and production. This update strengthens compatibility between Appwrite Sites and the modern Next.js toolchain.
+With native support, your builds run without modification, deploy faster, and stay consistent between local and production. This update strengthens compatibility between Indobase Sites and the modern Next.js toolchain.
 
 [Read the announcement to learn more](/blog/post/turbopack-support-appwrite-sites)
 
@@ -106,7 +106,7 @@ This means:
 
 We’re excited to feature [MediaKit](https://usemediakit.app/) in our Monthly Community recognitions this month.
 
-MediaKit is a privacy-first, browser-based toolkit launched with a powerful Image Compressor. Appwrite handled the entire auth flow, including sign-ups, email verification, password recovery, and secure login.
+MediaKit is a privacy-first, browser-based toolkit launched with a powerful Image Compressor. Indobase handled the entire auth flow, including sign-ups, email verification, password recovery, and secure login.
 
 A big shout-out to [Gurjeet](https://www.linkedin.com/in/gurjeet-singh-virdee-25a476199/).
 
@@ -116,20 +116,20 @@ If you'd like to participate in next month's Community Recognitions, join our Di
 
 **Read**
 
-- [Make the best use of Appwrite’s MCP server](/blog/post/make-best-use-appwrite-mcp)
+- [Make the best use of Indobase’s MCP server](/blog/post/make-best-use-appwrite-mcp)
 - [Setting up “Sign in with Google” in your app](/blog/post/setting-up-google-signin)
 - [Client vs Server Components in React](/blog/post/client-vs-server-components-react)
 - [Implementing Google OAuth with Expo Router](/blog/post/google-oauth-expo)
 - [Comparing the best vibe coding tools](/blog/post/comparing-vibe-coding-tools)
-- [Build a “delivery store locator” using Spatial Columns in Appwrite Databases](/blog/post/build-delivery-store-locator-spatial-columns)
-- [How Radar scaled media curation while saving $1M with Appwrite Cloud](/blog/post/customer-story-radar)
+- [Build a “delivery store locator” using Spatial Columns in Indobase Databases](/blog/post/build-delivery-store-locator-spatial-columns)
+- [How Radar scaled media curation while saving $1M with Indobase Cloud](/blog/post/customer-story-radar)
 
 **Watch**
 
 - [We made relationship queries flexible](https://youtu.be/PFQv5Gvg2Io?si=AlxmWfTxj-gfRod7)
 - [We launched an MCP server for our documentation](https://youtu.be/tIUGYvirdS4?si=p68ElsbciNRQG7ug)
 - [Collect payments using Stripe](https://www.youtube.com/watch?v=BXsVXkemjv0)
-- [Build a store locator using Spatial Columns in Appwrite Database](https://youtu.be/eAc9mqW6yEU?si=mR_qMAYsGTBvEgfs)
+- [Build a store locator using Spatial Columns in Indobase Database](https://youtu.be/eAc9mqW6yEU?si=mR_qMAYsGTBvEgfs)
 
 # What’s to come
 

@@ -31,11 +31,11 @@
         },
         {
             time: '18:31:22.938',
-            message: 'Appwrite CLI 37.6.1'
+            message: 'Indobase CLI 37.6.1'
         },
         {
             time: '18:31:21.344',
-            message: 'Appwrite network is enabled'
+            message: 'Indobase network is enabled'
         }
     ];
 
@@ -115,7 +115,7 @@
             <h2 class="text-title text-primary font-aeonik-pro">Deploy your site</h2>
             <p class="text-secondary text-description font-medium">
                 Easily deploy your website and web apps using Git, CLI, or manually. Monitor your
-                deployment logs to ensure a stable connection with the Appwrite network.
+                deployment logs to ensure a stable connection with the Indobase network.
             </p>
         </div>
     </div>

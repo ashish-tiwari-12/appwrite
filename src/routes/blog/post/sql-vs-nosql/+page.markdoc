@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "SQL vs NoSQL: Choosing the right database for your project"
 description: Learn how to choose between SQL and NoSQL databases for your project.
@@ -155,6 +155,6 @@ In making this choice, consider the specific requirements of your application. S
 
 # More resources
 
-- [Integrate SQL, NoSQL, Vector, Graph, or any database into your Appwrite project](https://appwrite.io/blog/post/integrate-sql-nosql-vector-graph-or-any-database-into-your-appwrite-project)
-- [How to plan and execute database migrations with Appwrite CLI](https://appwrite.io/blog/post/how-to-execute-database-migration-with-appwrite-cli)
+- [Integrate SQL, NoSQL, Vector, Graph, or any database into your Indobase project](https://appwrite.io/blog/post/integrate-sql-nosql-vector-graph-or-any-database-into-your-appwrite-project)
+- [How to plan and execute database migrations with Indobase CLI](https://appwrite.io/blog/post/how-to-execute-database-migration-with-appwrite-cli)
 - [Best database pagination techniques](https://appwrite.io/blog/post/best-pagination-technique)

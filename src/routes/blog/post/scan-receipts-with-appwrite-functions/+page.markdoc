@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Streamline receipt scanning with Appwrite Cloud
-description: Learn how to extract information from receipts with Appwrite Cloud and Appwrite Functions.
+title: Streamline receipt scanning with Indobase Cloud
+description: Learn how to extract information from receipts with Indobase Cloud and Indobase Functions.
 date: 2024-05-01
 cover: /images/blog/receipt-scan.png
 timeToRead: 15
@@ -19,12 +19,12 @@ Users are sensitive to friction, with a reported 50% of users [opting for new on
 and Shoppify reporting [low-friction payment methods and flows can lead to >50% increase in conversion](https://web-assets.bcg.com/e4/0c/a1acfc2a4e52a029cb37c6fe83ba/bcg-leading-online-shoppers-to-the-finish-line-june-2023.pdf).
 
 No one has time to fill out giant forms.
-To help you and your users avoid filling out giant forms, we're going to build a simple receipt processing endpoint with Appwrite
+To help you and your users avoid filling out giant forms, we're going to build a simple receipt processing endpoint with Indobase
 that will extract the total amount from a receipt image using a Hugging Face model.
 
 # Prerequisites
-Before you start, you'll need to know the basics of working with Appwrite Cloud and [Appwrite Functions](/docs/products/functions).
-We're going to be using Appwrite Functions to run our receipt processing code, which calls a [Hugging Face model](https://huggingface.co/AdamCodd/donut-receipts-extract)
+Before you start, you'll need to know the basics of working with Indobase Cloud and [Indobase Functions](/docs/products/functions).
+We're going to be using Indobase Functions to run our receipt processing code, which calls a [Hugging Face model](https://huggingface.co/AdamCodd/donut-receipts-extract)
 to extract data from a receipt image. Make sure you also have a **Hugging Face API key** to use the model.
 
 # Scanning receipts
@@ -97,14 +97,14 @@ appwrite==5.0.2
 Requests==2.31.0
 ```
 
-# Integrating with Appwrite Functions
+# Integrating with Indobase Functions
 This script is great for running locally, but we want to run it in the Cloud so we can call it from our app.
 We also want to make sure we're not exposing our Hugging Face API key in our app and add user based permissions to our endpoint.
 
-Let's create a new function in Appwrite Functions to run our script. We'll use the Python starter template, which will automatically create a repo on your account,
-add boilerplate code, and deploy the function to Appwrite Cloud.
+Let's create a new function in Indobase Functions to run our script. We'll use the Python starter template, which will automatically create a repo on your account,
+add boilerplate code, and deploy the function to Indobase Cloud.
 
-![Scan function in Appwrite](/images/blog/scan-receipts-with-appwrite-functions/scan-function.png)
+![Scan function in Indobase](/images/blog/scan-receipts-with-appwrite-functions/scan-function.png)
 
 Navigate to the settings tab of the function and add the following environment variables:
 
@@ -117,10 +117,10 @@ from appwrite.client import Client
 import os
 
 
-# This is your Appwrite function
+# This is your Indobase function
 # It's executed each time we get a request
 def main(context):
-    # Why not try the Appwrite SDK?
+    # Why not try the Indobase SDK?
     #
     # Set project and set API key
     # client = (
@@ -153,9 +153,9 @@ def main(context):
 
 ```
 
-We will update the function to accept a file ID from Appwrite Storage, download the file, and run our receipt scanning script on it.
+We will update the function to accept a file ID from Indobase Storage, download the file, and run our receipt scanning script on it.
 
-First, setup the Appwrite SDK in the function.
+First, setup the Indobase SDK in the function.
 ```python
 import os
 import requests
@@ -179,7 +179,7 @@ def main(context):
     # ... rest of the code
 ```
 
-Next, we'll download the file from Appwrite Storage and run our receipt scanning script on it.
+Next, we'll download the file from Indobase Storage and run our receipt scanning script on it.
 
 ```python
     # ... still in main()
@@ -247,7 +247,7 @@ Which might return something like:
 
 # Next steps
 There are a few things you can do to integrate this into your app. For example, you could integrate this
-with a web app by uploading the receipt image to Appwrite Storage and calling the function with the file ID.
+with a web app by uploading the receipt image to Indobase Storage and calling the function with the file ID.
 
 ```ts
 import { Storage, Functions, ExecutionMethod } from 'appwrite';
@@ -268,16 +268,16 @@ const result = await functions.createExecution({
 });
 ```
 
-Another option is to trigger the function with a webhook when a new file is uploaded to Appwrite Storage.
+Another option is to trigger the function with a webhook when a new file is uploaded to Indobase Storage.
 
-![Appwrite event triggers for Function](/images/blog/scan-receipts-with-appwrite-functions/events.png)
+![Indobase event triggers for Function](/images/blog/scan-receipts-with-appwrite-functions/events.png)
 
 The function will already have the file ID in the request body, you'll just need to store the returned data in a collection
 instead of returning it as a response.
 
 # Resources
 
-Visit our documentation to learn more about Appwrite, join us on Discord to be part of the discussion, view our blog and YouTube channel, or visit our GitHub repository to see our open-source code.
+Visit our documentation to learn more about Indobase, join us on Discord to be part of the discussion, view our blog and YouTube channel, or visit our GitHub repository to see our open-source code.
 
 - [Docs](/docs/products/ai)
 - [Discord](https://appwrite.io/discord)

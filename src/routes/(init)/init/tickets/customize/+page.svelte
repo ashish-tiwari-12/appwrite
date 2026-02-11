@@ -64,7 +64,7 @@
 </script>
 
 <svelte:head>
-    <title>Customize Your Ticket - Appwrite</title>
+    <title>Customize Your Ticket - Indobase</title>
     <meta
         name="description"
         content="Join Init {initDates}. Register today and claim your ticket."

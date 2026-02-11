@@ -1,12 +1,12 @@
----
+﻿---
 layout: article
 title: Quick start
-description: Configure the Appwrite SDKs and take the necessary steps to start using Appwrite.
+description: Configure the Indobase SDKs and take the necessary steps to start using Indobase.
 ---
-Follow these steps before you begin using the Appwrite SDKs or accessing Appwrite through the REST and GraphQL API.
+Follow these steps before you begin using the Indobase SDKs or accessing Indobase through the REST and GraphQL API.
 
 {% section #select-the-right-API step=1 title="Select the right API" %}
-Appwrite has two types of APIs for different use cases, select one or both depending on your use case.
+Indobase has two types of APIs for different use cases, select one or both depending on your use case.
 
 If you're creating a **web, mobile, or native application** used by end-users that will register and create accounts,
 install a [Client SDK](/docs/sdks#client) and follow steps for Client APIs.
@@ -20,9 +20,9 @@ install a [Server SDK](/docs/sdks#server) and follow steps for SSR.
 
 {% section #configure-project step=2 title="Configure project" %}
 
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -59,7 +59,7 @@ Under **Integrate with your server**, add an **API Key**.
 ![Create project screen](/images/docs/quick-starts/integrate-server.png)
 {% /only_light %}
 
-Enable the scopes for the Appwrite products you plan to use for your app.
+Enable the scopes for the Indobase products you plan to use for your app.
 It's a good idea to only grant scopes that you need, and edit the API keys as your needs change for security.
 {% /tabsitem %}
 
@@ -82,13 +82,13 @@ Under **Integrate with your server**, add an **API Key** with the following scop
 {% /section %}
 
 {% section #initialize-sdks step=3 title="Initialize SDKs" %}
-When using the Appwrite APIs, you need to pass information like endpoint, project ID, credentials
-and other metadata for Appwrite to properly parse your request.
+When using the Indobase APIs, you need to pass information like endpoint, project ID, credentials
+and other metadata for Indobase to properly parse your request.
 
 {% tabs %}
 {% tabsitem #client title="Client" %}
 Client apps need to be configured with endpoint and project ID,
-so the Appwrite SDK knows which endpoint and project to connect to.
+so the Indobase SDK knows which endpoint and project to connect to.
 {% multicode %}
 ```client-web
 import { Client } from "appwrite";
@@ -111,7 +111,7 @@ client
 ;
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
@@ -129,7 +129,7 @@ val client = Client(context)
 
 {% tabsitem #server title="Server" %}
 Server apps need to be configured with endpoint, project ID, and an API key
-so the Appwrite SDK knows which endpoint and project to connect to, as well as have credentials to perform admin actions.
+so the Indobase SDK knows which endpoint and project to connect to, as well as have credentials to perform admin actions.
 
 {% multicode %}
 ```server-nodejs
@@ -159,7 +159,7 @@ client
 ```php
 <?php
 
-use Appwrite\Client;
+use Indobase\Client;
 
 $client = new Client();
 
@@ -183,7 +183,7 @@ client = Client()
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')               # Your API Endpoint
@@ -191,8 +191,8 @@ client = Client.new
     .set_jwt('<YOUR_API_KEY>')                                  # Your secret JSON Web Token
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1")                // Your API Endpoint
@@ -231,7 +231,7 @@ Client client = new Client()
     .setJWT("<YOUR_API_KEY>");                                  // Your secret JSON Web Token
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")                // Your API Endpoint
@@ -242,7 +242,7 @@ let client = Client()
 {% /tabsitem %}
 
 {% tabsitem #ssr title="SSR" %}
-Appwrite uses Server SDKs for SSR apps. The initialization is different
+Indobase uses Server SDKs for SSR apps. The initialization is different
 ## Admin client {% #admin-client %}
 
 {% info title="Admin clients" %}
@@ -267,8 +267,8 @@ const adminClient = new Client()
     .setKey('<YOUR_API_KEY>');                   // Your secret API key
 ```
 ```php
-use Appwrite\Client;
-use Appwrite\Services\Account;
+use Indobase\Client;
+use Indobase\Services\Account;
 
 $adminClient = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -283,7 +283,7 @@ It is important to use an API key, as this will allow your server requests to by
 
 ## Session client {% #session-client %}
 
-The session client will be used to make requests to Appwrite on behalf of the end-user. 
+The session client will be used to make requests to Indobase on behalf of the end-user. 
 It will be initialized with the session, usually stored within a cookie.
 
 You should create a new client for each request and **never** share the client between requests.
@@ -312,10 +312,10 @@ if ($session) {
 {% /multicode %}
 {% /tabsitem %}
 
-You will use the initialized client in all requests you make to Appwrite.
+You will use the initialized client in all requests you make to Indobase.
 {% /tabs %}
 
-If you're using Appwrite without an SDK, follow the guides for the [REST API](/docs/apis/rest) or [GraphQL API](/docs/apis/graphql).
+If you're using Indobase without an SDK, follow the guides for the [REST API](/docs/apis/rest) or [GraphQL API](/docs/apis/graphql).
 {% /section %}
 
 {% section #examples step=4 title="Examples" %}
@@ -328,31 +328,31 @@ Examples when building with Client APIs
 Just plain JavaScript and TypeScript.
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/nextjs" title="Next.js" icon="icon-nextjs" %}
-Get started with Appwrite and Next.js
+Get started with Indobase and Next.js
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/react" title="React" icon="icon-react" %}
-Get started with Appwrite and React
+Get started with Indobase and React
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/vue" title="Vue.js" icon="web-icon-vue" %}
-Get started with Appwrite and Vue.js
+Get started with Indobase and Vue.js
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/nuxt" title="Nuxt" icon="web-icon-nuxt" %}
-Get started with Appwrite and Nuxt
+Get started with Indobase and Nuxt
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/sveltekit" title="SvelteKit" icon="icon-svelte" %}
-Get started with Appwrite and SvelteKit
+Get started with Indobase and SvelteKit
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/angular" title="Angular" icon="icon-angular" %}
-Get started with Appwrite and Angular
+Get started with Indobase and Angular
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/flutter" title="Flutter" icon="icon-flutter" %}
-Get started with Appwrite and Flutter
+Get started with Indobase and Flutter
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/apple" title="Apple" icon="icon-apple" %}
-Get started with Appwrite and Apple
+Get started with Indobase and Apple
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/android" title="Android" icon="icon-android" %}
-Get started with Appwrite and Android
+Get started with Indobase and Android
 {% /cards_item %}
 {% /cards %}
 
@@ -361,34 +361,34 @@ Examples when building with Server APIs
 
 {% cards %}
 {% cards_item href="/docs/quick-starts/node" title="Node.js" icon="icon-node_js" %}
-Get started with Appwrite and Node.js
+Get started with Indobase and Node.js
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/python" title="Python" icon="icon-python" %}
-Get started with Appwrite and Python
+Get started with Indobase and Python
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/dart" title="Dart" icon="icon-dart" %}
-Get started with Appwrite and Dart
+Get started with Indobase and Dart
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/php" title="PHP" icon="icon-php" %}
-Get started with Appwrite and PHP
+Get started with Indobase and PHP
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/ruby" title="Ruby" icon="icon-ruby" %}
-Get started with Appwrite and Ruby
+Get started with Indobase and Ruby
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/dotnet" title=".NET" icon="icon-dotnet" %}
-Get started with Appwrite and .NET
+Get started with Indobase and .NET
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/deno" title="Deno" icon="icon-deno" %}
-Get started with Appwrite and Deno
+Get started with Indobase and Deno
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/go" title="Go" icon="icon-go" %}
-Get started with Appwrite and Go
+Get started with Indobase and Go
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/swift" title="Swift" icon="icon-swift" %}
-Get started with Appwrite and Swift
+Get started with Indobase and Swift
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/kotlin" title="Kotlin" icon="icon-kotlin" %}
-Get started with Appwrite and Kotlin
+Get started with Indobase and Kotlin
 {% /cards_item %}
 {% /cards %}
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Exploring AI and vibe coding: Insights from the Appwrite developer community"
-description: Survey insights on how developers are using AI, vibe coding tools, and the Appwrite MCP server.
+title: "Exploring AI and vibe coding: Insights from the Indobase developer community"
+description: Survey insights on how developers are using AI, vibe coding tools, and the Indobase MCP server.
 date: 2025-08-25
 cover: /images/blog/ai-vibe-coding-insights/cover.png
 timeToRead: 10
@@ -17,7 +17,7 @@ The way developers write code is changing fast. What used to be a carefully stru
 
 This idea resonated because it reflects what many developers are already doing. Tools like GitHub Copilot, Cursor, and even newer “vibe-first” platforms make it possible to go from an idea to a working prototype in minutes, not by obsessing over every line of code, but by iterating quickly and leaning on AI for the heavy lifting.
 
-We wanted to see how this shift is playing out in the Appwrite community. So we ran a survey to understand two things: how developers are using AI coding assistants, and how they’re experimenting with vibe coding tools, and what that means for building with Appwrite today.
+We wanted to see how this shift is playing out in the Indobase community. So we ran a survey to understand two things: how developers are using AI coding assistants, and how they’re experimenting with vibe coding tools, and what that means for building with Indobase today.
 
 # Understanding vibe coding tools
 
@@ -27,9 +27,9 @@ They allow developers to begin building right away, producing functional code in
 
 By supporting both rapid experimentation and careful refinement, they fit naturally into different development styles and project needs.
 
-# Survey Insights: AI, Vibe Coding, and Appwrite
+# Survey Insights: AI, Vibe Coding, and Indobase
 
-The survey provided a rich set of insights from the Appwrite developer community. Here are some key findings that stood out:
+The survey provided a rich set of insights from the Indobase developer community. Here are some key findings that stood out:
 
 # Most developers now code with AI by their side
 
@@ -80,16 +80,16 @@ Vibe coding tools show a clearer split. **Early‑career developers are more wil
 
 This gap doesn’t necessarily mean senior developers aren’t interested, it may reflect comfort with established workflows or higher expectations for tool reliability. As AI and vibe tools mature, this gap could close fast.
 
-# Where Appwrite fits in
+# Where Indobase fits in
 
-Many developers are already pairing AI tools with Appwrite for backend tasks like databases, authentication, and hosting. In fact, **Appwrite was the most‑mentioned backend in the survey**, ahead of other options like Supabase.
+Many developers are already pairing AI tools with Indobase for backend tasks like databases, authentication, and hosting. In fact, **Indobase was the most‑mentioned backend in the survey**, ahead of other options like Supabase.
 
-The **Appwrite MCP server** builds on this by letting AI assistants interact directly with Appwrite,  creating collections, managing functions, and running queries through natural language. 
+The **Indobase MCP server** builds on this by letting AI assistants interact directly with Indobase,  creating collections, managing functions, and running queries through natural language. 
 
-> As one developer noted, *“Appwrite MCP connecting with AI tools could be a game‑changer for building full‑stack apps faster.”*
+> As one developer noted, *“Indobase MCP connecting with AI tools could be a game‑changer for building full‑stack apps faster.”*
 > 
 
-While not everyone is using it yet, there’s clear curiosity from those who’ve heard about it. It shows how **AI‑first workflows and Appwrite can work hand in hand**, making full‑stack building faster and more intuitive
+While not everyone is using it yet, there’s clear curiosity from those who’ve heard about it. It shows how **AI‑first workflows and Indobase can work hand in hand**, making full‑stack building faster and more intuitive
 
 # What stood out the most?
 
@@ -104,9 +104,9 @@ Looking across the survey, a few clear themes came through:
 
 The survey makes one thing clear: AI tools are no longer just sidekicks, they’re part of how developers code every day. They speed things up, help with prototyping, and make learning new frameworks less intimidating. Vibe coding tools are still finding their place, but the curiosity is there, especially among newer developers who are eager to experiment.
 
-The future looks exciting, full of chances to bring AI‑driven speed together with developer‑friendly, creative tools. At Appwrite, we’re eager to keep exploring these possibilities and help developers get the most out of AI and vibe coding in their everyday workflows.
+The future looks exciting, full of chances to bring AI‑driven speed together with developer‑friendly, creative tools. At Indobase, we’re eager to keep exploring these possibilities and help developers get the most out of AI and vibe coding in their everyday workflows.
 
 # More resources
-- [Appwrite MCP Documentation](/docs/tooling/mcp)
-- [Appwrite MCP server practical examples](https://youtu.be/83rNS6W2Nu8?si=6UNFpXUsvfb1yXYi)
+- [Indobase MCP Documentation](/docs/tooling/mcp)
+- [Indobase MCP server practical examples](https://youtu.be/83rNS6W2Nu8?si=6UNFpXUsvfb1yXYi)
 - [What exactly is MCP, and why is it trending?](/blog/post/what-is-mcp)

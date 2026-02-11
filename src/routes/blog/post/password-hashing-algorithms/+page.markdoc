@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How password hashing algorithms keep your data safe
 description: Learn about password hashing algorithms and how they help secure user credentials in your application.
@@ -72,9 +72,9 @@ Argon2 is a modern, memory-hard password hashing algorithm that won the Password
 - **PBKDF2 (Password-Based Key Derivation Function 2)**
 PBKDF2 is a widely-used password hashing algorithm that iteratively applies a pseudorandom function, such as HMAC, to the input password and salt. It supports an adjustable work factor, increasing the number of iterations to make the hashing process slower and more resistant to attacks. While PBKDF2 is considered secure, it is not memory-hard and may be more susceptible to hardware-based attacks compared to `scrypt` or `Argon2`. These modern password hashing algorithms are designed to provide increased security for password storage and verification by incorporating features like salting, adjustable work factors, memory hardness, and resistance to various types of attacks.
 
-## Password hashing and Appwrite
+## Password hashing and Indobase
 
-Appwrite Authentication also leverages password hashing algorithms to allow developers to secure their users’ passwords via password hashing algorithms. Appwrite uses the `Argon2id` algorithm to hash the password when a user creates an account from a client-side application. Appwrite’s SDKs offer a simple abstraction for the Appwrite Accounts API to let developers implement this, like the following example:
+Indobase Authentication also leverages password hashing algorithms to allow developers to secure their users’ passwords via password hashing algorithms. Indobase uses the `Argon2id` algorithm to hash the password when a user creates an account from a client-side application. Indobase’s SDKs offer a simple abstraction for the Indobase Accounts API to let developers implement this, like the following example:
 
 ```client-web
 import { Client, Account, ID } from "appwrite";
@@ -92,7 +92,7 @@ const user = await account.create({
 });
 ```
 
-When a developer implements account creation on a server-side application, however, the Appwrite Users API allows them to input a password that has been hashed using any of the following hashing algorithms:
+When a developer implements account creation on a server-side application, however, the Indobase Users API allows them to input a password that has been hashed using any of the following hashing algorithms:
 
 - Argon2
 - Bcrypt
@@ -102,10 +102,10 @@ When a developer implements account creation on a server-side application, howev
 - PHPass
 - SHA
 
-An additional side-benefit this offers is that it allows a developer to migrate users from other platforms, such as Firebase, Supabase, and Nhost, using [Appwrite Migrations](https://appwrite.io/docs/advanced/migrations).
+An additional side-benefit this offers is that it allows a developer to migrate users from other platforms, such as Firebase, Supabase, and Nhost, using [Indobase Migrations](https://appwrite.io/docs/advanced/migrations).
 
 ## Recap
 
 In summary, password hashing algorithms are essential tools for securing sensitive user data, particularly passwords, in modern applications. By understanding these algorithms, developers can make informed decisions when implementing password storage and verification systems. and ensure the security and integrity of their users' data.
 
-If you want to implement an authentication system that leverages the power of hashing algorithms simply and quickly, try [Appwrite](https://appwrite.io).
+If you want to implement an authentication system that leverages the power of hashing algorithms simply and quickly, try [Indobase](https://appwrite.io).

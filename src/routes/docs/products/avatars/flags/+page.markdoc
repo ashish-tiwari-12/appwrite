@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Country flags
 description: Retrieve country flag icons by country code for displaying user locations and regional information.
@@ -49,7 +49,7 @@ Future result = avatars.getFlag(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -163,7 +163,7 @@ Future frFlag = avatars.getFlag(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // United States
 let usFlag = try await avatars.getFlag(

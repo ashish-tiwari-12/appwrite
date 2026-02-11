@@ -47,7 +47,7 @@
             Your startups<br />developer toolkit
         </h3>
         <p class="text-body mt-2 font-medium">
-            Appwrite offers an all-in-one hosting platform for you to build <br />
+            Indobase offers an all-in-one hosting platform for you to build <br />
             and deploy your product from a single place.
         </p>
     </div>

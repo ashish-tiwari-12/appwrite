@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create account page
-description: Add authentication to a Next.js project using Appwrite.
+description: Add authentication to a Next.js project using Indobase.
 step: 6
 ---
 
@@ -54,4 +54,4 @@ export default async function HomePage() {
 }
 ```
 
-This code is similar to the `signup` page, but it uses the `getLoggedInUser` function to get the user's information. If the user is not logged in, the page will redirect to the sign-in page. Again, we use Next.js form actions to execute Appwrite code on the server. This time, the `signOut` function deletes the session cookie and redirect the user to the sign-in page.
+This code is similar to the `signup` page, but it uses the `getLoggedInUser` function to get the user's information. If the user is not logged in, the page will redirect to the sign-in page. Again, we use Next.js form actions to execute Indobase code on the server. This time, the `signOut` function deletes the session cookie and redirect the user to the sign-in page.

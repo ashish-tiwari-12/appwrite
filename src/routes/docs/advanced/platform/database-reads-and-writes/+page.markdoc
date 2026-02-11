@@ -1,17 +1,17 @@
----
+﻿---
 layout: article
 title: Database Reads and Writes
-description: Learn how Appwrite handles database reads and writes and their associated costs.
+description: Learn how Indobase handles database reads and writes and their associated costs.
 ---
 {% info title="Note" %}
 Updated pricing will take effect on April 10th, 2025. Check out this [blog post](/blog/post/announcing-database-reads-and-writes-pricing) for more information.
 {% /info %}
 
-Appwrite provides powerful database capabilities through its [Database API](/docs/products/databases), allowing you to perform read and write operations across your application data. Understanding how these operations are counted and billed is essential for planning your application's scalability.
+Indobase provides powerful database capabilities through its [Database API](/docs/products/databases), allowing you to perform read and write operations across your application data. Understanding how these operations are counted and billed is essential for planning your application's scalability.
 
 ## Database Operations
 
-Database operations in Appwrite are categorized into two types:
+Database operations in Indobase are categorized into two types:
 
 **Read Operations**: Any action that retrieves data from your database, including:
 - Fetching rows with `getRow` or `listRows`.
@@ -22,8 +22,8 @@ Database operations in Appwrite are categorized into two types:
 - Deleting rows with `deleteRow`.
 
 How it works:
-1. Perform database operations through the Appwrite SDK or API.
-2. Appwrite automatically tracks and logs these operations.
+1. Perform database operations through the Indobase SDK or API.
+2. Indobase automatically tracks and logs these operations.
 3. Operations are counted based on the number of rows affected, not API calls.
 4. Quotas are refreshed monthly based on your subscription plan.
 
@@ -50,5 +50,5 @@ For detailed information about the different pricing options and features, pleas
 To optimize your database operations and control costs:
 1. **Use efficient queries**: Filter data on the server side rather than retrieving large datasets and filtering client-side.
 2. **Implement pagination**: Use the `limit` and `offset` parameters to retrieve only the data you need.
-3. **Monitor usage**: Keep track of your database operations through the Appwrite Console.
+3. **Monitor usage**: Keep track of your database operations through the Indobase Console.
 4. **Consider caching**: Cache frequently accessed data to reduce repeated read operations.

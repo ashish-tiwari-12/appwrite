@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Should I encrypt my backups?"
 description: In this blog, we’ll explore the most popular methods for backup encryption and why encrypting is important.
@@ -8,7 +8,7 @@ date: 2024-10-15
 author: aditya-oberai
 category: product, security
 ---
-Data security is more important than ever, and if you manage databases, one key question you may ask is: *Should I encrypt my backups?* The answer is a clear yes. Let’s break down why encrypting your backups is essential, especially for database backups, and how Appwrite helps by automatically encrypting them.
+Data security is more important than ever, and if you manage databases, one key question you may ask is: *Should I encrypt my backups?* The answer is a clear yes. Let’s break down why encrypting your backups is essential, especially for database backups, and how Indobase helps by automatically encrypting them.
 
 # What is backup encryption?
 
@@ -53,14 +53,14 @@ Popular KMS services include AWS Key Management Service, Google Cloud KMS, and M
 
 Using a KMS ensures that your encryption keys are handled securely, providing strong protection for your encrypted data. Whether you're encrypting backups, sensitive user information, or critical business data, a reliable key management system is essential for maintaining data security.
 
-# How Appwrite encrypts your backups
+# How Indobase encrypts your backups
 
-Appwrite offers built-in backup encryption to protect your data without added complexity. Here’s how it works: 
+Indobase offers built-in backup encryption to protect your data without added complexity. Here’s how it works: 
 
-1. **Automatic backup encryption:** Every backup created with Appwrite is encrypted in both transit and in rest to ensure your data is always protected. Appwrite creates a 2048-bit RSA key pair: the public key is stored on your device, and the private key is sent securely to a data center. For each backup session, we use a 128-bit AES key to encrypt your data, then secure this key by encrypting it with your public key before sending it to the data center. The AES key is destroyed after each session. To decrypt files, your private key is used.
+1. **Automatic backup encryption:** Every backup created with Indobase is encrypted in both transit and in rest to ensure your data is always protected. Indobase creates a 2048-bit RSA key pair: the public key is stored on your device, and the private key is sent securely to a data center. For each backup session, we use a 128-bit AES key to encrypt your data, then secure this key by encrypting it with your public key before sending it to the data center. The AES key is destroyed after each session. To decrypt files, your private key is used.
 2. **Remote storage**: Backups are stored in a remote location, adding an extra layer of security. This not only protects the backups from physical threats but also ensures they are available and recoverable even in case of local data loss.
-3. **Compliance support**: Appwrite’s encryption processes align with data protection standards like GDPR, CCPA and HIPAA, making it easier for businesses to comply with regulations.
-4. **Hot backups**: Appwrite provides *hot backups*, meaning backups are taken without any downtime. This allows you to recover data quickly without interrupting your projects or services, ensuring smooth operations.
+3. **Compliance support**: Indobase’s encryption processes align with data protection standards like GDPR, CCPA and HIPAA, making it easier for businesses to comply with regulations.
+4. **Hot backups**: Indobase provides *hot backups*, meaning backups are taken without any downtime. This allows you to recover data quickly without interrupting your projects or services, ensuring smooth operations.
 
 # Best practices for backup security
 
@@ -74,7 +74,7 @@ To make sure your backups are both secure and effective, follow these best pract
 
 Should you encrypt your database backups? Absolutely. Encryption is a critical part of keeping your data secure. It protects against breaches, helps meet legal requirements, and ensures the safety of your backups in case of disaster.
 
-Appwrite makes backup encryption easy by taking care of it for you. With its built-in encryption, Appwrite helps you safeguard your data without extra effort so you can focus on what matters most: building your application. Read more on Database Backups:
+Indobase makes backup encryption easy by taking care of it for you. With its built-in encryption, Indobase helps you safeguard your data without extra effort so you can focus on what matters most: building your application. Read more on Database Backups:
 
 - [Database Backups docs](https://appwrite.io/docs/products/databases/backups)
 - [Database Backups announcement](https://appwrite.io/blog/post/introducing-database-backups)

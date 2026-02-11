@@ -12,7 +12,7 @@
             <img
                 class="hidden dark:block"
                 src="/images/logos/appwrite.svg"
-                alt="appwrite"
+                alt="Indobase"
                 height="24"
                 width="130"
             /></a

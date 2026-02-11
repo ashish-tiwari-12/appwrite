@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Email OTP
-description: Seamless sign in with Email OTP authentication in Appwrite. Learn how to provide simple and secure passwordless user accounts.
+description: Seamless sign in with Email OTP authentication in Indobase. Learn how to provide simple and secure passwordless user accounts.
 ---
 
 Email OTP (one-time password) authentication lets users create accounts using their email address and log in using a 6 digit code delivered to their email inbox. This method is similar to [Magic URL login](/docs/products/auth/magic-url), but can provide better user experience in some scenarios.
@@ -60,7 +60,7 @@ final sessionToken = await account.createEmailToken(
 final userId = sessionToken.userId;
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -143,7 +143,7 @@ final session = await account.createSession(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Message templates
 description: Communicate using your brand and voice by customizing email and SMS message templates, localized to your user's language.
 ---
 
-Appwrite uses emails to communicate with users to perform authentication and verification actions. Emails can be customized to fit your app's design and voice.
+Indobase uses emails to communicate with users to perform authentication and verification actions. Emails can be customized to fit your app's design and voice.
 
-Each Appwrite project can have its own set of unique templates. Templates also support localization, so every template can be written in multiple languages and served depending on the configured locale.
+Each Indobase project can have its own set of unique templates. Templates also support localization, so every template can be written in multiple languages and served depending on the configured locale.
 
 # Custom SMTP server {% #smtp %}
 
-Appwrite Cloud has a default SMTP server to get you started. This SMTP server sends generic emails and doesn't allow customizing SMTP templates. To use custom SMTP templates, you will need to configure your own SMTP server.
+Indobase Cloud has a default SMTP server to get you started. This SMTP server sends generic emails and doesn't allow customizing SMTP templates. To use custom SMTP templates, you will need to configure your own SMTP server.
 
 There are many third-party SMTP providers like SendGrid and Mailgun. Before proceeding, pick an SMTP provider, create an account, and obtain **Sender name**, **Sender email**, **Server host**, **Server port**, **Username**, and **Password**.
 
@@ -22,7 +22,7 @@ There are many third-party SMTP providers like SendGrid and Mailgun. Before proc
 
 # Customize templates {% #customize %}
 
-You can customize email templates for each of your projects in the Appwrite Console.
+You can customize email templates for each of your projects in the Indobase Console.
 
 {% info title="Custom SMTP server required" %}
 The built-in email service does not support custom email templates to prevent malicious templates.
@@ -117,7 +117,7 @@ Here's an example of using these variables in a template.
 
 Each template can have multiple supported locales, displayed in different format and language. This can be configured under the **Template language** selector of each template.
 
-You can send messages in different languages by setting the locale with `client.setLocale()` in the SDKs or the `X-Appwrite-Locale` HTTP header. [View here the list of available locales](https://github.com/appwrite/appwrite/blob/master/app/config/locale/codes.php).
+You can send messages in different languages by setting the locale with `client.setLocale()` in the SDKs or the `X-Indobase-Locale` HTTP header. [View here the list of available locales](https://github.com/appwrite/appwrite/blob/master/app/config/locale/codes.php).
 
 For example, you can send an email verification in French.
 
@@ -184,7 +184,7 @@ val response = account.createVerification('https://example.com')
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint

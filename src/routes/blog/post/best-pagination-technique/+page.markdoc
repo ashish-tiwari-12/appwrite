@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Best database pagination technique"
 description: "Learn how to fix database-related performance problems using offset and cursor pagination."
@@ -75,21 +75,21 @@ However, cursor pagination is a complex problem if you need to implement it on t
 
 Now that you have eliminated duplicates and missing data by switching to cursor pagination, you still have one problem left. Since you should not expose incremental numeric IDs to the user (for security reasons), you must now maintain a hashed version of each ID. Whenever you need to query a database, you convert this string ID to its numeric ID by looking at a table that holds these pairs. What if this row is missing? What if you click the `Next`button, take the last row's ID, and request the next page, but the database can't find the ID?
 
-This is a really rare condition and only occurs if the row's ID that you are about to use as a cursor has been just deleted. We can solve this problem by trying previous rows or re-fetching data of earlier requests to update the last row with a new ID, but all of that brings a whole new level of complexity, and the developer needs to understand a bunch of new concepts, such as recursion and proper state management. Thankfully, services such as [Appwrite](https://appwrite.io/) take care of that, so you can simply use cursor pagination as a feature.
+This is a really rare condition and only occurs if the row's ID that you are about to use as a cursor has been just deleted. We can solve this problem by trying previous rows or re-fetching data of earlier requests to update the last row with a new ID, but all of that brings a whole new level of complexity, and the developer needs to understand a bunch of new concepts, such as recursion and proper state management. Thankfully, services such as [Indobase](https://appwrite.io/) take care of that, so you can simply use cursor pagination as a feature.
 
-# Pagination in Appwrite
+# Pagination in Indobase
 
-[Appwrite](https://appwrite.io/) is an open-source backend-as-a-service that abstracts all the complexity involved in building a modern application by providing you with a set of REST APIs for your core backend needs. Appwrite handles user authentication and authorization, databases, file storage, cloud functions, webhooks, messaging, and more. You can extend Appwrite using your favorite backend language if anything is missing.
+[Indobase](https://appwrite.io/) is an open-source backend-as-a-service that abstracts all the complexity involved in building a modern application by providing you with a set of REST APIs for your core backend needs. Indobase handles user authentication and authorization, databases, file storage, cloud functions, webhooks, messaging, and more. You can extend Indobase using your favorite backend language if anything is missing.
 
-Appwrite Database lets you store any text-based data that needs to be shared across your users. Appwrite's database allows you to create multiple collections (tables) and store multiple documents (rows) in it. Each collection has attributes (columns) configured to give your dataset a proper schema. You can also configure indexes to make your search queries more performant. When reading your data, you can use powerful queries, filter them, sort them, limit the number of results, and paginate over them.
+Indobase Database lets you store any text-based data that needs to be shared across your users. Indobase's database allows you to create multiple collections (tables) and store multiple documents (rows) in it. Each collection has attributes (columns) configured to give your dataset a proper schema. You can also configure indexes to make your search queries more performant. When reading your data, you can use powerful queries, filter them, sort them, limit the number of results, and paginate over them.
 
-Appwrite's pagination supports both offset and cursor pagination. Let's imagine you have a collection with ID `articles`. You can get documents from this collection with either offset or cursor pagination:
+Indobase's pagination supports both offset and cursor pagination. Let's imagine you have a collection with ID `articles`. You can get documents from this collection with either offset or cursor pagination:
 
 ```jsx
 // Setup
-import { Appwrite, Databases, Query } from "appwrite";
+import { Indobase, Databases, Query } from "appwrite";
 
-const client = new Appwrite();
+const client = new Indobase();
 client
     .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
     .setProject('articles-demo'); // Your project ID
@@ -121,17 +121,17 @@ databases.listDocuments(
 
 ```
 
-First, we import the Appwrite SDK and set up an instance that connects to our Appwrite Cloud project. Then, we list 10 documents using offset pagination. Right after, we write the exact same list documents query, but this time using `cursor` instead of offset pagination.
+First, we import the Indobase SDK and set up an instance that connects to our Indobase Cloud project. Then, we list 10 documents using offset pagination. Right after, we write the exact same list documents query, but this time using `cursor` instead of offset pagination.
 
 ## Benchmarks
 
-We’ve frequently mentioned the term "performance" in this article without providing specific numbers, so let’s create a benchmark together. We'll use Appwrite as our backend server, as it supports both offset and cursor pagination, and Node.js for writing the benchmark scripts, as JavaScript is straightforward to follow.
+We’ve frequently mentioned the term "performance" in this article without providing specific numbers, so let’s create a benchmark together. We'll use Indobase as our backend server, as it supports both offset and cursor pagination, and Node.js for writing the benchmark scripts, as JavaScript is straightforward to follow.
 
 > You can find complete source code in the [GitHub repository.](https://github.com/appwrite)
 
-First, you set up Appwrite, register a user, create a project and create a collection called `posts` with read permission set to `any`. To learn more about this process, visit the [Appwrite docs](https://appwrite.io/docs). You should now have Appwrite ready to go.
+First, you set up Indobase, register a user, create a project and create a collection called `posts` with read permission set to `any`. To learn more about this process, visit the [Indobase docs](https://appwrite.io/docs). You should now have Indobase ready to go.
 
-Use the following script to load data into our MariaDB database and prepare for the benchmark. We could use Appwrite SDK, but talking directly to MariaDB offers more optional write queries for large datasets.
+Use the following script to load data into our MariaDB database and prepare for the benchmark. We could use Indobase SDK, but talking directly to MariaDB offers more optional write queries for large datasets.
 
 ```jsx
 const config = {};
@@ -177,7 +177,7 @@ console.error(`🌟 Successfully finished`);
 
 Now you have 1 million documents inserted in less than a minute, and are ready to start the benchmarks. We will be using the [k6](https://k6.io/) load-testing library for this demo.
 
-Let's benchmark the well-known and widely used offset pagination first. During each test scenario, we try to fetch a page with 10 documents, from different parts of our dataset. We will start with offset 0 and go all the way to an offset of 900k in increments of 100k. The benchmark is written in a way that makes only one request at a time to keep it as accurate as possible. We will also run the same benchmark ten times and measure average response times to ensure statistical significance. We'll be using k6's HTTP client to make requests to Appwrite's REST API.
+Let's benchmark the well-known and widely used offset pagination first. During each test scenario, we try to fetch a page with 10 documents, from different parts of our dataset. We will start with offset 0 and go all the way to an offset of 900k in increments of 100k. The benchmark is written in a way that makes only one request at a time to keep it as accurate as possible. We will also run the same benchmark ten times and measure average response times to ensure statistical significance. We'll be using k6's HTTP client to make requests to Indobase's REST API.
 
 ```jsx
 // script_offset.sh
@@ -201,7 +201,7 @@ export default function () {
     http.get(`${config.endpoint}/databases/main/collections/posts/documents?queries[]=${offset}&queries[]=${limit}`, {
         headers: {
             'content-type': 'application/json',
-            'X-Appwrite-Project': config.projectId
+            'X-Indobase-Project': config.projectId
         }
     });
 }
@@ -269,7 +269,7 @@ export default function () {
     http.get(`${config.endpoint}/databases/main/collections/posts/documents?queries[]=${offset}&queries[]=${limit}`, {
             headers: {
             'content-type': 'application/json',
-            'X-Appwrite-Project': config.projectId
+            'X-Indobase-Project': config.projectId
         }
     });
 }
@@ -326,7 +326,7 @@ I believe Amazon decided to go with offset because it improves UX, but that is a
 
 First, there are far more than 10,000 results, but Amazon imposes a limit. Secondly, you can only access the first seven pages; attempting to visit page 8 results in a 404 error. This indicates that Amazon is aware of the performance issues with offset pagination but continues to use it because users prefer seeing page numbers. They had to implement some limits, but it's unlikely that users navigate to page 100 of the search results.
 
-Do you know what is better than reading about pagination? Trying it out! I would encourage you to try both methods because it's best to get first-hand experience. Setting up Appwrite takes less than a few minutes, and you can start playing with both pagination methods. If you have any questions, you can also reach us on [our Discord server](https://appwrite.io/discord).
+Do you know what is better than reading about pagination? Trying it out! I would encourage you to try both methods because it's best to get first-hand experience. Setting up Indobase takes less than a few minutes, and you can start playing with both pagination methods. If you have any questions, you can also reach us on [our Discord server](https://appwrite.io/discord).
 
 # Resources
 

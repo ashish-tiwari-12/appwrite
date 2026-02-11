@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Timestamp overrides
 description: Set custom $createdAt and $updatedAt timestamps for your documents when using server SDKs.
 ---
 
-When creating or updating documents, Appwrite automatically sets `$createdAt` and `$updatedAt` timestamps. However, there are scenarios where you might need to set these timestamps manually, such as when migrating data from another system or backfilling historical records.
+When creating or updating documents, Indobase automatically sets `$createdAt` and `$updatedAt` timestamps. However, there are scenarios where you might need to set these timestamps manually, such as when migrating data from another system or backfilling historical records.
 
 {% info title="Server SDKs required" %}
 To manually set `$createdAt` and `$updatedAt`, you must use a **server SDK** with an **API key**. These attributes can be passed inside the `data` parameter on any of the create, update, or upsert routes (single or bulk).
@@ -12,7 +12,7 @@ To manually set `$createdAt` and `$updatedAt`, you must use a **server SDK** wit
 
 # Setting custom timestamps {% #setting-custom-timestamps %}
 
-You can override a document's timestamps by providing ISO 8601 strings (for example, `2025-08-10T12:34:56.000Z`) in the `data` payload. If these attributes are not provided, Appwrite will set them automatically.
+You can override a document's timestamps by providing ISO 8601 strings (for example, `2025-08-10T12:34:56.000Z`) in the `data` payload. If these attributes are not provided, Indobase will set them automatically.
 
 Custom timestamps work with all document operations: create, update, upsert, and their bulk variants.
 
@@ -45,9 +45,9 @@ await databases.createDocument(
 );
 ```
 ```server-php
-use Appwrite\Client;
-use Appwrite\ID;
-use Appwrite\Services\Databases;
+use Indobase\Client;
+use Indobase\ID;
+use Indobase\Services\Databases;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -68,7 +68,7 @@ $databases->createDocument(
 );
 ```
 ```server-swift
-import Appwrite
+import Indobase
 import Foundation
 
 let client = Client()
@@ -130,7 +130,7 @@ databases.create_document(
 require 'appwrite'
 require 'time'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -153,9 +153,9 @@ databases.create_document(
 )
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 Client client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -244,7 +244,7 @@ databases.update_document(
 )
 ```
 ```server-swift
-import Appwrite
+import Indobase
 import Foundation
 
 let client = Client()
@@ -276,7 +276,7 @@ do {
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -298,9 +298,9 @@ databases.update_document(
 )
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 Client client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -394,9 +394,9 @@ databases.create_documents(
 )
 ```
 ```server-php
-use Appwrite\Client;
-use Appwrite\ID;
-use Appwrite\Services\Databases;
+use Indobase\Client;
+use Indobase\ID;
+use Indobase\Services\Databases;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -425,7 +425,7 @@ $databases->createDocuments(
 );
 ```
 ```server-swift
-import Appwrite
+import Indobase
 import Foundation
 
 let client = Client()
@@ -468,7 +468,7 @@ do {
 ```server-ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -500,9 +500,9 @@ databases.create_documents(
 )
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 Client client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -602,9 +602,9 @@ databases.upsert_documents(
 )
 ```
 ```server-php
-use Appwrite\Client;
-use Appwrite\ID;
-use Appwrite\Services\Databases;
+use Indobase\Client;
+use Indobase\ID;
+use Indobase\Services\Databases;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -627,7 +627,7 @@ $databases->upsertDocuments(
 );
 ```
 ```server-swift
-import Appwrite
+import Indobase
 import Foundation
 
 let client = Client()
@@ -664,7 +664,7 @@ do {
 require 'appwrite'
 require 'time'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')
@@ -689,9 +689,9 @@ databases.upsert_documents(
 )
 ```
 ```server-dotnet
-using Appwrite;
-using Appwrite.Models;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Models;
+using Indobase.Services;
 
 Client client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -1033,6 +1033,6 @@ await databases.upsertDocument(
 
 {% info title="Timestamp format and usage" %}
 - Values must be valid ISO 8601 date-time strings (UTC recommended). Using `toISOString()` (JavaScript) or `datetime.isoformat()` (Python) is a good default.
-- You can set either or both attributes as needed. If omitted, Appwrite sets them automatically.
+- You can set either or both attributes as needed. If omitted, Indobase sets them automatically.
 {% /info %}
 

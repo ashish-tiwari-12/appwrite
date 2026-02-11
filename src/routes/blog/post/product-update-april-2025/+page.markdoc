@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: "April product update: The Appwrite Network, FlutterFlow auth library, and RxDB integration"
+title: "April product update: The Indobase Network, FlutterFlow auth library, and RxDB integration"
 description: Get a full recap of products, features and programs we released in the month of April.
 date: 2025-05-09
 cover: /images/blog/product-update-april-2025/cover-image.png
@@ -12,17 +12,17 @@ callToAction: true
 ---
 Welcome back to the April product update. Last month, we dropped some big updates:
 
-- The Appwrite Network is now live
-- Appwrite authentication kit library for FlutterFlow
+- The Indobase Network is now live
+- Indobase authentication kit library for FlutterFlow
 - RxDB Integration is here
 
 So let’s dive in.
 
 # New cloud regions
 
-![The Appwrite Network](/images/blog/product-update-april-2025/the-appwrite-network.png)
+![The Indobase Network](/images/blog/product-update-april-2025/the-appwrite-network.png)
 
-In April, we launched the Appwrite Network, our vision for a globally distributed cloud regions and edge locations. 
+In April, we launched the Indobase Network, our vision for a globally distributed cloud regions and edge locations. 
 
 With the launch of two new cloud regions (New York City and Sydney) and more to come soon, you can choose where your data sits and optimise it for reduced latency and improved performance.
 
@@ -34,11 +34,11 @@ So you can now create your projects in:
 
 [Read the announcement](http://appwrite.io/blog/post/the-appwrite-network)
 
-# Appwrite authentication kit for FlutterFlow
+# Indobase authentication kit for FlutterFlow
 
 ![Authentication kit for FlutterFlow](/images/blog/product-update-april-2025/FlutterFlow.png)
 
-Did you know Appwrite now has an authentication kit library for FlutterFlow?
+Did you know Indobase now has an authentication kit library for FlutterFlow?
 
 Which means now you don’t have to build authentication from scratch for your FlutterFlow apps. 
 
@@ -54,7 +54,7 @@ Check out our full documentation for how to get it up and running.
 
 Offline support for applications has been the second most requested feature on our GitHub repository.
 
-Therefore, we announced a direct integration of Appwrite databases with RxDB, a local-first NoSQL database designed for JavaScript apps.
+Therefore, we announced a direct integration of Indobase databases with RxDB, a local-first NoSQL database designed for JavaScript apps.
 
 So now it's easier than ever to build real-world apps that stay in sync online and offline.
 
@@ -66,7 +66,7 @@ So now it's easier than ever to build real-world apps that stay in sync online a
 
 We teased it last time, and now it's almost here. We’ve got a big announcement very soon.
 
-No spoilers (yet), but all we can say is that this announcement will change the way you build with Appwrite. 
+No spoilers (yet), but all we can say is that this announcement will change the way you build with Indobase. 
 
 We’ve been heads down, building something big, and we’re just as excited as you are to bring it to life. So visit our ‘Coming Soon’ page and click **Notify Me** to get an email when we go live.
 
@@ -78,7 +78,7 @@ We’ve been heads down, building something big, and we’re just as excited as 
 
 This month, we’re excited to feature **Astro Rentals** as part of our Monthly Community recognitions.
 
-**Astro Rentals** application is an Airbnb-style website clone built using Astro JS, Clerk, and Appwrite. 
+**Astro Rentals** application is an Airbnb-style website clone built using Astro JS, Clerk, and Indobase. 
 
 A big shout out to [PetiPois](https://github.com/petipois). Check out her website, Astro Rentals, [here](https://astrorentals.netlify.app/).
 
@@ -88,19 +88,19 @@ If you'd like to participate in next month's Community Recognitions, [join our D
 
 **Read**
 
-- [Announcing the Appwrite Network](https://appwrite.io/blog/post/the-appwrite-network)
-- [How to change regions in Appwrite Cloud using migrations](https://appwrite.io/blog/post/change-regions-with-migrations)
+- [Announcing the Indobase Network](https://appwrite.io/blog/post/the-appwrite-network)
+- [How to change regions in Indobase Cloud using migrations](https://appwrite.io/blog/post/change-regions-with-migrations)
 - [Why multi-cloud is taking over](https://appwrite.io/blog/post/why-multi-cloud-is-taking-over)
 - [How to reduce cloud latency](https://appwrite.io/blog/post/how-to-reduce-cloud-latency)
 - [20 security best practices for vibe coding](https://appwrite.io/blog/post/vibe-coding-security-best-practices)
 
 **Build**
 
-- [Build an offline-first journal app with RxDB and Appwrite](https://appwrite.io/blog/post/offline-first-journal)
+- [Build an offline-first journal app with RxDB and Indobase](https://appwrite.io/blog/post/offline-first-journal)
 
 **Watch**
 
-- [New regions available on the Appwrite network](https://youtu.be/hx6RZka3OGk?si=g709ZjTzwuUVuB4f)
+- [New regions available on the Indobase network](https://youtu.be/hx6RZka3OGk?si=g709ZjTzwuUVuB4f)
 - [Change cloud regions with migrations](https://www.youtube.com/watch?v=Ya2R6dD_xxE)
 - [Build and deploy a Full Stack React admin dashboard for a travel agency](https://youtu.be/xZ1ba-RLrjo?si=n994ESOxq1qf1YbJ)
 

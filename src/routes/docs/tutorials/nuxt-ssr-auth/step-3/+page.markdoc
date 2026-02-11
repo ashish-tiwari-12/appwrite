@@ -1,11 +1,11 @@
----
+﻿---
 layout: tutorial
 title: Initialize SDK
-description: Add authentication to a Nuxt project using Appwrite.
+description: Add authentication to a Nuxt project using Indobase.
 step: 3
 ---
-Before you can use Appwrite, you need to create the Appwrite `Client` and set the project ID and endpoint.
-The client is then used to create services like `Databases` and `Account`, so they all point to the same Appwrite project.
+Before you can use Indobase, you need to create the Indobase `Client` and set the project ID and endpoint.
+The client is then used to create services like `Databases` and `Account`, so they all point to the same Indobase project.
 
 Create a function to the build services you need in a file like `server/lib/appwrite.js` and **exporting the instances**.
 
@@ -13,7 +13,7 @@ As part of the function, set the current user's session if they are logged in. T
 
 {% info title="Appwrite client security" %}
 We recommend creating a new `Client` instance for each request.
-When using Appwrite in server-integrations, it's important to **never share a `Client` instance** between two requests.
+When using Indobase in server-integrations, it's important to **never share a `Client` instance** between two requests.
 Doing so could create security vulnerabilities.
 {% /info %}
 
@@ -70,10 +70,10 @@ export default defineNuxtConfig({
 });
 ```
 
-Now you can use `.env` files to set the environment variables for your project. Retrieve the values for these variables from the Appwrite console.
+Now you can use `.env` files to set the environment variables for your project. Retrieve the values for these variables from the Indobase console.
 
-The `PUBLIC_APPWRITE_ENDPOINT` is the endpoint of your Appwrite project, and the `PUBLIC_APPWRITE_PROJECT` is the ID of the project you want to use.
-You can get the values for these variables from the Appwrite console.
+The `PUBLIC_APPWRITE_ENDPOINT` is the endpoint of your Indobase project, and the `PUBLIC_APPWRITE_PROJECT` is the ID of the project you want to use.
+You can get the values for these variables from the Indobase console.
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -83,7 +83,7 @@ You can get the values for these variables from the Appwrite console.
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-The `APPWRITE_KEY` is an Appwrite API key with the necessary permissions to create new sessions.
+The `APPWRITE_KEY` is an Indobase API key with the necessary permissions to create new sessions.
 
 For this tutorial you'll need an API key with the following scopes:
 

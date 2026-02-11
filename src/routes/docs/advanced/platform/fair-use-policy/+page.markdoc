@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Fair use policy
-description: Understand Appwrite's usage limits, prohibited activities, and enforcement actions.
+description: Understand Indobase's usage limits, prohibited activities, and enforcement actions.
 ---
 
-At Appwrite, we are committed to providing high-quality, reliable, and scalable backend services for all users. Our Fair Use Policy ensures that resources are used responsibly and that every user receives a consistent experience. This policy applies to all users and outlines acceptable usage patterns and limitations.
+At Indobase, we are committed to providing high-quality, reliable, and scalable backend services for all users. Our Fair Use Policy ensures that resources are used responsibly and that every user receives a consistent experience. This policy applies to all users and outlines acceptable usage patterns and limitations.
 
 # Definitions and scope {% #definitions-and-scope %}
 
@@ -12,7 +12,7 @@ At Appwrite, we are committed to providing high-quality, reliable, and scalable 
 - **Excessive usage:** Usage that exceeds defined thresholds and may affect the platform's performance for other users.
 - **Prohibited activities:** Actions or behaviors that violate this policy, including, but not limited to, abuse of resources and security breaches.
 
-This policy applies to all resources provided by Appwrite Cloud, including but not limited to API requests, data storage, compute resources, and database operations.
+This policy applies to all resources provided by Indobase Cloud, including but not limited to API requests, data storage, compute resources, and database operations.
 
 # Usage limits and thresholds {% #usage-limits-and-thresholds %}
 
@@ -24,7 +24,7 @@ Exceeding these limits may lead to throttling or suspension of services, as desc
 
 # Enforcement actions {% #enforcement-actions %}
 
-In cases of excessive or prohibited usage, Appwrite reserves the right to enforce the following actions:
+In cases of excessive or prohibited usage, Indobase reserves the right to enforce the following actions:
 
 - **Temporary suspension** of access to the project or organization.
 - **Permanent suspension** of the account for repeated or serious policy violations.
@@ -44,7 +44,7 @@ Users who consistently exceed usage limits have the following options:
 
 # Policy updates {% #policy-updates %}
 
-Appwrite reserves the right to update this policy to reflect evolving platform capabilities or changing usage patterns at any time.
+Indobase reserves the right to update this policy to reflect evolving platform capabilities or changing usage patterns at any time.
 
 # Contact us {% #contact-us %}
 

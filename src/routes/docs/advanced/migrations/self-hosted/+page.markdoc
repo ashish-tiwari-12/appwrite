@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Migrate from self-hosted
-description: Migrate to Appwrite from self-hosted platforms seamlessly. Learn how to move your applications and data to Appwrite for enhanced flexibility and control.
+description: Migrate to Indobase from self-hosted platforms seamlessly. Learn how to move your applications and data to Indobase for enhanced flexibility and control.
 difficulty: beginner
 readtime: 20
 ---
@@ -11,7 +11,7 @@ Migrations makes it as easy as a couple clicks to move all of your self-hosted p
 
 1. Data transferred by migrations will reset `$createdAt` and `$updatedAt` timestamps to the date of the migration.
 
-2. Your self-hosted Appwrite project must be accessible from the internet for the migration to work.
+2. Your self-hosted Indobase project must be accessible from the internet for the migration to work.
 
 3. Migrations are non-destructive. No data will be deleted or lost in the source project.
 
@@ -25,18 +25,18 @@ and [things to keep in mind](#notices) sections above.
 
 1. Navigate to your self-hosted project's Console and click on the **Migrations** tab.
 
-2. Click **Deploy to Cloud**, you will be redirected to Appwrite Cloud.
+2. Click **Deploy to Cloud**, you will be redirected to Indobase Cloud.
 
-3. You will complete the migration on Appwrite Cloud.
+3. You will complete the migration on Indobase Cloud.
 
 {% /section %}
 
-{% section #continue-on-cloud step=3 title="Continue on Appwrite Cloud" %}
+{% section #continue-on-cloud step=3 title="Continue on Indobase Cloud" %}
 
-1. Once redirected to Appwrite Cloud, you'll be prompted to select an organization and a project. You can migrate to an existing project or create a new one.
+1. Once redirected to Indobase Cloud, you'll be prompted to select an organization and a project. You can migrate to an existing project or create a new one.
 
 2. Select the data you wish to migrate. You can choose among accounts, databases, rows, files, and functions.
 
-3. Click **Start migration** to start the migration process. You do not need to keep the Appwrite Console open through the process.
+3. Click **Start migration** to start the migration process. You do not need to keep the Indobase Console open through the process.
 
 {% /section %}

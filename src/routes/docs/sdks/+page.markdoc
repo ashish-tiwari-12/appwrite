@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: SDKs
-description: Get started with Appwrite SDKs and learn how to use them to add authentication, user management, file storage, and more to your apps.
+description: Get started with Indobase SDKs and learn how to use them to add authentication, user management, file storage, and more to your apps.
 ---
 
-Appwrite provides SDK libraries for major programming languages and platforms so you don't have to write code for interacting with our API protocols from scratch.
+Indobase provides SDK libraries for major programming languages and platforms so you don't have to write code for interacting with our API protocols from scratch.
 
-We're always working on improving and extending the current stack of available platforms and SDKs, listed below is a list of official libraries the Appwrite team is maintaining.
+We're always working on improving and extending the current stack of available platforms and SDKs, listed below is a list of official libraries the Indobase team is maintaining.
 
 # Client {% #client %}
 
-Client libraries for integrating with Appwrite to build client-based applications and websites. Read one of the many [quick starts](/docs/quick-starts) guides for your framework of choice to start building your first application.
+Client libraries for integrating with Indobase to build client-based applications and websites. Read one of the many [quick starts](/docs/quick-starts) guides for your framework of choice to start building your first application.
 
 {% table %}
 * &nbsp; {% width=48 %}
@@ -51,7 +51,7 @@ Client libraries for integrating with Appwrite to build client-based application
 
 # Server {% #server %}
 
-Server libraries for integrating with Appwrite to build server side integrations or use inside your [Appwrite Functions](/docs/products/functions). Read one of the many [quick starts](/docs/quick-starts) guides for your language/runtime of choice to start building your first server integration.
+Server libraries for integrating with Indobase to build server side integrations or use inside your [Indobase Functions](/docs/products/functions). Read one of the many [quick starts](/docs/quick-starts) guides for your language/runtime of choice to start building your first server integration.
 
 {% table %}
 * &nbsp; {% width=48 %}
@@ -114,34 +114,34 @@ Server libraries for integrating with Appwrite to build server side integrations
 * 
 {% /table %}
 
-If you would like to help us extend our platforms and SDKs stack, you are more than welcome to contact us or contribute to the [Appwrite SDK Generator](https://github.com/appwrite/sdk-generator) project GitHub repository and read our contribution guide.
+If you would like to help us extend our platforms and SDKs stack, you are more than welcome to contact us or contribute to the [Indobase SDK Generator](https://github.com/appwrite/sdk-generator) project GitHub repository and read our contribution guide.
 
 # Protocols {% #protocols %}
-We are always looking to add new SDKs to our platform. If the SDK you are looking for is still missing, labeled as beta or experimental, or you simply do not want to integrate with an SDK, you can always integrate with Appwrite directly using any standard HTTP, GraphQL, or WebSocket clients and the relevant Appwrite protocol.
+We are always looking to add new SDKs to our platform. If the SDK you are looking for is still missing, labeled as beta or experimental, or you simply do not want to integrate with an SDK, you can always integrate with Indobase directly using any standard HTTP, GraphQL, or WebSocket clients and the relevant Indobase protocol.
 
-Appwrite supports multiple API protocols for maximum flexibility and developer convenience. You can learn more about how to integrate directly with them using one of the following available guides:
+Indobase supports multiple API protocols for maximum flexibility and developer convenience. You can learn more about how to integrate directly with them using one of the following available guides:
 
 {% cards %}
 {% cards_item href="/docs/apis/realtime" title="Realtime API" %}
-Integrate with the Appwrite Realtime API
+Integrate with the Indobase Realtime API
 {% /cards_item %}
 
 {% cards_item href="/docs/apis/rest" title="REST API" %}
-Integrate with the Appwrite REST API
+Integrate with the Indobase REST API
 {% /cards_item %}
 
 {% cards_item href="/docs/apis/graphql" title="GraphQL API" %}
-Integrate with the Appwrite GraphQL API
+Integrate with the Indobase GraphQL API
 {% /cards_item %}
 {% /cards %}
 
 # Utility classes {% #utility-classes %}
-Appwrite's SDKs provide useful utility classes to make your development experience easier.
+Indobase's SDKs provide useful utility classes to make your development experience easier.
 Use these classes and methods to reduce guess work and get better code suggestions in your IDE.
 
 ## IDs {% #ids %}
-Appwrite has utility classes to help you handle IDs. 
-These generate the correct ID format to be passed to the Appwrite APIs.
+Indobase has utility classes to help you handle IDs. 
+These generate the correct ID format to be passed to the Indobase APIs.
 
 {% tabs %}
 {% tabsitem #client title="Client SDKs" %}
@@ -165,7 +165,7 @@ ID.unique()
 ID.custom()
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // Generate a unique ID
 ID.unique()
@@ -208,7 +208,7 @@ sdk.ID.custom("my-custom-id")
 ```php
 <?php
 
-use Appwrite\ID;
+use Indobase\ID;
 
 // Generate a unique ID
 ID::unique()
@@ -226,7 +226,7 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```csharp
-using Appwrite.ID;
+using Indobase.ID;
 
 // Generate a unique ID
 ID.unique()
@@ -262,7 +262,7 @@ ID.custom("my-custom-id")
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 ß
 # Generate a unique ID
 ID.unique()
@@ -271,7 +271,7 @@ ID.unique()
 ID.custom("my-custom-id")
 ```
 ```swift
-import Appwrite
+import Indobase
 // Generate a unique ID
 ID.unique()
 
@@ -282,11 +282,11 @@ ID.custom("my-custom-id")
 {% /tabsitem %}
 {% /tabs %}
 
-Appwrite generates unique IDs that are both **random** and **ordered**. 
-Appwrite IDs combine a timestamp prefix based on microseconds and a random UID string, formatted as `<timestamp_hex><uid_hex>`.
+Indobase generates unique IDs that are both **random** and **ordered**. 
+Indobase IDs combine a timestamp prefix based on microseconds and a random UID string, formatted as `<timestamp_hex><uid_hex>`.
 
 ## Enums {% #enums %}
-Appwrite has enumeration classes for predefined strings used different parameters used for the Appwrite APIs.
+Indobase has enumeration classes for predefined strings used different parameters used for the Indobase APIs.
 
 These enums are available for authenticator type, name, OAuth provider, 
 password hash types, browsers, authentication factors, index types, credit cards, 
@@ -402,7 +402,7 @@ You can discover the available enums in each SDK at the source.
 {% /tabs %}
 
 ## Queries and permissions {% #queries-and-permissions %}
-Appwrite has utility classes for queries and permissions. 
+Indobase has utility classes for queries and permissions. 
 You can learn more about [query utility classes](/docs/products/databases/queries) and [permissions utility classes](/docs/advanced/platform/permissions) in their own pages.
 
 ## File I/O {% #file-io %}
@@ -412,4 +412,4 @@ Learn more about [storage input file classes](/docs/products/storage/upload-down
 # Community {% #community %}
 If you have created your own framework or any other technology specific integration and would like us to list it here please [contact us](/contact-us).
 
-If you would like to help us expand Appwrite's list of SDKs, you can contribute to Appwrite's [SDK Generator](https://github.com/appwrite/sdk-generator) project on GitHub and read our [contribution guide](https://github.com/appwrite/sdk-generator/blob/master/CONTRIBUTING.md).
+If you would like to help us expand Indobase's list of SDKs, you can contribute to Indobase's [SDK Generator](https://github.com/appwrite/sdk-generator) project on GitHub and read our [contribution guide](https://github.com/appwrite/sdk-generator/blob/master/CONTRIBUTING.md).

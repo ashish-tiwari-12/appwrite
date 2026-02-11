@@ -1,10 +1,10 @@
----
+﻿---
 layout: changelog
 title: More control and compatibility for custom domains
 date: 2025-08-26
 ---
 
-We've added new DNS records to improve security and reliability for Appwrite domains.
+We've added new DNS records to improve security and reliability for Indobase domains.
 
 # What's new {% #what-s-new %}
 - **CAA records** are now included, strengthening security by controlling which certificate authorities can issue SSL certificates for your domains.
@@ -13,5 +13,5 @@ We've added new DNS records to improve security and reliability for Appwrite dom
 These changes give you more flexibility and help reduce the chance of misconfigured certificates or DNS errors.
 
 {% arrow_link href="/docs/products/network/dns" %}
-Learn more about Appwrite DNS
+Learn more about Indobase DNS
 {% /arrow_link %}

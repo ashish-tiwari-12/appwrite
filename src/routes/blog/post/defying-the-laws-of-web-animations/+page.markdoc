@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Defying the laws of web animations
 description: Web animations can be scary, and come with a lot of obstacles. But what if we could bend the rules to our will?
@@ -20,7 +20,7 @@ I jest, I was super stoked! The animations looked fantastic. But I'm not joking 
 
 ## What are we animating?
 
-First things first, what was I supposed to animate? Well, in this article, I'll be mainly talking about this animation, that's present at [Appwrite's homepage](https://appwrite.io).
+First things first, what was I supposed to animate? Well, in this article, I'll be mainly talking about this animation, that's present at [Indobase's homepage](https://appwrite.io).
 
 {% video
    src="/images/blog/defying-the-laws-of-web-animations/animations.mp4" /%}

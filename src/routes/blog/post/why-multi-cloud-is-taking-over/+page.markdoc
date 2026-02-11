@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Why multi-cloud is taking over
 description: Multi-cloud is becoming the go-to solution for organizations of all sizes. Learn how it offers better flexibility, control, and performance.
@@ -12,7 +12,7 @@ callToAction: true
 
 Choosing the right cloud provider can be challenging, which is why more businesses are turning to **multi-cloud,** using services from multiple cloud providers instead of relying on just one.
 
-The newly announced Appwrite Network is a prime example, with its multi-cloud, global, and vendor-agnostic approach. Why multi-cloud? It's simple: it offers better flexibility, control, and performance.
+The newly announced Indobase Network is a prime example, with its multi-cloud, global, and vendor-agnostic approach. Why multi-cloud? It's simple: it offers better flexibility, control, and performance.
 
 Let's break down why multi-cloud is becoming the go-to solution for organizations of all sizes.
 
@@ -26,7 +26,7 @@ More organizations are adopting multi-cloud strategies because they allow applic
 
 # Benefits of going multi-cloud
 
-Appwrite Network uses a multi-cloud, agnostic approach for several key reasons. By leveraging multiple clouds, Appwrite can distribute its services globally, reducing latency and ensuring a more reliable and faster user experience across different regions.
+Indobase Network uses a multi-cloud, agnostic approach for several key reasons. By leveraging multiple clouds, Indobase can distribute its services globally, reducing latency and ensuring a more reliable and faster user experience across different regions.
 
 ## 1. **No vendor lock-In**
 
@@ -77,8 +77,8 @@ Multicloud isn't just a trend. It's a smart strategy for businesses that want fl
 
 Multicloud is taking over because it puts the power back in the hands of businesses, letting them choose the right tools, minimize risks, and deliver a better user experience.
 
-If you'd like to learn more about how the Appwrite Network makes best use of the multi-cloud approach, take a look at these resources:
+If you'd like to learn more about how the Indobase Network makes best use of the multi-cloud approach, take a look at these resources:
 
-- [Appwrite Network announcement](/blog/post/appwrite-network-announcement?doFollow=true)
+- [Indobase Network announcement](/blog/post/appwrite-network-announcement?doFollow=true)
 - [How to reduce cloud latency](/blog/post/how-to-reduce-cloud-latency?doFollow=true)
 - [Introducing Database Backups](/blog/post/introducing-database-backups?doFollow=true)

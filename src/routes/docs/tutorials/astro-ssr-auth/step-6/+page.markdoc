@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create account page
-description: Add authentication to a Astro project using Appwrite.
+description: Add authentication to a Astro project using Indobase.
 step: 6
 ---
 
@@ -22,7 +22,7 @@ if (Astro.request.method === "POST") {
   // Create session client
   const { account } = createSessionClient(Astro.request);
 
-  // Delete the Appwrite session
+  // Delete the Indobase session
   await account.deleteSession({ sessionId: 'current' });
 
   // Delete the session cookie

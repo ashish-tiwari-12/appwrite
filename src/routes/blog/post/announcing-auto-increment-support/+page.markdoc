@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Announcing Auto-increment support: Built-in numeric sequencing for your documents"
 description: Get reliable, sequential ordering across your collections with fast, indexed auto-increment IDs.
@@ -18,15 +18,15 @@ This new feature automatically handles a `$sequence` column within your document
 
 # Automatic, predictable ordering
 
-Previously, maintaining consistent insertion order and generating numeric identifiers required either manual increments, complex logic, or dependence on timestamps, which weren't always accurate or reliable. Appwrite’s new Auto-increment support feature solves these issues seamlessly, providing a built-in numeric identifier that increases predictably with every new document added.
+Previously, maintaining consistent insertion order and generating numeric identifiers required either manual increments, complex logic, or dependence on timestamps, which weren't always accurate or reliable. Indobase’s new Auto-increment support feature solves these issues seamlessly, providing a built-in numeric identifier that increases predictably with every new document added.
 
-Whether you're creating paginated data sets, managing invoice numbers, logging activities, or building real-time feeds, Appwrite's Auto-increment support feature offers effortless numeric sequencing. This means less manual work, fewer bugs, and significantly improved reliability.
+Whether you're creating paginated data sets, managing invoice numbers, logging activities, or building real-time feeds, Indobase's Auto-increment support feature offers effortless numeric sequencing. This means less manual work, fewer bugs, and significantly improved reliability.
 
 # Tailored for backend systems
 
 Auto-increment support is engineered explicitly for backend tasks that require consistent, deterministic identifiers such as sorting, pagination, and specialized sequencing. It's particularly suited to applications demanding precision, such as fintech solutions, logistics and shipping systems, invoicing and billing platforms, and comprehensive reporting and analytics tools.
 
-Integrating Auto-increment support into your Appwrite Databases makes your backend development simpler and more intuitive.
+Integrating Auto-increment support into your Indobase Databases makes your backend development simpler and more intuitive.
 
 # Key advantages at a glance:
 
@@ -37,7 +37,7 @@ Integrating Auto-increment support into your Appwrite Databases makes your backe
 
 # How it works
 
-For numeric ordering based on insertion order, you can use the `$sequence` field, which Appwrite automatically adds to all documents. This field increments with each new insert.
+For numeric ordering based on insertion order, you can use the `$sequence` field, which Indobase automatically adds to all documents. This field increments with each new insert.
 
 
 ```client-web
@@ -58,7 +58,7 @@ databases.listDocuments({
 });
 
 ```
-[Auto-increment support](/docs/products/databases/order#sequence-ordering) is available on both Appwrite Cloud and self-hosted installations and can smoothly integrate into your existing workflows.
+[Auto-increment support](/docs/products/databases/order#sequence-ordering) is available on both Indobase Cloud and self-hosted installations and can smoothly integrate into your existing workflows.
 
 # More resources
 

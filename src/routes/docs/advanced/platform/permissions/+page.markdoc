@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Permissions
-description: Enhance data security and access control with Appwrite platform permissions. Learn how to set fine-grained permissions to protect user data and resources.
+description: Enhance data security and access control with Indobase platform permissions. Learn how to set fine-grained permissions to protect user data and resources.
 ---
 
-Appwrite's permission mechanism offers a simple, yet flexible way to manage which users, teams, or roles can access a specific resource in your project, such as rows and files.
+Indobase's permission mechanism offers a simple, yet flexible way to manage which users, teams, or roles can access a specific resource in your project, such as rows and files.
 
 Using permissions, you can decide that only **user A** and **user B** will have read and update access to a specific database row, while **user C** and **team X** will be the only ones with delete access.
 
@@ -12,17 +12,17 @@ As the name suggests, read permission allows a user to read a resource, create a
 
 All permissions can be granted to individuals or groups of users, entire teams, or only to team members with a specific role. Permission can also be granted based on authentication status, such as to all users, only authenticated users, or only guest users.
 
-A project user can only grant permissions to a resource that they have. For example, if a user is trying to share a row with a team that they are not a member of, they will encounter a 401 not authorized error. If your app needs users to grant access to teams they're not a member of, you can create Appwrite Functions with a [Server SDK](/docs/sdks#server) to achieve this functionality.
+A project user can only grant permissions to a resource that they have. For example, if a user is trying to share a row with a team that they are not a member of, they will encounter a 401 not authorized error. If your app needs users to grant access to teams they're not a member of, you can create Indobase Functions with a [Server SDK](/docs/sdks#server) to achieve this functionality.
 
-# Appwrite resource {% #appwrite-resource %}
+# Indobase resource {% #appwrite-resource %}
 
-An Appwrite resource can be a database, table, row, bucket, or file. Each resource has its own set of permissions to define who can interact with it.
+An Indobase resource can be a database, table, row, bucket, or file. Each resource has its own set of permissions to define who can interact with it.
 
-Using the Appwrite permissions mechanism, you can grant resource access to users, teams, and members with different roles.
+Using the Indobase permissions mechanism, you can grant resource access to users, teams, and members with different roles.
 
 # Default values {% #default-values %}
 
-If you create a resource using a Server SDK or the Appwrite Console without explicit permissions, no one can access it by default because the permissions will be empty. If you create a resource using a Client SDK without explicit permissions, the creator will be granted read, update, and delete permissions on that resource by default.
+If you create a resource using a Server SDK or the Indobase Console without explicit permissions, no one can access it by default because the permissions will be empty. If you create a resource using a Client SDK without explicit permissions, the creator will be granted read, update, and delete permissions on that resource by default.
 
 # Server integration {% #server-integration %}
 
@@ -59,9 +59,9 @@ In Client and Server SDKs, you will find a **Role** class with helper methods fo
 
 # Examples {% #examples %}
 
-The examples below will show you how you can use the different Appwrite permissions to manage access control to your project resources.
+The examples below will show you how you can use the different Indobase permissions to manage access control to your project resources.
 
-The following examples are using the [Appwrite Web SDK](https://github.com/appwrite/sdk-for-web) but can be applied similarly to any of the other [Appwrite SDKs](/docs/sdks).
+The following examples are using the [Indobase Web SDK](https://github.com/appwrite/sdk-for-web) but can be applied similarly to any of the other [Indobase SDKs](/docs/sdks).
 
 ## Example 1 - Basic usage {% #example-1-basic-usage %}
 
@@ -199,7 +199,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 func main() async throws {
     let client = Client()

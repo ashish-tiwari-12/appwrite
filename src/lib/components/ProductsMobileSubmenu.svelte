@@ -71,7 +71,7 @@
                 <div class="mt-8">
                     <span
                         class="font-aeonik-fono tracking-loose text-secondary block text-xs uppercase"
-                        >Compare Appwrite<span class="text-accent">_</span></span
+                        >Compare Indobase<span class="text-accent">_</span></span
                     >
                     <div class="mt-3 space-y-3">
                         {#each sublinks as sublink}

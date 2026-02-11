@@ -1,18 +1,18 @@
----
+﻿---
 layout: changelog
-title: Appwrite 1.5.4 released
+title: Indobase 1.5.4 released
 date: 2024-03-25
 cover: /images/changelog/2024-03-25.png
 ---
 
-Appwrite 1.5.4 brings several fixes and a miscellaneous update to enhance your development experience with our platform. 
+Indobase 1.5.4 brings several fixes and a miscellaneous update to enhance your development experience with our platform. 
 
 Fixes:
-* Updated executor version to resolve Docker conflict errors when running Appwrite Functions
+* Updated executor version to resolve Docker conflict errors when running Indobase Functions
 * Improved webhooks to fix failed connections
 * Adjusted msg91 parameters to better match their new terminology
-* Fixed 401 error displayed for Appwrite Function domains when permissions are not configured
-* Fixed Appwrite Functions build command by adjusting trim behavior
+* Fixed 401 error displayed for Indobase Function domains when permissions are not configured
+* Fixed Indobase Functions build command by adjusting trim behavior
 
 Misc:
 * Upgraded console to version 1.5.4 for an improved user interface and added features

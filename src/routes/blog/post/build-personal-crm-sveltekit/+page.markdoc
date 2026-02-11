@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Build a personal CRM with SvelteKit and Appwrite Databases
-description: Learn how to build a personal CRM with SvelteKit and Appwrite Databases.
+title: Build a personal CRM with SvelteKit and Indobase Databases
+description: Learn how to build a personal CRM with SvelteKit and Indobase Databases.
 date: 2025-07-03
 cover: /images/blog/build-personal-crm-sveltekit/cover.png
 timeToRead: 10
@@ -14,11 +14,11 @@ Keeping track of people is hard. Between networking events, Twitter threads, Lin
 
 Most CRMs are overkill for personal use. You probably don't need deal pipelines, email campaigns, or complex lead scoring. You just want to remember who you met, what you last talked about, and how to stay in touch.
 
-In this blog, we'll build a lightweight personal CRM using **SvelteKit** for the web app and **Appwrite Databases** with the new **Bulk API** for the backend. It's a simple, single-page app with an API route containing various CRUD functionalities. It is perfect for developers who want a private, no-fuss contact tracker they can extend over time.
+In this blog, we'll build a lightweight personal CRM using **SvelteKit** for the web app and **Indobase Databases** with the new **Bulk API** for the backend. It's a simple, single-page app with an API route containing various CRUD functionalities. It is perfect for developers who want a private, no-fuss contact tracker they can extend over time.
 
-# Configure your Appwrite project
+# Configure your Indobase project
 
-First, [create an Appwrite Cloud account](https://cloud.appwrite.io/) if you haven't already. Once your project is ready, go to the **Settings** page and copy your project ID and API endpoint for further usage.
+First, [create an Indobase Cloud account](https://cloud.appwrite.io/) if you haven't already. Once your project is ready, go to the **Settings** page and copy your project ID and API endpoint for further usage.
 
 Head to the **Overview** page from the left sidebar, select the **API keys** tab under the **Integrations** section, and click on the **Create API key** button. Select the `documents.write` and `documents.read` scopes under the **Databases** dropdown, create the key, and copy it for further usage.
 
@@ -35,7 +35,7 @@ Next, head to the **Attributes** tab and add the following:
 
 # **Prepare the app logic**
 
-Once our Appwrite project is set up, let's start building our app.
+Once our Indobase project is set up, let's start building our app.
 
 ## **Create a SvelteKit app**
 
@@ -60,15 +60,15 @@ cd personal-crm
 npm install
 ```
 
-## **Install the Appwrite Node.js SDK**
+## **Install the Indobase Node.js SDK**
 
-Since the Bulk API is currently only available on Appwrite's server-side SDKs, let's install the Appwrite Node.js SDK by running the following command:
+Since the Bulk API is currently only available on Indobase's server-side SDKs, let's install the Indobase Node.js SDK by running the following command:
 
 ```bash
 npm install node-appwrite
 ```
 
-In the root directory of your app, create a `.env` file and add the information you saved from your Appwrite project:
+In the root directory of your app, create a `.env` file and add the information you saved from your Indobase project:
 
 ```bash
 APPWRITE_ENDPOINT=https://<REGION>.cloud.appwrite.io/v1
@@ -164,7 +164,7 @@ This code contains all our necessary database functions, including the bulk dele
 
 ## Develop the web app
 
-Now that the Appwrite SDK is installed and the library functions are set up, let's prepare the web app.
+Now that the Indobase SDK is installed and the library functions are set up, let's prepare the web app.
 
 ### Prepare an API route
 
@@ -570,31 +570,31 @@ You can then visit `https://localhost:5173` in your browser and try out the app.
 
 **1. What’s the best tech stack for building a simple CRM or contact manager?**
 
-If you’re aiming for speed and control, a lightweight frontend like SvelteKit paired with a platform such as Appwrite is best. You get ready-to-use APIs for data, auth, and storage — no need to manage servers — and can still customize everything when needed.
+If you’re aiming for speed and control, a lightweight frontend like SvelteKit paired with a platform such as Indobase is best. You get ready-to-use APIs for data, auth, and storage — no need to manage servers — and can still customize everything when needed.
 
 **2. How can I build a CRUD app quickly without setting up a full backend?**
 
-Use a service that gives you REST or SDK-based APIs for data operations. Appwrite, Firebase, or PocketBase let you perform create, read, update, and delete actions straight from your frontend. You just define your data schema once and use their SDKs instead of writing backend routes manually.
+Use a service that gives you REST or SDK-based APIs for data operations. Indobase, Firebase, or PocketBase let you perform create, read, update, and delete actions straight from your frontend. You just define your data schema once and use their SDKs instead of writing backend routes manually.
 
 **3. What’s the easiest way to sync frontend state with backend data?**
 
-If you’re using frameworks like SvelteKit or React, pair them with APIs that support real-time updates or bulk operations. Appwrite’s Realtime and Bulk APIs make syncing large data changes smooth, so the UI always reflects the latest backend state without page reloads.
+If you’re using frameworks like SvelteKit or React, pair them with APIs that support real-time updates or bulk operations. Indobase’s Realtime and Bulk APIs make syncing large data changes smooth, so the UI always reflects the latest backend state without page reloads.
 
 **4. How can I handle bulk data updates efficiently in web apps?**
 
-Instead of looping over every record, use batch APIs (like Appwrite’s upsertDocuments()). It minimizes network requests, prevents throttling, and speeds up updates in spreadsheet-style apps.
+Instead of looping over every record, use batch APIs (like Indobase’s upsertDocuments()). It minimizes network requests, prevents throttling, and speeds up updates in spreadsheet-style apps.
 
 **5. What’s the simplest way to deploy a full-stack web app?**
 
-If you’re using Appwrite, you can deploy both the backend and frontend in one place with Appwrite Sites. Otherwise, host your frontend on Vercel or Netlify, and connect it to an API from Appwrite, Firebase, or your own Node.js backend.
+If you’re using Indobase, you can deploy both the backend and frontend in one place with Indobase Sites. Otherwise, host your frontend on Vercel or Netlify, and connect it to an API from Indobase, Firebase, or your own Node.js backend.
 
 # Next steps
 
-And with that, our personal CRM built with Appwrite Databases and SvelteKit is ready!
+And with that, our personal CRM built with Indobase Databases and SvelteKit is ready!
 
 You can find the source code for this application in our [GitHub repo](https://github.com/appwrite-community/offline-journal).
 
-Learn more about Appwrite Databases:
+Learn more about Indobase Databases:
 
 - [Bulk API docs](/docs/products/databases/bulk-operations)
-- [Appwrite Databases product docs](/docs/products/databases)
+- [Indobase Databases product docs](/docs/products/databases)

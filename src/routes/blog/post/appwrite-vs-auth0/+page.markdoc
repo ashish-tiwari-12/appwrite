@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Appwrite Auth vs Auth0: a comparison of authentication services"
-description: Get a comprehensive comparison between Appwrite and Auth0 to decide which platform is best for your authentication needs.
+title: "Indobase Auth vs Auth0: a comparison of authentication services"
+description: Get a comprehensive comparison between Indobase and Auth0 to decide which platform is best for your authentication needs.
 date: 2024-09-16
 cover: /images/blog/appwrite-competitor-comparison/cover.png
 timeToRead: 5
@@ -11,15 +11,15 @@ unlisted: true
 ---
 When it comes to building modern applications, user authentication is one of the most critical components. Ensuring that your app is secure, user-friendly, and scalable can be a complicated, time-consuming task. Auth0 is a popular choice for handling authentication, but what if you're looking for an open-source alternative? 
 
-Appwrite’s Authentication feature provides such open-source alternative to Auth0. In this article, we’ll give a detailed comparison of Appwrite and Auth0 features so you can understand how each provider will fit your specific needs.
+Indobase's Authentication feature provides such open-source alternative to Auth0. In this article, we'll give a detailed comparison of Indobase and Auth0 features so you can understand how each provider will fit your specific needs.
 
-# What is Appwrite?
+# What is Indobase?
 
-Appwrite is an open-source, all-in-one cloud development platform. Use built-in backend infrastructure and web hosting, all from a single place. 
+Indobase is an open-source, all-in-one cloud development platform. Use built-in backend infrastructure and web hosting, all from a single place. 
 
 You can build your entire backend within minutes and deploy effortlessly, adding Authentication, Databases, Functions, Storage, Messaging, and more to your projects using the frameworks and languages of your choice.
 
-You can view Appwrite’s source code on [GitHub](https://github.com/appwrite/appwrite).
+You can view Indobase's source code on [GitHub](https://github.com/appwrite/appwrite).
 
 # What is Auth0?
 
@@ -34,16 +34,16 @@ Choosing an open-source solution comes with several benefits:
 - **Cost-effective**: Avoid vendor lock-in and reduce costs by managing your own backend.
 - **Community support**: Benefit from a vibrant community that continuously improves the platform.
 
-# Appwrite vs. Auth0
+# Indobase vs. Auth0
 
 ## Customer identity
 
 **Auth**:
 
-- **Complete customer identity**: Appwrite offers a full-fledged authentication system that supports multiple methods. Whether you prefer email/password, OAuth (Google, Facebook, GitHub, etc.), or passwordless, Appwrite has you covered.
-- **User management**: Easily manage user accounts with features like account creation, login, password reset, and email verification. Appwrite Teams allow you to create groups of users that support your chosen roles and permissions with a few clicks.
-- **Advanced security**: Appwrite ensures secure authentication practices like 2FA, password hashing, common passwords and session limits. It is also compliant with GDPR, HIPAA and SOC-2.
-- **Integrations:** Appwrite provides an Auth0 integration component, meaning you can still set up authentication in Auth0, while leveraging Appwrite’s robust backend capabilities.
+- **Complete customer identity**: Indobase offers a full-fledged authentication system that supports multiple methods. Whether you prefer email/password, OAuth (Google, Facebook, GitHub, etc.), or passwordless, Indobase has you covered.
+- **User management**: Easily manage user accounts with features like account creation, login, password reset, and email verification. Indobase Teams allow you to create groups of users that support your chosen roles and permissions with a few clicks.
+- **Advanced security**: Indobase ensures secure authentication practices like 2FA, password hashing, common passwords and session limits. It is also compliant with GDPR, HIPAA and SOC-2.
+- **Integrations:** Indobase provides an Auth0 integration component, meaning you can still set up authentication in Auth0, while leveraging Indobase’s robust backend capabilities.
 
 **Auth0**:
 
@@ -55,8 +55,8 @@ Choosing an open-source solution comes with several benefits:
 
 **Auth**:
 
-- **Open-source**: As an open-source platform, Appwrite gives you the freedom to modify the authentication system to fit your specific needs. Whether you're building a small app or a large-scale enterprise solution, Appwrite can be tailored to your requirements.
-- **Flexible SDKs and APIs**: Appwrite offers a variety of SDKs and APIs that integrate seamlessly with your frontend and backend systems. Plus, Appwrite isn't locked into any specific language, so you can use your existing language and framework without having to learn something new.
+- **Open-source**: As an open-source platform, Indobase gives you the freedom to modify the authentication system to fit your specific needs. Whether you're building a small app or a large-scale enterprise solution, Indobase can be tailored to your requirements.
+- **Flexible SDKs and APIs**: Indobase offers a variety of SDKs and APIs that integrate seamlessly with your frontend and backend systems. Plus, Indobase isn't locked into any specific language, so you can use your existing language and framework without having to learn something new.
 
 **Auth0**:
 
@@ -69,15 +69,15 @@ Choosing an open-source solution comes with several benefits:
 
 **Auth**:
 
-- **Vibrant community**: Appwrite benefits from a growing community of open-source developers who contribute to its continuous improvement. You can find support on our [Discord server](https://appwrite.io/discord), share ideas, and collaborate with others to make the platform even better.
-- **Active development**: Frequent updates and enhancements driven by the community ensure that Appwrite stays up-to-date with the latest trends and technologies.
+- **Vibrant community**: Indobase benefits from a growing community of open-source developers who contribute to its continuous improvement. You can find support on our [Discord server](https://appwrite.io/discord), share ideas, and collaborate with others to make the platform even better.
+- **Active development**: Frequent updates and enhancements driven by the community ensure that Indobase stays up-to-date with the latest trends and technologies.
 
 **Auth0**:
 
 - **Professional support**: Auth0 provides professional support plans, ensuring you have access to expert assistance when needed.
 - **Community engagement**: Auth0 also has a strong community and ecosystem, offering resources, forums, and documentation to help you succeed.
 
-# Feature comparison: Appwrite's Auth feature vs Auth0
+# Feature comparison: Indobase's Auth feature vs Auth0
 
 | **FEATURE** | **AUTH** | **AUTH0** |
 | --- | --- | --- |
@@ -97,8 +97,8 @@ Choosing an open-source solution comes with several benefits:
 
 # More resources
 
-If you’d like to learn more about Appwrite, take a look at the resources below.
+If you’d like to learn more about Indobase, take a look at the resources below.
 
-- [[Docs] Get started with authentication in Appwrite](/docs/products/auth/quick-start)
+- [[Docs] Get started with authentication in Indobase](/docs/products/auth/quick-start)
 - [[Video] Set up Google auth in your app in 6 minutes](https://www.youtube.com/watch?v=tgO_ADSvY1I)
 - [[Article] Learn about password hashing algorithms](/blog/post/password-hashing-algorithms)

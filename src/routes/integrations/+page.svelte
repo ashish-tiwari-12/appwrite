@@ -20,7 +20,7 @@
 
     const title = 'Integrations' + TITLE_SUFFIX;
     const description =
-        'Connect your favorite apps to Appwrite for a unified tech stack. Explore the Appwrite catalog: a marketplace to find integrations for your projects.';
+        'Connect your favorite apps to Indobase for a unified tech stack. Explore the Indobase catalog: a marketplace to find integrations for your projects.';
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 
     // search functionality
@@ -111,7 +111,7 @@
                         Discover infinite possibilities
                     </h1>
                     <p class="text-description">
-                        Find your favourite apps to integrate with your projects in Appwrite's
+                        Find your favourite apps to integrate with your projects in Indobase's
                         marketplace.
                     </p>
                 </div>
@@ -429,7 +429,7 @@
                         </h2>
                         <p class="text-main-body font-medium">
                             Join our Technology Partners program to integrate your solutions with
-                            Appwrite’s API, enhancing functionality and expanding your reach.
+                            Indobase’s API, enhancing functionality and expanding your reach.
                         </p>
                         <Button href="/integrations/technology-partner" class="mt-4 self-center">
                             <span class="text">Get Started</span>

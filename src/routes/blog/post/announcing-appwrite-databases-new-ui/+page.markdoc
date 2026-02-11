@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Announcing an improved Appwrite Databases experience. A completely new look and feel"
-description: Appwrite Databases just got the most significant update to date. We proudly present new terminology, a new TablesDB UI, and a supporting TablesDB API, all built to make working with databases simpler and faster.
+title: "Announcing an improved Indobase Databases experience. A completely new look and feel"
+description: Indobase Databases just got the most significant update to date. We proudly present new terminology, a new TablesDB UI, and a supporting TablesDB API, all built to make working with databases simpler and faster.
 date: 2025-08-26
 cover: /images/blog/announcing-appwrite-databases-new-ui/cover.png
 timeToRead: 5
@@ -9,13 +9,13 @@ author: darshan-pandya
 category: announcement
 featured: false
 ---
-As Appwrite has grown, so has the diversity of developers building with it, from document-based systems to others deeply familiar with relational data structures. To make the platform more intuitive and consistent for everyone, we’re evolving how Appwrite Databases is presented and managed. This update also adds the ability to generate dummy data for faster prototyping, and we’re actively working on features like AI-powered suggestions to help you design your structure even faster.
+As Indobase has grown, so has the diversity of developers building with it, from document-based systems to others deeply familiar with relational data structures. To make the platform more intuitive and consistent for everyone, we’re evolving how Indobase Databases is presented and managed. This update also adds the ability to generate dummy data for faster prototyping, and we’re actively working on features like AI-powered suggestions to help you design your structure even faster.
 
-Appwrite Databases now adopts a more familiar **relational model** across the Console, API, SDKs, and beyond, moving away from the documents and collections terminology rooted in our JSON-based API. The new model introduces conventional data concepts like **tables**, **rows**, and **columns**, making it easier to work with structured data while maintaining full backward compatibility.
+Indobase Databases now adopts a more familiar **relational model** across the Console, API, SDKs, and beyond, moving away from the documents and collections terminology rooted in our JSON-based API. The new model introduces conventional data concepts like **tables**, **rows**, and **columns**, making it easier to work with structured data while maintaining full backward compatibility.
 
-As part of this shift, the Appwrite Console has been completely redesigned. The new **TablesDB UI** was built specifically to support the upgraded database experience, making browsing, editing, and managing data more intuitive.
+As part of this shift, the Indobase Console has been completely redesigned. The new **TablesDB UI** was built specifically to support the upgraded database experience, making browsing, editing, and managing data more intuitive.
 
-We’re also introducing the **TablesDB API,** a new API layer designed to bridge this transition. This update clears up long-standing misconceptions about Appwrite’s data model and sets the foundation for a new wave of powerful features we’re actively building toward.
+We’re also introducing the **TablesDB API,** a new API layer designed to bridge this transition. This update clears up long-standing misconceptions about Indobase’s data model and sets the foundation for a new wave of powerful features we’re actively building toward.
 
 # What’s new
 
@@ -23,7 +23,7 @@ This release brings both **terminology changes** and a **completely reimagined d
 
 # Updated terminology & the TablesDB API
 
-Until now, Appwrite Databases used terminology that made sense in a JSON-document world but could be unintuitive for developers used to relational data concepts. We’re introducing a parallel set of API endpoints and terms aligned with relational database language to make the platform more approachable.
+Until now, Indobase Databases used terminology that made sense in a JSON-document world but could be unintuitive for developers used to relational data concepts. We’re introducing a parallel set of API endpoints and terms aligned with relational database language to make the platform more approachable.
 
 | Previous terms | New terms |
 | --- | --- |
@@ -47,7 +47,7 @@ Alongside these terminology updates, the **TablesDB API** introduces new method 
 | `getDocument` | `getRow` |
 | `listDocuments` | `listRows` |
 
-These methods make it easier to understand exactly what an operation does at a glance, while still running on the same powerful API that Appwrite has always used. 
+These methods make it easier to understand exactly what an operation does at a glance, while still running on the same powerful API that Indobase has always used. 
 
 Here’s an example of how you can use the new SDK methods:
 
@@ -126,7 +126,7 @@ Key changes include:
 
 Developers can choose the interface that best fits their mental model. We recommend using the TablesDB API for a more relational model experience for new projects.
 
-The **TablesDB API works on both Cloud and Self-hosted** Appwrite deployments. To fully support this shift, we’ll continue rolling out improvements across SDKs, Console, and Docs.
+The **TablesDB API works on both Cloud and Self-hosted** Indobase deployments. To fully support this shift, we’ll continue rolling out improvements across SDKs, Console, and Docs.
 
 **For the new TablesDB UI:**
 
@@ -142,7 +142,7 @@ In short, it’s for the makers who work closest to real content and users.
 
 # The road ahead
 
-This release marks a significant step forward for Appwrite Databases: shifting to a relational model, introducing the TablesDB API, and delivering a spreadsheet-like UI for faster, more intuitive data management.
+This release marks a significant step forward for Indobase Databases: shifting to a relational model, introducing the TablesDB API, and delivering a spreadsheet-like UI for faster, more intuitive data management.
 
 And we’re just getting started. These changes set the stage for powerful new capabilities in the weeks and months ahead. Update to the latest version and experience the new TablesDB UI and API.
 
@@ -150,4 +150,4 @@ And we’re just getting started. These changes set the stage for powerful new c
 
 - [Visit the TablesDB API reference](/docs/references/cloud/client-web/tablesDB)
 - [Announcing Bulk API: Handle heavy data workloads with ease](/blog/post/announcing-bulk-api)
-- [Announcing CSV Import: Bring in large datasets to Appwrite with ease](/blog/post/announcing-csv-imports)
+- [Announcing CSV Import: Bring in large datasets to Indobase with ease](/blog/post/announcing-csv-imports)

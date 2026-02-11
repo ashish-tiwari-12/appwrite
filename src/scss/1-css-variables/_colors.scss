@@ -4,11 +4,11 @@
     --web-color-background: var(--web-color-greyscale-50);
     --web-color-background-docs: var(--web-color-greyscale-25);
     --web-color-primary: var(--web-color-greyscale-900);
-    --web-color-secondary: var(--web-color-greyscale-700);
+    --web-color-secondary: var(--web-color-white);
     --web-color-tertiary: var(--web-color-greyscale-600);
-    --web-color-accent: var(--web-color-pink-500);
-    --web-color-accent-darker: var(--web-color-pink-600);
-    --web-color-accent-click: var(--web-color-pink-500);
+    --web-color-accent: var(--web-color-saffron-500);
+    --web-color-accent-darker: var(--web-color-saffron-600);
+    --web-color-accent-click: var(--web-color-saffron-500);
     --web-color-card: var(--web-color-white) / 0.9;
     --web-color-smooth: var(--web-color-greyscale-900) / 0.04;
     --web-color-subtle: var(--web-color-greyscale-50);
@@ -21,10 +21,10 @@
     --web-color-background: var(--web-color-greyscale-900);
     --web-color-background-docs: var(--web-color-greyscale-900);
     --web-color-primary: var(--web-color-greyscale-100);
-    --web-color-secondary: var(--web-color-greyscale-300);
+    --web-color-secondary: var(--web-color-white);
     --web-color-tertiary: var(--web-color-greyscale-600);
-    --web-color-accent: var(--web-color-pink-500);
-    --web-color-accent-darker: var(--web-color-pink-600);
+    --web-color-accent: #FFFFFF;
+    --web-color-accent-darker: var(--web-color-saffron-600);
     --web-color-accent-click: var(--web-color-greyscale-50);
     --web-color-card: var(--web-color-greyscale-850) / 0.9;
     --web-color-smooth: var(--web-color-white) / 0.06;
@@ -41,6 +41,20 @@
   --web-color-pink-500: var(--web-color-pink-hue) 98% 60%; /* #FD366E */
   --web-color-pink-600: var(--web-color-pink-hue) 65% 48%;
   --web-color-pink-700: var(--web-color-pink-hue) 65% 36%;
+
+  /* saffron (India-inspired primary) */
+  --web-color-saffron-hue: 39;
+  --web-color-saffron-200: var(--web-color-saffron-hue) 100% 88%;
+  --web-color-saffron-500: var(--web-color-saffron-hue) 100% 60%; /* #FF9933 */
+  --web-color-saffron-600: var(--web-color-saffron-hue) 100% 45%;
+  --web-color-saffron-700: var(--web-color-saffron-hue) 100% 35%;
+
+  /* green (India-inspired secondary) */
+  --web-color-green-hue: 134;
+  --web-color-green-200: var(--web-color-green-hue) 78% 75%;
+  --web-color-green-300: var(--web-color-green-hue) 78% 52%;
+  --web-color-green-500: var(--web-color-green-hue) 78% 40%; /* #138808 */
+  --web-color-green-700: var(--web-color-green-hue) 78% 27%; /* #138808 */
 
   /* red */
   --web-color-red-hue: 3;

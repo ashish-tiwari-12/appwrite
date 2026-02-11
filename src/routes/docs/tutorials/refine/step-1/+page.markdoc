@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Build a blog admin panel with Refine
-description: Learn to build a Refine app with no backend code using an Appwrite backend.
+description: Learn to build a Refine app with no backend code using an Indobase backend.
 step: 1
 difficulty: beginner
 back: /docs/tutorials
@@ -11,7 +11,7 @@ category: Web
 ---
 
 **Blog admin panel**: a CRUD app to manage Blog content.
-In this tutorial, you will build admin panel app with Appwrite and [Refine](https://github.com/refinedev/refine).
+In this tutorial, you will build admin panel app with Indobase and [Refine](https://github.com/refinedev/refine).
 
 
 

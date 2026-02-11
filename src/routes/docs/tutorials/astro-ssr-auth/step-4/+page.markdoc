@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Add a server hook
-description: Add authentication to a Astro project using Appwrite.
+description: Add authentication to a Astro project using Indobase.
 step: 4
 ---
 

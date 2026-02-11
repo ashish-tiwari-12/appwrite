@@ -1,12 +1,12 @@
 # Configure GitHub app {% #git %}
 
-Appwrite supports automatic deployments through Git integration. In order for Appwrite to access your repos, you must [create a GitHub app](https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps) to enable this integration. The GitHub app requires the following configurations.
+Indobase supports automatic deployments through Git integration. In order for Indobase to access your repos, you must [create a GitHub app](https://docs.github.com/en/apps/creating-github-apps/about-creating-github-apps/about-creating-github-apps) to enable this integration. The GitHub app requires the following configurations.
 
-For automatic Git deployment to work, Appwrite needs to receive communication from GitHub, this means your Appwrite project must be accessible on the internet. If you're running on `localhost`, you need to run a proxy like [ngrok](https://ngrok.com/).
+For automatic Git deployment to work, Indobase needs to receive communication from GitHub, this means your Indobase project must be accessible on the internet. If you're running on `localhost`, you need to run a proxy like [ngrok](https://ngrok.com/).
 
 ## GitHub App name {% #github-app-name %}
 
-The GitHub App name will be displayed when connecting Appwrite to GitHub. In addition, this name will be transformed to a slug ("My GitHub App" will become "my-github-app") and appear in the URL when accessing your app in GitHub. This slug should be set as the `_APP_VCS_GITHUB_APP_NAME` environment variable in Appwrite.
+The GitHub App name will be displayed when connecting Indobase to GitHub. In addition, this name will be transformed to a slug ("My GitHub App" will become "my-github-app") and appear in the URL when accessing your app in GitHub. This slug should be set as the `_APP_VCS_GITHUB_APP_NAME` environment variable in Indobase.
 
 ## Homepage URL {% #github-homepage-url %}
 
@@ -14,7 +14,7 @@ The homepage URL will appear when looking at the public page of your app. It can
 
 ## Callback URL {% #callback %}
 
-GitHub will use **callback URLs** to redirect users back to Appwrite. Set these callback URLs under **Identifying and authorizing users** in the same order as listed below.
+GitHub will use **callback URLs** to redirect users back to Indobase. Set these callback URLs under **Identifying and authorizing users** in the same order as listed below.
 
 | URLs                                                                          |
 | ----------------------------------------------------------------------------- |
@@ -29,9 +29,9 @@ Check the **Redirect on update** box under the **Post installation** section.
 
 ## Webhook {% #github-webhooks %}
 
-GitHub will notify Appwrite about events like new commits using webhooks. Under **Webhook**, you need to check the **Active** checkbox. You also need to set the **Webhook URL** as `https://<HOSTNAME_OR_IP>/v1/vcs/github/events`.
+GitHub will notify Indobase about events like new commits using webhooks. Under **Webhook**, you need to check the **Active** checkbox. You also need to set the **Webhook URL** as `https://<HOSTNAME_OR_IP>/v1/vcs/github/events`.
 
-If you're running Appwrite on `localhost`, GitHub can't send requests to Appwrite through webhooks and automatic deployments won't work. You'll need to host Appwrite on a server or use a proxy like [ngrok](https://ngrok.com/) to make Appwrite accessible to GitHub.
+If you're running Indobase on `localhost`, GitHub can't send requests to Indobase through webhooks and automatic deployments won't work. You'll need to host Indobase on a server or use a proxy like [ngrok](https://ngrok.com/) to make Indobase accessible to GitHub.
 
 ## Repository permissions {% #repository-permission %}
 
@@ -67,7 +67,7 @@ Select these under the **Subscribe to events** dropdown.
 
 ## Where can this GitHub App be installed? {% #github-where-installed %}
 
-Check the **Any account** box under **Where can this GitHub App be installed?** section. This is important to allow you to install the GitHub app on multiple Appwrite projects.
+Check the **Any account** box under **Where can this GitHub App be installed?** section. This is important to allow you to install the GitHub app on multiple Indobase projects.
 
 ## Environment variables {% #github-variables %}
 
@@ -75,10 +75,10 @@ After creating your app, you'll have to configure the following environment vari
 
 | Variable                         | Description                                                                                                                                                                                                                                                                                                                                                                                                                   |
 | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `_APP_DOMAIN`                    | Your main Appwrite domain used to access the Appwrite Console. When setting a public suffix domain, Appwrite will attempt to issue a valid SSL certificate automatically. When used with a dev domain, Appwrite will assign a self-signed SSL certificate. If you're using a proxy for **localhost development**, such as [ngrok](https://ngrok.com/), this will be the domain of your localhost proxy.                       |
-| `_APP_DOMAIN_TARGET`             | A hostname to serve as a CNAME target for your Appwrite custom domains. You can use the same value as used for the Appwrite `_APP_DOMAIN` variable. If you're using a proxy for **localhost development**, such as [ngrok](https://ngrok.com/), this will be the domain of your localhost proxy, such as `dd65-2405-201-4013-d8d7-b4c5-fb73-39f9-285c.ngrok.io`.                                                              |
-| `_APP_DOMAIN_FUNCTIONS`          | This will be used for system generated [Function Domains](/docs/products/functions/domains). When a function domain is generated, it will be `[UNIQUE_ID].[_APP_DOMAIN_FUNCTIONS]`. If `_APP_DOMAIN_FUNCTIONS` is set to `example.com` for example, the generated domain for functions will be something like `64d4d22db370ae41a32e.example.com`. You can use the same value as used for the Appwrite `_APP_DOMAIN` variable. |
-| `_APP_DOMAIN_SITES`              | This will be used for system generated [Site Domains](/docs/products/sites/domains). When a site domain is generated, it will be `[UNIQUE_ID].[_APP_DOMAIN_SITES]`. If `_APP_DOMAIN_SITES` is set to `example.com` for example, the generated domain for sites will be something like `64d4d22db370ae41a32e.example.com`. You can use the same value as used for the Appwrite `_APP_DOMAIN` variable.                         |
+| `_APP_DOMAIN`                    | Your main Indobase domain used to access the Indobase Console. When setting a public suffix domain, Indobase will attempt to issue a valid SSL certificate automatically. When used with a dev domain, Indobase will assign a self-signed SSL certificate. If you're using a proxy for **localhost development**, such as [ngrok](https://ngrok.com/), this will be the domain of your localhost proxy.                       |
+| `_APP_DOMAIN_TARGET`             | A hostname to serve as a CNAME target for your Indobase custom domains. You can use the same value as used for the Indobase `_APP_DOMAIN` variable. If you're using a proxy for **localhost development**, such as [ngrok](https://ngrok.com/), this will be the domain of your localhost proxy, such as `dd65-2405-201-4013-d8d7-b4c5-fb73-39f9-285c.ngrok.io`.                                                              |
+| `_APP_DOMAIN_FUNCTIONS`          | This will be used for system generated [Function Domains](/docs/products/functions/domains). When a function domain is generated, it will be `[UNIQUE_ID].[_APP_DOMAIN_FUNCTIONS]`. If `_APP_DOMAIN_FUNCTIONS` is set to `example.com` for example, the generated domain for functions will be something like `64d4d22db370ae41a32e.example.com`. You can use the same value as used for the Indobase `_APP_DOMAIN` variable. |
+| `_APP_DOMAIN_SITES`              | This will be used for system generated [Site Domains](/docs/products/sites/domains). When a site domain is generated, it will be `[UNIQUE_ID].[_APP_DOMAIN_SITES]`. If `_APP_DOMAIN_SITES` is set to `example.com` for example, the generated domain for sites will be something like `64d4d22db370ae41a32e.example.com`. You can use the same value as used for the Indobase `_APP_DOMAIN` variable.                         |
 | `_APP_VCS_GITHUB_APP_NAME`       | Name of your GitHub app. This is the display name you'll see on GitHub and it will be visible in your GitHub app's URL.                                                                                                                                                                                                                                                                                                       |
 | `_APP_VCS_GITHUB_PRIVATE_KEY`    | RSA private key from GitHub wrapped with double quotes and newlines replaced with `\n`. You can generate private keys from GitHub application settings.                                                                                                                                                                                                                                                                       |
 | `_APP_VCS_GITHUB_APP_ID`         | GitHub application ID. You can find it in your GitHub application details.                                                                                                                                                                                                                                                                                                                                                    |

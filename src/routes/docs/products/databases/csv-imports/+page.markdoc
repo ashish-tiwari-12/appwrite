@@ -1,12 +1,12 @@
----
+﻿---
 layout: article
 title: CSV imports
-description: Master row imports with Appwrite's CSV Import feature. Learn how to create rows within your tables by uploading a CSV file.
+description: Master row imports with Indobase's CSV Import feature. Learn how to create rows within your tables by uploading a CSV file.
 ---
 
-Appwrite's CSV Import feature allows you to create multiple rows in a table by uploading a single CSV file. This is especially useful for importing existing data, seeding test environments, or migrating from other systems.
+Indobase's CSV Import feature allows you to create multiple rows in a table by uploading a single CSV file. This is especially useful for importing existing data, seeding test environments, or migrating from other systems.
 
-This feature is available in both Appwrite Cloud and the self-hosted version.
+This feature is available in both Indobase Cloud and the self-hosted version.
 
 # Prepare your table {% #prepare-table %}
 
@@ -15,9 +15,9 @@ To get started, create a table in your database and define its columns. Your CSV
 Each column in the CSV should map to a column key in your table, and each row should represent a new row.
 
 {% info title="Good to know" %}
-You can optionally include the `$id` column to define custom row IDs. If not provided, Appwrite will generate unique IDs for each row automatically.
+You can optionally include the `$id` column to define custom row IDs. If not provided, Indobase will generate unique IDs for each row automatically.
 
-Appwrite imports rows in batches of 100 rows at a time. If a provided ID already exists in the table, the entire batch containing that row will fail, but rows in other batches will continue to be imported successfully.
+Indobase imports rows in batches of 100 rows at a time. If a provided ID already exists in the table, the entire batch containing that row will fail, but rows in other batches will continue to be imported successfully.
 {% /info %}
 
 An example of a valid CSV file for a table with the following columns:
@@ -44,7 +44,7 @@ Different column types handle empty values differently:
 
 # Create and update timestamps {% #created-at-and-updated-at %}
 
-You can also optionally include `$createdAt` and `$updatedAt` columns to set custom timestamps for imported rows. If omitted, Appwrite sets these automatically during import.
+You can also optionally include `$createdAt` and `$updatedAt` columns to set custom timestamps for imported rows. If omitted, Indobase sets these automatically during import.
 
 An example of a valid CSV file with `$createdAt` and `$updatedAt` timestamps:
 
@@ -124,7 +124,7 @@ If you want to add double quotes to a string column, you need to escape them by 
 
 # Import rows from the Console {% #import-console %}
 
-To import rows using the Appwrite Console:
+To import rows using the Indobase Console:
 
 1. Go to your project -> Databases
 2. Navigate to your target Table
@@ -142,6 +142,6 @@ CSV imports run as background tasks. The Console displays a floating progress ba
 
 # Additional resources {% #additional-resources %}
 
-- [Appwrite CLI](/docs/command-line)
+- [Indobase CLI](/docs/command-line)
 - [Database Permissions](/docs/products/databases/permissions)
 - [Database API Reference](/docs/references/cloud/client-web/databases)

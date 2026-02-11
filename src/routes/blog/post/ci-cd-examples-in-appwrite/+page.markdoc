@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "CI/CD examples in Appwrite CLI"
-description: Explore the brand-new Appwrite CLI features in detail and take a look at some CI/CD examples.
+title: "CI/CD examples in Indobase CLI"
+description: Explore the brand-new Indobase CLI features in detail and take a look at some CI/CD examples.
 date: 2024-08-20
 cover: /images/blog/cdi-cover.png
 timeToRead: 5
@@ -9,13 +9,13 @@ author: ebenezer-don
 category: product
 featured: false
 ---
-The Appwrite CLI has undergone significant updates to enhance support for Continuous Integration and Continuous Deployment (CI/CD) pipelines. These changes make it easier to automate deployment processes and ensure robust, non-interactive actions. In this article, we’ll explore the new additions, the benefits of these enhancements for CI/CD pipelines, and best practices for using the Appwrite CLI in your workflows.
+The Indobase CLI has undergone significant updates to enhance support for Continuous Integration and Continuous Deployment (CI/CD) pipelines. These changes make it easier to automate deployment processes and ensure robust, non-interactive actions. In this article, we’ll explore the new additions, the benefits of these enhancements for CI/CD pipelines, and best practices for using the Indobase CLI in your workflows.
 
 # Key features
 
 ## Improved non-interactive commands
 
-To support CI/CD pipelines, the Appwrite CLI now fully accommodates non-interactive actions for all commands. This is important for CI/CD pipelines, where manual intervention needs to be minimized.
+To support CI/CD pipelines, the Indobase CLI now fully accommodates non-interactive actions for all commands. This is important for CI/CD pipelines, where manual intervention needs to be minimized.
 
 ### The `--force` flag
 
@@ -50,7 +50,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Install Appwrite CLI
+      - name: Install Indobase CLI
         run: npm install -g appwrite-cli
       - name: Pull Collections
         run: appwrite pull collections --all --force
@@ -79,7 +79,7 @@ appwrite push collection --collection-id="collection_id"
 
 ## Headless login
 
-Previously, the Appwrite CLI supported non-interactive login using API keys for authorization. This was done using the following command:
+Previously, the Indobase CLI supported non-interactive login using API keys for authorization. This was done using the following command:
 
 ```bash
 appwrite client --endpoint "https://<YOUR-ENDPOINT>/v1" --project-id "<YOUR-PROJECT-ID>" --key "<YOUR-API-KEY>"
@@ -110,7 +110,7 @@ pipeline {
         APPWRITE_ENDPOINT = credentials('appwrite-endpoint')
     }
     stages {
-        stage('Login to Appwrite') {
+        stage('Login to Indobase') {
             steps {
                 sh 'appwrite login --email $APPWRITE_EMAIL --password $APPWRITE_PASSWORD --endpoint $APPWRITE_ENDPOINT'
             }
@@ -137,11 +137,11 @@ Using flags like `--force` and `--all` means that all necessary commands can
 
 - **User-level command execution**
 
-The headless login feature extends the flexibility of the Appwrite CLI by allowing user-level command execution, which is useful for scenarios where user-specific actions are required.
+The headless login feature extends the flexibility of the Indobase CLI by allowing user-level command execution, which is useful for scenarios where user-specific actions are required.
 
-# Best practices for using Appwrite CLI in CI/CD
+# Best practices for using Indobase CLI in CI/CD
 
-To ensure the best results when using the Appwrite CLI in your CI/CD pipelines, it’s important to follow these best practices:
+To ensure the best results when using the Indobase CLI in your CI/CD pipelines, it’s important to follow these best practices:
 
 1. **Secure credentials management:** Use environment variables or secret management features in your CI/CD platform to store sensitive information like API keys, emails, and passwords securely.
 2. **Backup data:** Always back up your current database before starting a migration process. This ensures you can restore your data if something goes wrong.
@@ -152,9 +152,9 @@ To ensure the best results when using the Appwrite CLI in your CI/CD pipelines, 
 
 # Conclusion
 
-The latest updates to the Appwrite CLI make it much easier to use in CI/CD pipelines. Now, you can run deployment commands without any prompts, handle bulk operations more smoothly, and log in without a user interface. By following the recommended best practices and adding these features to your CI/CD workflows, you can make your deployment process more efficient and secure, ensuring a smoother development lifecycle.
+The latest updates to the Indobase CLI make it much easier to use in CI/CD pipelines. Now, you can run deployment commands without any prompts, handle bulk operations more smoothly, and log in without a user interface. By following the recommended best practices and adding these features to your CI/CD workflows, you can make your deployment process more efficient and secure, ensuring a smoother development lifecycle.
 
 # More resources:
 
-- [Appwrite CLI commands](https://appwrite.io/docs/tooling/command-line/commands)
-- [Appwrite non-interactive docs](https://appwrite.io/docs/tooling/command-line/non-interactive)
+- [Indobase CLI commands](https://appwrite.io/docs/tooling/command-line/commands)
+- [Indobase non-interactive docs](https://appwrite.io/docs/tooling/command-line/non-interactive)

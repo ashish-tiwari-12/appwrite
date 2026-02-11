@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Announcing time helper queries: Cleaner, more expressive time-based queries"
 description: Handle time-based filtering directly in your queries using new helpers for created and updated timestamps.
@@ -68,7 +68,7 @@ For devs, it’s about code clarity and scalability. Clean, expressive queries r
 
 # Get started
 
-Time helper queries are live on Appwrite Cloud and Self-Hosted. They are designed to make time-based filtering more intuitive and maintainable as your applications scale. 
+Time helper queries are live on Indobase Cloud and Self-Hosted. They are designed to make time-based filtering more intuitive and maintainable as your applications scale. 
 
 Instead of cluttered conditions around internal fields, you now have simple operators that make intent explicit, reduce boilerplate, and help ensure your queries remain clean and predictable even as datasets grow larger and more complex.
 
@@ -76,5 +76,5 @@ Instead of cluttered conditions around internal fields, you now have simple oper
 
 - [Read the documentation to get started](/docs/products/databases/queries#time-helpers)
 - [Announcing Opt-in relationship loading: Granular control for smarter data fetching](/blog/post/announcing-opt-in-relationship-loading)
-- [Announcing an improved Appwrite Databases. A completely new look, feel, and experience](/blog/post/announcing-appwrite-databases-new-ui)
+- [Announcing an improved Indobase Databases. A completely new look, feel, and experience](/blog/post/announcing-appwrite-databases-new-ui)
 - [Announcing Database Upsert: Simplify your database interactions](/blog/post/announcing-database-upsert)

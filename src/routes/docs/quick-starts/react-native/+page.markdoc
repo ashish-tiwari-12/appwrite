@@ -1,13 +1,13 @@
----
+﻿---
 layout: article
 title: Start with React Native
-description: Discover how to leverage Appwrite's powerful backend to help you build React Native apps for iOS, Android and other native platforms.
+description: Discover how to leverage Indobase's powerful backend to help you build React Native apps for iOS, Android and other native platforms.
 difficulty: beginner
 readtime: 10
 back: /docs/quick-starts
 ---
 
-Learn how to setup your first React Native project powered by Appwrite.
+Learn how to setup your first React Native project powered by Indobase.
 The React Native SDK is still in `beta`. Proceed with caution if you plan to use this SDK in production.
 
 {% info title="React for web" %}
@@ -25,7 +25,7 @@ cd my-app
 {% /section %}
 
 {% section #step-2 step=2 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -35,7 +35,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console).
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 Then, under **Add a platform**, add a **Android app** or a **Apple app**.
 
@@ -69,15 +69,15 @@ Learn more about Android app module
 You can skip optional steps.
 {% /section %}
 
-{% section #step-3 step=3 title="Install Appwrite" %}
-Install the Appwrite SDK for React Native and required dependencies.
+{% section #step-3 step=3 title="Install Indobase" %}
+Install the Indobase SDK for React Native and required dependencies.
 
 ```sh
 npx expo install react-native-appwrite react-native-url-polyfill
 ```
 {% /section %}
 
-{% section #step-4 step=4 title="Implement Appwrite" %}
+{% section #step-4 step=4 title="Implement Indobase" %}
 Find your project's ID in the **Settings** page.
 
 {% only_dark %}
@@ -90,7 +90,7 @@ Find your project's ID in the **Settings** page.
 
 Open `app/(tabs)/index.tsx` and add the following code to it, replace `<PROJECT_ID>` with your project ID and `<YOUR_PLATFORM>` with your application id or package name.
 
-This imports and initializes Appwrite and defines some basic authentication methods.
+This imports and initializes Indobase and defines some basic authentication methods.
 
 ```client-react-native
 import { StatusBar } from 'expo-status-bar';
@@ -145,7 +145,7 @@ const styles = StyleSheet.create({
 {% /section %}
 
 {% section #step-5 step=5 title="Create a login form" %}
-With `Client` and `Account` service initialized, you can now use them to make your first requests to Appwrite.
+With `Client` and `Account` service initialized, you can now use them to make your first requests to Indobase.
 
 Add the following components to your `App.js` file to create a simple login form.
 

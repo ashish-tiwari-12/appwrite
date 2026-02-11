@@ -71,7 +71,7 @@
 <div class="web-u-row-gap-80 relative grid gap-8 md:grid-cols-2">
     <section class="web-hero flex items-center justify-center gap-y-8">
         <h2 class="text-display font-aeonik-pro text-primary max-w-[500px] text-center">
-            Start building with Appwrite today
+            Start building with Indobase today
         </h2>
         <Button
             variant="transparent"

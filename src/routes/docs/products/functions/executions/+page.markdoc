@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Execution
-description: Learn how Appwrite handles serverless function executions. More specifically, execution status, details and function logging.
+description: Learn how Indobase handles serverless function executions. More specifically, execution status, details and function logging.
 ---
 
-Each time an Appwrite Function runs, an **execution** is created.
+Each time an Indobase Function runs, an **execution** is created.
 Each execution has a unique ID. If [you enable execution logs](/docs/products/functions/functions#execution-logs) in your function,
 you can find function executions logged in the **Executions** tab.
 
@@ -87,5 +87,5 @@ to explicitly log the information you need.
 Logs are not retained forever in order to be compliant with GDPR and other data privacy standards.
 Free plan organizations will retain logs for 24 hours, Pro plan organizations will retain logs for 7 days.
 
-If you need longer log retention, you can log to an Appwrite table.
-Remember to configure proper permissions and implement Appwrite Functions or other scheduled tasks to expire and clean up logs.
+If you need longer log retention, you can log to an Indobase table.
+Remember to configure proper permissions and implement Indobase Functions or other scheduled tasks to expire and clean up logs.

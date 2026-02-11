@@ -82,7 +82,7 @@
         <div class="notification">
             <div class="header">
                 <div class="icon-bell"></div>
-                <span>APPWRITE</span>
+                <span>Indobase</span>
                 <span>now</span>
             </div>
             <span class="title text-caption font-medium">{title}</span>

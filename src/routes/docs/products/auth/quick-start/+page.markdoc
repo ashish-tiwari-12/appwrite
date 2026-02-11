@@ -1,13 +1,13 @@
----
+﻿---
 layout: article
 title: Start with Authentication
-description: Effortlessly add authentication to your apps - simple signup & login in just minutes with Appwrite Authentication
+description: Effortlessly add authentication to your apps - simple signup & login in just minutes with Indobase Authentication
 ---
-You can get up and running with Appwrite Authentication in minutes.
+You can get up and running with Indobase Authentication in minutes.
 You can add basic email and password authentication to your app with just a few lines of code.
 
 {% section #sign-up step=1 title="Signup" %}
-You can use the Appwrite [Client SDKs](/docs/sdks#client) to create an account using email and password.
+You can use the Indobase [Client SDKs](/docs/sdks#client) to create an account using email and password.
 
 {% multicode %}
 ```client-web
@@ -41,7 +41,7 @@ final user = await account.create(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -155,7 +155,7 @@ const session = await account.createEmailPasswordSession({
 {% section #check-authentication-state step=3 title="Check authentication state" %}
 After logging in, you can check the authentication state of the user.
 
-Appwrite's SDKs are stateless, so you need to manage the session state in your app. 
+Indobase's SDKs are stateless, so you need to manage the session state in your app. 
 You can use the [Get Account](/docs/references/cloud/client-web/account#get) method to check if the user is logged in.
 
 {% multicode %}
@@ -423,16 +423,16 @@ First, create a `ChangeNotifier` to manage the authentication state.
 ```client-flutter
 import 'package:flutter/material.dart';
 import 'package:appwrite/appwrite.dart' show Client, ID;
-import 'package:appwrite/appwrite.dart' as Appwrite;
+import 'package:appwrite/appwrite.dart' as Indobase;
 import 'package:appwrite/models.dart' show User;
 
 class Account extends ChangeNotifier {
-  final Appwrite.Account _account;
+  final Indobase.Account _account;
 
   User? _user;
   User? get user => _user;
 
-  Account(Client client) : _account = Appwrite.Account(client);
+  Account(Client client) : _account = Indobase.Account(client);
 
   Future<void> init() async {
     try {
@@ -485,14 +485,14 @@ final router = GoRouter(
 {% tabsitem #apple title="Apple" %}
 For Apple platforms, this example uses a `NavigationStack` but you can use similar concepts with other navigation methods.
 
-Initialize Appwrite and create an `AppwriteService`.
+Initialize Indobase and create an `AppwriteService`.
 ```client-apple
 import Foundation
-import Appwrite
+import Indobase
 import AppwriteModels
 import JSONCodable
 
-class Appwrite {
+class Indobase {
     var client: Client
     var account: Account
     var tablesDB: TablesDB
@@ -565,12 +565,12 @@ final class Router: ObservableObject {
 ```
 {% /tabsitem %}
 {% tabsitem #android title="Android" %}
-Create some Appwrite Service, for example, `AppwriteService` to manage the authentication state.
-You can find a version of this example in the [Appwrite Android tutorial](/docs/tutorials/android/step-1).
+Create some Indobase Service, for example, `AppwriteService` to manage the authentication state.
+You can find a version of this example in the [Indobase Android tutorial](/docs/tutorials/android/step-1).
 ```client-android-kotlin
 //... imports
 
-object Appwrite {
+object Indobase {
     private const val ENDPOINT = "https://<REGION>.cloud.appwrite.io/v1"
     private const val PROJECT_ID = "<PROJECT_ID>"
 
@@ -627,20 +627,20 @@ private fun AppContent(accountService: AccountService) {
 }
 ```
 
-In the `MainActivity` class, initialize the Appwrite service and display the `AppContent` based on the authentication state.
+In the `MainActivity` class, initialize the Indobase service and display the `AppContent` based on the authentication state.
 
 ```client-android-kotlin
 // ...imports 
-In the `MainActivity` class, initialize the Appwrite service.
+In the `MainActivity` class, initialize the Indobase service.
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Appwrite.init(applicationContext)
+        Indobase.init(applicationContext)
 
         setContent {
             // Update this line 👇
-            AppContent(Appwrite.account)
+            AppContent(Indobase.account)
         }
     }
 }
@@ -648,7 +648,7 @@ class MainActivity : ComponentActivity() {
 {% /tabsitem %}
 {% tabsitem #react-native title="React Native" %}
 This example will use `@react-navigation/native` and `@react-navigation/native-stack` to manage the authentication state and redirect users to the login page if they are not authenticated.
-You can find a version of this example in the [Appwrite Android tutorial](/docs/tutorials/android/step-1).
+You can find a version of this example in the [Indobase Android tutorial](/docs/tutorials/android/step-1).
 
 Create a `UserContext` to manage the authentication state.
 ```client-react-native

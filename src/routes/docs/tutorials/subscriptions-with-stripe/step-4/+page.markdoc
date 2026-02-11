@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Configure web platform
-description: Add paid app subscription plans to your app with Stripe and Appwrite Functions.
+description: Add paid app subscription plans to your app with Stripe and Indobase Functions.
 step: 4
 ---
 

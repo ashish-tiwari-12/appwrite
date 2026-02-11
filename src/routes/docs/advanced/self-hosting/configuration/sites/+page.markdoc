@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Sites
-description: Harness the full power of self-hosted sites with Appwrite. Explore site deployment, management, and integration in your self-hosted environment.
+description: Harness the full power of self-hosted sites with Indobase. Explore site deployment, management, and integration in your self-hosted environment.
 ---
 
-This guide covers how to configure sites in your self-hosted Appwrite instance. For GitHub repository integration with sites, see the [version control configuration](/docs/advanced/self-hosting/configuration/version-control).
+This guide covers how to configure sites in your self-hosted Indobase instance. For GitHub repository integration with sites, see the [version control configuration](/docs/advanced/self-hosting/configuration/version-control).
 
 # Configure sites runtimes {% #sites %}
 
@@ -17,13 +17,13 @@ The three runtimes currently available for Sites are the Static, Node.js 22, and
 _APP_SITES_RUNTIMES=static-1,node-22,flutter-3.29
 ```
 
-You can also configure the maximum timeout that can be set on individual Appwrite Sites. The maximum configurable timeout can be increased by changing the `_APP_SITES_TIMEOUT` environment variable. This environment variable changes the configurable maximum but does not alter existing configurations of individual sites.
+You can also configure the maximum timeout that can be set on individual Indobase Sites. The maximum configurable timeout can be increased by changing the `_APP_SITES_TIMEOUT` environment variable. This environment variable changes the configurable maximum but does not alter existing configurations of individual sites.
 
 {% partial file="update-variables.md" /%}
 
 # Add an apex domain for sites {% #root-domain %}
 
-Appwrite allows you to add an apex domain to your instance's configuration that you can publicly expose your Site on.
+Indobase allows you to add an apex domain to your instance's configuration that you can publicly expose your Site on.
 
 {% info title="What is an apex domain?" %}
 
@@ -38,7 +38,7 @@ To add an apex domain, you must first configure either one of the following envi
 
 Head to the **Domains** tab of your site, and add your apex domain (e.g., `myapp.com`) as a new domain pointed to the active deployment.
 
-Next, head to your DNS provider and create an A or AAAA record for your root domain pointing to the server's IP address. This will allow Appwrite to serve your sites from the apex domain.
+Next, head to your DNS provider and create an A or AAAA record for your root domain pointing to the server's IP address. This will allow Indobase to serve your sites from the apex domain.
 
 {% info title="DNS conflicts" %}
 Make sure to remove any pre-existing `A` and `AAAA` records in the DNS settings of your domain, as these can conflict with your current configuration.
@@ -46,15 +46,15 @@ Make sure to remove any pre-existing `A` and `AAAA` records in the DNS settings 
 
 # SSL certificates for sites domains {% #ssl-certificates %}
 
-Before setting up SSL certificates, ensure you have configured your DNS settings properly. You'll need to create a CNAME, A, or AAAA record that points your wildcard domain (e.g. `*.sites.appwrite.myapp.com`) to your Appwrite domain.
+Before setting up SSL certificates, ensure you have configured your DNS settings properly. You'll need to create a CNAME, A, or AAAA record that points your wildcard domain (e.g. `*.sites.appwrite.myapp.com`) to your Indobase domain.
 
-Appwrite does not handle certificates for sites domains (e.g. `6772722a00331315adc3.sites.appwrite.myapp.com`)
+Indobase does not handle certificates for sites domains (e.g. `6772722a00331315adc3.sites.appwrite.myapp.com`)
 out of the box, since they require wildcard certificates.
 There are two ways to handle certificate generation.
 
 ## Manual certificate generation
 
-The simplest way to generate certificates for domains is to use the Appwrite SSL command.
+The simplest way to generate certificates for domains is to use the Indobase SSL command.
 
 ```bash
 docker compose exec appwrite ssl --domain="6772722a00331315adc3.sites.appwrite.myapp.com"
@@ -72,7 +72,7 @@ If you have many sites or frequently create new ones, consider using the automat
 
 ## Automated certificate generation
 
-For automated certificate generation, Appwrite uses Traefik's DNS Challenge feature.
+For automated certificate generation, Indobase uses Traefik's DNS Challenge feature.
 This is required for wildcard certificates (like `*.appwrite.myapp.com`)
 because Let's Encrypt uses the DNS-01 challenge to validate wildcard domain ownership.
 

@@ -1,11 +1,11 @@
----
+﻿---
 layout: tutorial
 title: Get the logged in user
-description: Add authentication to a Next.js project using Appwrite.
+description: Add authentication to a Next.js project using Indobase.
 step: 4
 ---
 
-Build a utility function to get the logged in user from Appwrite. This function will be used in our components and routes to check if a user is logged in, and access the user's details.
+Build a utility function to get the logged in user from Indobase. This function will be used in our components and routes to check if a user is logged in, and access the user's details.
 
 Edit the `src/lib/server/appwrite.js` file to create a new function called `getLoggedInUser`.
 ```js

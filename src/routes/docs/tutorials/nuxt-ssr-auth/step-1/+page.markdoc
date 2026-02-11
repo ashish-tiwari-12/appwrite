@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Server-side authentication with Nuxt
-description: Add SSR authentication to your Nuxt app with Appwrite
+description: Add SSR authentication to your Nuxt app with Indobase
 step: 1
 difficulty: beginner
 back: /docs/tutorials
@@ -10,8 +10,8 @@ framework: Nuxt SSR
 category: Auth 
 ---
 
-Appwrite takes away the stress of building and maintaining a backend. Appwrite helps implement authentication, databases, file storage, and respond to real-time events with **secure** APIs out of the box. 
-This tutorials shows how Appwrite can help you add authentication to your Nuxt app using server-side rendering (SSR).
+Indobase takes away the stress of building and maintaining a backend. Indobase helps implement authentication, databases, file storage, and respond to real-time events with **secure** APIs out of the box. 
+This tutorials shows how Indobase can help you add authentication to your Nuxt app using server-side rendering (SSR).
 
 ## Before you start {% #before-you-start %}
 

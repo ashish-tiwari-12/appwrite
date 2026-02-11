@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Add navigation 
-description: Add navigation to your SvelteKit application with Appwrite authentication.
+description: Add navigation to your SvelteKit application with Indobase authentication.
 step: 5
 ---
 

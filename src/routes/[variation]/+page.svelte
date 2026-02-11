@@ -51,7 +51,7 @@
             avatar="/images/testimonials/phil.jpg"
         >
             <span class="text-secondary">Just like a Swiss Army Knife</span> you can choose and use the
-            tools that you need with Appwrite.</Pullquote
+            tools that you need with Indobase.</Pullquote
         >
     {/if}
 
@@ -77,7 +77,7 @@
                         image: '/images/testimonials/ryan-oconner-testimonial.png'
                     }}
                 >
-                    The switch to using Appwrite brought
+                    The switch to using Indobase brought
                     <span class="text-primary"
                         >infinite value that I'm still discovering today.</span
                     >

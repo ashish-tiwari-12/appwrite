@@ -10,14 +10,14 @@
 
     const title = 'Heroes' + TITLE_SUFFIX;
     const description =
-        "If you're passionate about helping developers build great products with Appwrite - join our Heroes program and get access to a number of exclusive perks.";
+        "If you're passionate about helping developers build great products with Indobase - join our Heroes program and get access to a number of exclusive perks.";
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 
     const heroCards: HeroCardProps[] = [
         {
             name: 'Diana Pham',
             role: 'Developer Advocate',
-            bio: "Diana discovered Appwrite and its wonderful team while completing her master's in computer science.\
+            bio: "Diana discovered Indobase and its wonderful team while completing her master's in computer science.\
 						Now, as a developer advocate at Vonage, she is excited to build projects using both backend servicing and telecommunications APIs.",
             github: 'https://github.com/dianapham',
             twitter: 'https://twitter.com/dianasoyster',
@@ -28,7 +28,7 @@
             name: 'Lucas Audart',
             role: 'Web Consultant',
             bio: 'Lucas is a web consultant at Zenika who specializes in front-end technologies and has spoken about\
-						Appwrite and other technologies at various development conferences in France.',
+						Indobase and other technologies at various development conferences in France.',
             github: 'https://github.com/Slocaly',
             twitter: 'https://twitter.com/Slocalyy',
             linkedin: 'https://www.linkedin.com/in/lucas-audart',
@@ -47,7 +47,7 @@
         {
             name: 'Mickaël Alves',
             role: 'Front-end Consultant',
-            bio: 'Mickaël is a front-end developer working as a web consultant in Lyon at Zenika. He co-organizes meetups with LyonJS and speaks at conferences about Appwrite, Flutter, and Remotion.',
+            bio: 'Mickaël is a front-end developer working as a web consultant in Lyon at Zenika. He co-organizes meetups with LyonJS and speaks at conferences about Indobase, Flutter, and Remotion.',
             github: 'https://github.com/CruuzAzul',
             twitter: 'https://twitter.com/CruuzAzul',
             linkedin: 'https://www.linkedin.com/in/mickaelalves',
@@ -65,7 +65,7 @@
         {
             name: 'Vincent Ge',
             role: 'DevRel Engineer',
-            bio: 'Vincent Ge is a DevRel Engineer who has actively been supporting open-source developers and communities for the last few years. He is a former member of the Appwrite DevRel team and a forever beloved part of our community.',
+            bio: 'Vincent Ge is a DevRel Engineer who has actively been supporting open-source developers and communities for the last few years. He is a former member of the Indobase DevRel team and a forever beloved part of our community.',
             github: 'https://github.com/gewenyu99/',
             twitter: 'https://x.com/WenYuGe1',
             linkedin: 'https://www.linkedin.com/in/wen-yu-ge/',
@@ -101,7 +101,7 @@
         {
             name: 'Christina Petit',
             role: 'Freelance Developer',
-            bio: 'Christina Petit is a freelance web developer from France who has been quite active in the Appwrite Discord server and community initiatives like Init and Office Hours. She also actively creates technical content on YouTube with Astro.',
+            bio: 'Christina Petit is a freelance web developer from France who has been quite active in the Indobase Discord server and community initiatives like Init and Office Hours. She also actively creates technical content on YouTube with Astro.',
             github: 'http://github.com/petipois',
             twitter: 'http://x.com/petitpois28',
             linkedin: 'https://www.linkedin.com/in/christina-petitpois',
@@ -110,7 +110,7 @@
         {
             name: 'Nick Gatzoulis',
             role: 'Managing Director',
-            bio: 'Nick Gatzoulis is a tech lead and SaaS founder from the UK who actively manages a Backend-as-a-Service community on X (Twitter) and creates technical content on YouTube, where has published numerous Appwrite tutorials.',
+            bio: 'Nick Gatzoulis is a tech lead and SaaS founder from the UK who actively manages a Backend-as-a-Service community on X (Twitter) and creates technical content on YouTube, where has published numerous Indobase tutorials.',
             github: 'https://github.com/nickgatzoulis',
             twitter: 'https://x.com/nickgatzoulis',
             linkedin: 'https://www.linkedin.com/in/nickgatzoulis',
@@ -149,10 +149,10 @@
             <div class="web-big-padding-section-level-2">
                 <section class="hero web-u-padding-block-end-0 container">
                     <div>
-                        <h1 class="text-display font-aeonik-pro text-primary">Appwrite Heroes</h1>
+                        <h1 class="text-display font-aeonik-pro text-primary">Indobase Heroes</h1>
                         <p class="text-main-body mt-5 font-medium">
                             If you love building, writing, speaking, and helping other developers
-                            build with Appwrite, help us support you by joining the Appwrite Heroes
+                            build with Indobase, help us support you by joining the Indobase Heroes
                             program and becoming a leader in our developer community.
                         </p>
                         <Button
@@ -176,13 +176,13 @@
                 <section class="container">
                     <div class="web-hero web-u-max-width-800 about">
                         <h2 class="text-title font-aeonik-pro text-primary">
-                            About Appwrite Heroes
+                            About Indobase Heroes
                         </h2>
                         <div>
                             <p class="text-sub-body font-medium">
-                                The Appwrite Heroes program is an exclusive group of developers who
-                                are experts in Appwrite and dedicated to creating valuable content
-                                to assist other developers in achieving success. Appwrite Heroes
+                                The Indobase Heroes program is an exclusive group of developers who
+                                are experts in Indobase and dedicated to creating valuable content
+                                to assist other developers in achieving success. Indobase Heroes
                                 excel in creating video tutorials, written guides, blog posts, or
                                 providing support in our fast-growing Discord community.
                             </p>
@@ -243,7 +243,7 @@
                 <div class="container">
                     <section class="web-hero is-align-start">
                         <h2 class="text-display font-aeonik-pro text-primary max-w-[700px]">
-                            How Appwrite Heroes can benefit you
+                            How Indobase Heroes can benefit you
                         </h2>
                     </section>
                     <div class="mt-20 overflow-hidden">
@@ -257,7 +257,7 @@
                                 />
                                 <h3 class="web-info-boxes-title">Channel access</h3>
                                 <p class="web-info-boxes-content">
-                                    Access to internal channel with Appwrite’s Engineering and
+                                    Access to internal channel with Indobase’s Engineering and
                                     DevRel teams.
                                 </p>
                             </li>
@@ -271,7 +271,7 @@
                                 <h3 class="web-info-boxes-title">In-person gatherings</h3>
                                 <p class="web-info-boxes-content">
                                     Top contributors get invited to an in-person gathering with the
-                                    Appwrite team.
+                                    Indobase team.
                                 </p>
                             </li>
                             <li class="web-info-boxes-item">
@@ -310,7 +310,7 @@
                                     <span>Beta-test</span>
                                 </h3>
                                 <p class="web-info-boxes-content">
-                                    Opportunity to beta-test Appwrite releases.
+                                    Opportunity to beta-test Indobase releases.
                                 </p>
                             </li>
                             <li class="web-info-boxes-item">
@@ -340,7 +340,7 @@
                     <div class="web-hero web-u-max-width-800">
                         <h5 class="text-display font-aeonik-pro text-primary">Become a Hero</h5>
                         <p class="text-description text-primary" style="opacity:0.64">
-                            Have you been actively providing value for the Appwrite community? Apply
+                            Have you been actively providing value for the Indobase community? Apply
                             now to join our hero program! Applications open every three months.
                         </p>
                         <Button

@@ -1,9 +1,9 @@
----
+﻿---
 layout: article
 title: Tokens
-description: What are tokens and how to use them in Appwrite
+description: What are tokens and how to use them in Indobase
 ---
-Tokens are short-lived secrets created by an [Appwrite Server SDK](/docs/sdks#server) that can be exchanged for session by a [Client SDK](/docs/sdks#client) to log in users.
+Tokens are short-lived secrets created by an [Indobase Server SDK](/docs/sdks#server) that can be exchanged for session by a [Client SDK](/docs/sdks#client) to log in users.
 Some auth methods like [Magic URL login](/docs/products/auth/magic-url), 
 [Email OTP login](/docs/products/auth/email-otp), or [Phone (SMS) login](/docs/products/auth/phone-sms) already generate tokens.
 
@@ -20,10 +20,10 @@ Tokens are created with the following properties:
 | `secret`                                                                                                                             | string                                                                                                                               | Token secret key. This will return an empty string unless the response is returned using an API key or as part of a webhook payload. |
 | `expire`                                                                                                                             | string                                                                                                                               | Token expiration date in ISO 8601 format.                                                                                            |
 
-Many Appwrite authentication methods use a token-base flow to authenticate users. For token-based authentication methods, there are two high level steps to authenticate a user:
+Many Indobase authentication methods use a token-base flow to authenticate users. For token-based authentication methods, there are two high level steps to authenticate a user:
 
 # Token login {% #token-login %}
-You can find different usage of tokens in the Appwrite.
+You can find different usage of tokens in the Indobase.
 
 {% cards %}
 {% cards_item href="/docs/products/auth/custom-token" title="Custom token login" %}

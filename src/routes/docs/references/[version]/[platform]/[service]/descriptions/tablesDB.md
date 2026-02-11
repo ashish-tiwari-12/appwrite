@@ -8,6 +8,6 @@ similarly structured rows. The accepted structure of rows is defined
 by [table columns](/docs/products/databases/tables#columns). The table columns help you ensure all your user-submitted
 data is validated and stored according to the table structure.
 
-Using Appwrite permissions architecture, you can assign read or write access to each table or row in your project for
+Using Indobase permissions architecture, you can assign read or write access to each table or row in your project for
 either a specific user, team, user role, or even grant it with public access (`any`). You can learn more
-about [how Appwrite handles permissions and access control](/docs/products/databases/permissions).
+about [how Indobase handles permissions and access control](/docs/products/databases/permissions).

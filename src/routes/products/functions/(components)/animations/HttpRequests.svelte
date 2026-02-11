@@ -82,7 +82,7 @@
     <div class="p-4">
         <span class="text-primary">HTTP requests</span>
         <p class="text-secondary">
-            Allow external applications to trigger Appwrite functions via web requests.
+            Allow external applications to trigger Indobase functions via web requests.
         </p>
     </div>
 </div>

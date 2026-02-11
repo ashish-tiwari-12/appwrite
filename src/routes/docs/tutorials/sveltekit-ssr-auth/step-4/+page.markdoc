@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Add a server hook
-description: Add authentication to a SvelteKit project using Appwrite.
+description: Add authentication to a SvelteKit project using Indobase.
 step: 4
 ---
 
@@ -15,7 +15,7 @@ import { createSessionClient } from '$lib/server/appwrite';
 
 export async function handle({ event, resolve }) {
   try {
-    // Use our helper function to create the Appwrite client.
+    // Use our helper function to create the Indobase client.
     const { account } = createSessionClient(event);
     // Store the current logged in user in locals,
     // for easy access in our other routes.

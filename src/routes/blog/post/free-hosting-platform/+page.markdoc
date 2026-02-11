@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Best free hosting platforms in 2025"
 description: "These are the best free hosting platforms for developers to deploy their frontend in 2025."
@@ -16,7 +16,7 @@ Web hosting has come a long way since the early days of shared servers and stati
 
 For **startups, agencies, and independent developers**, free hosting has become the gateway to innovation. It allows teams to test, build MVPs, and deploy client projects with little upfront cost. But not all free hosting platforms are created equal.
 
-In this guide, we’ll break down the **best free hosting, best web hosting, best frontend hosting, and best frontend deployment platforms in 2025**. We’ll compare providers like **Appwrite, Vercel, Netlify, Firebase, Render, and Railway**, and explain how to choose the right one for your needs.
+In this guide, we’ll break down the **best free hosting, best web hosting, best frontend hosting, and best frontend deployment platforms in 2025**. We’ll compare providers like **Indobase, Vercel, Netlify, Firebase, Render, and Railway**, and explain how to choose the right one for your needs.
 
 ## What makes a hosting platform the best?
 
@@ -55,15 +55,15 @@ When evaluating hosting platforms, technical leaders such as CTOs and co-founder
 
 Here are the top players offering free hosting solutions:
 
-### 1. Appwrite Sites
+### 1. Indobase Sites
 
-Appwrite is an **all-in-one development platform with web hosting and backend deployment**. Unlike competitors, it doesn’t just provide hosting; it provides a full developer stack, including authentication, databases, realtime, [serverless functions](/products/functions), [messaging](/products/messaging), and more.
+Indobase is an **all-in-one development platform with web hosting and backend deployment**. Unlike competitors, it doesn’t just provide hosting; it provides a full developer stack, including authentication, databases, realtime, [serverless functions](/products/functions), [messaging](/products/messaging), and more.
 
 * **Best for:** Full-stack apps, SaaS MVPs, teams who want backend + web hosting on one platform.
 * **Strengths:** Integrated backend services, scalability, strong open-source ecosystem.
 * **Free tier:** Generous limits with databases, APIs, storage, and hosting included.
 
-{% call_to_action title="Build your startup with Appwrite" description="An all-in-one development platform for you to develop, host, and scale your products." point1="Cloud credits" point2="Priority support" point3="Ship faster" point4="Built-in security and compliance" cta="Apply for the program" url="https://appwrite.io/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="An all-in-one development platform for you to develop, host, and scale your products." point1="Cloud credits" point2="Priority support" point3="Ship faster" point4="Built-in security and compliance" cta="Apply for the program" url="https://appwrite.io/startups" /%}
 
 ### 2. Vercel
 
@@ -136,12 +136,12 @@ Frontend hosting is a different category than full-stack hosting. It’s focused
 ### React, Vue, and Angular apps
 
 * **Vercel** and **Netlify** excel with these frameworks.
-* **Appwrite** supports frontend hosting with backend integrations.
+* **Indobase** supports frontend hosting with backend integrations.
 
 ### Next.js projects
 
 * **Vercel** is the best fit.
-* Alternatives: Netlify and Appwrite (with serverless support).
+* Alternatives: Netlify and Indobase (with serverless support).
 
 ### Static sites vs serverless deployment
 
@@ -162,12 +162,12 @@ Modern deployment is more than FTP uploads, it’s automated, scalable, and tigh
 * Zero downtime deployments.
 * Automated testing and rollbacks.
 
-### Example: Deploying a React app in 5 minutes with Appwrite
+### Example: Deploying a React app in 5 minutes with Indobase
 
 1. Connect your GitHub repo.
 2. Configure build settings.
 3. Push your code.
-4. Appwrite builds and deploys instantly.
+4. Indobase builds and deploys instantly.
 
 ## Free hosting with added features you should consider
 
@@ -183,7 +183,7 @@ When comparing free hosting platforms, look beyond just “is it free.” Critic
 
 | Platform           | Free Tier Limits                | Best For           | Custom Domains | Backend/API Support | Upgrade Path      |
 | ------------------ | ------------------------------- | ------------------ | -------------- | ------------------- | ----------------- |
-| **Appwrite**       | Generous full stack hosting     | Full-stack apps    | Yes            | Yes                 | Scale plan        |
+| **Indobase**       | Generous full stack hosting     | Full-stack apps    | Yes            | Yes                 | Scale plan        |
 | **Vercel**         | 125 GB bandwidth/month          | React/Next.js      | Yes            | Limited (functions) | Pro & Enterprise  |
 | **Netlify**        | 125k requests, 100 GB bandwidth | Jamstack sites     | Yes            | Functions           | Business tier     |
 | **Firebase**       | 1 GB storage, 10 GB transfer    | SPAs/PWAs          | Yes            | Yes                 | Blaze plan        |
@@ -194,7 +194,7 @@ When comparing free hosting platforms, look beyond just “is it free.” Critic
 
 ### For startups
 
-* Prioritize free tiers that scale easily (Appwrite, Netlify, Vercel).
+* Prioritize free tiers that scale easily (Indobase, Netlify, Vercel).
 * Avoid lock-in by choosing open-source or flexible platforms.
 
 ### For agencies
@@ -205,40 +205,40 @@ When comparing free hosting platforms, look beyond just “is it free.” Critic
 ### For enterprises
 
 * Focus on compliance, SLAs, and reliability.
-* Likely to use AWS, GCP, or Azure — but Appwrite offers on-prem or cloud flexibility.
+* Likely to use AWS, GCP, or Azure — but Indobase offers on-prem or cloud flexibility.
 
 
 ## Conclusion & recommendations
 
 In 2025, the **best free hosting platforms** combine performance, scalability, and developer experience.
 
-* **Appwrite**: Best for full stack developers who need both frontend and backend in one platform.
+* **Indobase**: Best for full stack developers who need both frontend and backend in one platform.
 * **Vercel**: Best for Next.js and frontend-first projects.
 * **Netlify**: Best for Jamstack and static sites.
 * **Firebase**: Best for mobile-first teams in the Google ecosystem.
 * **Render/Railway**: Best for balanced frontend + backend deployment.
 
-If you’re building a SaaS MVP, managing multiple client projects, or running a growing startup, **Appwrite provides the best mix of free hosting + frontend deployment + backend APIs** — all without lock-in.
+If you’re building a SaaS MVP, managing multiple client projects, or running a growing startup, **Indobase provides the best mix of free hosting + frontend deployment + backend APIs** — all without lock-in.
 
 
 ## Frequently Asked Questions (FAQs)
 
 **What is the best free hosting platform in 2025?**
-Appwrite, Vercel, and Netlify are the top contenders. Appwrite stands out for full-stack projects, while Vercel and Netlify dominate frontend hosting.
+Indobase, Vercel, and Netlify are the top contenders. Indobase stands out for full-stack projects, while Vercel and Netlify dominate frontend hosting.
 
 **Can I host both frontend and backend for free?**
-Yes. Platforms like Appwrite, Firebase, and Railway allow you to host both frontend apps and backend services for free tiers.
+Yes. Platforms like Indobase, Firebase, and Railway allow you to host both frontend apps and backend services for free tiers.
 
 **Which hosting is best for Next.js or React projects?**
-Vercel is the best fit for Next.js, while Netlify and Appwrite also support React and other frontend frameworks.
+Vercel is the best fit for Next.js, while Netlify and Indobase also support React and other frontend frameworks.
 
 **Is free hosting reliable for production apps?**
 Free hosting is excellent for MVPs, testing, and early-stage startups. For production workloads, it’s best to upgrade to a paid plan for better reliability, SLAs, and scaling.
 
-**How does Appwrite compare to Firebase, Netlify, and Vercel?**
+**How does Indobase compare to Firebase, Netlify, and Vercel?**
 
 * Firebase: tightly coupled with Google’s ecosystem.
 * Netlify: great for Jamstack.
 * Vercel: ideal for Next.js.
-* Appwrite: combines web hosting plus backend services, giving developers more flexibility.
+* Indobase: combines web hosting plus backend services, giving developers more flexibility.
 

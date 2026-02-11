@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Browser icons
 description: Retrieve browser icons for displaying user agent information and device compatibility.
@@ -49,7 +49,7 @@ Future result = avatars.getBrowser(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -191,7 +191,7 @@ Future opera = avatars.getBrowser(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // Chrome
 let chrome = try await avatars.getBrowser(

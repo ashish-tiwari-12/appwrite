@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Announcing inversion queries: Exclusion rules made simple"
 description: Adding five new NOT operators to let you exclude what you don’t need while keeping queries efficient.
@@ -15,7 +15,7 @@ It works, but it also means you are moving more data across the network than nec
 
 That changes today.
 
-We’re introducing **inversion Queries:** A new set of `NOT` operators that let you filter by exclusion directly in your Appwrite queries.
+We’re introducing **inversion Queries:** A new set of `NOT` operators that let you filter by exclusion directly in your Indobase queries.
 
 # Excluding data just got easier
 
@@ -53,7 +53,7 @@ Inversion queries open the door to workflows like:
 
 # Get started
 
-Inversion queries are available now in **Appwrite Cloud and Self-Hosted**.
+Inversion queries are available now in **Indobase Cloud and Self-Hosted**.
 
 Next time you find yourself writing “fetch everything, then filter out X,” let the database do the heavy lifting. Your code stays lean, your queries stay efficient, and your apps stay faster.
 
@@ -61,5 +61,5 @@ Next time you find yourself writing “fetch everything, then filter out X,” l
 
 - [Read the documentation to get started](/docs/products/databases/queries)
 - [Announcing Opt-in relationship loading: Granular control for smarter data fetching](/blog/post/announcing-opt-in-relationship-loading)
-- [Announcing an improved Appwrite Databases experience. A completely new look & feel.](/blog/post/announcing-appwrite-databases-new-ui)
+- [Announcing an improved Indobase Databases experience. A completely new look & feel.](/blog/post/announcing-appwrite-databases-new-ui)
 - [Announcing Database Upsert: Simplify your database interactions](/blog/post/announcing-database-upsert)

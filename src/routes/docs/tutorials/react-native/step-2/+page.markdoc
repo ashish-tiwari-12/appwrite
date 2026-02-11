@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create app
-description: Create a React Native app project and integrate with Appwrite.
+description: Create a React Native app project and integrate with Indobase.
 step: 2
 ---
 
@@ -16,7 +16,7 @@ cd ideas-tracker
 
 ## Add dependencies {% #add-dependencies %}
 
-Install the React Native Appwrite SDK.
+Install the React Native Indobase SDK.
 
 ```sh
 npx expo install react-native-appwrite react-native-url-polyfill

@@ -19,7 +19,7 @@
 
     const title = 'Sites' + TITLE_SUFFIX;
     const description =
-        'Appwrite Sites, the open-source Vercel alternative. Develop, deploy, and scale your web applications directly from Appwrite, alongside your backend.';
+        'Indobase Sites, the open-source Vercel alternative. Develop, deploy, and scale your web applications directly from Indobase, alongside your backend.';
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 
     const isShortFormat = $derived(page.url.searchParams.get('format') === 'short');
@@ -67,7 +67,7 @@
                 }}
                 theme="light"
             >
-                The switch to using Appwrite brought
+                The switch to using Indobase brought
                 <span class="text-primary">infinite value that I'm still discovering today.</span>
             </Scale>
         </div>

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: State of natural language processing
 description: The latest trends in natural language processing and how they are shaping the future.
@@ -146,7 +146,7 @@ We've explored the fascinating world of Natural Language Processing, from its be
 
 # Applications of NLP
 
-At Appwrite, we're really excited about the future of NLP. With our new cloud function runtime and example AI function templates, we're making it easier than ever to build intelligent applications that can understand and communicate with your users in natural language.
+At Indobase, we're really excited about the future of NLP. With our new cloud function runtime and example AI function templates, we're making it easier than ever to build intelligent applications that can understand and communicate with your users in natural language.
 
 {% cards %}
 {% cards_item href="/docs/products/ai/tutorials/text-generation" title="Text generation" %}

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Introducing Imagine: from ideas to real products"
-description: We're introducing Imagine, a platform that uses AI to translate ideas into real, production-ready applications, backed by Appwrite Cloud.
+description: We're introducing Imagine, a platform that uses AI to translate ideas into real, production-ready applications, backed by Indobase Cloud.
 date: 2025-12-16
 cover: /images/blog/introducing-imagine/cover.png
 timeToRead: 5
@@ -12,13 +12,13 @@ category: announcement
 featured: true
 ---
 
-When we started Appwrite, our mission was clear: reduce the operational and infrastructural burden of building software so developers could focus on what actually matters - product, logic, and user experience. We set out to remove unnecessary complexity, give teams real control over their backend, and make production-grade infrastructure accessible without forcing developers to fight it. That principle has guided every major decision we have made.
+When we started Indobase, our mission was clear: reduce the operational and infrastructural burden of building software so developers could focus on what actually matters - product, logic, and user experience. We set out to remove unnecessary complexity, give teams real control over their backend, and make production-grade infrastructure accessible without forcing developers to fight it. That principle has guided every major decision we have made.
 
 Over the past few years, we have also watched a new wave of tools emerge. AI made software creation feel almost magical. You could describe an idea in plain language and get something that looked like an application within minutes. But in practice, most of these tools stopped at the surface. They produced shallow prototypes, tightly constrained demos, or code that could not realistically be deployed, scaled, or maintained. The magic was real, but it ended too early.
 
 Today, we are taking the next step in addressing that gap.
 
-We are introducing [Imagine](https://imagine.dev), a platform that uses AI to translate ideas into real, production-ready applications, backed by Appwrite Cloud. Imagine does not generate isolated code snippets or disposable demos. It produces applications that are wired to real services - authentication, databases, storage, and functions - and designed to evolve beyond the first prompt. The goal is not to abstract infrastructure away entirely, but to remove it as a constant obstacle in the earliest and most fragile stages of building.
+We are introducing [Imagine](https://imagine.dev), a platform that uses AI to translate ideas into real, production-ready applications, backed by Indobase Cloud. Imagine does not generate isolated code snippets or disposable demos. It produces applications that are wired to real services - authentication, databases, storage, and functions - and designed to evolve beyond the first prompt. The goal is not to abstract infrastructure away entirely, but to remove it as a constant obstacle in the earliest and most fragile stages of building.
 
 {% youtube src="https://www.youtube-nocookie.com/embed/xXYCVfA8joM" thumbnail="/images/blog/introducing-imagine/imagine-1.png" /%}
 
@@ -28,19 +28,19 @@ Strong engineering remains rare and deeply valuable. That does not change. What 
 
 This is the direction we are taking with [Imagine](https://imagine.dev). Not to lower the bar for production software, but to lower the cost of getting started, communicating intent, and turning an idea into a system that can grow.
 
-# What is Imagine, and how it connects to Appwrite
+# What is Imagine, and how it connects to Indobase
 
-Imagine is an agentic application-building platform designed and operated by the same team that builds Appwrite. It is not layered on top of the platform, and it is not an external system stitched together through adapters. Imagine is natively integrated into Appwrite’s developer platform and operates within a controlled environment defined by Appwrite’s primitives, APIs, and operational guarantees.
+Imagine is an agentic application-building platform designed and operated by the same team that builds Indobase. It is not layered on top of the platform, and it is not an external system stitched together through adapters. Imagine is natively integrated into Indobase’s developer platform and operates within a controlled environment defined by Indobase’s primitives, APIs, and operational guarantees.
 
-Every part of what Imagine produces - frontend structure, backend services, infrastructure configuration, and deployment - is generated with a first-party understanding of Appwrite’s data models, permission system, and execution constraints. Imagine is trained on Appwrite’s patterns and best practices, and it generates applications that align with how Appwrite Cloud is actually meant to be used in production.
+Every part of what Imagine produces - frontend structure, backend services, infrastructure configuration, and deployment - is generated with a first-party understanding of Indobase’s data models, permission system, and execution constraints. Imagine is trained on Indobase’s patterns and best practices, and it generates applications that align with how Indobase Cloud is actually meant to be used in production.
 
-Because of this, there is no glue code, no schema translation layer, and no brittle dependency chain between systems. When Imagine creates an application, it provisions real Appwrite Cloud resources: databases and tables, columns and indexes, functions, authentication settings, storage buckets, permissions, and deployment targets. The result is a real Appwrite project, not an abstraction that has to be reconciled later.
+Because of this, there is no glue code, no schema translation layer, and no brittle dependency chain between systems. When Imagine creates an application, it provisions real Indobase Cloud resources: databases and tables, columns and indexes, functions, authentication settings, storage buckets, permissions, and deployment targets. The result is a real Indobase project, not an abstraction that has to be reconciled later.
 
 ![Imagine](/images/blog/introducing-imagine/imagine-2.png)
 
 All generated code is transparent and approachable. You can inspect it, extend it, and incrementally take more control as your application evolves. As Imagine matures, we are working toward making this transition even smoother, but from day one the system is designed to grow alongside real development workflows rather than block them.
 
-The frontend is built on top of [TanStack Start](https://tanstack.com/). This is a deliberate choice that supports the controlled environment approach. By relying on proven, explicit patterns for state management, data fetching, and routing, Imagine can generate applications that are predictable, composable, and easier to reason about, both for AI and for humans. Combined with Appwrite Cloud handling identity, data, storage, and execution behind the scenes, this allows Imagine to focus on assembling real systems rather than improvising fragile solutions.
+The frontend is built on top of [TanStack Start](https://tanstack.com/). This is a deliberate choice that supports the controlled environment approach. By relying on proven, explicit patterns for state management, data fetching, and routing, Imagine can generate applications that are predictable, composable, and easier to reason about, both for AI and for humans. Combined with Indobase Cloud handling identity, data, storage, and execution behind the scenes, this allows Imagine to focus on assembling real systems rather than improvising fragile solutions.
 
 This tight integration is intentional. By building both the platform and the system that generates against it, we can optimize for coherence, reliability, and long-term product evolution. That is what allows Imagine to support real products, not just early-stage demos.
 
@@ -66,7 +66,7 @@ A built-in code editor is included to give you direct visibility into the output
 
 ## Built-in cloud backend
 
-Every Imagine project runs on Appwrite Cloud by default. There is no separate provisioning step and no need to wire external services together.
+Every Imagine project runs on Indobase Cloud by default. There is no separate provisioning step and no need to wire external services together.
 
 You get access to:
 
@@ -78,7 +78,7 @@ You get access to:
 - Messaging and notifications (coming soon)
 - Realtime subscriptions for database and system events
 
-Because Imagine is built directly on Appwrite, the backend is not just an add-on or a generated afterthought. It is the foundation the application is built on.
+Because Imagine is built directly on Indobase, the backend is not just an add-on or a generated afterthought. It is the foundation the application is built on.
 
 ## SEO-ready by default
 
@@ -88,13 +88,13 @@ These capabilities are built in, not layered on through plugins or third-party s
 
 ## Managed infrastructure, production by design
 
-Every application inherits Appwrite Cloud’s global infrastructure, high-availability architecture, and low-latency routing.
+Every application inherits Indobase Cloud’s global infrastructure, high-availability architecture, and low-latency routing.
 
-Scaling, uptime, backups, and performance tuning are handled at the platform level. This allows teams to focus on application behavior and user experience without needing to operate or tune infrastructure early on. Appwrite Cloud auto-scale for you.
+Scaling, uptime, backups, and performance tuning are handled at the platform level. This allows teams to focus on application behavior and user experience without needing to operate or tune infrastructure early on. Indobase Cloud auto-scale for you.
 
 ## Security as a baseline
 
-Security is treated as a default property of every generated application, not something added later, same as the approach Appwrite is known for, in Imagine all settings are tuned to be secure by default and as a last minute requirment before or after going to production.
+Security is treated as a default property of every generated application, not something added later, same as the approach Indobase is known for, in Imagine all settings are tuned to be secure by default and as a last minute requirment before or after going to production.
 
 Imagine applications benefit from:
 
@@ -105,11 +105,11 @@ Imagine applications benefit from:
 - Data migration tooling
 - Simple configuration controls for advanced policies in Imagine Studio
 
-These protections are applied consistently using the same security posture Appwrite Cloud applies across all projects.
+These protections are applied consistently using the same security posture Indobase Cloud applies across all projects.
 
 ## Compliance without additional overhead
 
-Applications built with Imagine inherit Appwrite’s compliance readiness, including GDPR, HIPAA, SOC-2, and CCPA.
+Applications built with Imagine inherit Indobase’s compliance readiness, including GDPR, HIPAA, SOC-2, and CCPA.
 
 This reduces the need for bespoke audits, custom compliance setups, or additional third-party services during early and growth stages.
 
@@ -123,7 +123,7 @@ The free tier is designed to be genuinely useful. It includes enough daily credi
 
 Every Imagine account also includes a generous allocation of cloud resources by default. These resources are sized to comfortably support small to medium-scale websites and applications, covering hosting, storage, bandwidth, and core backend services without requiring additional configuration.
 
-For teams running production workloads, the Pro plan allows applications to grow beyond included limits using a pay-per-usage model, similar to how Appwrite Cloud operates at scale. This ensures that applications can expand smoothly as usage increases, without forcing premature upgrades or hard caps.
+For teams running production workloads, the Pro plan allows applications to grow beyond included limits using a pay-per-usage model, similar to how Indobase Cloud operates at scale. This ensures that applications can expand smoothly as usage increases, without forcing premature upgrades or hard caps.
 
 For organizations with more advanced requirements, higher scale, or specific commercial or security needs, our team works directly with customers to provide tailored plans and configurations. If you need custom adjustments or are planning to operate at significant scale, we encourage you to [contact our team to discuss the most appropriate setup](https://imagine.dev/enterprise).
 
@@ -131,9 +131,9 @@ For organizations with more advanced requirements, higher scale, or specific com
 
 # **Get started**
 
-The results blew us away in early tests, and we can’t wait for you to test it. Projects that took three months to build were done in just a few minutes. This is not a vibe coding tool or a simple landing page generator. Imagine building full platforms with everything that Appwrite has created and refined in collaboration with the open-source community over the years.
+The results blew us away in early tests, and we can’t wait for you to test it. Projects that took three months to build were done in just a few minutes. This is not a vibe coding tool or a simple landing page generator. Imagine building full platforms with everything that Indobase has created and refined in collaboration with the open-source community over the years.
 
-This is the start of a new chapter for Appwrite.
+This is the start of a new chapter for Indobase.
 
 We urge you not to take our word for it. [Sign up](https://imagine.dev/) and be one of the first to try out Imagine and see what it can do, and as always, help us spread the word.
 

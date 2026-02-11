@@ -42,40 +42,40 @@ export const variationConfigs: Record<VariationKey, HomepageVariationConfig> = {
     'all-in-one-cloud': {
         title: "The Developers' Cloud",
         subtitle:
-            'Appwrite is an open-source, cloud platform tailored for developers who like to get stuff done. Use built-in backend infrastructure and web hosting, all from a single place.',
-        pageTitle: "Appwrite - The Developers' Cloud",
+            'Indobase is an open-source, cloud platform tailored for developers who like to get stuff done. Use built-in backend infrastructure and web hosting, all from a single place.',
+        pageTitle: "Indobase - The Developers' Cloud",
         slug: '/all-in-one-cloud',
         ...baseConfig
     },
     'supabase-alternative': {
         title: 'Open-source Supabase Alternative',
         subtitle:
-            'Appwrite is a truly open-source, all-in-one development platform that offers backend infrastructure and web hosting from a single place.',
-        pageTitle: 'Appwrite - Open-source Supabase Alternative',
+            'Indobase is a truly open-source, all-in-one development platform that offers backend infrastructure and web hosting from a single place.',
+        pageTitle: 'Indobase - Open-source Supabase Alternative',
         slug: '/supabase-alternative',
         ...baseConfig
     },
     'firebase-alternative': {
         title: 'Open-source Firebase Alternative',
         subtitle:
-            'Appwrite is a truly open-source, all-in-one development platform that offers backend infrastructure and web hosting from a single place.',
-        pageTitle: 'Appwrite - Open-source Firebase Alternative',
+            'Indobase is a truly open-source, all-in-one development platform that offers backend infrastructure and web hosting from a single place.',
+        pageTitle: 'Indobase - Open-source Firebase Alternative',
         slug: '/firebase-alternative',
         ...baseConfig
     },
     'all-in-one-development': {
         title: 'All-in-one Development Platform',
         subtitle:
-            'Appwrite is an all-in-one development platform that offers backend infrastructure and web hosting from a single place. Open-source and no vendor lock-in.',
-        pageTitle: 'Appwrite - All-in-one Development Platform',
+            'Indobase is an all-in-one development platform that offers backend infrastructure and web hosting from a single place. Open-source and no vendor lock-in.',
+        pageTitle: 'Indobase - All-in-one Development Platform',
         slug: '/all-in-one-development',
         ...baseConfig
     },
     'all-in-one-cloud-offer': {
         title: 'All-in-one Cloud Platform',
         subtitle:
-            'Appwrite is an all-in-one development platform that offers backend infrastructure and web hosting from a single place. Open-source and no vendor lock-in.',
-        pageTitle: 'Appwrite - All-in-one Cloud Platform',
+            'Indobase is an all-in-one development platform that offers backend infrastructure and web hosting from a single place. Open-source and no vendor lock-in.',
+        pageTitle: 'Indobase - All-in-one Cloud Platform',
         slug: '/all-in-one-cloud-offer',
         ctaLabel: 'Claim your $300 Credits',
         ctaHref: 'https://cloud.appwrite.io/console/login?code=sites300',

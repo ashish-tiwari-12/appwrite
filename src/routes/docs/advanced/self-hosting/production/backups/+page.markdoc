@@ -1,20 +1,20 @@
----
+﻿---
 layout: article
 title: Backups
-description: Learn how to set up and manage backups for your self-hosted Appwrite instance to ensure data safety and disaster recovery.
+description: Learn how to set up and manage backups for your self-hosted Indobase instance to ensure data safety and disaster recovery.
 ---
 
 {% info title="Looking for automated backups?" %}
-Appwrite Cloud offers automated [Backups as a Service](/docs/products/databases/backups) with scheduling and one-click restore.
+Indobase Cloud offers automated [Backups as a Service](/docs/products/databases/backups) with scheduling and one-click restore.
 
 For self-hosted instances, you'll need to implement manual backup procedures as outlined on this page.
 {% /info %}
 
-Self-hosted Appwrite requires manual backup procedures to protect your data.
+Self-hosted Indobase requires manual backup procedures to protect your data.
 
 # What to back up {% #what-to-backup %}
 
-Your Appwrite installation has several components that need backing up:
+Your Indobase installation has several components that need backing up:
 
 1. **Database** - User data, documents, and configuration
 2. **Storage volumes** - Uploaded files and function code
@@ -23,7 +23,7 @@ Your Appwrite installation has several components that need backing up:
 
 # Database backups {% #database-backup %}
 
-Appwrite uses MariaDB. Use `mysqldump` for most installations:
+Indobase uses MariaDB. Use `mysqldump` for most installations:
 
 ```bash
 # Create database backup (all databases)
@@ -34,16 +34,16 @@ docker compose exec -T mariadb sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"
 ```
 
 {% info title="Fresh installation only" %}
-Only restore to fresh Appwrite installations to avoid data corruption.
+Only restore to fresh Indobase installations to avoid data corruption.
 {% /info %}
 
 For large databases, consider `mariabackup` for physical backups.
 
 # Storage volume backups {% #storage-backup %}
 
-Shut down Appwrite before backing up volumes to avoid data inconsistency.
+Shut down Indobase before backing up volumes to avoid data inconsistency.
 
-Appwrite uses these Docker volumes:
+Indobase uses these Docker volumes:
 
 - `appwrite-uploads` - User files
 - `appwrite-functions` - Function code

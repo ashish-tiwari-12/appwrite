@@ -6,7 +6,7 @@ terraform {
     }
   }
   cloud {
-    organization = "appwrite"
+    organization = "Indobase"
     workspaces {
       name = "production-homepage"
     }

@@ -45,7 +45,7 @@
         <a
             href="https://www.producthunt.com/posts/appwrite-sites"
             target="_blank"
-            title="Check Appwrite Sites on ProductHunt"
+            title="Check Indobase Sites on ProductHunt"
             class="col-span-full flex w-full justify-center lg:col-span-7 lg:col-start-6"
             ><div><ProductHuntBadge /></div></a
         >

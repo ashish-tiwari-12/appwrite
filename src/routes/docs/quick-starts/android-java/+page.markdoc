@@ -1,13 +1,13 @@
----
+﻿---
 layout: article
 title: Start with Android (Java)
-description: Get started with Appwrite on Android using Java and learn how to build secure and scalable apps using our powerful backend.
+description: Get started with Indobase on Android using Java and learn how to build secure and scalable apps using our powerful backend.
 difficulty: beginner
 readtime: 3
 back: /docs/quick-starts
 ---
 
-Learn how to setup your first Android project powered by Appwrite and the [Appwrite Android SDK](https://github.com/appwrite/sdk-for-android) using Java.
+Learn how to setup your first Android project powered by Indobase and the [Indobase Android SDK](https://github.com/appwrite/sdk-for-android) using Java.
 
 {% info title="Using Kotlin?" %}
 Check out the [Start with Android (Kotlin)](/docs/quick-starts/android) guide.
@@ -18,12 +18,12 @@ Open Android Studio and click **New Project** to create a new project.
 
 Choose your desired project template, for example **Empty Activity**, and click **Next**.
 
-Now enter your app **name** and **package name**. You will need both of these later when you create your project in the Appwrite console. Click **Finish** to create your project.
+Now enter your app **name** and **package name**. You will need both of these later when you create your project in the Indobase console. Click **Finish** to create your project.
 
 {% /section %}
 
-{% section #step-2 step=2 title="Create Appwrite project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+{% section #step-2 step=2 title="Create Indobase project" %}
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -32,7 +32,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console).
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 Then, under **Add a platform**, add an **Android app**.
 
@@ -49,16 +49,16 @@ You can skip optional steps.
 
 {% /section %}
 
-{% section #step-3 step=3 title="Add the Appwrite SDK" %}
-To add the Appwrite SDK for Android as a dependency, add the following to your app-level **build.gradle** file inside the **dependencies** block.
+{% section #step-3 step=3 title="Add the Indobase SDK" %}
+To add the Indobase SDK for Android as a dependency, add the following to your app-level **build.gradle** file inside the **dependencies** block.
 
 ```groovy
 implementation "io.appwrite:sdk-for-android:8.1.0"
 ```
 
 In order to allow creating OAuth sessions, the following activity needs to be added inside the `<application>` tag, along side the existing `<activity>` tags in your [AndroidManifest.xml](https://github.com/appwrite/playground-for-android/blob/master/app/src/main/AndroidManifest.xml).
-Be sure to replace the **<PROJECT_ID>** string with your actual Appwrite project ID.
-You can find your Appwrite project ID in you project settings screen in your Appwrite Console.
+Be sure to replace the **<PROJECT_ID>** string with your actual Indobase project ID.
+You can find your Indobase project ID in you project settings screen in your Indobase Console.
 
 ```xml
 <manifest ...>
@@ -79,7 +79,7 @@ You can find your Appwrite project ID in you project settings screen in your App
 ```
 {% /section %}
 
-{% section #step-4 step=4 title="Create Appwrite helper class" %}
+{% section #step-4 step=4 title="Create Indobase helper class" %}
 Find your project's ID in the **Settings** page.
 
 {% only_dark %}
@@ -280,7 +280,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Initialize Appwrite
+        // Initialize Indobase
         appwrite = AppwriteHelper.getInstance(getApplicationContext());
 
         setContentView(R.layout.activity_main);

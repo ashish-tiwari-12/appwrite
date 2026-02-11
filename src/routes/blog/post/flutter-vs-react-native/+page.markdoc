@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Flutter vs React Native: Which framework is best for your app in 2024?"
 description: Learn how to choose between Flutter and React Native for your next mobile app development project.
@@ -199,6 +199,6 @@ The choice between Flutter and React Native depends on your specific project req
 
 # More resources
 
-- [Get started with Appwrite Realtime for Flutter](http://appwrite.io/blog/post/appwrite-realtime-for-flutter)
+- [Get started with Indobase Realtime for Flutter](http://appwrite.io/blog/post/appwrite-realtime-for-flutter)
 - [How to build cross-platform applications with React Native](https://appwrite.io/blog/post/building-cross-platform-applications-with-react-native)
 - [SSR vs CSR with Next.js](https://appwrite.io/blog/post/csr-vs-ssr-with-nextjs)

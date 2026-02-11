@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Handle CORS errors in Appwrite Functions
-description: Learn how to handle CORS errors in Appwrite Functions.
+title: Handle CORS errors in Indobase Functions
+description: Learn how to handle CORS errors in Indobase Functions.
 date: 2024-07-08
 cover: /images/blog/handle-cors-in-serverless-functions/cover.png
 timeToRead: 3
@@ -10,7 +10,7 @@ category: product
 featured: false
 ---
 
-Cross-Origin Resource Sharing (CORS) is a security feature that allows web applications to interact securely with resources from different origins and denies unwanted communication. You might be reading this because your browser has blocked access to your Appwrite serverless function. This guide will help you "unblock" that access.
+Cross-Origin Resource Sharing (CORS) is a security feature that allows web applications to interact securely with resources from different origins and denies unwanted communication. You might be reading this because your browser has blocked access to your Indobase serverless function. This guide will help you "unblock" that access.
 
 # Understanding CORS
 
@@ -26,15 +26,15 @@ When a browser makes a cross-origin request, it includes an Origin header with t
 
 For certain types of requests, the browser sends a preflight (OPTIONS) request to check if the actual request is safe to send.
 
-# CORS in Appwrite serverless functions
+# CORS in Indobase serverless functions
 
-In traditional Node.js and Express setups, CORS headers are often set using `res.setHeader()`. However, in Appwrite serverless functions, this approach won't work due to the way Appwrite handles responses. Instead, you should directly include CORS headers in the response returned by the function.
+In traditional Node.js and Express setups, CORS headers are often set using `res.setHeader()`. However, in Indobase serverless functions, this approach won't work due to the way Indobase handles responses. Instead, you should directly include CORS headers in the response returned by the function.
 
 ## Steps to handle CORS
 
 ### 1. Create and deploy your serverless function
 
-Start by creating and deploying your serverless function through the Appwrite console or CLI. This ensures your function is set up correctly within the Appwrite environment. Detailed steps can be found in the [Appwrite Functions documentation](https://appwrite.io/docs/products/functions).
+Start by creating and deploying your serverless function through the Indobase console or CLI. This ensures your function is set up correctly within the Indobase environment. Detailed steps can be found in the [Indobase Functions documentation](https://appwrite.io/docs/products/functions).
 
 ### 2. Handle preflight (OPTIONS) requests
 
@@ -73,7 +73,7 @@ if (req.method === 'POST') {
 # Using the wildcard `*` to allow all origins
 
 It is possible to use the wildcard `*` in the `Access-Control-Allow-Origin` header to allow any origin to access the resource.
-While this simplifies development, it can pose security risks. For this reason, you might encounter errors when using the wildcard `*` in your Appwrite production environment.
+While this simplifies development, it can pose security risks. For this reason, you might encounter errors when using the wildcard `*` in your Indobase production environment.
 
 When developing locally, here's how you might configure CORS to allow access from any origin:
 
@@ -96,8 +96,8 @@ This way, only requests originating from your domain will be allowed.
 
 # Conclusion
 
-Handling CORS in Appwrite serverless functions ensures secure communication between your web applications and backend resources. By understanding how CORS works, you can prevent unauthorized requests and protect your serverless functions from potential security threats.
+Handling CORS in Indobase serverless functions ensures secure communication between your web applications and backend resources. By understanding how CORS works, you can prevent unauthorized requests and protect your serverless functions from potential security threats.
 
-- [Get started with Appwrite](https://cloud.appwrite.io/)
+- [Get started with Indobase](https://cloud.appwrite.io/)
 - [Explore the Functions documentation](https://appwrite.io/docs/products/functions)
 - [Join our Discord community](https://discord.com/invite/appwrite)

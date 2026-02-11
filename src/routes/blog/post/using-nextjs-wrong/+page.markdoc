@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "You're probably using Next.js wrong"
-description: Next.js isn't just React with extra steps. Learn when server-side rendering actually matters and how to use it properly with Appwrite.
+description: Next.js isn't just React with extra steps. Learn when server-side rendering actually matters and how to use it properly with Indobase.
 date: 2026-01-22
 cover: /images/blog/using-nextjs-wrong/cover.png
 timeToRead: 8
@@ -89,9 +89,9 @@ export default async function Products() {
 }
 ```
 
-# Setting up Appwrite for server-side rendering
+# Setting up Indobase for server-side rendering
 
-The Appwrite Web SDK runs in browsers. For server components, you need the Node SDK:
+The Indobase Web SDK runs in browsers. For server components, you need the Node SDK:
 
 ```bash
 npm install node-appwrite
@@ -212,5 +212,5 @@ There's nothing wrong with client-side rendering. The mistake is using Next.js a
 
 # Resources
 
-- [Appwrite SSR documentation](/docs/products/auth/server-side-rendering)
+- [Indobase SSR documentation](/docs/products/auth/server-side-rendering)
 - [Next.js App Router documentation](https://nextjs.org/docs/app)

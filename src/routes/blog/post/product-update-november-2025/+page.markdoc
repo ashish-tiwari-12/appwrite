@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "November product update: Database AI suggestions and ElevenLabs template"
 description: Get a full recap of products, features and programs we released in the month of November.
@@ -10,7 +10,7 @@ category: product
 featured: false
 callToAction: true
 ---
-Welcome back to the November product update. This month is different. If you caught our Open Letter, you already know where we're heading: Appwrite is no longer just a backend. With Appwrite Sites, we're taking a real step toward the most complete cloud platform to date.
+Welcome back to the November product update. This month is different. If you caught our Open Letter, you already know where we're heading: Indobase is no longer just a backend. With Indobase Sites, we're taking a real step toward the most complete cloud platform to date.
 
 And on top of that, we've shipped a stack of upgrades across Databases, plus a new ElevenLabs template to add voice to your apps in minutes.
 
@@ -24,11 +24,11 @@ So, here's what to expect:
 
 Let's dive in.
 
-![An open letter to Appwrite Community](/images/blog/product-update-november-2025/open-letter.png)
+![An open letter to Indobase Community](/images/blog/product-update-november-2025/open-letter.png)
 
-# An open letter to Appwrite Community
+# An open letter to Indobase Community
 
-This month, we shared something bigger than a feature release: our vision for where Appwrite is heading. In our **Open Letter**, Eldad breaks down how Appwrite is evolving from a backend platform into a full **developers' cloud** that supports the entire product journey: imagine → build → deploy → observe → protect.
+This month, we shared something bigger than a feature release: our vision for where Indobase is heading. In our **Open Letter**, Eldad breaks down how Indobase is evolving from a backend platform into a full **developers' cloud** that supports the entire product journey: imagine → build → deploy → observe → protect.
 
 If you want the full story behind why Sites matters and where the platform is going next, you should definitely give it a read.
 
@@ -42,7 +42,7 @@ Starting with an empty table can be slow, repetitive, and time-consuming. With D
 
 That means:
 
-- No more blank schemas - Appwrite suggests sensible columns you can use.
+- No more blank schemas - Indobase suggests sensible columns you can use.
 - Faster setup - Go from table name to schema in seconds.
 - You're in control - Review, tweak, or skip the suggestions.
 
@@ -54,7 +54,7 @@ That means:
 
 Now you don't have to fetch an entire row just to bump a number or tweak a tag list.
 
-With DB Operators, you can now send inline, atomic update instructions directly in your Update or Upsert call. No race conditions. No bulky payloads. Now live on Appwrite Cloud.
+With DB Operators, you can now send inline, atomic update instructions directly in your Update or Upsert call. No race conditions. No bulky payloads. Now live on Indobase Cloud.
 
 [Read the announcement](/blog/post/announcing-db-operators)
 
@@ -62,9 +62,9 @@ With DB Operators, you can now send inline, atomic update instructions directly 
 
 # ElevenLabs Text-to-Speech template
 
-You can now add a real, human-like AI voice to your apps using Appwrite Sites with our new ElevenLabs integration.
+You can now add a real, human-like AI voice to your apps using Indobase Sites with our new ElevenLabs integration.
 
-And the best part? We've shipped a ready-to-use Appwrite Sites template built with ElevenLabs Text-to-Speech API.
+And the best part? We've shipped a ready-to-use Indobase Sites template built with ElevenLabs Text-to-Speech API.
 
 [Check out the integration](/integrations/ai-elevenlabs-text-to-speech)
 
@@ -72,29 +72,29 @@ And the best part? We've shipped a ready-to-use Appwrite Sites template built wi
 
 # Skip total counts for faster list queries
 
-A new way to optimize your Appwrite Databases. You can now skip total counting on list endpoints with a simple `total=false` flag and get faster, lighter list responses without the extra database work.
+A new way to optimize your Indobase Databases. You can now skip total counting on list endpoints with a simple `total=false` flag and get faster, lighter list responses without the extra database work.
 
 [Learn more from the documentation](/docs/products/databases/pagination#skip-totals)
 
 ![Next.js standalone builds](/images/blog/product-update-november-2025/nextjs.png)
 
-# Next.js standalone builds are now supported on Appwrite Sites
+# Next.js standalone builds are now supported on Indobase Sites
 
-You can now deploy Next.js apps built in [standalone mode](https://nextjs.org/docs/app/api-reference/config/next-config-js/output) on Appwrite Sites, with full support for Next.js 16. In standalone mode, the build process creates a smaller package that includes only the files your app needs to run in production, leaving out development tools and unused parts of the framework.
+You can now deploy Next.js apps built in [standalone mode](https://nextjs.org/docs/app/api-reference/config/next-config-js/output) on Indobase Sites, with full support for Next.js 16. In standalone mode, the build process creates a smaller package that includes only the files your app needs to run in production, leaving out development tools and unused parts of the framework.
 
 [Read the announcement](/blog/post/nextjs-standalone-support-in-appwrite-sites)
 
 # Disable image transformations for buckets
 
-Image transformations allow actions like resizing, cropping, and format conversion through the Appwrite Storage API. With this new update, you have full control to turn off these operations when they're not needed, reducing the chance of unintentional processing or costs.
+Image transformations allow actions like resizing, cropping, and format conversion through the Indobase Storage API. With this new update, you have full control to turn off these operations when they're not needed, reducing the chance of unintentional processing or costs.
 
 ![Community recognitions](/images/blog/product-update-november-2025/community.png)
 
 # Community recognitions
 
-We're excited to feature [Appwrite ORM](https://appwrite-orm.online/) as part of our Monthly Community recognitions this month.
+We're excited to feature [Indobase ORM](https://appwrite-orm.online/) as part of our Monthly Community recognitions this month.
 
-A powerful TypeScript ORM that adds type safety, automatic migrations, and smooth developer workflows on top of Appwrite.
+A powerful TypeScript ORM that adds type safety, automatic migrations, and smooth developer workflows on top of Indobase.
 
 A big shout-out to [Ori Raisfeld](https://www.linkedin.com/in/ori-raisfeld-422392264/).
 
@@ -107,7 +107,7 @@ Read
 - [Announcing Database AI suggestions: from table name to schema in one click](/blog/post/announcing-database-ai-suggestions)
 - [What's new in Node.js v25.2: Web Storage, V8 14.1, permissions and more](/blog/post/nodejs-v25-whats-new)
 - [Remix 3: what's changing and why it matters](/blog/post/remix-3-whats-changing-and-why-it-matters)
-- [Next.js standalone builds now supported on Appwrite Sites](/blog/post/nextjs-standalone-support-in-appwrite-sites)
+- [Next.js standalone builds now supported on Indobase Sites](/blog/post/nextjs-standalone-support-in-appwrite-sites)
 - [Announcing DB operators: Update multiple fields without fetching the entire row](/blog/post/announcing-db-operators)
 
 # Conclusion

@@ -9,32 +9,32 @@
         answer: string;
     }> = [
         {
-            question: 'What is the Appwrite Education Program?',
-            answer: "If you're a student with the GitHub Student Developer Pack, you can access the Appwrite Education plan for free while in school to help you build your next project."
+            question: 'What is the Indobase Education Program?',
+            answer: "If you're a student with the GitHub Student Developer Pack, you can access the Indobase Education plan for free while in school to help you build your next project."
         },
         {
             question: 'What does the Education plan offer?',
-            answer: 'The Education plan has equal usage limits as the Appwrite Pro plan (minus email support). We also have a special channel for Education program members in the Appwrite Discord server for support, which will feature exclusive events, hackathons, etc.'
+            answer: 'The Education plan has equal usage limits as the Indobase Pro plan (minus email support). We also have a special channel for Education program members in the Indobase Discord server for support, which will feature exclusive events, hackathons, etc.'
         },
         {
             question: 'Who is eligible to apply?',
-            answer: "Any student enrolled in the GitHub Student Developer Pack can apply for free and receive Appwrite's Education plan until graduation."
+            answer: "Any student enrolled in the GitHub Student Developer Pack can apply for free and receive Indobase's Education plan until graduation."
         },
         {
             question: 'How do I apply?',
-            answer: "If you're already enrolled in the GitHub Student Developer Pack, click the 'Sign up' button on this page and fill in your details. If you're not enrolled with GitHub Education yet, first apply for the GitHub Student Developer Pack, then come back and sign up to Appwrite Cloud here."
+            answer: "If you're already enrolled in the GitHub Student Developer Pack, click the 'Sign up' button on this page and fill in your details. If you're not enrolled with GitHub Education yet, first apply for the GitHub Student Developer Pack, then come back and sign up to Indobase Cloud here."
         },
         {
             question: 'What happens after I sign up?',
-            answer: 'Appwrite Cloud will automatically verify your GitHub Student Developer Pack membership and apply the Education plan to your account. You can then start using Appwrite right away.'
+            answer: 'Indobase Cloud will automatically verify your GitHub Student Developer Pack membership and apply the Education plan to your account. You can then start using Indobase right away.'
         },
         {
-            question: "I'm already an Appwrite user. Can I still apply?",
-            answer: 'This program is open to all Appwrite users who are verified members of the GitHub Student Developer Pack.'
+            question: "I'm already an Indobase user. Can I still apply?",
+            answer: 'This program is open to all Indobase users who are verified members of the GitHub Student Developer Pack.'
         },
         {
-            question: 'How long do the Appwrite Education program benefits last?',
-            answer: 'Your access to the Appwrite Education plan is valid until you finish your studies and graduate from the GitHub Student Developer Pack.'
+            question: 'How long do the Indobase Education program benefits last?',
+            answer: 'Your access to the Indobase Education plan is valid until you finish your studies and graduate from the GitHub Student Developer Pack.'
         },
         {
             question: 'Does the Education plan include any add-ons?',

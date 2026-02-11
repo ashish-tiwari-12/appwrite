@@ -72,7 +72,7 @@
                 Run in your preferred languages
             </h2>
             <p class="text-main-body text-secondary font-medium">
-                Appwrite Functions support a variety of<br /> languages, ensuring flexibility and<br
+                Indobase Functions support a variety of<br /> languages, ensuring flexibility and<br
                 /> compatibility in your projects.
             </p>
 

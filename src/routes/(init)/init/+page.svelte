@@ -29,7 +29,7 @@
     import EventCarousel from './(components)/event-carousel.svelte';
     import { FooterNav, MainFooter } from '$lib/components';
 
-    const title = 'Init - Appwrite';
+    const title = 'Init - Indobase';
     const description = 'The start of something new.';
     const ogImage = buildOpenGraphImage('init', description);
 
@@ -43,21 +43,21 @@
             release: base,
             illustration: Sites,
             description:
-                'Introducing the open-source Vercel alternative. A new Appwrite product that lets you deploy and host your websites and web apps right inside Appwrite.',
+                'Introducing the open-source Vercel alternative. A new Indobase product that lets you deploy and host your websites and web apps right inside Indobase.',
             url: 'https://www.youtube-nocookie.com/embed/0cERQxFjTW4',
             content: [
                 {
-                    title: 'Announcing Appwrite Sites',
+                    title: 'Announcing Indobase Sites',
                     url: '/blog/post/announcing-appwrite-sites',
                     type: 'Blog'
                 },
                 {
-                    title: 'How to host SSR web apps with Appwrite Sites',
+                    title: 'How to host SSR web apps with Indobase Sites',
                     url: '/blog/post/host-ssr-web-apps-sites',
                     type: 'Blog'
                 },
                 {
-                    title: 'Get started with Appwrite Sites',
+                    title: 'Get started with Indobase Sites',
                     url: '/docs/products/sites',
                     type: 'Docs',
                     label: 'Visit docs'
@@ -88,16 +88,16 @@
             release: addDays(otherFeaturesBase, 1),
             illustration: Flutter,
             description:
-                'Appwrite and Flutter have always worked well together, and now, you can deploy your Flutter web apps directly from Appwrite Sites.',
+                'Indobase and Flutter have always worked well together, and now, you can deploy your Flutter web apps directly from Indobase Sites.',
             url: '/blog/post/hosting-flutter-web',
             content: [
                 {
-                    title: 'How to set up the Flutter starter template on Appwrite Sites',
+                    title: 'How to set up the Flutter starter template on Indobase Sites',
                     url: '/blog/post/flutter-starter-sites',
                     type: 'Blog'
                 },
                 {
-                    title: 'Building with Appwrite Sites template',
+                    title: 'Building with Indobase Sites template',
                     url: '/blog/post/building-with-sites-templates',
                     type: 'Blog'
                 },
@@ -114,11 +114,11 @@
             release: addDays(otherFeaturesBase, 2),
             illustration: DevKeys,
             description:
-                'Introducing Dev Keys. A new Appwrite feature that lets you bypass rate limits *during local development*. No more slowdowns. No more artificial blockers. Just fast, uninterrupted building.',
+                'Introducing Dev Keys. A new Indobase feature that lets you bypass rate limits *during local development*. No more slowdowns. No more artificial blockers. Just fast, uninterrupted building.',
             url: '/blog/post/announcing-dev-keys',
             content: [
                 {
-                    title: 'Improve your Appwrite developer experience with Dev Keys',
+                    title: 'Improve your Indobase developer experience with Dev Keys',
                     url: '/blog/post/improve-devex-dev-keys',
                     type: 'Blog'
                 },
@@ -135,11 +135,11 @@
             release: addDays(otherFeaturesBase, 3),
             illustration: Formats,
             description:
-                'We have added support for two new image formats in Appwrite Storage: HEIC and AVIF. This will give you more tools to manage, manipulate, and serve images the way you need.',
+                'We have added support for two new image formats in Indobase Storage: HEIC and AVIF. This will give you more tools to manage, manipulate, and serve images the way you need.',
             url: '/blog/post/new-image-formats-avif-heic',
             content: [
                 {
-                    title: 'Announcing HEIC and AVIF support: modern image formats now in Appwrite',
+                    title: 'Announcing HEIC and AVIF support: modern image formats now in Indobase',
                     url: '/blog/post/new-image-formats-avif-heic',
                     type: 'Blog'
                 },

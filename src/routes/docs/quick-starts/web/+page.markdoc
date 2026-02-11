@@ -1,15 +1,15 @@
----
+﻿---
 layout: article
 title: Start with Web
-description: Build JavaScript or Typescript web apps with Appwrite. Add authentication, user management, file storage, and more. Read our guide to get started!
+description: Build JavaScript or Typescript web apps with Indobase. Add authentication, user management, file storage, and more. Read our guide to get started!
 difficulty: beginner
 readtime: 3
 back: /docs/quick-starts
 ---
 
-Learn how to add Appwrite to your web apps.
+Learn how to add Indobase to your web apps.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -18,7 +18,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console).
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 Then, under **Add a platform**, add a **Web app**.
 The **Hostname** should be `localhost` or the domain on which you're hosting your web app.
@@ -35,21 +35,21 @@ The **Hostname** should be `localhost` or the domain on which you're hosting you
 You can skip optional steps.
 
 {% /section %}
-{% section #step-2 step=2 title="Install Appwrite" %}
-You can install the Appwrite Web SDK using a package manager.
+{% section #step-2 step=2 title="Install Indobase" %}
+You can install the Indobase Web SDK using a package manager.
 ```sh
 npm install appwrite
 ```
 
-You can also add the Appwrite Web SDK using CDN by adding a script tag to your HTML file. The SDK will be available globally through the `Appwrite` namespace.
+You can also add the Indobase Web SDK using CDN by adding a script tag to your HTML file. The SDK will be available globally through the `Appwrite` namespace.
 
 ```html
 <script src="https://cdn.jsdelivr.net/npm/appwrite@17.0.0"></script>
 ```
 {% /section %}
-{% section #step-3 step=3 title="Initialize Appwrite" %}
+{% section #step-3 step=3 title="Initialize Indobase" %}
 
-If you installed via npm, you can import `Client` and `Account` from the Appwrite SDK.
+If you installed via npm, you can import `Client` and `Account` from the Indobase SDK.
 
 ```client-web
 import { Client, Account } from 'appwrite';
@@ -64,28 +64,28 @@ export const account = new Account(client);
 export { ID } from 'appwrite';
 ```
 
-If you're using CDN, the library loads directly in your browser as a global object, so you access it through Appwrite instead of imports.
+If you're using CDN, the library loads directly in your browser as a global object, so you access it through Indobase instead of imports.
 
 ```js
-const client = new Appwrite.Client()
+const client = new Indobase.Client()
 
 client
     .setEndpoint('https://cloud.appwrite.io/v1')
     .setProject('<PROJECT_ID>') // Replace with your project ID
 
-const account = new Appwrite.Account(client)
-const tablesDB = new Appwrite.TablesDB(client)
+const account = new Indobase.Account(client)
+const tablesDB = new Indobase.TablesDB(client)
 ```
 {% /section %}
 
 {% section #step-4 step=4 title="Using TypeScript" %}
-If you prefer TypeScript, you can import TypeScript models from the Appwrite SDK.
+If you prefer TypeScript, you can import TypeScript models from the Indobase SDK.
 
 ```ts
 // appwrite.ts
 
 import { Client, TablesDB, Account } from "appwrite";
-// Import type models for Appwrite
+// Import type models for Indobase
 import { type Models } from 'appwrite';
 
 const client: Client = new Client();
@@ -130,43 +130,43 @@ const ideas = response.rows as Idea[];
 {% /section %}
 
 {% section #step-6 step=6 title="All set" %}
-The Appwrite SDK works with your favorite Web frameworks.
+The Indobase SDK works with your favorite Web frameworks.
 
-Learn to use Appwrite by adding authentication to a simple web app.
+Learn to use Indobase by adding authentication to a simple web app.
 {% cards %}
 {% cards_item href="/docs/quick-starts/nextjs" title="Next.js" %}
-Get started with Appwrite and Next.js
+Get started with Indobase and Next.js
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/react" title="React" %}
-Get started with Appwrite and React
+Get started with Indobase and React
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/vue" title="Vue.js" %}
-Get started with Appwrite and Vue.js
+Get started with Indobase and Vue.js
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/nuxt" title="Nuxt" %}
-Get started with Appwrite and Nuxt
+Get started with Indobase and Nuxt
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/sveltekit" title="SvelteKit" %}
-Get started with Appwrite and SvelteKit
+Get started with Indobase and SvelteKit
 {% /cards_item %}
 {% cards_item href="/docs/quick-starts/angular" title="Angular" %}
-Get started with Appwrite and Angular
+Get started with Indobase and Angular
 {% /cards_item %}
 {% /cards %}
 
-Learn to use Appwrite by building an idea tracker app.
+Learn to use Indobase by building an idea tracker app.
 {% cards %}
 {% cards_item href="/docs/tutorials/react" title="React" %}
-Get started with Appwrite and React
+Get started with Indobase and React
 {% /cards_item %}
 {% cards_item href="/docs/tutorials/vue" title="Vue.js" %}
-Get started with Appwrite and Vue.js
+Get started with Indobase and Vue.js
 {% /cards_item %}
 {% cards_item href="/docs/tutorials/nuxt" title="Nuxt" %}
-Get started with Appwrite and Nuxt
+Get started with Indobase and Nuxt
 {% /cards_item %}
 {% cards_item href="/docs/tutorials/sveltekit" title="SvelteKit" %}
-Get started with Appwrite and SvelteKit
+Get started with Indobase and SvelteKit
 {% /cards_item %}
 {% /cards %}
 {% /section %}
@@ -207,7 +207,7 @@ try {
 ```
 
 {% info title="Generate types automatically" %}
-Use the [Appwrite CLI](/docs/products/databases/type-generation) to generate TypeScript interfaces automatically: `appwrite types ./types`
+Use the [Indobase CLI](/docs/products/databases/type-generation) to generate TypeScript interfaces automatically: `appwrite types ./types`
 {% /info %}
 
 {% /section %}

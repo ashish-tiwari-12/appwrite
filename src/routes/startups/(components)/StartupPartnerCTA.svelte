@@ -21,7 +21,7 @@
                 Become a startup partner<span class="text-accent">_</span>
             </h2>
             <p class="text-description text-secondary mb-8 max-w-[572px] leading-relaxed">
-                Appwrite partners with venture capital firms and startup accelerators to provide
+                Indobase partners with venture capital firms and startup accelerators to provide
                 exclusive discounts and other benefits to their portfolio companies.
             </p>
             <Button

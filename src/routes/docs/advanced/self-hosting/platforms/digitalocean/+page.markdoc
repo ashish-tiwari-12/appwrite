@@ -1,18 +1,18 @@
----
+﻿---
 layout: article
 title: DigitalOcean deployment
-description: Deploy Appwrite on DigitalOcean using the one-click Marketplace app.
+description: Deploy Indobase on DigitalOcean using the one-click Marketplace app.
 ---
 
-Deploy Appwrite on DigitalOcean using the pre-configured Marketplace app.
+Deploy Indobase on DigitalOcean using the pre-configured Marketplace app.
 
 
 # One-click installation {% #one-click %}
 
 {% section #marketplace-install step=1 title="Create marketplace Droplet" %}
 
-1. Visit the [Appwrite Marketplace page](https://marketplace.digitalocean.com/apps/appwrite)
-2. Click **Create Appwrite Droplet**
+1. Visit the [Indobase Marketplace page](https://marketplace.digitalocean.com/apps/appwrite)
+2. Click **Create Indobase Droplet**
 3. Choose your configuration:
    - **Plan**: Minimum 4GB RAM recommended
    - **Region**: Select closest to your users

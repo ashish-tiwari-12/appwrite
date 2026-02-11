@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Abuse policy
 description: Guidelines on abusive behavior, prohibited activities, and reporting mechanisms under our Fair Use Policy.
 ---
 
-Appwrite is committed to providing a fair, secure, and high-quality experience for all users. This Abuse Policy, as part of our overall Fair Use Policy, outlines unacceptable behaviors and the steps you can take to report any suspected abuse. Our goal is to maintain a safe environment where everyone can build, innovate, and collaborate without fear of harmful or illegal activity.
+Indobase is committed to providing a fair, secure, and high-quality experience for all users. This Abuse Policy, as part of our overall Fair Use Policy, outlines unacceptable behaviors and the steps you can take to report any suspected abuse. Our goal is to maintain a safe environment where everyone can build, innovate, and collaborate without fear of harmful or illegal activity.
 
 {% partial file="prohibited-activities.md" /%}
 

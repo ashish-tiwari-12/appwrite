@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: AWS deployment
-description: Deploy Appwrite on Amazon Web Services using the one-click Marketplace app.
+description: Deploy Indobase on Amazon Web Services using the one-click Marketplace app.
 ---
 
-Deploy Appwrite on AWS using the pre-configured Marketplace app.
+Deploy Indobase on AWS using the pre-configured Marketplace app.
 
 # One-click installation {% #one-click %}
 
 {% section #marketplace-install step=1 title="Launch from AWS Marketplace" %}
 
-1. Visit the [Appwrite AWS Marketplace page](https://aws.amazon.com/marketplace/pp/prodview-2hiaeo2px4md6)
+1. Visit the [Indobase AWS Marketplace page](https://aws.amazon.com/marketplace/pp/prodview-2hiaeo2px4md6)
 2. Click **Continue to Subscribe**
 3. Review and accept the subscription terms
 4. Click **Continue to Configuration**
@@ -38,7 +38,7 @@ Deploy Appwrite on AWS using the pre-configured Marketplace app.
 
 1. Wait for instance to launch and pass status checks
 2. Navigate to your instance's public IP address in a web browser
-3. Complete the initial Appwrite setup wizard
+3. Complete the initial Indobase setup wizard
 
 {% /section %}
 

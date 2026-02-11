@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Multi-tenancy with Teams
-description: Learn how to implement multi-tenancy in your applications using Appwrite Teams.
+description: Learn how to implement multi-tenancy in your applications using Indobase Teams.
 ---
 
-Appwrite Teams provides an effective way to implement multi-tenancy in your applications. Create a team for each tenant to handle multi-tenant apps with built-in data isolation.
+Indobase Teams provides an effective way to implement multi-tenancy in your applications. Create a team for each tenant to handle multi-tenant apps with built-in data isolation.
 
 {% arrow_link href="/docs/products/auth/teams" %}
 Learn more about Teams
@@ -12,7 +12,7 @@ Learn more about Teams
 
 # What is multi-tenancy?
 
-Multi-tenancy is a design pattern where a single instance of software serves multiple user groups (tenants). With Appwrite Teams, you can:
+Multi-tenancy is a design pattern where a single instance of software serves multiple user groups (tenants). With Indobase Teams, you can:
 
 - Create a team for each tenant in your application
 - Control access to resources using team-based permissions
@@ -64,7 +64,7 @@ final tenantTeam = await teams.create(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -141,7 +141,7 @@ final membership = await teams.createMembership(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -243,7 +243,7 @@ final row = await tablesDB.createRow(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -362,7 +362,7 @@ final tenantDocuments = await tablesDB.listRows(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

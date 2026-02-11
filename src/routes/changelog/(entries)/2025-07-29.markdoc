@@ -1,10 +1,10 @@
----
+﻿---
 layout: changelog
 title: Console and deployment improvements for smoother workflows
 date: 2025-07-29
 ---
 
-We've shipped several improvements to fix broken flows and clean up the developer experience across Sites, Functions, and the Appwrite Console.
+We've shipped several improvements to fix broken flows and clean up the developer experience across Sites, Functions, and the Indobase Console.
 
 ## What's new
 
@@ -26,7 +26,7 @@ We've shipped several improvements to fix broken flows and clean up the develope
 - Fixed a bug where Console project URLs showed "undefined" in self-hosted environments.
 - Multiple UI alignment and responsiveness issues resolved.
 
-These improvements are now live on Appwrite Cloud, and we'd love to hear about your experience with them.
+These improvements are now live on Indobase Cloud, and we'd love to hear about your experience with them.
 
 {% arrow_link href="https://appwrite.io/discord" %}
 Join the discussion on Discord

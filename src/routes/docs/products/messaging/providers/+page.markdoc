@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Providers 
-description: Learn the different providers that you can use to send messages with Appwrite.
+description: Learn the different providers that you can use to send messages with Indobase.
 back: /docs/products/messaging
 ---
-Appwrite allows you to connect to a variety of third-party messaging providers to deliver push notifications, emails, and SMS messages to your users.
+Indobase allows you to connect to a variety of third-party messaging providers to deliver push notifications, emails, and SMS messages to your users.
 Before you can deliver messages, you must connect to a messaging provider.
 # Push notifications {% #push-notifications %}
 Send push notifications, which are little notification messages that appear on a user's browser or device to alert them

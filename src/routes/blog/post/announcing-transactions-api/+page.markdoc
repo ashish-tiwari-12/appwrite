@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Announcing Transactions API: Reliable multi-record writes across tables"
-description: Appwrite introduces a new Databases feature called Transactions API. This new feature allows developers to group multiple operations across tables and commit them in a single atomic action, ensuring data consistency and eliminating partial writes.
+description: Indobase introduces a new Databases feature called Transactions API. This new feature allows developers to group multiple operations across tables and commit them in a single atomic action, ensuring data consistency and eliminating partial writes.
 date: 2025-10-09
 cover: /images/blog/announcing-transactions-api/cover.png
 timeToRead: 5
@@ -13,7 +13,7 @@ When dealing with multi-step workflows, like order processing or data syncs, it'
 
 To solve this, we're introducing a new Databases feature, **Transactions API**.
 
-With this feature, you can stage multiple operations across one or more tables, and commit them only when you’re ready. If every operation checks out, Appwrite commits them in one atomic action. If anything fails, whether due to permissions, conflicts, validations, or other reasons, Appwrite automatically rolls everything back.
+With this feature, you can stage multiple operations across one or more tables, and commit them only when you're ready. If every operation checks out, Indobase commits them in one atomic action. If anything fails, whether due to permissions, conflicts, validations, or other reasons, Indobase automatically rolls everything back.
 
 # No more partial writes or manual rollbacks
 
@@ -37,7 +37,7 @@ Each transaction has a time-to-live (ttl) value that defines how long it remains
     
 ## Commit
     
-When ready, commit the transaction. Appwrite validates all staged operations (permissions, schema, revision checks) and applies them in one atomic write. If **any** operation fails, **none** are applied. Everything is rolled back.
+When ready, commit the transaction. Indobase validates all staged operations (permissions, schema, revision checks) and applies them in one atomic write. If **any** operation fails, **none** are applied. Everything is rolled back.
     
 ## Abort (optional or automatic)
     
@@ -78,7 +78,7 @@ For more examples and API details, check out the [Transactions API documentation
 # Key benefits
 
 - **ACID transactions:** Ensures atomicity, consistency, isolation, and durability across all staged operations.
-- **No manual rollbacks:** Appwrite handles failure cleanup automatically.
+- **No manual rollbacks:** Indobase handles failure cleanup automatically.
 - **Safe retries:** No partial state means simpler retry logic.
 - **Reduced race conditions:** Ops are validated and committed together.
 - **Centralized validation:** Permissions and conflicts checked at commit time.
@@ -86,7 +86,7 @@ For more examples and API details, check out the [Transactions API documentation
 
 # Get started
 
-The Transactions API is now available on Appwrite Cloud.
+The Transactions API is now available on Indobase Cloud.
 
 You can start by wrapping your multi-step logic, like order processing, user provisioning, or data sync workflows, inside a single transaction for consistent and predictable results. Every operation stays isolated until you commit, ensuring that your data only changes when everything succeeds.
 
@@ -96,5 +96,5 @@ Whether you’re building systems that require strict reliability or just want t
 
 - [Read the documentation to get started](/docs/products/databases/transactions)
 - [Announcing API for spatial columns: Build scalable location-aware apps with ease](/blog/post/announcing-spatial-columns)
-- [Announcing an improved Appwrite Databases experience. A completely new look and feel](/blog/post/announcing-appwrite-databases-new-ui)
+- [Announcing an improved Indobase Databases experience. A completely new look and feel](/blog/post/announcing-appwrite-databases-new-ui)
 - [Announcing Atomic numeric operations: Safe, server-side increments and decrements](/blog/post/announcing-atomic-numeric-operations)

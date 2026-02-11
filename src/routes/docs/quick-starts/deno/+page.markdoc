@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Start with Deno
-description: Dive into our step-by-step guide on integrating Appwrite with your Deno server backend application. Get your backend up and running quickly with this tutorial.
+description: Dive into our step-by-step guide on integrating Indobase with your Deno server backend application. Get your backend up and running quickly with this tutorial.
 difficulty: beginner
 readtime: 5
 back: /docs/quick-starts
@@ -11,11 +11,11 @@ back: /docs/quick-starts
 The dedicated Deno SDK has been deprecated in favor of using the Node.js SDK directly through npm specifiers, thanks to Deno's excellent Node.js compatibility. This change simplifies maintenance and ensures you always have access to the latest features.
 {% /info %}
 
-Learn how to setup your first Deno project powered by Appwrite.
+Learn how to setup your first Deno project powered by Indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -54,9 +54,9 @@ echo "console.log('Hello, Deno!');" > mod.ts
 ```
 
 {% /section %}
-{% section #step-3 step=3 title="Install Appwrite" %}
+{% section #step-3 step=3 title="Install Indobase" %}
 
-Install the Appwrite SDK using npm specifiers at the top of your file.
+Install the Indobase SDK using npm specifiers at the top of your file.
 
 ```
 // import all as sdk
@@ -67,7 +67,7 @@ import { Client, ... other imports } from "npm:node-appwrite";
 ```
 
 {% /section %}
-{% section #step-4 step=4 title="Import Appwrite" %}
+{% section #step-4 step=4 title="Import Indobase" %}
 
 Find your project ID in the **Settings** page. Also, click on the **View API Keys** button to find the API key that was created earlier.
 
@@ -78,7 +78,7 @@ Find your project ID in the **Settings** page. Also, click on the **View API Key
 ![Project settings screen](/images/docs/quick-starts/project-id.png)
 {% /only_light %}
 
-Open `mod.ts` in your IDE and initialize the Appwrite Client. Replace `<PROJECT_ID>` with your project ID and `<YOUR_API_KEY>` with your API key.
+Open `mod.ts` in your IDE and initialize the Indobase Client. Replace `<PROJECT_ID>` with your project ID and `<YOUR_API_KEY>` with your API key.
 
 ```ts
 import { Client, ID, TablesDB, Models } from "npm:node-appwrite";
@@ -94,7 +94,7 @@ client
 {% /section %}
 {% section #step-5 step=5 title="Initialize database" %}
 
-Once the Appwrite Client is initialized, create a function to configure a todo table.
+Once the Indobase Client is initialized, create a function to configure a todo table.
 
 ```ts
 const tablesDB: TablesDB = new TablesDB(client);

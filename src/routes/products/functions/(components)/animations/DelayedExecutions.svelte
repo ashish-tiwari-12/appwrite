@@ -75,7 +75,7 @@
     <div class="p-4">
         <span class="text-primary">Delayed execution</span>
         <p class="text-secondary">
-            Appwrite let you postpone function runs until a specified future time.
+            Indobase let you postpone function runs until a specified future time.
         </p>
     </div>
 </div>

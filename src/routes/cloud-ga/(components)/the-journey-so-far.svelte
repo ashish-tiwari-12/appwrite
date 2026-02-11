@@ -60,7 +60,7 @@
             <Cell column={4} columnStart={3} class="px-4 pt-8 md:pt-30"
                 ><p class="text-paragraph-lg">
                     The milestone we achieved today officially started 26 months ago when we
-                    launched Appwrite private beta and enrolled users onto the platform bit by bit.
+                    launched Indobase private beta and enrolled users onto the platform bit by bit.
                     Since then, we have reached many achievements before taking Cloud to the next
                     level.
                 </p></Cell
@@ -93,7 +93,7 @@
         style:--border-gradient-before="linear-gradient(180deg,rgba(255,255,255,0.12),transparent)"
         style:--border-gradient-after="linear-gradient(180deg,rgba(255,255,255,0),transparent)"
     >
-        <span class="text-primary text-base font-medium">The Appwrite<br /> Cloud GA journey</span>
+        <span class="text-primary text-base font-medium">The Indobase<br /> Cloud GA journey</span>
         <div class="border-smooth mt-8 flex flex-col gap-8 border-l pl-2">
             {#each milestones as milestone}
                 <div class="border-accent -ml-2 flex flex-col border-l pl-2">

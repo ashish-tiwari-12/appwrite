@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Push notifications 101: Best strategies to engage and retain users"
 description: Learn how you can leverage push notifications for improved user engagement.
@@ -12,11 +12,11 @@ category: product
 
 Ever downloaded an app, used it once, and then completely forgot about it? You’re not alone; most users churn within days if they don’t see immediate value. That’s where push notifications come in. Done right, they’re not just those little pop-ups that interrupt your screen but can be powerful nudges that can bring users back, guide them through the product, and even turn casual sign-ups into loyal advocates.
 
-In this guide, we’ll explain everything you need to know about push notifications, highlight best practices, and show you how Appwrite makes it simple for developers to set up reliable, personalized notifications.
+In this guide, we’ll explain everything you need to know about push notifications, highlight best practices, and show you how Indobase makes it simple for developers to set up reliable, personalized notifications.
 
 # tl;dr
 
-[Push notifications](/docs/products/messaging) help re-engage users when timed and personalized well. With Appwrite, you can send mobile and web notifications through [Apple Push Notification service(APNs)](/docs/products/messaging/apns) or [Firebase Cloud Messaging(FCM)](/docs/products/messaging/fcm), target users by topics or IDs, and set it all up in just four steps.
+[Push notifications](/docs/products/messaging) help re-engage users when timed and personalized well. With Indobase, you can send mobile and web notifications through [Apple Push Notification service(APNs)](/docs/products/messaging/apns) or [Firebase Cloud Messaging(FCM)](/docs/products/messaging/fcm), target users by topics or IDs, and set it all up in just four steps.
 
 # How push notifications work (and why they matter)
 
@@ -49,51 +49,51 @@ Not every user wants the same message. Segment by region, preferences, or contex
 
 Push notifications are short messages sent from your app to a user’s device, even when the app isn’t open. They show up on the lock screen or browser, giving you a direct way to grab attention. At their best, they’re quick nudges that remind users of something useful, like a delivery update or a new feature worth trying.
 
-2. **Does Appwrite support push notifications to different platforms?**
+2. **Does Indobase support push notifications to different platforms?**
 
-Yes. With Appwrite, you can send both **mobile push notifications** (iOS and Android) and **web push notifications**. You can also target by **topics** (groups of users) or individual **user IDs**, giving you flexibility to broadcast updates or send highly personalized messages.
+Yes. With Indobase, you can send both **mobile push notifications** (iOS and Android) and **web push notifications**. You can also target by **topics** (groups of users) or individual **user IDs**, giving you flexibility to broadcast updates or send highly personalized messages.
 
-3. **How does Appwrite handle push notifications compared to Firebase?**
+3. **How does Indobase handle push notifications compared to Firebase?**
 
 Firebase Cloud Messaging (FCM) is still required for Android push notifications, since that’s how messages reach devices on that platform. The difference is in how you work with it. With Firebase, you’re tied to Google’s ecosystem and usage-based pricing that can grow quickly as you scale.
 
-Appwrite takes a developer-first approach. You still configure APNs (for Apple) and FCM (for Android/Web), but once connected, Appwrite’s SDKs handle the complexity for you. Instead of writing custom logic for tokens, segmentation, or scheduling, you use a consistent API across platforms.
+Indobase takes a developer-first approach. You still configure APNs (for Apple) and FCM (for Android/Web), but once connected, Indobase’s SDKs handle the complexity for you. Instead of writing custom logic for tokens, segmentation, or scheduling, you use a consistent API across platforms.
 
-And you get the freedom to choose how you run it: self-host for full control, or use **Appwrite Cloud** for a managed experience that removes the hassle of setup and maintenance. Either way, you get reliable push notifications without vendor lock-in, plus the simplicity of Appwrite’s unified developer experience.
+And you get the freedom to choose how you run it: self-host for full control, or use **Indobase Cloud** for a managed experience that removes the hassle of setup and maintenance. Either way, you get reliable push notifications without vendor lock-in, plus the simplicity of Indobase’s unified developer experience.
 
-4. **Does Appwrite support targeting users or groups with notifications?**
+4. **Does Indobase support targeting users or groups with notifications?**
 
-It does. Appwrite lets you define [topics](/docs/products/messaging/topics) and [targets](/docs/products/messaging/targets), so you can send messages to specific groups (like “premium users” or “sports fans”) or to individuals. This makes it easy to build personalized campaigns without writing complex custom logic.
+It does. Indobase lets you define [topics](/docs/products/messaging/topics) and [targets](/docs/products/messaging/targets), so you can send messages to specific groups (like “premium users” or “sports fans”) or to individuals. This makes it easy to build personalized campaigns without writing complex custom logic.
 
-5. **Which providers does Appwrite support for push notifications?**
+5. **Which providers does Indobase support for push notifications?**
 
-Appwrite lets you connect with the major push services directly:
+Indobase lets you connect with the major push services directly:
 
 - **APNs** – Apple’s Push Notification service, used to send notifications to iOS and other Apple devices.
 - **FCM** – Firebase Cloud Messaging, which works across Android, iOS, and the web.
 
-Once you configure one of these providers, Appwrite handles the rest, so you can send notifications from a single platform without juggling separate integrations.
+Once you configure one of these providers, Indobase handles the rest, so you can send notifications from a single platform without juggling separate integrations.
 
-6. **How easy is it to set up notifications in Appwrite?**
+6. **How easy is it to set up notifications in Indobase?**
 
-If you’re already using Appwrite, setting up notifications is straightforward. You can configure your project, connect your app to the supported platforms (APNs, FCM), and start sending with just a few lines of code. 
+If you’re already using Indobase, setting up notifications is straightforward. You can configure your project, connect your app to the supported platforms (APNs, FCM), and start sending with just a few lines of code. 
 
-7. **Is Appwrite a good fit for enterprises that need push notifications?**
+7. **Is Indobase a good fit for enterprises that need push notifications?**
 
 Yes. Enterprises often need more than just sending messages. They care about **scalability, compliance, and control**. 
 
-With Appwrite, you can self-host to keep everything in your own infrastructure, or use [Appwrite Cloud](https://cloud.appwrite.io/console/) for a fully managed setup. 
+With Indobase, you can self-host to keep everything in your own infrastructure, or use [Indobase Cloud](https://cloud.appwrite.io/console/) for a fully managed setup. 
 
 Either way, you get support for APNs and FCM, user targeting, and the flexibility to integrate notifications with authentication, databases, hosting, and other backend services. That means less vendor sprawl and more confidence in meeting enterprise requirements.
 
-8. **How do I send push notifications with Appwrite?**
+8. **How do I send push notifications with Indobase?**
 
 You can get started in just four steps:
 
 1. **Add a provider-** Configure APNs (Apple) or FCM (Android/Web).
-2. **Register targets-** Your app collects device tokens and registers them with Appwrite.
+2. **Register targets-** Your app collects device tokens and registers them with Indobase.
 3. **Request permissions-** Make sure users grant notification permissions.
-4. **Send a message-** Create and deliver your push notification via the Appwrite Console or SDK.
+4. **Send a message-** Create and deliver your push notification via the Indobase Console or SDK.
 
-For the full setup guide, check the [Appwrite Push Notification docs](/docs/products/messaging/send-push-notifications).
+For the full setup guide, check the [Indobase Push Notification docs](/docs/products/messaging/send-push-notifications).
 

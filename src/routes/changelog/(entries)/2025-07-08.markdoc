@@ -1,11 +1,11 @@
----
+﻿---
 layout: changelog
 title: "Announcing Database Upsert: Simplify your database interactions"
 date: 2025-07-08
 cover: /images/changelog/2025-07-08.png
 ---
 
-We're excited to introduce Database Upsert in Appwrite.
+We're excited to introduce Database Upsert in Indobase.
 
 You can now create or update a document in a single API call. If the document does not exist, it is created. If it does, it is updated. The server handles all the logic for you.
 

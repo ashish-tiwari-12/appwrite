@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Best practices for sending push notifications
 description: Learn about the different types of push notifications and best practices for sending them.
@@ -49,9 +49,9 @@ The content of the messages plays a crucial role. Here are some best practices t
 - **Use notifications for important alerts only**: Reserve push notifications for important or urgent messages to maintain their effectiveness.
 - **Provide an easy opt-out option**: Users should be able to easily opt out of receiving notifications, which respects their preferences and improves overall satisfaction.
 
-# Enabling push notifications for your app using Appwrite
+# Enabling push notifications for your app using Indobase
 
-The newly released Appwrite Messaging substantially simplifies your process of sending out push notifications to your application’s users. We have added simple-to-use adapters for Firebase Cloud Messaging (FCM) and Apple Push Notification Service (APNS) to let you send push notifications to let you send push notifications to both Android and iOS users.
+The newly released Indobase Messaging substantially simplifies your process of sending out push notifications to your application’s users. We have added simple-to-use adapters for Firebase Cloud Messaging (FCM) and Apple Push Notification Service (APNS) to let you send push notifications to let you send push notifications to both Android and iOS users.
 
 ```server-nodejs
 const sdk = require('node-appwrite');

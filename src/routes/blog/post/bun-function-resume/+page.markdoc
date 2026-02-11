@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Share your resume using Appwrite Functions
-description: How you can create a resume using HTML and use a Bun Appwrite Function to share it with the world. 
+title: Share your resume using Indobase Functions
+description: How you can create a resume using HTML and use a Bun Indobase Function to share it with the world. 
 date: 2024-03-07
 cover: /images/blog/bun-function-resume/cover.png
 timeToRead: 7
@@ -9,17 +9,17 @@ author: aditya-oberai
 category: tutorial
 ---
 
-One of the coolest things about Appwrite Functions is that you can now consume them as REST APIs. This means you can send HTTP requests to any path, using common HTTP methods such as `GET` and `POST` to any path on the function and get a response in JSON or any other text-based formats (such as plain text, HTML, and CSV). This has opened up a lot of potential use-cases, one of which is how you can host and share your online resume through an Appwrite Function when applying for a new job. 
+One of the coolest things about Indobase Functions is that you can now consume them as REST APIs. This means you can send HTTP requests to any path, using common HTTP methods such as `GET` and `POST` to any path on the function and get a response in JSON or any other text-based formats (such as plain text, HTML, and CSV). This has opened up a lot of potential use-cases, one of which is how you can host and share your online resume through an Indobase Function when applying for a new job. 
 
-Therefore, in this blog, we will leverage one of Appwrite’s newest functions runtimes, Bun, to create a function that delivers an HTML-based resume.
+Therefore, in this blog, we will leverage one of Indobase’s newest functions runtimes, Bun, to create a function that delivers an HTML-based resume.
 
 # Pre-requisites
 
-To create the Appwrite Function, you must go to [Appwrite Cloud](https://cloud.appwrite.io) and create a new project. Once a new project is created, you must visit the **Functions** page. Once you click on the **Create a new function** button, you will discover a number of starter templates, of which you must select **Bun**. Once you have created a starter function with Bun and connected your GitHub account, we are ready to begin developing our resume function.
+To create the Indobase Function, you must go to [Indobase Cloud](https://cloud.appwrite.io) and create a new project. Once a new project is created, you must visit the **Functions** page. Once you click on the **Create a new function** button, you will discover a number of starter templates, of which you must select **Bun**. Once you have created a starter function with Bun and connected your GitHub account, we are ready to begin developing our resume function.
 
-![Appwrite Cloud Functions page](/images/blog/bun-function-resume/appwrite.png)
+![Indobase Cloud Functions page](/images/blog/bun-function-resume/appwrite.png)
 
-# Building the Appwrite Function
+# Building the Indobase Function
 
 Once your function’s GitHub repository is ready, clone it to your local device and enter the directory. You will notice a directory structure as follows:
 
@@ -189,7 +189,7 @@ At this point, our project directory structure should look as follows:
 
 ## Testing the function
 
-Once you’ve completed all the aforementioned steps, you can push the code to our GitHub repository, at which point Appwrite Cloud will automatically deploy the changes to your function.
+Once you’ve completed all the aforementioned steps, you can push the code to our GitHub repository, at which point Indobase Cloud will automatically deploy the changes to your function.
 
 ![Function deployment](/images/blog/bun-function-resume/deployment.png)
 
@@ -199,10 +199,10 @@ Here is what an example of this looks like: [apwr.dev/bun-functions-resume-demo]
 
 # Next steps
 
-And with that, you have successfully deployed your resume using Appwrite Functions. If you liked this project or want to investigate the full project code, visit our [GitHub repository](https://github.com/adityaoberai/resume-appwrite).
+And with that, you have successfully deployed your resume using Indobase Functions. If you liked this project or want to investigate the full project code, visit our [GitHub repository](https://github.com/adityaoberai/resume-appwrite).
 
-Additionally, if you would like to learn more about Appwrite Functions, here are some resources:
+Additionally, if you would like to learn more about Indobase Functions, here are some resources:
 
-- [Appwrite Functions docs](https://appwrite.io/docs/functions): These documents provide more information on how to use Appwrite Functions.
+- [Indobase Functions docs](https://appwrite.io/docs/functions): These documents provide more information on how to use Indobase Functions.
 - [Bun functions announcements](https://appwrite.io/blog/post/why-you-need-to-try-the-new-bun-runtime): Read the full announcement about our Bun functions runtime.
-- [Appwrite Discord](https://discord.com/invite/appwrite): Connect with other developers and the Appwrite team for discussion, questions, and collaboration.
+- [Indobase Discord](https://discord.com/invite/appwrite): Connect with other developers and the Indobase team for discussion, questions, and collaboration.

@@ -1,22 +1,22 @@
----
+﻿---
 layout: article
 title: JWT login
-description: Integrate Appwrite's authentication into your server-side applications. Explore server integrations, best practices, and security considerations for seamless authentication.
+description: Integrate Indobase's authentication into your server-side applications. Explore server integrations, best practices, and security considerations for seamless authentication.
 ---
 
-You can extend Appwrite's APIs by building backend apps using [Server SDKs](/docs/sdks#server). To secure your backend app's APIs, client apps must prove their identity against your backend app before accessing sensitive information. You can secure these APIs and enforce access permissions in your backend app by using JWT authentication.
+You can extend Indobase's APIs by building backend apps using [Server SDKs](/docs/sdks#server). To secure your backend app's APIs, client apps must prove their identity against your backend app before accessing sensitive information. You can secure these APIs and enforce access permissions in your backend app by using JWT authentication.
 
 If you are already authenticated on your client-side app and need your backend app to **act on behalf of the user**, this guide will walk you through the process.
 
 # Proof of Identity {% #proof-of-identity %}
 
-Before making requests to your backend APIs, your client application needs to first create a session **directly with Appwrite** using the account service. This session will act like an ID card for the user and can be used to access resources in Appwrite. The client will **only receive information accessible to the user** based on the resources' [permissions](/docs/advanced/platform/permissions).
+Before making requests to your backend APIs, your client application needs to first create a session **directly with Indobase** using the account service. This session will act like an ID card for the user and can be used to access resources in Indobase. The client will **only receive information accessible to the user** based on the resources' [permissions](/docs/advanced/platform/permissions).
 
-When you build backend APIs to extend Appwrite's functionality, these APIs should still **respect access permissions** to keep user data secure. Appwrite's backend SDKs allow you to securely act on behalf of a user with the same permissions by using JWT authentication.
+When you build backend APIs to extend Indobase's functionality, these APIs should still **respect access permissions** to keep user data secure. Indobase's backend SDKs allow you to securely act on behalf of a user with the same permissions by using JWT authentication.
 
 # JWT Authentication {% #jwt %}
 
-[JSON Web Tokens](https://jwt.io/introduction) (JWTs) are a secure means to transfer information or claims between two parties. JWTs act like temporary copies of the user's ID card that allow Appwrite's Server SDKs to access information on behalf of a user.
+[JSON Web Tokens](https://jwt.io/introduction) (JWTs) are a secure means to transfer information or claims between two parties. JWTs act like temporary copies of the user's ID card that allow Indobase's Server SDKs to access information on behalf of a user.
 
 You need to create a session using the Client SDKs **before** generating a JWT. The JWT will be a stateless proof of claim for the identity of the authenticated user and expire after 15 minutes or when the session is deleted.
 
@@ -46,7 +46,7 @@ final account = Account(client);
 final jwt = await account.createJWT();
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -91,7 +91,7 @@ const client = new Client()
 ```
 
 ```php
-use Appwrite\Client;
+use Indobase\Client;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')            // Your API Endpoint
@@ -114,7 +114,7 @@ client = Client()
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')   # Your API Endpoint
@@ -150,7 +150,7 @@ val client = Client()
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
@@ -159,7 +159,7 @@ let client = Client()
 ```
 
 ```csharp
-using Appwrite;
+using Indobase;
 
 var client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
@@ -207,7 +207,7 @@ const rows = await tablesDB.listRows({
 // ... More code to manipulate the results
 ```
 ```php
-use Appwrite\Client;
+use Indobase\Client;
 
 $client = (new Client())
     .setEndpoint('https://<REGION>.cloud.appwrite.io/v1')            // Your API Endpoint
@@ -244,7 +244,7 @@ rows = tablesDB.list_rows(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')            # Your API Endpoint
@@ -308,7 +308,7 @@ val rows = tablesDB.listRows(
 // ... More code to manipulate the results
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
@@ -324,9 +324,9 @@ let rows = try await tablesDB.listRows(
 // ... More code to manipulate the results
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
@@ -386,7 +386,7 @@ const rows = await tablesDB.listRows({
 ```
 
 ```php
-use Appwrite\Client;
+use Indobase\Client;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -423,7 +423,7 @@ rows = tablesDB.list_rows(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -487,7 +487,7 @@ val rows = tablesDB.listRows(
 // ... More code to manipulate the results
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -503,9 +503,9 @@ let rows = try await tablesDB.listRows(
 // ... More code to manipulate the results
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -565,4 +565,4 @@ This will return every row regardless of permissions, which could lead to privac
 }
 ```
 
-If you're integrating existing backend services with Appwrite or adding backend endpoints to perform more complex logic, JWT authentication helps them behave similarly to actual Appwrite endpoints.
+If you're integrating existing backend services with Indobase or adding backend endpoints to perform more complex logic, JWT authentication helps them behave similarly to actual Indobase endpoints.

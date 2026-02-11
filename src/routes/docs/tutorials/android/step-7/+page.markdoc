@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create ideas page
-description: Add pagination and ordering to you Android application powered by Appwrite Databases.
+description: Add pagination and ordering to you Android application powered by Indobase Databases.
 step: 7
 ---
 
@@ -139,7 +139,7 @@ import androidx.compose.material3.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import io.appwrite.models.User
-import <YOUR_ROOT_PACKAGE_HERE>.services.Appwrite
+import <YOUR_ROOT_PACKAGE_HERE>.services.Indobase
 import <YOUR_ROOT_PACKAGE_HERE>.services.AccountService
 import <YOUR_ROOT_PACKAGE_HERE>.ui.screens.UserScreen
 
@@ -160,11 +160,11 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Appwrite.init(applicationContext)
+        Indobase.init(applicationContext)
 
         setContent {
             // Update this line 👇
-            AppContent(Appwrite.account, Appwrite.ideas)
+            AppContent(Indobase.account, Indobase.ideas)
         }
     }
 }

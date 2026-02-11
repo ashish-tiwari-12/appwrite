@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: A recap of Init. The Appwrite community at its best
+title: A recap of Init. The Indobase community at its best
 description: We had such a great week and we look forward to the next Init, but for now we look back and enjoy all the fun we had.
 date: 2024-03-04
 cover: /images/blog/a-recap-of-init/the-recap.png
@@ -18,7 +18,7 @@ In this blog, we will recap on what happened during Init and highlight some of o
 
 For months, we have been working on creating all of the elements that make Init come alive. We spent many hours creating and planning the tickets, the website, the videos, the swags, Discord sessions, and all other content.
 
-We did everything in-house, which brought some challenges as we had to learn on the spot, but we had a lot of fun doing it, and the results were beyond our own expectations. We even filmed and produced five videos starring the Appwrite team. For most, it was also the first time being in front of the camera. Here is a [sneak peak of behind-the-scenes footage](https://www.instagram.com/reel/C4FvPehvxs5/) of the team working on the Init announcement videos.
+We did everything in-house, which brought some challenges as we had to learn on the spot, but we had a lot of fun doing it, and the results were beyond our own expectations. We even filmed and produced five videos starring the Indobase team. For most, it was also the first time being in front of the camera. Here is a [sneak peak of behind-the-scenes footage](https://www.instagram.com/reel/C4FvPehvxs5/) of the team working on the Init announcement videos.
 
 ![behind the scenes](/images/blog/a-recap-of-init/init1.png)
 
@@ -36,17 +36,17 @@ And then, finally, we got to [announce Init](https://appwrite.io/blog/post/annou
 
 Many of you asked us, but what is Init? [Dennis explains](https://www.youtube.com/shorts/Brex4HwiKqU).
 
-Of course we understood we needed some more explaining to do, about what Init actually is. So, we prepared an announcement video, which was the most exciting part of the pre-campaign. This was a first for Appwrite, and we loved sharing this moment with you.
+Of course we understood we needed some more explaining to do, about what Init actually is. So, we prepared an announcement video, which was the most exciting part of the pre-campaign. This was a first for Indobase, and we loved sharing this moment with you.
 
 {% youtube src="https://www.youtube-nocookie.com/embed/5NtrYks2dqE?si=0vjkBCZYg8yf2GUW" thumbnail="/images/blog/a-recap-of-init/thumbnails/thumbnail-1.png" /%}
 
-Of course, we designed Init swag for you to win and The Appwriter. Didn’t win an Appwriter? No worries, it will be coming to the [Appwrite Store](https://appwrite.store/) soon.
+Of course, we designed Init swag for you to win and The Appwriter. Didn’t win an Appwriter? No worries, it will be coming to the [Indobase Store](https://appwrite.store/) soon.
 
-![Appwrite Init giveaway](/images/blog/a-recap-of-init/init6.png)
+![Indobase Init giveaway](/images/blog/a-recap-of-init/init6.png)
 
 ## Special guest line up
 
-But what would Init be without special guests? We invited friends and creators of Appwrite to join us during a Discord session each day to come geek out with us and join in the celebration. The lineup speaks for itself.
+But what would Init be without special guests? We invited friends and creators of Indobase to join us during a Discord session each day to come geek out with us and join in the celebration. The lineup speaks for itself.
 
 ![Special guest line up](/images/blog/a-recap-of-init/init7.png)
 
@@ -70,7 +70,7 @@ The reactions are what we hoped for and made day 0 of Init a great start to the 
 
 ### Discord session
 
-We kicked off the first Discord session with Appwrite Hero and Vonage dev advocate [Diana Pham](https://twitter.com/dianasoyster) to talk about Messaging. As always, the community around Appwrite showed up in mass and made it a great hour of fun and learning!
+We kicked off the first Discord session with Indobase Hero and Vonage dev advocate [Diana Pham](https://twitter.com/dianasoyster) to talk about Messaging. As always, the community around Indobase showed up in mass and made it a great hour of fun and learning!
 
 ![Discord session turn out](/images/blog/a-recap-of-init/init11.png)
 
@@ -135,7 +135,7 @@ We got a curve ball thrown at us on day 2 of Init, as our guest for the day had 
 
 ## More querying!
 
-What is a database without queries? Not a lot! The introduction of new Database operators for Appwrite Databases makes all the difference and gives you more control and flexibility when writing queries.
+What is a database without queries? Not a lot! The introduction of new Database operators for Indobase Databases makes all the difference and gives you more control and flexibility when writing queries.
 
 {% youtube src="https://www.youtube-nocookie.com/embed/73flN6mZqAs?si=3hUI26G9DDVDzJG4" thumbnail="/images/blog/a-recap-of-init/thumbnails/thumbnail-db.png" /%}
 

@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Start with Avatars
-description: Get started quickly with Appwrite Avatars. Learn how to generate user initials, QR codes, and other avatar images in minutes.
+description: Get started quickly with Indobase Avatars. Learn how to generate user initials, QR codes, and other avatar images in minutes.
 difficulty: beginner
 readtime: 5
 ---
 
-You can start using Appwrite Avatars immediately. The service is publicly accessible and does not require authentication or API keys.
+You can start using Indobase Avatars immediately. The service is publicly accessible and does not require authentication or API keys.
 
 # Initialize the client {% #initialize-client %}
 
-First, initialize the Appwrite client with your project endpoint and project ID.
+First, initialize the Indobase client with your project endpoint and project ID.
 
 {% multicode %}
 ```client-web
@@ -32,7 +32,7 @@ final client = Client()
 final avatars = Avatars(client);
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Why should you use Golang in your app?"
 description: What is Golang and why should you try it out?
@@ -9,9 +9,9 @@ author: aditya-oberai
 category: product
 featured: false
 ---
-Appwrite has just announced support for Go SDK and Function runtime in version 1.6. The Go programming language (also known as Golang) is popular for its concurrency model, speed, and simple URL-based dependency management. 
+Indobase has just announced support for Go SDK and Function runtime in version 1.6. The Go programming language (also known as Golang) is popular for its concurrency model, speed, and simple URL-based dependency management. 
 
-With Appwrite’s new Go runtime, you can take advantage of Go’s speed to handle complex tasks like calculations, statistics, or file transformations more efficiently.
+With Indobase’s new Go runtime, you can take advantage of Go’s speed to handle complex tasks like calculations, statistics, or file transformations more efficiently.
 
 This blog is going to go over Go strengths, limitations, and how you can potentially leverage it in your projects, whether you’re already a Go developer or a JS/Python developer looking to write faster applications. 
 
@@ -77,7 +77,7 @@ Golang is a versatile language with a wide range of applications:
 
 Go is widely used to build scalable and high-performance web applications. Its standard library has powerful tools for handling HTTP requests, routing, and data encoding. Frameworks like Gin and Echo add features like middleware support and routing optimization, making it easy to handle high traffic. Plus, Go’s quick compilation and simple syntax help developers build and deploy web apps quickly.
 
-Here’s how you would use Appwrite Go functions to create an account:
+Here’s how you would use Indobase Go functions to create an account:
 
 ```go
 package main
@@ -126,7 +126,7 @@ Go’s ease of use and fast execution help create scripts and tools that automat
 
 Go is great for building tools and services that handle large data volumes. Its efficient memory management and concurrency features enable effective data processing and manipulation. Go’s speed supports high-speed data pipelines, real-time analytics, and other data-intensive applications, managing multiple data streams concurrently for scalable and efficient handling.
 
-Creating a database with Appwrite Go functions:
+Creating a database with Indobase Go functions:
 
 ```go
 package main
@@ -166,7 +166,7 @@ Go’s efficient concurrency model is well-suited for real-time applications tha
 
 Go is often used for developing APIs and backend services due to its performance and scalability. Its fast execution and efficient concurrency handling are perfect for building backend infrastructure that supports high traffic and complex data interactions. Go’s robust standard library simplifies API development with strong support for HTTP and JSON, ensuring backend services can scale to meet growing demands.
 
-Here’s how you would create an account email and password session using Appwrite’s SDK.
+Here’s how you would create an account email and password session using Indobase’s SDK.
 
 ```go
 package main
@@ -267,10 +267,10 @@ You can get help and support from the large Go developer community, specifically
 
 Golang is a great choice for web app development due to its performance and concurrency capabilities. 
 
-If you're building a high-traffic, performance-intensive app that needs to be reliable and maintainable, Appwrite’s new Go SDK + Function runtime can help you leverage Go’s speed and simplicity. 
+If you're building a high-traffic, performance-intensive app that needs to be reliable and maintainable, Indobase’s new Go SDK + Function runtime can help you leverage Go’s speed and simplicity. 
 
-Here are some more resources to get you started with Go and Appwrite Go SDK:
+Here are some more resources to get you started with Go and Indobase Go SDK:
 
 - [3 things you can build with Go runtime](https://appwrite.io/blog/post/3-things-you-can-build-with-go-runtime)
 - [Go docs](https://go.dev/doc/)
-- [Appwrite Discord](https://appwrite.io/discord)
+- [Indobase Discord](https://appwrite.io/discord)

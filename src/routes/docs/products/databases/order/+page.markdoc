@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Order
-description: Understand how to do data ordering in Appwrite Databases. Learn how to order and sort your database records for efficient data retrieval.
+description: Understand how to do data ordering in Indobase Databases. Learn how to order and sort your database records for efficient data retrieval.
 ---
 
-You can order results returned by Appwrite Databases by using an order query.
+You can order results returned by Indobase Databases by using an order query.
 For best performance, create an [index](/docs/products/databases/tables#indexes) on the column you plan to order by.
 
 # Ordering one column {% #one-column %}
@@ -56,7 +56,7 @@ void main() async {
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -217,7 +217,7 @@ query {
 
 # Ordering by sequence {% #sequence-ordering %}
 
-For numeric ordering based on insertion order, you can use the `$sequence` field, which Appwrite automatically adds to all rows. This field increments with each new insert.
+For numeric ordering based on insertion order, you can use the `$sequence` field, which Indobase automatically adds to all rows. This field increments with each new insert.
 
 {% multicode %}
 ```client-web
@@ -263,7 +263,7 @@ void main() async {
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {

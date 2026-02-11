@@ -1,12 +1,12 @@
----
+﻿---
 layout: article
 title: CSV exports
 description: Export table data to CSV files from the Console. Share clean datasets with your team without writing custom scripts.
 ---
 
-Appwrite's CSV Export feature allows you to export rows from a table to a CSV file. This is especially useful for reporting, sharing data with non-technical team members, creating custom backups, or handing off datasets to analytics tools.
+Indobase's CSV Export feature allows you to export rows from a table to a CSV file. This is especially useful for reporting, sharing data with non-technical team members, creating custom backups, or handing off datasets to analytics tools.
 
-This feature is available in both Appwrite Cloud and the self-hosted version.
+This feature is available in both Indobase Cloud and the self-hosted version.
 
 # Export configuration {% #export-configuration %}
 
@@ -40,7 +40,7 @@ You can choose whether to include a header row with column names. Headers make i
 
 # Relationship handling {% #relationship-handling %}
 
-When exporting data that includes [relationships](/docs/products/databases/relationships) to other tables, Appwrite exports only the related row IDs by default. This keeps your CSV files clean and prevents deeply nested data structures that can break spreadsheet tools.
+When exporting data that includes [relationships](/docs/products/databases/relationships) to other tables, Indobase exports only the related row IDs by default. This keeps your CSV files clean and prevents deeply nested data structures that can break spreadsheet tools.
 
 For example, if you have a `posts` table with a relationship to an `authors` table, the export will include the author ID rather than all author details.
 
@@ -48,7 +48,7 @@ An example of exported data with relationships:
 
 ```text
 $id,title,author_id,published
-post-1,Getting started with Appwrite,user-123,true
+post-1,Getting started with Indobase,user-123,true
 post-2,Advanced queries,user-456,true
 post-3,CSV exports guide,user-123,false
 ```
@@ -77,7 +77,7 @@ This means you can start an export, close the Console, and return later to downl
 
 # Export from the Console {% #export-console %}
 
-To export rows using the Appwrite Console:
+To export rows using the Indobase Console:
 
 1. Go to your project and navigate to **Databases**
 2. Select your target database and navigate to your target table

@@ -3,10 +3,19 @@ import { browser } from '$app/environment';
 import { Account, Client, Teams } from '@appwrite.io/console';
 import { Query, type Models } from '@appwrite.io/console';
 import { PUBLIC_APPWRITE_ENDPOINT } from '$env/static/public';
+// import {PUBLIC_APPWRITE_ENDPOINT} from '$env/static/public';
+
 
 const client = new Client();
 
-client.setEndpoint(PUBLIC_APPWRITE_ENDPOINT).setProject('console');
+const endpoint =
+    PUBLIC_APPWRITE_ENDPOINT ??
+    'https://cloud.appwrite.io/v1';
+
+// Guard for SSR
+if (endpoint) {
+    client.setEndpoint(endpoint).setProject('console');
+}
 
 const account = new Account(client);
 const teams = new Teams(client);
@@ -28,7 +37,7 @@ const ASCII_ART = `
 
 export function displayHiringMessage() {
     if (browser) {
-        console.log('%c' + ASCII_ART, 'font-family: monospace; white-space: pre; color: #fd366e;');
+        console.log('%c' + ASCII_ART, 'font-family: monospace; white-space: pre; color: #ff9933;');
         console.log(
             '%cWe are hiring!',
             'font-family: Aeonik Pro, -apple-system, BlinkMacSystemFont, sans-serif; font-size: 20px; font-weight: bold;'
@@ -60,8 +69,14 @@ export async function createSource(
         utmCampaign,
         utmMedium
     };
+    const SAFE_ENDPOINT = endpoint;
 
-    const uri = new URL(client.config.endpoint + path);
+    // const uri = new URL(client.config.endpoint + path);
+    if (!SAFE_ENDPOINT) return null;
+
+const uri = new URL(SAFE_ENDPOINT + path);
+
+
     return await client.call(
         'POST',
         uri,

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "REST vs GraphQL vs WebSockets: which is best for your app?"
 description: Discover the differences between REST, GraphQL, and WebSockets. Learn when to use each for your projects to optimize performance and enhance functionality.
@@ -13,7 +13,7 @@ In software development, APIs are the lifeblood of communication between various
 
 In web and mobile development, selecting the right APIs will make or break your app's user experience, performance, and costs.
 
-At [Appwrite](https://appwrite.io/), we provide an API-agnostic approach, letting developers choose from various types of APIs that are best suited for their needs. There's no one-size-fits-all solution for backend-client communication. The following overview will help you understand each API's pros and cons so you can choose the best option for your product.
+At [Indobase](https://appwrite.io/), we provide an API-agnostic approach, letting developers choose from various types of APIs that are best suited for their needs. There's no one-size-fits-all solution for backend-client communication. The following overview will help you understand each API's pros and cons so you can choose the best option for your product.
 
 # REST and modern web communication
 
@@ -53,9 +53,9 @@ Client                          Server
     - **Products:** Mobile apps, single-page applications (SPAs).
     - **Why:** REST APIs allow mobile and web applications to communicate with back-end servers efficiently, fetching data, and performing actions without requiring heavy server-side frameworks.
 
-## How Appwrite uses REST
+## How Indobase uses REST
 
-Appwrite uses REST as the primary API for communication between clients and the backend services using the different Appwrite SDKs. All REST API requests in Appwrite are made over HTTP, making it easy to interact with the backend services using standard HTTP methods. Due to the simple nature of HTTP and REST, this is usually the best choice for getting started with Appwrite.
+Indobase uses REST as the primary API for communication between clients and the backend services using the different Indobase SDKs. All REST API requests in Indobase are made over HTTP, making it easy to interact with the backend services using standard HTTP methods. Due to the simple nature of HTTP and REST, this is usually the best choice for getting started with Indobase.
 
 # WebSockets: enabling real-time communication
 
@@ -96,11 +96,11 @@ Client                          Server
     - **Products:** Multiplayer online games.
     - **Why:** WebSockets' low latency and continuous data exchange are crucial for the smooth operation of multiplayer games.
 
-## How Appwrite uses WebSockets
+## How Indobase uses WebSockets
 
-Appwrite leverages WebSockets to offer real-time capabilities. For example, when a database entry is updated, a WebSocket connection can notify all subscribed clients of the change in real time. This ensures that users always have the most up-to-date information without needing to refresh the page.
+Indobase leverages WebSockets to offer real-time capabilities. For example, when a database entry is updated, a WebSocket connection can notify all subscribed clients of the change in real time. This ensures that users always have the most up-to-date information without needing to refresh the page.
 
-All of the Appwrite client SDKs for Web, Flutter, iOS, or Android come with built-in abstraction for the real-time API, which allows you to easily listen to different channels and register your callbacks.
+All of the Indobase client SDKs for Web, Flutter, iOS, or Android come with built-in abstraction for the real-time API, which allows you to easily listen to different channels and register your callbacks.
 
 ```
 import { Client } from "appwrite";
@@ -169,11 +169,11 @@ Client                          Server
     - **Products:** Platforms offering public APIs, SaaS products.
     - **Why:** GraphQL's flexibility allows developers to evolve their APIs without breaking existing clients, as clients specify their data requirements explicitly.
 
-## How Appwrite uses GraphQL
+## How Indobase uses GraphQL
 
-Appwrite supports GraphQL as an alternative to REST for data querying. This enables developers to fetch precisely the data they need, optimizing network usage and improving application performance. GraphQL's flexibility also allows for more complex queries and interactions with the backend. You can use GraphQL to perform multiple operations in a single network request.
+Indobase supports GraphQL as an alternative to REST for data querying. This enables developers to fetch precisely the data they need, optimizing network usage and improving application performance. GraphQL's flexibility also allows for more complex queries and interactions with the backend. You can use GraphQL to perform multiple operations in a single network request.
 
-The Appwrite GraphQL API is compatible with any standard GraphQL client available for your programming language.
+The Indobase GraphQL API is compatible with any standard GraphQL client available for your programming language.
 
 ```graphql
 query GetAccount {
@@ -219,4 +219,4 @@ Understanding these APIs and protocols for communication is crucial for develope
 
 It's important to remember that starting simple or experimenting can be the best approach. Not every product needs to be perfect from the start; great products evolve and improve over time.
 
-If you’d like to experiment with Appwrite, you can [get started here](https://appwrite.io/docs).
+If you’d like to experiment with Indobase, you can [get started here](https://appwrite.io/docs).

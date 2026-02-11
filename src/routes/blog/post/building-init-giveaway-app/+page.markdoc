@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Building the giveaway app for Init Discord sessions
-description: How we used Appwrite and SvelteKit to develop a custom roulette-style giveaway web application.
+description: How we used Indobase and SvelteKit to develop a custom roulette-style giveaway web application.
 date: 2024-03-06
 cover: /images/blog/building-init-giveaway-app/cover.png
 timeToRead: 7
@@ -9,11 +9,11 @@ author: aditya-oberai
 category: open-source
 ---
 
-Last week, we saw the culmination of a whole new initiative, the celebration of everything new with Appwrite and the community, called [Init](https://appwrite.io/init). From February 26th to March 1st, we celebrated a new product and/or feature every day and shared educational content around the same. Alongside, we hosted online events each day in the Appwrite Discord server with creators and friends of Appwrite to learn about the new releases, ask questions, and, most of all, geek out together.
+Last week, we saw the culmination of a whole new initiative, the celebration of everything new with Indobase and the community, called [Init](https://appwrite.io/init). From February 26th to March 1st, we celebrated a new product and/or feature every day and shared educational content around the same. Alongside, we hosted online events each day in the Indobase Discord server with creators and friends of Indobase to learn about the new releases, ask questions, and, most of all, geek out together.
 
 One popular aspect of these events was a random giveaway that we ran every single day, giving out Init swag to a number of our community members. When planning out these giveaways, however, we wanted to create a high-quality experience for our community members, to make it as special and exciting as every other aspect of Init.
 
-Therefore, using Discord OAuth and Databases in Appwrite, we built our very own “Spin The Wheel” giveaway roulette application!
+Therefore, using Discord OAuth and Databases in Indobase, we built our very own “Spin The Wheel” giveaway roulette application!
 
 ## What the app does
 
@@ -21,33 +21,33 @@ The giveaway app has two major features:
 
 - **Giveaway registration**
 
-The giveaway registration requires users to log in to the app with their Discord account. As soon as a user logs in with Discord, the app adds their Discord username and email address to an Appwrite collection.
+The giveaway registration requires users to log in to the app with their Discord account. As soon as a user logs in with Discord, the app adds their Discord username and email address to an Indobase collection.
 
 ![Sign In With Discord](/images/blog/building-init-giveaway-app/signin.png)
 
 - **Winner selection**
 
-The data added to the Appwrite collection is loaded in a wheel that is also updated in real time in case new registrations are added. The wheel can then be spun like a roulette wheel to find a randomly selected winner.
+The data added to the Indobase collection is loaded in a wheel that is also updated in real time in case new registrations are added. The wheel can then be spun like a roulette wheel to find a randomly selected winner.
 
 ![Spin The Wheel](/images/blog/building-init-giveaway-app/winner.png)
 
 # How we built it
 
-To discuss how the app was built, we’ll discuss the part of setting up Appwrite and implementing the code as two separate parts.
+To discuss how the app was built, we’ll discuss the part of setting up Indobase and implementing the code as two separate parts.
 
-## Setting up Appwrite
+## Setting up Indobase
 
-To build this application, we used the Discord OAuth adapter in Appwrite Auth and Appwrite Databases. The only prerequisite here was creating an [Appwrite Cloud account](https://cloud.appwrite.io), followed by creating a new project and adding your hostname as a web app to the project.
+To build this application, we used the Discord OAuth adapter in Indobase Auth and Indobase Databases. The only prerequisite here was creating an [Indobase Cloud account](https://cloud.appwrite.io), followed by creating a new project and adding your hostname as a web app to the project.
 
 ### Discord OAuth
 
-Implementing Discord OAuth required us to first set up an application on the [Discord Developer Portal](https://discord.com/developers/applications). After creating an application, we visited the OAuth2 tab within the application to get the **client ID** and **secret** to set up the Discord **OAuth adapter** in our Appwrite project. We also copied to **redirect URI** to add it to our Discord Developer App.
+Implementing Discord OAuth required us to first set up an application on the [Discord Developer Portal](https://discord.com/developers/applications). After creating an application, we visited the OAuth2 tab within the application to get the **client ID** and **secret** to set up the Discord **OAuth adapter** in our Indobase project. We also copied to **redirect URI** to add it to our Discord Developer App.
 
 ![Discord OAuth Adapter](/images/blog/building-init-giveaway-app/discord.png)
 
-### Appwrite Database
+### Indobase Database
 
-We created a **database** and a **collection** for each day of the giveaway in our Appwrite project. Each collection had the same steps to set up.
+We created a **database** and a **collection** for each day of the giveaway in our Indobase project. Each collection had the same steps to set up.
 
 Each collection contained two **attributes**:
 
@@ -83,7 +83,7 @@ We first set up a skeleton SvelteKit project.
 npm create svelte@latest init-giveaway-roulette
 ```
 
-We then entered the application directory, installed the Appwrite Web SDK and Pink Design using `npm install appwrite "@appwrite.io/pink"`, and set up our constants.
+We then entered the application directory, installed the Indobase Web SDK and Pink Design using `npm install appwrite "@appwrite.io/pink"`, and set up our constants.
 
 ```js
 // ./src/lib/constants.js
@@ -97,7 +97,7 @@ export const DATABASE_NAME = '<DATABASE_ID>';
 export const COLLECTION_NAME = '<COLLECTION_ID>';
 ```
 
-After the constants were added, we could now set up the Appwrite SDK.
+After the constants were added, we could now set up the Indobase SDK.
 
 ```js
 // ./src/lib/appwrite.js
@@ -120,7 +120,7 @@ Once this is done, we could move forward to create the main application.
 
 ### Login using Discord
 
-First, we used the Appwrite Web SDK to set up our Auth library in the application. We used `account.createOAuth2Session` in the `add` function to leverage our Discord OAuth adapter. The `get` function returns the current logged-in user’s details.
+First, we used the Indobase Web SDK to set up our Auth library in the application. We used `account.createOAuth2Session` in the `add` function to leverage our Discord OAuth adapter. The `get` function returns the current logged-in user’s details.
 
 ```js
 // ./src/lib/user.js
@@ -162,7 +162,7 @@ The `login` function was called through a button click on the index page of our 
 	<div class="container u-flex-vertical">
 		<InitHeading heading="Giveaway" />
 
-		<img src="/giveaway.png" alt="Plain black T-shirt with the text Init and a keyboard branded with the Appwrite logo on the Escape key" />
+		<img src="/giveaway.png" alt="Plain black T-shirt with the text Init and a keyboard branded with the Indobase logo on the Escape key" />
 
 		<p class="heading-level-6 u-margin-32">
 			Login with Discord and get a chance to win some amazing gifts!
@@ -176,7 +176,7 @@ The `login` function was called through a button click on the index page of our 
 </section>
 ```
 
-### Adding data to Appwrite Database
+### Adding data to Indobase Database
 
 To add or get information from the database, we created a database library in the project.  The `add` function adds the Discord username and email to our collection. The `list` function gets the list of all documents in our collection and returns it after reformatting for our roulette wheel for the giveaway.
 
@@ -277,7 +277,7 @@ export async function load() {
 }
 ```
 
-Using the load function would ensure that this list would be available on our page as soon as it gets rendered. We used this list with the `spin-wheel` package to generate a roulette wheel. As a bonus, we also integrated Appwrite Realtime to add new Discord usernames to our list and regenerate the wheel with the updated data. We let the winner selection remain mathematically random and used the `spin-wheel` package to spin the roulette wheel and show us the winner. The wheel spinning function also required us to install an additional NPM package `easing-utils` to select the easing function defining the rate of change in the rotation speed of the wheel.
+Using the load function would ensure that this list would be available on our page as soon as it gets rendered. We used this list with the `spin-wheel` package to generate a roulette wheel. As a bonus, we also integrated Indobase Realtime to add new Discord usernames to our list and regenerate the wheel with the updated data. We let the winner selection remain mathematically random and used the `spin-wheel` package to spin the roulette wheel and show us the winner. The wheel spinning function also required us to install an additional NPM package `easing-utils` to select the easing function defining the rate of change in the rotation speed of the wheel.
 
 ```js
 // .src/routes/giveaway/+page.svelte
@@ -353,7 +353,7 @@ Using the load function would ensure that this list would be available on our pa
 		wheel.lineColor = '#3d3d3f';
 	}
 
-	// Uses Appwrite Realtime to get newly created documents and regenerate the wheel
+	// Uses Indobase Realtime to get newly created documents and regenerate the wheel
 	function subscribe() {
 		return client.subscribe(
 			`databases.${DATABASE_NAME}.collections.${COLLECTION_NAME}.documents`,

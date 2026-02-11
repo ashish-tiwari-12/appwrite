@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Relationships
-description: Manage complex data relationships with Appwrite Databases. Discover how to define and work with relationships between documents for interconnected data.
+description: Manage complex data relationships with Indobase Databases. Discover how to define and work with relationships between documents for interconnected data.
 difficulty: advanced
 readtime: 20
 ---
 Relationships describe how documents in different collections are associated, so that related documents can be read, updated, or deleted together. Entities in real-life often associate with each other in an organic and logical way, like a person and their dog, an album and its songs, or friends in a social network.
 
-These types of association between entities can be modeled in Appwrite using relationships.
+These types of association between entities can be modeled in Indobase using relationships.
 
 {% info title="Experimental feature" %}
-Appwrite Relationships is an experimental feature. The API and behavior are subject to change in future versions.
+Indobase Relationships is an experimental feature. The API and behavior are subject to change in future versions.
 {% /info %}
 
 # Relationship Attributes {% #relationship-attributes %}
@@ -33,7 +33,7 @@ Consider using relationships when the same information is found in multiple plac
 
 # Opt-in Loading {% #performance-loading %}
 
-By default, Appwrite returns only a document's own fields when you retrieve documents. Related documents are **not automatically loaded** unless you explicitly request them using query selection. This eliminates unintentional payload bloat and gives you precise control over performance.
+By default, Indobase returns only a document's own fields when you retrieve documents. Related documents are **not automatically loaded** unless you explicitly request them using query selection. This eliminates unintentional payload bloat and gives you precise control over performance.
 
 {% arrow_link href="/docs/products/databases/legacy/queries#relationship-select" %}
 Learn how to load relationships with queries
@@ -41,7 +41,7 @@ Learn how to load relationships with queries
 
 # Directionality {% #directionality %}
 
-Appwrite relationships can be one-way or two-way.
+Indobase relationships can be one-way or two-way.
 
 | Type     | Description                                                                                                       |
 | -------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ Appwrite relationships can be one-way or two-way.
 
 # Types {% #types %}
 
-Appwrite provides four different relationship types to enforce different associative rules between documents.
+Indobase provides four different relationship types to enforce different associative rules between documents.
 
 | Type        | Description                                                             |
 | ----------- | ----------------------------------------------------------------------- |
@@ -62,7 +62,7 @@ Appwrite provides four different relationship types to enforce different associa
 
 # On-delete {% #on-delete %}
 
-Appwrite also allows you to define the behavior of a relationship when a document is deleted.
+Indobase also allows you to define the behavior of a relationship when a document is deleted.
 
 | Type       | Description                                                            |
 | ---------- | ---------------------------------------------------------------------- |
@@ -71,12 +71,12 @@ Appwrite also allows you to define the behavior of a relationship when a documen
 | Set null   | If a document has related documents, when it is deleted, the related documents are kept with their relationship attribute set to null.|
 
 # Creating relationships {% #create-relationships %}
-You can define relationships in the Appwrite Console, or using a [Server SDK](/docs/sdks#server)
+You can define relationships in the Indobase Console, or using a [Server SDK](/docs/sdks#server)
 
 {% tabs %}
 {% tabsitem #console title="Console" %}
 
-You can create relationships in the Appwrite Console by adding a relationship attribute to a collection.
+You can create relationships in the Indobase Console by adding a relationship attribute to a collection.
 
 1. In your project, navigate to **Databases** > **Select your database** > **Select your collection** > **Attributes** > **Create attribute**.
 2. Select **Relationship** as the attribute type.
@@ -114,8 +114,8 @@ databases.createRelationshipAttribute(
 
 
 ```php
-use \Appwrite\Client;
-use \Appwrite\Services\Databases;
+use \Indobase\Client;
+use \Indobase\Services\Databases;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -162,7 +162,7 @@ databases.create_relationship_attribute(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')# Your API Endpoint
@@ -251,7 +251,7 @@ databases.createRelationshipAttribute(
 
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -275,8 +275,8 @@ databases.createRelationshipAttribute(
 
 
 ```csharp
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -356,7 +356,7 @@ await databases.createDocument(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -465,7 +465,7 @@ await databases.createDocument(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -518,7 +518,7 @@ databases.createDocument(
 {% /tabs %}
 
 # Queries {% #queries %}
-Queries are currently not available in the experimental version of Appwrite Relationships but will be added in a later version.
+Queries are currently not available in the experimental version of Indobase Relationships but will be added in a later version.
 
 # Update Relationships {% #update %}
 Relationships can be updated by updating the relationship attribute.
@@ -573,7 +573,7 @@ await databases.updateDocument(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -676,7 +676,7 @@ await databases.deleteDocument(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -776,7 +776,7 @@ await databases.createDocument(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -804,7 +804,7 @@ databases.createDocument(
 );
 ```
 ```kotlin
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

@@ -102,7 +102,7 @@
         <img
             class="web-logo"
             src="/images/logos/appwrite.svg"
-            alt="appwrite"
+            alt="Indobase"
             height="24"
             width="130"
         />

@@ -12,7 +12,7 @@
                 Preview media files however you want
             </h2>
             <p class="text-main-body mt-4 font-medium">
-                Appwrite Storage's preview endpoint lets you manipulate image previews while also
+                Indobase Storage's preview endpoint lets you manipulate image previews while also
                 managing different formats and compression algorithms.
             </p>
             <div class="mt-8 flex gap-2">

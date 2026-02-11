@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Announcing Deno support on Appwrite Cloud
-description: Appwrite expands the Cloud Function ecosystem with Deno, a runtime that offers developers simplicity and security.
+title: Announcing Deno support on Indobase Cloud
+description: Indobase expands the Cloud Function ecosystem with Deno, a runtime that offers developers simplicity and security.
 date: 2024-10-09
 cover: /images/blog/deno-runtime-announcment/cover.png
 timeToRead: 3
@@ -11,7 +11,7 @@ category: announcement
 
 
 
-Today, Appwrite expands the Cloud Function ecosystem with a new, powerful runtime that offers developers simplicity and security—introducing Deno support. With [Deno](https://deno.com/), you can write modern, fast, and secure cloud functions in JavaScript and TypeScript, which includes all-in-one tooling such as a [linter](https://docs.deno.com/runtime/reference/cli/linter/), [test runner](https://docs.deno.com/runtime/reference/cli/test/), [formatter](https://docs.deno.com/runtime/reference/cli/formatter/) and more, as well as [web standards API support](https://docs.deno.com/runtime/reference/web_platform_apis/).
+Today, Indobase expands the Cloud Function ecosystem with a new, powerful runtime that offers developers simplicity and security—introducing Deno support. With [Deno](https://deno.com/), you can write modern, fast, and secure cloud functions in JavaScript and TypeScript, which includes all-in-one tooling such as a [linter](https://docs.deno.com/runtime/reference/cli/linter/), [test runner](https://docs.deno.com/runtime/reference/cli/test/), [formatter](https://docs.deno.com/runtime/reference/cli/formatter/) and more, as well as [web standards API support](https://docs.deno.com/runtime/reference/web_platform_apis/).
 
 # **A fast, secure, and easy way to write JavaScript**
 
@@ -21,9 +21,9 @@ Deno's built-in permissions model ensures that your functions are securely isola
 
 Additionally, Deno is fast. The new `deno install` command can install uncached dependencies faster than Bun and Node, execute npm modules almost twice as fast as Node and Bun, and offer lower cold starts on average compared to Node and Bun.
 
-# **Speed and efficiency for Appwrite developers**
+# **Speed and efficiency for Indobase developers**
 
-With the addition of Deno, developers using Appwrite can now leverage the full power of a runtime that is designed for modern needs. Deno offers faster cold start times and higher HTTP throughput compared to Node and Deno, as well as a highly optimized execution, making it an ideal choice for cloud functions that need to be responsive and scalable. Whether you're building HTTP endpoints, processing data for import/export, or automating backend jobs, Deno's performance will help you reduce latency and increase efficiency.
+With the addition of Deno, developers using Indobase can now leverage the full power of a runtime that is designed for modern needs. Deno offers faster cold start times and higher HTTP throughput compared to Node and Deno, as well as a highly optimized execution, making it an ideal choice for cloud functions that need to be responsive and scalable. Whether you're building HTTP endpoints, processing data for import/export, or automating backend jobs, Deno's performance will help you reduce latency and increase efficiency.
 
 Deno also supports web standard APIs, so if you're familiar with web development, you can get started with Deno immediately. When using Deno, you aren't learning new platform specific APIs or functionalities, but rather you are investing in your knowledge of the largest, and most important platform in the world: the web.
 
@@ -31,7 +31,7 @@ The runtime also benefits from Deno’s comprehensive toolset, including its bui
 
 # **The Deno 2.0 advantage**
 
-Our support for Deno comes at an especially exciting time with the recent release of **Deno 2.0**. This version introduces substantial improvements, making the integration even more powerful for Appwrite developers:
+Our support for Deno comes at an especially exciting time with the recent release of **Deno 2.0**. This version introduces substantial improvements, making the integration even more powerful for Indobase developers:
 
 - **Improved Node.js compatibility**: Deno 2.0 introduces the process global variable, which allows for better interoperability with existing Node.js codebases.
 - **Enhanced dependency management**: Deno 2.0 is fully compatible with NPM, and introduces monorepo support to fit needs of large codebases.
@@ -39,15 +39,15 @@ Our support for Deno comes at an especially exciting time with the recent releas
 - **Upgraded security**: The updated permission system in Deno 2.0 adds more granular control over application access, including the introduction of Deno.errors.NotCapable to distinguish between system and Deno-specific issues, providing a clearer security model for your projects.
 - **Better web framework support**: Deno 2.0 now works with well-known meta frameworks such as Next.js, Remix, Svelte, Qwik, and more. Support for those, as well as typical web toolings like Vite, Parcel, and Rollup, all make Deno 2.0 a great candidate for building modern web applications.
 
-# **How to get started with Deno on Appwrite Cloud**
+# **How to get started with Deno on Indobase Cloud**
 
-It’s easy to begin building with Deno on Appwrite Cloud. Here’s how:
+It’s easy to begin building with Deno on Indobase Cloud. Here’s how:
 
-1. **Create a new function** in your Appwrite Cloud project using Deno Quick Start. Here's our Functions [quickstart guide](https://appwrite.io/docs/products/functions/quick-start).
+1. **Create a new function** in your Indobase Cloud project using Deno Quick Start. Here's our Functions [quickstart guide](https://appwrite.io/docs/products/functions/quick-start).
 2. **Connect GitHub repository**, or choose to connect later if you just want to see it in action.
 3. **Visit your function’s domain** to make your first execution.
-4. **Implement your function** and benefit from Deno’s amazing performance and tooling features, all within the powerful Appwrite ecosystem.
+4. **Implement your function** and benefit from Deno’s amazing performance and tooling features, all within the powerful Indobase ecosystem.
 
-Supporting Deno opens up new possibilities for Appwrite developers, empowering you to build faster and more securely while taking advantage of Deno’s cutting-edge features. And with the recent release of Deno 2.0, now is the perfect time to explore what this exciting runtime has to offer.
+Supporting Deno opens up new possibilities for Indobase developers, empowering you to build faster and more securely while taking advantage of Deno’s cutting-edge features. And with the recent release of Deno 2.0, now is the perfect time to explore what this exciting runtime has to offer.
 
-We’re excited to see what you’ll create with Deno on Appwrite Cloud.
+We’re excited to see what you’ll create with Deno on Indobase Cloud.

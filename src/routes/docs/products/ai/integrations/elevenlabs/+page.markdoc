@@ -1,22 +1,22 @@
----
+﻿---
 layout: article
 title: Integrating ElevenLabs
-description: Learn how to integrate ElevenLabs into your Appwrite project.
+description: Learn how to integrate ElevenLabs into your Indobase project.
 difficulty: intermediate
 readtime: 15
 ---
 
 ElevenLabs is an text to speech tool that can generate natural sounding audio from text. It's an excellent tool for dubbing content, creating audiobooks, or even for accessibility purposes.
 
-Integrating ElevenLabs into your Appwrite project is simple. This tutorial will guide you through the process of setting up the ElevenLabs API and integrating it into your Appwrite project.
+Integrating ElevenLabs into your Indobase project is simple. This tutorial will guide you through the process of setting up the ElevenLabs API and integrating it into your Indobase project.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite Project
+- An Indobase Project
 - An [ElevenLabs API Key](https://elevenlabs.io/)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -26,7 +26,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -37,7 +37,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 {% section #step-2 step=2 title="Add dependencies" %}
 Once the function is created, navigate to the freshly created repository and clone it to your local machine.
 
-Install the `undici` package to make requests to the ElevenLabs API and `node-appwrite` package to upload the generated audio files to Appwrite Storage.
+Install the `undici` package to make requests to the ElevenLabs API and `node-appwrite` package to upload the generated audio files to Indobase Storage.
 
 ```bash
 npm install undici node-appwrite
@@ -192,13 +192,13 @@ And after the `</head>` tag add this `<body>` which will contain the actual form
 </body>
 ```
 
-All of this together will render a form that will submit your text to the Appwrite function through a POST request which you'll create next. The Appwrite function will call ElevenLabs's API, upload the audio to Appwrite Storage and return the URL, which will be displayed on your page.
+All of this together will render a form that will submit your text to the Indobase function through a POST request which you'll create next. The Indobase function will call ElevenLabs's API, upload the audio to Indobase Storage and return the URL, which will be displayed on your page.
 {% /section %}
 
 {% section #step-6 step=6 title="Handle POST Request" %}
 Add methods necessary to integrate with the ElevenLabs API:
 
-Import `fetch`, and the required features from the Appwrite Node.js SDK at the top of the `main.js` file
+Import `fetch`, and the required features from the Indobase Node.js SDK at the top of the `main.js` file
 
 ```js
 import { Client, Storage, ID, Permission, Role } from "node-appwrite";
@@ -206,7 +206,7 @@ import { InputFile } from "node-appwrite/file";
 import { fetch } from "undici";
 ```
 
-Next add code to validate the body of the request and initialize the Appwrite SDK:
+Next add code to validate the body of the request and initialize the Indobase SDK:
 
 ```js
 const client = new Client()
@@ -251,8 +251,8 @@ This code will send the prompt to the ElevenLabs API and return the audio as a b
 additionally it'll also catch any errors we could encounter and reports them for easy debugging.
 {% /section %}
 
-{% section #step-7 step=7 title="Store Audio in Appwrite Storage" %}
-Store the audio file in Appwrite Storage for easy retrieval later:
+{% section #step-7 step=7 title="Store Audio in Indobase Storage" %}
+Store the audio file in Indobase Storage for easy retrieval later:
 
 ```js
 const storage = new Storage(client);
@@ -265,7 +265,7 @@ const file = await storage.createFile({
 });
 ```
 
-To show it to the user, parse the download URL from Appwrite and return it in the response:
+To show it to the user, parse the download URL from Indobase and return it in the response:
 
 ```js
 const url = `${process.env.APPWRITE_ENDPOINT}/storage/buckets/${process.env.APPWRITE_BUCKET_ID}/files/${file.$id}/view?project=${process.env.APPWRITE_FUNCTION_PROJECT_ID}`;
@@ -273,7 +273,7 @@ const url = `${process.env.APPWRITE_ENDPOINT}/storage/buckets/${process.env.APPW
 return res.json({ ok: true, response: url });
 ```
 
-This should finish up the function, Deploy it to Appwrite by pushing to the git repository created earlier.
+This should finish up the function, Deploy it to Indobase by pushing to the git repository created earlier.
 {% /section %}
 
 {% section #step-8 step=8 title="Test the function" %}

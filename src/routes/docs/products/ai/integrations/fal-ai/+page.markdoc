@@ -1,22 +1,22 @@
----
+﻿---
 layout: article
 title: Integrating fal.ai
-description: Learn how to integrate fal.ai into your Appwrite project.
+description: Learn how to integrate fal.ai into your Indobase project.
 difficulty: intermediate
 readtime: 15
 ---
 
 fal.ai is an AI inference platform with popular models such as Stable Diffusion XL, ControlNet, Whisper available as ready-to-use APIs so that you can easily integrate them into your applications.
 
-This tutorial will guide you through the process of setting up the fal.ai API to generate an image using the SDXL model and integrating it into your Appwrite project.
+This tutorial will guide you through the process of setting up the fal.ai API to generate an image using the SDXL model and integrating it into your Indobase project.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite Project
+- An Indobase Project
 - A [fal.ai API Key](https://fal.ai/docs/authentication/key-based)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -26,7 +26,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -204,7 +204,7 @@ const result = await fal.subscribe('fal-ai/fast-sdxl', {
 return res.json({ ok: true, src: result.images[0].url });
 ```
 
-With the function complete, deploy it to Appwrite by pushing the changes to your repository.
+With the function complete, deploy it to Indobase by pushing the changes to your repository.
 
 Additional models can be found in the [fal.ai model catalogue](https://fal.ai/models). 
 

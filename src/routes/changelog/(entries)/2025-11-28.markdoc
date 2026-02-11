@@ -1,4 +1,4 @@
----
+﻿---
 layout: changelog
 title: "Database AI suggestions"
 date: 2025-11-28
@@ -20,7 +20,7 @@ This release introduces AI-assisted schema generation to simplify database schem
 - Best practices: Suggested indexes and common fields included by default
 - Flexibility: Suggestions can be reviewed, modified, or skipped before applying
 
-This update is available now on the Appwrite Console.
+This update is available now on the Indobase Console.
 
 {% arrow_link href="/blog/post/announcing-database-ai-suggestions" %}
 Read the announcement to learn more

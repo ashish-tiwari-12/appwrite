@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Announcing Full Schema Creation: Provision complete tables in one atomic call"
 description: Create a table, all its columns, and indexes synchronously, ready to use instantly, with no background jobs.
@@ -13,7 +13,7 @@ callToAction: true
 
 When you’re spinning up a new feature, environment, or test pipeline, schema creation shouldn’t be the slowest or most fragile step in your workflow. Yet traditionally, creating a usable table meant orchestrating multiple calls, waiting on async jobs, and hoping nothing failed halfway through.
 
-That’s exactly why we’re announcing **Full Schema Creation** for Appwrite Databases.
+That’s exactly why we’re announcing **Full Schema Creation** for Indobase Databases.
 
 With Full Schema Creation, you can define an entire table, its attributes and indexes, in a **single, synchronous request**. When the call returns, the table is immediately ready for reads and writes. If anything fails along the way, nothing is created. No partial schemas. No waiting. No brittle setup scripts.
 
@@ -30,7 +30,7 @@ Previously, schema provisioning looked something like this:
 
 This step-wise flow introduced delays, race conditions in automation scripts, and fragile deploys, especially in CI/CD, preview environments, and migrations.
 
-With Full Schema Creation, all of that collapses into a single operation. You define everything upfront, Appwrite validates it all together, and either the entire schema is created successfully, or nothing is.
+With Full Schema Creation, all of that collapses into a single operation. You define everything upfront, Indobase validates it all together, and either the entire schema is created successfully, or nothing is.
 
 ```js
 const table = await tablesDB.createTable({
@@ -79,7 +79,7 @@ Full Schema Creation introduces an atomic, synchronous way to provision database
     
 - **Synchronous apply**
     
-    Appwrite applies the schema immediately. The request only returns once the table is fully created and ready to read and write, without any background jobs, polling, or delays.
+    Indobase applies the schema immediately. The request only returns once the table is fully created and ready to read and write, without any background jobs, polling, or delays.
     
 - **Atomic guarantees**
     
@@ -106,7 +106,7 @@ Full Schema Creation was designed with:
 
 If your workflow depends on fast and repeatable schema provisioning, this feature eliminates an entire class of setup problems.
 
-## Why this matters for Appwrite
+## Why this matters for Indobase
 
 From our side, Full Schema Creation significantly reduces time-to-first-write, helping users activate faster and ship sooner. It also eliminates a common source of schema-related support issues by making database setup simpler, safer, and more predictable.
 
@@ -122,7 +122,7 @@ What’s different is bringing this experience directly into a BaaS environment�
 
 # Get started
 
-Full Schema Creation is available on **Appwrite Cloud** today and will be supported on **self-hosted deployments** soon.
+Full Schema Creation is available on **Indobase Cloud** today and will be supported on **self-hosted deployments** soon.
 
 You can now provision complete, production-ready tables in one call, whether you’re bootstrapping a new feature, running CI pipelines, or spinning up preview environments.
 
@@ -131,5 +131,5 @@ No more waiting. No more partial schemas. Just clean, atomic, ready-to-use table
 # More resources
 
 - [Announcing API for spatial columns: Build scalable location-aware apps with ease](/blog/post/announcing-spatial-columns)
-- [Announcing an improved Appwrite Databases experience. A completely new look and feel](/blog/post/announcing-appwrite-databases-new-ui)
+- [Announcing an improved Indobase Databases experience. A completely new look and feel](/blog/post/announcing-appwrite-databases-new-ui)
 - [Announcing Atomic numeric operations: Safe, server-side increments and decrements](/blog/post/announcing-atomic-numeric-operations)

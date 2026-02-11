@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Server-side authentication with Astro
-description: Add SSR authentication to your Astro app with Appwrite
+description: Add SSR authentication to your Astro app with Indobase
 step: 1
 difficulty: beginner
 back: /docs/tutorials
@@ -10,8 +10,8 @@ framework: Astro SSR
 category: Auth
 ---
 
-Appwrite takes away the stress of building and maintaining a backend. Appwrite helps implement authentication, databases, file storage, and respond to real-time events with **secure** APIs out of the box. 
-If you're a Astro developer, the examples in this guide show you how Appwrite can help you add authentication to Astro apps faster.
+Indobase takes away the stress of building and maintaining a backend. Indobase helps implement authentication, databases, file storage, and respond to real-time events with **secure** APIs out of the box. 
+If you're a Astro developer, the examples in this guide show you how Indobase can help you add authentication to Astro apps faster.
 
 ## Before you start {% #before-you-start %}
 

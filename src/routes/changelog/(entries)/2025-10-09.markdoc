@@ -1,4 +1,4 @@
----
+﻿---
 layout: changelog
 title: "Announcing Transactions API: Reliable multi-record writes across tables"
 date: 2025-10-09
@@ -20,11 +20,11 @@ With the new **Transactions API**, you can now execute multiple operations as a 
 
 - **ACID compliance:** Ensures atomicity, consistency, isolation, and durability across all staged operations.  
 - **All-or-nothing writes:** Prevents partial data states and inconsistent records.  
-- **Automatic rollback:** Appwrite handles cleanup on failure, no manual scripts required.  
+- **Automatic rollback:** Indobase handles cleanup on failure, no manual scripts required.  
 - **Reduced race conditions:** All operations are validated and committed together.  
 - **Simplified logic:** Consolidate multi-table operations without adding client-side complexity.
 
-This update is live on Appwrite Cloud. 
+This update is live on Indobase Cloud. 
 
 {% arrow_link href="/blog/post/announcing-transactions-api" %}
 Read the announcement to learn more

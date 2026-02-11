@@ -2,7 +2,7 @@
     import { Button, Icon } from '$lib/components/ui/index.js';
     import Map from '$lib/components/appwrite-network/map.svelte';
 
-    const heading = 'The Appwrite Network';
+    const heading = 'The Indobase Network';
 </script>
 
 <div class="relative flex max-w-screen flex-col gap-8 overflow-hidden">
@@ -21,7 +21,7 @@
         </div>
 
         <Button variant="secondary" href="/blog/post/the-appwrite-network"
-            >More about the Appwrite Network
+            >More about the Indobase Network
             <Icon name="arrow-right" class="transition group-hover:translate-x-0.5" />
         </Button>
     </div>

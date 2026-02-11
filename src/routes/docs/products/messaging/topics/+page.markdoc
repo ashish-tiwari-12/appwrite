@@ -1,9 +1,9 @@
----
+﻿---
 layout: article
 title: Topics
 description: Allow groups of users to subscribe to a common topic and receive the same notifications.
 ---
-In Appwrite Messaging, you can use topics to deliver messages to groups of users at once.
+In Indobase Messaging, you can use topics to deliver messages to groups of users at once.
 
 {% only_dark %}
 ![Add a target](/images/docs/messaging/topics/dark/topics.png)
@@ -39,7 +39,7 @@ You can create topics
 {% only_light %}
 ![Add a topic](/images/docs/messaging/topics/create-topics.png)
 {% /only_light %}
-Navigate to your Appwrite Console > **Messaging** > **Topics** > **Create topic**.
+Navigate to your Indobase Console > **Messaging** > **Topics** > **Create topic**.
 {% /tabsitem %}
 
 {% tabsitem #server-sdk title="Server SDK" %}
@@ -93,8 +93,8 @@ const topic = messaging.createTopic(
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Messaging;
+use Indobase\Client;
+use Indobase\Services\Messaging;
 
 $client = new Client();
 
@@ -136,7 +136,7 @@ topic = messaging.create_topic(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -154,9 +154,9 @@ topic = messaging.create_topic(
 puts topic.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -252,7 +252,7 @@ messaging.createTopic(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -306,14 +306,14 @@ Learn more about permission roles
 # Subscribe targets to a topic {% #subscribe-targets-to-topics %}
 {% tabs %}
 {% tabsitem #console title="Console" %}
-During development, you can subscribe targets to a topic for testing right in the Appwrite console.
+During development, you can subscribe targets to a topic for testing right in the Indobase console.
 {% only_dark %}
 ![Add a topic](/images/docs/messaging/topics/dark/add-subscriber.png)
 {% /only_dark %}
 {% only_light %}
 ![Add a topic](/images/docs/messaging/topics/add-subscriber.png)
 {% /only_light %}
-Navigate to your Appwrite Console > **Messaging** > **Topics** > click on your topic > **Subscribers** > **Create topic** > **Add subscriber**.
+Navigate to your Indobase Console > **Messaging** > **Topics** > click on your topic > **Subscribers** > **Create topic** > **Add subscriber**.
 
 If you can't find the targets you'd like to add, see the [targets page](/docs/products/messaging/targets).
 {% /tabsitem %}
@@ -355,8 +355,8 @@ const subscriber = await messaging.createSubscriber({
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Messaging;
+use Indobase\Client;
+use Indobase\Services\Messaging;
 
 $client = new Client();
 
@@ -396,7 +396,7 @@ subscriber = messaging.create_subscriber(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')  # Your API Endpoint
@@ -412,9 +412,9 @@ subscriber = messaging.create_subscriber(
 )
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 Client client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1")  // Your API Endpoint
@@ -491,7 +491,7 @@ messaging.createSubscriber(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")  // Your API Endpoint

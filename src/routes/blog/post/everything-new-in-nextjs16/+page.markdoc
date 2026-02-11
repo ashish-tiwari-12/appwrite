@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Everything new in Next.js 16"
-description: Next.js 16 is now available, bringing Cache Components, Turbopack, and refined caching, now fully supported on Appwrite Sites.
+description: Next.js 16 is now available, bringing Cache Components, Turbopack, and refined caching, now fully supported on Indobase Sites.
 date: 2025-10-30
 cover: /images/blog/everything-new-in-nextjs16/cover.png
 timeToRead: 5
@@ -10,7 +10,7 @@ category: tutorial
 ---
 Next.js 16 is here, and it brings one of the most polished releases the framework has seen in a while. Instead of chasing big rewrites, this version focuses on the fundamentals, faster builds, predictable caching, smarter routing, and better developer visibility.
 
-And if you’re deploying on **Appwrite Sites**, you can start using Next.js 16 today. The latest release is fully supported, so you can build, test, and host your Next.js projects seamlessly on Appwrite’s open-source infrastructure.
+And if you’re deploying on **Indobase Sites**, you can start using Next.js 16 today. The latest release is fully supported, so you can build, test, and host your Next.js projects seamlessly on Indobase’s open-source infrastructure.
 
 Many of the features introduced in earlier betas are now stable and production-ready, giving developers more control and consistency across their workflows.
 
@@ -100,8 +100,8 @@ The release also updates core requirements. You’ll need Node.js 20.9+, TypeScr
 
 Next.js 16 isn’t a release that changes how you build. It’s one that changes how your build *feels*. Caching is now predictable. Builds are faster. Routing is leaner. Logs are clearer.
 
-And with [Appwrite Sites now supporting Next.js 16](/docs/products/sites/quick-start/nextjs), you can deploy and host your latest projects right away, from development to production, on fully open-source infrastructure. Whether you’re experimenting with Cache Components, testing Turbopack, or building production apps, everything runs smoothly on Appwrite Sites.
+And with [Indobase Sites now supporting Next.js 16](/docs/products/sites/quick-start/nextjs), you can deploy and host your latest projects right away, from development to production, on fully open-source infrastructure. Whether you’re experimenting with Cache Components, testing Turbopack, or building production apps, everything runs smoothly on Indobase Sites.
 
 # More resources
-- [Deploy a Next.js app to Appwrite Sites](/docs/products/sites/quick-start/nextjs)
-- [Learn more about Appwrite Sites](/docs/products/sites)
+- [Deploy a Next.js app to Indobase Sites](/docs/products/sites/quick-start/nextjs)
+- [Learn more about Indobase Sites](/docs/products/sites)

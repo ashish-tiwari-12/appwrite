@@ -16,7 +16,7 @@
     }
 
     const {
-        title = 'Start building with Appwrite today',
+        title = 'Start building with Indobase today',
         description = 'Build with the frameworks and languages you want.',
         point1 = 'Built in security',
         point2 = 'Scalable infrastructure',

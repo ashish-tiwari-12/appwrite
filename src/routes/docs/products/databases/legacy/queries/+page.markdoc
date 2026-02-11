@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Queries
-description: Harness the power of querying with Appwrite Databases. Discover various query options, filtering, sorting, and advanced querying techniques.
+description: Harness the power of querying with Indobase Databases. Discover various query options, filtering, sorting, and advanced querying techniques.
 ---
 
-Many list endpoints in Appwrite allow you to filter, sort, and paginate results using queries. Appwrite provides a common set of syntax to build queries.
+Many list endpoints in Indobase allow you to filter, sort, and paginate results using queries. Indobase provides a common set of syntax to build queries.
 
 # Query class {% #query-class %}
 
-Appwrite SDKs provide a `Query` class to help you build queries. The `Query` class has methods for each type of supported query operation.
+Indobase SDKs provide a `Query` class to help you build queries. The `Query` class has methods for each type of supported query operation.
 
 # Building queries {% #building-queries %}
 
@@ -95,7 +95,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -148,9 +148,9 @@ suspend fun main() {
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Query;
-use Appwrite\Services\Databases;
+use Indobase\Client;
+use Indobase\Query;
+use Indobase\Services\Databases;
 
 $client = new Client();
 
@@ -216,7 +216,7 @@ query {
 ```http
 GET /v1/databases/<DATABASE_ID>/collections/<COLLECTION_ID>/documents?queries[]=%7B%22method%22%3A%22equal%22%2C%22attribute%22%3A%22title%22%2C%22values%22%3A%5B%22Avatar%22%2C%22Lord%20of%20the%20Rings%22%5D%7D&queries[]=%7B%22method%22%3A%22greaterThan%22%2C%22attribute%22%3A%22year%22%2C%22values%22%3A%5B1999%5D%7D HTTP/1.1
 Content-Type: application/json
-X-Appwrite-Project: <PROJECT_ID>
+X-Indobase-Project: <PROJECT_ID>
 ```
 {% /multicode %}
 
@@ -310,7 +310,7 @@ let doc = try await databases.getDocument(
 ```http
 GET /v1/databases/<DATABASE_ID>/collections/<COLLECTION_ID>/documents/<DOCUMENT_ID>?queries[]=%7B%22method%22%3A%22select%22%2C%22values%22%3A%5B%22name%22%2C%22age%22%5D%7D HTTP/1.1
 Content-Type: application/json
-X-Appwrite-Project: <PROJECT_ID>
+X-Indobase-Project: <PROJECT_ID>
 ```
 {% /multicode %}
 
@@ -367,7 +367,7 @@ let doc = try await databases.getDocument(
 ```http
 GET /v1/databases/<DATABASE_ID>/collections/<COLLECTION_ID>/documents/<DOCUMENT_ID>?queries[]=%7B%22method%22%3A%22select%22%2C%22values%22%3A%5B%22%2A%22%2C%22reviews.%2A%22%5D%7D HTTP/1.1
 Content-Type: application/json
-X-Appwrite-Project: <PROJECT_ID>
+X-Indobase-Project: <PROJECT_ID>
 {"method":"select","values":["*","reviews.*"]}
 ```
 {% /multicode %}

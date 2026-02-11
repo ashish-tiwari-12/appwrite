@@ -1,11 +1,11 @@
----
+﻿---
 layout: changelog
-title: Appwrite 1.5 has been released to self hosted
+title: Indobase 1.5 has been released to self hosted
 date: 2024-03-08
 cover: /images/changelog/2024-03-08.png
 ---
 
-Appwrite 1.5 has been released to self hosted.
+Indobase 1.5 has been released to self hosted.
 
 You can now build with
 - Messaging

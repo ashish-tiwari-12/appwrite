@@ -1,4 +1,4 @@
-Goal: Add Appwrite auth to a new Next.js app (App Router), with a working login/register/logout page.
+Goal: Add Indobase auth to a new Next.js app (App Router), with a working login/register/logout page.
 
 Do exactly these steps in order. Confirm each step succeeds before continuing. If any command fails, show the error and fix it automatically.
 
@@ -9,14 +9,14 @@ Respect user's package manager at all time. Don't use NPM if the user uses somet
     - Change dir: cd my-app
     - When prompted: TypeScript = No, ESLint = Yes, Tailwind = No, src dir = your choice, App Router = Yes, Import alias = No.
 
-2. Install Appwrite SDK
+2. Install Indobase SDK
     - Run: npm install appwrite
 
-3. Create Appwrite client module (ask user for details; never assume)
+3. Create Indobase client module (ask user for details; never assume)
     - Ask the user for:
-        - Appwrite Cloud Region (e.g. fra, nyc)
+        - Indobase Cloud Region (e.g. fra, nyc)
         - Project ID (from Console -> Settings)
-          If the user doesn’t know, guide them to Appwrite Console to copy these. Do not attempt to infer or access their project.
+          If the user doesn't know, guide them to Indobase Console to copy these. Do not attempt to infer or access their project.
     - Hardcode the endpoint and project ID in the file: app/appwrite.js (or app/appwrite.ts if TS) if provided, else leave placeholder and ask the user to provide them.
     - Create file: app/appwrite.js (or app/appwrite.ts if TS) with key snippet:
         ```js

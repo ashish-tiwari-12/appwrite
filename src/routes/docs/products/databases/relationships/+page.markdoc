@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Relationships
-description: Manage complex data relationships with Appwrite Databases. Discover how to define and work with relationships between rows for interconnected data.
+description: Manage complex data relationships with Indobase Databases. Discover how to define and work with relationships between rows for interconnected data.
 difficulty: advanced
 readtime: 20
 ---
 Relationships describe how rows in different tables are associated, so that related rows can be read, updated, or deleted together. Entities in real-life often associate with each other in an organic and logical way, like a person and their dog, an album and its songs, or friends in a social network.
 
-These types of association between entities can be modeled in Appwrite using relationships.
+These types of association between entities can be modeled in Indobase using relationships.
 
 {% info title="Experimental feature" %}
-Appwrite Relationships is an experimental feature. The API and behavior are subject to change in future versions.
+Indobase Relationships is an experimental feature. The API and behavior are subject to change in future versions.
 {% /info %}
 
 # Relationship columns {% #relationship-columns %}
@@ -29,7 +29,7 @@ Duplicated records waste storage, but more importantly, makes the database much 
 
 # Opt-in loading {% #performance-loading %}
 
-By default, Appwrite returns only a row's own fields when you retrieve rows. Related rows are **not automatically loaded** unless you explicitly request them using query selection. This eliminates unintentional payload bloat and gives you precise control over performance.
+By default, Indobase returns only a row's own fields when you retrieve rows. Related rows are **not automatically loaded** unless you explicitly request them using query selection. This eliminates unintentional payload bloat and gives you precise control over performance.
 
 {% arrow_link href="/docs/products/databases/queries#relationship-select" %}
 Learn how to load relationships with queries
@@ -37,7 +37,7 @@ Learn how to load relationships with queries
 
 # Directionality {% #directionality %}
 
-Appwrite relationships can be one-way or two-way.
+Indobase relationships can be one-way or two-way.
 
 | Type     | Description                                                                                                       |
 | -------- | ----------------------------------------------------------------------------------------------------------------- |
@@ -46,7 +46,7 @@ Appwrite relationships can be one-way or two-way.
 
 # Types {% #types %}
 
-Appwrite provides four different relationship types to enforce different associative rules between rows.
+Indobase provides four different relationship types to enforce different associative rules between rows.
 
 | Type        | Description                                                             |
 | ----------- | ----------------------------------------------------------------------- |
@@ -58,7 +58,7 @@ Appwrite provides four different relationship types to enforce different associa
 
 # On-delete {% #on-delete %}
 
-Appwrite also allows you to define the behavior of a relationship when a row is deleted.
+Indobase also allows you to define the behavior of a relationship when a row is deleted.
 
 | Type       | Description                                                            |
 | ---------- | ---------------------------------------------------------------------- |
@@ -67,12 +67,12 @@ Appwrite also allows you to define the behavior of a relationship when a row is 
 | Set null   | If a row has related rows, when it is deleted, the related rows are kept with their relationship column set to null.|
 
 # Creating relationships {% #create-relationships %}
-You can define relationships in the Appwrite Console, or using a [Server SDK](/docs/sdks#server)
+You can define relationships in the Indobase Console, or using a [Server SDK](/docs/sdks#server)
 
 {% tabs %}
 {% tabsitem #console title="Console" %}
 
-You can create relationships in the Appwrite Console by adding a relationship column to a table.
+You can create relationships in the Indobase Console by adding a relationship column to a table.
 
 1. In your project, navigate to **Databases** > **Select your database** > **Select your table** > **Columns** > **Create column**.
 2. Select **Relationship** as the column type.
@@ -110,8 +110,8 @@ tablesDB.createRelationshipColumn(
 
 
 ```php
-use \Appwrite\Client;
-use \Appwrite\Services\TablesDB;
+use \Indobase\Client;
+use \Indobase\Services\TablesDB;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your API Endpoint
@@ -158,7 +158,7 @@ tablesDB.create_relationship_column(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')# Your API Endpoint
@@ -247,7 +247,7 @@ tablesDB.createRelationshipColumn(
 
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -269,8 +269,8 @@ tablesDB.createRelationshipColumn(
 
 
 ```csharp
-using Appwrite;
-using Appwrite.Services;
+using Indobase;
+using Indobase.Services;
 
 var client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -350,7 +350,7 @@ await tablesDB.createRow(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -457,7 +457,7 @@ await tablesDB.createRow(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint        
@@ -553,7 +553,7 @@ await tablesDB.listRows(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -650,7 +650,7 @@ await tablesDB.updateRow(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -753,7 +753,7 @@ await tablesDB.deleteRow(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -852,7 +852,7 @@ await tablesDB.createRow(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -880,7 +880,7 @@ tablesDB.createRow(
 );
 ```
 ```kotlin
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

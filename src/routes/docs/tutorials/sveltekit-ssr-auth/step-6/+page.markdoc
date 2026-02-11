@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create account page
-description: Add authentication to a SvelteKit project using Appwrite.
+description: Add authentication to a SvelteKit project using Indobase.
 step: 6
 ---
 
@@ -26,10 +26,10 @@ export async function load({ locals }) {
 // Define our log out endpoint/server action.
 export const actions = {
   default: async (event) => {
-    // Create the Appwrite client.
+    // Create the Indobase client.
     const { account } = createSessionClient(event);
 
-    // Delete the session on Appwrite, and delete the session cookie.
+    // Delete the session on Indobase, and delete the session cookie.
     await account.deleteSession({ sessionId: "current" });
     event.cookies.delete(SESSION_COOKIE, { path: "/" });
 

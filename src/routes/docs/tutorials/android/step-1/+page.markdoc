@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Build an ideas tracker with Android
-description: Learn to build an Android app with no backend code using an Appwrite backend.
+description: Learn to build an Android app with no backend code using an Indobase backend.
 framework: Android
 back: /docs/tutorials
 category: Mobile and native
@@ -9,7 +9,7 @@ step: 1
 ---
 
 **Idea tracker**: an app to track all the side project ideas that you'll start, but probably never finish.
-In this tutorial, you will build Idea tracker with Appwrite and Android.
+In this tutorial, you will build Idea tracker with Indobase and Android.
 
 ## Concepts {% #concepts %}
 This tutorial will introduce the following concepts:

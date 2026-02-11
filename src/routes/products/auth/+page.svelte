@@ -16,7 +16,7 @@
 
     const title = 'Auth' + TITLE_SUFFIX;
     const description =
-        'Enable secure and reliable user login with Appwrite Auth. We support multiple authentication methods with compliance features out of the box.';
+        'Enable secure and reliable user login with Indobase Auth. We support multiple authentication methods with compliance features out of the box.';
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 </script>
 
@@ -79,7 +79,7 @@
                                     ></span>
                                 </div>
                                 <p class="text-sub-body">
-                                    Use Appwrite messaging to send email, SMS, and push
+                                    Use Indobase messaging to send email, SMS, and push
                                     notifications.
                                 </p>
                             </div>
@@ -106,7 +106,7 @@
                                     ></span>
                                 </div>
                                 <p class="text-sub-body">
-                                    Scale big and unlock limitless potential with Appwrite
+                                    Scale big and unlock limitless potential with Indobase
                                     functions.
                                 </p>
                             </div>
@@ -185,7 +185,7 @@
                                     ></span>
                                 </div>
                                 <p class="text-sub-body">
-                                    Utilize realtime information from all Appwrite services.
+                                    Utilize realtime information from all Indobase services.
                                 </p>
                             </div>
                         </a>

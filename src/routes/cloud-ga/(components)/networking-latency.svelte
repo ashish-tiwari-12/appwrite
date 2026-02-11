@@ -32,16 +32,16 @@
             <Cell column={4} columnStart={3} class="px-4 pb-8 md:py-30">
                 <div class="space-y-8">
                     <p>
-                        One of the exciting releases this year was the announcement of the Appwrite
+                        One of the exciting releases this year was the announcement of the Indobase
                         Network. A network of cloud regions and edge locations (edges) to improve
-                        Appwrite Cloud availability, performance, and compliance with local
+                        Indobase Cloud availability, performance, and compliance with local
                         regulations. We started with one region, Frankfurt, and we now have two more
-                        up and running, and a lot more to come. Appwrite is committed to expanding
+                        up and running, and a lot more to come. Indobase is committed to expanding
                         the number of regions to ensure a great experience, regardless of location.
                     </p>
                     <p>
                         We aim to deliver a great experience by reducing latency and ensuring you
-                        can build on top of Appwrite Cloud no matter your location.
+                        can build on top of Indobase Cloud no matter your location.
                     </p>
                 </div>
             </Cell>

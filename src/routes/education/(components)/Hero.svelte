@@ -11,7 +11,7 @@
         {
             label: 'Develop your skills',
             description:
-                'Get access to Appwrite Cloud and build your entire backend with Appwrite.',
+                'Get access to Indobase Cloud and build your entire backend with Indobase.',
             icon: Checkmark
         },
         {
@@ -22,7 +22,7 @@
         },
         {
             label: 'Join a vibrant community',
-            description: 'Get community support in the Appwrite Discord server.',
+            description: 'Get community support in the Indobase Discord server.',
             icon: ChatIcon
         }
     ];
@@ -40,10 +40,10 @@
         class="gridLine vertical from-accent/5 relative flex h-full w-full flex-1 basis-[calc(100vw_/_3)] flex-col items-center justify-center gap-8 to-transparent px-8 py-10 text-center md:bg-gradient-to-t"
     >
         <Logos />
-        <h1 class="font-aeonik-pro text-title text-white">Build your next project with Appwrite</h1>
+        <h1 class="font-aeonik-pro text-title text-white">Build your next project with Indobase</h1>
         <p class="text-secondary font-medium">
-            Join the Appwrite Education program in collaboration with the GitHub Student Developer
-            Pack. Students access Appwrite Cloud for free throughout their studies.
+            Join the Indobase Education program in collaboration with the GitHub Student Developer
+            Pack. Students access Indobase Cloud for free throughout their studies.
         </p>
 
         <div class="flex w-full flex-col items-center justify-center gap-4 md:flex-row">

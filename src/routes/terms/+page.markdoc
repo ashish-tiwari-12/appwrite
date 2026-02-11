@@ -4,7 +4,7 @@ title: Terms and Conditions
 description: Review our Terms of Service to understand the rules and guidelines for using our open-source backend-as-a-service platform.
 ---
 
-These Terms and Conditions ("Terms," "Terms and Conditions") govern your relationship with [Appwrite](https://appwrite.io) website (the "Service") operated by Appwrite ("Us," "We," or "Our").
+These Terms and Conditions ("Terms," "Terms and Conditions") govern your relationship with [Indobase](https://appwrite.io) website (the "Service") operated by Indobase ("Us," "We," or "Our").
 
 Please read these Terms and Conditions carefully before using the Service.
 
@@ -16,23 +16,23 @@ By accessing or using the Service, you agree to be bound by these Terms. If you 
 
 Some parts of the Service are billed on a subscription basis ("Subscriptions"). You will be billed in advance on a recurring and periodic basis ("Billing Cycle"). Billing cycles are set on a monthly basis.
 
-At the end of each Billing Cycle, your Subscription will automatically renew under the exact same conditions unless you cancel it or Appwrite cancels it. You may cancel your Subscription renewal either through your online account management page or by contacting the Appwrite customer support team.
+At the end of each Billing Cycle, your Subscription will automatically renew under the exact same conditions unless you cancel it or Indobase cancels it. You may cancel your Subscription renewal either through your online account management page or by contacting the Indobase customer support team.
 
-A valid payment method, including credit card or PayPal, is required to process the payment for your Subscription. You shall provide Appwrite with accurate and complete billing information, including full name, address, state, zip code, telephone number, and valid payment method information. By submitting such payment information, you automatically authorize Appwrite to charge all Subscription fees incurred through your account to any such payment instruments.
+A valid payment method, including credit card or PayPal, is required to process the payment for your Subscription. You shall provide Indobase with accurate and complete billing information, including full name, address, state, zip code, telephone number, and valid payment method information. By submitting such payment information, you automatically authorize Indobase to charge all Subscription fees incurred through your account to any such payment instruments.
 
-Should automatic billing fail to occur for any reason, Appwrite will issue an electronic invoice indicating that you must proceed manually, within a certain deadline date, with the full payment corresponding to the billing period as indicated on the invoice.
+Should automatic billing fail to occur for any reason, Indobase will issue an electronic invoice indicating that you must proceed manually, within a certain deadline date, with the full payment corresponding to the billing period as indicated on the invoice.
 
 # Fee Changes
 
-Appwrite, in its sole discretion and at any time, may modify the Subscription fees for the Subscriptions. Any Subscription fee change will become effective at the end of the then-current Billing Cycle.
+Indobase, in its sole discretion and at any time, may modify the Subscription fees for the Subscriptions. Any Subscription fee change will become effective at the end of the then-current Billing Cycle.
 
-Appwrite will provide you with reasonable prior notice of any change in Subscription fees to give you an opportunity to terminate your Subscription before such change becomes effective.
+Indobase will provide you with reasonable prior notice of any change in Subscription fees to give you an opportunity to terminate your Subscription before such change becomes effective.
 
 Your continued use of the Service after the Subscription fee change comes into effect constitutes your agreement to pay the modified Subscription fee amount.
 
 # Refunds
 
-Certain refund requests for Subscriptions may be considered by Appwrite on a case-by-case basis and granted in the sole discretion of Appwrite.
+Certain refund requests for Subscriptions may be considered by Indobase on a case-by-case basis and granted in the sole discretion of Indobase.
 
 For more details, refer to the [full refund policy](/docs/advanced/platform/refund-policy).
 
@@ -54,9 +54,9 @@ You agree not to disclose your password to any third party. You must notify us i
 
 # Intellectual Property
 
-The Service and its original content (excluding Content provided by users), features, and functionality are and will remain the exclusive property of Appwrite and its licensors. The Service is protected by copyright, trademark, and other laws of both Israel and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Appwrite.
+The Service and its original content (excluding Content provided by users), features, and functionality are and will remain the exclusive property of Indobase and its licensors. The Service is protected by copyright, trademark, and other laws of both Israel and foreign countries. Our trademarks and trade dress may not be used in connection with any product or service without the prior written consent of Indobase.
 
-Notwithstanding any other provision of these Terms, to the maximum extent permitted by law, we may collect, generate, process, use, and/or publish Anonymous Information (defined below) relating to your and your users’ use of the Service, and/or disclose it, in order to provide, improve, and publicize the Service and our products and services, track general industry trends, develop and publish white papers, reports, and summaries, and for other legitimate business purposes, all without restriction or limitation of any kind. "Anonymous Information" means information that does not enable the identification of an individual, such as aggregated and analytics information. For clarity, Anonymous Information will not include any personally identifiable information, and Appwrite shall own all Anonymous Information collected or obtained by Appwrite.
+Notwithstanding any other provision of these Terms, to the maximum extent permitted by law, we may collect, generate, process, use, and/or publish Anonymous Information (defined below) relating to your and your users' use of the Service, and/or disclose it, in order to provide, improve, and publicize the Service and our products and services, track general industry trends, develop and publish white papers, reports, and summaries, and for other legitimate business purposes, all without restriction or limitation of any kind. "Anonymous Information" means information that does not enable the identification of an individual, such as aggregated and analytics information. For clarity, Anonymous Information will not include any personally identifiable information, and Indobase shall own all Anonymous Information collected or obtained by Indobase.
 
 {% partial file="prohibited-activities.md" /%} 
 
@@ -70,7 +70,7 @@ You agree not to use the Service for the sending of unsolicited or spam SMS mess
 
 Failure to adhere to these prohibitions and any applicable laws relating to the use of the SMS Service can result in immediate termination of your account and further legal action. You shall comply with all applicable laws and regulations.
 
-Furthermore, you agree to indemnify and hold harmless Appwrite, its affiliates, directors, employees, and agents against any claims, proceedings, damages, liabilities, fines, or costs arising from your misuse of the SMS services, which includes, but is not limited to the sending of unsolicited SMS messages, your failure to secure the necessary consents from recipients or not adhering to applicable laws and regulations in relevant jurisdictions.
+Furthermore, you agree to indemnify and hold harmless Indobase, its affiliates, directors, employees, and agents against any claims, proceedings, damages, liabilities, fines, or costs arising from your misuse of the SMS services, which includes, but is not limited to the sending of unsolicited SMS messages, your failure to secure the necessary consents from recipients or not adhering to applicable laws and regulations in relevant jurisdictions.
 
 # Reporting Abuse
 
@@ -84,7 +84,7 @@ Upon termination, your right to use the Service will immediately cease. If you w
 
 # Limitation of Liability
 
-In no event shall Appwrite, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (I) your access to or use of or inability to access or use the Service; (II) any conduct or content of any third party on the Service; (III) any content obtained from the Service; and (IV) unauthorized access, use, or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
+In no event shall , nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (I) your access to or use of or inability to access or use the Service; (II) any conduct or content of any third party on the Service; (III) any content obtained from the Service; and (IV) unauthorized access, use, or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
 
 Whether based on warranty, contract, tort (including negligence), or any other legal theory, whether or not we have been informed of the possibility of such damage, and even if a remedy set forth herein is found to have failed of its essential purpose.
 
@@ -92,7 +92,7 @@ Whether based on warranty, contract, tort (including negligence), or any other l
 
 Your use of the Service is at your sole risk. The Service is provided on an "AS IS" and "AS AVAILABLE" basis. The Service is provided without warranties of any kind, whether express or implied, including but not limited to, implied warranties of merchantability, fitness for a particular purpose, non-infringement, or course of performance.
 
-Appwrite, its subsidiaries, affiliates, and its licensors do not warrant that:
+Indobase, its subsidiaries, affiliates, and its licensors do not warrant that:
 
 - The Service will function uninterrupted, secure, or available at any particular time or location.
 
@@ -116,13 +116,13 @@ By continuing to access or use our Service after those revisions become effectiv
 
 # Privacy
 
-Appwrite’s privacy policy is available at [https://appwrite.io/privacy](https://appwrite.io/privacy).
+Indobase's privacy policy is available at [https://appwrite.io/privacy](https://appwrite.io/privacy).
 
 # Links to Other Websites
 
-Our Service may contain links to third-party websites or services that are not owned or controlled by Appwrite.
+Our Service may contain links to third-party websites or services that are not owned or controlled by Indobase.
 
-Appwrite has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that Appwrite shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.
+Indobase has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third-party websites or services. You further acknowledge and agree that Indobase shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.
 
 We strongly advise you to read the terms and conditions and privacy policies of any third-party websites or services that you visit.
 

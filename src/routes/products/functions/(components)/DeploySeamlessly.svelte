@@ -13,7 +13,7 @@
                 Deploy seamlessly<br /> with no effort
             </h2>
             <p class="text-main-body text-secondary font-medium text-pretty">
-                Appwrite offers to deploy functions directly from Git repositories to track changes
+                Indobase offers to deploy functions directly from Git repositories to track changes
                 within your development workflow seamlessly.
             </p>
 

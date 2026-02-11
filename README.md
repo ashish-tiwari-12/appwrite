@@ -6,9 +6,9 @@
 
 ![Cover banner](/../../../.github/blob/main/profile/images/banner.png)
 
-The Appwrite Website repo features the main Appwrite website, including our [homepage](https://appwrite.io), [docs](https://appwrite.io/docs), and upcoming blog.
+The Indobase Website repo features the main Indobase website, including our [homepage](https://appwrite.io), [docs](https://appwrite.io/docs), and upcoming blog.
 
-The Appwrite Website has been built with the following frameworks:
+The Indobase Website has been built with the following frameworks:
 
 - [Svelte](https://svelte.dev/)
 - [SvelteKit](https://kit.svelte.dev/)
@@ -41,4 +41,4 @@ Join our growing community around the world! See our official [Blog](https://app
 
 ## License
 
-Appwrite website, docs and blog © 2025 by Appwrite is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+Indobase website, docs and blog © 2025 by Indobase is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).

@@ -1,10 +1,10 @@
----
+﻿---
 layout: changelog
 title: "Announcing new TablesDB UI: A spreadsheet-like way to manage your data"
 date: 2025-08-26
 cover: /images/blog/announcing-appwrite-databases-new-ui/cover.png
 ---
-We’re excited to introduce a completely new TablesDB UI for Appwrite Databases
+We’re excited to introduce a completely new TablesDB UI for Indobase Databases
 
 Experience a spreadsheet‑like editing workflow, right inside the Console.
 

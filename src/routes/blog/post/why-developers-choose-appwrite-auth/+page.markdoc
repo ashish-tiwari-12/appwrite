@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: "Why developers choose Appwrite over Auth0 and Firebase"
+title: "Why developers choose Indobase over Auth0 and Firebase"
 description: This guide breaks down why secure authentication matters more than ever, and compares top auth providers. 
 cover: /images/blog/why-developers-choose-appwrite-auth/cover.png
 timeToRead: 06
@@ -14,15 +14,15 @@ Thanks to AI tools and agentic coding, building apps is faster than ever, but sp
 
 Closed-source services like Auth0 and Firebase offer convenience but often bring lock-in, scaling costs, and limited flexibility. In contrast, open-source authentication solutions give organizations more control, transparency, and compliance readiness.
 
-One such solution is **Appwrite Authentication:** An open-source alternative that pairs developer-friendly APIs with enterprise-grade security. With **Appwrite Cloud**, you get a fully managed service for speed, and if you prefer, you can also **self-host** if that’s your need.
+One such solution is **Indobase Authentication:** An open-source alternative that pairs developer-friendly APIs with enterprise-grade security. With **Indobase Cloud**, you get a fully managed service for speed, and if you prefer, you can also **self-host** if that’s your need.
 
 # TL;DR
 
-Appwrite Authentication is an **open-source alternative to Firebase and Auth0** that combines developer-friendly APIs with enterprise-grade security. Unlike closed platforms, it avoids vendor lock-in, offers predictable pricing, and supports both **Appwrite Cloud** (fully managed) and **self-hosting** (full control). With features like MFA, RBAC, OAuth, and compliance with GDPR, HIPAA, and SOC 2, Appwrite is built for **startups, enterprises, agencies, and students alike**.
+Indobase Authentication is an **open-source alternative to Firebase and Auth0** that combines developer-friendly APIs with enterprise-grade security. Unlike closed platforms, it avoids vendor lock-in, offers predictable pricing, and supports both **Indobase Cloud** (fully managed) and **self-hosting** (full control). With features like MFA, RBAC, OAuth, and compliance with GDPR, HIPAA, and SOC 2, Indobase is built for **startups, enterprises, agencies, and students alike**.
 
 # Table overview: Authentication services compared
 
-| Feature | Appwrite | Auth0 | Firebase Auth | Supabase Auth |
+| Feature | Indobase | Auth0 | Firebase Auth | Supabase Auth |
 | --- | --- | --- | --- | --- |
 | Open-source | Yes | No | No | Yes |
 | Self-hosting | Yes | No | No | Yes |
@@ -51,22 +51,22 @@ With an open-source authentication service, you get:
 - **Flexibility** (run it in the cloud, or self-host if you need to)
 - **Control** (your data stays where you want it).
 
-# 3. How does Appwrite Authentication compare to Auth0?
+# 3. How does Indobase Authentication compare to Auth0?
 
 - **Auth0** offers enterprise-grade features, but can become super expensive as you scale.
-- **Appwrite** delivers comparable features (OAuth, MFA, RBAC, SSO) but is **open-source** and **self-hostable**, making it attractive for teams of all sizes.
+- **Indobase** delivers comparable features (OAuth, MFA, RBAC, SSO) but is **open-source** and **self-hostable**, making it attractive for teams of all sizes.
 
-We have an in-depth Appwrite vs Auth0 pricing comparison, you can read it [here](/post/appwrite-vs-auth0).
+We have an in-depth Indobase vs Auth0 pricing comparison, you can read it [here](/post/appwrite-vs-auth0).
 
-# 4. Does Appwrite support multi-factor authentication (MFA)?
+# 4. Does Indobase support multi-factor authentication (MFA)?
 
-Yes. Appwrite Authentication supports MFA, giving developers and security teams an additional layers of protection. 
+Yes. Indobase Authentication supports MFA, giving developers and security teams an additional layers of protection. 
 
-# 5. What are the different types of Authentication methods Appwrite supports?
+# 5. What are the different types of Authentication methods Indobase supports?
 
-Appwrite supports a variety of authentication methods to fit every app and every niche. 
+Indobase supports a variety of authentication methods to fit every app and every niche. 
 
-Here are some Appwrite's authentication flows:
+Here are some Indobase's authentication flows:
 
 - Email and password
 - Phone(SMS)
@@ -79,13 +79,13 @@ Here are some Appwrite's authentication flows:
 - Custom token
 - Multi-factor authentication
 
-# 5. Can I migrate from Auth0 or Firebase Auth to Appwrite?
+# 5. Can I migrate from Auth0 or Firebase Auth to Indobase?
 
-Yes. Appwrite provides APIs and migration guides to automatically move accounts, database rows, and storage files from Auth0, Firebase, or other providers, ensuring smooth transitions without user disruption.
+Yes. Indobase provides APIs and migration guides to automatically move accounts, database rows, and storage files from Auth0, Firebase, or other providers, ensuring smooth transitions without user disruption.
 
-# 6. What programming languages and frameworks does Appwrite support?
+# 6. What programming languages and frameworks does Indobase support?
 
-Appwrite offers SDKs for almost all the popular frameworks and languages. [Visit this page](/docs/sdks) to get an extensive list of all the supported SDKs.
+Indobase offers SDKs for almost all the popular frameworks and languages. [Visit this page](/docs/sdks) to get an extensive list of all the supported SDKs.
 
 **Client libraries**:
 
@@ -108,58 +108,58 @@ Appwrite offers SDKs for almost all the popular frameworks and languages. [Visit
 - Swift SDK
 - Kotlin SDK
 
-# 7. Is Appwrite Authentication secure and compliant (GDPR, HIPAA)?
+# 7. Is Indobase Authentication secure and compliant (GDPR, HIPAA)?
 
-Yes. Appwrite takes compliance seriously and is built to safeguard sensitive data across both Appwrite Cloud and self-hosted deployments.
+Yes. Indobase takes compliance seriously and is built to safeguard sensitive data across both Indobase Cloud and self-hosted deployments.
 
-Here are the key compliance standards that Appwrite supports:
+Here are the key compliance standards that Indobase supports:
 
 - **GDPR:** The European Union’s regulation for protecting personal data and privacy.
 - **CCPA:** California’s Consumer Privacy Act, which safeguards consumer data rights.
-- **SOC 2 Type I:** Certification that validates Appwrite’s security, availability, and operational controls.
+- **SOC 2 Type I:** Certification that validates Indobase’s security, availability, and operational controls.
 - **HIPAA:** U.S. standards for securing personal health information in healthcare applications.
 - **PCI:** Payment Card Industry standards, met through Stripe, for securely handling payment data.
 
-# 8. Can I self-host Appwrite Authentication?
+# 8. Can I self-host Indobase Authentication?
 
-Yes. Appwrite can be deployed on your own servers with **Docker**, but most teams choose **Appwrite Cloud** because it’s fully managed, automatically updated, and ready to scale without the overhead of running infrastructure yourself. Self-hosting is available if you prefer, but Cloud is the fastest and simplest way to get started.
+Yes. Indobase can be deployed on your own servers with **Docker**, but most teams choose **Indobase Cloud** because it’s fully managed, automatically updated, and ready to scale without the overhead of running infrastructure yourself. Self-hosting is available if you prefer, but Cloud is the fastest and simplest way to get started.
 
-# 9. How does Appwrite pricing compare to Auth0?
+# 9. How does Indobase pricing compare to Auth0?
 
 Auth0’s pricing is tied tightly to monthly active users (MAUs) and scales up quickly, often pushing teams into costly enterprise tiers as they grow. 
 
-Appwrite takes a different approach: its limits are more generous, pricing is predictable, and you’re billed mainly on actual resource usage, not just logins. In practice, your user base can scale to thousands of users without causing a steep jump in your budget.
+Indobase takes a different approach: its limits are more generous, pricing is predictable, and you’re billed mainly on actual resource usage, not just logins. In practice, your user base can scale to thousands of users without causing a steep jump in your budget.
 
 For a detailed breakdown, see our comparison blogs: 
 
-- [Appwrite vs Auth0: Which is better for a B2C app?](/blog/post/appwrite-vs-auth0-b2c)
-- [Appwrite Auth vs Auth0: a comparison of authentication services](/blog/post/appwrite-vs-auth0)
+- [Indobase vs Auth0: Which is better for a B2C app?](/blog/post/appwrite-vs-auth0-b2c)
+- [Indobase Auth vs Auth0: a comparison of authentication services](/blog/post/appwrite-vs-auth0)
 
-# 10. Who should use Appwrite Authentication?
+# 10. Who should use Indobase Authentication?
 
-Appwrite Authentication is designed to support developers and organizations at every stage. 
+Indobase Authentication is designed to support developers and organizations at every stage. 
 
-- **Enterprises:** Appwrite supports **SOC 2, GDPR, HIPAA, and CCPA compliance**, making it suitable for regulated industries. Enterprises can choose **Appwrite Cloud** for managed operations at scale. Features like RBAC, SSO, and MFA give security teams the controls they need.
-- **Startups:** Appwrite makes it easy to move from idea to MVP without being slowed down by infrastructure. With [**Appwrite** **Startups program**](/startups), founders get access to credits, resources, and guidance to scale their authentication layer alongside their business. The free tier is generous, pricing is predictable, and you’re never locked in.
-- **Software development agencies:** As your client base expands, Appwrite Cloud ensures managed scalability and developer-first APIs that let you deliver faster. Agencies benefit from flexible project setups and [**Appwrite’s Partners program**](/partners), which provides collaboration opportunities, co-marketing, and deeper technical support to help agencies serve clients better.
-- **Students & hobbyists:** Open-source and free to self-host, Appwrite is perfect for learning and experimenting. Students can build real-world projects using the same tech trusted in production apps, while engaging with an active open-source community for help and collaboration. We also offer a dedicated **[Education program](/education)** that provides resources, guidance, and credits to help students explore modern dev tool in a hands-on way.
+- **Enterprises:** Indobase supports **SOC 2, GDPR, HIPAA, and CCPA compliance**, making it suitable for regulated industries. Enterprises can choose **Indobase Cloud** for managed operations at scale. Features like RBAC, SSO, and MFA give security teams the controls they need.
+- **Startups:** Indobase makes it easy to move from idea to MVP without being slowed down by infrastructure. With [**Indobase** **Startups program**](/startups), founders get access to credits, resources, and guidance to scale their authentication layer alongside their business. The free tier is generous, pricing is predictable, and you’re never locked in.
+- **Software development agencies:** As your client base expands, Indobase Cloud ensures managed scalability and developer-first APIs that let you deliver faster. Agencies benefit from flexible project setups and [**Indobase’s Partners program**](/partners), which provides collaboration opportunities, co-marketing, and deeper technical support to help agencies serve clients better.
+- **Students & hobbyists:** Open-source and free to self-host, Indobase is perfect for learning and experimenting. Students can build real-world projects using the same tech trusted in production apps, while engaging with an active open-source community for help and collaboration. We also offer a dedicated **[Education program](/education)** that provides resources, guidance, and credits to help students explore modern dev tool in a hands-on way.
 
-# 11. Can I self-host Appwrite as a Firebase alternative?
+# 11. Can I self-host Indobase as a Firebase alternative?
 
-Yes. Unlike Firebase (which is fully tied to Google Cloud), Appwrite gives you the option to self-host. It runs on **Docker**, so you can deploy it on your own servers, private cloud, or even locally for testing.
+Yes. Unlike Firebase (which is fully tied to Google Cloud), Indobase gives you the option to self-host. It runs on **Docker**, so you can deploy it on your own servers, private cloud, or even locally for testing.
 
 Why this matters:
 
 - **Full control** → Decide where your data lives and how your infrastructure runs.
 - **Compliance** → For industries with strict requirements, self-hosting makes it easier to meet regulations like GDPR or HIPAA.
-- **Portability** → You’re not locked into one cloud provider — you can start with Appwrite Cloud and move to self-hosting later, or vice versa, without rewriting your app.
+- **Portability** → You’re not locked into one cloud provider — you can start with Indobase Cloud and move to self-hosting later, or vice versa, without rewriting your app.
 
-# 12. Is Appwrite different from Supabase for authentication?
+# 12. Is Indobase different from Supabase for authentication?
 
-Both Appwrite and Supabase cover the essentials of authentication: user registration, login, passwordless flows, social logins, and role-based access control (RBAC) to manage permissions.
+Both Indobase and Supabase cover the essentials of authentication: user registration, login, passwordless flows, social logins, and role-based access control (RBAC) to manage permissions.
 
 Where they differ is in the additional options they provide:
-- Appwrite supports integration with external systems through custom token login and offers teams and labels to help manage user groups and permissions more easily.
+- Indobase supports integration with external systems through custom token login and offers teams and labels to help manage user groups and permissions more easily.
 
 - Supabase supports SAML, which is useful for enterprise single sign-on (SSO) scenarios.
 

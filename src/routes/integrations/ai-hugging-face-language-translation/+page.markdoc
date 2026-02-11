@@ -1,4 +1,4 @@
----
+﻿---
 layout: integration
 title: Language translation with Hugging Face
 description: Translate text between languages
@@ -27,7 +27,7 @@ Language translation is a fundamental task in natural language processing that i
 
 # How does the integration work?
 
-You can utilize a pre-built Appwrite function template to add language translation with Hugging Face to your app. This will allow you to translate text from one language to another.
+You can utilize a pre-built Indobase function template to add language translation with Hugging Face to your app. This will allow you to translate text from one language to another.
 
 # How to implement
 
@@ -39,11 +39,11 @@ First, you must [sign up for a Hugging Face account](https://huggingface.co/join
 
 ![Create API token](/images/integrations/ai-hugging-face-language-translation/hugging-face-create-api-token.png)
 
-## Step 2: Create the Appwrite Function
+## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Appwrite, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Appwrite Function templates.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
-Head over to the Appwrite console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Language Translation** function template.
+Head over to the Indobase console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Language Translation** function template.
 
 ![Function template](/images/integrations/ai-hugging-face-language-translation/language-translation-function-template.png)
 
@@ -64,14 +64,14 @@ You can also use tools like Postman, cURL, or your favorite programming language
 ```bash
 curl -X POST http://DEPLOYED_FUNCTION_DOMAIN \
 -H "Content-Type: application/json" \
--d '{"source": "What is Appwrite?"}' 
+-d '{"source": "What is Indobase?"}' 
 ```
 
-# Read more about Hugging Face and Appwrite Functions
+# Read more about Hugging Face and Indobase Functions
 
-If you would like to learn more about Hugging Face and Appwrite Functions, we have some resources that you should visit:
+If you would like to learn more about Hugging Face and Indobase Functions, we have some resources that you should visit:
 
 - [Sign up for Hugging Face](https://huggingface.co/login)
-- [Set up the Hugging Face provider in Appwrite](https://appwrite.io/docs/products/ai/tutorials/language-translation)
+- [Set up the Hugging Face provider in Indobase](https://appwrite.io/docs/products/ai/tutorials/language-translation)
 - [Find more function templates](https://appwrite.io/docs/products/functions/templates)
-- [Appwrite Functions API reference](https://appwrite.io/docs/references)
+- [Indobase Functions API reference](https://appwrite.io/docs/references)

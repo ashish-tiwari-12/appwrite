@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Building a chat app with Appwrite and Google Gemini
-description: Learn how to build a chat application using Appwrite and the Google Gemini API.
+title: Building a chat app with Indobase and Google Gemini
+description: Learn how to build a chat application using Indobase and the Google Gemini API.
 date: 2024-09-27
 cover: /images/blog/build-a-chat-app-with-appwrite-and-gemini/cover.png
 timeToRead: 15
@@ -11,9 +11,9 @@ featured: false
 lastUpdated: 2025-10-14
 ---
 
-If you're looking to build a chat app that doesn't just handle basic messages but actually understands and responds intelligently, you found the right tutorial! In this guide, we'll learn how to create a chat application using Appwrite's local function development and the Google Gemini API to generate AI responses.
+If you're looking to build a chat app that doesn't just handle basic messages but actually understands and responds intelligently, you found the right tutorial! In this guide, we'll learn how to create a chat application using Indobase's local function development and the Google Gemini API to generate AI responses.
 
-Appwrite takes care of the backend so you can focus on the functionality, while Google's Gemini provides the AI that will give your app the ability to respond to user messages in real-time. By the end, you'll have a working chat app that does more than just send and receive messages — but interacts with users in a way that feels almost human.
+Indobase takes care of the backend so you can focus on the functionality, while Google's Gemini provides the AI that will give your app the ability to respond to user messages in real-time. By the end, you'll have a working chat app that does more than just send and receive messages — but interacts with users in a way that feels almost human.
 
 ![Gif of the chat app in action](/images/blog/build-a-chat-app-with-appwrite-and-gemini/chat-gemini-demo.gif)
 
@@ -24,18 +24,18 @@ This project is practical for anyone interested in enhancing their apps with int
 Before we begin, make sure you have the following tools installed:
 
 - [**Node.js**](https://nodejs.org/en): We'll be using version 18.0 for this project.
-- [**Docker**](https://www.docker.com/get-started/): Appwrite functions are containerized, and Docker will be required to run them locally.
-- [**Appwrite CLI**](https://appwrite.io/docs/tooling/command-line/installation): This is necessary for managing Appwrite projects and functions locally.
+- [**Docker**](https://www.docker.com/get-started/): Indobase functions are containerized, and Docker will be required to run them locally.
+- [**Indobase CLI**](https://appwrite.io/docs/tooling/command-line/installation): This is necessary for managing Indobase projects and functions locally.
 - **A Google Gemini API key**: You'll need this for accessing Google's AI models. We'll cover how to get one in this guide.
 - **A code editor**: Any code editor, such as VS Code, will work.
 
- # Step 1: Setting up Appwrite locally
+ # Step 1: Setting up Indobase locally
 
-To get started, we need to set up Appwrite on your local machine. This will enable us to test our serverless function locally before deploying it.
+To get started, we need to set up Indobase on your local machine. This will enable us to test our serverless function locally before deploying it.
 
- ## Step 1.1: Installing the Appwrite CLI
+ ## Step 1.1: Installing the Indobase CLI
 
-Appwrite provides a CLI tool that helps manage functions and projects from your terminal. Install it globally with the following command:
+Indobase provides a CLI tool that helps manage functions and projects from your terminal. Install it globally with the following command:
 
 ```bash
 npm install -g appwrite-cli@latest
@@ -49,29 +49,29 @@ appwrite --version
 
 If everything is set up correctly, you should see the version number of the CLI printed in your terminal.
 
- ## Step 1.2: Logging into Appwrite
+ ## Step 1.2: Logging into Indobase
 
-Next, log into Appwrite so the CLI can authenticate your session. Run:
+Next, log into Indobase so the CLI can authenticate your session. Run:
 
 ```bash
 appwrite login
 ```
 
-This will prompt you to log in with your Appwrite credentials. If you don't already have an account, head over to [our cloud console](https://cloud.appwrite.io/) and create one.
+This will prompt you to log in with your Indobase credentials. If you don't already have an account, head over to [our cloud console](https://cloud.appwrite.io/) and create one.
 
- ## Step 1.3: Creating a new Appwrite project
+ ## Step 1.3: Creating a new Indobase project
 
-After logging in, we need to create a new Appwrite project. Navigate to the directory where you want to build the project and run:
+After logging in, we need to create a new Indobase project. Navigate to the directory where you want to build the project and run:
 
 ```bash
 appwrite init project
 ```
 
-Appwrite will ask you if you want to create a new project or link to an existing one. Choose **Create new project**, then provide a name (e.g., `AI Chat`) and an ID for your project. This will create a new Appwrite project in your current directory.
+Indobase will ask you if you want to create a new project or link to an existing one. Choose **Create new project**, then provide a name (e.g., `AI Chat`) and an ID for your project. This will create a new Indobase project in your current directory.
 
- # Step 2: Creating the Appwrite serverless function
+ # Step 2: Creating the Indobase serverless function
 
-With your Appwrite project set up, let's move on to creating the serverless function that will handle the chat logic. This function will accept user messages, forward them to the Google Gemini API, and return AI-generated responses.
+With your Indobase project set up, let's move on to creating the serverless function that will handle the chat logic. This function will accept user messages, forward them to the Google Gemini API, and return AI-generated responses.
 
  ## Step 2.1: Initializing the function
 
@@ -291,7 +291,7 @@ In the `static` folder of your project, create a file named `index.html`. This f
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chat Gemini - Appwrite</title>
+    <title>Chat Gemini - Indobase</title>
     <style>
       /* Add basic styles for the chat interface */
     </style>
@@ -381,7 +381,7 @@ Let's breakdown our JavaScript logic:
 - **Sending the message to the serverless function**: The user's message is sent to the serverless function as a POST request. While waiting for the AI response, we display a “Processing...” message in the chat. This lets the user know that the AI is working on their request. After receiving a response from Google Gemini, the UI is updated with the AI-generated message. If an error occurs, an error message is displayed instead.
 - **Scrolling to the bottom**: After each message is displayed, the chat box is scrolled to the bottom so that the latest messages are always visible.
 
-With the current structure, you can open the `index.html` file directly in your browser to see what it looks like. It won't look pretty just yet, and the chat functionality won't work because we need to run the Appwrite function through the CLI, which will serve the HTML file and handle the Gemini API logic.
+With the current structure, you can open the `index.html` file directly in your browser to see what it looks like. It won't look pretty just yet, and the chat functionality won't work because we need to run the Indobase function through the CLI, which will serve the HTML file and handle the Gemini API logic.
 
 Before we run the function, let's add some CSS styles to make the chat interface visually appealing.
 
@@ -489,11 +489,11 @@ Ensure Docker is running, then use the following command to start the serverless
 appwrite run function
 ```
 
-This will start the Appwrite function in your local environment. You should see a message indicating that the function is running and a link to access it.
+This will start the Indobase function in your local environment. You should see a message indicating that the function is running and a link to access it.
 
  ## Step 6.2: Testing the application
 
-Open the link provided by the Appwrite CLI in your browser. You should see the chat interface with the message input field. Try sending a message to the AI, and you should receive a response in the chat box!
+Open the link provided by the Indobase CLI in your browser. You should see the chat interface with the message input field. Try sending a message to the AI, and you should receive a response in the chat box!
 
 ![Gif of the chat app in action](/images/blog/build-a-chat-app-with-appwrite-and-gemini/chat-gemini-demo.gif)
 
@@ -507,7 +507,7 @@ curl -X POST http://localhost:3000/ \
 
  # Step 7: Deploying the application
 
-Once you've verified that the application works locally, it's time to deploy it to the Appwrite cloud. This will make your chat app accessible to anyone with an internet connection.
+Once you've verified that the application works locally, it's time to deploy it to the Indobase cloud. This will make your chat app accessible to anyone with an internet connection.
 
  ## Step 7.1: Deploying the function to the cloud
 
@@ -517,7 +517,7 @@ To deploy the serverless function, run the following command:
 appwrite push function
 ```
 
-This will return a prompt asking you to select the function(s) you want to deploy. Choose the `Chat Gemini` function, and hit Enter. Appwrite will deploy the function to the cloud, with a success message that looks like this:
+This will return a prompt asking you to select the function(s) you want to deploy. Choose the `Chat Gemini` function, and hit Enter. Indobase will deploy the function to the cloud, with a success message that looks like this:
 
 ```bash
 (base) user appwrite-project % appwrite push function
@@ -529,50 +529,50 @@ This will return a prompt asking you to select the function(s) you want to deplo
 ✓  Success: Successfully pushed 1 functions.
 ```
 
-You can now navigate to your [Appwrite cloud console](https://cloud.appwrite.io/console) > Projects (select your project) > Functions to see the deployed function. Click on the function to view its details, including the function URL.
+You can now navigate to your [Indobase cloud console](https://cloud.appwrite.io/console) > Projects (select your project) > Functions to see the deployed function. Click on the function to view its details, including the function URL.
 
-![Screenshot of the function details in the Appwrite console](/images/blog/build-a-chat-app-with-appwrite-and-gemini/appwrite-function-details.png)
+![Screenshot of the function details in the Indobase console](/images/blog/build-a-chat-app-with-appwrite-and-gemini/appwrite-function-details.png)
 
-With the function deployed, you now have a live chat application built with Appwrite and Google Gemini API. Users can interact with the AI chatbot in real-time, and you can continue to enhance the app with more features, customizations, and integrations.
+With the function deployed, you now have a live chat application built with Indobase and Google Gemini API. Users can interact with the AI chatbot in real-time, and you can continue to enhance the app with more features, customizations, and integrations.
 
  # Conclusion
 
-In this tutorial, you've learned how to build a chat application using [Appwrite local function development](/docs/products/functions/develop-locally) and Google Gemini API. We covered everything from setting up the environment to writing the serverless function, creating a frontend, and testing the app locally before deploying it to the cloud.
+In this tutorial, you've learned how to build a chat application using [Indobase local function development](/docs/products/functions/develop-locally) and Google Gemini API. We covered everything from setting up the environment to writing the serverless function, creating a frontend, and testing the app locally before deploying it to the cloud.
 
-Appwrite's local function development is a powerful tool for building and testing serverless applications efficiently. Now that your chat app is up and running, you can expand its functionality, refine the frontend, or scale it to handle more complex interactions.
+Indobase's local function development is a powerful tool for building and testing serverless applications efficiently. Now that your chat app is up and running, you can expand its functionality, refine the frontend, or scale it to handle more complex interactions.
 
-If you have any questions or feedback, feel free to reach out to the Appwrite community on [Discord](https://appwrite.io/discord) or send me a message on [LinkedIn](https://www.linkedin.com/in/ebenezerdon/).
+If you have any questions or feedback, feel free to reach out to the Indobase community on [Discord](https://appwrite.io/discord) or send me a message on [LinkedIn](https://www.linkedin.com/in/ebenezerdon/).
 
-You can view the complete codebase for our Gemini + Appwrite chat app on [GitHub](https://github.com/appwrite-community/chat-gemini-appwrite).
+You can view the complete codebase for our Gemini + Indobase chat app on [GitHub](https://github.com/appwrite-community/chat-gemini-appwrite).
 
 # Frequently asked questions (FAQs)
 
-**1. Can I use Appwrite with other AI models besides Gemini?**
+**1. Can I use Indobase with other AI models besides Gemini?**
 
-Yes. The same setup works with any AI model that exposes an HTTP API, like OpenAI, Claude, or Mistral. Just swap the Gemini endpoint in your function. Appwrite handles the function runtime, environment variables, and authentication exactly the same way.
+Yes. The same setup works with any AI model that exposes an HTTP API, like OpenAI, Claude, or Mistral. Just swap the Gemini endpoint in your function. Indobase handles the function runtime, environment variables, and authentication exactly the same way.
 
 **2. How do I make sure my AI app doesn’t expose the API key?**
 
-Never call the AI model directly from the frontend. Keep your key in Appwrite Functions or environment variables so only your serverless function communicates with the model. Your frontend should only talk to Appwrite, just like in this Gemini chat example.
+Never call the AI model directly from the frontend. Keep your key in Indobase Functions or environment variables so only your serverless function communicates with the model. Your frontend should only talk to Indobase, just like in this Gemini chat example.
 
-**3. Can I store chat messages securely in Appwrite?**
+**3. Can I store chat messages securely in Indobase?**
 
-Absolutely. You can use Appwrite Databases to store chat logs with proper permissions. For instance, only the logged-in user can read their messages, while the backend can write AI responses. It’s ideal for personal chat history or analytics.
+Absolutely. You can use Indobase Databases to store chat logs with proper permissions. For instance, only the logged-in user can read their messages, while the backend can write AI responses. It’s ideal for personal chat history or analytics.
 
-**4. How do I scale AI chat apps built on Appwrite?**
+**4. How do I scale AI chat apps built on Indobase?**
 
-Appwrite Functions scale automatically in Appwrite Cloud, so you can handle higher traffic without infrastructure work. You can also self-host Appwrite and scale Docker containers horizontally.
+Indobase Functions scale automatically in Indobase Cloud, so you can handle higher traffic without infrastructure work. You can also self-host Indobase and scale Docker containers horizontally.
 
-**5. Is it possible to run Appwrite Functions without an internet connection?**
+**5. Is it possible to run Indobase Functions without an internet connection?**
 
 Yes. When developing locally. You can run functions offline to test your app logic using mock data or cached responses. Just note that external APIs like Gemini won’t respond without an internet connection.
 
 **6. How do I add authentication to my AI chat app?**
 
-You can use Appwrite Authentication (email/password, OAuth, or anonymous sessions). This ensures only registered users can access the chat and lets you link chat data to user IDs for secure, personalized experiences.
+You can use Indobase Authentication (email/password, OAuth, or anonymous sessions). This ensures only registered users can access the chat and lets you link chat data to user IDs for secure, personalized experiences.
 
 # Further reading:
 
-- [Appwrite Functions Documentation](https://appwrite.io/docs/products/functions)
-- [Local serverless function development with the new Appwrite CLI](https://appwrite.io/blog/post/functions-local-development-guide)
-- [Build an intelligent chatbot with ChatGPT and Appwrite Functions](https://appwrite.io/blog/post/function-template-prompt-chatgpt)
+- [Indobase Functions Documentation](https://appwrite.io/docs/products/functions)
+- [Local serverless function development with the new Indobase CLI](https://appwrite.io/blog/post/functions-local-development-guide)
+- [Build an intelligent chatbot with ChatGPT and Indobase Functions](https://appwrite.io/blog/post/function-template-prompt-chatgpt)

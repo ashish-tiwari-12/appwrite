@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Support SLA
-description: Learn about Appwrite's support service level agreement (SLA) including response times, severity levels, and support commitments for different subscription tiers.
+description: Learn about Indobase's support service level agreement (SLA) including response times, severity levels, and support commitments for different subscription tiers.
 ---
 
 This Support Service Level Agreement ("SLA") describes the support services provided by APPWRITE ("we," "us," or "our") to users of our products and services ("you" or "user"). By using our services, you agree to the terms of this SLA.
@@ -44,7 +44,7 @@ To ensure effective support, users are expected to:
 
 # Limitations and exclusions
 
-- This SLA applies only to support requests submitted via the Appwrite Console.
+- This SLA applies only to support requests submitted via the Indobase Console.
 - SLA obligations may be affected by factors outside our reasonable control, including but not limited to force majeure events, third-party dependencies, or actions taken by the user.
 
 {% partial file="policy-modifications.md" /%}

@@ -11,7 +11,7 @@
         },
         {
             label: 'AI-powered development',
-            description: "Connect your favorite AI productivity tools with Appwrite's MCP.",
+            description: "Connect your favorite AI productivity tools with Indobase's MCP.",
             icon: '/images/icons/gradients/stars.svg'
         },
         {
@@ -27,7 +27,7 @@
         },
         {
             label: 'Built-in security',
-            description: "Your users' data is safe from day one with Appwrite's built in security.",
+            description: "Your users' data is safe from day one with Indobase's built in security.",
             icon: '/images/icons/gradients/shield.svg'
         },
         {
@@ -50,7 +50,7 @@
 
     const {
         theme = 'light',
-        description = "You don't need to have a team of engineers to develop, host, and scale applications. Appwrite gives you everything you need, including built-in security, AI, and open source.",
+        description = "You don't need to have a team of engineers to develop, host, and scale applications. Indobase gives you everything you need, including built-in security, AI, and open source.",
         class: classes,
         ...restProps
     }: BenefitsProps = $props();
@@ -67,7 +67,7 @@
             <h2
                 class="text-title font-aeonik-pro text-primary max-w-[700px] leading-12 text-pretty"
             >
-                Benefits of Appwrite<br />for
+                Benefits of Indobase<br />for
                 <span class="relative"
                     >startups<span class="absolute bottom-0 left-0 h-1 w-full"></span></span
                 ><span class="text-accent">_</span>

@@ -1,14 +1,14 @@
----
+﻿---
 layout: tutorial
 title: Add database
-description: Connect a database to your React Native application using Appwrite Web SDK.
+description: Connect a database to your React Native application using Indobase Web SDK.
 step: 6
 ---
-In this step, you'll set up a database to store ideas in Appwrite, configure permissions, then create a
+In this step, you'll set up a database to store ideas in Indobase, configure permissions, then create a
 context to manage ideas in your React Native app.
 
 # Create table {% #create-table %}
-In Appwrite, data is stored as a table of rows. Create a table in the [Appwrite Console](https://cloud.appwrite.io/) to store our ideas.
+In Indobase, data is stored as a table of rows. Create a table in the [Indobase Console](https://cloud.appwrite.io/) to store our ideas.
 
 {% only_dark %}
 ![Create project screen](/images/docs/tutorials/dark/idea-tracker-table.png)

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Predicting your developer destiny: how I built the AI Crystal Ball"
-description: How I used Appwrite, OpenAI, GitHub, and SvelteKit to develop an AI prank app.
+description: How I used Indobase, OpenAI, GitHub, and SvelteKit to develop an AI prank app.
 date: 2024-05-10
 cover: /images/blog/ai-crystal-ball/cover.png
 timeToRead: 9
@@ -19,8 +19,8 @@ In order to build this application, we have a few prerequisites. We must set up 
 
 - OpenAI API key
 - GitHub OAuth app
-- Appwrite OAuth adapter for GitHub
-- Appwrite collections to store GitHub data and destinies
+- Indobase OAuth adapter for GitHub
+- Indobase collections to store GitHub data and destinies
 
 ## OpenAI
 
@@ -41,25 +41,25 @@ To create a GitHub OAuth application, we must visit the [Settings page](https://
 
 ![GitHub OAuth](/images/blog/ai-crystal-ball/github.png)
 
-## Appwrite
+## Indobase
 
-In this app, we primarily need Appwrite for the following:
+In this app, we primarily need Indobase for the following:
 
 - Managing GitHub OAuth login
 - Saving the information we get from the GitHub API, so we don’t need to call it repeatedly
 - Saving developer destinies if a user wants to create a shareable link
 
-The only prerequisite here was creating an [Appwrite Cloud account](https://cloud.appwrite.io/), followed by creating a new project and adding your hostname as a web app to the project.
+The only prerequisite here was creating an [Indobase Cloud account](https://cloud.appwrite.io/), followed by creating a new project and adding your hostname as a web app to the project.
 
 ### GitHub OAuth
 
-To implement GitHub OAuth, we must visit the **Auth** page on the Appwrite project, go to the **Settings** tab, click on **GitHub** from the list of OAuth adapters, and paste the Client ID and Secret we saved from the GitHub OAuth app. Ensure that copy the **redirect URI** and paste it into your GitHub OAuth app in the **Authorization callback URL** field.
+To implement GitHub OAuth, we must visit the **Auth** page on the Indobase project, go to the **Settings** tab, click on **GitHub** from the list of OAuth adapters, and paste the Client ID and Secret we saved from the GitHub OAuth app. Ensure that copy the **redirect URI** and paste it into your GitHub OAuth app in the **Authorization callback URL** field.
 
-![Appwrite OAuth for GitHub](/images/blog/ai-crystal-ball/oauth.png)
+![Indobase OAuth for GitHub](/images/blog/ai-crystal-ball/oauth.png)
 
-## Appwrite Database
+## Indobase Database
 
-We must create a database with the ID `crystalball` and two collections with the IDs `githubData` and `destiny` in the Appwrite project with the following details:
+We must create a database with the ID `crystalball` and two collections with the IDs `githubData` and `destiny` in the Indobase project with the following details:
 
 #### The `githubData` collection
 
@@ -128,7 +128,7 @@ PUBLIC_APPWRITE_COLLECTION_ID_DESTINY=
 SECRET_OPENAI_API_KEY=
 ```
 
-After the environment variables are created, we can set up the Appwrite SDK by creating a file `./src/lib/appwrite.js` and adding the following:
+After the environment variables are created, we can set up the Indobase SDK by creating a file `./src/lib/appwrite.js` and adding the following:
 
 ```js
 import { Client, Account, Databases, OAuthProvider } from 'appwrite';
@@ -152,7 +152,7 @@ export const ssr = false;
 
 ## Login using GitHub OAuth
 
-First, we must use the Appwrite Web SDK to set up our Auth library in the application. We will create a file `.src/lib/user.js` to create a user store with the necessary auth-related functions.
+First, we must use the Indobase Web SDK to set up our Auth library in the application. We will create a file `.src/lib/user.js` to create a user store with the necessary auth-related functions.
 
 ```js
 import { writable } from 'svelte/store';
@@ -268,7 +268,7 @@ export const github = {
 }
 ```
 
-At this point, we also want to create our Database library using the Appwrite SDK, so that we can store the information from the GitHub API. For that, we shall create a file `./src/lib/databases.js` and add the following:
+At this point, we also want to create our Database library using the Indobase SDK, so that we can store the information from the GitHub API. For that, we shall create a file `./src/lib/databases.js` and add the following:
 
 ```js
 import { Permission, Role, ID } from 'appwrite';
@@ -354,11 +354,11 @@ We will be calling these functions for our main application page in the file `./
     }
 
     async function initCrystalBall(userId) {
-		    // Check if GitHub data is already stored in Appwrite DB or not
+		    // Check if GitHub data is already stored in Indobase DB or not
         userData = await db.getUserData(userId);
 
         if(userData === false){
-		        // Get GitHub token from Appwrite session
+		        // Get GitHub token from Indobase session
             const session = await user.getSession();
             const githubToken = session.providerAccessToken;
 
@@ -367,7 +367,7 @@ We will be calling these functions for our main application page in the file `./
             const githubUsername = githubUser.login;
             loadingMessage = `Received user data ${githubUsername} from GitHub`;
 
-						// Get top 5 languages using GitHub user details and add to Appwrite
+						// Get top 5 languages using GitHub user details and add to Indobase
             let languages = await getTopFiveLanguages(githubUsername, githubToken);
             userData = await db.addUserData($user.$id, githubUsername, githubUser.followers, githubUser.following, languages);
         }
@@ -498,7 +498,7 @@ Since our UI has already been prepared in the previous step, we need not make an
 
 ## Storing and sharing the destiny
 
-Lastly, to share our destiny with the rest of the world, we must create an additional page that gets destiny data from the Appwrite Database and displays it. For this, we must first add functions to add and get destinies from the Appwrite Database to our Database library. To do so, we visit `./src/lib/databases/js` and add the following functions to our export:
+Lastly, to share our destiny with the rest of the world, we must create an additional page that gets destiny data from the Indobase Database and displays it. For this, we must first add functions to add and get destinies from the Indobase Database to our Database library. To do so, we visit `./src/lib/databases/js` and add the following functions to our export:
 
 ```js
 .
@@ -593,7 +593,7 @@ We will render our page using the pre-fetched destiny here:
 </div>
 ```
 
-Lastly, we need to add a function in `./src/routes/app/+page.svelte` to store the destiny in the Appwrite Database using our library function and open the destiny link in a new tab for our user. For that, we add the following code in the `<script>` tags:
+Lastly, we need to add a function in `./src/routes/app/+page.svelte` to store the destiny in the Indobase Database using our library function and open the destiny link in a new tab for our user. For that, we add the following code in the `<script>` tags:
 
 ```jsx
 async function getLink() {

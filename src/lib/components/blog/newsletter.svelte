@@ -45,9 +45,9 @@
                     Subscribe to our newsletter
                 </h3>
                 <p class="text-description text-primary">
-                    Sign up to our company blog and get the latest insights from Appwrite. Learn
+                    Sign up to our company blog and get the latest insights from Indobase. Learn
                     more about engineering, product design, building community, and tips & tricks
-                    for using Appwrite.
+                    for using Indobase.
                 </p>
             </section>
 
@@ -64,9 +64,9 @@
                             cx="9"
                             cy="9"
                             r="8"
-                            fill="#FD366E"
+                            fill="#FF9933"
                             fill-opacity="0.08"
-                            stroke="#FD366E"
+                            stroke="#FF9933"
                             stroke-opacity="0.32"
                             stroke-width="1.2"
                             stroke-linecap="round"

@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Deploy manually
-description: Learn to deploy Appwrite Sites manually via the Appwrite Console.
+description: Learn to deploy Indobase Sites manually via the Indobase Console.
 ---
 
-Appwrite Sites allows you to host and deploy websites directly within the Appwrite platform. Each site can have many deployments, which can be thought of as versions of the web application.
+Indobase Sites allows you to host and deploy websites directly within the Indobase platform. Each site can have many deployments, which can be thought of as versions of the web application.
 
-While we recommend you create deployments through [automatic Git deployments](/docs/products/sites/deploy-from-git), you can also create deployments manually by uploading the source code to the Appwrite Console.
+While we recommend you create deployments through [automatic Git deployments](/docs/products/sites/deploy-from-git), you can also create deployments manually by uploading the source code to the Indobase Console.
 
 # Manual Deployment
 
-You can upload your sites to be deployed using the Appwrite Console. The example below shows a skeleton SvelteKit app.
+You can upload your sites to be deployed using the Indobase Console. The example below shows a skeleton SvelteKit app.
 
 ```bash
 .
@@ -28,7 +28,7 @@ First, create a build using the `npm run build` command (or an alternative packa
 tar --exclude code.tar.gz -czf code.tar.gz .
 ```
 
-Next, navigate to your Appwrite Console and upload the site.
+Next, navigate to your Indobase Console and upload the site.
 
 1. Navigate to the site you want to deploy.
 2. Head to the **Deployments** tab.

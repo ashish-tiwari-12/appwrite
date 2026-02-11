@@ -1,18 +1,18 @@
----
+﻿---
 layout: article
 title: Phone OTP
-description: Learn how Appwrite handles SMS-based OTP authentication for secure user verification.
+description: Learn how Indobase handles SMS-based OTP authentication for secure user verification.
 ---
 
 {% info title="Note" %}
 Changes will take effect on February 10th, 2025. Check out this [blog post](https://appwrite.io/blog/post/announcing-phone-OTP-pricing) for more information.
 {% /info %}
 
-Appwrite supports SMS-based OTP (One-Time Password) authentication to provide secure and reliable user verification. This feature enhances your app's security by adding an extra layer of authentication.
+Indobase supports SMS-based OTP (One-Time Password) authentication to provide secure and reliable user verification. This feature enhances your app's security by adding an extra layer of authentication.
 
 # Free messages {% #free-messages %}
 
-All paid Appwrite plans include **10 free SMS messages** per month, which allows you to test and implement OTP functionality without immediate costs.
+All paid Indobase plans include **10 free SMS messages** per month, which allows you to test and implement OTP functionality without immediate costs.
 
 In addition you can also use the [Mock phone numbers](/docs/products/auth/security#mock-phone-numbers) feature to continue testing your integrations without incurring additional costs.
 
@@ -24,7 +24,7 @@ The cost for additional messages is calculated based on two factors:
 1. The number of messages sent
 2. The destination country of each message
 
-As part of our commitment to making Appwrite as accessible as possible, we regularly collaborate with telecom providers to negotiate lower SMS rates. Our goal is to keep costs affordable for all users. However, due to the unique pricing structures of each vendor, our rates may fluctuate from time to time.
+As part of our commitment to making Indobase as accessible as possible, we regularly collaborate with telecom providers to negotiate lower SMS rates. Our goal is to keep costs affordable for all users. However, due to the unique pricing structures of each vendor, our rates may fluctuate from time to time.
 
 ## Rates {% #rates %}
 

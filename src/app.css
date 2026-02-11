@@ -14,8 +14,8 @@
     /* theme */
     --color-primary: var(--color-primary);
     --color-secondary: var(--color-secondary);
-    --color-accent: var(--color-pink-500);
-    --color-accent-darker: hsl(343, 64.9%, 48.04%);
+    --color-accent: var(--color-saffron-500);
+    --color-accent-darker: hsl(39 100% 45%);
     --color-smooth: var(--color-smooth);
     --color-subtle: var(--color-subtle);
     --color-tertiary: var(--color-tertiary);
@@ -26,6 +26,18 @@
     --color-pink-500: hsl(var(--color-pink-hue) 98% 60%);
     --color-pink-600: hsl(var(--color-pink-hue) 65% 48%);
     --color-pink-700: hsl(var(--color-pink-hue) 65% 36%);
+
+    /* saffron (India-inspired primary) */
+    --color-saffron-200: hsl(var(--color-saffron-hue) 100% 88%);
+    --color-saffron-500: hsl(var(--color-saffron-hue) 100% 60%);
+    --color-saffron-600: hsl(var(--color-saffron-hue) 100% 45%);
+    --color-saffron-700: hsl(var(--color-saffron-hue) 100% 35%);
+
+    /* green (India-inspired secondary) */
+    --color-green-200: hsl(var(--color-green-hue) 78% 75%);
+    --color-green-300: hsl(var(--color-green-hue) 78% 52%);
+    --color-green-500: hsl(var(--color-green-hue) 78% 40%);
+    --color-green-700: hsl(var(--color-green-hue) 78% 27%);
 
     /* red */
     --color-red-200: hsl(calc(var(--color-red-hue) - 2) 100% 92%);
@@ -464,10 +476,15 @@
     --color-primary-bg: var(--color-greyscale-25);
 
     /* base */
-    --color-primary: var(--color-greyscale-900);
-    --color-secondary: var(--color-greyscale-700);
-    --color-accent: var(--color-pink-500);
-    --color-accent-darker: #ca2b58;
+    /* --color-primary: var(--color-greyscale-900); */
+    --color-primary: #FF9933;
+    /* --color-secondary: var(--color-greyscale-700); */
+    /* --color-secondary: #138808; */
+    --color-secondary: #ffffff;
+    /* --color-accent: var(--color-pink-500); */
+    --color-accent: #ffffff;
+    /* --color-accent-darker: #ca2b58; */
+    --color-accent-darker: #E6851F;
     --carousel-gradient: transparent;
     --color-badge-bg: var(--color-badge-bg-light);
     --color-badge-border: var(--color-badge-border-light);
@@ -479,12 +496,24 @@
 }
 
 .dark {
-    --color-primary: var(--color-greyscale-100);
-    --color-secondary: var(--color-greyscale-300);
+    /* --color-primary: var(--color-greyscale-100);
+    --color-secondary: var(--color-greyscale-300); */
+    --color-primary: #FF9933;     /* Saffron */
+    --color-secondary: #ffffff; 
+    /* --color-secondary: #138808;  */
     --carousel-gradient: 23, 23, 26;
     --color-primary-bg: var(--color-greyscale-900);
     --color-smooth: hsl(0 0% 100% / 0.06);
     --color-tertiary: var(--color-greyscale-600);
     --color-offset: hsl(0 0% 100% / 0.1);
     --color-card: var(--color-greyscale-850);
+}
+
+.saffron-button {
+    background: hsl(var(--color-saffron-500));
+    color: white;
+}
+
+.saffron-button:hover {
+    background: hsl(var(--color-saffron-600));
 }

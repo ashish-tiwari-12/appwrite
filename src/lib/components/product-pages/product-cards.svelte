@@ -21,14 +21,14 @@
         },
         functions: {
             title: 'Functions',
-            description: ' Scale big and unlock limitless potential with Appwrite functions.',
+            description: ' Scale big and unlock limitless potential with Indobase functions.',
             icon: '/images/icons/illustrated/dark/functions.png',
             url: '/products/functions'
         },
 
         messaging: {
             title: 'Messaging',
-            description: 'Use Appwrite messaging to send email, SMS, and push notifications.',
+            description: 'Use Indobase messaging to send email, SMS, and push notifications.',
             icon: '/images/icons/illustrated/dark/messaging.png',
             url: '/products/messaging'
         },

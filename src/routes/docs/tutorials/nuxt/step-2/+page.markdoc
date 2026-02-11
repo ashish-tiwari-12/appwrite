@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create app
-description: Create a Nuxt app project and integrate with Appwrite
+description: Create a Nuxt app project and integrate with Indobase
 step: 2
 ---
 
@@ -16,7 +16,7 @@ npx nuxi@latest init ideas-tracker
 
 ## Add dependencies {% #add-dependencies %}
 
-Once the project is created, change your current working directory and install the JavaScript Appwrite SDK.
+Once the project is created, change your current working directory and install the JavaScript Indobase SDK.
 
 ```sh
 cd ideas-tracker
@@ -38,7 +38,7 @@ import "@appwrite.io/pink-icons";
 </script>
 ```
 
-Then update `nuxt.config.ts` to disable SSR for now. SSR support is coming soon to Appwrite, for now, disable SSR.
+Then update `nuxt.config.ts` to disable SSR for now. SSR support is coming soon to Indobase, for now, disable SSR.
 
 ```ts
 // nuxt.config.ts

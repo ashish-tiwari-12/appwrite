@@ -64,7 +64,7 @@
     }
 
     const title = 'Event sponsorship' + TITLE_SUFFIX;
-    const description = 'Apply for Appwrite Cloud Pro credits for your event.';
+    const description = 'Apply for Indobase Cloud Pro credits for your event.';
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 </script>
 
@@ -108,7 +108,7 @@
                                                 Submission received
                                             </h2>
                                             <p class="web-description web-u-padding-block-end-32">
-                                                Thank you for applying for an Appwrite hackathon
+                                                Thank you for applying for an Indobase hackathon
                                                 sponsorship. We will get back to you in a couple of
                                                 days.
                                             </p>
@@ -122,9 +122,9 @@
                                                 Event sponsorship
                                             </h4>
                                             <p class="web-description">
-                                                Hosting an event or hackathon? Apply for an Appwrite
+                                                Hosting an event or hackathon? Apply for an Indobase
                                                 sponsorship and get $50 Cloud credits for all your
-                                                attendees to build with Appwrite Pro.
+                                                attendees to build with Indobase Pro.
                                             </p>
                                         </section>
                                     {/if}

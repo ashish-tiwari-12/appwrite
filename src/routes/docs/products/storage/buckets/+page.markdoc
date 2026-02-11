@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Buckets
-description: Organize and manage your files effectively with Appwrite Storage Buckets. Explore how to create, configure, and use storage buckets for seamless file organization.
+description: Organize and manage your files effectively with Indobase Storage Buckets. Explore how to create, configure, and use storage buckets for seamless file organization.
 ---
 
-Storage buckets are a group of files, similar to tables in Appwrite Databases.
+Storage buckets are a group of files, similar to tables in Indobase Databases.
 Buckets let you limit file size and extensions, whether or not to encrypt the files, and more.
 
 # Create Bucket {% #create-bucket %}
-You can create your bucket from the Appwrite Console, a [Server SDK](/docs/sdks#server), or the [CLI](/docs/tooling/command-line/buckets).
+You can create your bucket from the Indobase Console, a [Server SDK](/docs/sdks#server), or the [CLI](/docs/tooling/command-line/buckets).
 
 {% tabs %}
 {% tabsitem #console title="Console" %}
@@ -23,7 +23,7 @@ You can create a bucket by heading to the **Storage** page and clicking **Create
 {% /tabsitem %}
 
 {% tabsitem #server-sdk title="Server SDK" %}
-You can also create tables programmatically using a [Server SDK](/docs/sdks#server). Appwrite [Server SDKs](/docs/sdks#server) require an [API key](/docs/advanced/platform/api-keys).
+You can also create tables programmatically using a [Server SDK](/docs/sdks#server). Indobase [Server SDKs](/docs/sdks#server) require an [API key](/docs/advanced/platform/api-keys).
 
 {% multicode %}
 
@@ -81,8 +81,8 @@ promise.then(function (response) {
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Storage;
+use Indobase\Client;
+use Indobase\Services\Storage;
 
 $client = new Client();
 
@@ -115,7 +115,7 @@ result = storage.create_bucket('<BUCKET_ID>', '<NAME>')
 ```ruby
 require 'Appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -129,9 +129,9 @@ response = storage.create_bucket(bucket_id: '<BUCKET_ID>', name: '<NAME>')
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -212,7 +212,7 @@ storage.createBucket(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -256,22 +256,22 @@ Learn more about the CLI buckets commands
 {% /tabs %}
 
 # Permissions {% #permissions %}
-Appwrite uses permissions to control file access.
+Indobase uses permissions to control file access.
 For security, only users that are granted permissions can access a file.
 This helps prevent accidental data leaks by forcing you to make more concious decisions around permissions.
 
-By default, Appwrite doesn't grants permissions to any users when a new bucket is created.
+By default, Indobase doesn't grants permissions to any users when a new bucket is created.
 This means users can't create new files or read, update, and delete existing files.
 
 [Learn about configuring permissions](/docs/products/storage/permissions).
 
 # Encryption {% #encryption %}
-Appwrite provides added security settings for your buckets. Enable encryption under your bucket's **Settings** > **Security settings**.
+Indobase provides added security settings for your buckets. Enable encryption under your bucket's **Settings** > **Security settings**.
 You can enable encryption to encrypt files in your buckets. If your files are leaked, encrypted files cannot be read by the malicious actor.
 Files bigger than 20MB cannot be encrypted.
 
 # Compression {% #compression %}
-Appwrite allows you to compress your files.
+Indobase allows you to compress your files.
 Two algorithms are available, which are [gzip](https://www.gzip.org/) and [zstd](https://github.com/facebook/zstd).
 You can enable compress under your bucket's **Settings** > **Compression**.
 For files larger than 20MB, compression will be skipped even when enabled.

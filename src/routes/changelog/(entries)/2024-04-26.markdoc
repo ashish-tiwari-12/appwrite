@@ -1,11 +1,11 @@
----
+﻿---
 layout: changelog
-title: Appwrite 1.5.5 is released
+title: Indobase 1.5.5 is released
 date: 2024-04-26
 cover:
 ---
 
-Appwrite 1.5.5 is released with fixes for Databases, MFA, and Console.
+Indobase 1.5.5 is released with fixes for Databases, MFA, and Console.
 
 Fixes:
 - Array updates where elements are removed do not work.

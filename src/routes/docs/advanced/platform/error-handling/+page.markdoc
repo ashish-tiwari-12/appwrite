@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Error handling
-description: Best practices for handling Appwrite errors in your applications. Learn how to provide friendly error messages to your users while effectively troubleshooting issues.
+description: Best practices for handling Indobase errors in your applications. Learn how to provide friendly error messages to your users while effectively troubleshooting issues.
 ---
 
-When integrating Appwrite into your applications, proper error handling is important for delivering a good user experience while still being able to troubleshoot issues effectively.
+When integrating Indobase into your applications, proper error handling is important for delivering a good user experience while still being able to troubleshoot issues effectively.
 
 # Consider user-friendly error messages
 
-**It's generally best to avoid returning Appwrite's raw error messages directly to your users.** These messages are designed for developers and may contain technical details that:
+**It's generally best to avoid returning Indobase's raw error messages directly to your users.** These messages are designed for developers and may contain technical details that:
 
 - Could confuse non-technical users
 - Might expose implementation details
@@ -16,13 +16,13 @@ When integrating Appwrite into your applications, proper error handling is impor
 
 Instead, consider this approach:
 
-1. Catch errors from Appwrite
+1. Catch errors from Indobase
 2. Identify the error type
 3. Return a user-friendly message appropriate for your application
 
 # Use error types for better handling
 
-Appwrite returns not just HTTP status codes but also specific error types that provide more precise information about what went wrong. These error types are available in the `type` field of the error response:
+Indobase returns not just HTTP status codes but also specific error types that provide more precise information about what went wrong. These error types are available in the `type` field of the error response:
 
 ```json
 {
@@ -41,7 +41,7 @@ By checking the error type rather than just the status code, you can create more
 
 # Common error types and suggested messages
 
-Here are some examples of how you might map Appwrite error types to user-friendly messages:
+Here are some examples of how you might map Indobase error types to user-friendly messages:
 
 | Error Type | Technical Meaning | User-Friendly Message |
 |------------|-------------------|----------------------|
@@ -53,7 +53,7 @@ Here are some examples of how you might map Appwrite error types to user-friendl
 
 # Complete list of error types
 
-Appwrite provides a comprehensive list of error types organized by category. For a complete reference, see the [Response codes](/docs/advanced/platform/response-codes#error-types) documentation.
+Indobase provides a comprehensive list of error types organized by category. For a complete reference, see the [Response codes](/docs/advanced/platform/response-codes#error-types) documentation.
 
 # Recommended practices
 

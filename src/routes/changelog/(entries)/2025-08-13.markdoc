@@ -1,10 +1,10 @@
----
+﻿---
 layout: changelog
 title: "Announcing Timestamp Overrides: Accurate timelines for production workloads"
 date: 2025-08-13
 cover: /images/blog/announcing-timestamp-overrides/cover.png
 ---
-We’re excited to announce one more powerful addition to Appwrite Databases: **Timestamp Overrides**
+We’re excited to announce one more powerful addition to Indobase Databases: **Timestamp Overrides**
 
 In many data workflows, imported records automatically take on the date and time they are added to the new system. While fine for some cases, this can cause issues when migrating data or integrating systems where original timestamps matter for accurate audit trails, analytics, and chronological order.
 

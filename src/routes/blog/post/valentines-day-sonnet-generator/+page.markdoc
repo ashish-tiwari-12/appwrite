@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Building a Valentine's Day sonnet generator using OpenAI and Appwrite Functions
-description: How we used Appwrite Functions and OpenAI's GPT-4 API to a create a fun, yet creative project.
+title: Building a Valentine's Day sonnet generator using OpenAI and Indobase Functions
+description: How we used Indobase Functions and OpenAI's GPT-4 API to a create a fun, yet creative project.
 date: 2024-03-08
 cover: /images/blog/valentines-day-sonnet-generator/cover.png
 timeToRead: 7
@@ -9,7 +9,7 @@ author: aditya-oberai
 category: functions
 ---
 
-This year to make Valentine’s Day a little more special for all you lovebirds, you might remember that we worked on a fun little project. This project allowed a number of you to create romantic sonnets for your loved ones. Did you know, however, that this project was powered by a Node.js Appwrite Function and OpenAI’s GPT-4 API?
+This year to make Valentine’s Day a little more special for all you lovebirds, you might remember that we worked on a fun little project. This project allowed a number of you to create romantic sonnets for your loved ones. Did you know, however, that this project was powered by a Node.js Indobase Function and OpenAI’s GPT-4 API?
 
 In this blog, we will share how we developed our Valentine’s Day Sonnet Generator.
 
@@ -21,17 +21,17 @@ To get an OpenAI API Key, you must create an account on the&nbsp;[OpenAI platfor
 
 > Note: To use the GPT-4 API, your account must be upgraded to the **Usage tier 1**. To learn more, visit their [Usage tiers documentation](https://platform.openai.com/docs/guides/rate-limits/usage-tiers?context=tier-one).
 
-# Preparing the Appwrite Function
+# Preparing the Indobase Function
 
-Now that we have our OpenAI API Key, let us get the function ready on&nbsp;[Appwrite](https://cloud.appwrite.io/). Head over to your Appwrite project and visit the&nbsp;Functions&nbsp;page. From there, we will select the&nbsp;Templates&nbsp;tab, search for and select the&nbsp;Prompt ChatGPT&nbsp;function template.
+Now that we have our OpenAI API Key, let us get the function ready on&nbsp;[Indobase](https://cloud.appwrite.io/). Head over to your Indobase project and visit the&nbsp;Functions&nbsp;page. From there, we will select the&nbsp;Templates&nbsp;tab, search for and select the&nbsp;Prompt ChatGPT&nbsp;function template.
 
-![Appwrite Function Templates](/images/blog/valentines-day-sonnet-generator/templates.png)
+![Indobase Function Templates](/images/blog/valentines-day-sonnet-generator/templates.png)
 
 This function requires&nbsp;**1 environment variable**&nbsp;to setup:
 
 - `OPENAI_API_KEY`: API Key from our OpenAI account
 
-After you have configured the environment variables, you must connect your Appwrite account with GitHub, select&nbsp;**Create a new repository**&nbsp;(this will generate a GitHub repository for you with the function), and leave the production branch and root settings as default to create this function.
+After you have configured the environment variables, you must connect your Indobase account with GitHub, select&nbsp;**Create a new repository**&nbsp;(this will generate a GitHub repository for you with the function), and leave the production branch and root settings as default to create this function.
 
 # Developing the project
 
@@ -89,7 +89,7 @@ In the project directory, visit `static/index.html` and replace the existing cod
             class="body-text-1 u-normal mt-2"
             style="max-width: 50rem"
           >
-            Enter your partner's name and receive a sonnet dedicated to them, courtesy of Appwrite and OpenAI
+            Enter your partner's name and receive a sonnet dedicated to them, courtesy of Indobase and OpenAI
           </p>
         </div>
       </div>
@@ -202,7 +202,7 @@ export default async ({ req, res, log, error }) => {
 
 ## Testing the function
 
-Once you’ve completed all the aforementioned steps, you can push the code to the generated GitHub repository, at which point Appwrite Cloud will automatically deploy the changes to your function.
+Once you’ve completed all the aforementioned steps, you can push the code to the generated GitHub repository, at which point Indobase Cloud will automatically deploy the changes to your function.
 
 ![Function deployments](/images/blog/valentines-day-sonnet-generator/deployments.png)
 
@@ -216,7 +216,7 @@ And with that, our Valentine’s Day sonnet generator is ready! When we released
 
 If you liked this project or want to investigate the full project code, visit the [GitHub repository](https://github.com/adityaoberai/valentines-day-sonnet-generator).
 
-For more information about Appwrite Functions, visit the following resources:
+For more information about Indobase Functions, visit the following resources:
 
-- [Appwrite Function Docs](https://appwrite.io/docs/functions): These documents provide more information on how to use Appwrite Functions.
-- [Appwrite Discord](https://discord.com/invite/appwrite): Connect with other developers and the Appwrite team for discussion, questions, and collaboration.
+- [Indobase Function Docs](https://appwrite.io/docs/functions): These documents provide more information on how to use Indobase Functions.
+- [Indobase Discord](https://discord.com/invite/appwrite): Connect with other developers and the Indobase team for discussion, questions, and collaboration.

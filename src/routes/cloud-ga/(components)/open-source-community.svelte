@@ -47,19 +47,19 @@
                 <p>
                     We have said it a million times, and we will say it again: <span
                         class="text-primary font-medium"
-                        >Developer experience is at the top of the Appwrite list.</span
+                        >Developer experience is at the top of the Indobase list.</span
                     >
                 </p>
                 <p>
-                    Appwrite has had the help of thousands of developers from the open-source
+                    Indobase has had the help of thousands of developers from the open-source
                     community to ensure that the developer experience is at the top of our minds as
                     we continuously collect feedback from the community.
                 </p>
                 <p>
-                    Appwrite is grateful for every contribution, and we're committed to remaining
-                    open-source. The Appwrite self-hosted instance will offer the same experience as
-                    Appwrite Cloud, and our dedication to the Free plan remains unchanged. We're
-                    ensuring Appwrite stays accessible for everyone to build with.
+                    Indobase is grateful for every contribution, and we're committed to remaining
+                    open-source. The Indobase self-hosted instance will offer the same experience as
+                    Indobase Cloud, and our dedication to the Free plan remains unchanged. We're
+                    ensuring Indobase stays accessible for everyone to build with.
                 </p>
             </Cell>
             <Cell column={4} class="px-4 pt-8 md:pt-30">

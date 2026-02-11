@@ -134,11 +134,9 @@
         })}
     >
         {#if headline}
-            <GradientText>
-                <span class="flex items-center pr-4 text-sm font-medium md:w-full md:max-w-[175px]"
-                    >{headline}</span
-                >
-            </GradientText>
+            <span class="flex items-center pr-4 text-sm font-medium text-primary md:w-full md:max-w-[175px]">
+                {headline}
+            </span>
         {/if}
 
         <div

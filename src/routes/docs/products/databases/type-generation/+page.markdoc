@@ -1,22 +1,22 @@
----
+﻿---
 layout: article
 title: Type generation
-description: Generate types from your Appwrite database schema. Learn how to use the Appwrite CLI to create and manage your types effectively.
+description: Generate types from your Indobase database schema. Learn how to use the Indobase CLI to create and manage your types effectively.
 ---
 
-The Appwrite CLI provides a simple way to generate types based on your Appwrite database schema. This feature is particularly useful for developers who want to ensure type safety in their applications by generating type definitions that match their database tables and columns.
+The Indobase CLI provides a simple way to generate types based on your Indobase database schema. This feature is particularly useful for developers who want to ensure type safety in their applications by generating type definitions that match their database tables and columns.
 
 To generate types, the CLI reads the database schema from your project's `appwrite.json` file and generates type definitions for each table.
 
 ## Generating types
 
-First, ensure you have the [Appwrite CLI](/docs/tooling/command-line/installation#getting-started) installed and your project is [initialised](/docs/tooling/command-line/installation#initialization). Then, run the following command in your terminal to pull tables from your Appwrite project:
+First, ensure you have the [Indobase CLI](/docs/tooling/command-line/installation#getting-started) installed and your project is [initialised](/docs/tooling/command-line/installation#initialization). Then, run the following command in your terminal to pull tables from your Indobase project:
 
 ```bash
 appwrite pull tables
 ```
 
-To generate types, you can use the Appwrite CLI command:
+To generate types, you can use the Indobase CLI command:
 
 ```bash
 appwrite types [options] <output-directory>
@@ -27,7 +27,7 @@ The following options are currently available:
 | Option | Description |
 |--------|-------------|
 | `--language` or `-l` |  The programming language for which types can be generated. Choices include `ts`, `js`, `php`, `kotlin`, `swift`, `java`, `dart`, `auto`. The CLI will use `auto` as the default option if this option is skipped. |
-| `--strict` or `-s` |  Enables strict type generation. This option ensures that all the columns follow language conventions, even if that leads to mismatches with the schema defined in your Appwrite console. |
+| `--strict` or `-s` |  Enables strict type generation. This option ensures that all the columns follow language conventions, even if that leads to mismatches with the schema defined in your Indobase console. |
 | `--help` or `-h` | Displays help information for the command. |
 
 ## Example usage
@@ -309,7 +309,7 @@ This will generate the following types in the `./types` sub-directory of your pr
 
 ```php
 <?php
-namespace Appwrite\Models;
+namespace Indobase\Models;
 
 enum Category: string {
   case FICTION = 'fiction';

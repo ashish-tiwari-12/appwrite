@@ -1,7 +1,7 @@
----
+﻿---
 layout: integration
 title: Deploy Starlight with Sites
-description: Create a Astro-based documentation site with Appwrite Sites
+description: Create a Astro-based documentation site with Indobase Sites
 date: 2025-05-19
 featured: false
 isPartner: true
@@ -26,24 +26,24 @@ images:
 
 Starlight is a modern documentation framework built on top of Astro that makes it easy to create beautiful, high-performance documentation websites. Built with Astro and powered by Markdown, Starlight helps you focus on writing content while taking care of the technical details.
 
-With Appwrite Sites, you can deploy your Starlight documentation in minutes using our pre-built template, with features like automatic builds, custom domains, and global CDN distribution.
+With Indobase Sites, you can deploy your Starlight documentation in minutes using our pre-built template, with features like automatic builds, custom domains, and global CDN distribution.
 
 # How does the integration work?
 
-[Appwrite Sites](https://appwrite.io/products/sites) provides a ready-to-use Starlight template that you can deploy instantly. The template comes with a pre-configured setup optimized for documentation sites, making it easy to get started without any complex configuration.
+[Indobase Sites](https://appwrite.io/products/sites) provides a ready-to-use Starlight template that you can deploy instantly. The template comes with a pre-configured setup optimized for documentation sites, making it easy to get started without any complex configuration.
 
 
-To deploy the Starlight template with Appwrite Sites, follow these steps:
+To deploy the Starlight template with Indobase Sites, follow these steps:
 
 ## Create site
 
-After signing into your Appwrite console, look at the sidebar on the left. Under the **Deploy** section, you will find the **Sites** button.
+After signing into your Indobase console, look at the sidebar on the left. Under the **Deploy** section, you will find the **Sites** button.
 
 Clicking it opens the Sites page. Here, you will see the **Sites** tab selected by default. Click **Create site** to start the deployment process.
 
 ![Create new site](/images/integrations/sites-starlight/create-site.png)
 
-At this point, Appwrite offers two options: **Clone a template** or **Connect a repository**. For this guide, we will focus on cloning the Starlight template, which lets you quickly set up a documentation site based on a pre-built project.
+At this point, Indobase offers two options: **Clone a template** or **Connect a repository**. For this guide, we will focus on cloning the Starlight template, which lets you quickly set up a documentation site based on a pre-built project.
 
 ![Create new site](/images/integrations/sites-starlight/clone-template.png)
 
@@ -83,7 +83,7 @@ If you opt to connect a repository immediately, you will see the following optio
 - Name your repository if you are creating a new one
 - Decide whether to keep the repository private by ticking the checkbox
 
-Additionally, you can define the domain for your site, using the Appwrite Sites domain.
+Additionally, you can define the domain for your site, using the Indobase Sites domain.
 
 After reviewing your configuration, click **Deploy**.
 
@@ -98,13 +98,13 @@ The logs will show you the different stages of the build process. Depending on t
 
 ## Access your site
 
-After your site has been successfully deployed, Appwrite will show you a **Congratulations** page. 
+After your site has been successfully deployed, Indobase will show you a **Congratulations** page. 
 
 ![Configure site details](/images/integrations/sites-starlight/success.png)
 
 ## Next step
 
-Appwrite provides a few options to help you continue setting up or expanding your project.
+Indobase provides a few options to help you continue setting up or expanding your project.
 
 You can **Add domain**, connecting an existing custom domain you own or registering a new one through the console.
 
@@ -113,11 +113,11 @@ You can **Share site**, allowing you to collaborate with your team by sharing ac
 You can also **Open on mobile**, previewing your live site directly from a mobile or tablet device to ensure everything looks and functions as expected across different screen sizes.
 
 ## Wrapping up
-And with that, the Starlight template is deployed to Appwrite Sites. You can explore other templates or deploy any other websites you'd like.
+And with that, the Starlight template is deployed to Indobase Sites. You can explore other templates or deploy any other websites you'd like.
 
 ## More Resources 
 
-- [Appwrite Sites Docs](/docs/products/sites)
+- [Indobase Sites Docs](/docs/products/sites)
 - [Starlight Website](https://starlight.astro.build/)
-- [Appwrite Sites video announcement](https://youtu.be/0cERQxFjTW4)
-- [Appwrite Discord server](/discord)
+- [Indobase Sites video announcement](https://youtu.be/0cERQxFjTW4)
+- [Indobase Discord server](/discord)

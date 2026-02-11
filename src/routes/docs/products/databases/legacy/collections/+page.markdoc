@@ -1,15 +1,15 @@
----
+﻿---
 layout: article
 title: Collections
-description: Organize your data with Appwrite Collections. Explore how to create and configure collections to store and structure your data effectively.
+description: Organize your data with Indobase Collections. Explore how to create and configure collections to store and structure your data effectively.
 ---
-Appwrite uses collections as containers of documents. Each collection contains many documents identical in structure.
-The terms collections and documents are used because the Appwrite JSON REST API resembles the API of a traditional NoSQL database, making it intuitive and user-friendly, even though Appwrite uses SQL under the hood.
+Indobase uses collections as containers of documents. Each collection contains many documents identical in structure.
+The terms collections and documents are used because the Indobase JSON REST API resembles the API of a traditional NoSQL database, making it intuitive and user-friendly, even though Indobase uses SQL under the hood.
 
-That said, Appwrite is designed to support both SQL and NoSQL database adapters like MariaDB, MySQL, or MongoDB in future versions.
+That said, Indobase is designed to support both SQL and NoSQL database adapters like MariaDB, MySQL, or MongoDB in future versions.
 
 # Create collection {% #create-collection %}
-You can create collections using the Appwrite Console, a [Server SDK](/docs/sdks#server), or using the [CLI](/docs/tooling/command-line/installation).
+You can create collections using the Indobase Console, a [Server SDK](/docs/sdks#server), or using the [CLI](/docs/tooling/command-line/installation).
 {% tabs %}
 
 {% tabsitem #console title="Console" %}
@@ -18,7 +18,7 @@ You can create a collection by heading to the **Databases** page, navigate to a 
 {% /tabsitem %}
 
 {% tabsitem #server-sdk title="Server SDK" %}
-You can also create collections programmatically using a [Server SDK](/docs/sdks#server). Appwrite [Server SDKs](/docs/sdks#server) require an [API key](/docs/advanced/platform/api-keys).
+You can also create collections programmatically using a [Server SDK](/docs/sdks#server). Indobase [Server SDKs](/docs/sdks#server) require an [API key](/docs/advanced/platform/api-keys).
 
 {% multicode %}
 
@@ -78,8 +78,8 @@ promise.then(function (response) {
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Databases;
+use Indobase\Client;
+use Indobase\Services\Databases;
 
 $client = new Client();
 
@@ -112,7 +112,7 @@ result = databases.create_collection('<DATABASE_ID>', '<COLLECTION_ID>', '<NAME>
 ```ruby
 require 'Appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -126,9 +126,9 @@ response = databases.create_collection(database_id: '<DATABASE_ID>', collection_
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -213,7 +213,7 @@ databases.createCollection(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -260,18 +260,18 @@ Learn more about the CLI collections commands
 {% /tabs %}
 
 # Permissions {% #permissions %}
-Appwrite uses permissions to control data access.
+Indobase uses permissions to control data access.
 For security, only users that are granted permissions can access a resource.
 This helps prevent accidental data leaks by forcing you to make more concious decisions around permissions.
 
-By default, Appwrite doesn't grant permissions to any users when a new collection is created.
+By default, Indobase doesn't grant permissions to any users when a new collection is created.
 This means users can't create new documents or read, update, and delete existing documents.
 
 [Learn about configuring permissions](/docs/products/databases/legacy/permissions).
 
 # Attributes {% #attributes %}
 All documents in a collection follow the same structure.
-Attributes are used to define the structure of your documents and help the Appwrite's API validate your users' input.
+Attributes are used to define the structure of your documents and help the Indobase's API validate your users' input.
 Add your first attribute by clicking the **Add attribute** button.
 
 You can choose between the following types.
@@ -300,7 +300,7 @@ You can increase a string attribute's size without any restrictions. When decrea
 # Indexes {% #indexes %}
 
 Databases use indexes to quickly locate data without having to search through every document for matches.
-To ensure the best performance, Appwrite recommends an index for every attribute queried.
+To ensure the best performance, Indobase recommends an index for every attribute queried.
 If you plan to query multiple attributes in a single query, creating an index with **all** queried attributes will yield optimal performance.
 
 The following indexes are currently supported:

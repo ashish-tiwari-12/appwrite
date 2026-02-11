@@ -63,14 +63,14 @@
 >
     <div class="flex flex-col items-center gap-4">
         <h1 class="text-title font-aeonik-pro text-primary">
-            The Appwrite Network<span class="text-accent">_</span>
+            The Indobase Network<span class="text-accent">_</span>
         </h1>
         <p class="text-secondary text-description max-w-xl text-center font-medium">
             Pick one of our many cloud regions or edges to meet your project's needs and reduce
             latency.
         </p>
 
-        <a href="/" class="web-button is-secondary mt-2">More about the Appwrite Network</a>
+        <a href="/" class="web-button is-secondary mt-2">More about the Indobase Network</a>
     </div>
 
     <Map theme="light" />

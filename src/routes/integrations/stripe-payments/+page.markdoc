@@ -1,7 +1,7 @@
----
+﻿---
 layout: integration
 title: Payments with Stripe
-description: Integrate Stripe with Appwrite to accept payments, store orders, manage invoices, and streamline your business operations.
+description: Integrate Stripe with Indobase to accept payments, store orders, manage invoices, and streamline your business operations.
 date: 2024-07-30
 featured: false
 isPartner: true
@@ -33,7 +33,7 @@ Stripe is an online payment processing platform that allows businesses to accept
 
 # How does the integration work?
 
-You can utilize a pre-built Appwrite function template to enable payments via Stripe in your app. You can then use this to ship packages, send PDF books, give access to video courses, or anything else your business needs.
+You can utilize a pre-built Indobase function template to enable payments via Stripe in your app. You can then use this to ship packages, send PDF books, give access to video courses, or anything else your business needs.
 
 # How to implement
 
@@ -53,15 +53,15 @@ Then, go to the **Webhooks** tab, select the event `checkout.session.completed`,
 
 ![Stripe webhooks](/images/integrations/stripe-payments/webhooks.png)
 
-## Step 2: Create the Appwrite Function
+## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Appwrite, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Appwrite Function templates.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
-Head over to the Appwrite console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Payments with Stripe** function template.
+Head over to the Indobase console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Payments with Stripe** function template.
 
 ![Function template](/images/integrations/stripe-payments/template.png)
 
-During the setup process, click the checkbox to generate an Appwrite API key on completion and add the **Stripe secret key** and **webhook secret** in the **Variables** step. If you are self-hosting Appwrite, click on the **optional variables** dropdown and update the Appwrite endpoint to your instance’s publicly accessible endpoint. 
+During the setup process, click the checkbox to generate an Indobase API key on completion and add the **Stripe secret key** and **webhook secret** in the **Variables** step. If you are self-hosting Indobase, click on the **optional variables** dropdown and update the Indobase endpoint to your instance’s publicly accessible endpoint. 
 
 ![Env variables](/images/integrations/stripe-payments/variables.png)
 
@@ -80,7 +80,7 @@ https://DEPLOYED_FUNCTION_DOMAIN/webhook
 
 ## Step 3: Test the function
 
-Once all the steps are complete, it is time to test the function! First, copy the function URL, go to the **Appwrite project dashboard**, and add it to the **Platforms** section as a web app. This will register your function URL as an authorized hostname to interact with Appwrite (to prevent CORS).
+Once all the steps are complete, it is time to test the function! First, copy the function URL, go to the **Indobase project dashboard**, and add it to the **Platforms** section as a web app. This will register your function URL as an authorized hostname to interact with Indobase (to prevent CORS).
 
 ![Add web platform](/images/integrations/stripe-payments/web-platform.png)
 
@@ -88,13 +88,13 @@ Then, open it in your browser to test the function and access the pre-built inte
 
 ![Demo](/images/integrations/stripe-payments/demo.png)
 
-You can visit the **Databases** page in your Appwrite project, enter the `orders` database and the `orders` collection within that, and find your orders.
+You can visit the **Databases** page in your Indobase project, enter the `orders` database and the `orders` collection within that, and find your orders.
 
-![Appwrite database](/images/integrations/stripe-payments/database.png)
+![Indobase database](/images/integrations/stripe-payments/database.png)
 
-# Read more about Stripe Payments and Appwrite Functions
+# Read more about Stripe Payments and Indobase Functions
 
-If you would like to learn more about Stripe Payments and Appwrite Functions, we have some resources that you should visit:
+If you would like to learn more about Stripe Payments and Indobase Functions, we have some resources that you should visit:
 
 - [Sign up on Stripe](https://stripe.com)
-- [Learn more about Functions templates in Appwrite docs](https://appwrite.io/docs/products/functions/templates)
+- [Learn more about Functions templates in Indobase docs](https://appwrite.io/docs/products/functions/templates)

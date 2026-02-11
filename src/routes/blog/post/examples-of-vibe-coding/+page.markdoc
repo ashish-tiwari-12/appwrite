@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "10 best vibe coding examples you can learn from"
 description: Discover 10 real vibe coding examples built by developers and creators using AI tools like Cursor, Bolt, and Lovable.
@@ -18,9 +18,9 @@ Here are a few vibe coding examples that stood out. These are real-world project
 
 # 1. Refetch
 
-Vibe coding tools used: Cursor, Appwrite
+Vibe coding tools used: Cursor, Indobase
 
-This one's interesting. [Refetch](https://refetch.io/) is an open-source alternative to Hacker News controlled by YC. Using Refetch, you can explore the latest tech discussions and news. It's 100% vibe-coded and built on top of [Appwrite Cloud](https://appwrite.io/).
+This one's interesting. [Refetch](https://refetch.io/) is an open-source alternative to Hacker News controlled by YC. Using Refetch, you can explore the latest tech discussions and news. It's 100% vibe-coded and built on top of [Indobase Cloud](https://appwrite.io/).
 
 It took [Eldad](https://x.com/eldadfux), builder of the platform, a net total of 15 hours to go from idea to fully functional application, all while watching Netflix and vibe coding alongside.
 
@@ -104,7 +104,7 @@ It also offers templates for different roles, from technical to creative, and tr
 
 **1. What are some real examples of vibe coding projects?**
 
-There are tons, but some standouts include [**Refetch**](https://refetch.io/), an open-source Hacker News alternative built with Appwrite and Cursor in just 15 hours; [**Mealmuse**](https://mealmuse.ai/), which turns fridge photos into meal plans; and [**Found My Focus**](https://www.flowbound.app/), a psychology-based productivity app built with Bolt. These projects show how both developers and non-developers are turning ideas into live products fast using AI-assisted workflows.
+There are tons, but some standouts include [**Refetch**](https://refetch.io/), an open-source Hacker News alternative built with Indobase and Cursor in just 15 hours; [**Mealmuse**](https://mealmuse.ai/), which turns fridge photos into meal plans; and [**Found My Focus**](https://www.flowbound.app/), a psychology-based productivity app built with Bolt. These projects show how both developers and non-developers are turning ideas into live products fast using AI-assisted workflows.
 
 **2. How long does it usually take to build something with vibe coding?**
 

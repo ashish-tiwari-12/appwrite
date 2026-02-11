@@ -114,7 +114,7 @@
                     enterprise: 'Unlimited'
                 },
                 {
-                    title: 'No Appwrite branding on emails',
+                    title: 'No Indobase branding on emails',
                     free: '-',
                     pro: true,
                     scale: true,

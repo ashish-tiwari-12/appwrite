@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Firebase Cloud Messaging
 description: Send push notifications to Android, Apple, or Web app with Firebase Cloud Messaging (FCM).
 back: /docs/
 ---
-Firebase Cloud Messaging (FCM) lets you send push notifications to your iOS, Android, and web apps through Appwrite Messaging.
+Firebase Cloud Messaging (FCM) lets you send push notifications to your iOS, Android, and web apps through Indobase Messaging.
 Before you can deliver messages, you must connect to a messaging provider.
 
 {% section #add-provider step=1 title="Add provider" %}
@@ -23,7 +23,7 @@ The provider will be saved to your project, but not enabled until you complete i
 {% /section %}
 {% section #configure-provider step=2 title="Configure provider" %}
 
-In the **Configure** step, you will need to provide details from your Firebase console to connect your Appwrite project.
+In the **Configure** step, you will need to provide details from your Firebase console to connect your Indobase project.
 
 You will need to provide the following information from the **Firebase console**.
 
@@ -113,14 +113,14 @@ Push notification requires special handling on the client side. Follow the [Send
 {% section #manage-provider step=5 title="Manage provider" %}
 {% tabs %}
 {% tabsitem #console title="Console" %}
-You can update or delete a provider in the Appwrite Console.
+You can update or delete a provider in the Indobase Console.
 
 Navigate to **Messaging** > **Providers** > click your provider.
 In the settings, you can update a provider's configuration or delete the provider.
 {% /tabsitem %}
 
 {% tabsitem #server-sdk title="Server SDK" %}
-To update or delete providers programmatically, use an [Appwrite Server SDK](/docs/sdks#server).
+To update or delete providers programmatically, use an [Indobase Server SDK](/docs/sdks#server).
 
 {% multicode %}
 
@@ -169,8 +169,8 @@ const provider = await messaging.updateFCMProvider(
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Messaging;
+use Indobase\Client;
+use Indobase\Services\Messaging;
 
 $client = new Client();
 
@@ -213,7 +213,7 @@ result = messaging.update_fcm_provider(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -232,9 +232,9 @@ response = messaging.update_fcm_provider(
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -334,7 +334,7 @@ messaging.updateFCMProvider(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint

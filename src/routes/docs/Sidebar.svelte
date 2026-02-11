@@ -146,7 +146,7 @@
                     icon: 'web-icon-mcp'
                 },
                 {
-                    label: 'The Appwriter',
+                    label: 'The Indobase',
                     href: '/docs/tooling/appwriter',
                     icon: 'icon-text'
                 }

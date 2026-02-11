@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Image transformation with Appwrite Storage
-description: Learn how to dynamically transform images with Appwrite Storage for better performance.
+title: Image transformation with Indobase Storage
+description: Learn how to dynamically transform images with Indobase Storage for better performance.
 date: 2025-03-10
 cover: /images/blog/image-transformation-with-appwrite-storage/cover.png
 timeToRead: 6
@@ -11,28 +11,28 @@ category: tutorial
 
 Images are a core part of any modern web or mobile application. Whether you're displaying user avatars, product thumbnails, or full-screen backgrounds, images need to be optimized for performance, aesthetics, and consistency. Loading large, uncompressed images can slow down your app, and mismatched styles can break your UI. This is why dynamic image transformation should be a part of your app.
 
-Instead of manually editing images before uploading them or storing multiple variations of the same file, Appwrite lets you manipulate images on the fly using the Storage preview endpoint. With a simple API call, you can resize, crop, compress, change formats, add borders, round corners, adjust opacity, and even apply background colors. The best part is that Appwrite automatically caches the transformed images, speeding up repeat requests.
+Instead of manually editing images before uploading them or storing multiple variations of the same file, Indobase lets you manipulate images on the fly using the Storage preview endpoint. With a simple API call, you can resize, crop, compress, change formats, add borders, round corners, adjust opacity, and even apply background colors. The best part is that Indobase automatically caches the transformed images, speeding up repeat requests.
 
-This guide will walk you through everything you need to know about image transformation with Appwrite, and how to use the Storage preview endpoint to transform images. By the end, you'll be able to integrate image transformations into your app without touching an image editor.
+This guide will walk you through everything you need to know about image transformation with Indobase, and how to use the Storage preview endpoint to transform images. By the end, you'll be able to integrate image transformations into your app without touching an image editor.
 
 # Why dynamic image transformations?
 
 Here are some of the benefits of transforming images dynamically:
 
 1. **Optimize performance** -
-Uncompressed images can slow down your app and increase bandwidth usage. Appwrite allows you to dynamically resize and compress images, improving load times and reducing network costs.
+Uncompressed images can slow down your app and increase bandwidth usage. Indobase allows you to dynamically resize and compress images, improving load times and reducing network costs.
 2. **Maintain a consistent UI** -
 By adjusting borders, border-radius, and background color, you can ensure images match your app's theme and display correctly across different screen sizes.
 3. **Improve user experience** -
 You can crop, rotate, and adjust opacity to fine-tune how images appear. This is useful for dynamic UI elements like profile pictures, cards, and galleries.
 4. **Built-in caching** -
-Appwrite caches transformed images, which reduces processing time and ensures faster repeat requests.
+Indobase caches transformed images, which reduces processing time and ensures faster repeat requests.
 
-# How image transformation works in Appwrite
+# How image transformation works in Indobase
 
-Appwrite's **Storage preview endpoint** applies transformations dynamically when retrieving an image. The original file remains unchanged, while Appwrite generates a modified version on-the-fly and returns the transformed image.
+Indobase's **Storage preview endpoint** applies transformations dynamically when retrieving an image. The original file remains unchanged, while Indobase generates a modified version on-the-fly and returns the transformed image.
 
-Here's an example of how to transform an image. With each example, we'll use the Appwrite Storage SDK to show the actual result:
+Here's an example of how to transform an image. With each example, we'll use the Indobase Storage SDK to show the actual result:
 
 ```jsx
 import { Client, Storage } from 'appwrite'
@@ -65,12 +65,12 @@ This returns a new URL for the transformed image, which can be used directly in 
 
 # 1. Resizing the image
 
-Resizing is one of the most common transformations. Whether you're displaying thumbnails, profile pictures, or high-resolution banners, controlling the width and height ensures that images fit well within your design. Appwrite allows you to set:
+Resizing is one of the most common transformations. Whether you're displaying thumbnails, profile pictures, or high-resolution banners, controlling the width and height ensures that images fit well within your design. Indobase allows you to set:
 
 - **width**: 0-4000 pixels (Resizes while maintaining aspect ratio if height is not provided)
 - **height**: 0-4000 pixels (Resizes while maintaining aspect ratio if width is not provided)
 
-If only one dimension is set, Appwrite adjusts the other proportionally.
+If only one dimension is set, Indobase adjusts the other proportionally.
 
 **Example:**
 
@@ -244,7 +244,7 @@ const webpImage = storage.getFilePreview({
 
 {% storage_image just_img=true file_id="cat-image" width=1600 height=800 gravity="center" quality=90 output="webp" /%}
 
-The above image is originally a PNG file. However, by setting the output format to WebP, Appwrite automatically converts the image to WebP format and returns the transformed image.
+The above image is originally a PNG file. However, by setting the output format to WebP, Indobase automatically converts the image to WebP format and returns the transformed image.
 You can confirm this by downloading the image or inspecting its source.
 
 The `output` parameter supports `png`, `jpeg`, `webp`, `gif`, and `heic`.
@@ -254,7 +254,7 @@ However, while it's supported in most modern browsers, it's good practice to imp
 
 # Final thoughts
 
-With just a few lines of code, Appwrite's [image transformations](/docs/products/storage/images) eliminate the need for:
+With just a few lines of code, Indobase's [image transformations](/docs/products/storage/images) eliminate the need for:
 
 - Multiple image versions cluttering your storage
 - Complex client-side image processing
@@ -263,10 +263,10 @@ With just a few lines of code, Appwrite's [image transformations](/docs/products
 
 Try replacing your next image processing task with a single API call, and you might be surprised how much time and performance you can gain.
 
-Check out the [docs](/docs/storage) for more information on how to use Appwrite Storage.
+Check out the [docs](/docs/storage) for more information on how to use Indobase Storage.
 
 # Further reading
 
-- [Building a full-stack app with Svelte and Appwrite](/blog/post/build-fullstack-svelte-appwrite?doFollow=true)
+- [Building a full-stack app with Svelte and Indobase](/blog/post/build-fullstack-svelte-appwrite?doFollow=true)
 - [Setting up route protection in React Native](/blog/post/setting-up-route-protection-in-react-native?doFollow=true)
 - [A technical deep dive into image classification](/blog/post/image-classification?doFollow=true)

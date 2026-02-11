@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Handle race conditions when running operations in Appwrite DB
-description: Learn how race conditions can occur while running operations on your Appwrite database and how operators can help avoid them.
+title: Handle race conditions when running operations in Indobase DB
+description: Learn how race conditions can occur while running operations on your Indobase database and how operators can help avoid them.
 date: 2025-11-06
 cover: /images/blog/race-conditions-db-operators/cover.png
 timeToRead: 5
@@ -12,13 +12,13 @@ featured: false
 
 A race condition is a special condition where events that are supposed to occur in sequence do not happen in sequence due to external factors, such as latency. These conditions are not ideal, as they could lead to outdated and incorrect data. Race conditions also exist in databases. If you're performing database operations through your app, it could get scary really quickly.
 
-In this article, we will examine how race conditions can infiltrate your apps and how to prevent them using the new database operators in Appwrite.
+In this article, we will examine how race conditions can infiltrate your apps and how to prevent them using the new database operators in Indobase.
 
 # A look at race conditions
 
 Let's take a look at an example of how race conditions can lead to outdated and invalid data. Concurrent requests can cause race conditions, where if many requests are initiated at a single point in time, some of them might fail to register because old values are fetched and operated upon multiple times due to concurrency.
 
-Here's an example of how this would typically happen in an Appwrite database.
+Here's an example of how this would typically happen in an Indobase database.
 
 ```jsx
 // Get the counter value

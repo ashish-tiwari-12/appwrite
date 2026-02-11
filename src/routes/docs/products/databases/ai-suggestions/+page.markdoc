@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: AI suggestions
 description: Use AI suggestions to automatically generate database schemas. Learn how to create tables with recommended columns and indexes based on your table name and context.
@@ -7,7 +7,7 @@ AI suggestions generate columns and indexes for your tables based on the table n
 This feature analyzes your database to recommend appropriate schema designs that follow best practices.
 
 {% section #create-table step=1 title="Create table" %}
-Navigate to **Databases** in the Appwrite Console, select your database, and click **Create table**.
+Navigate to **Databases** in the Indobase Console, select your database, and click **Create table**.
 
 Enter a descriptive table name. AI suggestions will use this name to generate relevant columns and indexes.
 {% /section %}

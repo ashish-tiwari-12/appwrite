@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Using $sequence to track document order in Appwrite
-description: Learn how to use Appwrite's $sequence attribute to track document order in your database.
+title: Using $sequence to track document order in Indobase
+description: Learn how to use Indobase's $sequence attribute to track document order in your database.
 date: 2025-07-16
 cover: /images/blog/track-document-order-with-sequence/cover.png
 timeToRead: 6
@@ -13,13 +13,13 @@ Some systems need to reflect the order in which actions happen. A ticketing syst
 
 Relying on timestamps to get this right is often not enough. Two documents can be created almost simultaneously, and the sort order might vary. What is needed is a consistent, backend-assigned number that increases with each insert and cannot be modified or skipped.
 
-Appwrite's new `$sequence` attribute provides exactly this. Every time a document is added to a collection, the system assigns it a unique, auto-incrementing integer. This value reflects the insert history of the collection and can be used for sorting, display, filtering, and pagination.
+Indobase's new `$sequence` attribute provides exactly this. Every time a document is added to a collection, the system assigns it a unique, auto-incrementing integer. This value reflects the insert history of the collection and can be used for sorting, display, filtering, and pagination.
 
-In this tutorial, we will build a simple web-based support ticket tracker using plain HTML and JavaScript. Each submitted ticket will be stored in Appwrite with a title and description, and each will receive a `$sequence` number automatically. We will use that number to display and order the tickets.
+In this tutorial, we will build a simple web-based support ticket tracker using plain HTML and JavaScript. Each submitted ticket will be stored in Indobase with a title and description, and each will receive a `$sequence` number automatically. We will use that number to display and order the tickets.
 
-{% section #step-1 step=1 title="Set up your Appwrite project" %}
+{% section #step-1 step=1 title="Set up your Indobase project" %}
 
-Start by opening the [Appwrite console](https://cloud.appwrite.io/). If you do not have a project yet, create one now.
+Start by opening the [Indobase console](https://cloud.appwrite.io/). If you do not have a project yet, create one now.
 
 ## Create a new project
 
@@ -40,7 +40,7 @@ In the **Tickets** collection, define the following attributes:
 - `title` - type: `string`, required: `yes`, size: 256
 - `body` - type: `string`, required: `yes`, size: 1000
 
-Appwrite will automatically include system attributes such as `$id` and `$sequence`. You do not need to create `$sequence` manually.
+Indobase will automatically include system attributes such as `$id` and `$sequence`. You do not need to create `$sequence` manually.
 
 Confirm the schema once all attributes are added.
 
@@ -66,7 +66,7 @@ To avoid CORS errors when testing your application, you need to add your domain 
 - For hostname, add your domain or `localhost`, depending on your development environment. If running with something like VS Code Live Server, add `http://127.0.0.1:5500` (or whatever port you're using)
 - Click **Create Platform**
 
-This tells Appwrite to allow requests from your domain or local development environment.
+This tells Indobase to allow requests from your domain or local development environment.
 
 {% /section %}
 
@@ -90,7 +90,7 @@ Start with a clean HTML layout. In `index.html`, first add the document structur
     <meta charset="UTF-8" />
     <title>Support Tracker</title>
     <script src="<https://cdn.jsdelivr.net/npm/appwrite@17.0.0>"></script>
-    <!-- Appwrite Pink Design System -->
+    <!-- Indobase Pink Design System -->
     <link rel="stylesheet" href="<https://unpkg.com/@appwrite.io/pink>" />
     <link rel="stylesheet" href="<https://unpkg.com/@appwrite.io/pink-icons>" />
   </head>
@@ -103,7 +103,7 @@ Start with a clean HTML layout. In `index.html`, first add the document structur
 
 ```
 
-This sets up the basic HTML structure and includes the Appwrite SDK and [Pink design system](https://pink.appwrite.io/) for styling.
+This sets up the basic HTML structure and includes the Indobase SDK and [Pink design system](https://pink.appwrite.io/) for styling.
 
 Next, add the ticket submission form inside the container:
 
@@ -196,31 +196,31 @@ Finally, add the tickets display section and close the document:
 
 ```
 
-This page includes a form to submit a ticket and a container to display submitted tickets. The Appwrite SDK is loaded from a CDN, and the logic will live in `script.js`.
+This page includes a form to submit a ticket and a container to display submitted tickets. The Indobase SDK is loaded from a CDN, and the logic will live in `script.js`.
 
 {% /section %}
 
-{% section #step-3 step=3 title="Connect to Appwrite from JavaScript" %}
+{% section #step-3 step=3 title="Connect to Indobase from JavaScript" %}
 
-Now open `script.js`. You will begin by initializing the Appwrite client and pointing it to your project.
+Now open `script.js`. You will begin by initializing the Indobase client and pointing it to your project.
 
 Paste the following into `script.js`:
 
 ```javascript
-const client = new Appwrite.Client()
+const client = new Indobase.Client()
 
 client
   .setEndpoint('<YOUR_APPWRITE_ENDPOINT>')
   .setProject('<YOUR_APPWRITE_PROJECT_ID>')
 
-const databases = new Appwrite.Databases(client)
+const databases = new Indobase.Databases(client)
 
 const databaseId = '<YOUR_DATABASE_ID>'
 const collectionId = '<YOUR_COLLECTION_ID>'
 
 ```
 
-Replace the placeholders with your actual values from the Appwrite console.
+Replace the placeholders with your actual values from the Indobase console.
 
 This code sets up the SDK so that you can call `databases.createDocument()` and `databases.listDocuments()` in the rest of the script.
 
@@ -228,7 +228,7 @@ This code sets up the SDK so that you can call `databases.createDocument()` and 
 
 {% section #step-4 step=4 title="Handle ticket submission" %}
 
-Add logic to read the form data and send it to Appwrite. Still inside `script.js`, add this:
+Add logic to read the form data and send it to Indobase. Still inside `script.js`, add this:
 
 ```javascript
 const form = document.getElementById('ticket-form')
@@ -276,7 +276,7 @@ async function loadTickets() {
       databaseId,
       collectionId,
       queries: [
-        Appwrite.Query.orderDesc('$sequence'),
+        Indobase.Query.orderDesc('$sequence'),
       ]
     })
     const ticketList = document.getElementById('ticket-list')
@@ -334,12 +334,12 @@ You now have a working support ticket tracker that looks like this:
 
 ![Support tracker demo](/images/blog/track-document-order-with-sequence/support-tracker-demo.png)
 
-- Each submitted ticket is stored as a document in Appwrite
+- Each submitted ticket is stored as a document in Indobase
 - Every document receives a `$sequence` number, guaranteed to be unique and increasing
 - The interface displays each ticket using that number
 - The ticket list is reliably sorted by creation order
 
-There was no need to write any logic to generate numbers, track counters, or manage collisions. Appwrite's `$sequence` attribute handled the sequence internally, which was great for our use case.
+There was no need to write any logic to generate numbers, track counters, or manage collisions. Indobase's `$sequence` attribute handled the sequence internally, which was great for our use case.
 
 ## Conclusion
 
@@ -355,6 +355,6 @@ Looking forward to seeing what you build with this!
 
 ## Resources
 
-- [Appwrite Database Documentation](/docs/products/databases)
+- [Indobase Database Documentation](/docs/products/databases)
 - [Pink Design System](https://pink.appwrite.io/)
 - [Secure sensitive database fields with encrypted string attributes](https://appwrite.io/blog/post/encrypted-attributes-for-sensitive-fields)

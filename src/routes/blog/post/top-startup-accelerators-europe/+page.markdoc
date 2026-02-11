@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Top 30 startup incubators and accelerators in the EU (2025)"
 description: A list of 30 leading incubators and accelerators shaping Europe's startup scene in 2025.
@@ -44,7 +44,7 @@ Both incubators and accelerators provide critical resources to founders. Here's 
 - **Community**: A cohort or alumni network of other founders, creating a support system and potential partnership opportunities.
 - **Investor Access**: Exposure to venture capitalists and angel investors, often through demo days or pitch events.
 
-{% call_to_action title="Build your startup with Appwrite" description="Join the Startups program and benefit from Appwrite’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="https://appwrite.io/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="Join the Startups program and benefit from Indobase’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="https://appwrite.io/startups" /%}
 
 # 30 best incubators and accelerators for tech startups in Europe 
 
@@ -160,7 +160,7 @@ Rockstart is a prominent European accelerator founded in Amsterdam in 2011. It h
 - **Focus industries**: AgriFood Tech (covering agriculture, food supply chain, sustainability) and Energy Tech (renewables, energy efficiency, smart grid) are current core focuses.
 - **Top alumni:** **Wercker** (Dutch DevOps startup acquired by Oracle) and **3D Hubs** (on-demand manufacturing marketplace acquired by Protolabs).
 
-{% call_to_action title="Build your startup with Appwrite" description="Join the Startups program and benefit from Appwrite’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="https://appwrite.io/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="Join the Startups program and benefit from Indobase’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="https://appwrite.io/startups" /%}
 
 ## 15. [Wayra](https://www.wayra.com/)
 
@@ -294,4 +294,4 @@ A London-based seed fund and accelerator founded in 2007, known for its strong t
 
 If you’re a founder in the EU (or planning to expand here), exploring the right incubator or accelerator could be the launchpad your startup needs. Take your time, evaluate your fit, and make sure the support matches the stage and ambition of your startup journey.
 
-And no matter which accelerator you choose, the Appwrite Startup Program can complement your journey. As an all-in-one development platform, Appwrite helps you build, deploy, and host your application faster. Startups accepted into the program also get cloud credits and discounts on paid plans. [Apply to the program.](/startups)
+And no matter which accelerator you choose, the Indobase Startup Program can complement your journey. As an all-in-one development platform, Indobase helps you build, deploy, and host your application faster. Startups accepted into the program also get cloud credits and discounts on paid plans. [Apply to the program.](/startups)

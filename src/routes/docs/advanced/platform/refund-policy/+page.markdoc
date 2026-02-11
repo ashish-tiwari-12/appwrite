@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Refund policy
-description: Learn about Appwrite's refund policy for services, including eligibility criteria and the request process.
+description: Learn about Indobase's refund policy for services, including eligibility criteria and the request process.
 ---
 
-At Appwrite, we strive to provide exceptional backend services that meet your development needs. This policy outlines our approach to refunds for Appwrite services and ensures a fair and consistent process for all customers.
+At Indobase, we strive to provide exceptional backend services that meet your development needs. This policy outlines our approach to refunds for Indobase services and ensures a fair and consistent process for all customers.
 
 # General policy {% #general-policy %}
 
-Appwrite services are **non-refundable by default**. All purchases, including self-hosted support plans, Appwrite Cloud subscriptions, and professional services (e.g., onboarding, solution engineering, consulting) are considered final transactions.
+Indobase services are **non-refundable by default**. All purchases, including self-hosted support plans, Indobase Cloud subscriptions, and professional services (e.g., onboarding, solution engineering, consulting) are considered final transactions.
 
 However, we recognize that exceptional circumstances may arise. In rare and specific situations where service performance, billing, or delivery significantly deviates from expectations, refunds may be considered upon thorough review and approval.
 
@@ -34,7 +34,7 @@ Payments made without proper authorization or the account owner's permission, re
 
 ## First-time customer dissatisfaction {% #first-time-customer-dissatisfaction %}
 
-First-time cloud users may request a refund within the first 14 days of their subscription, provided they can demonstrate that the platform did not meet critical expectations and no significant usage occurred (subject to technical review at Appwrite's sole discretion).
+First-time cloud users may request a refund within the first 14 days of their subscription, provided they can demonstrate that the platform did not meet critical expectations and no significant usage occurred (subject to technical review at Indobase's sole discretion).
 
 # Ineligible scenarios {% #ineligible-scenarios %}
 
@@ -44,13 +44,13 @@ The following scenarios do **not** qualify for refunds:
 - **Incorrect setup or inactivity:** Customer misconfiguration, failure to complete onboarding, or lack of usage
 - **Expired refund window:** Requests submitted more than 30 days after the transaction date
 - **Third-party limitations:** Issues caused by third-party tools, plugins, or unsupported integrations
-- **Terms of service violations:** Any usage found to be in breach of Appwrite's [Terms](/terms) or [Fair use](/docs/advanced/platform/fair-use-policy) policy
+- **Terms of service violations:** Any usage found to be in breach of Indobase's [Terms](/terms) or [Fair use](/docs/advanced/platform/fair-use-policy) policy
 
 # Request process {% #request-process %}
 
 To request a refund, please follow these steps:
 
-1. **Submit a ticket** via the Appwrite Console
+1. **Submit a ticket** via the Indobase Console
 1. **Provide detailed information** about the issue, including relevant evidence and documentation
 1. **Allow for review time** - we aim to respond within 5 business days, with final resolution within 10 business days
 

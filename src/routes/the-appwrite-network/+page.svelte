@@ -12,11 +12,11 @@
         softwareAppSchema
     } from '$lib/utils/metadata';
 
-    const title = 'The Appwrite Network';
+    const title = 'The Indobase Network';
     const description = DEFAULT_DESCRIPTION;
     const ogImage = `${DEFAULT_HOST}/images/open-graph/website.png`;
 
-    const heading = 'The Appwrite Network';
+    const heading = 'The Indobase Network';
 </script>
 
 <svelte:head>

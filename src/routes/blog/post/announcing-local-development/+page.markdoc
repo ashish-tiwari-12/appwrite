@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Faster and safer Functions development in your local environment"
 description: You can now develop and test functions on your local machine.
@@ -9,25 +9,25 @@ author: matej-baco
 category: init, announcement, product
 featured: false
 ---
-We are excited to announce a new addition to Appwrite Functions that makes function development faster and more enjoyable. With local development, the entire flow — including coding, testing, and debugging — becomes fast and reliable.
+We are excited to announce a new addition to Indobase Functions that makes function development faster and more enjoyable. With local development, the entire flow — including coding, testing, and debugging — becomes fast and reliable.
 
-We have always been committed to making your experience with Appwrite the best it can be, and local development aims to address community feature requests and enhancements from the past couple of months.
+We have always been committed to making your experience with Indobase the best it can be, and local development aims to address community feature requests and enhancements from the past couple of months.
 
 Let’s examine what’s possible with new local development and how you and your team can benefit from it.
 
 # Differences between production, staging, and development
 
-It’s very common to have two separate Appwrite projects: one for your production application and one for the staging environment. In your staging, you can safely apply your deployment changes to ensure stability after your latest changes.
+It’s very common to have two separate Indobase projects: one for your production application and one for the staging environment. In your staging, you can safely apply your deployment changes to ensure stability after your latest changes.
 
 Whether you work alone or in a team, you need a separate project for each branch of features you work on. Functions' source code and settings are properly version-controlled, but you still need to go through the time-consuming process of project creation each time, leaving you with a lot of clutter.
 
 Having many development projects often leads to increased resource usage, quickly depleting your Cloud plan limits.
 
-Deploying every small change also leaves you with a lot of waiting time as Appwrite builds your function for production use with every deployment. While a few additional minutes on your production isn’t critical, when it comes to development, every second counts.
+Deploying every small change also leaves you with a lot of waiting time as Indobase builds your function for production use with every deployment. While a few additional minutes on your production isn’t critical, when it comes to development, every second counts.
 
 The new local development feature allows you to run your functions directly on your machine, resulting in a faster and more cost-effective development environment.
 
-# Run your first Appwrite Function locally
+# Run your first Indobase Function locally
 
 Running functions locally has many benefits. Local development allows faster debugging, a quicker feedback loop, and a better overall experience. When running your function locally during development, you are more likely to test it every step of the way instead of shipping multiple big changes all at once.
 
@@ -35,7 +35,7 @@ Let’s take a look at how you can create a new function (or pull an existing on
 
 ## Project and Function preparations
 
-To run your Functions locally, you will need the latest version of [Appwrite CLI](https://appwrite.io/docs/tooling/command-line/installation) installed on your machine. If this is your first time using Appwrite CLI, you also need to authenticate with the following command.
+To run your Functions locally, you will need the latest version of [Indobase CLI](https://appwrite.io/docs/tooling/command-line/installation) installed on your machine. If this is your first time using Indobase CLI, you also need to authenticate with the following command.
 
 ```bash
 appwrite login
@@ -83,13 +83,13 @@ Next, your function will be built to ensure all its dependencies are installed p
 
 ## Start the function and listen on a port
 
-Finally, the command starts your function, which will listen on `http://localhost:3000`. If this port is occupied by another function or a fronted app you might also be running locally, Appwrite CLI will look for the nearest available port and spin up the function on ports `3001`, `3002`, and so forth. If you don't like this behavior, you can provide parameter `--port=8080` to specify any port for the function to listen on.
+Finally, the command starts your function, which will listen on `http://localhost:3000`. If this port is occupied by another function or a fronted app you might also be running locally, Indobase CLI will look for the nearest available port and spin up the function on ports `3001`, `3002`, and so forth. If you don't like this behavior, you can provide parameter `--port=8080` to specify any port for the function to listen on.
 
 Opening the URL in a browser or HTTP client will execute your function. If you started a brand new function, you should see a sample JSON response.
 
 ![Local-host](/images/blog/init-day0/1.png)
 
-## Make changes to your Appwrite Function
+## Make changes to your Indobase Function
 
 From the previous section, you have a Function up and running locally. It’s actively watching your function’s folder and will react to any changes you make. To see that in action, you can change the code in the entrypoint of your function. If you started a brand new Node.js function, you can find the `src/index.js` file in your function’s directory. To apply some changes, you could add `log('A brand new log')` in the function’s code.
 
@@ -101,19 +101,19 @@ If automatic change detection doesn't fit your typical development behavior, you
 
 Once you are satisfied with your function and the changes you made, you can run the `appwrite push function` to push your code to the Cloud. This will deploy your function to production, and you can use it in your application.
 
-## Test user-specific features in Appwrite Functions
+## Test user-specific features in Indobase Functions
 
-When a specific Appwrite User executes your Appwrite Function, you are automatically provided with headers `x-appwrite-user-id` and `x-appwrite-user-jwt`. Using those, you can authorize as a user inside the Function and have all permission checks and abuse protection in place when talking to other services such as Databases or Storage.
+When a specific Indobase User executes your Indobase Function, you are automatically provided with headers `x-appwrite-user-id` and `x-appwrite-user-jwt`. Using those, you can authorize as a user inside the Function and have all permission checks and abuse protection in place when talking to other services such as Databases or Storage.
 
-Since the user’s JWT token is short-lived and needs to be generated with every execution, there isn’t any easy way to impersonate a specific user in your code when testing or developing your function. New local development in Appwrite CLI allows you to do exactly that without having to change a single line of your code.
+Since the user’s JWT token is short-lived and needs to be generated with every execution, there isn’t any easy way to impersonate a specific user in your code when testing or developing your function. New local development in Indobase CLI allows you to do exactly that without having to change a single line of your code.
 
-You can pass the `--user-id="[YOUR_ID]"` parameter when running the `appwrite run function`, and Appwrite will do all the necessary logic to provide your function with the very same header you get when running your function on production. This not only makes it easy to run functions that rely on the user’s JWT locally, but it also makes it very easy to switch between different users to test all the flows your function may have.
+You can pass the `--user-id="[YOUR_ID]"` parameter when running the `appwrite run function`, and Indobase will do all the necessary logic to provide your function with the very same header you get when running your function on production. This not only makes it easy to run functions that rely on the user’s JWT locally, but it also makes it very easy to switch between different users to test all the flows your function may have.
 
-# Test your Appwrite Functions in CI/CD
+# Test your Indobase Functions in CI/CD
 
-Once you publish your application to production, you are likely to set up continuous integration to ensure new updates don’t break existing logic. With just a few additions, Appwrite Functions can also be tested in your CI/CD process.
+Once you publish your application to production, you are likely to set up continuous integration to ensure new updates don’t break existing logic. With just a few additions, Indobase Functions can also be tested in your CI/CD process.
 
-After installing Appwrite CLI in the preparation step of your test, you can run the exact same command you use for the local development, `appwrite run function`. Make sure to provide the ID of the function you want to test by using the `--function-id="[YOUR_ID]"` parameter. Also ensure you add `&` at the end of your command, to run it in the background. If you don't, your CI/CD step may get frozen. Following is an example of a command used in your CI/CD.
+After installing Indobase CLI in the preparation step of your test, you can run the exact same command you use for the local development, `appwrite run function`. Make sure to provide the ID of the function you want to test by using the `--function-id="[YOUR_ID]"` parameter. Also ensure you add `&` at the end of your command, to run it in the background. If you don't, your CI/CD step may get frozen. Following is an example of a command used in your CI/CD.
 
 ```jsx
 appwrite run function --port 3000 --function-id="invoices-generator" &
@@ -123,19 +123,19 @@ If you noticed, we did not authenticate with `appwrite login` command. This step
 
 Before your test can continue, it needs to wait a little while for the function to build and start. You can achieve this with a small bash script that loops until the port becomes open. Alternatively, a very simple `sleep` could do the job. To prevent flaky tests, make sure the sleep time is high enough that your function is always ready.
 
-Once the Appwrite Function is running in your test step, you can use any test framework to run tests against the endpoints of your Function. Some of the most famous test frameworks are [Jest](https://jestjs.io/), [Mocha](https://mochajs.org/), [PHPUnit](https://www.notion.so/0ede37ea641048cca1a623c322604c9e?pvs=21), and others. It’s usually recommended to pick a test framework written in the same language as your Function to prevent a knowledge gap in your team.
+Once the Indobase Function is running in your test step, you can use any test framework to run tests against the endpoints of your Function. Some of the most famous test frameworks are [Jest](https://jestjs.io/), [Mocha](https://mochajs.org/), [PHPUnit](https://www.notion.so/0ede37ea641048cca1a623c322604c9e?pvs=21), and others. It’s usually recommended to pick a test framework written in the same language as your Function to prevent a knowledge gap in your team.
 
 In case you need to mock a behavior in the test environment, you can define your own variable `APP_ENV=testing` in the `.env` file, and in your code, skip some logic based on the value in this environment variable. If your function is adapter-driven, you could define a mock adapter as well to achieve the same.
 
-If you need to look at the logs of your Appwrite Function in your CI/CD environment, you can print the content of the `.appwrite/logs.txt` and `.appwrite/errors.txt` files, which can be found inside your function’s directory. You may or may not see those when running locally, as they get cleaned up when you stop the local development command.
+If you need to look at the logs of your Indobase Function in your CI/CD environment, you can print the content of the `.appwrite/logs.txt` and `.appwrite/errors.txt` files, which can be found inside your function’s directory. You may or may not see those when running locally, as they get cleaned up when you stop the local development command.
 
 # Conclusion
 
-Local development of Appwrite Functions brings many benefits. A simpler and less time-consuming setup ensures proper development experience. Local development with hot-swapping capabilities makes development quick, and CI/CD support makes your Appwrite Function reliable. All the tiny features and parameters make the local development customizable to fit your style.
+Local development of Indobase Functions brings many benefits. A simpler and less time-consuming setup ensures proper development experience. Local development with hot-swapping capabilities makes development quick, and CI/CD support makes your Indobase Function reliable. All the tiny features and parameters make the local development customizable to fit your style.
 
-Try out the local development and improve your experience with Appwrite. To learn more, check out these resources:
+Try out the local development and improve your experience with Indobase. To learn more, check out these resources:
 
 - [Functions docs](https://appwrite.io/docs/products/functions)
-- [Appwrite CLI docs](https://appwrite.io/docs/tooling/command-line/installation)
+- [Indobase CLI docs](https://appwrite.io/docs/tooling/command-line/installation)
 - [Discord server](https://appwrite.io/discord)
 - [More about Init](https://appwrite.io/init)

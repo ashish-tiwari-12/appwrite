@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "August product update: Cloud GA, new TablesDB UI & Sites Hackathon"
 description: Get a full recap of products, features and programs we released in the month of August.
@@ -11,11 +11,11 @@ featured: false
 callToAction: true
 ---
 
-Welcome back to the August Product Update. This month, we’ve got some significant updates, from Appwrite Cloud, which is now generally available, and a brand new look for Appwrite Databases. On top of it, Appwrite’s very first Sites Hackathon is also now live.
+Welcome back to the August Product Update. This month, we’ve got some significant updates, from Indobase Cloud, which is now generally available, and a brand new look for Indobase Databases. On top of it, Indobase’s very first Sites Hackathon is also now live.
 
 So, here’s what to expect:
 
-- Appwrite Cloud GA
+- Indobase Cloud GA
 - Sites Hackathon
 - New Cloud region
 - New Database UI
@@ -24,21 +24,21 @@ So, here’s what to expect:
 
 Let’s dive in.
 
-# Appwrite Cloud is now generally available
+# Indobase Cloud is now generally available
 
-![Appwrite Cloud GA](/images/blog/product-update-august-2025/ga.png)
+![Indobase Cloud GA](/images/blog/product-update-august-2025/ga.png)
 
-After more than 26 months of Appwrite Cloud, we removed the beta tag. Appwrite is now officially generally available (GA).
+After more than 26 months of Indobase Cloud, we removed the beta tag. Indobase is now officially generally available (GA).
 
-With Appwrite Cloud now powering over 300,000 projects, we’re proud and excited to announce that we have transitioned to General Availability.
+With Indobase Cloud now powering over 300,000 projects, we’re proud and excited to announce that we have transitioned to General Availability.
 
 [Read the announcement](https://appwrite.io/cloud-ga)
 
-# Appwrite Sites Hackathon
+# Indobase Sites Hackathon
 
-![Appwrite Sites Hackathon](/images/blog/product-update-august-2025/hackathon.png)
+![Indobase Sites Hackathon](/images/blog/product-update-august-2025/hackathon.png)
 
-After receiving multiple requests from the community, the **Appwrite Sites Hackathon** is finally here and underway.
+After receiving multiple requests from the community, the **Indobase Sites Hackathon** is finally here and underway.
 
 You have until **September 12** to showcase your creativity and compete for great prizes, including the exclusive Appwriter Keyboard and other prizes.
 
@@ -55,13 +55,13 @@ You can create a new project or migrate your existing project to the SFO region.
 Want to switch to a new region? Here are some resources to help you:
 
 - Video: [Changing regions with migrations](https://www.youtube.com/watch?v=Ya2R6dD_xxE)
-- Blog: [How to change regions in Appwrite Cloud using migrations](/blog/post/change-regions-with-migrations)
+- Blog: [How to change regions in Indobase Cloud using migrations](/blog/post/change-regions-with-migrations)
 
 # New TablesDB API with updated terminology
 
 ![New TablesDB API with updated terminology](/images/blog/product-update-august-2025/terminology.png)
 
-Appwrite Databases now feels more relational. We’ve updated the terminology to match the relational model that developers are most familiar with.
+Indobase Databases now feels more relational. We’ve updated the terminology to match the relational model that developers are most familiar with.
 
 Here’s what’s changed:
 
@@ -83,7 +83,7 @@ However, we recommend adopting the new TablesDB API for future projects to take 
 
 ![TablesDB UI](/images/blog/product-update-august-2025/new-ui.png)
 
-We introduced a completely new TablesDB UI for Appwrite Databases. This new interface lets you experience a spreadsheet‑like editing workflow inside the Console.
+We introduced a completely new TablesDB UI for Indobase Databases. This new interface lets you experience a spreadsheet‑like editing workflow inside the Console.
 
 You can now:
 
@@ -109,7 +109,7 @@ You can safely update numeric fields (likes, retries, stock, or scores) directly
 
 With the help of timestamp overrides, you can now retain original timestamps during imports to keep audits, analytics, and user timelines accurate.
 
-Whether importing a few thousand records or years of historical data, this feature allows you to control timestamps when needed and let Appwrite handle them when you don’t.
+Whether importing a few thousand records or years of historical data, this feature allows you to control timestamps when needed and let Indobase handle them when you don’t.
 
 [Learn more](/blog/post/announcing-timestamp-overrides)
 
@@ -119,7 +119,7 @@ Whether importing a few thousand records or years of historical data, this featu
 
 We’re excited to feature [WriteWise](https://writewise-os.streamlit.app/) as part of our Monthly Community recognitions this month.
 
-WriteWise is an AI RAG (Retrieval-Augmented Generation) system that can browse through Appwrite docs and provide code examples or explanations based on your questions.
+WriteWise is an AI RAG (Retrieval-Augmented Generation) system that can browse through Indobase docs and provide code examples or explanations based on your questions.
 
 A big shout-out to osasgentech.
 
@@ -129,18 +129,18 @@ If you'd like to participate in next month's Community Recognitions, [join our D
 
 **Read**
 
-- [Exploring AI and vibe coding: Insights from the Appwrite developer community](/blog/post/ai-vibe-coding-insights)
-- [Simplifying social media management with automation and AI with StoreAlert and Appwrite](/blog/post/customer-story-socialaize)
-- [Announcing an improved Appwrite Databases. A completely new look, feel, and experience](/blog/post/announcing-appwrite-databases-new-ui)
+- [Exploring AI and vibe coding: Insights from the Indobase developer community](/blog/post/ai-vibe-coding-insights)
+- [Simplifying social media management with automation and AI with StoreAlert and Indobase](/blog/post/customer-story-socialaize)
+- [Announcing an improved Indobase Databases. A completely new look, feel, and experience](/blog/post/announcing-appwrite-databases-new-ui)
 - [Announcing Opt-in relationship loading: Granular control for smarter data fetching](/blog/post/announcing-opt-in-relationship-loading)
-- [Deploy a Next.js app to Appwrite Sites](/blog/post/deploy-nextjs-app-to-appwrite-sites)
+- [Deploy a Next.js app to Indobase Sites](/blog/post/deploy-nextjs-app-to-appwrite-sites)
 
 **Watch**
 
 - [Build a full stack food delivery app in React Native](https://www.youtube.com/watch?v=LKrX390fJMw)
-- [Importing CSV files into an Appwrite database](https://youtu.be/7UfWaHNghas?si=ggKDtrhclOQXllS2)
+- [Importing CSV files into an Indobase database](https://youtu.be/7UfWaHNghas?si=ggKDtrhclOQXllS2)
 - [Bulk operations with Appwrites database](https://youtu.be/lliJLad3e9s?si=mdV8QIplgdxPOFKY)
-- [Type generation for Appwrite DB Schema](https://youtu.be/ip2CXH2KRl8?si=9EoOCraYd-hOCYoX)
+- [Type generation for Indobase DB Schema](https://youtu.be/ip2CXH2KRl8?si=9EoOCraYd-hOCYoX)
 - [Announcing Database Upserts](https://youtu.be/Pt9ZttS3KiA?si=TWlRi5qFzZbHbzAP)
 - [Auto-increment support for numeric sequencing](https://youtu.be/yy-L6QmEWe8?si=BjXzFna1C54IDXZd)
 
@@ -152,6 +152,6 @@ Next month, we’re bringing:
 
 - A new Database integration
 - Plenty of useful Database features
-- A new open-source initiative by the Appwrite team!
+- A new open-source initiative by the Indobase team!
 
 Follow us on [X](https://x.com/appwrite) and check our [Changelog](https://appwrite.io/changelog) regularly, as we will release more information in the coming weeks.

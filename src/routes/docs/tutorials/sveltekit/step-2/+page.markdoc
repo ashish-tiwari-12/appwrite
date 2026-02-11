@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create app
-description: Create a SvelteKit app project using Appwrite.
+description: Create a SvelteKit app project using Indobase.
 step: 2
 ---
 
@@ -17,7 +17,7 @@ npm install
 
 ## Add dependencies {% #add-dependencies %}
 
-Install the JavaScript Appwrite SDK.
+Install the JavaScript Indobase SDK.
 
 ```sh
 npm install appwrite

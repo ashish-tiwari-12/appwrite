@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Screenshots
 description: Capture webpage screenshots with customizable viewport, theme, browser settings, and geolocation options for comprehensive web page documentation.
@@ -47,7 +47,7 @@ Future result = avatars.getScreenshot(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -298,7 +298,7 @@ Future touchScreenshot = avatars.getScreenshot(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // Dark theme screenshot
 let darkThemeScreenshot = try await avatars.getScreenshot(
@@ -430,7 +430,7 @@ Future tokyoScreenshot = avatars.getScreenshot(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // New York location
 let nyScreenshot = try await avatars.getScreenshot(
@@ -656,7 +656,7 @@ Future defaultScreenshot = avatars.getScreenshot(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // Grant geolocation permission
 let geoScreenshot = try await avatars.getScreenshot(

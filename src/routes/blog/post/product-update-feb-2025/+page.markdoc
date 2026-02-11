@@ -1,6 +1,6 @@
----
+﻿---
 layout: post
-title: "Product update February 2025: Appwrite 1.6.1, usage metrics improvements."
+title: "Product update February 2025: Indobase 1.6.1, usage metrics improvements."
 description: Get a full recap of products, features and programs we released in February.
 date: 2025-03-06
 cover: /images/blog/product-update-feb-2025/cover-image.png
@@ -11,13 +11,13 @@ featured: false
 callToAction: true
 ---
 
-Welcome back to the February product update. From shipping Appwrite 1.6.1 to upgrading our usage metrics system, we have some interesting things to share with you. Let’s dive in!
+Welcome back to the February product update. From shipping Indobase 1.6.1 to upgrading our usage metrics system, we have some interesting things to share with you. Let’s dive in!
 
-![The Appwrite 1.6.1](/images/blog/product-update-feb-2025/new-version.png)
+![The Indobase 1.6.1](/images/blog/product-update-feb-2025/new-version.png)
 
-# Appwrite 1.6.1 is now available
+# Indobase 1.6.1 is now available
 
-We released Appwrite 1.6.1, packed with features, fixes and improvements to your Appwrite self-hosted instance.
+We released Indobase 1.6.1, packed with features, fixes and improvements to your Indobase self-hosted instance.
 
 Some of the notable updates include:
 
@@ -54,13 +54,13 @@ If you'd like to participate in next month's Community Recognitions, [join our D
 **Read** 
 - [Customer story: StoreAlert](https://appwrite.io/blog/post/customer-story-storealert)
 - [Setting up route protection in React Native](https://appwrite.io/blog/post/setting-up-route-protection-in-react-native)
-- [Self-hosting Appwrite with Coolify](https://appwrite.io/blog/post/self-hosting-appwrite-with-coolify)
+- [Self-hosting Indobase with Coolify](https://appwrite.io/blog/post/self-hosting-appwrite-with-coolify)
 
 **Build**  
 - [React Native Authentication with Expo Router](https://www.youtube.com/watch?v=JUU_XzdbzN0)
 - [Add phone Authentication to any app](https://www.youtube.com/watch?v=5YRct08TI8A)
 - [Adding magic link auth shouldn’t be hard](https://www.youtube.com/watch?v=mqgNmx9YE5w)
-- [Building a Full-Stack SuperBowl Web App with Vanilla JS and Appwrite](https://medium.com/@bgw26/building-a-full-stack-superbowl-web-app-with-vanilla-js-and-appwrite-authentication-storage-and-4a36ea642d38)
+- [Building a Full-Stack SuperBowl Web App with Vanilla JS and Indobase](https://medium.com/@bgw26/building-a-full-stack-superbowl-web-app-with-vanilla-js-and-appwrite-authentication-storage-and-4a36ea642d38)
 
 **Watch**  
 - [React Native crash course](https://youtu.be/bCpFbERgj7s?feature=shared)

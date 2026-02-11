@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Build an ideas tracker with React Native
-description: Learn to build a React Native app with no backend code using an Appwrite backend.
+description: Learn to build a React Native app with no backend code using an Indobase backend.
 step: 1
 difficulty: beginner
 back: /docs/tutorials
@@ -11,7 +11,7 @@ framework: React Native
 ---
 
 **Idea tracker**: an app to track all the side project ideas that you'll start, but probably never finish.
-In this tutorial, you will build Idea tracker with Appwrite and React Native.
+In this tutorial, you will build Idea tracker with Indobase and React Native.
 
 ## Concepts {% #concepts %}
 

@@ -1,12 +1,12 @@
----
+﻿---
 layout: article
 title: Start with Sites
-description: Get started quickly with Appwrite Sites. Follow a step-by-step guide to create your first Appwrite Site and deploy a web app.
+description: Get started quickly with Indobase Sites. Follow a step-by-step guide to create your first Indobase Site and deploy a web app.
 ---
 
 # Start with Sites
 
-You can create and execute your first Appwrite Site in minutes.
+You can create and execute your first Indobase Site in minutes.
 
 # Create site
 
@@ -19,7 +19,7 @@ Before deploying your web app with Git, create a new Site attached to your GitHu
 ![Create site wizard](/images/docs/sites/create-site-wizard.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Sites**.
+1. In the Indobase Console's sidebar, click **Sites**.
 2. Click on the **Create site** button.
 3. After clicking on **Connect Git repository**, select your repository.
 4. After connecting to GitHub, (optionally) add a name and site ID.
@@ -30,7 +30,7 @@ Before deploying your web app with Git, create a new Site attached to your GitHu
 
 # Framework quick-starts
 
-Learn how to quickly setup a web app developed using any of the following frameworks and deploy it on Appwrite Sites.
+Learn how to quickly setup a web app developed using any of the following frameworks and deploy it on Indobase Sites.
 
 {% cards %}
 
@@ -74,7 +74,7 @@ Learn how to quickly setup a web app developed using any of the following framew
 
 # Explore
 
-Use your first site as a springboard to explore the flexible and powerful features of Appwrite Sites.
+Use your first site as a springboard to explore the flexible and powerful features of Indobase Sites.
 
 {% cards %}
 
@@ -83,15 +83,15 @@ Get a template site up and running with a single click.
 {% /cards_item %}
 
 {% cards_item href="/docs/products/sites/develop" title="Develop" %}
-Learn about developing your own Appwrite Site.
+Learn about developing your own Indobase Site.
 {% /cards_item %}
 
 {% cards_item href="/docs/products/sites/deploy-from-git" title="Deploy" %}
-Configure and deploy your Appwrite Site from Git.
+Configure and deploy your Indobase Site from Git.
 {% /cards_item %}
 
 {% cards_item href="/docs/products/sites/frameworks" title="Frameworks" %}
-Learn which frameworks are supported by Appwrite Sites.
+Learn which frameworks are supported by Indobase Sites.
 {% /cards_item %}
 
 {% /cards %}

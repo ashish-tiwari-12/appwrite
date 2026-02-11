@@ -30,7 +30,7 @@
 
     const title = 'Startups' + TITLE_SUFFIX;
     const description =
-        "Get cloud credits to fulfill all your startup's backend and hosting needs. Apply for Appwrite's Startups Program today.";
+        "Get cloud credits to fulfill all your startup's backend and hosting needs. Apply for Indobase's Startups Program today.";
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 
     let personName: string;
@@ -101,14 +101,14 @@
     const mariusBolik = testimonial(
         'Marius Bolik',
         'CTO // mySHOEFITTER',
-        'Appwrite has been a tremendous asset in implementing our IT infrastructure. Not only is the software an absolute game-changer, but the team is always there when you need them.',
+        'Indobase has been a tremendous asset in implementing our IT infrastructure. Not only is the software an absolute game-changer, but the team is always there when you need them.',
         'marius-bolik2'
     );
 
     const souvikSarkar = testimonial(
         'Souvik Sarkar',
         '@Jeet_2003',
-        'With its robust feature set and open-source nature, Appwrite is the perfect choice for developers who want to build secure and scalable applications.',
+        'With its robust feature set and open-source nature, Indobase is the perfect choice for developers who want to build secure and scalable applications.',,
         'souvik-sarkar'
     );
 
@@ -125,7 +125,7 @@
         testimonial(
             'Gilbert Gonzalez',
             '@ggsotillo',
-            'We reduced 80% time-to-market of our apps using Appwrite.',
+            'We reduced 80% time-to-market of our apps using Indobase.',
             'gilbert-gonzalez'
         ),
         testimonial(
@@ -137,7 +137,7 @@
         testimonial(
             'David Forster',
             'Creator // Open Mind',
-            'Appwrite saved us a lot of money in comparison to Firebase since the amount of users grew quite fast and we needed a quick switch. I am still surprised how easy the implementation into Flutter was.',
+            'Indobase saved us a lot of money in comparison to Firebase since the amount of users grew quite fast and we needed a quick switch. I am still surprised how easy the implementation into Flutter was.',,
             'david-forster'
         ),
         testimonial(
@@ -149,7 +149,7 @@
         testimonial(
             "Ryan O'Conner",
             'Founder // K-Collect',
-            'For me, Appwrite is the perfect backend solution. All you have to do is sign up, and your backend is ready to go. I have never seen such an innovative and easy-to-understand backend solution before!',
+            'For me, Indobase is the perfect backend solution. All you have to do is sign up, and your backend is ready to go. I have never seen such an innovative and easy-to-understand backend solution before!',,
             'ryan-oconner'
         ),
         testimonial(
@@ -161,7 +161,7 @@
         testimonial(
             'Alejandro Morales',
             '@alexparton',
-            "I just migrated a project from Firebase to Appwrite: Authentication, Users, Databases and Storage. And I can't be more in love with it.",
+            "I just migrated a project from Firebase to Indobase: Authentication, Users, Databases and Storage. And I can't be more in love with it.",
             'alejandro-morales'
         ),
         testimonial(
@@ -173,7 +173,7 @@
         testimonial(
             'Jonas Janssen',
             'Founder // UNDO',
-            'Thanks to Appwrite and advances in technology, we were able to get an MVP out in 2-3 months with 1 developer.',
+            'Thanks to Indobase and advances in technology, we were able to get an MVP out in 2-3 months with 1 developer.',,
             'jonas-janssen'
         ),
         testimonial(
@@ -216,14 +216,14 @@
                         style="--hero-max-inline-size:49.375rem; --hero-gap:1.125rem;"
                     >
                         <h1 class="text-headline font-aeonik-pro text-primary">
-                            Build your startup with Appwrite
+                            Build your startup with Indobase
                         </h1>
                         <p
                             class="text-description web-u-max-width-640 e-u-padding-inline-32-desktop mx-auto"
                         >
-                            The Appwrite Startups Program supports your startup with an all-in-one
+                            The Indobase Startups Program supports your startup with an all-in-one
                             development platform for you to build your products. You will receive
-                            Cloud credits and a discount for Appwrite's paid plans.
+                            Cloud credits and a discount for Indobase's paid plans.
                         </p>
                         <Button onclick={scrollToForm} class="mx-auto mt-3">Apply now</Button>
                     </div>
@@ -247,7 +247,7 @@
                             <div class="flex flex-col gap-2 text-center">
                                 <h2 class="text-label text-primary">Up to 80% discounts</h2>
                                 <p class="text-body font-medium">
-                                    Get discounts on Appwrite’s paid plans. We offer up to 80% on
+                                    Get discounts on Indobase's paid plans. We offer up to 80% on
                                     both Pro and Scale.
                                 </p>
                             </div>
@@ -277,7 +277,7 @@
                             <div class="flex flex-col gap-2 text-center">
                                 <h2 class="text-label text-primary">Priority support</h2>
                                 <p class="text-body font-medium">
-                                    Get community support and priority support from the Appwrite
+                                    Get community support and priority support from the Indobase
                                     team.
                                 </p>
                             </div>
@@ -293,7 +293,7 @@
                                 <h2 class="text-label text-primary">Founder swag</h2>
                                 <p class="text-body font-medium">
                                     Get community support and dedicated email support from the
-                                    Appwrite team.
+                                    Indobase team.
                                 </p>
                             </div>
                         </li>
@@ -328,7 +328,7 @@
                                 >
                                     <section class="flex flex-col gap-5">
                                         <h4 class="text-title font-aeonik-pro text-primary">
-                                            Join the Appwrite Startups program
+                                            Join the Indobase Startups program
                                         </h4>
                                         <p class="text-description" style="font-size: 18px;">
                                             We support VC backed tech startups that have been
@@ -348,7 +348,7 @@
                                                     class="text-description"
                                                     style="font-size: 18px;"
                                                 >
-                                                    Appwrite Cloud Pro for 12 months
+                                                    Indobase Cloud Pro for 12 months
                                                 </p>
                                             </div>
                                             <div class="flex gap-4">

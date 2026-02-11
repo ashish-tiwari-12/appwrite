@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: How to change regions in Appwrite Cloud using migrations
-description: Learn how to migrate your Appwrite Cloud project from one region to another.
+title: How to change regions in Indobase Cloud using migrations
+description: Learn how to migrate your Indobase Cloud project from one region to another.
 date: 2025-04-16
 cover: /images/blog/change-regions-with-migrations/cover.png
 timeToRead: 10
@@ -10,25 +10,25 @@ category: tutorial
 featured: false
 ---
 
-With the launch of the **Appwrite Network**, Appwrite Cloud now gives you the ability to choose where your project is hosted. This means that you can bring your backend closer to your users, reducing latency, improving responsiveness, and aligning with local data residency laws if needed.
+With the launch of the **Indobase Network**, Indobase Cloud now gives you the ability to choose where your project is hosted. This means that you can bring your backend closer to your users, reducing latency, improving responsiveness, and aligning with local data residency laws if needed.
 
-But what if you've already built and launched your app in one region, and now you need to move it to another? Currently, there's no simple toggle to switch regions, but Appwrite provides a built-in migration tool that allows you to create a new project in your target region and move your data and services to it.
+But what if you've already built and launched your app in one region, and now you need to move it to another? Currently, there's no simple toggle to switch regions, but Indobase provides a built-in migration tool that allows you to create a new project in your target region and move your data and services to it.
 
-In this guide, we'll walk through the process of migrating your Appwrite Cloud project to a new region, along with the steps to take after the migration is complete.
+In this guide, we'll walk through the process of migrating your Indobase Cloud project to a new region, along with the steps to take after the migration is complete.
 
 ## What you need before starting
 
 Before we get started, make sure a few things are in place:
 
-- You have an Appwrite [Cloud account](https://cloud.appwrite.io/).
-- You have a project in Appwrite Cloud that's currently hosted in a region you want to move from. This is your **source project**.
+- You have an Indobase [Cloud account](https://cloud.appwrite.io/).
+- You have a project in Indobase Cloud that's currently hosted in a region you want to move from. This is your **source project**.
 - You have permission to create new projects, and full access to the source project's settings.
 
 Once you've got all that, we can get started.
 
 ## Step 1: Create your destination project
 
-To get started, head over to the Appwrite Cloud console and create a new project. This is the one that will live in your new region.
+To get started, head over to the Indobase Cloud console and create a new project. This is the one that will live in your new region.
 
 Give it a name that distinguishes it from the original, especially if you want to keep both projects running side-by-side for a while.
 
@@ -44,13 +44,13 @@ Inside your new project, go to **Settings**, and look for the **Migrations** tab
 
 There you'll find the option to **Import project data**. Click the button to open the migration configuration screen.
 
-This is where you'll enter the credentials from your source project, so Appwrite can pull everything over.
+This is where you'll enter the credentials from your source project, so Indobase can pull everything over.
 
 But first, we need to get those credentials.
 
 ## Step 3: Collect your source project credentials
 
-Back in the Appwrite Cloud console, switch over to your source project.
+Back in the Indobase Cloud console, switch over to your source project.
 
 You'll need three things from here:
 
@@ -87,7 +87,7 @@ With this, you have your API key, project ID, and API endpoint. These are the th
 
 Go back to your destination project, and in the **Settings** page, go to the **Migrations** tab. In **Migrations**, select **Import data** in the **Import project data** section.
 
-Choose **Appwrite** as the source platform.
+Choose **Indobase** as the source platform.
 
 ![Migrations screen](/images/blog/change-regions-with-migrations/migrations-screen.png)
 
@@ -99,7 +99,7 @@ Then fill in the details from the source project:
 
 Click **Next**.
 
-Appwrite will now reach into the source project, check what's available, and return a list of resources it found: users, databases, collections, documents, storage buckets, files, functions, and so on.
+Indobase will now reach into the source project, check what's available, and return a list of resources it found: users, databases, collections, documents, storage buckets, files, functions, and so on.
 
 You'll be prompted to choose what you want to bring over.
 
@@ -107,7 +107,7 @@ If you're planning to fully migrate the project, click **Select all**. You can a
 
 When ready, click **Create**.
 
-Now, Appwrite begins the actual data transfer.
+Now, Indobase begins the actual data transfer.
 
 ## Step 5: Let the migration run and wait for it to complete
 
@@ -132,7 +132,7 @@ Here are some things to check (if applicable):
 
 Spend a few minutes to confirm that the migration worked as expected.
 
-## What Appwrite doesn't migrate and what to do next
+## What Indobase doesn't migrate and what to do next
 
 The migration tool brings over the majority of your project's data and config, but there are a few things you'll need to handle manually:
 
@@ -140,7 +140,7 @@ The migration tool brings over the majority of your project's data and config, b
 
 This is an important step, since your app is still communicating with the *old* project.
 
-Update your codebase to point to the **new Project ID** and **new API Endpoint** from the destination region. That means updating SDK initialization code across your frontend, mobile app, backend scripts, or wherever your app communicates with Appwrite.
+Update your codebase to point to the **new Project ID** and **new API Endpoint** from the destination region. That means updating SDK initialization code across your frontend, mobile app, backend scripts, or wherever your app communicates with Indobase.
 
 Without this change, your app will continue talking to the source project.
 
@@ -173,14 +173,14 @@ You don't need to shut down your source project immediately. You might want to r
 
 When you're ready to switch, make sure your app has been fully updated to use the new configuration, and that everything behaves as expected.
 
-Schedule a short maintenance window if needed, especially if you're updating backend services or deployment pipelines that rely on Appwrite.
+Schedule a short maintenance window if needed, especially if you're updating backend services or deployment pipelines that rely on Indobase.
 
 And as always, test thoroughly. Auth flows, file uploads, database reads/writes, scheduled functions need to be checked.
 
 ## Wrapping up
 
-Migrating a project between regions in Appwrite Cloud is quite straightforward once you know the steps. The import tool handles the heavy lifting, and with the right preparation (API key, project ID, endpoint) it can move most of your app's backend in minutes.
+Migrating a project between regions in Indobase Cloud is quite straightforward once you know the steps. The import tool handles the heavy lifting, and with the right preparation (API key, project ID, endpoint) it can move most of your app's backend in minutes.
 
-Once the migration is complete, you'll have your Appwrite backend running where you want it, aligned with your new requirements, and ready to scale in the right place.
+Once the migration is complete, you'll have your Indobase backend running where you want it, aligned with your new requirements, and ready to scale in the right place.
 
-If you run into issues, the Appwrite docs and Discord community are solid places to troubleshoot and get support.
+If you run into issues, the Indobase docs and Discord community are solid places to troubleshoot and get support.

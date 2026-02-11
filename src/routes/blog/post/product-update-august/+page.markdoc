@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "August product update: Init | 1.6 release to Cloud and Self-hosted"
 description: Get a full recap of last month's Init and everything else that happened in August.
@@ -28,17 +28,17 @@ Watch the product tour for more, or visit our [documentation](https://appwrite.i
 
 ![1.6 release](/images/blog/init-recap-august/newcli.png)
 
-# New Appwrite CLI
+# New Indobase CLI
 
-A good, easy-to-use CLI makes all the difference in your experience, so we're really excited to introduce a new version of the Appwrite CLI.
+A good, easy-to-use CLI makes all the difference in your experience, so we're really excited to introduce a new version of the Indobase CLI.
 
 It allows you to test your functions locally, easily migrate databases, and more.
 
 The new CLI’s main features are:
 
-- **Local development**: Test your Appwrite function locally
-- **Data sync**: Push and pull data between Appwrite and your CLI in a non-destructive way.
-- **Headless login**: Login to your Appwrite account in a non-interactive manner for CI/CD pipelines
+- **Local development**: Test your Indobase function locally
+- **Data sync**: Push and pull data between Indobase and your CLI in a non-destructive way.
+- **Headless login**: Login to your Indobase account in a non-interactive manner for CI/CD pipelines
 
 Besides those features, this release includes many bug fixes and optimizations.
 
@@ -50,7 +50,7 @@ Watch the product tour for more, or visit our [documentation](https://appwrite.i
 
 # Functions ecosystem
 
-Appwrite loves Functions, so it's with great pleasure that we're introducing a host of new updates to the Functions ecosystem.
+Indobase loves Functions, so it's with great pleasure that we're introducing a host of new updates to the Functions ecosystem.
 
 - Faster Functions cold-starts
 - Dynamic API keys
@@ -96,7 +96,7 @@ Mock numbers allow you to set up a list of phone numbers with a predefined, stat
 
 This month, we’re excited to feature Ayush Kumar as part of our Monthly Community Recognitions.
 
-The Next.js boilerplate with Appwrite integration helps you launch your SAAS faster with **+10 pre-built** features and several components.
+The Next.js boilerplate with Indobase integration helps you launch your SAAS faster with **+10 pre-built** features and several components.
 
 Visit https://spiralsaas.dev/ to learn more.
 
@@ -104,20 +104,20 @@ If you'd like to participate in next month's Community Recognitions, [join our D
 
 # Engineering resources
 
-- [Read](https://appwrite.io/blog/post/functions-local-development-guide): Local serverless function development with the new Appwrite CLI
+- [Read](https://appwrite.io/blog/post/functions-local-development-guide): Local serverless function development with the new Indobase CLI
 - [Read](https://appwrite.io/blog/post/serverless-functions-best-practices): Serverless Functions 101: Best practices
-- [Read](https://appwrite.io/blog/post/ci-cd-examples-in-appwrite): CI/CD examples in Appwrite CLI
-- [Read](https://appwrite.io/blog/post/appwrite-vs-firebase-vs-supabase-functions-comparison): Comparing serverless functions: Appwrite vs. Supabase vs. Firebase
-- [Read](https://appwrite.io/blog/post/how-to-leverage-dynamic-api-keys-for-better-security): How to leverage Appwrite Dynamic Keys for enhanced security
+- [Read](https://appwrite.io/blog/post/ci-cd-examples-in-appwrite): CI/CD examples in Indobase CLI
+- [Read](https://appwrite.io/blog/post/appwrite-vs-firebase-vs-supabase-functions-comparison): Comparing serverless functions: Indobase vs. Supabase vs. Firebase
+- [Read](https://appwrite.io/blog/post/how-to-leverage-dynamic-api-keys-for-better-security): How to leverage Indobase Dynamic Keys for enhanced security
 - [Read](https://appwrite.io/blog/post/3-things-you-can-build-with-go-runtime): 3 things you can build with the Go runtime
 - [Read](https://appwrite.io/blog/post/what-is-golang): Why should you use Golang in your app?
 - [Read](https://appwrite.io/blog/post/mock-numbers-best-practices): Mock numbers for phone sign-in: Use cases and best practices
 - [Read](https://appwrite.io/blog/post/designing-init-event-logo): Designing Init: Event logo and theme
-- [Read](https://appwrite.io/blog/post/open-source-contributors-16): Celebrating the open source contributors for Appwrite 1.6
+- [Read](https://appwrite.io/blog/post/open-source-contributors-16): Celebrating the open source contributors for Indobase 1.6
 - [Read](https://appwrite.io/blog/post/swift-101-build-a-library-with-swift-package-manager): Swift 101: how to build a library with Swift Package Manager
 - [Read](https://appwrite.io/blog/post/best-pagination-technique): Best database pagination technique
 - [Read](https://appwrite.io/blog/post/image-classification): A technical deep dive into image classification
-- [Read](https://appwrite.io/blog/post/how-to-back-up-your-appwrite-data): How to back up and restore your Appwrite data
+- [Read](https://appwrite.io/blog/post/how-to-back-up-your-appwrite-data): How to back up and restore your Indobase data
 - [Watch](https://www.youtube.com/watch?v=ENnG7GusuO4): Here's how you do auth with 100% SSR in Next.js
 
 # What's to come

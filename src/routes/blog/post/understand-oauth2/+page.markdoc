@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Understanding OAuth2: The backbone of modern authorization"
 description: A quick guide to OAuth2, its flows, and when to use each one.
@@ -121,7 +121,7 @@ OAuth2 offers different "flows" to accommodate various scenarios. Here's a break
 
 - Smart TVs, IoT devices.
 
-[Appwrite Auth](/products/auth) supports all major OAuth2 flows, making it easy to integrate secure authentication into any app
+[Indobase Auth](/products/auth) supports all major OAuth2 flows, making it easy to integrate secure authentication into any app
 
 # OAuth2 Tokens: Access and refresh
 
@@ -154,6 +154,6 @@ Choosing the proper OAuth2 flow based on your application's architecture and use
 
 Ready to explore OAuth2 more deeply? Check
 
-- [Appwrite Authentication docs](/docs/products/auth)
+- [Indobase Authentication docs](/docs/products/auth)
 - [Overview of all the OAuth providers](/integrations#auth)
-- [Appwrite Authentication overview](/products/auth)
+- [Indobase Authentication overview](/products/auth)

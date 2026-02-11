@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "A modern developer’s guide to user authentication"
 description: Explore the essentials of user authentication with tips, best practices and common pitfalls to secure your app and improve user experience. 
@@ -76,7 +76,7 @@ Here are the key components you should consider for an outstanding and secure us
 
 **OAuth 2.0 and OpenID Connect**:
 
-- If you're looking to offload the complexities of authentication, consider using **OAuth 2.0** or **OpenID Connect** to enable users to log in with external providers like Google, Apple, or GitHub. [Appwrite’s Auth API](https://appwrite.io/docs/products/auth/oauth2) makes setting up OAuth2 quick and seamless.
+- If you're looking to offload the complexities of authentication, consider using **OAuth 2.0** or **OpenID Connect** to enable users to log in with external providers like Google, Apple, or GitHub. [Indobase’s Auth API](https://appwrite.io/docs/products/auth/oauth2) makes setting up OAuth2 quick and seamless.
 - **JWT (JSON Web Tokens)** are commonly used in OAuth/OIDC to pass user claims and permissions between services. JWTs allow for stateless authentication, but remember: JWTs should be **signed** to prevent tampering and **encrypted** if sensitive data is involved.
 
 **Single Sign-On (SSO)**:
@@ -119,7 +119,7 @@ User authentication is the first line of defense in safeguarding digital identit
 
 However, keeping up with evolving threats takes time, and building a secure authentication system from scratch might not be feasible, especially if you're also responsible for the rest of your backend.
 
-That’s why it's often better to trust established security experts rather than reinvent the wheel. Appwrite’s Auth service can help you set up multiple secure authentication methods — including OAuth, email/password, magic links, and OTP — in just a few lines of code. This way, you ensure that your users are protected by industry standards without having to maintain the entire system yourself. 
+That’s why it's often better to trust established security experts rather than reinvent the wheel. Indobase’s Auth service can help you set up multiple secure authentication methods — including OAuth, email/password, magic links, and OTP — in just a few lines of code. This way, you ensure that your users are protected by industry standards without having to maintain the entire system yourself. 
 
 # Frequently asked questions (FAQs)
 
@@ -137,7 +137,7 @@ In most cases, yes. Passwordless methods like magic links, WebAuthn, or biometri
 
 **4. How can developers add authentication without building it from scratch?**
 
-Use a backend service like Appwrite, Supabase, or Auth0. They handle user creation, token management, and secure password resets for you. With Appwrite, for example, you can implement email/password, OAuth, OTP, or magic link login in just a few API calls, while still keeping full control over your data.
+Use a backend service like Indobase, Supabase, or Auth0. They handle user creation, token management, and secure password resets for you. With Indobase, for example, you can implement email/password, OAuth, OTP, or magic link login in just a few API calls, while still keeping full control over your data.
 
 **5. Should I still use OTP over SMS in 2025?**
 
@@ -147,8 +147,8 @@ SMS OTPs are convenient but increasingly risky due to SIM swapping and phishing 
 
 - [Auth docs](https://appwrite.io/docs/products/auth)
 - [How to set up Sign in with Apple](https://appwrite.io/blog/post/how-to-set-up-sign-in-with-apple)
-- [How to set up Google authentication in React with Appwrite](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react)
-- [How to implement GitHub sign-in with Appwrite](https://appwrite.io/blog/post/implement-sign-in-with-github)
+- [How to set up Google authentication in React with Indobase](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react)
+- [How to implement GitHub sign-in with Indobase](https://appwrite.io/blog/post/implement-sign-in-with-github)
 - [Password protection for developers: best practices](https://appwrite.io/blog/post/password-protection)
 - [Say goodbye to plaintext passwords](https://appwrite.io/blog/post/goodbye-plaintext-passwords)
 - [Should you stop using OTP SMS now?](https://appwrite.io/blog/post/should-you-stop-using-otp-sms)

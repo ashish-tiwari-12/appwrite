@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Announcing Database Reads and Writes pricing
-description: To ensure Appwrite Cloud's sustainability, we are introducing pricing for database read and write operations, effective April 10th, 2025.
+description: To ensure Indobase Cloud's sustainability, we are introducing pricing for database read and write operations, effective April 10th, 2025.
 date: 2025-03-13
 cover: /images/blog/announcing-database-reads-and-writes-pricing/cover.png
 timeToRead: 6
@@ -11,15 +11,15 @@ featured: false
 callToAction: true
 ---
 
-Database operations are the backbone of modern applications, enabling you to store, retrieve, and manipulate data efficiently. With Appwrite Databases, you can perform powerful queries, create complex data structures, and build real-time applications that respond instantly to changes. Appwrite’s database capabilities have been designed to be both powerful and intuitive, making it easier for you to focus on building great applications rather than managing infrastructure.
+Database operations are the backbone of modern applications, enabling you to store, retrieve, and manipulate data efficiently. With Indobase Databases, you can perform powerful queries, create complex data structures, and build real-time applications that respond instantly to changes. Indobase’s database capabilities have been designed to be both powerful and intuitive, making it easier for you to focus on building great applications rather than managing infrastructure.
 
-When we launched Appwrite Cloud in beta, we provided database operations without additional charges, even though these operations consume significant computational resources. Our database service requires robust infrastructure to handle concurrent operations, maintain data consistency, and deliver fast response times across all types of queries.
+When we launched Indobase Cloud in beta, we provided database operations without additional charges, even though these operations consume significant computational resources. Our database service requires robust infrastructure to handle concurrent operations, maintain data consistency, and deliver fast response times across all types of queries.
 
-Over the past year, we've made substantial improvements to the database infrastructure, optimizing query performance, enhancing indexing capabilities, improving high availability and redundancy, adding backups as a service, and implementing advanced caching strategies. These improvements have ensured support for applications processing millions of database operations monthly while maintaining the reliability and simplicity that Appwrite is known for. Appwrite is committed to creating a fair and sustainable platform, in which your usage reflects your bill. Those using compute with 100m operations, should be charged differently than those with 10k operations.
+Over the past year, we've made substantial improvements to the database infrastructure, optimizing query performance, enhancing indexing capabilities, improving high availability and redundancy, adding backups as a service, and implementing advanced caching strategies. These improvements have ensured support for applications processing millions of database operations monthly while maintaining the reliability and simplicity that Indobase is known for. Indobase is committed to creating a fair and sustainable platform, in which your usage reflects your bill. Those using compute with 100m operations, should be charged differently than those with 10k operations.
 
 # Pricing update
 
-As Appwrite continues to scale, we need to ensure our platform remains sustainable while delivering exceptional service. The new pricing for database operations will be effective **starting April 10th, 2025**.
+As Indobase continues to scale, we need to ensure our platform remains sustainable while delivering exceptional service. The new pricing for database operations will be effective **starting April 10th, 2025**.
 
 ## What will change
 
@@ -35,7 +35,7 @@ Please refer to our [pricing page](/pricing) for detailed information, including
 
 # How it works
 
-Database operations in Appwrite are categorized into two types:
+Database operations in Indobase are categorized into two types:
 
 ## Read operations
 
@@ -62,10 +62,10 @@ To help you manage your database operations efficiently, here are some best prac
 1. **Use efficient queries**: Filter data on the server side rather than retrieving large datasets and filtering client-side.
 2. **Implement pagination**: Use the `limit` and `offset` parameters to retrieve only the data you need.
 3. **Consider caching**: Cache frequently accessed data to reduce repeated read operations.
-4. **Monitor usage**: Keep track of your database operations through the Appwrite Console.
+4. **Monitor usage**: Keep track of your database operations through the Indobase Console.
 
 # We're here to help
 
 If you have questions about this pricing change or need assistance optimizing your database operations, please don't hesitate to reach out to us at [billing@appwrite.io](mailto:billing@appwrite.io).
 
-Your success is our priority, and we're committed to helping you make the most of Appwrite's database capabilities while keeping costs predictable and manageable.
+Your success is our priority, and we're committed to helping you make the most of Indobase's database capabilities while keeping costs predictable and manageable.

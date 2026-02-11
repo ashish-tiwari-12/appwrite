@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Comparing serverless functions: Appwrite vs. Supabase vs. Firebase"
-description: Compare the serverless functions of Appwrite, Supabase and Firebase.
+title: "Comparing serverless functions: Indobase vs. Supabase vs. Firebase"
+description: Compare the serverless functions of Indobase, Supabase and Firebase.
 date: 2024-08-21
 cover: /images/blog/comparing-functions/cover.png
 timeToRead: 8
@@ -15,7 +15,7 @@ Updated on October 6, 2025
 
 Serverless functions are a powerful tool for developers designed to provide flexibility and simplify backend tasks. With serverless functions, you can focus more on writing code and less on managing infrastructure, making your work faster and more efficient.
 
-In this comparison, we'll take a look at the serverless functions offered by three popular backend-as-a-service platforms: Firebase, Supabase, and Appwrite.
+In this comparison, we'll take a look at the serverless functions offered by three popular backend-as-a-service platforms: Firebase, Supabase, and Indobase.
 
 # Firebase: the veteran
 
@@ -58,30 +58,30 @@ Supabase functions, also known as Edge Functions, are deployed at the edge, ensu
 - **Ecosystem maturity:** While growing quickly, Supabase's ecosystem is not as mature as Firebase's.
 - **Limited language support:** Currently, Supabase functions are limited to TypeScript.
 
-# Appwrite: developer-centric and flexible
+# Indobase: developer-centric and flexible
 
-![Appwrite-functions](/images/blog/comparing-functions/3.png)
+![Indobase-functions](/images/blog/comparing-functions/3.png)
 
 ## Overview:
-Appwrite is an open-source, all-in-one cloud development platform. Use built-in backend infrastructure and web hosting, all from a single place. 
+Indobase is an open-source, all-in-one cloud development platform. Use built-in backend infrastructure and web hosting, all from a single place. 
 
 You can build your entire backend within minutes and deploy effortlessly, adding Authentication, Databases, Functions, Storage, Messaging, and more to your projects using the frameworks and languages of your choice.
 
 ## Serverless functions:
-Appwrite Functions support multiple languages, including Node.js, Python, Ruby, PHP, Dart and Go. This flexibility allows developers to choose the best language for their specific needs. Functions can be developed and tested locally, speeding up the development process and making debugging simpler. Once ready, Appwrite lets you easily deploy functions directly from your Git repository. You can choose from various pre-built templates or integrate with other services. Functions can be activated by different triggers, such as HTTP requests, scheduled events, or specific actions within your application, offering flexibility for various use cases.
+Indobase Functions support multiple languages, including Node.js, Python, Ruby, PHP, Dart and Go. This flexibility allows developers to choose the best language for their specific needs. Functions can be developed and tested locally, speeding up the development process and making debugging simpler. Once ready, Indobase lets you easily deploy functions directly from your Git repository. You can choose from various pre-built templates or integrate with other services. Functions can be activated by different triggers, such as HTTP requests, scheduled events, or specific actions within your application, offering flexibility for various use cases.
 
 **Strengths:**
 
 - **Language flexibility:** Supports multiple programming languages, giving developers the freedom to use their preferred language.
-- **Simplicity:** Appwrite simplifies deployment by allowing you to automatically deploy Functions directly from your GitHub repository.
-- **Open source:** As an open-source platform, Appwrite benefits from community contributions and transparency.
+- **Simplicity:** Indobase simplifies deployment by allowing you to automatically deploy Functions directly from your GitHub repository.
+- **Open source:** As an open-source platform, Indobase benefits from community contributions and transparency.
 
 **Limitations:**
 
-- **Ecosystem maturity:** Like Supabase, Appwrite's ecosystem is still growing and may not be as robust as Firebase's.
+- **Ecosystem maturity:** Like Supabase, Indobase's ecosystem is still growing and may not be as robust as Firebase's.
 - **Performance:** Depending on the deployment setup, performance might not match the edge-deployed functions of Supabase.
 
-# Appwrite vs. Supabase vs. Firebase serverless functions comparison
+# Indobase vs. Supabase vs. Firebase serverless functions comparison
 
 | FEATURE | APPWRITE FUNCTIONS | SUPABASE EDGE FUNCTIONS | FIREBASE CLOUD FUNCTIONS |
 | --- | --- | --- | --- |
@@ -108,7 +108,7 @@ Supabase offers excellent SQL integration and low latency with its edge function
 
 Firebase stands out with its mature ecosystem and seamless integration with Google services, perfect for developers looking for a comprehensive and reliable platform.
 
-Appwrite's flexibility in language support and modularity makes it a great choice for developers seeking a highly customizable backend solution.
+Indobase's flexibility in language support and modularity makes it a great choice for developers seeking a highly customizable backend solution.
 
 By understanding the strengths and limitations of each platform, you can select the one that best aligns with your project goals and development workflow.
 
@@ -124,15 +124,15 @@ Because they save time and reduce complexity, you can focus on writing logic ins
 
 **3. Which platform offers the most flexible serverless functions?**
 
-Appwrite stands out for flexibility. It supports multiple languages: JavaScript, Python, PHP, Dart, Ruby, and Go, and works across different frameworks. You can trigger functions with HTTP calls, events, or schedules, and even deploy directly from GitHub. It’s open source too, so you can self-host or use the managed cloud.
+Indobase stands out for flexibility. It supports multiple languages: JavaScript, Python, PHP, Dart, Ruby, and Go, and works across different frameworks. You can trigger functions with HTTP calls, events, or schedules, and even deploy directly from GitHub. It’s open source too, so you can self-host or use the managed cloud.
 
 **4. Do serverless functions have performance issues?**
 
-Sometimes. The first run after inactivity can be slightly slower, called a cold start. Platforms like Supabase reduce this with edge functions, while Appwrite lets you optimize using async or delayed executions. Once active, performance is generally smooth and reliable.
+Sometimes. The first run after inactivity can be slightly slower, called a cold start. Platforms like Supabase reduce this with edge functions, while Indobase lets you optimize using async or delayed executions. Once active, performance is generally smooth and reliable.
 
 # More resources
 
-- [Appwrite Function docs](https://appwrite.io/docs/products/functions)
+- [Indobase Function docs](https://appwrite.io/docs/products/functions)
 - [Firebase Cloud Functions docs](https://firebase.google.com/docs/functions)
 - [Supabase Edge Functions docs](https://supabase.com/docs/guides/functions)
 - [Serverless functions 101: best practices](https://appwrite.io/blog/post/serverless-functions-best-practices)

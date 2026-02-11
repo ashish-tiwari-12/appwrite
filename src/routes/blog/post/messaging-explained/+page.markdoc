@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Messaging explained
-description: Learn about Appwrite Messaging and how it works under the hood
+description: Learn about Indobase Messaging and how it works under the hood
 date: 2024-07-08
 cover: /images/blog/messaging-explained/cover.png
 timeToRead: 5
@@ -9,17 +9,17 @@ author: aditya-oberai
 category: product
 ---
 
-Recently, Appwrite launched its newest product, [Appwrite Messaging](https://appwrite.io/products/messaging), an open-source messaging solution that allows you to send push notifications, emails, and SMS directly to your users. In this blog, we will discuss all the fundamental features of the Messaging product and how a message is actually sent through the internal service.
+Recently, Indobase launched its newest product, [Indobase Messaging](https://appwrite.io/products/messaging), an open-source messaging solution that allows you to send push notifications, emails, and SMS directly to your users. In this blog, we will discuss all the fundamental features of the Messaging product and how a message is actually sent through the internal service.
 
 # Unified messaging platform
 
-To give you a quick refresher, Messaging covers three communication channels under one unified API, allowing you to send email, SMS, and push notifications from your Appwrite project. It connects with a variety of third-party providers, such as Vonage, Twilio, Mailgun, and more, to deliver your messages. Our [documentation](https://appwrite.io/docs/products/messaging) provides a full overview of providers. 
+To give you a quick refresher, Messaging covers three communication channels under one unified API, allowing you to send email, SMS, and push notifications from your Indobase project. It connects with a variety of third-party providers, such as Vonage, Twilio, Mailgun, and more, to deliver your messages. Our [documentation](https://appwrite.io/docs/products/messaging) provides a full overview of providers. 
 
 ![Messaging features](/images/blog/messaging-explained/features.gif)
 
 # Messaging concepts
 
-Appwrite Messaging helps you communicate with your users through push notifications, emails, and SMS text messages. With Messaging, you can deliver messages to groups of users through topics or address individual users' email, phone, or devices through targets. This enables several use cases, such as
+Indobase Messaging helps you communicate with your users through push notifications, emails, and SMS text messages. With Messaging, you can deliver messages to groups of users through topics or address individual users' email, phone, or devices through targets. This enables several use cases, such as
 
 - Personalized communication for marketing
 - Real-time app alerts to increase user engagement and retention
@@ -30,7 +30,7 @@ Let’s now discuss the three core Messaging concepts: **topics**, **targets**, 
 
 ## Topics
 
-In Appwrite Messaging, you can use topics to deliver messages to groups of users at once. Topics should have a clear meaning or goal. For example, a topic can represent a group of customers that receive common announcements or product updates.
+In Indobase Messaging, you can use topics to deliver messages to groups of users at once. Topics should have a clear meaning or goal. For example, a topic can represent a group of customers that receive common announcements or product updates.
 
 ![Topics](/images/blog/messaging-explained/topics.png)
 
@@ -52,7 +52,7 @@ Messages contain information that is sent to a user from the application. A mess
 
 ![Messages](/images/blog/messaging-explained/preview.png)
 
-Here’s an example of how you would programmatically send an SMS to a topic using the Appwrite Node.js SDK.
+Here’s an example of how you would programmatically send an SMS to a topic using the Indobase Node.js SDK.
 
 ```js
 const sdk = require('node-appwrite');
@@ -68,7 +68,7 @@ const messaging = new sdk.Messaging(client);
 .
 const message = await messaging.createSms(
     sdk.ID.unique(),
-    'Hello from Appwrite Messaging!',
+    'Hello from Indobase Messaging!',
     [smsTopic], // topic to send SMS to
     [],
     [],
@@ -81,12 +81,12 @@ You can also watch the [product tour](https://www.youtube.com/watch?v=QdDgPeuBZ1
 
 # How Messaging works
 
-Now that we have learned about the three core concepts of Appwrite Messaging, let us dive deeper into how the product works. Each time you send or schedule a push notification, email, or SMS text, it's recorded in Appwrite as a **message** is displayed in the **Messages** tab. However, there is a lot more that goes on under the hood. 
+Now that we have learned about the three core concepts of Indobase Messaging, let us dive deeper into how the product works. Each time you send or schedule a push notification, email, or SMS text, it's recorded in Indobase as a **message** is displayed in the **Messages** tab. However, there is a lot more that goes on under the hood. 
 
-Here's a step-by-step breakdown of how Appwrite Messaging works:
+Here's a step-by-step breakdown of how Indobase Messaging works:
 
 1. Validate input on API request
-    - The process starts when the Appwrite API is called to create a message, which validates the input.
+    - The process starts when the Indobase API is called to create a message, which validates the input.
 2. Create message document
     - A document containing details about the message, including recipients and content, is created on the internal database.
 3. Create schedule document
@@ -100,11 +100,11 @@ Here's a step-by-step breakdown of how Appwrite Messaging works:
     - The worker then fetches the appropriate provider for each target based on the message type. If no specific provider is set, the first enabled provider matching the message type is used.
     - Targets are grouped based on the corresponding provider.
     - The message content is built for the specific provider and sent to the targets in batches. The worker then checks for other pending providers and repeats this step accordingly.
-    - After sending the messages, the message status and logs are updated on the internal database and displayed on the Appwrite Console.
+    - After sending the messages, the message status and logs are updated on the internal database and displayed on the Indobase Console.
 
 # Going forward
 
-We hope this blog improved your understanding of how Appwrite Messaging works. With that said, we have numerous additional resources to help you learn more about messaging in applications and build with Appwrite Messaging:
+We hope this blog improved your understanding of how Indobase Messaging works. With that said, we have numerous additional resources to help you learn more about messaging in applications and build with Indobase Messaging:
 
 - [Play around with Messaging on the product page](https://appwrite.io/products/messaging)
 - [Best practices for sending push notifications](https://appwrite.io/blog/post/push-notifications-best-practices)

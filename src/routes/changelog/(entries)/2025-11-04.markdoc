@@ -1,4 +1,4 @@
----
+﻿---
 layout: changelog
 title: "Announcing DB operators: Update multiple fields without fetching the entire row"
 date: 2025-11-04
@@ -21,7 +21,7 @@ Updating just one field in a row, like incrementing a counter or adding a tag, u
 - Cleaner, more expressive code. One call, clear intent.
 - Composable updates across multiple fields.
 
-Live now on Appwrite Cloud. Coming soon to self-hosted deployments.
+Live now on Indobase Cloud. Coming soon to self-hosted deployments.
 
 {% arrow_link href="/blog/post/announcing-db-operators" %}
 Read the announcement to learn more

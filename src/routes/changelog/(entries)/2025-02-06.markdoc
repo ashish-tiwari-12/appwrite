@@ -1,11 +1,11 @@
----
+﻿---
 layout: changelog
 title: "Appwrite 1.6.1 is now available"
 date: 2025-02-06
 cover: /images/changelog/2025-02-06.png
 ---
 
-We're excited to announce a new update packed with features, fixes, and improvements to enhance your self-hosted Appwrite instance! This release focuses on performance, stability, and expanded functionality.
+We're excited to announce a new update packed with features, fixes, and improvements to enhance your self-hosted Indobase instance! This release focuses on performance, stability, and expanded functionality.
 
 Most notably, this release includes:
 
@@ -17,7 +17,7 @@ Most notably, this release includes:
 * A fix for `users.createSession()`
 * Replacing 'Expires' with 'Cache-Control: private' header to avoid CDN caching
 
-We're excited to see what you build! Head over to our [migration guide](https://appwrite.io/docs/advanced/self-hosting/update) to learn how you can upgrade your Appwrite instance.
+We're excited to see what you build! Head over to our [migration guide](https://appwrite.io/docs/advanced/self-hosting/update) to learn how you can upgrade your Indobase instance.
 
 For the complete list of updates and fixes, check out the changelog below.
 

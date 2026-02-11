@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to build cross-platform applications with React Native
 description: With the launch of our new React Native SDK in open beta we want to take a deeper dive into cross platform development and when you should use it.
@@ -48,7 +48,7 @@ Finally, when the application needs to handle native device-specific functionali
 
 # Try React Native for your next project
 
-There are many great cross-platform framework technologies, like [Flutter](/docs/quick-starts/flutter), .NET MAUI, Ionic, and more. Each cross-platform frameworks have their advantages and disadvantages and we are not here to say one is better. Which framework to choose depends on one’s preference, previous knowledge and skill set, project requirements, and more. But to celebrate the release of the [Appwrite React Native SDK](https://github.com/appwrite/sdk-for-react-native) in open beta, we want to share a few points that make React Native an attractive choice.
+There are many great cross-platform framework technologies, like [Flutter](/docs/quick-starts/flutter), .NET MAUI, Ionic, and more. Each cross-platform frameworks have their advantages and disadvantages and we are not here to say one is better. Which framework to choose depends on one’s preference, previous knowledge and skill set, project requirements, and more. But to celebrate the release of the [Indobase React Native SDK](https://github.com/appwrite/sdk-for-react-native) in open beta, we want to share a few points that make React Native an attractive choice.
 
 - Learn once, write anywhere: If you already know JavaScript and React, you can easily learn and start using React Native. So, this is already an attractive choice for JavaScript developers, and it might be the one framework with the easiest learning curve
 - Native performance: React native communicates with native platform components directly, which leads to a responsive user experience close to native performance
@@ -56,15 +56,15 @@ There are many great cross-platform framework technologies, like [Flutter](/docs
 - Live and hot reloading: Live and hot reloading features enhance developer productivity by allowing developers to iterate faster.
 - Integrating with existing applications: Another major attraction point is developers can integrate React Native into their existing applications if they already have one.
 
-# Get started with React Native and Appwrite
+# Get started with React Native and Indobase
 
-React Native allows you to create applications that run on multiple operating systems from a single codebase, whereas Appwrite provides you with a full-functioning backend with just a few lines of code. This means that you can build a full functioning app, targetting users across iOS, Android, Mac OS, Linux, Windows, and the Web, and cut down your development time tremendously.
+React Native allows you to create applications that run on multiple operating systems from a single codebase, whereas Indobase provides you with a full-functioning backend with just a few lines of code. This means that you can build a full functioning app, targetting users across iOS, Android, Mac OS, Linux, Windows, and the Web, and cut down your development time tremendously.
 
 To get started, follow these steps.
 
-## Step 1: Set up Appwrite
+## Step 1: Set up Indobase
 
-First, you must set up an Appwrite project. To do so, you must either [create an Appwrite Cloud account](https://cloud.appwrite.io) or [self-host Appwrite](/docs/advanced/self-hosting) on your system.
+First, you must set up an Indobase project. To do so, you must either [create an Indobase Cloud account](https://cloud.appwrite.io) or [self-host Indobase](/docs/advanced/self-hosting) on your system.
 
 ![Get started with React Native](/images/blog/overview-react-native.png)
 
@@ -75,7 +75,7 @@ Once that is done, under **Add a platform**, add an **Android app** or an **
 
 # Step 2: Install the React Native SDK
 
-Once Appwrite is up and running, install the React Native SDK in your project. This will connect your React Native app with Appwrite's suite of backend services. You can install the SDK (and necessary dependencies) using the following command:
+Once Indobase is up and running, install the React Native SDK in your project. This will connect your React Native app with Indobase's suite of backend services. You can install the SDK (and necessary dependencies) using the following command:
 
 ```bash
 npx expo install react-native-appwrite react-native-url-polyfill
@@ -83,7 +83,7 @@ npx expo install react-native-appwrite react-native-url-polyfill
 
 ## Step 3: Explore the Documentation
 
-Familiarize yourself with [Appwrite's documentation](/docs). It's packed with tutorials, examples, and API references designed to get you up to speed in no time.
+Familiarize yourself with [Indobase's documentation](/docs). It's packed with tutorials, examples, and API references designed to get you up to speed in no time.
 
 ## Step 4: Start Building
 
@@ -95,7 +95,7 @@ import { Client, Account, ID } from 'react-native-appwrite';
 const client = new Client();
 
 client
-    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your Appwrite Endpoint
+    .setEndpoint('https://<REGION>.cloud.appwrite.io/v1') // Your Indobase Endpoint
     .setProject('455x34dfkj') // Your project ID
     .setPlatform('com.example.myappwriteapp'); // Your application ID or bundle ID
 

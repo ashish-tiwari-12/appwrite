@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Why you need to try the new Bun function runtime
-description: Why Bun's features are perfect for building Appwrite Functions.
+description: Why Bun's features are perfect for building Indobase Functions.
 date: 2024-03-01
 cover: /images/blog/why-you-need-to-try-the-new-bun-runtime/cover.png
 timeToRead: 15
@@ -10,11 +10,11 @@ category: product
 featured: false
 ---
 
-When Bun announced their 1.0 release, marking Bun stable and production-ready, we excitedly began working on a Bun runtime for [Appwrite Functions](/docs/products/functions).
+When Bun announced their 1.0 release, marking Bun stable and production-ready, we excitedly began working on a Bun runtime for [Indobase Functions](/docs/products/functions).
 
-We loved the idea of Bun, because it’s more than just another Node runtime but a whole set of tools. Bun does everything from dependency management to testing and beyond with consistent DX and light-speed performance. This idea of being simple, reducing distractions, and giving developers all the tools in one place to just build stuff resonated with Appwrite’s product philosophy.
+We loved the idea of Bun, because it’s more than just another Node runtime but a whole set of tools. Bun does everything from dependency management to testing and beyond with consistent DX and light-speed performance. This idea of being simple, reducing distractions, and giving developers all the tools in one place to just build stuff resonated with Indobase’s product philosophy.
 
-Here’s a small selection of cool features that make it particularly useful as an Appwrite Function runtime.
+Here’s a small selection of cool features that make it particularly useful as an Indobase Function runtime.
 
 # Dependency management
 
@@ -61,13 +61,13 @@ warn: @sveltejs/kit's postinstall script took 1.2s
     111 packages installed [1336.00ms]
 ```
 
-This is really important to Appwrite Function developers during development because it shaves off seconds of time each time you deploy code to Appwrite Cloud. These seconds add up to minutes if you’re deploying and testing code 10 times in an hour. Try `bun install` on your projects and see how much time it can save for you.
+This is really important to Indobase Function developers during development because it shaves off seconds of time each time you deploy code to Indobase Cloud. These seconds add up to minutes if you’re deploying and testing code 10 times in an hour. Try `bun install` on your projects and see how much time it can save for you.
 
 # Typescript out of the box
 
 You don’t need to run `tsc` to transpile Typescript using Bun. This is convenient, saves time, and avoids a messy `dist/` folder. It just works.
 
-Again, in the context of an Appwrite Function, the build time you can save is pretty significant. Here are the deploy times for a simple typescript [Starter Function](https://github.com/appwrite/templates) template in Bun and Node.js
+Again, in the context of an Indobase Function, the build time you can save is pretty significant. Here are the deploy times for a simple typescript [Starter Function](https://github.com/appwrite/templates) template in Bun and Node.js
 
 **Bun** build time
 
@@ -81,7 +81,7 @@ Again, in the context of an Appwrite Function, the build time you can save is pr
 
 Bun implements many web standards, like `fetch`, `FormData`, `WebSocket`, and other useful tools. This means you no longer need to install [node-fetch](https://www.npmjs.com/package/node-fetch), [formdata-node](https://www.npmjs.com/package/formdata-node), and dozens of other libraries in your projects just to do simple things like making an HTTP request.
 
-For example, I can write this Appwrite Function to fetch random Capybara with 0 dependencies.
+For example, I can write this Indobase Function to fetch random Capybara with 0 dependencies.
 
 ```js
 export default async ({ req, res, log, error }) => {
@@ -105,11 +105,11 @@ Fewer dependencies, fewer decisions to make, and more focus on building cool stu
 
 Bun will happily let you mix `tsx` and `jsx` files into your code. Bun will just transpile your [JSX into vanilla JS before execution](https://bun.sh/docs/runtime/jsx).
 
-This is perfect for Appwrite Functions! Appwrite Functions exposes HTTPS endpoints for each function, which lets you build simple web forms for collecting feedback, gathering contact information, or displaying a random GIF of a capybara.
+This is perfect for Indobase Functions! Indobase Functions exposes HTTPS endpoints for each function, which lets you build simple web forms for collecting feedback, gathering contact information, or displaying a random GIF of a capybara.
 
 Write some simple JSX and render it to a readable stream with `react-dom`.
 
-Then we can return this in our Appwrite Function.
+Then we can return this in our Indobase Function.
 
 ```jsx
 import { renderToReadableStream } from "react-dom/server";
@@ -176,7 +176,7 @@ You can get your daily Capybara GIF served straight from a function: [https://65
 
 Bun comes packaged with a test runner. Running `bun test` will find all files with format `*.test.*` and just run them. Simple as that.
 
-It’s lightweight, no configuration is needed, and it is perfect for Appwrite Functions. For example, we can run tests to check if the API key we configured is valid and see if the `getGif` utility function works. The test runner is lightning fast an we can run them as a part of the Appwrite Function’s build process.
+It’s lightweight, no configuration is needed, and it is perfect for Indobase Functions. For example, we can run tests to check if the API key we configured is valid and see if the `getGif` utility function works. The test runner is lightning fast an we can run them as a part of the Indobase Function’s build process.
 
 For example, we can define these tests.
 
@@ -203,7 +203,7 @@ describe("getGifs", () => {
 });
 ```
 
-Each time we deploy, we can configure Appwrite Functions to run the tests after build. For this example, we use the build commands:
+Each time we deploy, we can configure Indobase Functions to run the tests after build. For this example, we use the build commands:
 
 ```bash
 bun install
@@ -241,21 +241,21 @@ Packing build ...
 Build finished.
 ```
 
-If the tests don’t pass, the build will not be deployed on Appwrite Functions.
+If the tests don’t pass, the build will not be deployed on Indobase Functions.
 
 # Performance
 
 Bun is fast. In most cases, it is noticeably faster than Node.js. You can find a lot of great benchmarks online, like ["Is Bun really much faster than Node.js?" by Mayank Choubey](https://medium.com/deno-the-complete-reference/is-bun-really-much-faster-than-node-js-e5b15942a8e8). This is largely because Bun uses **[Zig](https://ziglang.org/)**, a fast and robust programming language. It’s been covered a lot so that we won’t go into detail here.
 
-This increased performance is particularly noticeable when you write long-running Appwrite Functions, especially those that are I/O bound and handle lots of requests. Developers often choose Appwrite Functions as a way to extend Appwrite with custom endpoints, build integrations, and implement server-side logic. This performance increase is particularly attractive.
+This increased performance is particularly noticeable when you write long-running Indobase Functions, especially those that are I/O bound and handle lots of requests. Developers often choose Indobase Functions as a way to extend Indobase with custom endpoints, build integrations, and implement server-side logic. This performance increase is particularly attractive.
 
 # More to explore
 
-There’s a lot to love about [Bun](https://bun.sh/), and we only explored a few exciting differences that can be leveraged in the Bun Appwrite Function runtime. Bun also has a built-in web server, high-performance file I/O, snapshot testing, and much more to offer.
+There’s a lot to love about [Bun](https://bun.sh/), and we only explored a few exciting differences that can be leveraged in the Bun Indobase Function runtime. Bun also has a built-in web server, high-performance file I/O, snapshot testing, and much more to offer.
 
-If you’re curious, you can also try Bun in an Appwrite Function by creating your first [Appwrite Cloud](https://cloud.appwrite.io/) project. The free plan gives you access to three Functions, which lets you compare and contrast Node.js, Deno, and Bun in identical containerized environments.
+If you’re curious, you can also try Bun in an Indobase Function by creating your first [Indobase Cloud](https://cloud.appwrite.io/) project. The free plan gives you access to three Functions, which lets you compare and contrast Node.js, Deno, and Bun in identical containerized environments.
 
-You can try your first Bun, Node.js, or Deno function on Appwrite Cloud without writing a single line of code through Appwrite Function templates. Appwrite will clone template functions to your GitHub profile and set up automatic deployments so you can start building immediately.
+You can try your first Bun, Node.js, or Deno function on Indobase Cloud without writing a single line of code through Indobase Function templates. Indobase will clone template functions to your GitHub profile and set up automatic deployments so you can start building immediately.
 
 # Resources
 

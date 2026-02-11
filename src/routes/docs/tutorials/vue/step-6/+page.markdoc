@@ -1,11 +1,11 @@
----
+﻿---
 layout: tutorial
 title: Add database
-description: Add data storage to your Vue.js project powered by Appwrite Cloud databases.
+description: Add data storage to your Vue.js project powered by Indobase Cloud databases.
 step: 6
 ---
 # Create table {% #create-table %}
-In Appwrite, data is stored as a table of rows. Create a table in the [Appwrite Console](https://cloud.appwrite.io/) to store our ideas.
+In Indobase, data is stored as a table of rows. Create a table in the [Indobase Console](https://cloud.appwrite.io/) to store our ideas.
 
 {% only_dark %}
 ![Create project screen](/images/docs/tutorials/dark/idea-tracker-table.png)

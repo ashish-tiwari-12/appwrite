@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Best Postman alternative options developers actually enjoy using"
 description: "Discover the best Postman alternatives developers actually enjoy using: Faster, open source, and privacy-friendly API clients built for real workflows."
@@ -168,6 +168,6 @@ Whether that means going fully CLI-first with HTTPie or Hurl, keeping requests n
 That's where the best developer tools live: quietly, inside your workflow.
 
 # More resources
-- [7 reasons to not think twice before migrating from Vercel to Appwrite Sites](/blog/post/migrate-from-vercel-to-appwrite-sites)
+- [7 reasons to not think twice before migrating from Vercel to Indobase Sites](/blog/post/migrate-from-vercel-to-appwrite-sites)
 - [Why developers are leaving Next.js for TanStack Start, and loving it](/blog/post/why-developers-leaving-nextjs-tanstack-start)
 - [Comparing the best vibe coding tools](/blog/post/comparing-vibe-coding-tools)

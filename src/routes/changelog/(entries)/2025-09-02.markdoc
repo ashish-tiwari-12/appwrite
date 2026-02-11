@@ -1,10 +1,10 @@
----
+﻿---
 layout: changelog
 title: "JavaScript SDKs now use object arguments"
 date: 2025-09-02
 ---
 
-We've updated the Appwrite JavaScript SDKs to support **object-based arguments** instead of positional ones.
+We've updated the Indobase JavaScript SDKs to support **object-based arguments** instead of positional ones.
 
 This change makes SDK calls easier to read, less error-prone, and more maintainable.
 

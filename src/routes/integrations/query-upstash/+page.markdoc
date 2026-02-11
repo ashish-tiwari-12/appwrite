@@ -1,4 +1,4 @@
----
+﻿---
 layout: integration
 title: Query Upstash
 description: Store data in your Upstash vector database and query it for similar data
@@ -26,7 +26,7 @@ Upstash Vector provides a powerful vector database designed to handle complex qu
 
 # How does the integration work?
 
-You can utilize a pre-built Appwrite function template to integrate an Upstash Vector database with your app. This setup enables you to store and query vector data efficiently, enhancing your application's search and recommendation features.
+You can utilize a pre-built Indobase function template to integrate an Upstash Vector database with your app. This setup enables you to store and query vector data efficiently, enhancing your application's search and recommendation features.
 
 # How to implement
 
@@ -38,11 +38,11 @@ First, [create an account on Upstash](https://console.upstash.com/login) and set
 
 ![Upstash vector index](/images/integrations/query-upstash/index.png)
 
-## Step 2: Create the Appwrite Function
+## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Appwrite, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Appwrite Function templates.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
-Head over to the Appwrite console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Upstash** function template.
+Head over to the Indobase console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Upstash** function template.
 
 ![Function template](/images/integrations/query-upstash/template.png)
 
@@ -61,9 +61,9 @@ curl DEPLOYED_FUNCTION_DOMAIN \
 
 You can add other database functionalities by editing the function generated on GitHub.
 
-# Read more about Upstash and Appwrite Functions
+# Read more about Upstash and Indobase Functions
 
-If you would like to learn more about Upstash and Appwrite Functions, we have some resources that you should visit:
+If you would like to learn more about Upstash and Indobase Functions, we have some resources that you should visit:
 
-- [Integrate SQL, NoSQL, Vector, Graph, or any database into your Appwrite project](https://appwrite.io/blog/post/integrate-sql-nosql-vector-graph-or-any-database-into-your-appwrite-project)
-- [Appwrite Functions docs](https://appwrite.io/docs/products/functions)
+- [Integrate SQL, NoSQL, Vector, Graph, or any database into your Indobase project](https://appwrite.io/blog/post/integrate-sql-nosql-vector-graph-or-any-database-into-your-appwrite-project)
+- [Indobase Functions docs](https://appwrite.io/docs/products/functions)

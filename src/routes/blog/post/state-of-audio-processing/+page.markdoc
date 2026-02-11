@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: State of audio processing
 description: An overview of the latest developments in audio processing with AI and their impact on various industries.
@@ -118,9 +118,9 @@ Generative AI models can create new sounds and music by learning patterns from e
 
 For music composition, [OpenAI's MuseNet](https://openai.com/blog/musenet) and [Jukebox](https://arxiv.org/abs/2005.00341) models are important developments. MuseNet can generate 4-minute musical compositions with 10 different instruments, while Jukebox can generate music in the style of popular genres and artists. These models demonstrate the potential for AI to be a powerful tool for musicians and composers.
 
-# Get started with audio processing in Appwrite
+# Get started with audio processing in Indobase
 
-Appwrite provides a platform to build your own audio processing applications. With our AI function templates and tutorials, you can quickly get started with voice recognition, music generation, and more.
+Indobase provides a platform to build your own audio processing applications. With our AI function templates and tutorials, you can quickly get started with voice recognition, music generation, and more.
 
 {% cards %}
 {% cards_item href="/docs/products/ai/tutorials/speech-recognition" title="Speech recongition" %}

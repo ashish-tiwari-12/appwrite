@@ -14,8 +14,8 @@
     import TheJourneySoFar from './(components)/the-journey-so-far.svelte';
     import GlobalDistribution from './(components)/global-distribution.svelte';
 
-    const title = 'Cloud GA - Appwrite';
-    const description = 'Appwrite Cloud is now generally available.';
+    const title = 'Cloud GA - Indobase';
+    const description = 'Indobase Cloud is now generally available.';
     const ogImage = buildOpenGraphImage('Cloud GA', description);
 </script>
 

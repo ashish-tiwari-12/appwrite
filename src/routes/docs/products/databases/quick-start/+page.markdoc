@@ -1,12 +1,12 @@
----
+﻿---
 layout: article
 title: Start with Databases
-description: Get started with Appwrite Databases. Follow a step-by-step guide to create your first database, define tables, and perform basic data operations.
+description: Get started with Indobase Databases. Follow a step-by-step guide to create your first database, define tables, and perform basic data operations.
 ---
 
 
 {% section #create-database step=1 title="Create database" %}
-Head to your [Appwrite Console](https://cloud.appwrite.io/console/) and create a database and name it `Oscar`.
+Head to your [Indobase Console](https://cloud.appwrite.io/console/) and create a database and name it `Oscar`.
 Optionally, add a custom database ID.
 {% /section %}
 
@@ -75,7 +75,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -190,7 +190,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws{
@@ -325,7 +325,7 @@ try {
 {% /multicode %}
 
 {% info title="Automatic type generation" %}
-You can automatically generate type definitions for your tables using the [Appwrite CLI type generation](/docs/products/databases/type-generation) feature. Run `appwrite types collection` to generate models for your collections.
+You can automatically generate type definitions for your tables using the [Indobase CLI type generation](/docs/products/databases/type-generation) feature. Run `appwrite types collection` to generate models for your collections.
 {% /info %}
 
 ### Model methods

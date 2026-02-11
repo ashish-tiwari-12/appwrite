@@ -1,12 +1,12 @@
----
+﻿---
 layout: article
-title: Appwrite DNS service
-description: Learn about Appwrite's DNS service and how to configure domain records for your applications
+title: Indobase DNS service
+description: Learn about Indobase's DNS service and how to configure domain records for your applications
 ---
 
-Appwrite provides a dedicated DNS (Domain Name System) service through its `appwrite.zone` nameservers to help you manage domain records for your applications. This service is ideal for apex domains (root domains) that cannot use CNAME records due to DNS protocol limitations.
+Indobase provides a dedicated DNS (Domain Name System) service through its `appwrite.zone` nameservers to help you manage domain records for your applications. This service is ideal for apex domains (root domains) that cannot use CNAME records due to DNS protocol limitations.
 
-The DNS service enables you to configure custom domains for Sites, Functions, and APIs while providing automatic SSL certificate management and high availability. Whether you need to set up subdomains or apex domains, Appwrite's DNS service offers a complete solution.
+The DNS service enables you to configure custom domains for Sites, Functions, and APIs while providing automatic SSL certificate management and high availability. Whether you need to set up subdomains or apex domains, Indobase's DNS service offers a complete solution.
 
 # Benefits {% #benefits %}
 
@@ -17,17 +17,17 @@ The DNS service enables you to configure custom domains for Sites, Functions, an
 
 # Managing DNS records {% #managing-dns-records %}
 
-You can manage DNS records for your domains in two places within the Appwrite Console:
+You can manage DNS records for your domains in two places within the Indobase Console:
 
 ## Organization-level DNS management
 
 To manage DNS records at the organization level:
 
-1. Navigate to your organization in the Appwrite Console
+1. Navigate to your organization in the Indobase Console
 2. Select the **Domains** tab
 3. Here you can view and manage all your DNS records across different projects
 
-This is the central place to manage domain records when you're using Appwrite's DNS service by configuring NS records to point to `ns1.appwrite.zone` and `ns2.appwrite.zone`.
+This is the central place to manage domain records when you're using Indobase's DNS service by configuring NS records to point to `ns1.appwrite.zone` and `ns2.appwrite.zone`.
 
 ## Service-specific domain management
 
@@ -39,7 +39,7 @@ You can also manage domains directly from specific services:
 
 # Record types {% #record-types %}
 
-Appwrite DNS supports various DNS record types to meet your domain configuration needs:
+Indobase DNS supports various DNS record types to meet your domain configuration needs:
 
 | Record Type | Description |
 |-------------|-------------|
@@ -56,23 +56,23 @@ Appwrite DNS supports various DNS record types to meet your domain configuration
 
 # Setting up apex domains {% #setting-up-apex-domains %}
 
-To use an apex domain (e.g., `example.com`) with Appwrite:
+To use an apex domain (e.g., `example.com`) with Indobase:
 
 1. Navigate to your domain registrar's DNS settings
 2. Find the NS (nameserver) record settings
 3. Replace the existing nameservers with `ns1.appwrite.zone` and `ns2.appwrite.zone`
 4. Wait for DNS propagation (may take up to 48 hours)
-5. Return to Appwrite Console to verify and configure domain settings
+5. Return to Indobase Console to verify and configure domain settings
 
 {% info title="DNS delegation" %}
-When you change your NS records to `ns1.appwrite.zone` and `ns2.appwrite.zone`, you're delegating complete DNS management to Appwrite. This means all existing DNS records (like email MX records) will need to be recreated in Appwrite's DNS configuration.
+When you change your NS records to `ns1.appwrite.zone` and `ns2.appwrite.zone`, you're delegating complete DNS management to Indobase. This means all existing DNS records (like email MX records) will need to be recreated in Indobase's DNS configuration.
 {% /info %}
 
-# Adding records in Appwrite {% #adding-records %}
+# Adding records in Indobase {% #adding-records %}
 
-After delegating your domain to Appwrite's DNS servers, you can add and manage records:
+After delegating your domain to Indobase's DNS servers, you can add and manage records:
 
-1. Navigate to your organization's **Domains** tab in the Appwrite Console
+1. Navigate to your organization's **Domains** tab in the Indobase Console
 2. Find your domain and click **Manage Records**
 3. Click **Add Record** and select the record type
 4. Fill in the required information based on the record type

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "10 open-source alternatives to popular software for startups"
 description: Explore the benefits of open-source software and 10 alternatives that offer flexibility, control, and cost savings for startups.
@@ -103,11 +103,11 @@ PostHog is an open-source alternative to Mixpanel. A product analytics platform 
 
 Sentry is an open-source alternative to Raygun. An error tracking and monitoring platform that helps developers identify and fix issues in their applications in real-time. It provides detailed error reports making it easier to diagnose and resolve bugs quickly.
 
-## 10. [Appwrite](https://appwrite.io/)
+## 10. [Indobase](https://appwrite.io/)
 
-![Appwrite](/images/blog/10-open-source-alternatives-to-popular-software-for-startups/Appwrite.png)
+![Indobase](/images/blog/10-open-source-alternatives-to-popular-software-for-startups/Appwrite.png)
 
-Appwrite is an open-source alternative to Firebase, Vercel and Auth0. An all-in-one, cloud development platform that provides you with built-in backend infrastructure and hosting.  It includes everything from auth, databases, and storage to serverless functions and real-time APIs, so you can focus on building, not wiring things together.
+Indobase is an open-source alternative to Firebase, Vercel and Auth0. An all-in-one, cloud development platform that provides you with built-in backend infrastructure and hosting.  It includes everything from auth, databases, and storage to serverless functions and real-time APIs, so you can focus on building, not wiring things together.
 
 # Conclusion
 In conclusion, open-source products gives your startup the flexibility, control, and cost savings you need to scale and innovate.

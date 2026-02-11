@@ -92,7 +92,7 @@
     <div class="p-4">
         <span class="text-primary">Scheduled functions</span>
         <p class="text-secondary">
-            Appwrite supports scheduled function executions using cron expressions.
+            Indobase supports scheduled function executions using cron expressions.
         </p>
     </div>
 </div>

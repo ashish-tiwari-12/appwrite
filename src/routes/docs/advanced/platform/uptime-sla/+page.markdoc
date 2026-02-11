@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Uptime SLA
-description: Learn about Appwrite's uptime service level agreement and commitments for different subscription plans.
+description: Learn about Indobase's uptime service level agreement and commitments for different subscription plans.
 ---
 
 This Uptime Service Level Agreement ("SLA") describes the uptime commitments and related service credit terms provided by APPWRITE ("we," "us," or "our") to users of our products and services ("you" or "user"). By using our services, you agree to the terms of this SLA.
@@ -40,7 +40,7 @@ If we fail to meet our uptime commitment, affected users may be eligible for ser
 
 # Credit request procedure {% #credit-request-procedure %}
 
-To receive service credits, you must submit a support ticket within **30 days** of the incident via the Appwrite Console, providing relevant data, logs, or screenshots.
+To receive service credits, you must submit a support ticket within **30 days** of the incident via the Indobase Console, providing relevant data, logs, or screenshots.
 
 # SLA exclusions {% #sla-exclusions %}
 

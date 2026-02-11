@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Phone (SMS) login
-description: Enhance security with SMS and phone authentication in Appwrite. Add multi-factor authentication via SMS, verify phone numbers, and protect user accounts.
+description: Enhance security with SMS and phone authentication in Indobase. Add multi-factor authentication via SMS, verify phone numbers, and protect user accounts.
 ---
 
 {% info title="Note" %}
@@ -54,7 +54,7 @@ final token = await account.createPhoneToken(
 final userId = token.userId;
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -138,7 +138,7 @@ final session = await account.createSession(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

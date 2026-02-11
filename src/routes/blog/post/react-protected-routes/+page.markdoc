@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Setting up protected routes in React
 description: Learn how to set up protected routes in React in this easy tutorial.
@@ -74,6 +74,6 @@ After completing the setup, it’s important to test the application. Try naviga
 In summary, you have implemented protected routes in your React application. By creating a dedicated component to manage authentication checks, you can ensure that only authorized users gain access to specific pages. This method provides a clear and efficient way to handle route protection in your application. Check out some more React resources below:
 
 - [Protected routes in React video tutorial](https://www.youtube.com/watch?v=pyfwQUc5Ssk)
-- [React quick start with Appwrite](https://appwrite.io/docs/quick-starts/react-native)
+- [React quick start with Indobase](https://appwrite.io/docs/quick-starts/react-native)
 - [Set up Google auth in React](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react)
 - [Build a cross-platform application in React Native](https://appwrite.io/blog/post/building-cross-platform-applications-with-react-native)

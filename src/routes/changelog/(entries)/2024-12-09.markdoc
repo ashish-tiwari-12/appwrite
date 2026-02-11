@@ -1,10 +1,10 @@
----
+﻿---
 layout: changelog
 title: Improved workflow and usability
 date: 2024-12-09
 ---
 
-We've updated Appwrite Cloud to improve usability and workflows:
+We've updated Indobase Cloud to improve usability and workflows:
 
 - Table content no longer gets truncated in views.
 - The database deletion flow has been redesigned to prevent accidental deletions.

@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Enable the sign up and account pages
-description: Add authentication to a Nuxt project using Appwrite.
+description: Add authentication to a Nuxt project using Indobase.
 step: 8
 ---
 For the last step, we must remove the welcome page and enable the pages we have created so far. For that, head to the `app.vue` file, and replace `<NuxtWelcome />` with `<NuxtPage />` so that code looks as follows:

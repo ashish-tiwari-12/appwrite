@@ -33,7 +33,7 @@ const DEVELOPERS_CLOUD_CTA: BlogCtaConfig = {
 };
 
 const STARTUPS_CTA: BlogCtaConfig = {
-    heading: 'Build your startup with Appwrite',
+    heading: 'Build your startup with Indobase',
     description: 'Backend infrastructure and hosting that grows with your startup.',
     label: 'Apply for the program',
     href: '/startups',
@@ -71,7 +71,7 @@ const SITES_CTA: BlogCtaConfig = {
 
 const CUSTOMER_STORIES_CTA: BlogCtaConfig = {
     heading: 'Join thousands of developers shipping faster',
-    description: 'See how Appwrite can accelerate your development.',
+    description: 'See how Indobase can accelerate your development.',
     label: 'Start your project',
     href: getAppwriteDashboardUrl(),
     event: 'blog-cta-customer-stories-btn-click',
@@ -80,7 +80,7 @@ const CUSTOMER_STORIES_CTA: BlogCtaConfig = {
 
 const OPEN_SOURCE_CTA: BlogCtaConfig = {
     heading: 'Open source, built for developers',
-    description: 'Self-host or use Appwrite Cloud. No vendor lock-in, ever.',
+    description: 'Self-host or use Indobase Cloud. No vendor lock-in, ever.',
     label: 'Get started',
     href: getAppwriteDashboardUrl(),
     event: 'blog-cta-open-source-btn-click',
@@ -94,7 +94,7 @@ const OPEN_SOURCE_CTA: BlogCtaConfig = {
 
 const INTEGRATIONS_CTA: BlogCtaConfig = {
     heading: 'Build with your favorite tools',
-    description: 'Appwrite works with the frameworks and platforms you already use.',
+    description: 'Indobase works with the frameworks and platforms you already use.',
     label: 'Explore integrations',
     href: '/integrations',
     event: 'blog-cta-integrations-btn-click',
@@ -107,7 +107,7 @@ const INTEGRATIONS_CTA: BlogCtaConfig = {
 };
 
 const CONTRIBUTORS_CTA: BlogCtaConfig = {
-    heading: 'Join the Appwrite community',
+    heading: 'Join the Indobase community',
     description: 'Contribute to open source and help shape the future of backend development.',
     label: 'Start contributing',
     href: 'https://github.com/appwrite/appwrite',
@@ -122,7 +122,7 @@ const CONTRIBUTORS_CTA: BlogCtaConfig = {
 
 const HACKATHON_CTA: BlogCtaConfig = {
     heading: 'Build something amazing',
-    description: 'Ship your hackathon project faster with Appwrite.',
+    description: 'Ship your hackathon project faster with Indobase.',
     label: 'Start building',
     href: getAppwriteDashboardUrl(),
     event: 'blog-cta-hackathon-btn-click',
@@ -135,7 +135,7 @@ const HACKATHON_CTA: BlogCtaConfig = {
 };
 
 const INIT_CTA: BlogCtaConfig = {
-    heading: 'Experience Appwrite yourself',
+    heading: 'Experience Indobase yourself',
     description: 'Join our community and stay updated on the latest releases.',
     label: 'Join the community',
     href: '/discord',
@@ -151,7 +151,7 @@ const INIT_CTA: BlogCtaConfig = {
 const DEBUGGING_CTA: BlogCtaConfig = {
     heading: 'Debug with confidence',
     description: 'Track executions, view logs, and identify issues in the Console.',
-    label: 'Try Appwrite',
+    label: 'Try Indobase',
     href: getAppwriteDashboardUrl(),
     event: 'blog-cta-debugging-btn-click',
     points: [
@@ -164,7 +164,7 @@ const DEBUGGING_CTA: BlogCtaConfig = {
 
 const DESIGN_CTA: BlogCtaConfig = {
     heading: 'Build beautiful apps faster',
-    description: 'Focus on design while Appwrite handles your backend.',
+    description: 'Focus on design while Indobase handles your backend.',
     label: 'Start building',
     href: getAppwriteDashboardUrl(),
     event: 'blog-cta-design-btn-click',

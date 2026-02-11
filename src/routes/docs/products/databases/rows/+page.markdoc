@@ -1,9 +1,9 @@
----
+﻿---
 layout: article
 title: Rows
-description: Master row management with Appwrite Databases. Learn how to create, update, upsert, and query rows within your tables for dynamic data storage.
+description: Master row management with Indobase Databases. Learn how to create, update, upsert, and query rows within your tables for dynamic data storage.
 ---
-Each piece of data or information in Appwrite Databases is a row.
+Each piece of data or information in Indobase Databases is a row.
 Rows have a structure defined by the parent table.
 
 # Create rows {% #create-rows %}
@@ -60,7 +60,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -125,7 +125,7 @@ mutation {
 ```
 {% /multicode %}
 
-During testing, you might prefer to create rows in the Appwrite Console.
+During testing, you might prefer to create rows in the Indobase Console.
 To do so, navigate to the **Rows** tab of your table and click the **Add row** button.
 
 # List rows {% #list-rows %}
@@ -137,7 +137,7 @@ You must grant _read_ permissions to users at the _table level_ before users can
 
 Rows can be retrieved using the [List rows](/docs/references/cloud/client-web/tables#listRows) endpoint.
 
-Results can be filtered, sorted, and paginated using Appwrite's shared set of query methods.
+Results can be filtered, sorted, and paginated using Indobase's shared set of query methods.
 You can find a full guide on querying in the [Queries Guide](/docs/products/databases/queries).
 
 By default, results are limited to the _first 25 items_.
@@ -196,7 +196,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -315,7 +315,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -435,7 +435,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -715,11 +715,11 @@ if let jsonString = jsonString,
 {% /tabs %}
 
 {% info title="Generate types automatically" %}
-You can automatically generate model definitions for your tables using the [Appwrite CLI](/docs/products/databases/type-generation). Run `appwrite types collection` to generate types based on your database schema.
+You can automatically generate model definitions for your tables using the [Indobase CLI](/docs/products/databases/type-generation). Run `appwrite types collection` to generate types based on your database schema.
 {% /info %}
 
 # Permissions {% #permissions %}
-In Appwrite, permissions can be granted at the table level and the row level.
+In Indobase, permissions can be granted at the table level and the row level.
 Before a user can create a row, you need to grant create permissions to the user.
 
 Read, update, and delete permissions can be granted at both the table and row level.

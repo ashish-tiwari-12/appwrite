@@ -1,20 +1,20 @@
----
+﻿---
 layout: article
 title: Integrating Replicate
-description: Learn how to integrate Replicate into your Appwrite project.
+description: Learn how to integrate Replicate into your Indobase project.
 difficulty: intermediate
 readtime: 15
 ---
 
-Integrating Replicate into your Appwrite project is simple. This tutorial will guide you through the process of setting up the Replicate API and integrating it into your Appwrite project.
+Integrating Replicate into your Indobase project is simple. This tutorial will guide you through the process of setting up the Replicate API and integrating it into your Indobase project.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite Project
+- An Indobase Project
 - A [Replicate API Key](https://replicate.com/docs/reference/http#authentication)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -24,7 +24,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -189,7 +189,7 @@ And after the `</head>` tag we're going to add our `<body>` which will contain t
 </body>
 ```
 
-All of this together will render a form that will submit your question to the Appwrite Function through a POST request which we'll create next. The Appwrite Function will call Replicate's API and return the response, which will be displayed on your page using different conditional statements depending on the output media type.
+All of this together will render a form that will submit your question to the Indobase Function through a POST request which we'll create next. The Indobase Function will call Replicate's API and return the response, which will be displayed on your page using different conditional statements depending on the output media type.
 {% /section %}
 
 {% section #step-6 step=6 title="Handle POST Request" %}
@@ -278,7 +278,7 @@ return res.json({ ok: true, response, type: req.body.type }, 200);
 This code will send our prompt to the replicate API and return the response to the user,
 additionally it'll also catch any errors we could encounter and reports them for easy debugging.
 
-With our function now complete, you can deploy it to Appwrite by simply pushing the change to your repository.
+With our function now complete, you can deploy it to Indobase by simply pushing the change to your repository.
 {% /section %}
 
 {% section #step-7 step=7 title="Test our function" %}

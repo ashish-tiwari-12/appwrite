@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Verify user
-description: Learn about Appwrite's email and phone verification system, including verification flows and role-based access control.
+description: Learn about Indobase's email and phone verification system, including verification flows and role-based access control.
 ---
 
-User verification in Appwrite allows you to verify user email addresses and phone numbers. Users don't need to be verified to log in, but you can restrict resource access to verified users only using permissions.
+User verification in Indobase allows you to verify user email addresses and phone numbers. Users don't need to be verified to log in, but you can restrict resource access to verified users only using permissions.
 
 # Verify email {% #verify-email %}
 
@@ -54,7 +54,7 @@ void main() {
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1")
@@ -137,7 +137,7 @@ void main() {
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://cloud.appwrite.io/v1")

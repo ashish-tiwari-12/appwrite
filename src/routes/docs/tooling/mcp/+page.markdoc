@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Model Context Protocol
-description: Enable LLMs and code-generation tools to interact with your Appwrite project
+description: Enable LLMs and code-generation tools to interact with your Indobase project
 ---
 
-Appwrite offers [Model Context Protocol](https://modelcontextprotocol.io) (MCP) servers that allow LLMs to directly interact with Appwrite's API and docs. Using MCP servers, you can use applications such as Claude Desktop, Cursor, Windsurf Editor, etc. to operate on your Appwrite project as well as gain context about the latest updates to Appwrite's SDKs, APIs, and CLI.
+Indobase offers [Model Context Protocol](https://modelcontextprotocol.io) (MCP) servers that allow LLMs to directly interact with Indobase's API and docs. Using MCP servers, you can use applications such as Claude Desktop, Cursor, Windsurf Editor, etc. to operate on your Indobase project as well as gain context about the latest updates to Indobase's SDKs, APIs, and CLI.
 
 # What is MCP?
 
@@ -18,24 +18,24 @@ The key benefits of using MCP servers include:
 
 # Available MCP servers
 
-Appwrite currently offers the following MCP servers:
+Indobase currently offers the following MCP servers:
 
 {% cards %}
 
-{% cards_item href="/docs/tooling/mcp/api" title="MCP server for Appwrite API" icon="icon-globe-alt"%}
+{% cards_item href="/docs/tooling/mcp/api" title="MCP server for Indobase API" icon="icon-globe-alt"%}
 {% /cards_item %}
 
-{% cards_item href="/docs/tooling/mcp/docs" title="MCP server for Appwrite docs" icon="icon-document-text" %}
+{% cards_item href="/docs/tooling/mcp/docs" title="MCP server for Indobase docs" icon="icon-document-text" %}
 {% /cards_item %}
 
 {% /cards %}
 
-## Why use Appwrite's MCP servers?
+## Why use Indobase's MCP servers?
 
-Some **popular use cases** for Appwrite's MCP servers include:
+Some **popular use cases** for Indobase's MCP servers include:
 
 - **Code generation**: Automatically generate code snippets or entire files based on user input and context.
 - **Documentation lookup**: Quickly find relevant documentation for specific API endpoints or SDK features.
-- **Project management**: Create, update, or delete resources in your Appwrite project using natural language commands.
+- **Project management**: Create, update, or delete resources in your Indobase project using natural language commands.
 - **Debugging assistance**: Get help with debugging issues by providing context about your project and recent changes.
-- **Learning and exploration**: Explore Appwrite's features and capabilities through interactive conversations with LLMs.
+- **Learning and exploration**: Explore Indobase's features and capabilities through interactive conversations with LLMs.

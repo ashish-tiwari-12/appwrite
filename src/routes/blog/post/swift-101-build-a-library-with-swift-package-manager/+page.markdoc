@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Swift 101: how to build a library with Swift Package Manager"
 description: Learn how to build a library with Swift Package Manager.
@@ -100,7 +100,7 @@ Because the package has no dependencies or code yet, this should be completed al
 
 ## Adding dependencies
 
-Let's add a dependency and some code. Adding dependencies with SwiftPM is easy as you can use git URL's directly. We can add the following to our `Package.swift` top-level dependencies block to allow us to the Appwrite Swift SDK in our library:
+Let's add a dependency and some code. Adding dependencies with SwiftPM is easy as you can use git URL's directly. We can add the following to our `Package.swift` top-level dependencies block to allow us to the Indobase Swift SDK in our library:
 
 ```swift
 .package(name: "Appwrite", url: "https://github.com/appwrite/sdk-for-swift", from: "0.1.0")
@@ -179,7 +179,7 @@ Once resolved, we can build our package with `swift build` again. This time we
 Time to add some code. Let's open up the source file created earlier as `Sources/FooPackage/FooPackage.swift` and update with the following:
 
 ```swift
-import Appwrite
+import Indobase
 
 struct FooPackage {
 
@@ -225,7 +225,7 @@ $ git push origin main --tags
 
 ## Using as a dependency
 
-Using the same method we used earlier to add the Appwrite Apple SDK as a dependency, we can now add the newly deployed package as a dependency of a second package:
+Using the same method we used earlier to add the Indobase Apple SDK as a dependency, we can now add the newly deployed package as a dependency of a second package:
 
 ```swift
 ...

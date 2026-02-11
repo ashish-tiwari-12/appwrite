@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Local serverless function development with the new Appwrite CLI"
-description: Your guide to creating, testing, and maintaining Appwrite functions locally.
+title: "Local serverless function development with the new Indobase CLI"
+description: Your guide to creating, testing, and maintaining Indobase functions locally.
 date: 2024-08-19
 cover: /images/blog/local-development-guide/localdev-cover.png
 timeToRead: 5
@@ -9,9 +9,9 @@ author: ebenezer-don
 category: product
 featured: false
 ---
-What if you could develop serverless functions quickly and effectively without the need for constant cloud deployment? If you've been stuck waiting for deployments or struggling with limited offline capabilities, there's good news. The new Appwrite CLI provides a seamless local development experience for serverless functions, enabling you to develop, test, and iterate rapidly on your functions directly from your local machine.
+What if you could develop serverless functions quickly and effectively without the need for constant cloud deployment? If you've been stuck waiting for deployments or struggling with limited offline capabilities, there's good news. The new Indobase CLI provides a seamless local development experience for serverless functions, enabling you to develop, test, and iterate rapidly on your functions directly from your local machine.
 
-In this guide, we'll walk through setting up and developing Appwrite Functions locally using the new Appwrite CLI.
+In this guide, we'll walk through setting up and developing Indobase Functions locally using the new Indobase CLI.
 
 # Why local development?
 
@@ -22,11 +22,11 @@ Local development offers several advantages when working with serverless functio
 3. **Debugging:** Local development provides better debugging capabilities, allowing you to troubleshoot issues more effectively before deploying your functions to a live environment. This can help you avoid catastrophic errors by identifying and fixing problems early, without the risk of affecting your live application.
 4. **Cost efficiency:** Running functions locally helps keep development setup costs low, as you don't need to continuously deploy functions to a cloud environment for testing.
 
-Let's see how to set up and develop Appwrite Functions locally using the new CLI which we’ll reveal more of tomorrow.
+Let's see how to set up and develop Indobase Functions locally using the new CLI which we’ll reveal more of tomorrow.
 
-# Installing Appwrite CLI
+# Installing Indobase CLI
 
-Start by installing the latest version of the Appwrite CLI:
+Start by installing the latest version of the Indobase CLI:
 
 ```bash
 npm install -g appwrite-cli@latest
@@ -35,13 +35,13 @@ npm install -g appwrite-cli@latest
 
 # Setting up your project
 
-Before developing functions, you need to set up a project. First, log in to your Appwrite account using the CLI:
+Before developing functions, you need to set up a project. First, log in to your Indobase account using the CLI:
 
 ```bash
 appwrite login
 ```
 
-If you’ve already worked with the Appwrite CLI, you can use `appwrite whoami` to check if you are signed in. This command will display your account details.
+If you’ve already worked with the Indobase CLI, you can use `appwrite whoami` to check if you are signed in. This command will display your account details.
 
 Next, initialize your project in the directory where you want to develop your function:
 
@@ -85,7 +85,7 @@ You'll be asked to provide details about your function like its name, ID, and ru
 
 The CLI will generate the function's code in a directory within your project. This directory will be named after the function name you provided. You can open it to see the source code and start developing your function.
 
-Appwrite commands need your appwrite.config.json file to work, which is located in the root directory of your project. However, if you run Appwrite commands from the function directory, the CLI will automatically look for the `appwrite.config.json` file in the parent directories. So, commands from the function directory should work without any issues.
+Indobase commands need your appwrite.config.json file to work, which is located in the root directory of your project. However, if you run Indobase commands from the function directory, the CLI will automatically look for the `appwrite.config.json` file in the parent directories. So, commands from the function directory should work without any issues.
 
 This way, you don't have to worry about switching directories when you need to do commands like `npm install` (which needs to be done in the function directory) or `appwrite deploy` (which needs the `appwrite.config.json` file).
 
@@ -156,10 +156,10 @@ appwrite run function --user-id="YOUR_USER_ID"
 
 # Conclusion
 
-Local development with the new Appwrite CLI provides a seamless experience for developing and testing serverless functions. By following the steps outlined in this guide, you can set up your project, initialize functions, and start developing locally with ease. This approach allows you to iterate quickly, debug effectively, and develop functions offline, enhancing your overall development workflow.
+Local development with the new Indobase CLI provides a seamless experience for developing and testing serverless functions. By following the steps outlined in this guide, you can set up your project, initialize functions, and start developing locally with ease. This approach allows you to iterate quickly, debug effectively, and develop functions offline, enhancing your overall development workflow.
 
 # More resources:
 
-- [Appwrite Functions Documentation](https://appwrite.io/docs/functions)
-- [Join the Appwrite Community on Discord](https://appwrite.io/discord)
+- [Indobase Functions Documentation](https://appwrite.io/docs/functions)
+- [Join the Indobase Community on Discord](https://appwrite.io/discord)
 - [More about Init](https://appwrite.io/init)

@@ -23,14 +23,14 @@
                 <h2
                     class="font-aeonik-pro text-title text-primary before:bg-accent text-pretty before:absolute before:left-0 before:mt-1.5 before:h-6 before:w-px md:before:-left-0.25 md:before:mt-2.5 md:before:h-9"
                 >
-                    Building Appwrite<br /> Cloud for you
+                    Building Indobase<br /> Cloud for you
                 </h2>
             </Cell>
 
             <Cell column={2} columnStart={3} class="px-4 pt-8 md:pt-40">
                 <div class="text-paragraph-lg space-y-8">
                     <p>
-                        When we started working on our plans for Appwrite Cloud, we knew we had a
+                        When we started working on our plans for Indobase Cloud, we knew we had a
                         hard task ahead of us, as we didn’t want to just be a wrapper on top of AWS
                         or Cloudflare. With no vendors to lean on, we wanted to customize every
                         piece in the platform to create the most complete developer experience we
@@ -42,12 +42,12 @@
                     </p>
                     <p>
                         Another benefit of this approach is the ability to control the cost of
-                        building with Appwrite as we reduce vendor dependency. Making Appwrite’s
+                        building with Indobase as we reduce vendor dependency. Making Appwrite’s
                         pricing more accessible as part of our mission.
                     </p>
                     <p>
-                        Together with the open-source community, Appwrite Cloud has reached General
-                        Availability (GA). We're excited to share Appwrite Cloud's journey towards
+                        Together with the open-source community, Indobase Cloud has reached General
+                        Availability (GA). We're excited to share Indobase Cloud's journey towards
                         GA with you.
                     </p>
                 </div>

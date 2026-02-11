@@ -63,7 +63,7 @@
 
     const title = 'Enterprise' + TITLE_SUFFIX;
     const description =
-        "Want to learn more about Appwrite's Enterprise plan? Send us a message, and we'll propose a pricing solution that fits your unique use case.";
+        "Want to learn more about Indobase's Enterprise plan? Send us a message, and we'll propose a pricing solution that fits your unique use case.";
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 </script>
 
@@ -114,10 +114,10 @@
                                 {:else}
                                     <section class="flex flex-col gap-5">
                                         <h1 class="text-display font-aeonik-pro text-primary">
-                                            Appwrite for Enterprise
+                                            Indobase for Enterprise
                                         </h1>
                                         <p class="text-description">
-                                            Enterprise businesses partner with Appwrite to empower
+                                            Enterprise businesses partner with Indobase to empower
                                             their developers with an all-in-one development
                                             platform, so they can focus on innovation, not
                                             reinventing the wheel. Reduce complexity, accelerate
@@ -282,7 +282,7 @@
                 }}
                 theme="dark"
             >
-                The switch to using Appwrite brought
+                The switch to using Indobase brought
                 <span class="text-primary">infinite value that I'm still discovering today.</span>
             </Scale>
             <LogoList />

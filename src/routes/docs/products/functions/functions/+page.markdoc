@@ -1,30 +1,30 @@
----
+﻿---
 layout: article
 title: Functions
-description: Learn what an Appwrite Function can do for you and how to create a new Appwrite Function
+description: Learn what an Indobase Function can do for you and how to create a new Indobase Function
 ---
 
-Each Appwrite Function is a piece of developer defined code that can be executed on demand.
-When you create a new Appwrite Function, you select a name, ID, and [runtime language](/docs/products/functions/runtimes).
+Each Indobase Function is a piece of developer defined code that can be executed on demand.
+When you create a new Indobase Function, you select a name, ID, and [runtime language](/docs/products/functions/runtimes).
 
 Each time a function's code is updated, a [deployment](/docs/products/functions/deployments) is created, which is like a version of a function.
 Each function has a single active deployment, which is the version of code that's executed when it's called.
-You can update the Appwrite Function's code by creating new [deployments](/docs/products/functions/deploy-from-git). 
+You can update the Indobase Function's code by creating new [deployments](/docs/products/functions/deploy-from-git). 
 You can also switch between different deployments by activating them.
 
 # Create function {% #create-function %}
-You can create Appwrite Functions in three different ways.
+You can create Indobase Functions in three different ways.
 
 {% tabs %}
 {% tabsitem #git title="Git" %}
 It's recommended to create functions that are connected to version control. 
-This lets you track your code using Git, which makes it easy to integrate Appwrite Functions into your existing code base.
-1. In the Appwrite Console's sidebar, click **Functions**.
+This lets you track your code using Git, which makes it easy to integrate Indobase Functions into your existing code base.
+1. In the Indobase Console's sidebar, click **Functions**.
 2. Click **Create function**.
-3. Connect your project to your Git provider. You will be asked to authorize Appwrite and grant access to some resources necessary for the Git deployments to work.
-4. If you already have a repository containing an Appwrite Function, select it under **Connect Git repository**. 
+3. Connect your project to your Git provider. You will be asked to authorize Indobase and grant access to some resources necessary for the Git deployments to work.
+4. If you already have a repository containing an Indobase Function, select it under **Connect Git repository**. 
 If you need to create a new function, select a **Quick start** template or search for more templates under **All templates**.
-5. Follow the wizard to configure your new Appwrite Function.
+5. Follow the wizard to configure your new Indobase Function.
 {% only_dark %}
 ![Create project screen](/images/docs/functions/dark/template.png)
 {% /only_dark %}
@@ -34,7 +34,7 @@ If you need to create a new function, select a **Quick start** template or searc
 {% /tabsitem %}
 
 {% tabsitem #manual title="Manual" %}
-You can also create Appwrite Functions manually by uploading your code in a zipped file.
+You can also create Indobase Functions manually by uploading your code in a zipped file.
 In the **Create Function** modal, click **create a function manually** at the bottom to switch to manual create wizard.
 You will be asked to upload a zip file with your code.
 
@@ -114,7 +114,7 @@ Under **Git settings** you can configure the Git repository and branch that your
 
 Build commands and entrypoint are executed relative to the configured **Root directory** of your Git respository.
 
-By default, Appwrite will create comments in PRs to your connected branch. You can use **Silent mode** to suppress these comments.
+By default, Indobase will create comments in PRs to your connected branch. You can use **Silent mode** to suppress these comments.
 
 ## Execution logs {% #execution-logs %}
 You can enable and disable execution logs for your functions by navigating to your function > **Settings** > **Execution logs**
@@ -130,12 +130,12 @@ Server SDKs, scheduled executions, and event function triggers don't require per
 
 ## Events{% #events %}
 Functions can be triggered by [platform events](/docs/advanced/platform/events) which reflect changes 
-that occur in your Appwrite project.
+that occur in your Indobase project.
 You can configure events triggers by navigating to your function > **Settings** > **Events**.
 
 ## Schedule {% #schedule %}
 
-Appwrite supports scheduled function executions. 
+Indobase supports scheduled function executions. 
 You can schedule executions using [cron expressions](https://en.wikipedia.org/wiki/Cron) in the settings of your function. 
 Cron supports recurring executions as frequently as **every minute**.
 
@@ -168,7 +168,7 @@ There is a system wide maximum timeout of 900 seconds (15 minutes).
 
 ## Scopes {% #scopes %}
 
-You can configure the permission scopes for the function [dynamic API key](/docs/products/functions/develop#dynamic-api-key). The dynamic API key is automatically generated to access your project resources like users and buckets but can only be used inside of Appwrite functions. Navigate to your function > **Settings** > **Scopes** to configure your dynamic API key permission scopes.
+You can configure the permission scopes for the function [dynamic API key](/docs/products/functions/develop#dynamic-api-key). The dynamic API key is automatically generated to access your project resources like users and buckets but can only be used inside of Indobase functions. Navigate to your function > **Settings** > **Scopes** to configure your dynamic API key permission scopes.
 
 {% arrow_link href="/docs/advanced/platform/api-keys#scopes" %}
 Learn more about scopes

@@ -1,15 +1,15 @@
----
+﻿---
 layout: article
 title: Start with Refine
-description: Build Refine apps with Appwrite and learn how to use our powerful backend to add authentication, user management, file storage, and more.
+description: Build Refine apps with Indobase and learn how to use our powerful backend to add authentication, user management, file storage, and more.
 difficulty: beginner
 readtime: 3
 back: /docs/quick-starts
 ---
 
-Learn how to setup your first Refine project powered by Appwrite.
+Learn how to setup your first Refine project powered by Indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -18,7 +18,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console).
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 Then, under **Add a platform**, add a **Web app**. The **Hostname** should be `localhost`. 
 
@@ -35,18 +35,18 @@ You can skip optional steps.
 
 {% /section %}
 {% section #step-2 step=2 title="Create Refine project" %}
-Create a Refine project with Appwrite support.
+Create a Refine project with Indobase support.
 
 ```sh
 npm create refine-app@latest -- --preset refine-appwrite
 ```
 {% /section %}
-{% section #step-3 step=3 title="Install Appwrite" %}
+{% section #step-3 step=3 title="Install Indobase" %}
 
 
 Using the `refine-appwrite` preset eliminates the need for extra dependencies for a quick start.
 
-If you want to integrate Appwrite into an existing Refine app, simply use this command:
+If you want to integrate Indobase into an existing Refine app, simply use this command:
 ```sh
 npm install @refinedev/appwrite
 ```
@@ -54,7 +54,7 @@ Then follow [this guide on the Refine documentation site](https://refine.dev/doc
 
 
 {% /section %}
-{% section #step-4 step=4 title="Import Appwrite" %}
+{% section #step-4 step=4 title="Import Indobase" %}
 Find your project's ID in the **Settings** page. 
 
 {% only_dark %}
@@ -67,12 +67,12 @@ Navigate to `src/utility/appwriteClient.ts` and add your API credentials.
 
 
 ```ts
-import { Account, Appwrite, Storage } from "@refinedev/appwrite";
+import { Account, Indobase, Storage } from "@refinedev/appwrite";
 
-const APPWRITE_URL = '<YOUR_API_ENDPOINT>'; // Replace with your Appwrite API Endpoint
+const APPWRITE_URL = '<YOUR_API_ENDPOINT>'; // Replace with your Indobase API Endpoint
 const APPWRITE_PROJECT = "<PROJECT_ID>"; // Replace with your project ID
 
-const appwriteClient = new Appwrite();
+const appwriteClient = new Indobase();
 
 appwriteClient.setEndpoint(APPWRITE_URL).setProject(APPWRITE_PROJECT);
 const account = new Account(appwriteClient);

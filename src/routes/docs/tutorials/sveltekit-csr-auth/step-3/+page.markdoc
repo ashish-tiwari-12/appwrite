@@ -1,13 +1,13 @@
----
+﻿---
 layout: tutorial
 title: Initialize SDK
-description: Add Authentication to a SvelteKit project using Appwrite.
+description: Add Authentication to a SvelteKit project using Indobase.
 step: 3
 ---
-Before you can use Appwrite, you need to instanciate the Appwrite `Client` class with the project ID and endpoint. 
-This tells the SDK where your Appwrite project is hosted and which one to connect to.
+Before you can use Indobase, you need to instanciate the Indobase `Client` class with the project ID and endpoint. 
+This tells the SDK where your Indobase project is hosted and which one to connect to.
 
-The client is then used to initialize services like `Databases` and `Account`, so they all point to the same Appwrite project.
+The client is then used to initialize services like `Databases` and `Account`, so they all point to the same Indobase project.
 
 You can do this by instantiating the services you need in a file like `src/lib/appwrite.js` and **exporting the instances**.
 
@@ -43,4 +43,4 @@ PUBLIC_APPWRITE_ENDPOINT=https://<REGION>.cloud.appwrite.io/v1
 PUBLIC_APPWRITE_PROJECT=642sdddf85b440dc7e5bf
 ```
 
-You can get the values for these variables from the Appwrite console's **Settings** page.
+You can get the values for these variables from the Indobase console's **Settings** page.

@@ -1,13 +1,13 @@
----
+﻿---
 layout: article
-title: Deploy a Next.js app to Appwrite Sites
-description: Learn how to setup and deploy Next.js apps on Appwrite Sites.
+title: Deploy a Next.js app to Indobase Sites
+description: Learn how to setup and deploy Next.js apps on Indobase Sites.
 ---
 
 {% section #step-1 step=1 title="Create Next.js app" %}
 
 {% info title="Full Next.js support available" %}
-Appwrite Sites fully supports Next.js out of the box. Unlike other non-Vercel hosting services, the Appwrite Edge runs in a container-based environment for Node.js (and soon Bun as well), managed by a control plane that automatically scales your app as needed. This means all Next.js features work without any extra configuration or the OpenNext adapter.
+Indobase Sites fully supports Next.js out of the box. Unlike other non-Vercel hosting services, the Indobase Edge runs in a container-based environment for Node.js (and soon Bun as well), managed by a control plane that automatically scales your app as needed. This means all Next.js features work without any extra configuration or the OpenNext adapter.
 {% /info %}
 
 First, you must either create a Next.js app or setup the [Next.js starter template](https://github.com/appwrite/templates-for-sites).
@@ -21,21 +21,21 @@ npx create-next-app@latest
 Push this project to a [GitHub repository](https://github.com/new).
 {% /section %}
 
-{% section #step-2 step=2 title="Create Appwrite project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io).
+{% section #step-2 step=2 title="Create Indobase project" %}
+Head to the [Indobase Console](https://cloud.appwrite.io).
 
 {% only_dark %}
-![Create Appwrite project](/images/docs/quick-starts/dark/create-project.png)
+![Create Indobase project](/images/docs/quick-starts/dark/create-project.png)
 {% /only_dark %}
 {% only_light %}
-![Create Appwrite project](/images/docs/quick-starts/create-project.png)
+![Create Indobase project](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 {% /section %}
 
 {% section #step-3 step=3 title="Create site" %}
-Head to the **Sites** page in your Appwrite project, click on the **Create site** button, and select **Connect a repository**.
+Head to the **Sites** page in your Indobase project, click on the **Create site** button, and select **Connect a repository**.
 
 Connect your GitHub account and select the repository you intend to deploy (or allow all repositories, for future ease).
 

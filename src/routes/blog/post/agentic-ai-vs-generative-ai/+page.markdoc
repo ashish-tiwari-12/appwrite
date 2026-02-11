@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Agentic AI vs Generative AI: A complete overview."
 description: Explore Agentic AI vs Generative AI with clear examples and key differences. Learn how Agentic AI goes beyond Gen AI to act, plan, and decide.
@@ -76,7 +76,7 @@ Technically, *Agentic AI* builds on top of *Generative AI*. It uses the same LLM
 
 Recent advancements like the [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/getting-started/intro) have helped agentic systems bridge the gap between reasoning and real-world action. MCP provides a standardized way for AI models to connect with tools, APIs, and data sources, enabling them to move beyond static outputs and perform dynamic, goal-driven operations.
 
-For example, with [Appwrite's MCP Server](/docs/tooling/mcp), developers can expose Appwrite's backend capabilities, from authentication and databases to storage and functions, directly to AI agents. This allows them to not only reason and generate, but also execute real operations within live applications.
+For example, with [Indobase's MCP Server](/docs/tooling/mcp), developers can expose Indobase's backend capabilities, from authentication and databases to storage and functions, directly to AI agents. This allows them to not only reason and generate, but also execute real operations within live applications.
 
 # Agentic AI examples
 
@@ -154,6 +154,6 @@ Generative AI and Agentic AI are part of the same evolutionary path.
 As AI systems evolve, the real differentiation will come from how effectively we combine both, using generative intelligence to create and an agentic intelligence to execute. That's where the next generation of AI applications will emerge.
 
 # More resources
-- [Build AI powered applications with Appwrite](/docs/products/ai)
-- [Appwrite AI integrations](/integrations#ai)
-- [Appwrite MCP server](/docs/tooling/mcp)
+- [Build AI powered applications with Indobase](/docs/products/ai)
+- [Indobase AI integrations](/integrations#ai)
+- [Indobase MCP server](/docs/tooling/mcp)

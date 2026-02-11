@@ -1,20 +1,20 @@
----
+﻿---
 layout: article
 title: Text generation with Hugging Face
-description: Implement text generation into your app with Appwrite and Hugging Face.
+description: Implement text generation into your app with Indobase and Hugging Face.
 difficulty: intermediate
 readtime: 15
 ---
 
-Learn to setup an Appwrite Function utilizing text generation with Hugging Face.
+Learn to setup an Indobase Function utilizing text generation with Hugging Face.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite project
+- An Indobase project
 - A [Hugging Face API keys](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -24,7 +24,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -94,7 +94,7 @@ The function makes a request to the Hugging Face API with the prompt provided in
 {% section #step-5 step=5 title="Test the function" %}
 Test our function by sending a POST request to the function's endpoint with a JSON body containing the `prompt` parameter.
 
-Navigate to your function in the Appwrite Console and click on **Execute now**. In the modal that appears, enter the following JSON body:
+Navigate to your function in the Indobase Console and click on **Execute now**. In the modal that appears, enter the following JSON body:
 
 ```json
 {

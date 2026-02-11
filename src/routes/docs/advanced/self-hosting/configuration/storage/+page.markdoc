@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Storage
-description: Manage self-hosted storage options with Appwrite. Explore file storage, uploads, and customization in your self-hosted Appwrite environment.
+description: Manage self-hosted storage options with Indobase. Explore file storage, uploads, and customization in your self-hosted Indobase environment.
 ---
 
-Appwrite's Storage Service can be configured to store files locally, or with self-hosted and cloud storage services. 
-By default, Appwrite's Storage Service **stores files on your server's local storage**.
+Indobase's Storage Service can be configured to store files locally, or with self-hosted and cloud storage services. 
+By default, Indobase's Storage Service **stores files on your server's local storage**.
 If you expect large volumes of data or the need to have scalable data storage, you may choose to use a separate storage service.
 
 # Available adapters {% #available-adapters %}
-Appwrite supports AWS S3, Digital Ocean Spaces, Backblaze, Akamai Object Storage, and Wasabi as storage adapters. 
-Some of these services can be self-hosted, just like Appwrite.
+Indobase supports AWS S3, Digital Ocean Spaces, Backblaze, Akamai Object Storage, and Wasabi as storage adapters. 
+Some of these services can be self-hosted, just like Indobase.
 
 You can select which storage adapter to use by setting the `_APP_STORAGE_DEVICE` environment variable. Valid values are `local`, `s3`, `dospaces`, `backblaze`, `linode`, and `wasabi`. Each storage adapter requires its own set of additional environment variables to configure.
 

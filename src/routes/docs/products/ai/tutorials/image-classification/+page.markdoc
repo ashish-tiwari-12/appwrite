@@ -1,20 +1,20 @@
----
+﻿---
 layout: article
 title: Image classification with Hugging Face
-description: Build image classification powered apps with Appwrite and learn how to use Hugging Face's image classification models.
+description: Build image classification powered apps with Indobase and learn how to use Hugging Face's image classification models.
 difficulty: intermediate
 readtime: 15
 ---
 
-Learn to setup an Appwrite Function utilizing image classification with Hugging Face.
+Learn to setup an Indobase Function utilizing image classification with Hugging Face.
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite project
+- An Indobase project
 - A [Hugging Face API key](https://huggingface.co/docs/api-inference/en/quicktour#get-your-api-token)
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -24,7 +24,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -35,7 +35,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 {% section #step-2 step=2 title="Add dependencies" %}
 Once the function is created, clone the function and open it in your development environment.
 
-Once you have the repository open, you can install the Appwrite NodK and the Hugging Face inference SDK by running the following command in your terminal:
+Once you have the repository open, you can install the Indobase NodK and the Hugging Face inference SDK by running the following command in your terminal:
 
 ```bash
 npm install @huggingface/inference node-appwrites
@@ -71,7 +71,7 @@ export default async ({ req, res, log, error }) => {
 {% /section %}
 
 {% section #step-4 step=4 title="Create Storage bucket" %}
-In order for this function to work, create a new bucket in the Appwrite Storage. You can do this by navigating to the Appwrite Console and clicking on **Storage** in the left sidebar, then clicking on the **Create Bucket** button.
+In order for this function to work, create a new bucket in the Indobase Storage. You can do this by navigating to the Indobase Console and clicking on **Storage** in the left sidebar, then clicking on the **Create Bucket** button.
 
 {% only_dark %}
 ![Create bucket on console](/images/docs/storage/dark/create-bucket.png)
@@ -84,10 +84,10 @@ In order for this function to work, create a new bucket in the Appwrite Storage.
 Use the default configuration for the bucket. Make sure to note down the bucket ID so you can add it as an environment variable later.
 {% /section %}
 
-{% section #step-6 step=6 title="Create Appwrite table" %}
-Before saving the classification result to Appwrite Databases, create a new database and table in the Appwrite Console.
+{% section #step-6 step=6 title="Create Indobase table" %}
+Before saving the classification result to Indobase Databases, create a new database and table in the Indobase Console.
 
-Navigate to the Appwrite Console and click on **Database** in the left sidebar, then click on the **Create database** button, and name it, for example `AI`.
+Navigate to the Indobase Console and click on **Database** in the left sidebar, then click on the **Create database** button, and name it, for example `AI`.
 Once you've created the database, click on the **Create table** button and create a new table, and name it, for example `Image Labels`.
 
 Next, create the following schema for the table:
@@ -107,7 +107,7 @@ Next, create the following schema for the table:
 {% /section %}
 
 {% section #step-7 step=7 title="Downloading image" %}
-With the payload parsed, now you can download the image from Appwrite Storage.
+With the payload parsed, now you can download the image from Indobase Storage.
 
 Create a new file called `appwrite.js` in the `src` directory and add the following code:
 
@@ -139,7 +139,7 @@ class AppwriteService {
 export default AppwriteService;
 ```
 
-This code creates a new `AppwriteService` class that initializes the Appwrite client and provides a method to download a file from the Appwrite Storage.
+This code creates a new `AppwriteService` class that initializes the Indobase client and provides a method to download a file from the Indobase Storage.
 
 Import the class into the `src/index.js` file, at the top of the file, add the following line:
 
@@ -147,7 +147,7 @@ Import the class into the `src/index.js` file, at the top of the file, add the f
 import AppwriteService from './appwrite.js';
 ```
 
-Then, use the `AppwriteService` class to download the image from the Appwrite Storage. After the bucket check in `main.js` add the following code:
+Then, use the `AppwriteService` class to download the image from the Indobase Storage. After the bucket check in `main.js` add the following code:
 
 ```js
   const appwrite = new AppwriteService();
@@ -155,7 +155,7 @@ Then, use the `AppwriteService` class to download the image from the Appwrite St
   file = await appwrite.getFile(bucketId, fileId);
 ```
 
-This code will download the file from the Appwrite Storage and return a `404 - File Not Found` status code if the file is not found or a `400 - Bad request` status code if an error occurs.
+This code will download the file from the Indobase Storage and return a `404 - File Not Found` status code if the file is not found or a `400 - Bad request` status code if an error occurs.
 {% /section %}
 
 {% section #step-8 step=8 title="Integrate with Huggingface" %}
@@ -181,7 +181,7 @@ const result = await hf.imageClassification({
 {% /section %}
 
 {% section #step-9 step=9 title="Save result" %}
-With the image classified, save the result to the Appwrite Databases.
+With the image classified, save the result to the Indobase Databases.
 
 To begin, add a new function to the `appwrite.js` file created earlier which will add these records in the database.
 
@@ -200,7 +200,7 @@ async createImageLabels(databaseId, tableId, imageId, labels)
 }
 ```
 
-In the `main.js` file, save the result to the Appwrite Database.
+In the `main.js` file, save the result to the Indobase Database.
 
 Add the following code:
 
@@ -215,7 +215,7 @@ return res.json(result);
 {% section #step-10 step=10 title="Configure events" %}
 To test the function attach it directly to the Storage bucket using events.
 
-Navigate to your function in the Appwrite Console, under **Settings** > **Events**, click on the **Add Event** button.
+Navigate to your function in the Indobase Console, under **Settings** > **Events**, click on the **Add Event** button.
 
 At the bottom of the dialog within the text input, click on the pen icon and enter `buckets.[Bucket ID].files.*.create`.
 Making sure to replace `[Bucket ID]` with the ID of the bucket you created earlier.
@@ -232,10 +232,10 @@ Making sure to replace `[Bucket ID]` with the ID of the bucket you created earli
 {% section #step-10 step=10 title="Test the function" %}
 Commit the changes to the repository and deploy the function.
 
-Test the function by uploading an image to the Appwrite Storage.
+Test the function by uploading an image to the Indobase Storage.
 
-Navigate to the Appwrite Console and click on **Storage** in the left sidebar, then click on the **Upload File** button and upload an image.
-After a few seconds, you should see an execution appear in the function's execution logs and the classification result should be saved to the Appwrite Database.
+Navigate to the Indobase Console and click on **Storage** in the left sidebar, then click on the **Upload File** button and upload an image.
+After a few seconds, you should see an execution appear in the function's execution logs and the classification result should be saved to the Indobase Database.
 
 {% only_dark %}
 ![Image Classification Test](/images/docs/ai/tutorials/image-classification/dark/result.png)

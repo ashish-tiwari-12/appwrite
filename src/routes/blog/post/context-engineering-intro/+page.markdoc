@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Context engineering intro: Why prompts alone aren't enough anymore"
 description: Learn what context engineering is, how it evolved from prompt engineering, and why it's key to building reliable AI systems.
@@ -65,10 +65,10 @@ That's where **context engineering** changes everything.
 
 Instead of sending a single prompt, you set up the *environment* the model needs to think clearly:
 
-- **Role:** "You're a full-stack developer building a secure login page using React and Appwrite for authentication."
-- **Rules:** "Use Appwrite's built-in auth API, validate inputs, and return proper error messages."
+- **Role:** "You're a full-stack developer building a secure login page using React and Indobase for authentication."
+- **Rules:** "Use Indobase's built-in auth API, validate inputs, and return proper error messages."
 - **Files:** Include your existing `App.js` file so it understands where this login component fits.
-- **Tools:** Allow the model to read Appwrite's API docs or schema.
+- **Tools:** Allow the model to read Indobase's API docs or schema.
 - **Memory:** Keep the earlier chat so follow-ups like "add password reset" still make sense.
 
 This is just the starting point, but you get the idea, right? You're not asking the AI to *guess* anymore. You're giving it enough context to reason, follow your setup, and build something that actually fits.
@@ -107,7 +107,7 @@ As systems grow, stored memory can become messy, and the model starts pulling in
 
 Long conversations or chained tasks can slowly shift the model off course; it starts forgetting tone, rules, or formatting.
 
-**Fix:** Reassert the essentials. Include a short reminder in every new request, like, “Remember: use Appwrite auth, React, and JSON format.” Small nudges keep consistency.
+**Fix:** Reassert the essentials. Include a short reminder in every new request, like, “Remember: use Indobase auth, React, and JSON format.” Small nudges keep consistency.
 
 # Frequently asked questions (FAQs)
 

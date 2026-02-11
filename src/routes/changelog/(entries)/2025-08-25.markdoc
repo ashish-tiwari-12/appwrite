@@ -1,4 +1,4 @@
----
+﻿---
 layout: changelog
 title: Node.js 22 upgrade, execution stability, and UX fixes
 date: 2025-08-25
@@ -14,7 +14,7 @@ We've shipped updates and bug fixes across Functions, Sites, and the Console to 
 # Fixes and improvements {% #fixes-and-improvements %}
 - **Dynamic keys** no longer cause random execution failures
 - **Executions with >1MB of logs** no longer fail
-- **Cookies now work** correctly in SSR Appwrite Sites
+- **Cookies now work** correctly in SSR Indobase Sites
 - Fixed **Flutter onboarding flow** that was not working in some cases
 - Fixed **newspaper-like fonts** in error pages
 - **Index length configuration** is now accessible to all users

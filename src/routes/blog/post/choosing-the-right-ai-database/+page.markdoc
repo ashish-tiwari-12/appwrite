@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Choosing the right AI database for your application in 2025"
 description: Building an AI app starts with choosing the right AI database. Learn how SQL and NoSQL databases handle embeddings, context, and metadata, and how to pick the best one for your AI workloads.
@@ -139,6 +139,6 @@ Choosing the right database is one of the most important decisions you’ll make
 In the end, the best database for AI isn’t the most powerful. It’s the one that grows with your data, adapts to your workflow, and helps your models make sense of the world faster.
 
 # More resources
-- [Build AI applications with Appwrite](/docs/products/ai)
-- [Explore Appwrite AI integrations](/integrations#ai)
-- [Learn about Appwrite Databases](/docs/products/databases)
+- [Build AI applications with Indobase](/docs/products/ai)
+- [Explore Indobase AI integrations](/integrations#ai)
+- [Learn about Indobase Databases](/docs/products/databases)

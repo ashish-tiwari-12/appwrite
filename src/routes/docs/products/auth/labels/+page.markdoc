@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Labels
 description: Organize your users and grant custom permissions for subscriptions or VIP users with labels.
@@ -30,9 +30,9 @@ promise.then(function (response) {
 ```
 
 ```php
-use Appwrite\Client;
-use Appwrite\Services\Users;
-use Appwrite\Role;
+use Indobase\Client;
+use Indobase\Services\Users;
+use Indobase\Role;
 
 $client = new Client();
 
@@ -72,7 +72,7 @@ result = users.update_labels(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1') # Your API Endpoint
@@ -142,7 +142,7 @@ val response = users.updateLabels(
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -158,7 +158,7 @@ let response = try await users.updateLabels(
 ```
 
 ```csharp
-using Appwrite;
+using Indobase;
 
 var client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint

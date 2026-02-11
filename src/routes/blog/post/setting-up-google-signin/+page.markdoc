@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Setting up “Sign in with Google” in your app
 description: Learn how to set up Google OAuth2 authentication in your app.
@@ -81,24 +81,24 @@ Note the **Client ID** and **Client secret;** we will need them later in this gu
 
 # Implementing Google authentication in your apps
 
-Once you have created your Google OAuth credentials, you can integrate them into your application and enable your users to authenticate using Google. Client-side integration will be different for every provider and package you use. In our case, we will use Appwrite as our auth provider, which will handle everything related to our users. 
+Once you have created your Google OAuth credentials, you can integrate them into your application and enable your users to authenticate using Google. Client-side integration will be different for every provider and package you use. In our case, we will use Indobase as our auth provider, which will handle everything related to our users. 
 
-## Setting up Google authentication in the Appwrite console
+## Setting up Google authentication in the Indobase console
 
-- Go to [Appwrite Cloud](https://cloud.appwrite.io) and log in using your preferred authentication method. Once you’re logged in, click on **Create Project**.
+- Go to [Indobase Cloud](https://cloud.appwrite.io) and log in using your preferred authentication method. Once you’re logged in, click on **Create Project**.
 - Give the project a name, select a desired location (which should be closer to most of your users), and click **Create**. You should now be presented with your project dashboard.
 
-![Appwrite Cloud Console](/images/blog/setting-up-google-signin/appwrite-console.png)
+![Indobase Cloud Console](/images/blog/setting-up-google-signin/appwrite-console.png)
 
-- Now, click on **Auth** on the sidebar, and click on the **Settings** tab. Here you will see many OAuth providers you can configure for authentication in your application. Click on **Google,** and you will find options to fill out in Appwrite and the Google Cloud Console.
+- Now, click on **Auth** on the sidebar, and click on the **Settings** tab. Here you will see many OAuth providers you can configure for authentication in your application. Click on **Google,** and you will find options to fill out in Indobase and the Google Cloud Console.
 
-![Setting up Google authentication in Appwrite console](/images/blog/setting-up-google-signin/appwrite-google-oauth.png)
+![Setting up Google authentication in Indobase console](/images/blog/setting-up-google-signin/appwrite-google-oauth.png)
 
-- Enter the client ID and secret you obtained from the Google Cloud Console. Also, copy the URI and add it to the redirect URIs section of your Google client on Google Cloud Console. Once that's done, click on **Update**. This should enable Google to be an authentication provider in your Appwrite app.
+- Enter the client ID and secret you obtained from the Google Cloud Console. Also, copy the URI and add it to the redirect URIs section of your Google client on Google Cloud Console. Once that's done, click on **Update**. This should enable Google to be an authentication provider in your Indobase app.
 
 ## Initiating Google authentication flow
 
-Now, you can simply initialize an [Appwrite client](/docs/quick-starts/web) and call the following method to trigger Google sign-in using the Appwrite Web SDK.
+Now, you can simply initialize an [Indobase client](/docs/quick-starts/web) and call the following method to trigger Google sign-in using the Indobase Web SDK.
 
 ```jsx
 import { Client, Account, OAuthProvider } from "appwrite";

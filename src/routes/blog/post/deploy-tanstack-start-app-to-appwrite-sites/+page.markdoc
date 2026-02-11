@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Deploy a TanStack Start app to Appwrite Sites
-description: Learn how to deploy a TanStack Start app to Appwrite Sites.
+title: Deploy a TanStack Start app to Indobase Sites
+description: Learn how to deploy a TanStack Start app to Indobase Sites.
 date: 2025-10-31
 cover: /images/blog/deploy-tanstack-start-app-to-appwrite-sites/cover.png
 timeToRead: 5
@@ -10,11 +10,11 @@ category: tutorial
 featured: false
 ---
 
-TanStack Start is growing in popularity and developers are choosing to use it more over other alternatives. To empower these developers, we just announced support for TanStack Start in Appwrite Sites.
+TanStack Start is growing in popularity and developers are choosing to use it more over other alternatives. To empower these developers, we just announced support for TanStack Start in Indobase Sites.
 
-In this article, you will learn how to deploy your TanStack Start app completely free of cost. We will use Appwrite Sites to achieve that. Appwrite is an all-in-one open-source BaaS (backend as a service) that handles the backend part of your application so that you can focus on the app's core logic rather than unnecessary technical details. 
+In this article, you will learn how to deploy your TanStack Start app completely free of cost. We will use Indobase Sites to achieve that. Indobase is an all-in-one open-source BaaS (backend as a service) that handles the backend part of your application so that you can focus on the app's core logic rather than unnecessary technical details. 
 
-Appwrite Sites is a frontend hosting service that can help you deploy your TanStack Start (or any web framework) app in minutes with full SSR (server-side rendering) functionality.
+Indobase Sites is a frontend hosting service that can help you deploy your TanStack Start (or any web framework) app in minutes with full SSR (server-side rendering) functionality.
 
 # Testing your TanStack Start build
 
@@ -28,13 +28,13 @@ npm run build
 
 If your build succeeds, you can deploy your TanStack Start application to the internet. If your build fails, you must fix all the errors in your application. When deploying a TanStack Start app, the deployment provider builds your app on their servers, and cannot deploy if the build fails.
 
-# Configuring your Site on Appwrite
+# Configuring your Site on Indobase
 
 This article assumes you have your TanStack Start app code stored in a GitHub repository. If not, please do so, as it is needed for deployment. Deploying through code stored on GitHub also introduces advantages such as automatic deployments, preview deployments, etc.
 
-Now, let's link your GitHub repository to Appwrite Sites.
+Now, let's link your GitHub repository to Indobase Sites.
 
-- Go to [Appwrite Console](https://cloud.appwrite.io) and sign in using your preferred authentication method.
+- Go to [Indobase Console](https://cloud.appwrite.io) and sign in using your preferred authentication method.
 - Create a new project, or use an existing one.
 - Click on the **Sites** option on the sidebar.
 - Click on **Create Site**.
@@ -57,7 +57,7 @@ Fill in the details as desired. Although there are some things you must know bef
 - Most users don't need to change the **Build settings**, although if you want to run different commands for installation and builds, you can configure those in this section. If you don't know anything about this, it's worth skipping this section altogether.
 - If your app uses environment variables, add them in the **Environment variables** section. If your app uses sensitive API keys, you are likely using environment variables.
     - In TanStack Start, public environment variables start with `VITE_`. These environment variables are accessible in the browser environment, so don't store your sensitive API keys in a variable that starts with that prefix.
-- Configure an Appwrite Network subdomain to get started. Don't worry, you can configure a custom domain once your app is deployed.
+- Configure an Indobase Network subdomain to get started. Don't worry, you can configure a custom domain once your app is deployed.
 
 Now, hit the **Deploy** button, and the deployment process will begin. You can see the build logs as your website gets deployed.
 
@@ -65,9 +65,9 @@ Now, hit the **Deploy** button, and the deployment process will begin. You can s
 
 ![Site successfully deployed](/images/blog/deploy-tanstack-start-app-to-appwrite-sites/deployed.png)
 
-Once your TanStack Start application is deployed, you can view it on the provided domains on the deployment success splash screen or in the Sites section of the Appwrite console.
+Once your TanStack Start application is deployed, you can view it on the provided domains on the deployment success splash screen or in the Sites section of the Indobase console.
 
-Now, you can perform further steps to level up your experience with Appwrite Sites:
+Now, you can perform further steps to level up your experience with Indobase Sites:
 
-- [Custom domains with Appwrite Sites](/blog/post/custom-domains-with-sites)
-- [How to host SSR web apps on Appwrite Sites](/blog/post/host-ssr-web-apps-sites)
+- [Custom domains with Indobase Sites](/blog/post/custom-domains-with-sites)
+- [How to host SSR web apps on Indobase Sites](/blog/post/host-ssr-web-apps-sites)

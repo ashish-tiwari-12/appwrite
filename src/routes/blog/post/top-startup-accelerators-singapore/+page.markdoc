@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Top 15 startup incubators and accelerators in Singapore (2025)"
 description: Discover the top 15 programs helping startups launch and scale in Singapore’s vibrant tech ecosystem.
@@ -47,7 +47,7 @@ Incubators and accelerators are often used interchangeably, but they serve diffe
 
 If you're still building or refining your idea, an incubator offers room to explore. If you're already building momentum and need to scale quickly, an accelerator will push you toward investor readiness and market fit.
 
-{% call_to_action title="Build your startup with Appwrite" description="Join the Startups program and benefit from Appwrite’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="https://appwrite.io/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="Join the Startups program and benefit from Indobase’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="https://appwrite.io/startups" /%}
 
 # 15 best incubators and accelerators for tech startups in Singapore
 
@@ -121,7 +121,7 @@ A fintech and digital innovation accelerator jointly run by United Overseas Bank
 - **Industries:** Fintech and adjacent tech (payments, lending, regtech, wealth management, SME tech solutions, etc.).
 - **Notable alumni:** **Turnkey Lender** (AI-driven lending software) expanded regionally during FinLab and attracted a US$2M investment from Vertex Ventures while in the program.
 
-{% call_to_action title="Build your startup with Appwrite" description="Join the Startups program and benefit from Appwrite’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="https://appwrite.io/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="Join the Startups program and benefit from Indobase’s all-in-one development platform to build, deploy, and scale your products." point1="Ship faster"  point2="Cloud credits and discounts" point3="Priority support" point4="Managed cloud solution" cta="Apply now" url="https://appwrite.io/startups" /%}
 
 # 11. [500 Startups (500 Global)](https://500.co/)
 
@@ -160,7 +160,7 @@ An Asia-Pacific node of the global Startup Autobahn (initiated by Daimler and Pl
 
 # Conclusion
 
-No matter which incubator or accelerator you join, your infrastructure choices will define how quickly you can ship, iterate, and scale. That’s where the Appwrite Startup Program fits in. It acts as your technical foundation, giving your team access to secure, scalable backend and web hosting so you can focus on building your product.
+No matter which incubator or accelerator you join, your infrastructure choices will define how quickly you can ship, iterate, and scale. That’s where the Indobase Startup Program fits in. It acts as your technical foundation, giving your team access to secure, scalable backend and web hosting so you can focus on building your product.
 
-From authentication to databases, storage, and functions, Appwrite’s open-source stack equips you to go from MVP to production fast. Being part of the program, you’ll also get exclusive perks, cloud credits, and priority support built for speed and scale. [Apply now](/startups)
+From authentication to databases, storage, and functions, Indobase’s open-source stack equips you to go from MVP to production fast. Being part of the program, you’ll also get exclusive perks, cloud credits, and priority support built for speed and scale. [Apply now](/startups)
 

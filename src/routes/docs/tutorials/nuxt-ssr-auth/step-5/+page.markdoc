@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create sign up page
-description: Add authentication to a Nuxt project using Appwrite.
+description: Add authentication to a Nuxt project using Indobase.
 step: 5
 ---
 
@@ -23,7 +23,7 @@ We can now implement our sign up page. Create a `signup.vue` file in the `pages`
 </template>
 ```
 
-This is an HTML form with an email and password input. When the form is submitted, we want to send the email and password to Appwrite to authenticate the user. To use Nuxt form actions we create a `signup.post.js` file in the `server/api` directory:
+This is an HTML form with an email and password input. When the form is submitted, we want to send the email and password to Indobase to authenticate the user. To use Nuxt form actions we create a `signup.post.js` file in the `server/api` directory:
 
 ```javascript
 // server/api/signup.post.js
@@ -36,7 +36,7 @@ export default defineEventHandler(async (event) => {
   const email = formData.get("email");
   const password = formData.get("password");
 
-  // Create the Appwrite client.
+  // Create the Indobase client.
   const { account } = createAdminClient(event);
 
   // Create a new user with email and password

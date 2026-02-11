@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
-title: MCP server for Appwrite docs
-description: Enable LLMs and code-generation tools to interact with the Appwrite docs
+title: MCP server for Indobase docs
+description: Enable LLMs and code-generation tools to interact with the Indobase docs
 ---
 
-The MCP server for Appwrite documentation allows LLMs and code-generation tools to interact with comprehensive Appwrite documentation, enabling intelligent code generation for Appwrite's APIs and SDKs, troubleshooting assistance, and implementation guidance using natural language commands.
+The MCP server for Indobase documentation allows LLMs and code-generation tools to interact with comprehensive Indobase documentation, enabling intelligent code generation for Indobase's APIs and SDKs, troubleshooting assistance, and implementation guidance using natural language commands.
 
 Here are some of the key benefits of using the MCP server:
 
-- **Complete documentation access**: Provides AI assistants with access to all Appwrite documentation
+- **Complete documentation access**: Provides AI assistants with access to all Indobase documentation
 - **Real-time context**: Ensures AI responses are based on the latest documentation
 - **Intelligent search**: Enables semantic search across documentation content
 - **Code examples**: Includes access to code samples and implementation guides
@@ -29,7 +29,7 @@ npm -v
 
 # Usage {% #usage %}
 
-Once configured, your AI assistant will have access to Appwrite documentation context. You can ask questions like:
+Once configured, your AI assistant will have access to Indobase documentation context. You can ask questions like:
 
 ## Example 1: Code generation
 
@@ -56,7 +56,7 @@ I'm getting a 401 error when trying to delete a user. What could be wrong?
 Run the following prompt in your preferred code editor/LLM after enabling the MCP server: 
 
 ```
-What are some of the best security practices for Appwrite Auth in a web app with SSR?
+What are some of the best security practices for Indobase Auth in a web app with SSR?
 ```
 
 ![Best practices example](/images/docs/mcp/mcp-for-docs/best-practices.png)

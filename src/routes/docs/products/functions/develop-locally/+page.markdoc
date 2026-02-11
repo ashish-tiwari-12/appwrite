@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Develop locally
-description: Learn to develop Appwrite functions locally.
+description: Learn to develop Indobase functions locally.
 ---
 
-Develop your Appwrite functions locally to make code changes without redeploying your function on every code change and hot reload your code for faster testing.
+Develop your Indobase functions locally to make code changes without redeploying your function on every code change and hot reload your code for faster testing.
 
 # Setup {% #setup %}
 
@@ -12,10 +12,10 @@ We use Docker to replicate the production environment for the local deployment o
 
 1. Install the [Docker CLI](https://www.docker.com/products/docker-desktop/)
 2. Ensure Docker is running in the background
-3. Install the [Appwrite CLI](/docs/tooling/command-line/installation#getting-started)
-4. [Log in](/docs/tooling/command-line/installation#login) to your Appwrite account using `appwrite login`
+3. Install the [Indobase CLI](/docs/tooling/command-line/installation#getting-started)
+4. [Log in](/docs/tooling/command-line/installation#login) to your Indobase account using `appwrite login`
 5. [Initialize your project](/docs/tooling/command-line/installation#initialization)
-6. [Initialize an Appwrite function](/docs/tooling/command-line/functions) and copy and paste your code
+6. [Initialize an Indobase function](/docs/tooling/command-line/functions) and copy and paste your code
 
 # Develop {% #develop %}
 
@@ -64,7 +64,7 @@ Build finished.
 ✓ Success: Visit http://localhost:3000/ to execute your function.
 ```
 
-This command helps you efficiently develop your Appwrite functions on your local machine. When developing your Appwrite function locally, it will receive [headers](/docs/products/functions/develop#headers) like a function deployed to Appwrite.
+This command helps you efficiently develop your Indobase functions on your local machine. When developing your Indobase function locally, it will receive [headers](/docs/products/functions/develop#headers) like a function deployed to Indobase.
 
 {% arrow_link href="/docs/products/functions/develop" %}
 Learn more about developing a function
@@ -80,7 +80,7 @@ Learn more about dynamic API keys
 
 # Hot reload {% #hot-reload %}
 
-By default, the Appwrite CLI hot-reloads your functions, which means you can update the function code and the changes will be applied automatically. How this happens differs between runtimes with compiled languages versus interpreted ones.
+By default, the Indobase CLI hot-reloads your functions, which means you can update the function code and the changes will be applied automatically. How this happens differs between runtimes with compiled languages versus interpreted ones.
 
 Because runtimes with compiled languages must translate the source code into machine code, the function must rebuild on change.
 

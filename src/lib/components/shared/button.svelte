@@ -16,8 +16,8 @@
                         'hover:shadow-[0_0_2rem_var(--color-accent-200)] active:not:disabled:shadow-[0_0_2rem_var(--color-accent-200)]'
                     ],
                     secondary: [
-                        'bg-[#fd366e0a] relative',
-                        'hover:shadow-[0_-6px_10px_0px_rgba(253,54,110,0.08)_inset]'
+                        'bg-[#ff99330a] relative',
+                        'hover:shadow-[0_-6px_10px_0px_rgba(255,153,51,0.08)_inset]'
                     ],
                     text: [
                         'bg-transparent border-transparent text-white',

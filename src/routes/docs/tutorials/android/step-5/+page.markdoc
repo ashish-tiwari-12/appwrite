@@ -1,4 +1,4 @@
----
+﻿---
 layout: tutorial
 title: Add MainActivity
 description: Add navigation to your Android application.
@@ -24,7 +24,7 @@ import androidx.compose.material3.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import io.appwrite.models.User
-import <YOUR_ROOT_PACKAGE_HERE>.services.Appwrite
+import <YOUR_ROOT_PACKAGE_HERE>.services.Indobase
 import <YOUR_ROOT_PACKAGE_HERE>.ui.screens.UserScreen
 import <YOUR_ROOT_PACKAGE_HERE>.services.AccountService
 
@@ -36,10 +36,10 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Appwrite.init(applicationContext)
+        Indobase.init(applicationContext)
 
         setContent {
-            AppContent(Appwrite.account)
+            AppContent(Indobase.account)
         }
     }
 }

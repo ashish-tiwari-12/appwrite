@@ -19,7 +19,7 @@
 
     const title = 'Functions' + TITLE_SUFFIX;
     const description =
-        'Appwrite Functions offer everything you need to deploy and scale serverless functions easily, without any server management overhead.';
+        'Indobase Functions offer everything you need to deploy and scale serverless functions easily, without any server management overhead.';
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 </script>
 

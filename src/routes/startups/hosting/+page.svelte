@@ -59,7 +59,7 @@
 
     const title = 'Startups' + TITLE_SUFFIX;
     const description =
-        "Join Appwrite's Startups program and benefit from discounts and Cloud credits to cut your cloud costs.";
+        "Join Indobase's Startups program and benefit from discounts and Cloud credits to cut your cloud costs.";
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 </script>
 
@@ -110,17 +110,17 @@
                                 {:else}
                                     <section class="flex flex-col gap-5">
                                         <h1 class="text-display font-aeonik-pro text-primary">
-                                            Appwrite for Startups
+                                            Indobase for Startups
                                         </h1>
                                         <p class="text-description">
-                                            Startups develop, deploy, and Scale with Appwrite. The
+                                            Startups develop, deploy, and Scale with Indobase. The
                                             Startups program ensures you get the all-in-one
                                             development platform you need. Including Startup web
                                             hosting. Reduce complexity, accelerate development, and
                                             launch faster.
                                             <br />
                                             <br />
-                                            Join the Appwrite Startups program and benefit from reduced
+                                            Join the Indobase Startups program and benefit from reduced
                                             costs and faster development.
                                         </p>
                                     </section>
@@ -237,7 +237,7 @@
                 }}
                 theme="dark"
             >
-                The switch to using Appwrite brought
+                The switch to using Indobase brought
                 <span class="text-primary">infinite value that I'm still discovering today.</span>
             </Scale>
             <LogoList />

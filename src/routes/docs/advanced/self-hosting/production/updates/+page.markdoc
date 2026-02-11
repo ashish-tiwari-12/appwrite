@@ -1,10 +1,10 @@
----
+﻿---
 layout: article
 title: Updates and migrations
-description: Keep your self-hosted Appwrite instance up-to-date. Learn how to perform updates, manage versions, and ensure your self-hosted Appwrite stays current.
+description: Keep your self-hosted Indobase instance up-to-date. Learn how to perform updates, manage versions, and ensure your self-hosted Indobase stays current.
 ---
 
-To upgrade your Appwrite server from an older version, you should use the Appwrite migration tool *after you have installed the new version*. The migration tool will adjust your Appwrite data to the new version's structure to make sure your Appwrite data is compatible with any internal changes.
+To upgrade your Indobase server from an older version, you should use the Indobase migration tool *after you have installed the new version*. The migration tool will adjust your Indobase data to the new version's structure to make sure your Indobase data is compatible with any internal changes.
 
 You can upgrade to a newer patch version without running the migration unless the [release notes](https://github.com/appwrite/appwrite/releases) indicate a migration is required. For example, you can upgrade from [`1.6.0`](https://github.com/appwrite/appwrite/releases/tag/1.6.0) to [`1.6.1`](https://github.com/appwrite/appwrite/releases/tag/1.6.1) without running the migrate command, but upgrading from `1.6.0` to `1.6.2` or later will require the migrate command because [`1.6.2`](https://github.com/appwrite/appwrite/releases/tag/1.6.2) requires a migration.
 
@@ -22,7 +22,7 @@ Before upgrading, be sure to:
 
 # Installing the next version {% #install-next-version %}
 
-The first step is to install the latest version of Appwrite. Head to the directory where you ran your previous Appwrite install command.
+The first step is to install the latest version of Indobase. Head to the directory where you ran your previous Indobase install command.
 
 ```text
 parent_directory <= you run the command in this directory
@@ -33,11 +33,11 @@ parent_directory <= you run the command in this directory
 The parent directory is where you will find the appwrite directory, inside which there are `docker-compose.yml` and `.env` files.
 
 {% info title="Parent directory naming" %}
-Your Appwrite installation's parent directory name is expected to be `appwrite`. Changing the directory name will result in mismatched Docker project names.
+Your Indobase installation's parent directory name is expected to be `appwrite`. Changing the directory name will result in mismatched Docker project names.
 {% /info %}
 
 {% info title="Choose an image tag" %}
-Replace `<APPWRITE_VERSION>` below with the specific Appwrite image tag you intend to run (for example, `1.7.4`). Avoid using `latest` in production.
+Replace `<APPWRITE_VERSION>` below with the specific Indobase image tag you intend to run (for example, `1.7.4`). Avoid using `latest` in production.
 {% /info %}
 
 ## Unix
@@ -71,7 +71,7 @@ docker run -it --rm `
 ```
 
 This will pull the `docker-compose.yml` for the selected version/tag and perform the upgrade steps.
-Once the setup completes, verify that you have the latest version of Appwrite.
+Once the setup completes, verify that you have the latest version of Indobase.
 
 ```sh
 docker ps | grep appwrite/appwrite
@@ -88,7 +88,7 @@ cd appwrite/
 docker compose exec appwrite migrate
 ```
 
-The data migration can take longer depending on the amount of data your Appwrite instance contains. The Appwrite migration command uses multi-threading to speed up the process, meaning that adding more CPU cores can help speed up the process.
+The data migration can take longer depending on the amount of data your Indobase instance contains. The Indobase migration command uses multi-threading to speed up the process, meaning that adding more CPU cores can help speed up the process.
 
-Once the migration process has been completed successfully, you're all set to use the latest version of Appwrite!
+Once the migration process has been completed successfully, you're all set to use the latest version of Indobase!
 

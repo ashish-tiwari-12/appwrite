@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Deploy manually
-description: Learn to deploy Appwrite functions manually from the Appwrite CLI or the Appwrite Console.
+description: Learn to deploy Indobase functions manually from the Indobase CLI or the Indobase Console.
 ---
 
-Appwrite Functions are mini-applications in Appwrite with their own endpoints. 
+Indobase Functions are mini-applications in Indobase with their own endpoints. 
 Each function can have many deployments, which can be thought of as versions of the mini-application.
 
 While we recommend you create deployments through [automatic Git deployments](/docs/products/functions/deploy-from-git),
-you can also create deployments manually or through the Appwrite CLI.
+you can also create deployments manually or through the Indobase CLI.
 
 # CLI  {% #cli %} 
 
@@ -24,7 +24,7 @@ Learn more about appwrite.config.json
 
 # Manual Deployment {% #manual %} 
 
-You can upload your functions to be deployed using the Appwrite Console. The example below shows a simple Node.js function.
+You can upload your functions to be deployed using the Indobase Console. The example below shows a simple Node.js function.
 
 ```text
 .
@@ -47,7 +47,7 @@ First, navigate inside the folder that contains your dependency file. Package yo
 {% /multicode %}
 
 
-Next, navigate to your Appwrite Console and upload the function.
+Next, navigate to your Indobase Console and upload the function.
 
 1. Navigate to the function you want to deploy.
 2. Click **Create deployment**.

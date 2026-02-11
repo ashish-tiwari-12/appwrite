@@ -1,21 +1,21 @@
----
+﻿---
 layout: article
 title: Integrating LangChain
-description: Learn how to integrate LangChain into your Appwrite project.
+description: Learn how to integrate LangChain into your Indobase project.
 difficulty: intermediate
 readtime: 15
 ---
 
 # Prerequisites {% #prerequisites %}
 
-- An Appwrite project
-- An Appwrite table
+- An Indobase project
+- An Indobase table
 - An [OpenAI API key](https://platform.openai.com/account/api-keys)
 - A [Pinecone API key](https://docs.pinecone.io/guides/getting-started/quickstart#2-get-your-api-key)
 - A Pinecone index
 
 {% section #step-1 step=1 title="Create new function" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
+Head to the [Indobase Console](https://cloud.appwrite.io/console) then click on **Functions** in the left sidebar and then click on the **Create Function** button.
 
 {% only_dark %}
 ![Create function screen](/images/docs/functions/dark/template.png)
@@ -25,7 +25,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console) then click on 
 ![Create function screen](/images/docs/functions/template.png)
 {% /only_light %}
 
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Click **Create function**.
 1. Under **Connect Git repository**, select your provider.
 1. After connecting to GitHub, under **Quick start**, select the **Node.js** starter template.
@@ -47,7 +47,7 @@ npm install @pinecone-database/pinecone openai @langchain/core @langchain/openai
 For this example, the function will be able to take both `GET` and `POST` requests.
 
 For the `GET` request, return a static HTML page that will have a form to search the Pinecone index. Meanwhile the `POST /search` requests will send the search query to the Pinecone API and return the results.
-All other `POST` requests will trigger the indexing of the Appwrite table into the Pinecone index.
+All other `POST` requests will trigger the indexing of the Indobase table into the Pinecone index.
 
 Write the code to return the static HTML page, to do this create a new `src/utils.js` file with the following code:
 
@@ -127,7 +127,7 @@ And after the `</head>` tag add this `<body>` which will contain the actual form
             class="body-text-1 u-normal u-margin-block-start-8"
             style="max-width: 50rem"
             >
-            Use this demo to verify that the sync between Appwrite Databases and
+            Use this demo to verify that the sync between Indobase Databases and
             Pinecone was successful. Search your Pinecone vector database using
             the input below.
             </p>
@@ -252,7 +252,7 @@ This code will handle the prompt requests by creating a LangChain sequence that 
 {% /section %}
 
 {% section #step-8 step=8 title="Handle index requests" %}
-The Appwrite table needs to be indexed into the Pinecone index. Create a new file at `src/appwrite.js` with the following code:
+The Indobase table needs to be indexed into the Pinecone index. Create a new file at `src/appwrite.js` with the following code:
 
 ```js
 import { Client, TablesDB, Query } from 'node-appwrite';

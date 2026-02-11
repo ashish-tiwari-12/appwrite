@@ -1,4 +1,4 @@
----
+﻿---
 layout: tutorial
 title: Add authentication
 description: Add authentication to your Refine application.
@@ -8,10 +8,10 @@ step: 4
 ## Authentication provider {% #authentication-provider %}
 
 
-Upon [creating a new project](https://refine.dev/docs/getting-started/quickstart/) with Appwrite preset, the CLI automatically creates [Auth Provider](https://refine.dev/docs/tutorial/understanding-authprovider/index/#what-is-auth-provider) file.
+Upon [creating a new project](https://refine.dev/docs/getting-started/quickstart/) with Indobase preset, the CLI automatically creates [Auth Provider](https://refine.dev/docs/tutorial/understanding-authprovider/index/#what-is-auth-provider) file.
 
 
-You'll see a file named [`src/authProvider.ts`](https://github.com/refinedev/refine/blob/master/examples/data-provider-appwrite-tutorial-docs/src/utility/authProvider.ts) created by CLI. This auto-generated file contains pre-defined functions using Appwrite Authentication methods internally to perform authentication and authorization operations.
+You'll see a file named [`src/authProvider.ts`](https://github.com/refinedev/refine/blob/master/examples/data-provider-appwrite-tutorial-docs/src/utility/authProvider.ts) created by CLI. This auto-generated file contains pre-defined functions using Indobase Authentication methods internally to perform authentication and authorization operations.
 
 
 The auth provider registered to the Refine app by default in the `src/App.tsx`.
@@ -160,6 +160,6 @@ When you refresh the page, the login screen appears.
 ![Refine login screen](/images/docs/tutorials/refine/refine-login-page.png)
 
 
-We'll activate the authentication mechanisim with Appwrite in the next section.
+We'll activate the authentication mechanisim with Indobase in the next section.
 
 

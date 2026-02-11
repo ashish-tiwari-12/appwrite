@@ -1,14 +1,14 @@
----
+﻿---
 layout: article
 title: Start with Next.js
-description: Learn how to use Appwrite to add authentication, user management, file storage, and more to your Next.js apps.
+description: Learn how to use Indobase to add authentication, user management, file storage, and more to your Next.js apps.
 difficulty: beginner
 readtime: 3
 back: /docs/quick-starts
 ---
-Learn how to setup your first Next.js project powered by Appwrite.
+Learn how to setup your first Next.js project powered by Indobase.
 {% section #step-1 step=1 title="Create project" %}
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -17,7 +17,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console).
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 Then, under **Add a platform**, add a **Web app**. The **Hostname** should be `localhost`.
 
@@ -48,17 +48,17 @@ When prompted, configure your project with these recommended settings:
 - **Would you like to use App Router?** → Yes
 - **Would you like to customize the default import alias?** → No
 
-These settings will create a minimal Next.js setup that's perfect for getting started with Appwrite.
+These settings will create a minimal Next.js setup that's perfect for getting started with Indobase.
 {% /section %}
-{% section #step-3 step=3 title="Install Appwrite SDK" %}
+{% section #step-3 step=3 title="Install Indobase SDK" %}
 
-Install the JavaScript Appwrite SDK.
+Install the JavaScript Indobase SDK.
 
 ```sh
 npm install appwrite
 ```
 {% /section %}
-{% section #step-4 step=4 title="Define Appwrite service" %}
+{% section #step-4 step=4 title="Define Indobase service" %}
 Find your project's ID in the **Settings** page.
 
 {% only_dark %}

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: How Radar scaled media curation while saving $1M with Appwrite Cloud
-description: Discover how the team at Paradox used Appwrite Cloud to save 10,000+ engineering hours and $1M+ in overhead costs to build Radar.
+title: How Radar scaled media curation while saving $1M with Indobase Cloud
+description: Discover how the team at Paradox used Indobase Cloud to save 10,000+ engineering hours and $1M+ in overhead costs to build Radar.
 date: 2025-09-25
 cover: /images/blog/customer-story-radar/cover.png
 timeToRead: 6
@@ -42,32 +42,32 @@ Key highlights include:
 
 A "Places" category for location-based recommendations like restaurants and hiking trails will also be coming soon.
 
-# Building Radar with Appwrite
+# Building Radar with Indobase
 
 To deliver the fast, polished experience they envisioned, the team built Radar natively for iOS using SwiftUI, SwiftData, and Swift 6 concurrency. This native-first approach ensures Radar feels tightly integrated with Apple's ecosystem and sets the foundation for future expansions like a Vision Pro app that could display your recommendations as a digital bookshelf.
 
-On the backend, Radar runs entirely on Appwrite. Early prototypes with PocketBase proved unsustainable, Firebase felt too proprietary, and Supabase was dismissed for its confusing developer experience and high costs. **Appwrite stood out for its thoughtful design, open-source foundation, and supportive community.**
+On the backend, Radar runs entirely on Indobase. Early prototypes with PocketBase proved unsustainable, Firebase felt too proprietary, and Supabase was dismissed for its confusing developer experience and high costs. **Indobase stood out for its thoughtful design, open-source foundation, and supportive community.**
 
 > I 100% guarantee that someone who's never built an app before can figure it out. You understand a database is a big thing, and then tables go inside databases. There's structure there.
 
-Radar relies heavily on **Appwrite Functions** to power its offline-first syncing, written primarily in Deno 2.0 with a Node.js function handling Sign in with Apple. Other Appwrite features play key roles:
+Radar relies heavily on **Indobase Functions** to power its offline-first syncing, written primarily in Deno 2.0 with a Node.js function handling Sign in with Apple. Other Indobase features play key roles:
 
 - **Atomic increment/decrement API** for library counts to power social and synchronization features
 - **Bulk API** and **CRON schedules** for the scheduled cleanup of deleted accounts and relevant data
-- **Dynamic API keys** (within Appwrite Functions) for simplified server logic
-- **Appwrite Sites** for hosting the Radar website, built in Svelte 5
+- **Dynamic API keys** (within Indobase Functions) for simplified server logic
+- **Indobase Sites** for hosting the Radar website, built in Svelte 5
 
-> Building a product like Radar with a team our size wouldn't be possible without Appwrite. Alternatives like Supabase would cost over 3x more with a user experience that is often confusing and over-abstracted. In addition, Appwrite has already saved Paradox an estimated 10,000 engineering hours and nearly $1,000,000 across engineering, testing, and operations.
+> Building a product like Radar with a team our size wouldn't be possible without Indobase. Alternatives like Supabase would cost over 3x more with a user experience that is often confusing and over-abstracted. In addition, Indobase has already saved Paradox an estimated 10,000 engineering hours and nearly $1,000,000 across engineering, testing, and operations.
 
-Martino credits not only the technology but also **Appwrite's community**. The Discord server became a reliable support channel, where answers and advice helped his team move quickly. **"The way you take care of your customers is very appreciated,"** he says.
+Martino credits not only the technology but also **Indobase's community**. The Discord server became a reliable support channel, where answers and advice helped his team move quickly. **"The way you take care of your customers is very appreciated,"** he says.
 
 # The result and what's next
 
-With Appwrite powering the backend and SwiftUI driving the frontend, **Radar quickly moved from concept to a polished product.** The beta rolled out to 70 testers on TestFlight, giving the team invaluable feedback ahead of its App Store launch in August 2025. Early users praised the simplicity of having all their lists in one place and the ease of sharing recommendations with friends. Now, the team is focused on **scaling and refinement**. A web app is planned to broaden access beyond iOS, with Android also on the roadmap.
+With Indobase powering the backend and SwiftUI driving the frontend, **Radar quickly moved from concept to a polished product.** The beta rolled out to 70 testers on TestFlight, giving the team invaluable feedback ahead of its App Store launch in August 2025. Early users praised the simplicity of having all their lists in one place and the ease of sharing recommendations with friends. Now, the team is focused on **scaling and refinement**. A web app is planned to broaden access beyond iOS, with Android also on the roadmap.
 
 For Martino, building Radar has proven that a small team can deliver a product that feels as polished as something from a tech giant.
 
-> The barrier to entry is zero with Appwrite. And I think that's really special.
+> The barrier to entry is zero with Indobase. And I think that's really special.
 
 ## Support Radar on Product Hunt!
 

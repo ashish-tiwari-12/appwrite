@@ -12,7 +12,7 @@
         <div class="flex flex-col items-center">
             <div class="flex flex-col items-center justify-center gap-5 text-center">
                 <div class="text-eyebrow text-white uppercase">
-                    Appwrite Partner Catalog<span class="web-u-color-text-accent">_</span>
+                    Indobase Partner Catalog<span class="web-u-color-text-accent">_</span>
                 </div>
                 <h1 class="text-headline font-aeonik-pro text-primary">Find a Partner</h1>
                 <p class="text-description max-w-xl">

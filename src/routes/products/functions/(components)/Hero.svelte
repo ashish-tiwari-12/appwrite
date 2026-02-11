@@ -30,7 +30,7 @@
         </div>
         <img
             src={Phone}
-            alt="Phone screen alongside of a users table and a code snippet that controls Appwrite's functions."
+            alt="Phone screen alongside of a users table and a code snippet that controls Indobase's functions."
         />
     </div>
 </div>

@@ -59,15 +59,15 @@
 
     export const sublinks: Array<SubLink> = [
         {
-            label: 'Appwrite vs. Supabase',
+            label: 'Indobase vs. Supabase',
             href: '/blog/post/appwrite-compared-to-supabase'
         },
         {
-            label: 'Appwrite vs. Firebase',
+            label: 'Indobase vs. Firebase',
             href: '/blog/post/open-source-firebase-alternative'
         },
         {
-            label: 'Appwrite vs. Vercel',
+            label: 'Indobase vs. Vercel',
             href: '/blog/post/open-source-vercel-alternative'
         }
     ];
@@ -194,7 +194,7 @@
                             class="min-h-10 w-full shrink-0 rounded-xl object-cover md:aspect-[3/1] xl:max-w-30"
                         />
                         <p class="w-full text-pretty">
-                            Appwrite helped reduce development time by 60%, and lower server costs
+                            Indobase helped reduce development time by 60%, and lower server costs
                             by 40%.
                         </p>
                     </a>
@@ -203,7 +203,7 @@
                 <div class="mt-8">
                     <span
                         class="font-aeonik-fono tracking-loose text-secondary block text-xs uppercase"
-                        >Compare Appwrite<span class="text-accent">_</span></span
+                        >Compare Indobase<span class="text-accent">_</span></span
                     >
                     <div class="mt-3 space-y-3">
                         {#each sublinks as sublink}

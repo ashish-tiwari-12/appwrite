@@ -1,11 +1,11 @@
----
+﻿---
 layout: article
 title: Avatars
-description: Generate avatars, icons, and images for your applications. Use Appwrite Avatars to create user initials, QR codes, country flags, browser icons, and more.
+description: Generate avatars, icons, and images for your applications. Use Indobase Avatars to create user initials, QR codes, country flags, browser icons, and more.
 back: /docs
 ---
 
-Appwrite **Avatars** provides a comprehensive set of utilities for generating and manipulating images, icons, and avatars for your applications. The Avatars service helps you complete everyday tasks related to app images, icons, and avatars without managing complex image processing infrastructure.
+Indobase **Avatars** provides a comprehensive set of utilities for generating and manipulating images, icons, and avatars for your applications. The Avatars service helps you complete everyday tasks related to app images, icons, and avatars without managing complex image processing infrastructure.
 
 All Avatars endpoints support image transformations including resizing, cropping, and quality adjustments to optimize performance and ensure images display correctly across different devices and screen sizes.
 
@@ -15,7 +15,7 @@ Get started with Avatars in minutes
 
 # Capabilities {% #capabilities %}
 
-Appwrite Avatars supports multiple image generation and manipulation features to enhance your application's visual elements.
+Indobase Avatars supports multiple image generation and manipulation features to enhance your application's visual elements.
 
 {% cards %}
 {% cards_item href="/docs/products/avatars/initials" title="User initials" %}

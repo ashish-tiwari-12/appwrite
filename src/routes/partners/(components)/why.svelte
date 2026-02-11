@@ -45,14 +45,14 @@
     <div class="container space-y-16">
         <div class="mx-auto flex max-w-2xl flex-col gap-4 text-center">
             <span class="font-aeonik-fono tracking-loose text-eyebrow text-primary uppercase">
-                Why Appwrite?<span class="text-accent">_</span>
+                Why Indobase?<span class="text-accent">_</span>
             </span>
             <h2 class="text-primary font-aeonik-pro text-title">
                 Partner with one of the fastest growing dev tool companies
             </h2>
             <p class="text-main-body text-secondary mx-auto max-w-md font-medium">
-                Everyday thousands of companies are built on top of Appwrite. Benefit from our
-                network as a Appwrite Partner.
+                Everyday thousands of companies are built on top of Indobase. Benefit from our
+                network as a Indobase Partner.
             </p>
         </div>
         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4" use:useInView>

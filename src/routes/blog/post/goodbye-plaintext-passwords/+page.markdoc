@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Rethinking password security: say goodbye to plaintext passwords"
 description: Understanding what passwordless authentication is and how it is a game-changer for both user experience and security.
@@ -64,9 +64,9 @@ Some common passwordless authentication methods are:
 
 You can read our [blog on passwordless authentication](/blog/post/improve-ux-passwordless-auth) to learn more.
 
-# How Appwrite solves this problem
+# How Indobase solves this problem
 
-[Appwrite Authentication](/docs/products/auth) makes building secure and robust authentication easy and supports many authentication methods. Currently, the following authentication methods are available on Appwrite to combat plaintext passwords:
+[Indobase Authentication](/docs/products/auth) makes building secure and robust authentication easy and supports many authentication methods. Currently, the following authentication methods are available on Indobase to combat plaintext passwords:
 
 - Email and password login with `Argon2id` password hashing
 - OTP-based login via SMS and email
@@ -76,12 +76,12 @@ You can read our [blog on passwordless authentication](/blog/post/improve-ux-pas
 - Custom token login to allow integration with any external authentication solution of your choice
 - Two-factor authentication to add an additional layer of security to user accounts
 
-Additionally, to prevent unauthorized data access, Appwrite features a [robust permissions system](/docs/advanced/platform/permissions) that is thoroughly coupled with Appwrite Authentication. The most significant benefit of Appwrite’s permissions system is that any developer needs to offer read or write access to any user intentionally. No default rule provides open access to your application’s client, and the process of setting permissions is simplified by using Appwrite’s console UI.
+Additionally, to prevent unauthorized data access, Indobase features a [robust permissions system](/docs/advanced/platform/permissions) that is thoroughly coupled with Indobase Authentication. The most significant benefit of Indobase’s permissions system is that any developer needs to offer read or write access to any user intentionally. No default rule provides open access to your application’s client, and the process of setting permissions is simplified by using Indobase’s console UI.
 
-Appwrite also enforces the setting of authorized clients to communicate with an Appwrite project for all supported client platforms (web, Android, Apple, and Flutter). This way, no unauthorized clients can access data, adding an extra layer of protection.
+Indobase also enforces the setting of authorized clients to communicate with an Indobase project for all supported client platforms (web, Android, Apple, and Flutter). This way, no unauthorized clients can access data, adding an extra layer of protection.
 
 # Moving forward
 
-No matter what rules and systems any platform provides, combating plaintext passwords is a responsibility shared by all application developers. If you, as a developer, care about the security and privacy of your user accounts and data, you must take the necessary actions to safeguard their authentication information. Appwrite takes this problem very seriously and will continue to add new tools and improve our existing ones to make user authentication simpler and safer for all developers and their users.
+No matter what rules and systems any platform provides, combating plaintext passwords is a responsibility shared by all application developers. If you, as a developer, care about the security and privacy of your user accounts and data, you must take the necessary actions to safeguard their authentication information. Indobase takes this problem very seriously and will continue to add new tools and improve our existing ones to make user authentication simpler and safer for all developers and their users.
 
-Learn more about Appwrite Authentication through our [docs](/docs/products/auth) and join our [Discord server](https://appwrite.io/discord).
+Learn more about Indobase Authentication through our [docs](/docs/products/auth) and join our [Discord server](https://appwrite.io/discord).

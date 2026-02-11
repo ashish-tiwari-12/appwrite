@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: See what is new with Appwrite 1.5
-description: Here is a recap off all announcements for Appwrite 1.5.
+title: See what is new with Indobase 1.5
+description: Here is a recap off all announcements for Indobase 1.5.
 date: 2024-03-05
 cover: /images/blog/everything-new-with-appwrite-1.5/1.5-recap.png
 timeToRead: 6
@@ -10,7 +10,7 @@ category: product
 featured: false
 ---
 
-Appwrite just finished its release announcements for version 1.5 with a week of celebration called Init_, so here's the TLDR on all the announcements we made last week.
+Indobase just finished its release announcements for version 1.5 with a week of celebration called Init_, so here's the TLDR on all the announcements we made last week.
 
 ## Day 0 - Messaging
 
@@ -32,9 +32,9 @@ With messaging, we also have a fully functional interface for organizing message
 
 ## Day 1 - SSR
 
-Improved support for server-side rendering authentication patterns. Appwrite was optimized for CSR before the 1.5 release, and now we've added official methods and patterns for using Appwrite authentication with popular frameworks like NextJS, Svelte kit, Nuxt, and others like them.
+Improved support for server-side rendering authentication patterns. Indobase was optimized for CSR before the 1.5 release, and now we've added official methods and patterns for using Indobase authentication with popular frameworks like NextJS, Svelte kit, Nuxt, and others like them.
 
-The big change was that Appwrite now allows you to generate and access sessions server side to set session cookies and use these sessions to authorize future requests.
+The big change was that Indobase now allows you to generate and access sessions server side to set session cookies and use these sessions to authorize future requests.
 
 ```ts
 const session = account.createEmailPasswordSession({
@@ -85,7 +85,7 @@ Query.or([
   ])
 ```
 
-In addition to these key announcements, Appwrite announced Enum SDK support and the addition of more updated runtimes to the Appwrite ecosystem.
+In addition to these key announcements, Indobase announced Enum SDK support and the addition of more updated runtimes to the Indobase ecosystem.
 
 ## Content list
 You can find all the official release announcements and documentation for each day of the week below

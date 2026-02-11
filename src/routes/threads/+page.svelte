@@ -15,7 +15,7 @@
 
     const title = 'Threads' + TITLE_SUFFIX;
     const description =
-        "Appwrite's Threads page showcases our community interactions on Discord. Join the conversation, ask questions, or assist other members with their issues.";
+        "Indobase's Threads page showcases our community interactions on Discord. Join the conversation, ask questions, or assist other members with their issues.";
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 
     let { data } = $props();

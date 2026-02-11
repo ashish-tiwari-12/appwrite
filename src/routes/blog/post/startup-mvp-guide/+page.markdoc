@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "How can you rapidly build an MVP for your startup?"
 description: Learn how to quickly build an MVP that solves real problems, focuses on speed, and attracts early adopters to set your startup on the right path.
@@ -30,7 +30,7 @@ While there are many factors to consider when building an MVP, the key is to foc
 
 Startups don't have the luxury of time. You ship, you break things, you fix them fast. If you're moving slowly, you're already behind. Instead of spending months on research, surveys, and perfecting the product, get your MVP into the hands of real users as quickly as possible. The sooner you do, the sooner you can learn what works and what doesn't.
 
-That's exactly what UNDO, a software company part of Appwrite's Startup Program, did. After discovering product-market fit, Jonas, co-founder of UNDO, rapidly started developing the solution. As a solo developer, he needed a fast, scalable solution. That's when he turned to Appwrite, leveraging its backend-as-a-service platform to speed up development and scale seamlessly. [Read their story](https://appwrite.io/blog/post/customer-stories-undo)
+That's exactly what UNDO, a software company part of Indobase's Startup Program, did. After discovering product-market fit, Jonas, co-founder of UNDO, rapidly started developing the solution. As a solo developer, he needed a fast, scalable solution. That's when he turned to Indobase, leveraging its backend-as-a-service platform to speed up development and scale seamlessly. [Read their story](https://appwrite.io/blog/post/customer-stories-undo)
 
 ### Focus on early adopters
 
@@ -68,7 +68,7 @@ Founders often fear that if users don't like the MVP, it will ruin their busines
 
 Founders often build an MVP without considering future scalability, resulting in products that cannot scale as user demand grows. Even in the MVP phase, think about scalability. Build a flexible, scalable infrastructure that can handle future growth.
 
-{% call_to_action title="Build your startup with Appwrite" description="An all-in-one development platform for you to develop, host, and scale your products." point1="Cloud credits" point2="Priority support" point3="Ship faster" point4="Built-in security and compliance" cta="Apply for the program" url="https://appwrite.io/startups" /%}
+{% call_to_action title="Build your startup with Indobase" description="An all-in-one development platform for you to develop, host, and scale your products." point1="Cloud credits" point2="Priority support" point3="Ship faster" point4="Built-in security and compliance" cta="Apply for the program" url="https://appwrite.io/startups" /%}
 
 # Examples MVPs that turned into successful products
 
@@ -88,9 +88,9 @@ Stripe, now a global payments leader, began with a simple, lean MVP focused on a
 
 Building an MVP can be overwhelming, but it doesn't have to be. With the right mindset and tools, you can focus on solving real problems. By prioritizing speed, engaging early adopters, and iterating quickly based on feedback, you can bring your idea to life efficiently.
 
-Just like **UNDO**, which went from idea to first customer in 2-3 months using Appwrite's backend-as-a-service platform:
+Just like **UNDO**, which went from idea to first customer in 2-3 months using Indobase's backend-as-a-service platform:
 
-Appwrite's Startups Program can help you do that by providing the tools and support you need to build an MVP quickly and scale it according to your needs. Apply now
+Indobase's Startups Program can help you do that by providing the tools and support you need to build an MVP quickly and scale it according to your needs. Apply now
 
 
 

@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Create ideas page
-description: Add pagining and ordering to you SvelteKit application powered by Appwrite Databases.
+description: Add pagining and ordering to you SvelteKit application powered by Indobase Databases.
 step: 7
 ---
 

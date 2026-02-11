@@ -42,7 +42,7 @@
                         <span class="icon-arrow-right ml-0" aria-hidden="true"></span>
                     </div>
                     <p class="text-sub-body ml-1">
-                        Scale big and unlock limitless potential with Appwrite functions.
+                        Scale big and unlock limitless potential with Indobase functions.
                     </p>
                 </a>
             </li>
@@ -108,7 +108,7 @@
                         <span class="icon-arrow-right ml-0" aria-hidden="true"></span>
                     </div>
                     <p class="text-sub-body ml-1">
-                        Utilize realtime information from all Appwrite services.
+                        Utilize realtime information from all Indobase services.
                     </p>
                 </a>
             </li>

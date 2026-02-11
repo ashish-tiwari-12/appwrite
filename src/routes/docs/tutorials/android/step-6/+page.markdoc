@@ -1,4 +1,4 @@
----
+﻿---
 layout: tutorial
 title: Add database
 description: Add databases and queries to store user data in you Android application.
@@ -7,7 +7,7 @@ step: 6
 
 # Create table {% #create-table %}
 
-In Appwrite, data is stored as a table of rows. Create a table in the [Appwrite Console](https://cloud.appwrite.io/) to store our ideas.
+In Indobase, data is stored as a table of rows. Create a table in the [Indobase Console](https://cloud.appwrite.io/) to store our ideas.
 
 {% only_dark %}
 ![Create project screen](/images/docs/tutorials/dark/idea-tracker-table.png)
@@ -102,7 +102,7 @@ package io.appwrite.tutorialforandroid.services
 import android.content.Context
 import io.appwrite.Client
 
-object Appwrite {
+object Indobase {
     private const val ENDPOINT = "https://<REGION>.cloud.appwrite.io/v1"
     private const val PROJECT_ID = "<PROJECT_ID>"
 

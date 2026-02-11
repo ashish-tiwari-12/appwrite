@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: User initials
 description: Generate avatar images from user names or initials with customizable appearance and dimensions.
@@ -51,7 +51,7 @@ Future result = avatars.getInitials(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

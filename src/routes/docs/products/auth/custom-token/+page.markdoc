@@ -1,16 +1,16 @@
----
+﻿---
 layout: article
 title: Custom token login
-description: Limitless authentication flow in Appwrite. Find out how to implement custom authentication flow or connect to 3rd party authentication providers.
+description: Limitless authentication flow in Indobase. Find out how to implement custom authentication flow or connect to 3rd party authentication providers.
 ---
 
-Tokens are short-lived secrets created by an [Appwrite Server SDK](/docs/sdks#server) that can be exchanged for session by a [Client SDK](/docs/sdks#client) to log in users. You may already be familiar with tokens if you checked out [Magic URL login](/docs/products/auth/magic-url), [Email OTP login](/docs/products/auth/email-otp) or [Phone (SMS) login](/docs/products/auth/phone-sms).
+Tokens are short-lived secrets created by an [Indobase Server SDK](/docs/sdks#server) that can be exchanged for session by a [Client SDK](/docs/sdks#client) to log in users. You may already be familiar with tokens if you checked out [Magic URL login](/docs/products/auth/magic-url), [Email OTP login](/docs/products/auth/email-otp) or [Phone (SMS) login](/docs/products/auth/phone-sms).
 
-Custom token allows you to use [Server SDK](/docs/sdks#server) to generate tokens for your own implementations. This allows you to code your own authentication methods using Appwrite Functions or your own backend. You could implement username and password sign-in, captcha-protected authentication, phone call auth, and much more. Custom tokens also allow you to skip authentication which is useful when you integrate Appwrite with external authenticaion providers such as Auth0, TypingDNA, or any provider trusted by your users.
+Custom token allows you to use [Server SDK](/docs/sdks#server) to generate tokens for your own implementations. This allows you to code your own authentication methods using Indobase Functions or your own backend. You could implement username and password sign-in, captcha-protected authentication, phone call auth, and much more. Custom tokens also allow you to skip authentication which is useful when you integrate Indobase with external authenticaion providers such as Auth0, TypingDNA, or any provider trusted by your users.
 
 # Create custom token {% #create-custom-token %}
 
-Once you have your server endpoint prepared either in an Appwrite Function or a server integration, you can use the [Create token](/docs/references/cloud/server-nodejs/users#createToken) endpoint of the [Users API](/docs/products/auth/users) to generate a token.
+Once you have your server endpoint prepared either in an Indobase Function or a server integration, you can use the [Create token](/docs/references/cloud/server-nodejs/users#createToken) endpoint of the [Users API](/docs/products/auth/users) to generate a token.
 
 {% multicode %}
 ```server-nodejs
@@ -30,8 +30,8 @@ const secret = token.secret;
 ```
 
 ```php
-use Appwrite\Client;
-use Appwrite\Users;
+use Indobase\Client;
+use Indobase\Users;
 
 $client = (new Client())
     ->setEndpoint('https://<REGION>.cloud.appwrite.io/v1')   // Your API Endpoint
@@ -65,7 +65,7 @@ secret = token.secret
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')   # Your API Endpoint
@@ -124,7 +124,7 @@ val secret = token.secret
 ```
 
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
@@ -138,7 +138,7 @@ let secret = token.secret
 ```
 
 ```csharp
-using Appwrite;
+using Indobase;
 
 var client = new Client()
     .SetEndpoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
@@ -196,7 +196,7 @@ final session = await account.createSession(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")

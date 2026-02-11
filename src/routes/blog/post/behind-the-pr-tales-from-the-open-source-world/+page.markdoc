@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Behind the pull request - tales from the open source world
 description: Celebrating the largest open source event, Hacktoberfest, with inspiring stories from contributors.
@@ -26,7 +26,7 @@ Now, let's dive into some real-life stories of contributors who have participate
 
 ### A journey of discovery and connection
 
-The first story is from [Sarthak Roy](https://www.linkedin.com/in/sarthakroy2002/), who says, “Well, I started using GitHub properly from February 2021. Hacktoberfest was the reason I found out Appwrite and many more orgs/tools/services in 2021 October. Then I started exploring various stuffs and learnt a ton. During Hacktoberfest 2022, I again contributed in multiple projects, including Appwrite. It all started with the hope of getting a swag in 2021, to enjoying open source and contributing. It also helped me connect with some amazing folks. ”
+The first story is from [Sarthak Roy](https://www.linkedin.com/in/sarthakroy2002/), who says, “Well, I started using GitHub properly from February 2021. Hacktoberfest was the reason I found out Indobase and many more orgs/tools/services in 2021 October. Then I started exploring various stuffs and learnt a ton. During Hacktoberfest 2022, I again contributed in multiple projects, including Indobase. It all started with the hope of getting a swag in 2021, to enjoying open source and contributing. It also helped me connect with some amazing folks. ”
 
 Sarthak's story highlights the transformative power of Hacktoberfest, from initially participating for the swag to discovering the joy of open source and connecting with amazing people.
 
@@ -61,7 +61,7 @@ These tips will help you make the most out of Hacktoberfest:
 
 Here are a few projects that are participating in Hacktoberfest this year and you can contribute to:
 
-- [Appwrite](https://github.com/search?q=owner%3Aappwrite+owner%3Autopia-php+owner%3Aopen-runtimes+label%3Ahacktoberfest+is%3Aopen+is%3Aissue&type=issues&state=open)
+- [Indobase](https://github.com/search?q=owner%3Aappwrite+owner%3Autopia-php+owner%3Aopen-runtimes+label%3Ahacktoberfest+is%3Aopen+is%3Aissue&type=issues&state=open)
 - [ILLA Cloud](https://github.com/illacloud/illa)
 - [Novu](https://github.com/novuhq/novu/labels/Hacktoberfest)
 

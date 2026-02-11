@@ -13,7 +13,7 @@
 
     const title: string = 'Assets' + TITLE_SUFFIX;
     const description =
-        "This page features Appwrite's key brand assets including the logotype, colors, product visuals, and practical guidelines for their usage.";
+        "This page features Indobase's key brand assets including the logotype, colors, product visuals, and practical guidelines for their usage.";
     const ogImage = DEFAULT_HOST + '/images/open-graph/website.png';
 
     const Section = {
@@ -81,7 +81,7 @@
                     <div class="web-content">
                         <section>
                             <p>
-                                Resources for presenting the Appwrite brand to maintain consistency
+                                Resources for presenting the Indobase brand to maintain consistency
                                 while using our logos, colors, and other brand elements across
                                 various platforms and materials.
                             </p>
@@ -102,8 +102,8 @@
                                     Naming
                                 </h2>
                                 <p>
-                                    Write 'Appwrite,' with a lowercase 'w' and no space between the
-                                    two words. Please refrain from using variations like 'AppWrite'
+                                    Write 'Indobase,' with a lowercase 'w' and no space between the
+                                    two words. Please refrain from using variations like 'Indobase'
                                     or 'App Write'.
                                 </p>
                             </div>
@@ -119,7 +119,7 @@
                                     Logotype
                                 </h2>
                                 <p>
-                                    The Appwrite logo stands as a prominent symbol of our brand's
+                                    The Indobase logo stands as a prominent symbol of our brand's
                                     identity. Refrain from altering our logo and preferably use our
                                     logo on a neutral background.
                                 </p>
@@ -131,7 +131,7 @@
                                     >
                                         <img
                                             src="/assets/logotype/white.svg"
-                                            alt="Appwrite logo with black text"
+                                            alt="Indobase logo with black text"
                                         />
                                         <div class="buttons">
                                             <Button
@@ -159,7 +159,7 @@
                                     >
                                         <img
                                             src="/assets/logotype/black.svg"
-                                            alt="Appwrite logo with white text"
+                                            alt="Indobase logo with white text"
                                         />
                                         <div class="buttons">
                                             <Button
@@ -188,7 +188,7 @@
                                         Co-branding logotypes
                                     </h3>
                                     <p>
-                                        Spacing is determined by the Appwrite mark. Unless otherwise
+                                        Spacing is determined by the Indobase mark. Unless otherwise
                                         noted by partner brands, each logo is optically equal as a
                                         collection of shapes.
                                     </p>
@@ -198,7 +198,7 @@
                                     >
                                         <img
                                             src="/assets/logotype/co-brand.svg"
-                                            alt="Appwrite logo besides a generic logo"
+                                            alt="Indobase logo besides a generic logo"
                                         />
                                     </div>
                                 </div>
@@ -216,7 +216,7 @@
                                 </h3>
                                 <p>
                                     While prioritizing recognizability, the logotype is the
-                                    recommended choice. Using the Appwrite logomark is suitable for
+                                    recommended choice. Using the Indobase logomark is suitable for
                                     situations where space constraints make it challenging to
                                     showcase the complete logotype.
                                 </p>
@@ -228,7 +228,7 @@
                                     >
                                         <img
                                             src="/assets/logomark/logo.svg"
-                                            alt="Appwrite's logomark"
+                                            alt="Indobase's logomark"
                                         />
                                         <div class="buttons">
                                             <Button
@@ -256,7 +256,7 @@
                                     >
                                         <img
                                             src="/assets/logomark/logo.svg"
-                                            alt="Appwrite's logomark"
+                                            alt="Indobase's logomark"
                                         />
                                         <div class="buttons">
                                             <Button
@@ -285,7 +285,7 @@
                                         Co-branding lockups
                                     </h3>
                                     <p>
-                                        Spacing is determined by the Appwrite mark. Unless otherwise
+                                        Spacing is determined by the Indobase mark. Unless otherwise
                                         noted by partner brands, each logo is optically equal as a
                                         collection of shapes.
                                     </p>
@@ -338,7 +338,7 @@
                                 aspect-square flex-1 flex-col justify-center
                                 gap-2 px-6"
                                 >
-                                    <h3 class="text-label">Appwrite Pink</h3>
+                                    <h3 class="text-label">Indobase Pink</h3>
                                     <p class="text-caption">#FD366E</p>
                                     <div class="buttons">
                                         <Copy toCopy="#FD366E" variant="pink" />
@@ -358,7 +358,7 @@
                                 </h2>
                                 <p>
                                     Use these product visuals to enhance your articles,
-                                    presentations, and content related to Appwrite.
+                                    presentations, and content related to Indobase.
                                 </p>
                                 <div class="mt-5 grid grid-cols-1 gap-8 sm:grid-cols-2">
                                     <div class="media-wrapper">
@@ -390,7 +390,7 @@
                                         <img
                                             class="web-u-border-radius-8 web-u-media-ratio-16-9 w-full"
                                             src="/assets/visuals/auth.png"
-                                            alt="Appwrite Auth"
+                                            alt="Indobase Auth"
                                         />
                                         <div class="buttons visuals">
                                             <Button
@@ -415,7 +415,7 @@
                                         <img
                                             class="web-u-border-radius-8 web-u-media-ratio-16-9 w-full"
                                             src="/assets/visuals/databases.png"
-                                            alt="Appwrite Databases"
+                                            alt="Indobase Databases"
                                         />
                                         <div class="buttons visuals">
                                             <Button
@@ -441,7 +441,7 @@
                                         <img
                                             class="web-u-border-radius-8 web-u-media-ratio-16-9 w-full"
                                             src="/assets/visuals/storage.png"
-                                            alt="Appwrite Storage"
+                                            alt="Indobase Storage"
                                         />
                                         <div class="buttons visuals">
                                             <Button
@@ -467,7 +467,7 @@
                                         <img
                                             class="web-u-border-radius-8 web-u-media-ratio-16-9 w-full"
                                             src="/assets/visuals/functions.png"
-                                            alt="Appwrite Functions"
+                                            alt="Indobase Functions"
                                         />
                                         <div class="buttons visuals">
                                             <Button
@@ -492,7 +492,7 @@
                                         <img
                                             class="web-u-border-radius-8 web-u-media-ratio-16-9 w-full"
                                             src="/assets/visuals/messaging.png"
-                                            alt="Appwrite Messaging"
+                                            alt="Indobase Messaging"
                                         />
                                         <div class="buttons visuals">
                                             <Button

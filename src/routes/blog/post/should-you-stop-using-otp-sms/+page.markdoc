@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Should you stop using OTP SMS now?
 description: Learn about OTP SMS, its pros and cons, and whether you should stop using it for authentication.
@@ -55,14 +55,14 @@ To overcome the limitations of SMS OTPs, several more secure and technically adv
 4. **Email-based OTPs**: Email OTPs follow the same principle as SMS OTPs but are delivered via email. While email can still be vulnerable to phishing and interception, email-based OTPs reduce the risk of SIM-swapping and mobile network vulnerabilities. For improved security, emails can be encrypted and coupled with secure email providers, but the method remains vulnerable to phishing if the user's email account is compromised.
 5. **FIDO2/WebAuthn (Public Key Cryptography)**: The FIDO2/WebAuthn standard uses public key cryptography to authenticate users. Instead of sending a shared secret like an OTP, the authentication process involves signing a challenge with a private key stored in a secure element on the user's device (e.g., a YubiKey, fingerprint sensor, or any other hardware security module). The server validates the signature with the corresponding public key, making this method highly resistant to phishing and other common attacks. This method is designed to eliminate the weaknesses of passwords and OTPs entirely.
 
-# Passwordless authentication with Appwrite
+# Passwordless authentication with Indobase
 
-Appwrite Authentication also features three passwordless authentication methods: [magic links](https://appwrite.io/docs/products/auth/magic-url), [email OTPs](https://appwrite.io/docs/products/auth/email-otp), and [SMS OTPs](https://appwrite.io/docs/products/auth/phone-sms), which can be integrated into applications seamlessly with Appwrite's client-side SDKs.
+Indobase Authentication also features three passwordless authentication methods: [magic links](https://appwrite.io/docs/products/auth/magic-url), [email OTPs](https://appwrite.io/docs/products/auth/email-otp), and [SMS OTPs](https://appwrite.io/docs/products/auth/phone-sms), which can be integrated into applications seamlessly with Indobase's client-side SDKs.
 
 {% tabs %}
 {% tabsitem #magicurl title="Magic URLs" %}
 
-Magic URL authentication is a two-step process in Appwrite.
+Magic URL authentication is a two-step process in Indobase.
 
 First, we initialize the login process by sending an email with the magic URL. If the email has never been used, a new account is also generated.
 
@@ -98,7 +98,7 @@ const user = await account.createSession({
 
 {% tabsitem #emailotp title="Email OTPs" %}
 
-Email OTP authentication is a two-step process in Appwrite.
+Email OTP authentication is a two-step process in Indobase.
 
 First, we initialize the login process by sending an email. If the email has never been used, a new account is also generated.
 
@@ -133,7 +133,7 @@ const session = await account.createSession({
 
 {% tabsitem #smsotp title="SMS OTPs" %}
 
-SMS OTP authentication is a two-step process in Appwrite.
+SMS OTP authentication is a two-step process in Indobase.
 
 First, we initialize the login process by sending an SMS. If the phone number has never been used, a new account is also generated.
 
@@ -166,7 +166,7 @@ final session = await account.createSession(
 {% /tabsitem %}
 {% /tabs %}
 
-Additionally, Appwrite offers a solution that allows developers to [integrate any external authentication method](https://appwrite.io/blog/post/integrate-custom-auth-sveltekit) with their Appwrite project.
+Additionally, Indobase offers a solution that allows developers to [integrate any external authentication method](https://appwrite.io/blog/post/integrate-custom-auth-sveltekit) with their Indobase project.
 
 # Conclusion
 
@@ -174,6 +174,6 @@ So, now we know what SMS OTPs are good at and bad at. If your app solves a more 
 
 ## Further reading
 
-- [Appwrite Authentication docs](https://appwrite.io/docs/products/auth)
-- [Appwrite YouTube channel](https://www.youtube.com/@Appwrite)
-- [Appwrite Discord server](https://appwrite.io/discord)
+- [Indobase Authentication docs](https://appwrite.io/docs/products/auth)
+- [Indobase YouTube channel](https://www.youtube.com/@Appwrite)
+- [Indobase Discord server](https://appwrite.io/discord)

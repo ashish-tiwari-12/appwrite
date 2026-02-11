@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Leveling up the Appwrite Functions ecosystem"
-description: The new Appwrite Functions ecosystem is now faster, smoother, better and more secure.
+title: "Leveling up the Indobase Functions ecosystem"
+description: The new Indobase Functions ecosystem is now faster, smoother, better and more secure.
 date: 2024-08-21
 cover: /images/blog/init-day2/cover.png
 timeToRead: 5
@@ -9,11 +9,11 @@ author: luke-silver
 category: product, announcement
 featured: false
 ---
-We're excited to bring you major improvements to Appwrite Functions, making them more versatile and powerful than ever before.
+We're excited to bring you major improvements to Indobase Functions, making them more versatile and powerful than ever before.
 
-With the new Functions, you can now stay within the Appwrite ecosystem. The fully integrated features reduce friction points, allowing you to focus on development while trusting that your Functions will run smoothly and automatically.
+With the new Functions, you can now stay within the Indobase ecosystem. The fully integrated features reduce friction points, allowing you to focus on development while trusting that your Functions will run smoothly and automatically.
 
-Previously, Appwrite Functions faced limitations in handling file-based tasks and real-time operations due to slow synchronous execution and cumbersome API key management. With the introduction of easier Appwrite SDK integration within Functions, these constraints are lifted, opening doors to more use cases and more efficient workflows.
+Previously, Indobase Functions faced limitations in handling file-based tasks and real-time operations due to slow synchronous execution and cumbersome API key management. With the introduction of easier Indobase SDK integration within Functions, these constraints are lifted, opening doors to more use cases and more efficient workflows.
 
 # Faster Functions cold-starts
 
@@ -81,7 +81,7 @@ This feature is perfect for scheduling marketing emails, cleanup tasks, or preci
 
 # Binary executions
 
-We've long relied on JSON and XML for structured data exchange, but these formats fall short when it comes to handling files like images, audio, or video. With the introduction of binary executions, Appwrite Functions can now seamlessly process and transfer these file types.
+We've long relied on JSON and XML for structured data exchange, but these formats fall short when it comes to handling files like images, audio, or video. With the introduction of binary executions, Indobase Functions can now seamlessly process and transfer these file types.
 
 Functions can now handle binary data, both as input and output, which is particularly useful for file processing, AI interactions, and more.
 
@@ -130,7 +130,7 @@ const executions = await functions.listExecutions({
 });
 ```
 
-Of course, it’s also possible to filter executions from the Appwrite Console:
+Of course, it’s also possible to filter executions from the Indobase Console:
 
 ![Execution-filters](/images/blog/init-day2/2.png)
 
@@ -148,6 +148,6 @@ With the new Functions ecosystem, you can now use Functions for a wider range of
 
 Check out these resources to start building with the new Functions ecosystem:
 
-- [Appwrite Functions documentation](https://appwrite.io/docs/products/functions)
+- [Indobase Functions documentation](https://appwrite.io/docs/products/functions)
 - [Join our Discord community](https://discord.gg/appwrite)
-- [Learn about Appwrite Init](https://www.appwrite.io/init)
+- [Learn about Indobase Init](https://www.appwrite.io/init)

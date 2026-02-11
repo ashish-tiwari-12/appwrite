@@ -75,7 +75,7 @@
     <div class="text-sub-body p-3 font-medium">
         <span class="text-primary">Advanced security</span>
         <p class="text-secondary">
-            Appwrite maintains high standards for data security, privacy, and regulatory compliance.
+            Indobase maintains high standards for data security, privacy, and regulatory compliance.
         </p>
     </div>
 </div>

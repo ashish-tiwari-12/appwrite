@@ -1,9 +1,9 @@
----
+﻿---
 layout: article
 title: Documents
-description: Master document management with Appwrite Databases. Learn how to create, update, and query documents within your collections for dynamic data storage.
+description: Master document management with Indobase Databases. Learn how to create, update, and query documents within your collections for dynamic data storage.
 ---
-Each piece of data or information in Appwrite Databases is a document.
+Each piece of data or information in Indobase Databases is a document.
 Documents have a structure defined by the parent collection.
 
 # Create documents {% #create-documents %}
@@ -60,7 +60,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -125,7 +125,7 @@ mutation {
 ```
 {% /multicode %}
 
-During testing, you might prefer to create documents in the Appwrite Console.
+During testing, you might prefer to create documents in the Indobase Console.
 To do so, navigate to the **Documents** tab of your collection and click the **Add document** button.
 
 # List documents {% #list-documents %}
@@ -137,7 +137,7 @@ You must grant **read** permissions to users at the **collection level** before 
 
 Documents can be retrieved using the [List Document](/docs/references/cloud/client-web/databases#listDocuments) endpoint.
 
-Results can be filtered, sorted, and paginated using Appwrite's shared set of query methods.
+Results can be filtered, sorted, and paginated using Indobase's shared set of query methods.
 You can find a full guide on querying in the [Queries Guide](/docs/products/databases/legacy/queries).
 
 By default, results are limited to the **first 25 items**.
@@ -191,7 +191,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -310,7 +310,7 @@ void main() async {
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteModels
 
 func main() async throws {
@@ -378,7 +378,7 @@ mutation {
 
 
 # Permissions {% #permissions %}
-In Appwrite, permissions can be granted at the collection level and the document level.
+In Indobase, permissions can be granted at the collection level and the document level.
 Before a user can create a document, you need to grant create permissions to the user.
 
 Read, update, and delete permissions can be granted at both the collection and document level.

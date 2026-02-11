@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Memberships privacy is now available for all Appwrite plans
-description: Appwrite now offers memberships privacy for all plans, making it easier to protect your members' personal information.
+title: Memberships privacy is now available for all Indobase plans
+description: Indobase now offers memberships privacy for all plans, making it easier to protect your members' personal information.
 date: 2024-12-10
 cover: /images/blog/memberships-privacy-announcement/cover.png
 timeToRead: 4
@@ -9,7 +9,7 @@ author: ebenezer-don
 category: product, announcement
 ---
 
-Protecting user data is fundamental to building secure and reliable applications. We're excited to announce that memberships privacy is now available on all Appwrite plans, enabling you to safeguard your members' personal information effectively.
+Protecting user data is fundamental to building secure and reliable applications. We're excited to announce that memberships privacy is now available on all Indobase plans, enabling you to safeguard your members' personal information effectively.
 
 # Why memberships privacy matters
 
@@ -27,7 +27,7 @@ When set to private, these details remain hidden in team or project workflows un
 # How to configure memberships privacy
 
 Implementing memberships privacy is straightforward:
-1. Open your Appwrite Console
+1. Open your Indobase Console
 2. Navigate to Auth > Security > Memberships privacy
 3. Select which details (userName, userEmail, or mfa) should be private
 

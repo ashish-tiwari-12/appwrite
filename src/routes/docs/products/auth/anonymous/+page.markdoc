@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Anonymous login
-description: Manage user identities and profiles effectively with Appwrite. Dive into user management features, account settings, and user data customization.
+description: Manage user identities and profiles effectively with Indobase. Dive into user management features, account settings, and user data customization.
 ---
 
 Anonymous sessions allow you to implement **guest** users. Guest users let you store user information like items in their cart or theme preferences before they create an account. This reduces the friction for your users to get started with your app.
@@ -42,7 +42,7 @@ final account = Account(client);
 final user = await account.createAnonymousSession();
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint

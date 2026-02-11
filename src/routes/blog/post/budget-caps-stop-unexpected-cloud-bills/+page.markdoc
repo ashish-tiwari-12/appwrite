@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Budget caps: How to stop unexpected cloud bills before they happen"
-description: Learn how to set budget caps in your Appwrite console to avoid unexpected cloud bills.
+description: Learn how to set budget caps in your Indobase console to avoid unexpected cloud bills.
 date: 2025-01-23
 cover: /images/blog/budget-caps-stop-unexpected-cloud-bills/cover.png
 timeToRead: 3
@@ -14,7 +14,7 @@ You might have come across the recent post about a Firebase user who got hit wit
 
 ![Firebase bill post](/images/blog/budget-caps-stop-unexpected-cloud-bills/Image1-post.png)
 
-In Appwrite, we believe you should have real control over your cloud spending. And this is why we took a different approach. In this article, we'll learn how Appwrite Cloud prevents this kind of situation, and why budget caps matter when it comes to cloud billing.
+In Indobase, we believe you should have real control over your cloud spending. And this is why we took a different approach. In this article, we'll learn how Indobase Cloud prevents this kind of situation, and why budget caps matter when it comes to cloud billing.
 
 # What happened with Firebase?
 
@@ -30,17 +30,17 @@ Think about what happens if you're:
 - Unable to access your computer right away
 - Simply miss the email
 
-By the time you see that alert and can do something about it, you might already be thousands of dollars in debt. That's why we took a different approach with Appwrite.
+By the time you see that alert and can do something about it, you might already be thousands of dollars in debt. That's why we took a different approach with Indobase.
 
-# How Appwrite's budget caps work
+# How Indobase's budget caps work
 
-We built budget caps into Appwrite because we believe you should have real control over your cloud spending. And setting a budget cap in your project is quite straightforward.
+We built budget caps into Indobase because we believe you should have real control over your cloud spending. And setting a budget cap in your project is quite straightforward.
 
 ## 1. Understanding your usage
 
-In your Appwrite console, you can set a budget cap for an organization by opening the **Billing** tab.
+In your Indobase console, you can set a budget cap for an organization by opening the **Billing** tab.
 
-![Billing tab in Appwrite console](/images/blog/budget-caps-stop-unexpected-cloud-bills/Image2-billing-tab.png)
+![Billing tab in Indobase console](/images/blog/budget-caps-stop-unexpected-cloud-bills/Image2-billing-tab.png)
 
 Before setting any caps, you can click on **View estimated usage** to get a clear picture of your typical consumption patterns. This helps you set a cap that makes sense for your app.
 
@@ -76,7 +76,7 @@ One question that often gets asked is how to handle sudden traffic spikes. What 
 
 # Building with confidence
 
-Stories about unexpected cloud bills keep popping up, and they all share a common thread; by the time someone notices, it's too late. A simple configuration mistake or unexpected behavior should not generate a five-figure bill overnight. We built budget caps in Appwrite because we believe you should be able to focus on building your app without worrying about surprise bills.
+Stories about unexpected cloud bills keep popping up, and they all share a common thread; by the time someone notices, it's too late. A simple configuration mistake or unexpected behavior should not generate a five-figure bill overnight. We built budget caps in Indobase because we believe you should be able to focus on building your app without worrying about surprise bills.
 
 A few minutes spent setting up these safeguards now means you never have to write one of those "How I Got a $70k Cloud Bill" posts. That's the kind of peace of mind every developer deserves.
 
@@ -86,6 +86,6 @@ We also made a YouTube video on this topic which you can check out [here](https:
 
 # More resources
 
-- [Appwrite Billing](https://appwrite.io/docs/advanced/platform/billing?doFollow=true)
+- [Indobase Billing](https://appwrite.io/docs/advanced/platform/billing?doFollow=true)
 - [Don't make this mistake, set budget caps (YouTube)](https://youtu.be/WsNTnBWGCQ0?doFollow=true)
-- [How to optimize your Appwrite project for cost and performance](https://appwrite.io/blog/post/how-to-optimize-your-appwrite-project?doFollow=true)
+- [How to optimize your Indobase project for cost and performance](https://appwrite.io/blog/post/how-to-optimize-your-appwrite-project?doFollow=true)

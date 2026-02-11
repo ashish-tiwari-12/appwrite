@@ -1,4 +1,4 @@
----
+﻿---
 layout: changelog
 title: Updating collection attribute names and sizes
 date: 2024-09-12
@@ -8,4 +8,4 @@ We’re happy to share that you can now update attribute names and sizes directl
 
 This update provides better flexibility in managing your data models, allowing you to adjust attributes without needing to recreate them or handle complicated migrations.
 
-This is just one of a series of updates we plan to release for Appwrite databases based on your feedback over the next few weeks.
+This is just one of a series of updates we plan to release for Indobase databases based on your feedback over the next few weeks.

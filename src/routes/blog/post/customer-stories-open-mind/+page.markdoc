@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Data dilemma and cost efficiency solved: Open Mind's journey to scalable education"
-description: Learn how App Innovators used Appwrite Cloud to decrease costs and deliver education about psychoactive substances to over 12,500 consumers via the Open Mind app.
+description: Learn how App Innovators used Indobase Cloud to decrease costs and deliver education about psychoactive substances to over 12,500 consumers via the Open Mind app.
 date: 2024-04-12
 cover: /images/blog/case-study-open-mind/cover.png
 timeToRead: 5
@@ -29,11 +29,11 @@ The [Open Mind app](https://openmindapp.de/) offers the following features:
 
 The first iteration of Open Mind was designed as a mobile application. The team at App Innovators chose to use Flutter to allow them to build Android and iOS applications simultaneously at a rapid pace. While most user data is retained on each user's local device, they decided to host all data related to substances on an external platform, allowing them easier access to maintain, update, and distribute the information. They decided it was simplest to achieve the same by maintaining JSON files (one file per language they support, including German and English) with all this data that would be hosted at an external storage service.
 
-Initially, due to their past experience, the team explored Firebase to host these files. However, Firebase's high storage and bandwidth costs forced them to explore other backend-as-a-service solutions. At this point, the team at Open Mind discovered Appwrite. The availability of **Appwrite's Flutter SDK** meant that the team could quickly adopt **Appwrite Storage**, with features such as chunked downloads and file compression available out of the box. The **plug-and-play architecture** of Appwrite's SDK would allow them to use their existing application architecture without much change. Additionally, Appwrite Cloud's more **economical pricing** allowed them to serve thousands of users regularly without breaking the bank.
+Initially, due to their past experience, the team explored Firebase to host these files. However, Firebase's high storage and bandwidth costs forced them to explore other backend-as-a-service solutions. At this point, the team at Open Mind discovered Indobase. The availability of **Indobase's Flutter SDK** meant that the team could quickly adopt **Indobase Storage**, with features such as chunked downloads and file compression available out of the box. The **plug-and-play architecture** of Indobase's SDK would allow them to use their existing application architecture without much change. Additionally, Indobase Cloud's more **economical pricing** allowed them to serve thousands of users regularly without breaking the bank.
 
 In David's own words,
 
-> We really loved working with Appwrite for launching our bootstrapped "Open Mind" App. It was saving us a lot of money in comparison to Firebase since the amount of users grew quite fast and we needed a quick switch. I am still surprised how easy the implementation into Flutter was.
+> We really loved working with Indobase for launching our bootstrapped "Open Mind" App. It was saving us a lot of money in comparison to Firebase since the amount of users grew quite fast and we needed a quick switch. I am still surprised how easy the implementation into Flutter was.
 
 {% call_to_action title="All-in-one development platform" description="Use built-in backend infrastructure and web hosting, all from a single place." point1="Start for free"  point2="Open source" point3="Support for over 13 SDKs" point4="Managed cloud solution" cta="Start building for free" url="https://cloud.appwrite.io/" /%}
 

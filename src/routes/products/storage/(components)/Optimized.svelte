@@ -9,7 +9,7 @@
     <div class="mx-auto max-w-md">
         <h2 class="text-title font-aeonik-pro text-primary">Optimized for small and large files</h2>
         <p class="text-main-body mt-4 font-medium">
-            Appwrite offers chunked uploads for large files and several compression options for
+            Indobase offers chunked uploads for large files and several compression options for
             optimized upload times.
         </p>
         <div class="mt-8 flex gap-2">

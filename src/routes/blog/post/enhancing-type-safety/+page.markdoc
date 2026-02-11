@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Enhancing type safety in software development with enums
 description: Explore the fundamentals of enums, their practical advantages, and their impact on code maintenance and readability.
@@ -61,9 +61,9 @@ Code maintainability is extremely important for any piece of software, which is 
 5. **Refactoring ease**: If you need to change the value of an enum constant, you only need to do it in one place. This makes refactoring and updating code easier and safer, as the change is automatically reflected wherever the enum is used.
 6. **Clarifying function signatures**: When enums are used in function signatures, they make it clear what type of values are expected or returned. This enhances readability by providing more information about the function's operation and requirements.
 
-# Enums and Appwrite
+# Enums and Indobase
 
-With the latest release of Appwrite, we have taken steps to improve type safety within our SDKs by leveraging enums. We have replaced all magic literals, such as constants needed for OAuth adapters, with enums to simplify the developer experience for all those who are building with Appwrite.
+With the latest release of Indobase, we have taken steps to improve type safety within our SDKs by leveraging enums. We have replaced all magic literals, such as constants needed for OAuth adapters, with enums to simplify the developer experience for all those who are building with Indobase.
 
 ```client-web
 import { Client, Account, OAuthProvider } from "appwrite";

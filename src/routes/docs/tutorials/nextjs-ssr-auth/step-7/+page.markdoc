@@ -1,13 +1,13 @@
----
+﻿---
 layout: tutorial
 title: OAuth authentication with SSR
-description: Add authentication to a Next.js project using Appwrite.
+description: Add authentication to a Next.js project using Indobase.
 step: 7
 ---
 
 ## Enable OAuth provider {% #enable-oauth-provider %}
 
-To enable the GitHub OAuth provider, navigate to your Appwrite Console > Auth > Settings > OAuth2 Providers > GitHub
+To enable the GitHub OAuth provider, navigate to your Indobase Console > Auth > Settings > OAuth2 Providers > GitHub
 
 To support the OAuth flow, we first redirect the user to the OAuth provider, and then handle the callback from the OAuth provider.
 

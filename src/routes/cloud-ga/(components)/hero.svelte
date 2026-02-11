@@ -4,7 +4,7 @@
     import Grid from './grid-system/grid.svelte';
     import { cn } from '$lib/utils/cn';
 
-    const title = 'Appwrite Cloud is Generally Available'.split(' ');
+    const title = 'Indobase Cloud is Generally Available'.split(' ');
 
     const numbers = [
         { label: 'Top 300', description: 'GitHub repos' },
@@ -24,15 +24,15 @@
                     <h1
                         class="text-headline font-aeonik-pro text-primary max-w-4xl gap-4 text-balance"
                     >
-                        Appwrite Cloud is Generally Available<span class="text-accent">_</span>
+                        Indobase Cloud is Generally Available<span class="text-accent">_</span>
                     </h1>
                     <div class="text-description text-secondary max-w-3xl space-y-8 font-medium">
                         <p class="animate-text" style:animation-delay="600ms">
-                            Appwrite Cloud was designed to make it easier to build with Appwrite
+                            Indobase Cloud was designed to make it easier to build with Indobase
                             because we know self-hosting is not for everyone.
                         </p>
                         <p class="animate-text" style:animation-delay="700ms">
-                            Today, Appwrite Cloud is powering over 300,000 projects, and we are both
+                            Today, Indobase Cloud is powering over 300,000 projects, and we are both
                             proud and excited to announce its transition to general availability.
                         </p>
                     </div>

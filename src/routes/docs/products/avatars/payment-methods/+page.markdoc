@@ -1,4 +1,4 @@
----
+﻿---
 layout: article
 title: Payment methods
 description: Retrieve payment method logos for checkout flows and transaction displays.
@@ -49,7 +49,7 @@ Future result = avatars.getCreditCard(
 });
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")
@@ -177,7 +177,7 @@ Future discover = avatars.getCreditCard(
 );
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 // Visa
 let visa = try await avatars.getCreditCard(

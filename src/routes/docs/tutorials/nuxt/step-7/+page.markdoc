@@ -1,7 +1,7 @@
----
+﻿---
 layout: tutorial
 title: Ideas page
-description: Add ideas from Appwrite database in your app.
+description: Add ideas from Indobase database in your app.
 step: 7
 ---
 
@@ -11,7 +11,7 @@ We start with building the form.
 
 ## Idea form {% #idea-form %}
 
-On the home page, the logged in users should be able to add their ideas to the Appwrite database.
+On the home page, the logged in users should be able to add their ideas to the Indobase database.
 The form need a text field for filling in the title, a textarea for the description and a submit button.
 
 From the `components` directory, add the file `IdeasForm.vue` and add the following code.
@@ -115,7 +115,7 @@ Now that we can get some ideas to show, we go on to build the component for the 
 
 Once again, we need to take a moment to think about how this component should work.
 First of all, the ideas should be visible for the users before any interaction has taken place on the page.
-To catch that moment in time when the page loads, we call our `fetch` function, that fetches the ideas in Appwrite, from the built-in `onMounted` function.
+To catch that moment in time when the page loads, we call our `fetch` function, that fetches the ideas in Indobase, from the built-in `onMounted` function.
 
 Second, it's likely that a user will want to delete one of their ideas from the database.
 We help them do that by adding a delete button in the top right corner of the idea list item, but only on the ideas added by the user itself.
@@ -177,4 +177,4 @@ This component should be visible to all users, so no conditional rendering neeed
 ````
 
 Congratulations!
-You now have an ideas tracker built with Nuxt and Appwrite to use locally.
+You now have an ideas tracker built with Nuxt and Indobase to use locally.

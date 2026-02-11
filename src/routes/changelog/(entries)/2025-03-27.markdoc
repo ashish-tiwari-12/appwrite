@@ -1,11 +1,11 @@
----
+﻿---
 layout: changelog
-title: Appwrite Cloud backups now faster
+title: Indobase Cloud backups now faster
 date: 2025-03-27
 cover: /images/changelog/2025-03-27.png
 ---
 
-Appwrite Cloud backups are now considerably faster, reducing wait times and improving reliability.
+Indobase Cloud backups are now considerably faster, reducing wait times and improving reliability.
 
 ## What's changed
 

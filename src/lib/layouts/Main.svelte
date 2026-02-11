@@ -169,7 +169,7 @@
                     showLabel={true}
                     leftText="Introducing"
                     logoText="Imagine"
-                    rightText="AI Builder on Appwrite Cloud"
+                    rightText="AI Builder on Indobase Cloud"
                 />
             </div>
         </div>

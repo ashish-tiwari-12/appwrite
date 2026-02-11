@@ -1,21 +1,21 @@
----
+﻿---
 layout: article
 title: Execution
-description: Understand serverless function execution in Appwrite. Explore how triggers, events, and data flow enable dynamic execution of your code.
+description: Understand serverless function execution in Indobase. Explore how triggers, events, and data flow enable dynamic execution of your code.
 difficulty: beginner
 readtime: 3
 ---
 
 
-Appwrite Functions can be executed in several ways.
-Executions can be invoked through the Appwrite SDK and visiting its REST endpoint. Functions can also be triggered by events and scheduled executions.
-Here are all the different ways to consume your Appwrite Functions.
+Indobase Functions can be executed in several ways.
+Executions can be invoked through the Indobase SDK and visiting its REST endpoint. Functions can also be triggered by events and scheduled executions.
+Here are all the different ways to consume your Indobase Functions.
 
 # Domains {% #domains %}
 You can execute a function through HTTP requests, using a browser or by sending an HTTP request.
-1. In the Appwrite Console's sidebar, click **Functions**.
+1. In the Indobase Console's sidebar, click **Functions**.
 1. Under **Execute access**, set the access to `Any` so that anyone can execute the function. You will use [JWTs](/docs/products/auth/jwt) to authenticate users.
-1. Under the **Domains** tab, you'll find the generated domain from Appwrite and your custom domains. [Learn about adding a custom domain](/docs/products/functions/domains).
+1. Under the **Domains** tab, you'll find the generated domain from Indobase and your custom domains. [Learn about adding a custom domain](/docs/products/functions/domains).
 
 ```bash
 https://64d4d22db370ae41a32e.appwrite.global
@@ -35,12 +35,12 @@ curl -X POST https://64d4d22db370ae41a32e.appwrite.global \
 Notice how a `x-appwrite-user-jwt` header is passed in the request, you will use this to authenticate users.
 [Learn more about JWTs](/docs/products/auth/jwt).
 
-This unlocks ability for you to develop custom HTTP endpoints with Appwrite Functions.
+This unlocks ability for you to develop custom HTTP endpoints with Indobase Functions.
 It also allows accepting incoming webhooks for handling online payments, hosting social platform bots, and much more.
 
 # SDK {% #sdk %}
 
-You can invoke your Appwrite Functions directly from the [Appwrite SDKs](/docs/sdks).
+You can invoke your Indobase Functions directly from the [Indobase SDKs](/docs/sdks).
 
 {% tabs %}
 {% tabsitem #client title="Client SDKs" %}
@@ -100,7 +100,7 @@ void main() { // Init SDK
 }
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setProject("<PROJECT_ID>") // Your project ID
@@ -255,8 +255,8 @@ func main() {
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Functions;
+use Indobase\Client;
+use Indobase\Services\Functions;
 
 $client = new Client();
 
@@ -299,7 +299,7 @@ result = functions.create_execution(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_project('<PROJECT_ID>') # Your project ID
@@ -318,9 +318,9 @@ response = functions.create_execution(
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetProject("<PROJECT_ID>"); // Your project ID
@@ -418,7 +418,7 @@ functions.createExecution(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setProject("<PROJECT_ID>") // Your project ID
@@ -439,7 +439,7 @@ let execution = try await functions.createExecution(
 {% /tabs %}
 
 # Console {% #console %}
-Another easy way to test a function is directly in the Appwrite Console.
+Another easy way to test a function is directly in the Indobase Console.
 You test a function by hitting the **Execute now** button, which will display with modal below.
 
 You'll be able to mock executions by configuring the path, method, headers, and body.
@@ -454,9 +454,9 @@ You'll be able to mock executions by configuring the path, method, headers, and 
 
 # Events {% #events %}
 
-Changes in Appwrite emit events. You can configure Functions to be executed in response to these events.
+Changes in Indobase emit events. You can configure Functions to be executed in response to these events.
 
-1. In Appwrite Console, navigate to **Functions**.
+1. In Indobase Console, navigate to **Functions**.
 2. Click to open a function you wish to configure.
 3. Under the **Settings** tab, navigate to **Events**.
 4. Add one or multiple events as triggers for the function.
@@ -486,7 +486,7 @@ You can use one of the following events.
 
 # Schedule {% #schedule %}
 
-Appwrite supports scheduled function executions. You can schedule executions using [cron expressions](https://en.wikipedia.org/wiki/Cron) in the settings of your function. Cron supports recurring executions as frequently as **every minute**.
+Indobase supports scheduled function executions. You can schedule executions using [cron expressions](https://en.wikipedia.org/wiki/Cron) in the settings of your function. Cron supports recurring executions as frequently as **every minute**.
 
 Here are some cron expressions for common intervals:
 
@@ -499,11 +499,11 @@ Here are some cron expressions for common intervals:
 
 # Delayed executions {% #delayed-executions %}
 
-You can also delay function executions, which trigger the function only once at a future date and time. You can schedule a function execution using the Appwrite Console, a Client SDK, or a Server SDK.
+You can also delay function executions, which trigger the function only once at a future date and time. You can schedule a function execution using the Indobase Console, a Client SDK, or a Server SDK.
 
 {% tabs %}
 {% tabsitem #console title="Console" %}
-To schedule an execution, navigate to **Your function** > **Executions** > **Execute now** > **Schedule** in the Appwrite Console.
+To schedule an execution, navigate to **Your function** > **Executions** > **Execute now** > **Schedule** in the Indobase Console.
 
 {% only_dark %}
 ![Scheduled execution details screen](/images/docs/functions/execution/dark/scheduled-execution-function.png)
@@ -580,7 +580,7 @@ console.log(result);
 ```
 
 ```client-apple
-import Appwrite
+import Indobase
 import AppwriteEnums
 
 let client = Client()
@@ -660,8 +660,8 @@ mutation {
 
 ```http
 POST https://<REGION>.cloud.appwrite.io/v1/functions/<FUNCTION_ID>/executions HTTP/1.1
-X-Appwrite-Project: "<PROJECT_ID>"
-X-Appwrite-Response-Format: 1.5.0
+X-Indobase-Project: "<PROJECT_ID>"
+X-Indobase-Response-Format: 1.5.0
 Content-Type: application/json
 
 {
@@ -773,8 +773,8 @@ func main() {
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Functions;
+use Indobase\Client;
+use Indobase\Services\Functions;
 
 $client = new Client();
 
@@ -819,7 +819,7 @@ result = functions.create_execution(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_project('<PROJECT_ID>') # Your project ID
@@ -839,9 +839,9 @@ response = functions.create_execution(
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetProject("<PROJECT_ID>"); // Your project ID
@@ -943,7 +943,7 @@ functions.createExecution(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setProject("<PROJECT_ID>") // Your project ID
@@ -967,6 +967,6 @@ let execution = try await functions.createExecution(
 
 # Permissions {% #permission %}
 
-Appwrite Functions can be executed using Client or Server SDKs. Client SDKs must be authenticated with an account that has been granted execution [permissions](/docs/advanced/platform/permissions) on the function's settings page. Server SDKs require an API key with the correct scopes.
+Indobase Functions can be executed using Client or Server SDKs. Client SDKs must be authenticated with an account that has been granted execution [permissions](/docs/advanced/platform/permissions) on the function's settings page. Server SDKs require an API key with the correct scopes.
 
 If your function has a generated or custom domain, executions are not authenticated. Anyone visiting the configured domains will be considered a guest, so make sure to give `Any` execute permission in order for domain executions to work. If you need to enforce permissions for functions with a domain, use authentication methods like JWT.

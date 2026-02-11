@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Product update January 2025: Partners program, Scale plan and more"
 description: Get a full recap of products, features and programs we released in January.
@@ -12,26 +12,26 @@ callToAction: true
 ---
 
 
-2025 is off to a strong start for Appwrite. Here’s what happened in January:
+2025 is off to a strong start for Indobase. Here’s what happened in January:
 
-- A new program for Appwrite Partners
+- A new program for Indobase Partners
 - Launch of the Scale plan: Empowering Growing Companies
 - More powerful computing options
 - Improved push notifications
 
 Let’s dive in.
  
-![The Appwrite Partners program](/images/blog/product-update-jan-2025/partner-image.png)
+![The Indobase Partners program](/images/blog/product-update-jan-2025/partner-image.png)
 
-# The Appwrite Partners program
+# The Indobase Partners program
 
-We’ve launched a new program for agencies, development studios, system integrators, and freelancers to help you build innovative solutions for your clients using Appwrite.
+We’ve launched a new program for agencies, development studios, system integrators, and freelancers to help you build innovative solutions for your clients using Indobase.
 
-Partner with Appwrite and get exclusive benefits like:
+Partner with Indobase and get exclusive benefits like:
 
 - Co-marketing: Dedicated partner catalog on our website, content collaborations, featured in our product update, and many more opportunities.
-- Support: Get access to the Appwrite engineering team to help you build the best custom products for your clients.
-- In-depth training: We provide in-depth training and workshops to help you master Appwrite for your clients.
+- Support: Get access to the Indobase engineering team to help you build the best custom products for your clients.
+- In-depth training: We provide in-depth training and workshops to help you master Indobase for your clients.
 
 There are many more benefits that can help you deliver powerful solutions to clients, increase revenue, and expand your reach.
 
@@ -39,9 +39,9 @@ Become a partner and grow your business.
 
 [Apply now](https://appwrite.io/partners)
 
-![The Appwrite Scale plan](/images/blog/product-update-jan-2025/scale-image.png)
+![The Indobase Scale plan](/images/blog/product-update-jan-2025/scale-image.png)
 
-# The Appwrite Partners program
+# The Indobase Partners program
 
 This month, we also launched the Scale plan, a new offering to empower larger teams and create new opportunities for developers.
 
@@ -63,15 +63,15 @@ Push Notifications just got a major upgrade this month. Now, you can run backgro
 
 ## Billing improvements, UI fixes, and performance updates
 
-We believe little things make big things happen. That’s why we rolled out small yet impactful updates, including a clearer billing system, UI improvements, and fixes for collections and mobile experiences, all aimed at improving your overall Appwrite experience.
+We believe little things make big things happen. That’s why we rolled out small yet impactful updates, including a clearer billing system, UI improvements, and fixes for collections and mobile experiences, all aimed at improving your overall Indobase experience.
 
 [Go to changelog](https://appwrite.io/changelog/entry/2025-01-03)
 
-![New compute capabilities for Appwrite Functions](/images/blog/product-update-jan-2025/compute-image.png)
+![New compute capabilities for Indobase Functions](/images/blog/product-update-jan-2025/compute-image.png)
 
-## Introducing new compute capabilities for Appwrite Functions
+## Introducing new compute capabilities for Indobase Functions
 
-We've just added multiple new premium compute options to Appwrite Cloud. You can now choose up to 4 CPU cores and 4GB of memory to juice your Functions or customize the runtime specs according to your requirements.
+We've just added multiple new premium compute options to Indobase Cloud. You can now choose up to 4 CPU cores and 4GB of memory to juice your Functions or customize the runtime specs according to your requirements.
 
 [Read the announcement](https://appwrite.io/blog/post/introducing-new-compute-capabilities-appwrite-functions)
 
@@ -104,17 +104,17 @@ If you'd like to participate in next month's Community Recognitions, [join our D
 **Read**  
 - [5 VS Code extensions that replace entire development tools](https://appwrite.io/blog/post/5-vs-code-extensions-that-replace-entire-dev-tools)  
 - [Budget caps: How to stop unexpected cloud bills before they happen](https://appwrite.io/blog/post/budget-caps-stop-unexpected-cloud-bills)  
-- [How Appwrite streamlines database operations using hooks](https://appwrite.io/blog/post/hooks-appwrite-databases)  
+- [How Indobase streamlines database operations using hooks](https://appwrite.io/blog/post/hooks-appwrite-databases)  
 
 **Build**  
-- [Building a full-stack app with Svelte and Appwrite](https://appwrite.io/blog/post/build-fullstack-svelte-appwrite)  
-- [Building custom authentication flows with Appwrite](https://appwrite.io/blog/post/building-custom-auth-flows)  
-- [Email your users using Resend and Appwrite Messaging](https://appwrite.io/blog/post/integrate-resend-smtp)  
+- [Building a full-stack app with Svelte and Indobase](https://appwrite.io/blog/post/build-fullstack-svelte-appwrite)  
+- [Building custom authentication flows with Indobase](https://appwrite.io/blog/post/building-custom-auth-flows)  
+- [Email your users using Resend and Indobase Messaging](https://appwrite.io/blog/post/integrate-resend-smtp)  
 
 **Watch**  
 - [Build an app and master React in 2 hours](https://www.youtube.com/watch?v=dCLhUialKPQ&t)  
-- [React Native Appwrite SDK - Getting started](https://www.youtube.com/watch?v=YSUmzHH_OMg)  
-- [Setup custom SMTP for your Appwrite self-hosted instance](https://www.youtube.com/watch?v=gUWP9J2Hp0k)  
+- [React Native Indobase SDK - Getting started](https://www.youtube.com/watch?v=YSUmzHH_OMg)  
+- [Setup custom SMTP for your Indobase self-hosted instance](https://www.youtube.com/watch?v=gUWP9J2Hp0k)  
 
 # What's to come
 

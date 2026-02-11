@@ -1,7 +1,7 @@
----
+﻿---
 layout: integration
 title: Payments with Lemon Squeezy
-description: Connect Lemon Squeezy to Appwrite to handle payments, manage orders, generate invoices, and simplify your operations.
+description: Connect Lemon Squeezy to Indobase to handle payments, manage orders, generate invoices, and simplify your operations.
 date: 2024-07-30
 featured: false
 isPartner: true
@@ -29,7 +29,7 @@ Lemon Squeezy is a platform designed to simplify the process of selling digital 
 
 # How does the integration work?
 
-You can utilize a pre-built Appwrite function template to enable payments via Lemon Squeezy in your app. You can then use this to sell software, send PDF books, give access to video courses, or any other digital services your business needs.
+You can utilize a pre-built Indobase function template to enable payments via Lemon Squeezy in your app. You can then use this to sell software, send PDF books, give access to video courses, or any other digital services your business needs.
 
 # How to implement
 
@@ -50,15 +50,15 @@ From your Lemon Squeezy dashboard, save the following details for further usage:
 | API key | Head to **Settings** > **API** from the left sidebar. Create a new API key. |
 | Webhook secret | Head to **Settings** > **Webhooks** from the left sidebar. Add a temporary endpoint `https://temporary-endpoint` (we will replace this with our final endpoint later), create a new webhook secret, and select the event `order_created`. |
 
-## Step 2: Create the Appwrite Function
+## Step 2: Create the Indobase Function
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Appwrite, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Appwrite Function templates.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. If you decide to self-host Indobase, there are [additional setup steps](https://appwrite.io/docs/advanced/self-hosting/functions) to use Indobase Function templates.
 
-Head over to the Appwrite console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Payments with Lemon Squeezy** function template.
+Head over to the Indobase console, navigate to the **Functions** page, click the **Templates** tab, and search for the **Payments with Lemon Squeezy** function template.
 
 ![Function template](/images/integrations/lemon-squeezy-payments/template.png)
 
-During the setup process, click the checkbox to generate an Appwrite API key on completion and add the **Lemon Squeezy API key**, **webhook secret**, **store ID**, and **variant ID** in the **Variables** step. If you are self-hosting Appwrite, click on the **optional variables** dropdown and update the Appwrite endpoint to your instance’s publicly accessible endpoint. 
+During the setup process, click the checkbox to generate an Indobase API key on completion and add the **Lemon Squeezy API key**, **webhook secret**, **store ID**, and **variant ID** in the **Variables** step. If you are self-hosting Indobase, click on the **optional variables** dropdown and update the Indobase endpoint to your instance’s publicly accessible endpoint. 
 
 ![Env variables](/images/integrations/lemon-squeezy-payments/variables.png)
 
@@ -72,7 +72,7 @@ Additionally, edit the product you created and add your function URL as the **Bu
 
 ## Step 3: Test the function
 
-Once all the steps are complete, it is time to test the function! First, copy the function URL, go to the **Appwrite project dashboard**, and add it to the **Platforms** section as a web app. This will register your function URL as an authorized hostname to interact with Appwrite (to prevent CORS).
+Once all the steps are complete, it is time to test the function! First, copy the function URL, go to the **Indobase project dashboard**, and add it to the **Platforms** section as a web app. This will register your function URL as an authorized hostname to interact with Indobase (to prevent CORS).
 
 ![Add web platform](/images/integrations/lemon-squeezy-payments/web-platform.png)
 
@@ -80,14 +80,14 @@ Then, open it in your browser to test the function and access the pre-built inte
 
 ![Demo](/images/integrations/lemon-squeezy-payments/demo.png)
 
-You can visit the **Databases** page in your Appwrite project, enter the `orders` database and the `orders` collection within that, and find your orders.
+You can visit the **Databases** page in your Indobase project, enter the `orders` database and the `orders` collection within that, and find your orders.
 
 ![Paid orders in database](/images/integrations/lemon-squeezy-payments/database.png)
 
-# Read more about Lemon Squeezy Payments and Appwrite Functions
+# Read more about Lemon Squeezy Payments and Indobase Functions
 
-If you would like to learn more about Lemon Squeezy Payments and Appwrite Functions, we have some resources that you should visit:
+If you would like to learn more about Lemon Squeezy Payments and Indobase Functions, we have some resources that you should visit:
 
 - [Sign up for Lemon Squeezy](https://lemonsqueezy.com)
 - [Add a new product to your Lemon Squeezy store](https://docs.lemonsqueezy.com/help/products/adding-products)
-- [Learn more about Functions templates in Appwrite docs](https://appwrite.io/docs/products/functions/templates)
+- [Learn more about Functions templates in Indobase docs](https://appwrite.io/docs/products/functions/templates)

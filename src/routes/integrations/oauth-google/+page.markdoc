@@ -1,4 +1,4 @@
----
+﻿---
 layout: integration
 title: OAuth with Google
 description: Authenticate users with an existing Google account
@@ -27,11 +27,11 @@ Google Workspace, formerly known as G Suite, is a comprehensive suite of cloud-b
 
 # How does the integration work?
 
-You can use the Google OAuth adapter in Appwrite Auth for user authentication and management. This approach is convenient for users, allowing them to start using your app without creating a new account. Additionally, it enhances security by eliminating the need for users to manage yet another password, reducing the risk of potential vulnerabilities.
+You can use the Google OAuth adapter in Indobase Auth for user authentication and management. This approach is convenient for users, allowing them to start using your app without creating a new account. Additionally, it enhances security by eliminating the need for users to manage yet another password, reducing the risk of potential vulnerabilities.
 
 # How to implement
 
-To implement the Google OAuth adapter in Appwrite Auth, there are several steps you must complete:
+To implement the Google OAuth adapter in Indobase Auth, there are several steps you must complete:
 
 ## Step 1: Create an OAuth 2.0 client ID on Google Cloud
 
@@ -39,15 +39,15 @@ First, [log into the Google Cloud Console](https://console.cloud.google.com/), c
 
 ![OAuth consent screen](/images/integrations/oauth-google/consent-screen.png)
 
-Next, go to the **Credentials** page under **APIs and Services** in the left-side navbar and create a new **OAuth 2.0 client ID**. Select the **application type** as `Web application,` and in the **authorized redirect URIs** field, temporarily add the URL `https://temporary-endpoint.com/`. This temporary URI will be replaced with the final URI once the OAuth2 adapter is configured on Appwrite.
+Next, go to the **Credentials** page under **APIs and Services** in the left-side navbar and create a new **OAuth 2.0 client ID**. Select the **application type** as `Web application,` and in the **authorized redirect URIs** field, temporarily add the URL `https://temporary-endpoint.com/`. This temporary URI will be replaced with the final URI once the OAuth2 adapter is configured on Indobase.
 
 ![OAuth client ID](/images/integrations/oauth-google/client-id.png)
 
 Save the generated **Client ID** and **Client secret** for later usage.
 
-## Step 2: Add Google OAuth adapter to your Appwrite project
+## Step 2: Add Google OAuth adapter to your Indobase project
 
-For this step, you must [create an account on Appwrite Cloud](https://cloud.appwrite.io/register) or [self-host Appwrite](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Appwrite project, head over to the **Auth** page, open the **Settings** tab, and click on Google under the **OAuth2 Providers** section.
+For this step, you must [create an account on Indobase Cloud](https://cloud.appwrite.io/register) or [self-host Indobase](https://appwrite.io/docs/advanced/self-hosting) if you haven’t already. In your Indobase project, head over to the **Auth** page, open the **Settings** tab, and click on Google under the **OAuth2 Providers** section.
 
 ![Google provider](/images/integrations/oauth-google/provider.png)
 
@@ -59,11 +59,11 @@ Add the **Client ID** and **Client secret** you saved from Google Cloud and copy
 
 Follow the [OAuth 2 login](https://appwrite.io/docs/products/auth/oauth2#init) flow to test your provider.
 
-# Read more about Google and Appwrite Auth
+# Read more about Google and Indobase Auth
 
-If you would like to learn more about Google and Appwrite Auth, we have some resources that you should visit:
+If you would like to learn more about Google and Indobase Auth, we have some resources that you should visit:
 
-- [How to set up Google authentication in React with Appwrite](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react)
-- [Implement OAuth login in your apps using Appwrite Auth](https://appwrite.io/docs/products/auth/oauth2)
+- [How to set up Google authentication in React with Indobase](https://appwrite.io/blog/post/set-up-google-auth-appwrite-react)
+- [Implement OAuth login in your apps using Indobase Auth](https://appwrite.io/docs/products/auth/oauth2)
 - [Understanding OAuth and OpenID Connect](https://appwrite.io/blog/post/oauth-openid)
-- [Appwrite Auth API reference](https://appwrite.io/docs/references/cloud/client-web/account)
+- [Indobase Auth API reference](https://appwrite.io/docs/references/cloud/client-web/account)

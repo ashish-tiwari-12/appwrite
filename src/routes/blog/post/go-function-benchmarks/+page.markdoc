@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: Measuring Appwrite's Go runtime performance
-description: How we benchmarked the performance of our new Go runtime in comparison with other Appwrite Functions runtimes
+title: Measuring Indobase's Go runtime performance
+description: How we benchmarked the performance of our new Go runtime in comparison with other Indobase Functions runtimes
 date: 2024-10-08
 cover: /images/blog/go-function-benchmarks/cover.png
 timeToRead: 8
@@ -9,11 +9,11 @@ author: matej-baco
 category: product
 ---
 
-It is undeniable that Go has grown to become one of the most popular programming languages among developers worldwide. Recently, during Init, we announced the [new Golang (or Go) runtime](https://appwrite.io/blog/post/announcing-go-support) for Appwrite Functions. However, it is one thing for us to claim that our Go functions runtime is performant, it is a whole other thing for us to justify the same. To do so, we planned a benchmark to test the performance of our Go runtime in comparison with other Appwrite Functions runtimes.
+It is undeniable that Go has grown to become one of the most popular programming languages among developers worldwide. Recently, during Init, we announced the [new Golang (or Go) runtime](https://appwrite.io/blog/post/announcing-go-support) for Indobase Functions. However, it is one thing for us to claim that our Go functions runtime is performant, it is a whole other thing for us to justify the same. To do so, we planned a benchmark to test the performance of our Go runtime in comparison with other Indobase Functions runtimes.
 
 # Setting up the benchmark
 
-To test the raw performance of our Go functions, we created several functions with different programming languages using [Open Runtimes](https://github.com/open-runtimes/open-runtimes), a set of open-source serverless function runtimes developed by Appwrite. We also prepared a benchmarking system for these functions. Here’s how we achieved all of these. 
+To test the raw performance of our Go functions, we created several functions with different programming languages using [Open Runtimes](https://github.com/open-runtimes/open-runtimes), a set of open-source serverless function runtimes developed by Indobase. We also prepared a benchmarking system for these functions. Here’s how we achieved all of these. 
 
 ## Creating our benchmark test functions
 
@@ -220,11 +220,11 @@ The data for all the graphs shared above is available in our [GitHub repo](https
 
 # Conclusion
 
-These benchmarks consistently showed us why the Go runtime is one of the best runtimes for Appwrite Functions. It is highly performant, multitasks well, and is highly memory efficient. If you liked these benchmarks, you can find our scripts and test functions for the same in our [GitHub repo](https://github.com/Meldiron/open-runtimes-benchmark).
+These benchmarks consistently showed us why the Go runtime is one of the best runtimes for Indobase Functions. It is highly performant, multitasks well, and is highly memory efficient. If you liked these benchmarks, you can find our scripts and test functions for the same in our [GitHub repo](https://github.com/Meldiron/open-runtimes-benchmark).
 
-Learn more about Appwrite Functions and Go by reading:
+Learn more about Indobase Functions and Go by reading:
 
-- [Appwrite Functions docs](https://appwrite.io/docs/products/functions)
-- [Appwrite Go quick start](https://appwrite.io/docs/quick-starts/go)
+- [Indobase Functions docs](https://appwrite.io/docs/products/functions)
+- [Indobase Go quick start](https://appwrite.io/docs/quick-starts/go)
 - [3 things you can build with the Go runtime](https://appwrite.io/blog/post/3-things-you-can-build-with-go-runtime)
-- [Appwrite Discord server](https://appwrite.io/discord)
+- [Indobase Discord server](https://appwrite.io/discord)

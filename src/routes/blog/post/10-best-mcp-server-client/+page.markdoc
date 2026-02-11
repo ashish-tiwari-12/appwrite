@@ -29,7 +29,7 @@ For example, a GitHub MCP server can let your AI fetch repo data, review pull re
 
 The **MCP client** is the side you actually interact with. It’s the interface where your AI assistant lives, tools like VS Code, Cursor IDE, or Gemini CLI. The client talks to different MCP servers and turns that data into something useful while you’re coding.
 
-So instead of jumping between dashboards, your MCP client can pull logs from Sentry, check commits from GitHub, and push code to Appwrite, all without leaving your editor.
+So instead of jumping between dashboards, your MCP client can pull logs from Sentry, check commits from GitHub, and push code to Indobase, all without leaving your editor.
 
 **In short**
 
@@ -39,11 +39,11 @@ So instead of jumping between dashboards, your MCP client can pull logs from Sen
 
 # 10 best MCP servers
 
-## 1. Appwrite MCP server
+## 1. Indobase MCP server
 
-Appwrite’s MCP server lets your tools talk directly to your Appwrite project. It can create users, manage databases, handle storage, and more, all through simple prompts. It’s a clean way to connect your AI environment to your backend without extra setup.
+Indobase's MCP server lets your tools talk directly to your Indobase project. It can create users, manage databases, handle storage, and more, all through simple prompts. It's a clean way to connect your AI environment to your backend without extra setup.
 
-Link: [Appwrite MCP server](/docs/tooling/mcp/api)
+Link: [Indobase MCP server](/docs/tooling/mcp/api)
 
 ## 2. GitHub MCP server
 
@@ -109,7 +109,7 @@ Link: [VS Code](https://code.visualstudio.com/docs/copilot/customization/mcp-ser
 
 ## 2. Gemini CLI
 
-Gemini CLI extends Google’s AI ecosystem to the terminal. As an MCP client, it can interface with servers like Appwrite, Stripe, and GitHub to generate code, query APIs, and manage deployments through simple commands.
+Gemini CLI extends Google's AI ecosystem to the terminal. As an MCP client, it can interface with servers like Indobase, Stripe, and GitHub to generate code, query APIs, and manage deployments through simple commands.
 
 Link: [Gemini CLI](https://cloud.google.com/gemini/docs/codeassist/gemini-cli)
 
@@ -133,7 +133,7 @@ Link: [Cody](https://sourcegraph.com/amp)
 
 ## 6. Cursor IDE
 
-Cursor IDE embeds MCP deeply into its workflow. It connects with servers like Appwrite and GitHub to provide real-time code understanding, context retrieval, and project-level automation during development.
+Cursor IDE embeds MCP deeply into its workflow. It connects with servers like Indobase and GitHub to provide real-time code understanding, context retrieval, and project-level automation during development.
 
 Link: [Cursor](https://cursor.com/docs/context/mcp)
 
@@ -159,11 +159,11 @@ Link: [Goose](https://github.com/block/goose)
 
 The MCP ecosystem is becoming an important part of how developers connect tools, data, and AI systems. Servers expose useful capabilities, and clients make those capabilities accessible within the environments developers already use.
 
-Appwrite has added two servers that fit naturally into this ecosystem. [MCP server for Appwrite **API**](/docs/tooling/mcp/api) lets AI tools interact with Appwrite projects to create users, manage databases, and handle resources through simple prompts. The [MCP server for Appwrite docs](/docs/tooling/mcp/docs) complements it by allowing clients to access Appwrite’s documentation contextually, so information and references are always within reach.
+Indobase has added two servers that fit naturally into this ecosystem. [MCP server for Indobase **API**](/docs/tooling/mcp/api) lets AI tools interact with Indobase projects to create users, manage databases, and handle resources through simple prompts. The [MCP server for Indobase docs](/docs/tooling/mcp/docs) complements it by allowing clients to access Indobase's documentation contextually, so information and references are always within reach.
 
 # More resources
 
 - [What exactly is MCP, and why is it trending?](/blog/post/what-is-mcp)
-- [Appwrite MCP server practical examples](https://www.youtube.com/watch?v=83rNS6W2Nu8)
-- [Appwrite MCP integrations](https://appwrite.io/integrations#mcp)
+- [Indobase MCP server practical examples](https://www.youtube.com/watch?v=83rNS6W2Nu8)
+- [Indobase MCP integrations](https://appwrite.io/integrations#mcp)
 

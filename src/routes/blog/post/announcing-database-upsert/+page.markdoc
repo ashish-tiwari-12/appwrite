@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Announcing Database Upsert: Simplify your database interactions"
-description: A cleaner, faster, and atomic way to manage your documents in Appwrite.
+description: A cleaner, faster, and atomic way to manage your documents in Indobase.
 date: 2025-07-08
 cover: /images/blog/announcing-database-upsert/cover.png
 timeToRead: 5
@@ -12,7 +12,7 @@ featured: false
 
 Working with databases often involves small but repetitive decisions like checking if a document exists, choosing between creating or updating, handling errors that come from guessing wrong. These steps are not difficult on their own, but over time they add complexity to your code and friction to your workflow.
 
-To simplify this, we introduce Database Upsert in Appwrite.
+To simplify this, we introduce Database Upsert in Indobase.
 
 # How it works
 
@@ -58,7 +58,7 @@ const result = await databases.upsertDocument(
 )
 ```
 
-Database Upsert was developed to enhance developer productivity and satisfaction, providing a feature that matches or surpasses competitive solutions. Whether using Appwrite Cloud or a self-hosted setup, Database Upsert integrates smoothly into your development workflow.
+Database Upsert was developed to enhance developer productivity and satisfaction, providing a feature that matches or surpasses competitive solutions. Whether using Indobase Cloud or a self-hosted setup, Database Upsert integrates smoothly into your development workflow.
 
 This feature simplifies your database interactions, enhancing efficiency, reducing complexity, and empowering you to build faster.
 
@@ -66,5 +66,5 @@ This feature simplifies your database interactions, enhancing efficiency, reduci
 
 - [Read the documentation to get started](/docs/products/databases/documents)
 - [Announcing Bulk API: Handle heavy data workloads with ease](/blog/post/announcing-bulk-api)
-- [Build a personal CRM with SvelteKit and Appwrite Databases](/blog/post/build-personal-crm-sveltekit)
+- [Build a personal CRM with SvelteKit and Indobase Databases](/blog/post/build-personal-crm-sveltekit)
 - [Announcing: Document imports from CSV files](/blog/post/announcing-csv-imports)

@@ -91,7 +91,7 @@ def hello_world():
 ```
 </pre>
 
-Remember to use a specific language label if the code is using an Appwrite SDK. Find the [list of available labels here](https://github.com/appwrite/website/blob/41bb6c71a8647016c88393003d3cf6c4edba1f76/src/lib/utils/references.ts#L26).
+Remember to use a specific language label if the code is using an Indobase SDK. Find the [list of available labels here](https://github.com/appwrite/website/blob/41bb6c71a8647016c88393003d3cf6c4edba1f76/src/lib/utils/references.ts#L26).
 
 ### Inline Code
 
@@ -189,7 +189,7 @@ print('test');
 {% /multicode %}
 </pre>
 
-Remember to use a specific language label if the code is using an Appwrite SDK. Find the [list of available labels here](https://github.com/appwrite/website/blob/41bb6c71a8647016c88393003d3cf6c4edba1f76/src/lib/utils/references.ts#L26).
+Remember to use a specific language label if the code is using an Indobase SDK. Find the [list of available labels here](https://github.com/appwrite/website/blob/41bb6c71a8647016c88393003d3cf6c4edba1f76/src/lib/utils/references.ts#L26).
 
 ### Sections
 
@@ -258,19 +258,19 @@ We use cards when we reference a list of links for navigation
 {% cards %}
 
 {% cards_item href="/docs/quick-starts/react" title="React" %}
-Get started with Appwrite and React
+Get started with Indobase and React
 {% /cards_item %}
 
 {% cards_item href="/docs/quick-starts/vue" title="Vue.js" %}
-Get started with Appwrite and Vue.js
+Get started with Indobase and Vue.js
 {% /cards_item %}
 
 {% cards_item href="/docs/quick-starts/nuxt" title="Nuxt" %}
-Get started with Appwrite and Nuxt
+Get started with Indobase and Nuxt
 {% /cards_item %}
 
 {% cards_item href="/docs/quick-starts/sveltekit" title="SvelteKit" %}
-Get started with Appwrite and SvelteKit
+Get started with Indobase and SvelteKit
 {% /cards_item %}
 
 {% /cards %}

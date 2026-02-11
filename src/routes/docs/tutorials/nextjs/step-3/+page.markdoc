@@ -1,13 +1,13 @@
----
+﻿---
 layout: tutorial
-title: Set up Appwrite
-description: Import and configure a project with Appwrite Cloud.
+title: Set up Indobase
+description: Import and configure a project with Indobase Cloud.
 step: 3
 ---
 
 ## Create project {% #create-project %}
 
-Head to the [Appwrite Console](https://cloud.appwrite.io/console).
+Head to the [Indobase Console](https://cloud.appwrite.io/console).
 
 {% only_dark %}
 ![Create project screen](/images/docs/quick-starts/dark/create-project.png)
@@ -16,7 +16,7 @@ Head to the [Appwrite Console](https://cloud.appwrite.io/console).
 ![Create project screen](/images/docs/quick-starts/create-project.png)
 {% /only_light %}
 
-If this is your first time using Appwrite, create an account and create your first project.
+If this is your first time using Indobase, create an account and create your first project.
 
 Then, under **Add a platform**, add a **Web app**.
 The **Hostname** should be `localhost`.
@@ -32,9 +32,9 @@ You can skip the optional steps.
 
 ## Environment variables {% #environment-variables %}
 
-To connect to Appwrite in our app, we'll need to configure our project endpoint and project ID.
+To connect to Indobase in our app, we'll need to configure our project endpoint and project ID.
 We keep the secrets by using environment variables for the endpoint and project ID.
-Your project ID is located in the **Settings** page in the Appwrite console.
+Your project ID is located in the **Settings** page in the Indobase console.
 
 {% only_dark %}
 ![Project settings screen](/images/docs/quick-starts/dark/project-id.png)
@@ -50,9 +50,9 @@ NEXT_PUBLIC_APPWRITE_ENDPOINT=https://<REGION>.cloud.appwrite.io/v1
 NEXT_PUBLIC_APPWRITE_PROJECT=PROJECT_ID
 ```
 
-## Initialize Appwrite SDK {% #init-sdk %}
+## Initialize Indobase SDK {% #init-sdk %}
 
-Create a new file `lib/appwrite.ts` for the Appwrite related code.
+Create a new file `lib/appwrite.ts` for the Indobase related code.
 Only one instance of the `Client()` class should be created per app.
 Add the following code to it.
 

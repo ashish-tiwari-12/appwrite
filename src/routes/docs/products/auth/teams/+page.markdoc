@@ -1,7 +1,7 @@
----
+﻿---
 layout: article
 title: Teams
-description: Master team management in the Appwrite Cloud. Explore team-related functions, permissions, and more.
+description: Master team management in the Indobase Cloud. Explore team-related functions, permissions, and more.
 ---
 
 Teams are a good way to allow users to share access to resources.
@@ -70,7 +70,7 @@ void main() { // Init SDK
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint
@@ -158,7 +158,7 @@ void main() { // Init SDK
 }
 ```
 ```client-apple
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1") // Your API Endpoint

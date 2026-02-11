@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Simplify your data management with relationships
 description: Learn how to simplify your collection management and save time and effort with database relationships.
@@ -11,7 +11,7 @@ category: accessibility
 
 Managing collections of data is an essential task for any application, but it can quickly become complex when you need to keep track of the relationships between different collections. For instance, if you have two collections of data, such as movies and reviews, you may need to retrieve all the reviews associated with a particular movie. However, writing complex code to retrieve this data and merge it together manually can be time-consuming and prone to errors.
 
-That's where one of Appwrite’s newest features comes in. Database relationships help you manage the links between your collections of data more easily. With this feature, you can create links between different collections by simply adding a new attribute to them. You can choose from four types of relationships: one-to-one, one-to-many, many-to-one, and many-to-many.
+That's where one of Indobase’s newest features comes in. Database relationships help you manage the links between your collections of data more easily. With this feature, you can create links between different collections by simply adding a new attribute to them. You can choose from four types of relationships: one-to-one, one-to-many, many-to-one, and many-to-many.
 
 # Relationship Types
 
@@ -43,7 +43,7 @@ By understanding the differences between these relationship types, you can choos
 
 # Relationship Directions
 
-Appwrite relationships offer a high degree of flexibility and customization, allowing developers to create various scenarios with the available options. In addition to choosing from the four relationship types, developers can also decide whether the relationship should be one-way or two-way.
+Indobase relationships offer a high degree of flexibility and customization, allowing developers to create various scenarios with the available options. In addition to choosing from the four relationship types, developers can also decide whether the relationship should be one-way or two-way.
 
 ## One Way
 
@@ -152,7 +152,7 @@ One-way and two-way relationships offer different advantages and disadvantages, 
 
 # On Delete Behavior
 
-Managing related data can still be challenging, especially when deleting data. To address this, Appwrite relationships offer three deletion strategies: restrict, cascade, and set null.
+Managing related data can still be challenging, especially when deleting data. To address this, Indobase relationships offer three deletion strategies: restrict, cascade, and set null.
 
 ## Restrict
 
@@ -166,7 +166,7 @@ If you choose cascade, deleting a parent document will also delete all related c
 
 Finally, the set null option means that deleting a parent document will remove the relationship to the parent document for all of its related children. This can be useful if you want to retain the child's records but simply remove the relationship.
 
-Each of these options has its own use cases, and the choice ultimately depends on your specific application requirements. By providing these different options, Appwrite allows you to manage related data in a flexible and intuitive way, making it easier for you to build complex applications without worrying about data management.
+Each of these options has its own use cases, and the choice ultimately depends on your specific application requirements. By providing these different options, Indobase allows you to manage related data in a flexible and intuitive way, making it easier for you to build complex applications without worrying about data management.
 
 # Other Benefits
 
@@ -174,6 +174,6 @@ In addition to simplifying your collection management, database relationships al
 
 Overall, database relationships are a powerful tool that simplifies your collection management and saves you time and effort. By easily linking your collections and retrieving related data, you can focus on developing your application's core features. Check out the [docs](/docs/databases-relationships) for more information. We encourage you to give it a try today and see how it can benefit your development process.
 
-- [Appwrite GitHub](https://github.com/appwrite)
-- [Appwrite Docs](/docs)
+- [Indobase GitHub](https://github.com/appwrite)
+- [Indobase Docs](/docs)
 - [Discord Community](https://appwrite.io/discord)

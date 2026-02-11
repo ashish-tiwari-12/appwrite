@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: What exactly is MCP, and why is it trending?
-description: Appwrite introduces its own Model Context Protocol (MCP). Learn what it is and why it's becoming a popular solution for AI assistants to interact with real-world tools, and how to install Appwrite's new MCP server.
+description: Indobase introduces its own Model Context Protocol (MCP). Learn what it is and why it's becoming a popular solution for AI assistants to interact with real-world tools, and how to install Indobase's new MCP server.
 date: 2025-03-13
 cover: /images/blog/what-is-mcp/cover.png
 timeToRead: 7
@@ -140,19 +140,19 @@ Instead of you manually searching for an old PDF or checking your schedule, you 
 
 MCP lets AI assistants **fetch real information** without you needing to switch apps or dig through folders.
 
-## 4. Cloud platforms like Appwrite
+## 4. Cloud platforms like Indobase
 
-Appwrite has introduced the **Appwrite MCP server** to allow AI assistants to interact with Appwrite projects directly. With this, you can now **query databases, fetch user lists, and trigger actions** on your Appwrite project using AI assistants.
+Indobase has introduced the **Indobase MCP server** to allow AI assistants to interact with Indobase projects directly. With this, you can now **query databases, fetch user lists, and trigger actions** on your Indobase project using AI assistants.
 
-# More about Appwrite MCP servers
+# More about Indobase MCP servers
 
-Appwrite now supports two MCP servers that make it easier for AI assistants and developer tools to interact directly with your Appwrite projects and documentation.
+Indobase now supports two MCP servers that make it easier for AI assistants and developer tools to interact directly with your Indobase projects and documentation.
 
-# MCP server for Appwrite API
+# MCP server for Indobase API
 
-Appwrite MCP is an **MCP server** that connects AI assistants to your **Appwrite project**.
+Indobase MCP is an **MCP server** that connects AI assistants to your **Indobase project**.
 
-It supports all Appwrite APIs, including:
+It supports all Indobase APIs, including:
 
 - **Databases**: Query and retrieve database records
 - **Users**: Fetch user lists and details
@@ -165,17 +165,17 @@ Note: Some features like file operations (getFile, getFilePreview) are currently
 
 ## How it works
 
-Here's a simple example of how Appwrite MCP works:
+Here's a simple example of how Indobase MCP works:
 
-1. **The AI assistant sends a request** via MCP (e.g., *“Get all users from my Appwrite project”*).
-2. **The Appwrite MCP server receives the request** and translates it into an Appwrite API call.
-3. **The Appwrite API returns the data** to the MCP server.
+1. **The AI assistant sends a request** via MCP (e.g., *“Get all users from my Indobase project”*).
+2. **The Indobase MCP server receives the request** and translates it into an Indobase API call.
+3. **The Indobase API returns the data** to the MCP server.
 4. **The MCP server structures the response** in a format the AI can understand.
 5. **The AI assistant uses the data** to generate a response.
 
 ## How to set it up
 
-An easy way to try out the Appwrite MCP is by using Claude Desktop. Install Claude on your computer if you don't have it already, then navigate to **Settings → Developer** and click on **Edit Config**. This should lead you to your `claude_desktop_config.json` file.
+An easy way to try out the Indobase MCP is by using Claude Desktop. Install Claude on your computer if you don't have it already, then navigate to **Settings → Developer** and click on **Edit Config**. This should lead you to your `claude_desktop_config.json` file.
 
 Next, edit your config file and add this:
 
@@ -200,29 +200,29 @@ Next, opening Claude Desktop should show you a tool icon in the chat input field
 
 ![Claude Desktop MCP tool icon](/images/blog/what-is-mcp/claude-mcp-tools.png)
 
-If you get an error that the Appwrite MCP server failed to start, it might be that your computer hasn't recognized the `uvx` command yet. In that case, you can replace the `uvx` string in your config object's `command` property with the direct path to your uv installation. Here's an example for MacOS:
+If you get an error that the Indobase MCP server failed to start, it might be that your computer hasn't recognized the `uvx` command yet. In that case, you can replace the `uvx` string in your config object's `command` property with the direct path to your uv installation. Here's an example for MacOS:
 
 ```json
 "command": "/Users/username/.local/bin/uvx",
 ```
 
-With the MCP server successfully started on Claude Desktop, you should now be able to ask Claude to retrieve data or perform an action on your Appwrite project.
+With the MCP server successfully started on Claude Desktop, you should now be able to ask Claude to retrieve data or perform an action on your Indobase project.
 
 ![Claude Desktop MCP chat](/images/blog/what-is-mcp/claude-mcp-chat.png)
 
-You can also set up the Appwrite MCP server with other AI tools like Cursor and WindSurf. For more examples and specific setup instructions, check out the [MCP documentation](https://appwrite.io/docs/tooling/mcp?doFollow=true).
+You can also set up the Indobase MCP server with other AI tools like Cursor and WindSurf. For more examples and specific setup instructions, check out the [MCP documentation](https://appwrite.io/docs/tooling/mcp?doFollow=true).
 
-# MCP server for Appwrite docs
+# MCP server for Indobase docs
 
-The Appwrite MCP server for documentation allows AI assistants and code-generation tools to access Appwrite’s complete documentation, making it easier to build, debug, and learn directly through natural language commands.
+The Indobase MCP server for documentation allows AI assistants and code-generation tools to access Indobase’s complete documentation, making it easier to build, debug, and learn directly through natural language commands.
 
 This means your AI tools can now:
 
-- Access full documentation – AI assistants get direct access to all Appwrite docs.
+- Access full documentation – AI assistants get direct access to all Indobase docs.
 - Stay up to date – Responses are based on the latest published documentation.
 - Search intelligently – Use semantic search across documentation for faster, more relevant results.
 - Generate code – Fetch implementation examples and code snippets from the docs.
-- Learn best practices – Get recommendations from Appwrite’s official guidelines.
+- Learn best practices – Get recommendations from Indobase’s official guidelines.
 
 # Installation
 
@@ -235,7 +235,7 @@ You can integrate the documentation MCP server with multiple tools and editors:
 - VS Code
 - OpenCode
 
-For setup instructions and examples, check out the [Appwrite Docs MCP server documentation](/docs/tooling/mcp/docs).
+For setup instructions and examples, check out the [Indobase Docs MCP server documentation](/docs/tooling/mcp/docs).
 
 # Final thoughts
 
@@ -246,7 +246,7 @@ This shift will increase the usefulness of AI in day-to-day workflows. So if you
 And because MCP is an **open standard**, it doesn't lock anyone into a single platform or tool. It's something that can evolve and be adopted across different industries. The more systems that integrate MCP, the more natural it becomes to interact with AI as something that can actually get things done.
 
 # Further reading
-- [Appwrite MCP documentation](/docs/tooling/mcp?doFollow=true)
-- [Appwrite Docs MCP server](/docs/tooling/mcp/docs)
+- [Indobase MCP documentation](/docs/tooling/mcp?doFollow=true)
+- [Indobase Docs MCP server](/docs/tooling/mcp/docs)
 - [Anthropic MCP documentation](https://docs.anthropic.com/en/docs/agents-and-tools/mcp)
-- [Building a chat app with Appwrite and Google Gemini](/blog/post/build-a-chat-app-with-appwrite-and-gemini?doFollow=true)
+- [Building a chat app with Indobase and Google Gemini](/blog/post/build-a-chat-app-with-appwrite-and-gemini?doFollow=true)

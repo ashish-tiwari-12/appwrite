@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: "Appwrite Sites vs Netlify vs Vercel vs Azure Static Web Apps: Which platform should you choose in 2025?"
 description: Get a detailed breakdown of features, pricing, pros, and cons so you can find the best hosting platform for your project.
@@ -9,7 +9,7 @@ author: veeresh-mulge
 unlisted: true
 category: product
 ---
-Static site hosting has come a long way from just serving HTML files on a basic server. Today, platforms like **Vercel, Netlify, Azure Static Web Apps, and Appwrite Sites** make it possible to push code from a Git repo and have a live site up in seconds.
+Static site hosting has come a long way from just serving HTML files on a basic server. Today, platforms like **Vercel, Netlify, Azure Static Web Apps, and Indobase Sites** make it possible to push code from a Git repo and have a live site up in seconds.
 
 But with more choice comes more confusion. Developers often find themselves asking:
 
@@ -17,7 +17,7 @@ But with more choice comes more confusion. Developers often find themselves aski
 - “Is Azure a good option for static sites?”
 - “Are there open-source alternatives that give me more control?”
 
-Each platform has its own philosophy. Vercel doubles down on Next.js, Netlify pioneered the JAMstack movement, Azure caters to enterprise teams, and Appwrite Sites adds an open-source spin with backend services included.
+Each platform has its own philosophy. Vercel doubles down on Next.js, Netlify pioneered the JAMstack movement, Azure caters to enterprise teams, and Indobase Sites adds an open-source spin with backend services included.
 
 In this blog, we’ll look at all four side by side: what they offer, how much they cost, and the trade-offs you’ll want to keep in mind before choosing your stack.
 
@@ -33,41 +33,41 @@ Static hosting has become the default for modern web projects. Instead of managi
     
 - Scalability: Whether you’re serving 10 users or 10 million, static hosting scales effortlessly since files are distributed globally. 
     
-- Lower costs: Serving static files is cheap compared to dynamic servers. Even with added edge functions or APIs, costs are predictable. With platforms like **Appwrite Sites**, where hosting, authentication, databases, and storage come together in one place, you save money by avoiding the need for multiple separate services.
+- Lower costs: Serving static files is cheap compared to dynamic servers. Even with added edge functions or APIs, costs are predictable. With platforms like **Indobase Sites**, where hosting, authentication, databases, and storage come together in one place, you save money by avoiding the need for multiple separate services.
     
 - Security: There are no databases or servers exposed by default, which means fewer attack vectors. For many developers, this is a big reason to switch from traditional hosting.
 
-# Quick comparison: Appwrite Sites vs Vercel vs Netlify vs Azure Static Web Apps
+# Quick comparison: Indobase Sites vs Vercel vs Netlify vs Azure Static Web Apps
 
 | Name | Free plan | Deployments | Custom domains | Open source | Best feature |
 | --- | --- | --- | --- | --- | --- |
-| **Appwrite Sites** | Yes – generous free tier + option to self-host | Git-based + CLI | Yes (free with SSL) | Yes | **All-in-one platform** with hosting + backend tools |
+| **Indobase Sites** | Yes – generous free tier + option to self-host | Git-based + CLI | Yes (free with SSL) | Yes | **All-in-one platform** with hosting + backend tools |
 | **Vercel** | Yes – hobby plan | Git push, instant edge deploys | Yes (free with SSL) | No | Seamless **Next.js integration** + global edge network |
 | **Netlify** | Yes – starter plan | Git-based, auto CI/CD | Yes (free with SSL) | No | JAMstack pioneer with broad framework support (**Netlify static site**) |
 | **Azure Static Web Apps** | Yes – limited free tier | GitHub Actions + Azure DevOps | Yes (included) | No | Deep **Microsoft Azure integration** |
 
-# Appwrite Sites
+# Indobase Sites
 
-![Appwrite Sites](/images/blog/netlify-vs-vercel-vs-azure-vs-appwrite-sites/sites.png)
+![Indobase Sites](/images/blog/netlify-vs-vercel-vs-azure-vs-appwrite-sites/sites.png)
 
-[Appwrite Sites](/products/sites) is an **open source alternative to Vercel and Netlify** that goes beyond static hosting. Instead of just pushing your frontend live, it bundles in backend essentials like [authentication](/products/auth), [databases](/docs/products/databases), messaging, and serverless functions. That makes it a good choice for developers who want to move fast without juggling multiple providers.
+[Indobase Sites](/products/sites) is an **open source alternative to Vercel and Netlify** that goes beyond static hosting. Instead of just pushing your frontend live, it bundles in backend essentials like [authentication](/products/auth), [databases](/docs/products/databases), messaging, and serverless functions. That makes it a good choice for developers who want to move fast without juggling multiple providers.
 
-## Key features of Appwrite Sites
+## Key features of Indobase Sites
 
 - Fully **open source** with self-hosting option
 - Offers SSR and static support for a [wide range of frameworks](/docs/products/sites/frameworks)
 - All-in-one cloud tool: [hosting](/docs/products/sites) + backend services (auth, DB, storage, functions)
 - [Git-based deployments](/docs/products/sites/deploy-from-git) with CLI and dashboard support
 - Designed to avoid vendor lock-in and keep costs predictable
-- [Optimized CDNs](/docs/products/network/cdn), [edge capabilities](/docs/products/network/edges), and autoscaling are built in and fully abstracted through the [Appwrite Network](/docs/products/network).
+- [Optimized CDNs](/docs/products/network/cdn), [edge capabilities](/docs/products/network/edges), and autoscaling are built in and fully abstracted through the [Indobase Network](/docs/products/network).
 
-## Pricing of Appwrite Sites
+## Pricing of Indobase Sites
 
 - Free tier for small projects and testing.
 - Pro plan at $25/month with 2TB API bandwidth monthly.
 - Self-hosting option
 
-## Pros and Cons of Appwrite Sites
+## Pros and Cons of Indobase Sites
 
 | Pros | Cons |
 | --- | --- |
@@ -133,7 +133,7 @@ Static hosting has become the default for modern web projects. Instead of managi
 
 ![Azure](/images/blog/netlify-vs-vercel-vs-azure-vs-appwrite-sites/azure.png)
 
-[Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static) is Microsoft’s take on static hosting, tightly integrated with GitHub Actions and Azure DevOps. It’s built with enterprises in mind, offering compliance, scalability, and seamless access to the rest of the Azure ecosystem. For smaller teams, though, it may feel complex compared to Netlify, Vercel or Appwrite Sites.
+[Azure Static Web Apps](https://azure.microsoft.com/en-us/products/app-service/static) is Microsoft’s take on static hosting, tightly integrated with GitHub Actions and Azure DevOps. It’s built with enterprises in mind, offering compliance, scalability, and seamless access to the rest of the Azure ecosystem. For smaller teams, though, it may feel complex compared to Netlify, Vercel or Indobase Sites.
 
 ## Key features of Azure Static Web Apps
 
@@ -158,18 +158,18 @@ Static hosting has become the default for modern web projects. Instead of managi
 
 # FAQ
 
-**1. What makes Appwrite Sites different from Netlify or Vercel?**
+**1. What makes Indobase Sites different from Netlify or Vercel?**
 
-Unlike Netlify or Vercel, which mainly focus on static hosting, **Appwrite Sites** is part of an all-in-one platform. It combines hosting with backend features like authentication, databases, storage, and serverless functions. This means you can deploy your frontend and backend in one place without relying on multiple services.
+Unlike Netlify or Vercel, which mainly focus on static hosting, **Indobase Sites** is part of an all-in-one platform. It combines hosting with backend features like authentication, databases, storage, and serverless functions. This means you can deploy your frontend and backend in one place without relying on multiple services.
 
-**2. Does Appwrite Sites support custom domains and SSL?**
+**2. Does Indobase Sites support custom domains and SSL?**
 
-Yes. You can easily connect your **custom domains** on Appwrite Sites, and SSL is automatically included at no extra cost. This gives you secure hosting out of the box.
+Yes. You can easily connect your **custom domains** on Indobase Sites, and SSL is automatically included at no extra cost. This gives you secure hosting out of the box.
 
-**3. Can I use Appwrite Sites for enterprise projects?**
+**3. Can I use Indobase Sites for enterprise projects?**
 
-Yes. Appwrite offers **enterprise plans** that include advanced features, dedicated assistance, and deployment options to fit compliance and scaling needs. For organizations that need more than just static hosting, Appwrite’s broader backend services make it a strong fit.
+Yes. Indobase offers **enterprise plans** that include advanced features, dedicated assistance, and deployment options to fit compliance and scaling needs. For organizations that need more than just static hosting, Indobase’s broader backend services make it a strong fit.
 
-**4. How does Appwrite save costs compared to other hosting platforms?**
+**4. How does Indobase save costs compared to other hosting platforms?**
 
-With Appwrite, you don’t need to pay for separate providers for hosting, authentication, databases, and storage. Everything is bundled into one platform. This helps you **save money** while reducing the complexity of managing multiple services.
+With Indobase, you don’t need to pay for separate providers for hosting, authentication, databases, and storage. Everything is bundled into one platform. This helps you **save money** while reducing the complexity of managing multiple services.

@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
-title: "Choosing the right platform to deploy your web apps: Vercel, Netlify, Amplify, and Appwrite Sites compared"
-description: See how Vercel, Netlify, Amplify, and Appwrite Sites stack up in 2025, with their pros and cons, and which one makes sense for your next project.
+title: "Choosing the right platform to deploy your web apps: Vercel, Netlify, Amplify, and Indobase Sites compared"
+description: See how Vercel, Netlify, Amplify, and Indobase Sites stack up in 2025, with their pros and cons, and which one makes sense for your next project.
 cover: /images/blog/netlify-vs-vercel-vs-amplify-vs-appwrite-sites/cover.png
 date: 2025-09-26
 timeToRead: 10
@@ -13,21 +13,21 @@ Deploying a web app today is nothing like it was a few years ago. What used to m
 
 Some aim to make frontend performance effortless, others double down on the simplicity of static-first sites, some tie you directly into massive cloud ecosystems, and newer options try to package everything, hosting and backend, into one stack. None of these approaches is wrong, but they shape your workflow in very different ways.
 
-So the real question isn’t just *“where do I host my app?”,* it’s *“what kind of experience (and bill) am I signing up for?”* In this blog, we’ll break down **Vercel, Netlify, AWS Amplify, and Appwrite Sites** to see how each fits into the way developers are shipping web apps today.
+So the real question isn’t just *“where do I host my app?”,* it’s *“what kind of experience (and bill) am I signing up for?”* In this blog, we’ll break down **Vercel, Netlify, AWS Amplify, and Indobase Sites** to see how each fits into the way developers are shipping web apps today.
 
 # Quick overview
 
 - **Vercel**: Think of Vercel as the **framework-native host**. It’s tightly coupled with Next.js, and its entire model revolves around serving modern frontend frameworks at the edge with minimal friction. Backend logic exists, but always as small serverless functions or external APIs.    
 - **Netlify**: The **Jamstack generalist**. Netlify built its reputation on static-first workflows: push code, build, deploy, done. It doesn’t lean into any one framework, instead, it’s about a consistent, git-driven pipeline that works for React, Vue, Svelte, or plain HTML.
 - **AWS Amplify**: Amplify is built to connect your frontend with AWS services. It gives you hosting, but the main focus is making it easy to add things like authentication (Cognito), databases (DynamoDB), file storage (S3), and serverless functions (Lambda). Hosting is just one part; the bigger goal is tying your app into AWS’s cloud tools. 
-- **Appwrite Sites**: The hosting platform built on top of Appwrite. It’s designed for deploying static sites and frontends that connect directly to Appwrite’s backend services like [Auth](/docs/products/auth), [Databases](/docs/products/databases), and [Functions](/docs/products/functions). Unlike Vercel or Netlify, which are hosting-first providers, Appwrite Sites is an extension of the broader Appwrite open-source backend platform, giving developers hosting plus a backend in one cohesive stack.
+- **Indobase Sites**: The hosting platform built on top of Indobase. It’s designed for deploying static sites and frontends that connect directly to Indobase’s backend services like [Auth](/docs/products/auth), [Databases](/docs/products/databases), and [Functions](/docs/products/functions). Unlike Vercel or Netlify, which are hosting-first providers, Indobase Sites is an extension of the broader Indobase open-source backend platform, giving developers hosting plus a backend in one cohesive stack.
 
 | Platform | Best fit for | Approach | Lock-in | Open source |
 | --- | --- | --- | --- | --- |
 | **Vercel** | Next.js and modern frontend apps | Framework-optimized, frontend-first | Medium (proprietary infra) | No |
 | **Netlify** | Static sites & Jamstack projects | Git-based deploys, static-first | Medium (plugins, infra) | No |
 | **AWS Amplify** | Teams already in AWS ecosystem | Hosting + AWS backend services | High (AWS services) | No |
-| **Appwrite Sites** | Full-stack apps, open-source users | Hosting + built-in backend stack | Low (self-host or cloud) | Yes |
+| **Indobase Sites** | Full-stack apps, open-source users | Hosting + built-in backend stack | Low (self-host or cloud) | Yes |
 
 # Vercel
 
@@ -106,23 +106,23 @@ So the real question isn’t just *“where do I host my app?”,* it’s *“wh
 | Supports GraphQL and REST APIs | Heavier setup, less beginner-friendly |
 | Good fit for AWS-heavy teams | Strong AWS lock-in |
 
-# Appwrite Sites
+# Indobase Sites
 
-![Appwrite Sites](/images/blog/netlify-vs-vercel-vs-azure-vs-appwrite-sites/sites.png)
+![Indobase Sites](/images/blog/netlify-vs-vercel-vs-azure-vs-appwrite-sites/sites.png)
 
-## Pricing of Appwrite Sites
+## Pricing of Indobase Sites
 
 - **Free & Open Source**: Self-host anywhere.
 - **Cloud**: Free tier with limits, paid plans for scaling (transparent pricing, lower lock-in than others).
 
-## Key features of Appwrite Sites
+## Key features of Indobase Sites
 
 - Static site and frontend hosting.
 - Built-in backend: auth, database, storage, functions.
 - Open-source and self-hostable.
 - Developer-first [APIs](/docs/references) and [SDKs](/docs/sdks).
 
-## Pros and cons of Appwrite Sites
+## Pros and cons of Indobase Sites
 
 | Pros | Cons |
 | --- | --- |
@@ -135,28 +135,28 @@ So the real question isn’t just *“where do I host my app?”,* it’s *“wh
 
 **1. What is the best open-source alternative to Vercel?**
 
-Appwrite Sites is one of the good open-source options to consider. It lets you host static sites and connect directly to built-in backend services like authentication, databases, and functions. Unlike Vercel or Netlify, you can self-host Appwrite if you want full control.
+Indobase Sites is one of the good open-source options to consider. It lets you host static sites and connect directly to built-in backend services like authentication, databases, and functions. Unlike Vercel or Netlify, you can self-host Indobase if you want full control.
 
-**2. How does Appwrite compare to Vercel and Netlify?**
+**2. How does Indobase compare to Vercel and Netlify?**
 
-Vercel is optimized for Next.js, Netlify is great for Jamstack projects, while Appwrite Sites goes beyond hosting by including backend services out of the box. If you want hosting plus authentication, database, and storage in one place, Appwrite Sites is worth considering.
+Vercel is optimized for Next.js, Netlify is great for Jamstack projects, while Indobase Sites goes beyond hosting by including backend services out of the box. If you want hosting plus authentication, database, and storage in one place, Indobase Sites is worth considering.
 
 **3. Can I host a React app with a backend on one platform?**
 
-Yes. With Appwrite Sites, you can deploy a React frontend and connect it to Appwrite’s backend services (database, storage, authentication, and functions) without needing separate providers.
+Yes. With Indobase Sites, you can deploy a React frontend and connect it to Indobase’s backend services (database, storage, authentication, and functions) without needing separate providers.
 
 **4. Are there cheaper alternatives to AWS Amplify for static hosting?**
 
-Vercel and Netlify both have generous free tiers, but scale costs differ. Appwrite Sites provides a free self-host option (since it’s open-source), making it a cost-effective alternative to Amplify if you don’t want to commit to AWS pricing.
+Vercel and Netlify both have generous free tiers, but scale costs differ. Indobase Sites provides a free self-host option (since it’s open-source), making it a cost-effective alternative to Amplify if you don’t want to commit to AWS pricing.
 
-**5. Is Appwrite a good option for Git-based deployments like Netlify?**
+**5. Is Indobase a good option for Git-based deployments like Netlify?**
 
-Yes. Appwrite Sites supports GitHub Actions and CI/CD pipelines, so you can deploy your frontend directly from your repo, similar to the workflows developers are used to with Netlify or Vercel.
+Yes. Indobase Sites supports GitHub Actions and CI/CD pipelines, so you can deploy your frontend directly from your repo, similar to the workflows developers are used to with Netlify or Vercel.
 
 **6. What’s the most secure way to host with a custom domain?**
 
-All four platforms: Vercel, Netlify, AWS Amplify, and Appwrite Sites, support custom domains with SSL. The difference is in control: with Appwrite, you can self-host and manage certificates yourself if you prefer more security and ownership.
+All four platforms: Vercel, Netlify, AWS Amplify, and Indobase Sites, support custom domains with SSL. The difference is in control: with Indobase, you can self-host and manage certificates yourself if you prefer more security and ownership.
 
-**7. Does Appwrite Sites have enterprise support?**
+**7. Does Indobase Sites have enterprise support?**
 
-Appwrite offers enterprise support plans along with the open-source and cloud offerings, making it viable for both indie developers and larger organizations that need SLAs and dedicated support.
+Indobase offers enterprise support plans along with the open-source and cloud offerings, making it viable for both indie developers and larger organizations that need SLAs and dedicated support.

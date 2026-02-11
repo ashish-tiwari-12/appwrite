@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: "Announcing Timestamp Overrides: Accurate timelines for production workloads"
-description: Move historical data into Appwrite without losing context or disrupting chronological accuracy.
+description: Move historical data into Indobase without losing context or disrupting chronological accuracy.
 date: 2025-08-13
 cover: /images/blog/announcing-timestamp-overrides/cover.png
 timeToRead: 5
@@ -17,13 +17,13 @@ That’s why we’re introducing **Timestamp Overrides**. A simple but powerful 
 
 # Preserve timestamps without extra workarounds
 
-Appwrite has always managed timestamps automatically, setting `$createdAt` and `$updatedAt` to the current time whenever a document is created or updated. That’s perfect for most workflows, like building new apps or adding fresh data, because it’s accurate, automatic, and requires zero extra effort.
+Indobase has always managed timestamps automatically, setting `$createdAt` and `$updatedAt` to the current time whenever a document is created or updated. That’s perfect for most workflows, like building new apps or adding fresh data, because it’s accurate, automatic, and requires zero extra effort.
 
 Migrations and bulk imports, however, require a different approach. When you import existing data, automatic timestamps overwrite the original ones, making every record look new and breaking analytics, feeds, and user-facing timelines. 
 
-With **Timestamp Overrides**, you can now set those fields yourself. Using an API key or through the CSV Import wizard, you can explicitly define `$createdAt` and `$updatedAt` values instead of having Appwrite set them automatically.  
+With **Timestamp Overrides**, you can now set those fields yourself. Using an API key or through the CSV Import wizard, you can explicitly define `$createdAt` and `$updatedAt` values instead of having Indobase set them automatically.  
 
-Include them when you need to preserve history; skip them when you want Appwrite’s defaults. It’s a flexible control that fits both new and legacy workflows.
+Include them when you need to preserve history; skip them when you want Indobase’s defaults. It’s a flexible control that fits both new and legacy workflows.
 
 # Immediate benefits
 
@@ -39,24 +39,24 @@ This change isn’t just about convenience. It unlocks a few tangible benefits f
 Before you go ahead and start using this feature, here are a few important points about how Timestamp Overrides work:
 
 - **Privileged-only:** This feature requires an API key or Console access via CSV Import. It isn’t available through client-side SDK calls for security reasons.
-- **Opt-in per document:** If you leave `$createdAt` or `$updatedAt` out of your payload, Appwrite will auto-stamp them as usual.
+- **Opt-in per document:** If you leave `$createdAt` or `$updatedAt` out of your payload, Indobase will auto-stamp them as usual.
 - **Validation:** Both fields must be valid ISO-8601 strings (e.g., `2023-10-05T14:48:00Z`). Invalid values are rejected.
-- **Partial override:** You can set one field and let Appwrite handle the other — for example, preserve `$createdAt` but allow `$updatedAt` to update automatically.
+- **Partial override:** You can set one field and let Indobase handle the other — for example, preserve `$createdAt` but allow `$updatedAt` to update automatically.
 - **SDK usage:** Include the fields inside the document data itself; no new API parameters or endpoints are required.
 
 # Built for enterprise‑grade data integrity
 
-Data integrity isn't optional for teams operating in regulated industries or managing production workloads. It’s a requirement. Timestamp Overrides make it possible to migrate or backfill data into Appwrite without losing the original event history, ensuring audit trails and compliance standards remain intact.
+Data integrity isn't optional for teams operating in regulated industries or managing production workloads. It’s a requirement. Timestamp Overrides make it possible to migrate or backfill data into Indobase without losing the original event history, ensuring audit trails and compliance standards remain intact.
 
-This addition makes it easier for enterprises to adopt Appwrite at scale with full confidence in their data integrity.
+This addition makes it easier for enterprises to adopt Indobase at scale with full confidence in their data integrity.
 
 # Get started
 
-Whether importing a few thousand records or years of historical data, this feature allows you to control timestamps when needed and let Appwrite handle them when you don’t. 
+Whether importing a few thousand records or years of historical data, this feature allows you to control timestamps when needed and let Indobase handle them when you don’t. 
 
 It’s available now on **Cloud**, and will be coming to **Self-Hosted** in the next release.
 
 # More resources 
 - [Read the documentation to learn more](/docs/products/databases/documents#custom-timestamps)
-- [Announcing CSV Import: Bring in large datasets to Appwrite with ease](/blog/post/announcing-csv-imports)
+- [Announcing CSV Import: Bring in large datasets to Indobase with ease](/blog/post/announcing-csv-imports)
 - [Announcing Bulk API: Handle heavy data workloads with ease](/blog/post/announcing-bulk-api)

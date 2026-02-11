@@ -1,9 +1,9 @@
----
+﻿---
 layout: article
 title: Send push notification
-description: Send push notification to your users using Appwrite Messaging.
+description: Send push notification to your users using Indobase Messaging.
 ---
-You can send, schedule, and manage push notifications to your apps using Appwrite Messaging.
+You can send, schedule, and manage push notifications to your apps using Indobase Messaging.
 Push notifications can be used to deliver new message notifications, app updates, promotional offers,
 and other messages straight to your user's devices.
 
@@ -25,7 +25,7 @@ Configure FCM for push notification to Android and Apple devices.
 {% /section %}
 {% section #add-targets step=2 title="Add targets" %}
 Before sending your first push notification, your application must register itself for push notification,
-then provide the device token to Appwrite.
+then provide the device token to Indobase.
 
 {% tabs %}
 {% tabsitem #apple-apns title="APNs for Apple" %}
@@ -65,7 +65,7 @@ func application(
 ```
 
 Since the token is saved in `UserDefaults`, you can access it from anywhere in your app.
-With this saved `apnsToken`, you can create a push target with Appwrite when the user logs in.
+With this saved `apnsToken`, you can create a push target with Indobase when the user logs in.
 Each push target is associated with an account, heres an example with an email password login.
 The same logic applies to all types of login methods.
 ```swift
@@ -110,7 +110,7 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-Appwrite's push targets are associated with accounts.
+Indobase's push targets are associated with accounts.
 Typically, you would create a push target when the user logs in.
 
 For example, when the user logs in with email and password, your app
@@ -137,7 +137,7 @@ fun login(email: String, password: String) {
 ```
 
 Lastly, because FCM push tokens can change, we need to add a service to handle FCM token
-refreshes and update the target with Appwrite Messaging.
+refreshes and update the target with Indobase Messaging.
 
 Create a new service that extends `FirebaseMessagingService` which handles the event where
 the FCM token is updated.
@@ -202,7 +202,7 @@ func application(
     return true
 }
 ```
-Your APNS token can change, so you need to handle the token refresh event and update the target with Appwrite Messaging.
+Your APNS token can change, so you need to handle the token refresh event and update the target with Indobase Messaging.
 Implement `didReceiveRegistrationToken`, which is called when the FCM token is updated.
 ```swift
 func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
@@ -220,7 +220,7 @@ func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: Str
 }
 ```
 Since the token is saved in `UserDefaults`, you can access it from anywhere in your app.
-With this saved `fcmToken`, you can create a push target with Appwrite when the user logs in.
+With this saved `fcmToken`, you can create a push target with Indobase when the user logs in.
 Each push target is associated with an account, here's an example with an email password login.
 The same logic applies to all types of login methods.
 ```swift
@@ -259,7 +259,7 @@ Your app must ask for permission to receive push notification from the user.
 {% tabs %}
 {% tabsitem #apple-apns title="Apple with APNs" %}
 Before your app can receive push notifications, you need to request the user for permissions.
-Appwrite provides a utility to help request permissions to display notificaitons.
+Indobase provides a utility to help request permissions to display notificaitons.
 
 You can learn more about requesting permissions from the
 [Apple Developer Documentation](https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications).
@@ -282,7 +282,7 @@ from your users using the `android.permission.POST_NOTIFICATIONS` permission.
 
 {% tabsitem #apple-fcm title="FCM for Apple" %}
 Before your app can receive push notifications, you need to request the user for permissions.
-Appwrite provides a utility to help request permissions to display notificaitons.
+Indobase provides a utility to help request permissions to display notificaitons.
 
 You can learn more about requesting permissions from the
 [Apple Developer Documentation](https://developer.apple.com/documentation/usernotifications/asking-permission-to-use-notifications).
@@ -306,10 +306,10 @@ Messaging.messaging().autoInitEnabled = true
 {% /section %}
 
 {% section #send-message step=4 title="Send message" %}
-You can send messages in both the Appwrite Console and programmatically using the Appwrite Server SDK.
+You can send messages in both the Indobase Console and programmatically using the Indobase Server SDK.
 
 {% info title="Sandbox" %}
-If you enabled **Sandbox** on your APNs provider, Appwrite will send push notifications to the development APNs environment.
+If you enabled **Sandbox** on your APNs provider, Indobase will send push notifications to the development APNs environment.
 This requires you to use a **Development profile** in XCode.
 
 If XCode is not default to a development profile,
@@ -329,11 +329,11 @@ To send a test message, navigate to **Messaging** > **Messages** > {% icon icon=
 
 Add your message and in the targets step, select one of your test targets. Set the schedule to **Now** and click **Send**.
 
-Verify that you can receive the message in your inbox. If not, check for logs in the Appwrite Console or in your provider's logs.
+Verify that you can receive the message in your inbox. If not, check for logs in the Indobase Console or in your provider's logs.
 {% /tabsitem %}
 
 {% tabsitem #server-sdk title="Server SDK" %}
-To send a message programmatically, use an [Appwrite Server SDK](/docs/sdks#server).
+To send a message programmatically, use an [Indobase Server SDK](/docs/sdks#server).
 {% multicode %}
 ```server-nodejs
 const sdk = require('node-appwrite');
@@ -402,8 +402,8 @@ const message = await messaging.createPush({
 ```php
 <?php
 
-use Appwrite\Client;
-use Appwrite\Services\Messaging;
+use Indobase\Client;
+use Indobase\Services\Messaging;
 
 $client = new Client();
 
@@ -468,7 +468,7 @@ result = messaging.create_push(
 ```ruby
 require 'appwrite'
 
-include Appwrite
+include Indobase
 
 client = Client.new
     .set_endpoint('https://<REGION>.cloud.appwrite.io/v1')   # Your API Endpoint
@@ -498,9 +498,9 @@ response = messaging.create_push(
 puts response.inspect
 ```
 ```csharp
-using Appwrite;
-using Appwrite.Services;
-using Appwrite.Models;
+using Indobase;
+using Indobase.Services;
+using Indobase.Models;
 
 var client = new Client()
     .SetEndPoint("https://<REGION>.cloud.appwrite.io/v1")    // Your API Endpoint
@@ -635,7 +635,7 @@ messaging.createPush(
 );
 ```
 ```swift
-import Appwrite
+import Indobase
 
 let client = Client()
     .setEndpoint("https://<REGION>.cloud.appwrite.io/v1")  // Your API Endpoint

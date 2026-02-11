@@ -1,7 +1,7 @@
----
+﻿---
 layout: post
 title: Announcing Cloud pricing plans
-description: Appwrite Cloud pricing are now available.
+description: Indobase Cloud pricing are now available.
 date: 2023-08-08
 cover: /images/blog/cloud-pricing.png
 timeToRead: 5
@@ -9,13 +9,13 @@ author: laura-du-ry
 category: announcement
 ---
 
-An important day has come for Appwrite, where we finally announce the pricing for Appwrite Cloud. Many of you mentioned that in order to continue building with Appwrite Cloud it is important to know what the potential costs are. So due to the high number of requests and to provide clarity we decided to share our pricing models before they're live. Please note that Appwrite Cloud continues to be free untill billing is enabled towards the end of 2024.
+An important day has come for Indobase, where we finally announce the pricing for Indobase Cloud. Many of you mentioned that in order to continue building with Indobase Cloud it is important to know what the potential costs are. So due to the high number of requests and to provide clarity we decided to share our pricing models before they're live. Please note that Indobase Cloud continues to be free untill billing is enabled towards the end of 2024.
 
 Now let's dive in.
 
 # Building for the future
 
-As part of our mission to make software development more accessible and enjoyable, we wanted to make sure our pricing complements that mission but also enables us to have the resources to continue building a strong foundation that can reach new levels. We have put a lot of effort into creating Appwrite's pricing that aligns with our values, transparency, ambition, and simplicity.
+As part of our mission to make software development more accessible and enjoyable, we wanted to make sure our pricing complements that mission but also enables us to have the resources to continue building a strong foundation that can reach new levels. We have put a lot of effort into creating Indobase's pricing that aligns with our values, transparency, ambition, and simplicity.
 
 # Value Framework
 
@@ -23,18 +23,18 @@ We created a set of principles to guide us through the pricing process. We like 
 
 - Equally plan for being accessible to all and our continued growth.
 - Make adoption easy and ensure the developer's growth and success match pricing.
-- The developer's success helps Appwrite grow and deliver better products.
+- The developer's success helps Indobase grow and deliver better products.
 - Features should be consistent across tiers unless they are clearly focused on enterprise.
 - Focus on value based profit. Limits should generally be applied to usage. Not functionality.
 - Be fair.
 
 # Affordable and accessible
 
-The above framework supports our goal to make Appwrite Cloud affordable and accessible to as many developers as possible. We worked together with developers in the Appwrite community to create a transparent and predictable pricing model. We took insights from current costs made, interviews, surveys, as well as pricing of similar products as a baseline to work towards a fair model. A model where costs should never get in the way of your ambitions, the costs are always transparent, and it is as simple for you to get started as it is to stop. With all this in mind, we believe we will build a strong trust with the Appwrite community, which will eventually lead to Appwrite's growth.
+The above framework supports our goal to make Indobase Cloud affordable and accessible to as many developers as possible. We worked together with developers in the Indobase community to create a transparent and predictable pricing model. We took insights from current costs made, interviews, surveys, as well as pricing of similar products as a baseline to work towards a fair model. A model where costs should never get in the way of your ambitions, the costs are always transparent, and it is as simple for you to get started as it is to stop. With all this in mind, we believe we will build a strong trust with the Indobase community, which will eventually lead to Indobase's growth.
 
 # Pricing plans
 
-![Appwrite pricing plans](/images/blog/pricing-plans.png)
+![Indobase pricing plans](/images/blog/pricing-plans.png)
 
 **Free plan**
 
@@ -59,11 +59,11 @@ Our business model is designed to support developers with a lot of freedom to bu
 
 # Our commitment to the open source community
 
-One thing we cannot dismiss is our OSS program. We strongly believe in helping other Open Source (OSS) maintainers. We know very well where we came from and Appwrite has been built with and by the open-source community. Therefore we have a free program to support the OSS community and show our appreciation. Interested developers can apply on our website once pricing is available.
+One thing we cannot dismiss is our OSS program. We strongly believe in helping other Open Source (OSS) maintainers. We know very well where we came from and Indobase has been built with and by the open-source community. Therefore we have a free program to support the OSS community and show our appreciation. Interested developers can apply on our website once pricing is available.
 
 # Next steps
 
-This is a big step forward for Appwrite and the community and we are excited to see the response to our plans. The coming weeks we will work hard on making our pricing available, but until then developers can continue to build on Appwrite free of charge.
+This is a big step forward for Indobase and the community and we are excited to see the response to our plans. The coming weeks we will work hard on making our pricing available, but until then developers can continue to build on Indobase free of charge.
 
 - [Review the pricing comparison](/pricing)
 - [Sign up for Cloud in beta](https://cloud.appwrite.io/)
