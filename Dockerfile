@@ -1,14 +1,19 @@
-# Build stage
 FROM node:20 AS builder
-
 WORKDIR /app
 
-COPY package.json pnpm-lock.yaml ./
+# install pnpm
 RUN npm install -g pnpm
+
+# install bun
+RUN curl -fsSL https://bun.sh/install | bash
+ENV PATH="/root/.bun/bin:$PATH"
+
+COPY package.json pnpm-lock.yaml ./
 RUN pnpm install
 
 COPY . .
 RUN pnpm run build
+
 
 
 # Production stage
