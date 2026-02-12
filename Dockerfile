@@ -1,4 +1,5 @@
-FROM oven/bun:1.3.1 AS base
+FROM node:20 AS base
+
 
 ARG PUBLIC_APPWRITE_ENDPOINT
 ENV PUBLIC_APPWRITE_ENDPOINT ${PUBLIC_APPWRITE_ENDPOINT}
@@ -53,14 +54,18 @@ ENV PUBLIC_POSTHOG_API_KEY ${PUBLIC_POSTHOG_API_KEY}
 
 WORKDIR /app
 COPY package.json package.json
-COPY bun.lock bun.lock
+COPY pnpm-lock.yaml pnpm-lock.yaml
+
+RUN npm install -g pnpm
+RUN pnpm install --frozen-lockfile
+
 
 FROM base AS build
 
 RUN bun install --frozen-lockfile
 COPY . .
-RUN bun run sync
-RUN bun run build
+RUN pnpm run sync
+RUN pnpm run build
 
 FROM base AS prod-deps
 
