@@ -80,5 +80,8 @@ COPY --from=build /app/build/ build
 COPY --from=build /app/server/ server
 COPY --from=build /app/src/routes/ src/routes
 COPY --from=prod-deps /app/node_modules/ node_modules
+ENV HOST=0.0.0.0
+ENV PORT=3000
 
+EXPOSE 3000
 CMD ["node", "server/main.js"]
